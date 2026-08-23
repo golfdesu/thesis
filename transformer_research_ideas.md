@@ -48,7 +48,7 @@
 - แก้ปัญหาตรงจุดกับ Probabilistic Gaps P-1 ถึง P-5 ที่พบใน Literature
 - มีประโยชน์ต่อ grid operation, peak shaving และ V2G scheduling
 - Contribution ทรงพลัง ครอบคลุมทั้ง Architecture, Loss Function และ Statistical Calibration
-- Corpus support ยืนยันแล้ว: PICNN ([[2025_Zheng_Coherent_Hierarchical_EV_Load]]) กับ conformal prediction ([[2024_Zhou_Conformal_Prediction_DER]]) มีใน corpus แล้ว แต่ไม่มี paper ใดผูกกับ Mamba/cross-attention backbone — คอมโบเต็มจึงยัง novel ตาม [[research_gaps]]
+- Corpus support อัปเดต (2026-08-23, 103 papers): PICNN ([[2025_Zheng_Coherent_Hierarchical_EV_Load]]) กับ conformal prediction ([[2024_Zhou_Conformal_Prediction_DER]]) มีใน corpus แล้ว — **แต่ข้อกล่าวอ้าง "probabilistic Transformer / conformalized Transformer สำหรับ EV" ไม่ novel อีกต่อไป** เพราะ [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] (TFT + post-hoc CQR conformal, static calibration, quantile head เชิงเส้น) และ [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] (USDT: Gaussian heads + CRPS, Informer/Probformer backbone) ทำส่วนย่อยไปแล้ว สิ่งที่ยัง novel คือคอมโบเต็ม **Mamba/cross-attention backbone + PICNN monotonic head + adaptive conformal recalibration** ซึ่งไม่มี paper ใดทำ (ตาม [[research_gaps]] P-1, P-3)
 
 **ความเสี่ยง**
 
@@ -89,6 +89,7 @@
 - ต่อยอดจากผลที่ PatchTFT แพ้ใน benchmark ได้โดยตรง
 - เป็น contribution เชิง methodological ที่ defend ได้ดี
 - ไม่จำเป็นต้องสร้างโมเดลที่ซับซ้อนเกินไป
+- **อัปเดต (2026-08-23):** [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] เสริม motivation — Transformer ชนะเฉพาะ short-term (10–30 นาที) ส่วน GRU/LSTM ชนะ mid/long-term อย่างสม่ำเสมอ การ benchmark แบบควบคุม per-horizon (A2) จึงจำเป็น และควรเพิ่ม GRU/LSTM + linear baselines ตาม [[proposed_architectures]] Proposal 10
 
 **ความเสี่ยง**
 
@@ -157,7 +158,7 @@
 
 ใช้ Mamba เป็น efficient temporal encoder และ Transformer cross-attention สำหรับ global context หรือ exogenous fusion
 
-ควรเริ่มจากการเป็น baseline/ablation ก่อน ไม่ควรตั้ง novelty จากคำว่า "Mamba + Transformer" เพียงอย่างเดียว เพราะแนวคิด hybrid เริ่มมีงานในหลายสาขาแล้ว — corpus ปัจจุบัน (80 papers) ยืนยันข้อนี้: [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Chen_PC_M3_Mamba_EV_Clusters]] และ [[2026_Lahoti_Mamba_3_Sequence_Modeling]] เป็น Mamba line ที่ ingest แล้ว ส่วน novelty ที่ยังยืนยันได้คือคอมโบเต็ม **Mamba backbone + cross-attention + conformalized PICNN head** ตาม [[research_gaps]] (Gap 6, T-7, P-1–P-5) ซึ่งไม่มี paper ใดใน corpus ทำ
+ควรเริ่มจากการเป็น baseline/ablation ก่อน ไม่ควรตั้ง novelty จากคำว่า "Mamba + Transformer" เพียงอย่างเดียว เพราะแนวคิด hybrid เริ่มมีงานในหลายสาขาแล้ว — corpus ปัจจุบัน (103 papers, อัปเดต 2026-08-23) ยืนยันข้อนี้: [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Chen_PC_M3_Mamba_EV_Clusters]], [[2026_Lahoti_Mamba_3_Sequence_Modeling]] รวมถึง foundation Mamba papers ([[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) เป็น Mamba line ที่ ingest แล้ว (ทั้งหมด point-forecast) — novelty ที่ยังยืนยันได้คือคอมโบเต็ม **Mamba backbone + cross-attention + conformalized PICNN head** ตาม [[research_gaps]] (Gap 6, T-7, P-1–P-5) ซึ่งไม่มี paper ใดใน corpus ทำ
 
 ## กลุ่ม C: ไอเดียเชื่อมกับ spatial และ operational use
 
@@ -191,13 +192,17 @@ pre-train จากสถานีที่มีข้อมูลมาก แ
 
 เปรียบเทียบ fine-tuning, meta-learning และ zero-shot foundation model
 
-อัปเดตจาก corpus: [[2025_Meyer_Benchmark_Foundation_Models]] (ingest แล้ว) พบว่า foundation models (Chronos, TimesFM) competitive เมื่อ historical data < 4 สัปดาห์ แต่แพ้ supervised model เมื่อข้อมูลเพียงพอ — จึงควรใช้เป็น comparator ในช่วง low-data ของการทดลองนี้
+อัปเดตจาก corpus: [[2025_Meyer_Benchmark_Foundation_Models]] พบว่า foundation models (Chronos, TimesFM) competitive เมื่อ historical data < 4 สัปดาห์ แต่แพ้ supervised model เมื่อข้อมูลเพียงพอ — จึงควรใช้เป็น comparator ในช่วง low-data
+
+**อัปเดตสำคัญ (2026-08-23, papers 81–103):** พื้นที่ transfer/few-shot เริ่มแน่นสำหรับ station ทั่วไป — [[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]] (two-stage pre-train/fine-tune สำหรับสถานีใหม่), [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] (MAML-Informer, few-shot 10% data + quantile heads) และ [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] (benchmark 12 เมือง: **linear SGD ชนะ/เท่า DL**, performance plateau ที่ ~3 วันของข้อมูล, zero-shot cross-city transfer ได้โดยไม่ต้อง fine-tune) — การทดลอง D2 จึงต้องมี linear/GRU baselines และ axis 1/3/7/14 วันตาม protocol ของ Wang S. จุดที่ยังว่าง: DC fast-charging + calibrated probabilistic output ภายใต้ low-data
 
 ### D3. Calibration under distribution shift
 
 ตรวจว่าช่วง prediction interval ยังมี coverage ถูกต้องหรือไม่เมื่อทดสอบกับฤดูหรือสถานีที่ไม่อยู่ใน training distribution
 
 อาจใช้ conformal calibration เป็นขั้นตอนหลังโมเดล
+
+อัปเดตจาก corpus (2026-08-23): [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] ทำ CQR conformal แบบ static validation-split สำหรับ EV load แล้ว — D3 ควรเน้น **adaptive/online recalibration** ตามแนว [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] (BOA online quantile recalibration, non-EV) เพื่อไม่ซ้ำกับงานที่มีอยู่ (ตรงกับ Gap P-3 ใน [[research_gaps]])
 
 ## การจัดลำดับความเหมาะสม
 
@@ -243,7 +248,7 @@ pre-train จากสถานีที่มีข้อมูลมาก แ
 ## ข้อควรตรวจสอบก่อนสรุป novelty
 
 - ควรตรวจ paper ล่าสุดและ preprint เพิ่มก่อนกล่าวว่าแนวคิดใด "ไม่เคยมีใครทำ"
-- ~~จำนวน paper ในเอกสารสรุปกับจำนวนไฟล์ใน `raw_sources` ยังไม่สอดคล้องกัน~~ **แก้ไขแล้ว (2026-08-23):** re-ingestion ครบ 80 papers ใน `wiki/papers/` ตรงกับ [[index]] และ [[research_gaps]] ทุกไฟล์ verified
+- ~~จำนวน paper ในเอกสารสรุปกับจำนวนไฟล์ใน `raw_sources` ยังไม่สอดคล้องกัน~~ **แก้ไขแล้ว (2026-08-23):** re-ingestion ครบ **103 papers** ใน `wiki/papers/` ตรงกับ [[index]] และ [[research_gaps]] ทุกไฟล์ verified
 - `dataset_extraction_report.md` มีบางรายการที่ title และ dataset ดูไม่ตรงกัน ควรตรวจ metadata จาก paper ต้นฉบับ
 - หมายเหตุ metadata: VMD-Prophet-LSTM (Cheng) เป็นปี **2023** และเป็น hybrid แบบ *centralized* — ไม่ใช่ federated learning; Lyapunov paper อ้างอิงเป็น arXiv:2604.16873 (2026)
 - ผล benchmark ปัจจุบันใช้ implementation แบบ Encoder-only ซึ่งแตกต่างจาก architecture ดั้งเดิมของบาง paper จึงควรเรียกว่า controlled reimplementation ไม่ใช่ reproduction เต็มรูปแบบ

@@ -403,3 +403,9 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Propagated to models/metrics/horizons/datasets/github; created wiki/models/EVformer.md.
 - Removed duplicate Elsevier PDF re-download (S0045790626002739 = already-ingested MoghadamDost TFT-Conformal).
 - Corpus now 103 papers.
+
+
+## [2026-08-23] synthesis | Corpus Refresh to 103 Papers + BibTeX Export
+- Refreshed research_gaps.md, progress_summary_and_research_gaps.md, proposed_architectures.md, transformer_research_ideas.md against the full 103-paper corpus.
+- Novelty re-validation: flagship combo (Mamba + cross-attention exogenous fusion + conformalized PICNN head) remains unexplored; refuted sub-claims recorded (USDT = first probabilistic EV Transformer; MoghadamDost = first conformalized EV Transformer; EVformer = dynamic-graph pure Transformer).
+- Exported thesis_references.bib with all 103 BibTeX entries.

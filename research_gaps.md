@@ -1,9 +1,9 @@
 # 🔬 Master Synthesis: Literature Taxonomy & Research Gaps for Thesis
 
-This document synthesizes the core findings, mathematical methods, and open research gaps identified across all **70 PDF research papers** ingested into your Obsidian Second Brain.
+This document synthesizes the core findings, mathematical methods, and open research gaps identified across all **103 PDF research papers** ingested into your Obsidian Second Brain.
 
 > [!NOTE]
-> Last updated: 2026-08-09 | Covers all 70 papers | **Transformer-focused deep analysis added**
+> Last updated: 2026-08-23 | Covers all 103 papers | Refreshed after ingestion of papers 81–103 (see [Refresh Section](#-refresh-papers-81103-spatial-temporal-transfer-benchmarks--probabilistic-lines)) | **Transformer-focused deep analysis added**
 
 ---
 
@@ -31,6 +31,8 @@ graph TD
     C --> C4["EV-STLLM Large Language Model (Fan 2025)"]
     C --> C5["REST Network ResNet+SENet+Transformer (Alghamdi 2025)"]
     C --> C6["Multi-Scale Fusion Transformer MFT (Liu 2026)"]
+    C --> C7["EVformer Decoupled ST Transformer (Jia 2026)"]
+    C --> C8["TriCast Tri-Modal Causal w/ Price Elasticity (Wang X. 2026)"]
 
     D --> D1["PICNN Convex Quantile Learning (Zheng 2025)"]
     D --> D2["Feature-Enhanced FEDM (Cao 2024)"]
@@ -39,6 +41,8 @@ graph TD
     D --> D5["Deep Gaussian Process DGP (Cao 2022)"]
     D --> D6["Conformal Prediction DER (Zhou 2024)"]
     D --> D7["DeepAR Autoregressive RNN (Salinas 2020)"]
+    D --> D8["USDT Dual-Direction Probabilistic Transformer (Zhang J. 2026)"]
+    D --> D9["TFT + Conformal (CQR) Post-Hoc Calibration (MoghadamDost 2026)"]
 
     E --> E1["MetaProbformer Reptile Meta-Learning (Huang 2023)"]
     E --> E2["Inductive Transfer Learning MQ-TCN (Ali 2024)"]
@@ -46,6 +50,9 @@ graph TD
     E --> E4["Vertical Federated EGAT-LSTM (Han 2025)"]
     E --> E5["Personalized Federated pFed (Zhu 2025)"]
     E --> E6["Divide & Conquer Transformer Smart Meter (Ke 2024)"]
+    E --> E7["MixerInformer Two-Stage Transfer for NEW Stations (Zhou Z. 2025)"]
+    E --> E8["MAML-Informer Probabilistic Meta-Learning per Station (Singh 2026)"]
+    E --> E9["ML Geographical Transferability Benchmark (Wang S. 2026)"]
 
     F --> F1["Lyapunov Virtual Queue Dispatch (Huang 2021)"]
     F --> F2["V2G-SVE Value Metric (Zhong 2024)"]
@@ -176,7 +183,9 @@ graph TD
 ### Gap 3: Ultra-Low Data Adaptation for Fast-Charging Stations *(Original — Expanded)*
 - DC fast-charging stations exhibit high volatility and lack long historical records.
 - **Extended finding**: [[2025_Meyer_Benchmark_Foundation_Models]] shows foundation models (Chronos, TimesFM) are competitive with $<4$ weeks of data — **zero-shot transfer learning is now a viable alternative** to inductive transfer.
-- **Proposed Focus**: Benchmark foundation models vs. MQ-TCN transfer learning ([[2024_Ali_MQ_TCN_Transfer_Learning_EV]]) specifically for DC fast-charging using [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] as the task setup.
+- **Refresh finding (papers 81–103)**: the low-data adaptation space is now *crowded* for standard stations: [[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]] (Mixer+Informer+KAN two-stage pre-train/fine-tune for newly constructed stations, ~4% MAE gain), [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] (MAML-Informer: per-station meta-tasks with probabilistic quantile heads under 10%-data few-shot), and [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] (12-city benchmark: **linear SGD matches/beats DL**, performance plateaus after only **~72 h (3 days)** of data, and zero-/few-shot city-to-city transfer works without fine-tuning).
+- **Remaining gap**: all three target aggregate/AC station load — none addresses **DC fast-charging volatility**, and none combines low-data adaptation with calibrated probabilistic output (Singh is closest but uses plain quantile heads, no conformal/PICNN guarantees).
+- **Proposed Focus**: Benchmark foundation models vs. MQ-TCN transfer learning ([[2024_Ali_MQ_TCN_Transfer_Learning_EV]]) specifically for DC fast-charging using [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] as the task setup; include the Wang S. (2026) 3-days-data protocol as the low-data axis.
 
 ### Gap 4: Value-Oriented Downstream V2G Bidding Optimization *(Original)*
 - Model training should optimize downstream market bidding revenue rather than standard MSE loss.
@@ -223,7 +232,7 @@ graph TD
 
 ---
 
-*Last updated: 2026-08-08 | Papers ingested: 59 | Gaps identified: 6 primary + 7 Transformer-specific*
+*Last updated: 2026-08-08 | Papers ingested: 59 at time of writing (now superseded — see refresh sections below) | Gaps identified: 6 primary + 7 Transformer-specific*
 
 ---
 
@@ -278,6 +287,7 @@ graph TD
 - [[2024_Feng_LSTM_Transformer_Energy_Consumption]]: *"However, applying the Transformer model to time series forecasting directly may not be appropriate."*
 - [[2023_Li_Transformer_EV_Charging_Demand]]: *"Transformer provided the best long-term prediction performance… Even while the model's performance for short-term prediction is slightly behind that of LSTM."*
 - [[2025_Hussain_CAT_Former_EV_STCS]]: *"They aggregated the demand data by day to predict for 7, 30, and 90 days ahead; the data aggregation reduced the training data size for the proposed Transformer model and also disabled its capacity to forecast for shorter time steps (e.g., 1h)."*
+- [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] *(new, papers 81–103)*: reproducible comparison across Palo Alto/Boulder/Dundee/Perth at station/region/city scales — **Transformers win only short-term (10–30 min) regional/city forecasts (10–15% lower MAE than ARIMA/XGBoost), while GRU/LSTM consistently win mid-term (2–8 h) and long-term (1–5 days)**. This independently corroborates the inductive-bias mismatch and directly motivates the multi-horizon controlled benchmark of Gap T-2/Proposal 5.
 
 **Variants that attempt to fix this**:
 - **iTransformer** ([[2025_Zheng_BWO_ICEEMDAN_iTransformer]]): Inverts token and feature dimensions — treats each variate as a token
@@ -315,12 +325,13 @@ graph TD
 - [[2023_Huang_MetaProbformer_EV_Load]]: **Exception** — adapts Informer to probabilistic forecasting using quantile heads.
 - [[2025_Matrone_Probabilistic_LSTM_Attention]]: Uses LSTM+attention with quantile regression — suggests the gap exists even in attention-based work.
 
-**Probabilistic Transformer options not yet applied to EV charging**:
+**Probabilistic Transformer options not yet applied to EV charging** *(status refreshed 2026-08-23, papers 81–103)*:
 - Temporal Fusion Transformer (TFT) with quantile head — used for DC charging profiles only in [[2025_Li_DC_Charging_Profiles_TFT]]
 - Diffusion + Transformer conditioning (DiffPLF [[2024_Li_DiffPLF_Conditional_Diffusion_EV]] uses cross-attention but the backbone is a diffusion model)
-- Conformalized Transformer (Transformer + conformal prediction calibration)
+- ~~Conformalized Transformer~~ → **PARTIALLY CLOSED**: [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] now applies TFT quantile heads + **post-hoc CQR-style conformal calibration** to EV charging load (Palo Alto, hourly/daily horizons) with PICP/MPIW evaluation. Remaining sub-gaps: its calibration is *static* split-conformal on a single validation split (no ACI/online recalibration under shift → Gap P-3 open), and its quantile head is a plain linear head (**no PICNN monotonicity** → Gap P-1 open).
+- Native probabilistic Transformer → **PARTIALLY CLOSED**: [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] (USDT) outputs per-step Gaussians $\mathcal{N}(\mu_t,\sigma_t^2)$ with CRPS evaluation on EV datasets; [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] (MAML-Informer) reports PICP/CRPS/Winkler under few-shot. Neither enforces monotonic quantiles, joint trajectory coherence (P-2), nor distribution-free coverage.
 
-**Open Gap**: A Transformer architecture with **native probabilistic output** (e.g., distribution-head or normalizing flow decoder) compared head-to-head with MetaProbformer and DiffPLF on the same EV dataset has not been done.
+**Open Gap (refined)**: A Transformer/SSM architecture with **native monotonic (PICNN-style) quantile output + adaptive conformal guarantees** compared head-to-head with MetaProbformer, DiffPLF, USDT, and MAML-Informer on the same EV dataset has not been done. The plain "probabilistic Transformer" claim is no longer novel as of 2026.
 
 ---
 
@@ -332,8 +343,9 @@ graph TD
 - [[2024_Li_Attention_MultiGraph_EV_Load]]: *"The model without graph over-reliance on time series features fails to provide an accurate forecast."* + *"The major limitation is that the proposed model is based on the supposition of the existence of location correlations in historical temporal load series, which cannot be captured completely when the charging stations are relatively far away."*
 - [[2022_Zhang_GCN_TRN_EV_Availability]]: *"The transformer utilization method is able to comprehend periodicity in a global view, however, it has a limitation of aggregating local information."*
 - [[2026_Hao_Mamba_KAN_HyKANet_EV]]: addresses this by introducing a **dynamic adjacency module** — but uses Mamba, not pure Transformer.
+- [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] *(new, papers 81–103)*: **dynamic semantics-aware Top-K spatial attention** combining physical topology with data-driven neighbor selection ($O(N^2)\to O(K^2)$) in a *pure Transformer* framework on ST-EVCDP — this substantially narrows the original gap.
 
-**Open Gap**: Dynamic graph Transformer (where adjacency is learned per time step, e.g., via attention over node embeddings) for EV charging has not been proposed. The HyKANet approach (2026) demonstrates demand exists; a pure Transformer version would fill this gap.
+**Open Gap (refined)**: EVformer's spatial module selects Top-K neighbors from a fused physical+semantic graph but does **not** re-learn the adjacency at every time step, and its evaluation is point-forecast only (MAE/RMSE/MAPE). A dynamic graph Transformer for EV charging with per-timestep adjacency learning **and probabilistic output** remains unproposed.
 
 ---
 
@@ -359,6 +371,8 @@ graph TD
 - [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]: Optimized Transformer still outperforms vanilla GRU/LSTM/BiLSTM, but not compared to Mamba.
 - [[2025_Benchmarking_Foundation_Models_EV]]: *"Foundation models perform comparably to TFS Transformer models… while certain conditions favor TFS Transformer."*
 - [[2026_Lahoti_Mamba_3_Sequence_Modeling]]: Mamba-3 surpasses Transformers on sequence tasks with O(N) complexity.
+- [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] *(new)*: beats Graph WaveNet, MTGNN, STGCN, DCRNN and PAG on citywide EV load — but is not compared against any Mamba/SSM backbone, reinforcing the missing three-way comparison.
+- Foundational Mamba method papers now ingested: [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]] (quadruple-Mamba multi-scale) and [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]] (bidirectional Mamba+, −4.72% MSE vs iTransformer on Electricity) — all **point-forecast only**, none EV-specific, none probabilistic.
 
 **Emerging research directions**:
 1. **Transformer + Mamba hybrid**: Use Transformer for global periodicity + Mamba for local dynamics
@@ -400,7 +414,31 @@ The following papers were added after the previous version (2026-08-02):
 
 ---
 
-*Last updated: 2026-08-10 | Papers ingested: 70 | Gaps identified: 6 primary + 7 Transformer-specific + 5 Probabilistic-specific*
+## 🆕 Refresh: Papers 81–103 (added 2026-08-23)
+
+The corpus grew from 80 → **103** papers. Key new lines and their gap impact:
+
+| Cluster | Paper | Key Finding | Gap Impact |
+|---------|-------|-------------|-----------|
+| Spatial-Temporal EV | [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] | Decoupled temporal/spatial Transformer; dynamic Top-K spatial attention on ST-EVCDP | Narrows T-5 (dynamic graphs); still point-only |
+| Spatial-Temporal EV | [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] | TriCast: spatial + temporal + **causal price-elasticity modulator** | Partially addresses Gap 1 (causal elasticity) — but occupancy-level, not load-level, and no probabilistic head |
+| Spatial-Temporal EV | [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]] | Similar-day selection + NSGA-II (Applied Energy 2026) | Hybrid non-DL comparator for benchmark studies |
+| Probabilistic | [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] | USDT: dual-direction probabilistic Transformer, Gaussian heads + CRPS | Narrows T-4 ("native probabilistic Transformer" no longer novel per se) |
+| Probabilistic | [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] | TFT quantile heads + post-hoc CQR conformal calibration | Narrows T-4/P-3 partially; static calibration, non-monotonic head |
+| Transfer / Few-shot | [[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]] | Two-stage transfer for *newly constructed* stations (Mixer+Informer+KAN) | Crowds Gap 3 for standard stations |
+| Transfer / Few-shot | [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] | MAML-Informer: per-station meta-learning + quantile heads, 10%-data few-shot | Crowds Gap 3; closest to "probabilistic few-shot" |
+| Transfer / Few-shot | [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] | Linear SGD ≥ DL; performance plateaus after ~3 days of data; zero-shot city transfer works | Challenges DL value proposition at station level — must be cited in any DL-for-EV thesis |
+| Benchmarks | [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] | Reproducible comparison: Transformer wins short-term only; GRU/LSTM win mid/long-term | Strengthens T-2 evidence; motivates horizon-split evaluation |
+| Robustness | He JointPGM (2024) | Joint probabilistic graphical model beating the RevIN line under distribution shift | New B1 comparator; non-stationarity line beyond normalization |
+| Adaptive probabilistic | [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] | Online BOA quantile recalibration (TPWRS 2024) | Adjacent to P-3; not EV-specific, not covariate-aware |
+| PI evaluation | [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] | GP-based PIs for EV loads with proper PI metrics | Baseline for P-1/P-3 evaluation protocols |
+| Foundations | Graph WaveNet, DiffSTG, TimeMachine ([[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]]), Bi-Mamba+ ([[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]), KAN ([[2024_Liu_KAN_Kolmogorov_Arnold_Networks]]) | General TS method foundations now ingested | Feed T-7 comparators; all point-forecast only |
+
+**Novelty verdict after refresh**: the flagship combination (**Mamba backbone + cross-attention exogenous fusion + conformalized PICNN head**) survives — see the re-verified callout in [[proposed_architectures]]. The claims that did NOT survive: "no probabilistic Transformer exists for EV" (USDT, MAML-Informer refute), "no conformalized Transformer for EV" (MoghadamDost refutes), "no dynamic-graph pure Transformer for EV" (EVformer largely refutes).
+
+---
+
+*Last updated: 2026-08-23 | Papers ingested: 103 | Gaps identified: 6 primary + 7 Transformer-specific + 5 Probabilistic-specific*
 
 ---
 
@@ -423,6 +461,7 @@ The following papers were added after the previous version (2026-08-02):
 - **Core Problem**: Adaptive Conformal Inference (ACI) guarantees finite-sample coverage ($\mathbb{P}(y_t \in \hat{I}_t) \ge 1-\alpha$) assuming exchangeability. EV load profiles violate exchangeability due to dynamic Time-of-Use (TOU) tariffs, extreme weather, and non-stationary driver behavior, causing severe ACI adaptation lag (under-coverage followed by interval dilation).
 - **Impact on EV**: Inaccurate prediction intervals during sharp weather transitions or sudden tariff updates.
 - **Open Research Gap**: Covariate-aware, real-time conformal recalibration that adapts dynamically to distribution shifts without excessive interval dilation.
+- **Status refresh (2026-08-23)**: adjacent lines now exist but do not close this. [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] (TPWRS 2024) does **online BOA-tuned quantile recalibration** for net load under adversarial sequences — but is not EV-station-specific and not covariate-conditioned. [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] brings CQR conformal calibration to EV load — but with a **single static validation-split calibration**, i.e., exactly the setup that lags under tariff/weather transitions. [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] evaluates PI quality metrics for EV loads but uses GP Gaussianity, no conformal machinery. The core gap (adaptive + covariate-aware conformal recalibration for non-stationary EV charging) remains open.
 
 ### 🟡 Probabilistic Gap P-4: Multimodal Generative Diffusion Latency vs. Operational Real-Time Control
 - **Core Problem**: Conditional Diffusion Models (DiffPLF) capture complex multimodal demand distributions (DC fast-charging vs AC overnight vs V2G idle) where scalar quantile regression fails. However, reverse denoising requiring 50–100 sampling steps introduces high computational latency, preventing real-time control (<1 sec).
