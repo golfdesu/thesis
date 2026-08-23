@@ -1,0 +1,115 @@
+{
+  "downloaded": [
+    {
+      "stem": "2024_Qu_ChatEV_EV_Charging_NLP",
+      "title": "Secure Charging and Payment System for Electric Land Vehicles with Authentication Protocol",
+      "url": "https://arxiv.org/pdf/2107.06100v1"
+    },
+    {
+      "stem": "2025_Fan_EV_STLLM_Spatio_Temporal_LLM",
+      "title": "EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion",
+      "url": "https://arxiv.org/pdf/2507.09527v1"
+    },
+    {
+      "stem": "2025_Benchmark_Foundation_Models_EV_Charging",
+      "title": "Secure Charging and Payment System for Electric Land Vehicles with Authentication Protocol",
+      "url": "https://arxiv.org/pdf/2107.06100v1"
+    },
+    {
+      "stem": "2024_DiffPLF_Diffusion_EV_Load",
+      "title": "DiffPLF: A Conditional Diffusion Model for Probabilistic Forecasting of EV Charging Load",
+      "url": "https://arxiv.org/pdf/2402.13548v1"
+    },
+    {
+      "stem": "2025_Amara_Ouali_Conformal_Prediction_EV",
+      "title": "Secure Charging and Payment System for Electric Land Vehicles with Authentication Protocol",
+      "url": "https://arxiv.org/pdf/2107.06100v1"
+    },
+    {
+      "stem": "2024_Helmy_Autoformer_EV_Charging",
+      "title": "Lasso estimation for GEFCom2014 probabilistic electric load forecasting",
+      "url": "https://arxiv.org/pdf/1603.01376v1"
+    },
+    {
+      "stem": "2024_Ke_Divide_Conquer_Transformer_EV",
+      "title": "Divide-Conquer Transformer Learning for Predicting Electric Vehicle Charging Events Using Smart Meter Data",
+      "url": "https://arxiv.org/pdf/2403.13246v1"
+    },
+    {
+      "stem": "2025_Alghamdi_REST_EV_Charging_Port",
+      "title": "Learn to Accumulate Evidence from All Training Samples: Theory and Practice",
+      "url": "https://arxiv.org/pdf/2306.11113v2"
+    },
+    {
+      "stem": "2025_Personalized_Federated_EV_Load",
+      "title": "Federated and Transfer Learning: A Survey on Adversaries and Defense Mechanisms",
+      "url": "https://arxiv.org/pdf/2207.02337v1"
+    },
+    {
+      "stem": "2025_Vertical_Federated_EGAT_EV",
+      "title": "VAFL: a Method of Vertical Asynchronous Federated Learning",
+      "url": "https://arxiv.org/pdf/2007.06081v1"
+    },
+    {
+      "stem": "2025_Shen_BiLSTM_iTransformer_EV",
+      "title": "Lasso estimation for GEFCom2014 probabilistic electric load forecasting",
+      "url": "https://arxiv.org/pdf/1603.01376v1"
+    },
+    {
+      "stem": "2025_BWO_ICEEMDAN_iTransformer_Load",
+      "title": "Lasso estimation for GEFCom2014 probabilistic electric load forecasting",
+      "url": "https://arxiv.org/pdf/1603.01376v1"
+    },
+    {
+      "stem": "2025_Xu_BiLSTM_PatchTST_EV_Charging",
+      "title": "Load Forecasting Model and Day-ahead Operation Strategy for City-located EV Quick Charge Stations",
+      "url": "https://arxiv.org/pdf/1909.00971v1"
+    },
+    {
+      "stem": "2025_BLformer_PatchTST_Bus_Load",
+      "title": "Lasso estimation for GEFCom2014 probabilistic electric load forecasting",
+      "url": "https://arxiv.org/pdf/1603.01376v1"
+    },
+    {
+      "stem": "2026_PC_M3_Mamba_EV_Cluster",
+      "title": "Large Synoptic Survey Telescope: Dark Energy Science Collaboration",
+      "url": "https://arxiv.org/pdf/1211.0310v1"
+    },
+    {
+      "stem": "2026_Hao_Mamba_KAN_EV_Charging",
+      "title": "Secure Charging and Payment System for Electric Land Vehicles with Authentication Protocol",
+      "url": "https://arxiv.org/pdf/2107.06100v1"
+    },
+    {
+      "stem": "2025_BiLSTM_Mamba_Power_Load",
+      "title": "Detection of False Data Injection Attacks in Smart Grid: A Secure Federated Deep Learning Approach",
+      "url": "https://arxiv.org/pdf/2209.00778v2"
+    },
+    {
+      "stem": "2025_DTimesNet_Linear_Power_Load",
+      "title": "Lasso estimation for GEFCom2014 probabilistic electric load forecasting",
+      "url": "https://arxiv.org/pdf/1603.01376v1"
+    },
+    {
+      "stem": "2025_Graph_Transformer_Contrastive_EV",
+      "title": "Let Invariant Rationale Discovery Inspire Graph Contrastive Learning",
+      "url": "https://arxiv.org/pdf/2206.07869v1"
+    },
+    {
+      "stem": "2025_TFT_EV_DC_Charging_Profiles",
+      "title": "Secure Charging and Payment System for Electric Land Vehicles with Authentication Protocol",
+      "url": "https://arxiv.org/pdf/2107.06100v1"
+    },
+    {
+      "stem": "2024_NBEATS_NHiTS_EV_Charging",
+      "title": "Secure Charging and Payment System for Electric Land Vehicles with Authentication Protocol",
+      "url": "https://arxiv.org/pdf/2107.06100v1"
+    },
+    {
+      "stem": "2025_PAR_LLM_EV_Peak_Aware",
+      "title": "The Importance of Environmental Factors in Forecasting Australian Power Demand",
+      "url": "https://arxiv.org/pdf/1911.00817v3"
+    }
+  ],
+  "need_manual": []
+}

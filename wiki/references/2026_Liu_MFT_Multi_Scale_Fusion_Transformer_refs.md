@@ -1,0 +1,40 @@
+# References — [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]
+
+> **34 references** extracted from this paper.
+
+---
+
+1. 1. Agency, I. E. CO2 emissions in 2022 (2023). https://www.iea.org/reports/co2-emissions-in-2022
+2. 2. Wang, Y. et al. Service-quality based pricing approach for charging electric vehicles in smart energy communities. J. Clean. Prod. 420, 138416 (2023).
+3. 3. Xiang, Y. et al. Economic planning of electric vehicle charging stations considering traffic constraints and load profile templates. Appl. Energy 178, 647–659 (2016).
+4. 4. Lokhande, S., Bichpuriya, Y. & Sarangan, V. Real-time management of deviations in the demand of electric vehicle charging stations by utilizing EV flexibility. J. Energy Storage 97, 112719 (2024).
+5. 5. Yin, W., Ji, J., Wen, T. & Zhang, C. Study on orderly charging strategy of EV with load forecasting. Energy 278, 127818 (2023).
+6. 6. Wu, Y., Cong, P. & Wang, Y. Charging load forecasting of electric vehicles based on VMD-SSA-SVR. IEEE Trans. Transport. Electrif. 10, 3349–3362 (2023).
+7. 7. Cui, D. et al. Stacking regression technology with event profile for electric vehicle fast charging behavior prediction. Appl. Energy 336, 120798 (2023).
+8. 8. Benavides, D., Arévalo, P., Villa-Ávila, E., Aguado, J. A. & Jurado, F. Predictive power fluctuation mitigation in grid-connected PV systems with rapid response to EV charging stations. J. Energy Storage 86, 111230 (2024).
+9. 9. Zhang, J. et al. Charging demand prediction in Beijing based on real-world electric vehicle data. J. Energy Storage 57, 106294 (2023).
+10. 10. Dubey, A. & Santoso, S. Electric vehicle charging on residential distribution systems: Impacts and mitigations. IEEE Access 3, 1871–1893 (2015).
+11. 11. Moon, H., Park, S. Y., Jeong, C. & Lee, J. Forecasting electricity demand of electric vehicles by analyzing consumers' charging patterns. Transp. Res. Part D: Transp. Environ. 62, 64–79 (2018).
+12. 12. Buzna, L., De Falco, P., Khormali, S., Proto, D. & Straka, M. Electric vehicle load forecasting: A comparison between time series and machine learning approaches. in 2019 1st International Conference on Energy Transition in the Mediterranean Area (SyNERGY MED), 1–5 (IEEE, 2019).
+13. 13. Louie, H. M. Time-series modeling of aggregated electric vehicle charging station load. Electr. Power Compd. Syst. 45, 1498–1511 (2017).
+14. 14. Qin, Y., Wang, J., Ren, S. & Li, Z. Prediction of ev random charging load based on monte carlo simulation method. in 2023 3rd International Conference on New Energy and Power Engineering (ICNEPE), 295–298 (IEEE, 2023). Fig.
+15. 11. The prediction results of different models at K =
+16. 96. Scientific Reports | (2026) 16:8609 11 | https://doi.org/10.1038/s41598-026-38562-z www.nature.com/scientificreports/
+17. 15. Wang, S. et al. EV charging behavior analysis and load prediction via order data of charging stations. Sustainability 17, 1807 (2025).
+18. 16. Khodayar, M., Liu, G., Wang, J. & Khodayar, M. E. Deep learning in power systems research: A review. CSEE J. Power Energy Syst. 7, 209–220 (2020).
+19. 17. LeCun, Y., Bengio, Y. & Hinton, G. Deep learning. Nature 521, 436–444 (2015).
+20. 18. Jahangir, H. et al. Charging demand of plug-in electric vehicles: Forecasting travel behavior based on a novel rough artificial neural network approach. J. Clean. Prod. 229, 1029–1044 (2019).
+21. 19. Chang, M., Bae, S., Cha, G. & Yoo, J. Aggregated electric vehicle fast-charging power demand analysis and forecast based on LSTM neural network. Sustainability 13, 13783 (2021).
+22. 20. Lu, F. et al. Ultra-short-term prediction of EV aggregator's demond response flexibility using arima, gaussian-arima, lstm and gaussian-lstm. in 2021 3rd International Academic Exchange Conference on Science and Technology Innovation (IAECST), 1775– 1781 (IEEE, 2021).
+23. 21. Guo, Z., Bian, H., Zhou, C., Ren, Q. & Gao, Y. An electric vehicle charging load prediction model for different functional areas based on multithreaded acceleration. J. Energy Storage 73, 108921 (2023).
+24. 22. Koohfar, S., Woldemariam, W. & Kumar, A. Prediction of electric vehicles charging demand: A transformer-based deep learning approach. Sustainability 15, 2105 (2023).
+25. 23. Zhang, Y., Ma, L., Pal, S., Zhang, Y. & Coates, M. Multi-resolution time-series transformer for long-term forecasting. in International conference on artificial intelligence and statistics, 4222–4230 (PMLR, 2024).
+26. 24. Zhou, Z. et al. Sdformer: transformer with spectral filter and dynamic attention for multivariate time series long-term forecasting. in Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence (IJCAI-24), Jeju, Republic of Korea, 3–9 (2024).
+27. 25. Paszke, A. et al. Pytorch: An imperative style, high-performance deep learning library. Advances in neural information processing systems 32 (2019).
+28. 26. Kingma, D. P. & Ba, J. Adam: A method for stochastic optimization. arXiv:1412.6980 (2014).
+29. 27. Chung, J., Gulcehre, C., Cho, K. & Bengio, Y. Empirical evaluation of gated recurrent neural networks on sequence modeling. arXiv:1412.3555 (2014).
+30. 28. Hochreiter, S. & Schmidhuber, J. Long short-term memory. Neural Comput. 9, 1735–1780 (1997).
+31. 29. Graves, A. & Schmidhuber, J. Framewise phoneme classification with bidirectional LSTM and other neural network architectures. Neural Netw. 18, 602–610 (2005).
+32. 30. Vaswani, A. et al. Attention is all you need. Advances in neural information processing systems 30 (2017).
+33. 31. Liu, Q. et al. Physics-guided TL-LSTM network for early-stage degradation trajectory prediction of lithium-ion batteries. J. Energy Storage 106, 114736 (2025).
+34. 32. Qiao, D. et al. Mechanism of battery expansion failure due to excess solid electrolyte interphase growth in lithium-ion batteries. ETransportation https://doi.org/10.1016/j.etran.2025.100450 (2025). Acknowledgements This research was funded by the Key R&D Program Project of Shaanxi Province (2024GX-ZDCYL-02-14), the Qinchuangyuan Cites High-level Innovation and Entrepreneurship Talent Project (QCYRCXM2023-110), the General funding project of China Postdoctoral Science Foundation (2024M752739), and the Research Funds for the lnterdisciplinary Projects CHU (300104240924). Author contributions W.L. conceived the experiment(s), J.Q. and X.W. conducted the experiment(s), X.Z. analysed the results. All authors reviewed the manuscript. Declarations Competing interests The authors declare no competing interests. Additional information Correspondence and requests for materials should be addressed to J.Q. Reprints and permissions information is available at www.nature.com/reprints. Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit ​h​t​t​p​:​/​/​c​r​e​a​t​i​v​e​c​o​m​m​o​ n​s​.​o​r​g​/​l​i​c​e​n​s​e​s​/​b​y​-​n​c​-​n​d​/​4​.​0​/​.​ © The Author(s) 2026 Scientific Reports | (2026) 16:8609 12 | https://doi.org/10.1038/s41598-026-38562-z www.nature.com/scientificreports/

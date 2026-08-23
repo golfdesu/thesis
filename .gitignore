@@ -1,0 +1,15 @@
+# Copyrighted material — do not redistribute
+raw_sources/*.pdf
+
+# Derived copyrighted text extractions
+scratch/
+
+# Obsidian workspace state (machine-specific)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+
+# System
+Theses.sln
+*.tmp
+~$*
