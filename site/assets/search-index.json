@@ -917,13 +917,6 @@
     "body": "# APNE\n\nAPNE \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or "
   },
   {
-    "title": "ARC",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/ARC.html",
-    "body": "# ARC\n\nARC \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or lo"
-  },
-  {
     "title": "AutoRegressive Integrated Moving Average (ARIMA)",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -1470,13 +1463,6 @@
     "body": "# DNI\n\nDNI \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or lo"
   },
   {
-    "title": "Dow Jones 1972 1975",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/Dow_Jones_1972_1975.html",
-    "body": "# Dow Jones 1972 1975\n\nDow Jones 1972 1975 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity c"
-  },
-  {
     "title": "DP RNN",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -1897,13 +1883,6 @@
     "body": "# Hardware Performance Counters\n\nHardware Performance Counters \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output str"
   },
   {
-    "title": "HellaSwag",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/HellaSwag.html",
-    "body": "# HellaSwag\n\nHellaSwag \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and "
-  },
-  {
     "title": "Hessian Vector Products",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -2000,13 +1979,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/IEEE_33_Node_Distribution_System.html",
     "body": "# IEEE 33 Node Distribution System\n\nIEEE 33 Node Distribution System \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/outp"
-  },
-  {
-    "title": "IMDB Movie Reviews",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/IMDB_Movie_Reviews.html",
-    "body": "# IMDB Movie Reviews\n\nIMDB Movie Reviews \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity cha"
   },
   {
     "title": "Inception 2D CNN",
@@ -2147,13 +2119,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/LagLlama.html",
     "body": "# LagLlama\n\nOpen-source lag-feature-based foundation model for univariate probabilistic forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*\n\nLagLlama builds its input representation purely from lagged values of the target series, making it a lightweight open-source alternative to ["
-  },
-  {
-    "title": "LAMBADA",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/LAMBADA.html",
-    "body": "# LAMBADA\n\nLAMBADA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the "
   },
   {
     "title": "LAN",
@@ -2464,13 +2429,6 @@
     "body": "# MIK TST\n\nMIK TST \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the "
   },
   {
-    "title": "MIMIC III",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/MIMIC-III.html",
-    "body": "# MIMIC III\n\nMIMIC III \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and "
-  },
-  {
     "title": "MiniImageNet",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -2653,13 +2611,6 @@
     "body": "# MVGRL\n\nMVGRL \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV o"
   },
   {
-    "title": "Nasdaq CNNpred",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/Nasdaq_CNNpred.html",
-    "body": "# Nasdaq CNNpred\n\nNasdaq CNNpred \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteris"
-  },
-  {
     "title": "NBEATS G",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -2765,13 +2716,6 @@
     "body": "# Observation Mask\n\nObservation Mask \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity charact"
   },
   {
-    "title": "OpenBookQA",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/OpenBookQA.html",
-    "body": "# OpenBookQA\n\nOpenBookQA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
-  },
-  {
     "title": "Operating Cost",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -2784,13 +2728,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/Optimality_Gap.html",
     "body": "# Optimality Gap\n\nOptimality Gap \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteris"
-  },
-  {
-    "title": "Oxford Man Realized Library",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/Oxford_Man_Realized_Library.html",
-    "body": "# Oxford Man Realized Library\n\nOxford Man Realized Library \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structu"
   },
   {
     "title": "PAG (Physics-Informed Attention Graph)",
@@ -2821,13 +2758,6 @@
     "body": "# PCA\n\nPrincipal Component Analysis: linear dimensionality reduction retaining maximal variance; used for input compression and clustering.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
   },
   {
-    "title": "Penn Treebank",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/Penn_Treebank.html",
-    "body": "# Penn Treebank\n\nPenn Treebank \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristi"
-  },
-  {
     "title": "Periodic Kernel",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -2854,13 +2784,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/PFGA.html",
     "body": "# PFGA\n\nPFGA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or "
-  },
-  {
-    "title": "PhysioNet 2012 Healthcare",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/PhysioNet_2012_Healthcare.html",
-    "body": "# PhysioNet 2012 Healthcare\n\nPhysioNet 2012 Healthcare \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, "
   },
   {
     "title": "PICCN",
@@ -2896,13 +2819,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/PIML.html",
     "body": "# PIML\n\nPIML \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or "
-  },
-  {
-    "title": "PIQA",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/PIQA.html",
-    "body": "# PIQA\n\nPIQA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or "
   },
   {
     "title": "PJM Day Ahead Tariff",
@@ -3246,13 +3162,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/RTRL.html",
     "body": "# RTRL\n\nRTRL \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or "
-  },
-  {
-    "title": "RULER NIAH",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/RULER_NIAH.html",
-    "body": "# RULER NIAH\n\nRULER NIAH \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
   },
   {
     "title": "Structured State Space Model (S4)",
@@ -3682,13 +3591,6 @@
     "body": "# Temporal Order Problem\n\nTemporal Order Problem \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, comple"
   },
   {
-    "title": "text8",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/text8.html",
-    "body": "# text8\n\ntext8 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV o"
-  },
-  {
     "title": "Text Tokens",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -3871,13 +3773,6 @@
     "body": "# Two Stage Attention\n\nTwo Stage Attention \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity c"
   },
   {
-    "title": "UCI Air Quality",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/UCI_Air_Quality.html",
-    "body": "# UCI Air Quality\n\nUCI Air Quality \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity character"
-  },
-  {
     "title": "UGnet",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -4032,20 +3927,6 @@
     "body": "# Weight Normalization\n\nWeight Normalization \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity"
   },
   {
-    "title": "Wikitext 103",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/Wikitext-103.html",
-    "body": "# Wikitext 103\n\nWikitext 103 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics"
-  },
-  {
-    "title": "WinoGrande",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/WinoGrande.html",
-    "body": "# WinoGrande\n\nWinoGrande \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
-  },
-  {
     "title": "WITRAN",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -4128,6 +4009,13 @@
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Appliance_Level_Load.html",
     "body": "# Appliance Level Load\n\nAppliance Level Load \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in t"
+  },
+  {
+    "title": "ARC",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/ARC.html",
+    "body": "# ARC\n\nARC \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or lo"
   },
   {
     "title": "ASU Campus Metabolism Dataset",
@@ -4291,6 +4179,13 @@
     "body": "# \ud83d\udcc1 DiffPLF California City EV Charging Dataset\n\n## Overview\nPublic EV charging station usage dataset from California cities used to benchmark DiffPLF (Conditional Diffusion Probabilistic Forecasting). Demonstrates conditional multi-trajectory load generation under varying EV arrival rates.\n\n## Acce"
   },
   {
+    "title": "Dow Jones 1972 1975",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/Dow_Jones_1972_1975.html",
+    "body": "# Dow Jones 1972 1975\n\nDow Jones 1972 1975 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity c"
+  },
+  {
     "title": "Dundee City Council Public EV Charging Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4452,6 +4347,13 @@
     "body": "# HD 189733 Photometry\n\nHD 189733 Photometry \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in t"
   },
   {
+    "title": "HellaSwag",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/HellaSwag.html",
+    "body": "# HellaSwag\n\nHellaSwag \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and "
+  },
+  {
     "title": "Historical Installation Events",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4501,6 +4403,13 @@
     "body": "# Influenza-like Illness Dataset\n\nLong-horizon forecasting benchmark derived from the **US CDC ILINet** (Influenza-like Illness Surveillance Network): weekly percentage of outpatient visits for influenza-like illness, national + regional levels. The benchmark slice covers roughly weekly observations"
   },
   {
+    "title": "IMDB Movie Reviews",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/IMDB_Movie_Reviews.html",
+    "body": "# IMDB Movie Reviews\n\nIMDB Movie Reviews \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity cha"
+  },
+  {
     "title": "Indianapolis DER Adoption Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4534,6 +4443,13 @@
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Knot_Theory_Dataset.html",
     "body": "# Knot Theory Dataset\n\nKnot Theory Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in thi"
+  },
+  {
+    "title": "LAMBADA",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/LAMBADA.html",
+    "body": "# LAMBADA\n\nLAMBADA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the "
   },
   {
     "title": "LA Charging Station Dataset",
@@ -4592,6 +4508,13 @@
     "body": "# Market Price\n\nMarket Price \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge ba"
   },
   {
+    "title": "MIMIC III",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/MIMIC-III.html",
+    "body": "# MIMIC III\n\nMIMIC III \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and "
+  },
+  {
     "title": "MISO Market Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4632,6 +4555,13 @@
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/NASDAQ100_Stock_Price_Dataset.html",
     "body": "# NASDAQ100 Stock Price Dataset\n\nNASDAQ100 Stock Price Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the foreca"
+  },
+  {
+    "title": "Nasdaq CNNpred",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/Nasdaq_CNNpred.html",
+    "body": "# Nasdaq CNNpred\n\nNasdaq CNNpred \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteris"
   },
   {
     "title": "New York Grid",
@@ -4732,6 +4662,20 @@
     "body": "# Ontario Grid\n\nOntario Grid \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge ba"
   },
   {
+    "title": "OpenBookQA",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/OpenBookQA.html",
+    "body": "# OpenBookQA\n\nOpenBookQA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
+  },
+  {
+    "title": "Oxford Man Realized Library",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/Oxford_Man_Realized_Library.html",
+    "body": "# Oxford Man Realized Library\n\nOxford Man Realized Library \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structu"
+  },
+  {
     "title": "City of Palo Alto EV Charging Station Usage Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4760,11 +4704,32 @@
     "body": "# \ud83d\udcc1 Pecan Street Dataport\n\n## \ud83d\udd17 Access Links & Repositories\n- **Pecan Street Dataport**: [Pecan Street Official Portal](https://www.pecanstreet.org/dataport/)\n\n## Overview\n\nThe **Pecan Street Dataport** is a large-scale residential energy dataset from **Pecan Street Inc.** (affiliated with Universit"
   },
   {
+    "title": "Penn Treebank",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/Penn_Treebank.html",
+    "body": "# Penn Treebank\n\nPenn Treebank \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristi"
+  },
+  {
     "title": "Perth & Kinross EV Charging Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Perth_EV.html",
     "body": "# \ud83d\udcc1 Perth & Kinross EV Charging Dataset\n\n## \ud83d\udd17 Access Links & Repositories\n- **Perth & Kinross Open Data (verified 2026-08-23)**: [EV Charging Data](https://data.pkc.gov.uk/dataset/ev-charging-data)\n- **ChargePlace Scotland feed** (source of the underlying session records; used by Ullah et al. 2026)\n"
+  },
+  {
+    "title": "PhysioNet 2012 Healthcare",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/PhysioNet_2012_Healthcare.html",
+    "body": "# PhysioNet 2012 Healthcare\n\nPhysioNet 2012 Healthcare \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, "
+  },
+  {
+    "title": "PIQA",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/PIQA.html",
+    "body": "# PIQA\n\nPIQA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or "
   },
   {
     "title": "PJM Energy Market Dataset",
@@ -4807,6 +4772,13 @@
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/rllab_2D_Navigation.html",
     "body": "# rllab 2D Navigation\n\nrllab 2D Navigation \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in thi"
+  },
+  {
+    "title": "RULER NIAH",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/RULER_NIAH.html",
+    "body": "# RULER NIAH\n\nRULER NIAH \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
   },
   {
     "title": "Shanghai EV Arrival Data",
@@ -4963,6 +4935,13 @@
     "body": "# Tao's Vanilla Benchmark\n\nTao's Vanilla Benchmark \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studie"
   },
   {
+    "title": "text8",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/text8.html",
+    "body": "# text8\n\ntext8 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV o"
+  },
+  {
     "title": "Tourism Forecasting Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4982,6 +4961,13 @@
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Traffic.html",
     "body": "# Traffic Time-Series Dataset\n\nMultivariate road-occupancy series used in forecasting benchmarks.\n\nTwo distinct benchmarks share this name:\n- **PEM-SF Traffic** (this repo; used by DeepAR/TimeGrad): San Francisco Bay Area freeway occupancy from California PeMS, 963 sensors, 15-minute resolution.\n- *"
+  },
+  {
+    "title": "UCI Air Quality",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/UCI_Air_Quality.html",
+    "body": "# UCI Air Quality\n\nUCI Air Quality \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity character"
   },
   {
     "title": "UCI EEG",
@@ -5089,11 +5075,25 @@
     "body": "# Wikipedia Pageviews \u2192 [[Wikipedia]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Wikipedia]]**.\n\nReason: Almost certainly the Kaggle Wikipedia web-traffic source described in [[Wikipedia]] (cf. [[2021_Rasul_TimeGrad_Diffus"
   },
   {
+    "title": "Wikitext 103",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/Wikitext-103.html",
+    "body": "# Wikitext 103\n\nWikitext 103 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics"
+  },
+  {
     "title": "Wiki Pageviews",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Wiki_Pageviews.html",
     "body": "# Wiki Pageviews \u2192 [[Wikipedia]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Wikipedia]]**.\n\nReason: Likely the same Wikipedia web-traffic source described in [[Wikipedia]]; verify that [[2021_Tashiro_CSDI_Conditional_Diffu"
+  },
+  {
+    "title": "WinoGrande",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/WinoGrande.html",
+    "body": "# WinoGrande\n\nWinoGrande \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
   },
   {
     "title": "WMT 2014 EN DE",
