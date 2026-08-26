@@ -2,7 +2,7 @@
 
 - Vault: `C:\Users\chaya\Documents\Obsidian\Thesis`
 - Notes scanned: **1071**
-- Total wiki-links found: **7942**
+- Total wiki-links found: **7932**
 - Broken (unresolved) targets: **1**
 - Total broken-link occurrences: **1**
 

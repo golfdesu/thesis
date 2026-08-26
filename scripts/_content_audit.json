@@ -1,7 +1,9 @@
 {
   "yaml_errors": [],
   "missing_fields": [],
-  "year_mismatch": [],
+  "year_mismatch": [
+    "papers/2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load.md: filename 2025 vs frontmatter 2026"
+  ],
   "bad_doi": [
     "papers/2024_Feng_LSTM_Transformer_EV_Consumption.md: https://ssrn.com/abstract=4747046"
   ],
@@ -21,17 +23,16 @@
   "empty_bodies": [],
   "title_stem_mismatch": [],
   "counts": {
-    "dataset": 144,
-    "model": 463,
-    "": 83,
+    "dataset": 156,
+    "model": 453,
+    "": 82,
     "feature": 152,
     "github": 3,
-    "guide": 13,
-    "none": 4,
+    "guide": 14,
     "hyperparameter": 33,
+    "none": 3,
     "metric": 56,
     "feedforward-neural-network": 1,
-    "model-architecture": 1,
     "paper": 118
   },
   "total": 1071

@@ -581,13 +581,6 @@
     "body": "# Summary: Multi-View Graph Contrastive Representative Learning for Intrusion Detection in EV Charging Station\n\n## \ud83c\udfaf Main Objective & Contribution\n- EV charging infrastructure (EVSE \u2194 CSMS via [[OCPP]], EVCC via ISO15118) is exposed to cyberattacks (DoS/DDoS, MitM, cryptojacking, scans, floods). Tra"
   },
   {
-    "title": "Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model",
-    "year": 2025,
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load.html",
-    "body": "# Summary: Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model\n\n## \ud83c\udfaf Main Objective & Contribution\n- Short-term, hourly, **station-level** EV charging load forecasting of session energy delivered ([[kWhDelivered]]) for energy management and grid stability.\n- Con"
-  },
-  {
     "title": "Probabilistic Forecast of EV Charging Demand using Quantile Regression and LSTM with Attention Mechanism",
     "year": 2025,
     "cat_name": "Papers & Literature",
@@ -712,6 +705,13 @@
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2026_Liu_MFT_Multi_Scale_Fusion_Transformer.html",
     "body": "# Summary: Multi-scale fusion transformer for EV charging station load prediction\n\n## \ud83c\udfaf Main Objective & Contribution\n- EV charging station load prediction is challenged by stochastic charging behavior and complex external influences (weather, traffic). Existing deep models fail to capture **multi-s"
+  },
+  {
+    "title": "Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model",
+    "year": 2026,
+    "cat_name": "Papers & Literature",
+    "rel_url": "papers/2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load.html",
+    "body": "# Summary: Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model\n\n## \ud83c\udfaf Main Objective & Contribution\n- Short-term, hourly, **station-level** EV charging load forecasting of session energy delivered ([[kWhDelivered]]) for energy management and grid stability.\n- Con"
   },
   {
     "title": "Forecasting EV charging load with a temporal fusion transformer: A multi-horizon and interpretable approach with environmental features",
@@ -1054,7 +1054,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/CAT_Former.html",
-    "body": "# \ud83e\udde0 Context-Aware Temporal Transformer (CAT-Former)\n\n## Overview\nCAT-Former fuses **Temporal Features** ($h, dw, dt, dm, sd$) with **Contextual Features** ($S_{\\text{lat}}, S_{\\text{long}}, W_{\\text{temp}}, W_{\\text{percip}}, W_{\\text{wind}}$) into a unified positional-encoded Transformer self-atten"
+    "body": "# \ud83e\udde0 Context-Aware Temporal Transformer (CAT-Former)\n\n## Overview\nCAT-Former fuses **Temporal Features** ($h, dw, dt, dm, sd$) with **Contextual Features** ($S_{\\text{lat}}, S_{\\text{long}}, W_{\\text{temp}}, W_{\\text{precip}}, W_{\\text{wind}}$) into a unified positional-encoded Transformer self-atten"
   },
   {
     "title": "Causal Dilated Convolution",
@@ -1516,7 +1516,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/EGAT.html",
-    "body": "# EGAT\n\nEdge-augmented Graph Attention Network used in federated EV load studies.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# EGAT\n\nEdge-augmented Graph Attention Network used in federated EV load studies.\n\n## Referenced in this knowledge base\n\n[[2025_Han_Vertical_Federated_EGAT_LSTM]]"
   },
   {
     "title": "Embedded Generation Capacity",
@@ -1761,7 +1761,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Gaussian_Process.html",
-    "body": "# Gaussian Process\n\nNon-parametric Bayesian regression with kernel-defined uncertainty; see [[Deep_Gaussian_Process]] and [[Sparse_GP]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Gaussian Process\n\nNon-parametric Bayesian regression with kernel-defined uncertainty; see [[Deep_Gaussian_Process]] and [[Sparse_GP]].\n\n## Referenced in this knowledge base\n\n[[2013_Roberts_Gaussian_Processes_Time_Series]]"
   },
   {
     "title": "Gaussian Process Regression",
@@ -1831,7 +1831,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/GNN.html",
-    "body": "# GNN\n\nGraph Neural Network umbrella term; spatial-relational building block behind [[GCN]], [[GAT]], and spatio-temporal variants.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# GNN\n\nGraph Neural Network umbrella term; spatial-relational building block behind [[GCN]], [[GAT]], and spatio-temporal variants.\n\n## Referenced in this knowledge base\n\n[[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]"
   },
   {
     "title": "GPT 2",
@@ -1936,7 +1936,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Holt_Exponential_Smoothing.html",
-    "body": "# Holt Exponential Smoothing\n\nDouble exponential smoothing with level and trend components; classical baseline (ETS family).\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Holt Exponential Smoothing\n\nDouble exponential smoothing with level and trend components; classical baseline (ETS family).\n\n## Referenced in this knowledge base\n\n[[2024_Bampos_EV_Load_Forecasting_DAM]]"
   },
   {
     "title": "HPCP",
@@ -2209,7 +2209,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/LogTrans.html",
-    "body": "## Overview\nTransformer with logarithmic sparse attention reducing complexity to O(L log L) for long sequences.\n\n## Key References\n- [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]\n\n## Role in EV / Load Forecasting\nPrecursor of locality-aware attention used in long-term forecasting comparisons "
+    "body": "## Overview\nTransformer with logarithmic sparse attention reducing attention-memory complexity to $O(L(\\log L)^2)$ for long sequences (see [[LogSparse_Transformer]]).\n\n## Key References\n- [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]\n\n## Role in EV / Load Forecasting\nPrecursor of locality-awa"
   },
   {
     "title": "Low Frequency Components",
@@ -3014,7 +3014,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Recurrent_Cascade_Correlation.html",
-    "body": "# Recurrent Cascade Correlation\n\n> [!warning] Misfiled concept\n> This note lives in `wiki/metrics/` but **Cascade-Correlation / Recurrent Cascade-Correlation (Fahlman & Lebiere, 1990; recurrent variant by Girardi & Fahlman) is a neural-network *architecture* and constructive learning algorithm**, no"
+    "body": "# Recurrent Cascade Correlation\n\n## Definition\n\nCascade-Correlation grows a network one hidden unit at a time: each new hidden unit is trained (via gradient ascent on correlation with residual error) while all downstream weights stay frozen, then installed as a cascade layer. The **recurrent** varia"
   },
   {
     "title": "Reformer",
@@ -4022,7 +4022,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/ASU_Campus_Metabolism_Dataset.html",
-    "body": "# ASU Campus Metabolism Dataset\n\nASU Campus Metabolism Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the foreca"
+    "body": "# ASU Campus Metabolism Dataset\n\nASU Campus Metabolism \u2014 ASU's Energy Information System dashboard (\"Campus Metabolism\", live at cm.asu.edu since 2008) metering electricity, chilled water, heating and solar across Tempe campus buildings. Verified 2026-08: public research release (github.com/hepei002"
   },
   {
     "title": "Ausgrid Zone Substation Dataset",
@@ -4064,7 +4064,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Bramblemet_Sensor_Network.html",
-    "body": "# Bramblemet Sensor Network\n\nBramblemet Sensor Network \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting st"
+    "body": "# Bramblemet Sensor Network\n\nThe **Bramblemet network** \u2014 four real-time coastal stations (Bramblemet on Bramble Bank, Cambermet at Chichester Bar, Chimet off Hayling Island, Sotonmet at Southampton Dock Head) run by the Solentmet Support Group with ABP Southampton hydrography. Verified 2026-08: arc"
   },
   {
     "title": "CAISO Load Data (Today's Outlook)",
@@ -4260,7 +4260,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Favorita_Retail.html",
-    "body": "# Favorita Retail\n\nFavorita Retail \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowle"
+    "body": "# Favorita Retail\n\nFavorita Retail \u2014 the **Corporaci\u00f3n Favorita Grocery Sales Forecasting** dataset (Kaggle competition, Ecuadorian grocery chain). Verified 2026-08: daily unit sales per store-item with promotions, holidays/oil-price covariates; training data spans **2013-01-01 to 2017-08-15**, 54 s"
   },
   {
     "title": "FEDQR Feature-Enhanced EV Charging Station Dataset",
@@ -4365,14 +4365,14 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Hong_Kong_EV_Charging_Dataset.html",
-    "body": "# Hong Kong EV Charging Dataset\n\nHong Kong EV Charging Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the foreca"
+    "body": "# Hong Kong EV Charging Dataset\n\nNo canonical public session-level Hong Kong EV charging dataset could be confirmed (checked 2026-08). Public sources on data.gov.hk are infrastructure registries only \u2014 CLP Power's \"Electric Vehicle Charging Stations\" list and HK Electric's charging-station layer \u2014 n"
   },
   {
     "title": "Hospital Semi Public Charging Site Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Hospital_Semi_Public_Charging_Site_Dataset.html",
-    "body": "# Hospital Semi Public Charging Site Dataset\n\nHospital Semi Public Charging Site Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographi"
+    "body": "# Hospital Semi Public Charging Site Dataset\n\nUse-case dataset of **Van Kriekinge et al. (2021)**, *Day-Ahead Forecast of Electric Vehicle Charging Demand with Deep Neural Networks* (WEVJ 12(4):178) \u2014 charging sessions recorded at a **hospital semi-public site in Brussels, Belgium**: six chargers wi"
   },
   {
     "title": "Norway Hourly EV Charging Load Dataset",
@@ -4393,7 +4393,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/IDEAL_Dataset.html",
-    "body": "# IDEAL Dataset\n\nIDEAL Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge "
+    "body": "# IDEAL Dataset\n\nThe **IDEAL Household Energy Dataset** \u2014 EPSRC-funded *Intelligent Domestic Energy Advice Loop* project, University of Edinburgh. Verified 2026-08 (Pullinger et al., *Scientific Data* 8, 2021, doi:10.1038/s41597-021-00921-y): 255 UK homes in Edinburgh/Lothians/south Fife, main study"
   },
   {
     "title": "Influenza-like Illness Dataset",
@@ -4456,7 +4456,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/LA_Charging_Station_Dataset.html",
-    "body": "# LA Charging Station Dataset\n\nLA Charging Station Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecastin"
+    "body": "# LA Charging Station Dataset\n\nLA Charging Station Dataset \u2014 likely the City of Los Angeles public EV charging station usage data (LA open data portal), used for EV charging-demand forecasting in e.g. Yi et al. (2022) alongside Utah data; also referenced by [[2025_Weqar_LTLM_LSTM_EV_Load]]. Exact po"
   },
   {
     "title": "Liuyue Charging Station Dataset",
@@ -4757,7 +4757,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Real_World_EV_DC_Charging.html",
-    "body": "# \ud83d\udcc1 Real-World EV DC Fast Charging Profiles & Durations\n\n## \ud83d\udcca Overview\nA comprehensive dataset of real-world Electric Vehicle (EV) Direct Current (DC) fast charging profiles and durations analyzed in Nature Communications (2025). Used to train and evaluate Temporal Fusion Transformer (TFT) models pr"
+    "body": "# \ud83d\udcc1 Real-World EV DC Fast Charging Profiles & Durations\n\n## \ud83d\udcca Overview\nA comprehensive dataset of 909,135 real-world EV DC fast charging sessions collected across public networks in the UK and Germany, analyzed in Nature Communications (2025). Used to train and evaluate Temporal Fusion Transformer ("
   },
   {
     "title": "REFIT Smart-Meter Household Dataset",
@@ -4960,7 +4960,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Traffic.html",
-    "body": "# Traffic Time-Series Dataset\n\nMultivariate road-occupancy series used in forecasting benchmarks.\n\nTwo distinct benchmarks share this name:\n- **PEM-SF Traffic** (this repo; used by DeepAR/TimeGrad): San Francisco Bay Area freeway occupancy from California PeMS, 963 sensors, 15-minute resolution.\n- *"
+    "body": "# Traffic Time-Series Dataset\n\nMultivariate road-occupancy series used in forecasting benchmarks.\n\nTwo distinct benchmarks share this name:\n- **PEM-SF Traffic** (this repo; used by DeepAR/TimeGrad): San Francisco Bay Area freeway occupancy from California PeMS, 963 sensors, hourly resolution.\n- **LT"
   },
   {
     "title": "UCI Air Quality",
