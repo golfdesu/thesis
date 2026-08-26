@@ -1,8 +1,8 @@
 # Broken Wiki-Link Report
 
 - Vault: `C:\Users\chaya\Documents\Obsidian\Thesis`
-- Notes scanned: **1081**
-- Total wiki-links found: **8006**
+- Notes scanned: **1074**
+- Total wiki-links found: **7995**
 - Broken (unresolved) targets: **2**
 - Total broken-link occurrences: **2**
 

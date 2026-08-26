@@ -21,20 +21,6 @@
     "body": "# Summary: Gaussian processes for time-series modelling\n\n## \ud83c\udfaf Main Objective & Contribution\n- Tutorial/review presenting **Bayesian non-parametric [[Gaussian_Process]] (GP) modelling** as a principled framework for time-series analysis, forecasting under uncertainty, interpolation AND extrapolation "
   },
   {
-    "title": "2014 Adam Adam Stochastic Optimization",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2014_Adam_Adam_Stochastic_Optimization.html",
-    "body": "# 2014 Adam Adam Stochastic Optimization\n\n2014 Adam Adam Stochastic Optimization \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue"
-  },
-  {
-    "title": "2014 Adam A Method for Stochastic Optimization",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2014_Adam_A_Method_for_Stochastic_Optimization.html",
-    "body": "# 2014 Adam A Method for Stochastic Optimization\n\n2014 Adam A Method for Stochastic Optimization \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (auth"
-  },
-  {
     "title": "A Scalable Stochastic Model for the Electricity Demand of Electric and Plug-In Hybrid Vehicles",
     "year": 2014,
     "cat_name": "Papers & Literature",
@@ -91,25 +77,11 @@
     "body": "# Summary: On First-Order Meta-Learning Algorithms\n\n## \ud83c\udfaf Main Objective & Contribution\n- **Problem**: [[MAML]] requires second-order derivatives (Hessian-vector products via differentiating through the inner-loop SGD) for its outer-loop update \u2014 computationally expensive and memory-heavy, and unsuit"
   },
   {
-    "title": "2019 Electric Vehicle Charging Load Forecasting A Comparative Study of Deep Learning Approaches",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2019_Electric_Vehicle_Charging_Load_Forecasting_A_Comparative_Study_of_Deep_Learning_Approaches.html",
-    "body": "# 2019 Electric Vehicle Charging Load Forecasting A Comparative Study of Deep Learning Approaches\n\n2019 Electric Vehicle Charging Load Forecasting A Comparative Study of Deep Learning Approaches \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cle"
-  },
-  {
     "title": "Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting",
     "year": 2019,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2019_Li_LogSparse_Enhancing_Locality_Transformer.html",
     "body": "# Summary: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting\n\n## \ud83c\udfaf Main Objective & Contribution\n- Applies the [[Transformer]] to multivariate time series forecasting and identifies two canonical weaknesses: **(1) locality-agnosticism** \u2014 point-wise "
-  },
-  {
-    "title": "2019 Short Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches.html",
-    "body": "# 2019 Short Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches\n\n2019 Short Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches \u2014 concept referenced in this research knowledge base. This stub was auto-generated du"
   },
   {
     "title": "Deep Learning-Based Multivariate Probabilistic Forecasting for Short-Term Scheduling in Power Markets",
@@ -140,13 +112,6 @@
     "body": "# Summary: Electric Vehicle Charging Load Forecasting: A Comparative Study of Deep Learning Approaches\n\n## \ud83c\udfaf Main Objective & Contribution\n- First study to use **real-world super-short-term (minute-level) EV charging data** (rather than simulation) for multi-time-step extra-short-term PEV charging l"
   },
   {
-    "title": "2020 Ensemble Learning for Charging Load Forecasting of Electric Vehicle Charging Stations",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations.html",
-    "body": "# 2020 Ensemble Learning for Charging Load Forecasting of Electric Vehicle Charging Stations\n\n2020 Ensemble Learning for Charging Load Forecasting of Electric Vehicle Charging Stations \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and n"
-  },
-  {
     "title": "Ensemble Learning for Charging Load Forecasting of Electric Vehicle Charging Stations",
     "year": 2020,
     "cat_name": "Papers & Literature",
@@ -168,22 +133,15 @@
     "body": "# Summary: DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks\n\n## \ud83c\udfaf Main Objective & Contribution\n- Introduces **[[DeepAR]]**, a methodology for probabilistic forecasting based on training an **autoregressive recurrent network** (multi-layer [[LSTM]]) as a **global model** acro"
   },
   {
-    "title": "2021 Alvarez APLF Adaptive Probabilistic Load",
-    "year": "",
+    "title": "Adaptive Probabilistic Load Forecasting (APLF)",
+    "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Alvarez_APLF_Adaptive_Probabilistic_Load.html",
     "body": "# 2021 Alvarez APLF Adaptive Probabilistic Load\n\n2021 Alvarez APLF Adaptive Probabilistic Load \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (author"
   },
   {
-    "title": "2021 An Ensemble Methodology for Hierarchical Probabilistic EV Load Forecasting at Regular Charging Stations",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations.html",
-    "body": "# 2021 An Ensemble Methodology for Hierarchical Probabilistic EV Load Forecasting at Regular Charging Stations\n\n2021 An Ensemble Methodology for Hierarchical Probabilistic EV Load Forecasting at Regular Charging Stations \u2014 concept referenced in this research knowledge base. This stub was auto-genera"
-  },
-  {
-    "title": "2021 Browell Fasiolo Regional Netload",
-    "year": "",
+    "title": "Probabilistic Forecasting of Regional Net-Load",
+    "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Browell_Fasiolo_Regional_Netload.html",
     "body": "# 2021 Browell Fasiolo Regional Netload\n\n2021 Browell Fasiolo Regional Netload \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue),"
@@ -203,20 +161,6 @@
     "body": "# Summary: Reinforcement Learning-Based Load Forecasting of Electric Vehicle Charging Station Using Q-Learning Technique\n\n## \ud83c\udfaf Main Objective & Contribution\n- **First RL-based framework covering all three PHEV charging regimes** \u2014 uncoordinated, coordinated, and smart charging \u2014 for EV charging stat"
   },
   {
-    "title": "2021 Day Ahead Forecast of Electric Vehicle Charging Demand with Deep Neural Networks",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2021_Day_Ahead_Forecast_of_Electric_Vehicle_Charging_Demand_with_Deep_Neural_Networks.html",
-    "body": "# 2021 Day Ahead Forecast of Electric Vehicle Charging Demand with Deep Neural Networks\n\n2021 Day Ahead Forecast of Electric Vehicle Charging Demand with Deep Neural Networks \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs exper"
-  },
-  {
-    "title": "Forecast-Enhanced Lyapunov Optimization for Real-Time EV Charging Scheduling",
-    "year": 2026,
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2021_Huang_Lyapunov_EV_Scheduling.html",
-    "body": "# Summary: Forecast-Enhanced Lyapunov Optimization for Real-Time EV Charging Scheduling\n\n## \ud83c\udfaf Main Objective & Contribution\n- **First work to incorporate short-term forecasts into the Lyapunov optimization framework** for online EV charging scheduling, overcoming the myopia of prediction-free Lyapun"
-  },
-  {
     "title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
     "year": 2021,
     "cat_name": "Papers & Literature",
@@ -224,8 +168,8 @@
     "body": "# Summary: Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting\n\n## \ud83c\udfaf Main Objective & Contribution\n- Proposes the **[[Temporal_Fusion_Transformer|Temporal Fusion Transformer]]**: an attention-based architecture for **multi-horizon forecasting** that natively handles "
   },
   {
-    "title": "2021 Obst Vilmarest Goude Kalman COVID France",
-    "year": "",
+    "title": "Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France",
+    "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Obst_Vilmarest_Goude_Kalman_COVID_France.html",
     "body": "# 2021 Obst Vilmarest Goude Kalman COVID France\n\n2021 Obst Vilmarest Goude Kalman COVID France \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (author"
@@ -294,8 +238,8 @@
     "body": "# Summary: Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift\n\n## \ud83c\udfaf Main Objective & Contribution\n- Addresses the **distribution shift problem** in time-series forecasting: statistical properties (mean/variance) of training vs. test data diverge because"
   },
   {
-    "title": "2022 Vilmarest Goude State Space PostCOVID",
-    "year": "",
+    "title": "State-Space Models for Post-COVID Short-Term Electricity Demand Forecasting",
+    "year": 2022,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2022_Vilmarest_Goude_State_Space_PostCOVID.html",
     "body": "# 2022 Vilmarest Goude State Space PostCOVID\n\n2022 Vilmarest Goude State Space PostCOVID \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, yea"
@@ -348,13 +292,6 @@
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words.html",
     "body": "# Summary: A Time Series is Worth 64 Words: Long-term Forecasting with Transformers\n\n## \ud83c\udfaf Main Objective & Contribution\n- Answers the [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF|DLinear challenge]] to Transformers by showing a vanilla-attention Transformer **can** be effective if designed pr"
-  },
-  {
-    "title": "2023 Prediction of Electric Vehicles Charging Demand A Transformer Based Deep Learning Approach",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach.html",
-    "body": "# 2023 Prediction of Electric Vehicles Charging Demand A Transformer Based Deep Learning Approach\n\n2023 Prediction of Electric Vehicles Charging Demand A Transformer Based Deep Learning Approach \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cle"
   },
   {
     "title": "DiffSTG: Probabilistic Spatio-Temporal Graph Forecasting with Denoising Diffusion Models",
@@ -411,13 +348,6 @@
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2024_Ali_MQ_TCN_Transfer_Learning_EV.html",
     "body": "# Summary: Location based Probabilistic Load Forecasting of EV Charging Sites: Deep Transfer Learning with Multi-Quantile Temporal Convolutional Network\n\n## \ud83c\udfaf Main Objective & Contribution\n- Prior EV charging-site load models are use-case/location specific, need large data + compute, give point fore"
-  },
-  {
-    "title": "2024 A Physics Informed and Attention Based Graph Learning Approach for Regional Electric Vehicle Charging Demand Prediction",
-    "year": "",
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction.html",
-    "body": "# 2024 A Physics Informed and Attention Based Graph Learning Approach for Regional Electric Vehicle Charging Demand Prediction\n\n2024 A Physics Informed and Attention Based Graph Learning Approach for Regional Electric Vehicle Charging Demand Prediction \u2014 concept referenced in this research knowledge"
   },
   {
     "title": "Electric vehicles load forecasting for day-ahead market participation using machine and deep learning methods",
@@ -735,13 +665,6 @@
     "body": "# Summary: Spatio-Temporal Modelling of Electric Vehicle Charging Demand\n\n## \ud83c\udfaf Main Objective & Contribution\nTwo-part contribution:\n1. **New open benchmark dataset**: large-scale longitudinal EV charging dataset from Scotland (October 2022 \u2013 April 2025), released openly via ChargePlace Scotland with"
   },
   {
-    "title": "A Mamba State-Space Sequence Model for AI-Driven Dynamic Aggregation and Predictive Control of Electric Vehicle Clusters in Vehicle-to-Grid Energy Management",
-    "year": 2026,
-    "cat_name": "Papers & Literature",
-    "rel_url": "papers/2026_Chen_PC_M3_Mamba_EV_Clusters.html",
-    "body": "# Summary: A Mamba State-Space Sequence Model for AI-Driven Dynamic Aggregation and Predictive Control of Electric Vehicle Clusters in Vehicle-to-Grid Energy Management\n\n## \ud83c\udfaf Main Objective & Contribution\n- Real-time [[Energy_Management_System|EMS]] for large EV clusters needs both fast aggregate fl"
-  },
-  {
     "title": "When Mamba Meets KAN: A Hybrid Learning Network for Electric Vehicle Charging Demand Prediction",
     "year": 2026,
     "cat_name": "Papers & Literature",
@@ -754,6 +677,13 @@
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark.html",
     "body": "# Summary: Benchmarking State Space Models, Transformers, and Recurrent Networks for US Grid Forecasting\n\n## \ud83c\udfaf Main Objective & Contribution\n\nFirst benchmark of SSM vs Transformer vs RNN architectures **across multiple US ISOs under identical protocols**. Five models \u2014 [[PowerMamba]], [[S_Mamba]], ["
+  },
+  {
+    "title": "Forecast-Enhanced Lyapunov Optimization for Real-Time EV Charging Scheduling",
+    "year": 2026,
+    "cat_name": "Papers & Literature",
+    "rel_url": "papers/2026_Huang_Lyapunov_EV_Scheduling.html",
+    "body": "# Summary: Forecast-Enhanced Lyapunov Optimization for Real-Time EV Charging Scheduling\n\n## \ud83c\udfaf Main Objective & Contribution\n- **First work to incorporate short-term forecasts into the Lyapunov optimization framework** for online EV charging scheduling, overcoming the myopia of prediction-free Lyapun"
   },
   {
     "title": "EVformer: A Spatio-Temporal Decoupled Transformer for Citywide EV Charging Load Forecasting",
@@ -805,6 +735,13 @@
     "body": "# Summary: Probabilistic Computing Forecasting Approach for EV Charging Load Forecasting Using Meta-Learning Enhanced Informer\n\n> Arpana Singh, Uma Nangia, M. Rizwan \u2014 Department of Electrical Engineering, Delhi Technological University, Delhi 110042, India. Applied Soft Computing 202 (2026) 115869."
   },
   {
+    "title": "A Mamba State-Space Sequence Model for AI-Driven Dynamic Aggregation and Predictive Control of Electric Vehicle Clusters in Vehicle-to-Grid Energy Management",
+    "year": 2026,
+    "cat_name": "Papers & Literature",
+    "rel_url": "papers/2026_Tang_PC_M3_Mamba_EV_Clusters.html",
+    "body": "# Summary: A Mamba State-Space Sequence Model for AI-Driven Dynamic Aggregation and Predictive Control of Electric Vehicle Clusters in Vehicle-to-Grid Energy Management\n\n## \ud83c\udfaf Main Objective & Contribution\n- Real-time [[Energy_Management_System|EMS]] for large EV clusters needs both fast aggregate fl"
+  },
+  {
     "title": "Decomposition and Stacked Meta-Learning for Short-Term Electric Vehicle Load Forecasting",
     "year": 2026,
     "cat_name": "Papers & Literature",
@@ -847,43 +784,43 @@
     "body": "# Summary: Dynamic charging load prediction using uncertainty-scale dual-direction transformer\n\n## \ud83c\udfaf Main Objective & Contribution\n- **Problem:** Conventional EV charging load forecasting struggles with (i) intricate temporal dependencies and spatial characteristics and (ii) uncertainty in load fluc"
   },
   {
-    "title": "Bahdanau2016 LSTMa Attention",
-    "year": "",
+    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "year": 2016,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Bahdanau2016_LSTMa_Attention.html",
     "body": "# Bahdanau2016 LSTMa Attention\n\nBahdanau2016 LSTMa Attention \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contrib"
   },
   {
-    "title": "Beltagy2020 Longformer",
-    "year": "",
+    "title": "Longformer: The Long-Document Transformer",
+    "year": 2020,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Beltagy2020_Longformer.html",
     "body": "# Beltagy2020 Longformer\n\nBeltagy2020 Longformer \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, mode"
   },
   {
-    "title": "Berrisch Ziel CRPS Learning",
-    "year": "",
+    "title": "CRPS Learning",
+    "year": 2023,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Berrisch_Ziel_CRPS_Learning.html",
     "body": "# Berrisch Ziel CRPS Learning\n\nBerrisch Ziel CRPS Learning \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contribut"
   },
   {
-    "title": "Gaillard2016 GEFCOM2014 Aggregation",
-    "year": "",
+    "title": "Forecasting Electricity Consumption by Aggregating Experts; How to Design a Good Set of Experts?",
+    "year": 2016,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Gaillard2016_GEFCOM2014_Aggregation.html",
     "body": "# Gaillard2016 GEFCOM2014 Aggregation\n\nGaillard2016 GEFCOM2014 Aggregation \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), ext"
   },
   {
-    "title": "Wintenberger2017 BOA",
-    "year": "",
+    "title": "Optimal learning with Bernstein Online Aggregation",
+    "year": 2017,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Wintenberger2017_BOA.html",
     "body": "# Wintenberger2017 BOA\n\nWintenberger2017 BOA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models a"
   },
   {
-    "title": "Zaffran2022 Adaptive Conformal",
-    "year": "",
+    "title": "Adaptive Conformal Predictions for Time Series",
+    "year": 2022,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Zaffran2022_Adaptive_Conformal.html",
     "body": "# Zaffran2022 Adaptive Conformal\n\nZaffran2022 Adaptive Conformal \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted con"
@@ -2412,7 +2349,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Mamba-3.html",
-    "body": "## Overview\nThird-generation selective state-space sequence model extending [[Mamba_SSM]]; referenced in 2026 EV forecasting studies.\n\n## Key References\n- [[2026_Lahoti_Mamba_3_Sequence_Modeling]]"
+    "body": "doi_url: \"https://arxiv.org/abs/2603.15569\"\n\n## Overview\nThird-generation selective state-space sequence model from Lahoti et al. (CMU / Princeton / Together AI / Cartesia), extending [[Mamba_SSM]] (Mamba-2) with three SSM-principled changes:\n1. **Exponential-trapezoidal discretization** for a more "
   },
   {
     "title": "MambaMixer",
@@ -2888,7 +2825,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/PC-M3.html",
-    "body": "## Overview\nPower-clustering Mamba variant for probabilistic forecasting across EV charging clusters.\n\n## Key References\n- [[2026_Chen_PC_M3_Mamba_EV_Clusters]]"
+    "body": "## Overview\nPower-clustering Mamba variant for probabilistic forecasting across EV charging clusters.\n\n## Key References\n- [[2026_Tang_PC_M3_Mamba_EV_Clusters]]"
   },
   {
     "title": "PCA",
@@ -4414,7 +4351,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/ERCOT_GridSet.html",
-    "body": "---\ntype: dataset\nname: ERCOT GridSet\nlocation: Electric Reliability Council of Texas (ERCOT), USA\nresolution: Hourly, 5-year span (2019\u20132023)\naccess: open (released with PowerMamba toolbox)\ndata_type: Multivariate power-system time series: 22 core channels; extended 262-channel version with externa"
+    "body": "# \ud83d\udcc1 ERCOT GridSet\n\n## Overview\n**GridSet** is a five-year hourly benchmark dataset for electric power systems released alongside [[PowerMamba]]: **43,824 hours (1,826 days), 2019\u20132023**, capturing Texas's rapid renewable/storage/flexible-load growth. Train = first 4 years; test = final year.\n\n## Cha"
   },
   {
     "title": "Electricity Transformer Temperature Dataset",
@@ -5086,7 +5023,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/UrbanEV_Dataset.html",
-    "body": "# \ud83d\udcc1 UrbanEV Dataset\n\n## \ud83d\udd17 Access Links & Repositories\n- **Source publication**: Li H, Qu H, Tan X, You L, Zhu R, Fan W. \"UrbanEV: an open benchmark dataset for urban electric vehicle charging demand prediction.\" *Scientific Data* 12(1):523, 2025.\n- **Project GitHub repository** (per [[2026_Wang_Xu_S"
+    "body": "# \ud83d\udcc1 UrbanEV Dataset\n\n## \ud83d\udd17 Access Links & Repositories\n- **Source publication**: Li H, Qu H, Tan X, You L, Zhu R, Fan W. \"UrbanEV: an open benchmark dataset for urban electric vehicle charging demand prediction.\" *Scientific Data* 12(1):523, 2025.\n- **GitHub**: https://github.com/IntelligentSystemsLa"
   },
   {
     "title": "US City Daily Load COVID",
@@ -7126,11 +7063,11 @@
     "body": "# References \u2014 [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]\n\n> **28 references** extracted from this paper.\n\n---\n\n1. E. Taherzadeh, S. Javadi, and M. Dabbaghjamanesh, \u201cNew optimal power management strategy for series plug-in hybrid electric vehicles,\u201d Int. J. Auto. Technol., vol. 19, no. 6, pp. 10"
   },
   {
-    "title": "References \u2014 [[2021_Huang_Lyapunov_EV_Scheduling]]",
+    "title": "References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2021_Huang_Lyapunov_EV_Scheduling_refs.html",
-    "body": "# References \u2014 [[2021_Huang_Lyapunov_EV_Scheduling]]\n\n> **25 references** extracted from this paper.\n\n---\n\n1. \u201cGlobal EV Outlook 2025,\u201d International Energy Agency, Tech. Rep., 2025.\n2. Y. Li and A. Jenn, \u201cImpact of electric vehicle charging demand on power distribution grid congestion,\u201d Proceedings"
+    "body": "# References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]\n\n> **25 references** extracted from this paper.\n\n---\n\n1. \u201cGlobal EV Outlook 2025,\u201d International Energy Agency, Tech. Rep., 2025.\n2. Y. Li and A. Jenn, \u201cImpact of electric vehicle charging demand on power distribution grid congestion,\u201d Proceedings"
   },
   {
     "title": "References \u2014 [[2021_VanKriekinge_Day_Ahead_EV_Demand]]",
@@ -7406,11 +7343,11 @@
     "body": "# References \u2014 [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]]\n\n> **26 references** extracted from this paper.\n\n---\n\n1. International Energy Agency, Global EV Outlook 2023. Technical report, IEA, Paris, 2023.\n2. T. Gnann, S. Funke, N. Jakobsson, P. Pl\u00f6tz, F. Sprei, and A. Bennehag, \"Fast charging "
   },
   {
-    "title": "References \u2014 [[2026_Chen_PC_M3_Mamba_EV_Clusters]]",
+    "title": "References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Chen_PC_M3_Mamba_EV_Clusters_refs.html",
-    "body": "# References \u2014 [[2026_Chen_PC_M3_Mamba_EV_Clusters]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. 1. Yip, A.; Hoehne, C.; Jadun, P.; Ledna, C.; Hale, E.; Muratori, M. Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States; Technical Repo"
+    "body": "# References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. 1. Yip, A.; Hoehne, C.; Jadun, P.; Ledna, C.; Hale, E.; Muratori, M. Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States; Technical Repo"
   },
   {
     "title": "References \u2014 [[2026_Hao_Mamba_KAN_HyKANet_EV]]",

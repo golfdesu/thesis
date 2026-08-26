@@ -1,0 +1,42 @@
+{
+  "yaml_errors": [],
+  "missing_fields": [
+    "papers/2021_Alvarez_APLF_Adaptive_Probabilistic_Load.md: missing ['doi_url']",
+    "papers/2021_Browell_Fasiolo_Regional_Netload.md: missing ['doi_url']",
+    "papers/2022_Vilmarest_Goude_State_Space_PostCOVID.md: missing ['doi_url']",
+    "papers/Gaillard2016_GEFCOM2014_Aggregation.md: missing ['doi_url']"
+  ],
+  "year_mismatch": [],
+  "bad_doi": [
+    "papers/2024_Feng_LSTM_Transformer_EV_Consumption.md: https://ssrn.com/abstract=4747046"
+  ],
+  "authors_issue": [],
+  "mojibake": {
+    "references/2015_Raza_Review_AI_Load_Demand_refs.md": [
+      {
+        "token": "ÞÞ",
+        "ctx": "¼ 1 N X N i ¼ 1 ðOT i ðtÞ\u0003OiðtÞÞ2 ð7Þ where \u0003 OT i ðtÞ¼target "
+      },
+      {
+        "token": "Þþ",
+        "ctx": "; p ð Þjk new ð Þ ¼ wjk old ð ÞþΔwjk ð19Þ Each output unit and"
+      }
+    ]
+  },
+  "empty_bodies": [],
+  "title_stem_mismatch": [],
+  "counts": {
+    "dataset": 144,
+    "": 87,
+    "feature": 152,
+    "github": 3,
+    "guide": 13,
+    "none": 4,
+    "hyperparameter": 33,
+    "metric": 57,
+    "model": 460,
+    "feedforward-neural-network": 1,
+    "paper": 120
+  },
+  "total": 1074
+}
