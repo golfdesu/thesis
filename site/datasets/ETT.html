@@ -180,11 +180,17 @@
         <h1 class="page-title">Electricity Transformer Temperature Dataset</h1>
         
         <article class="markdown-body">
-          <h1>Electricity Transformer Temperature Dataset</h1>
+          <p>Multivariate transformer-temperature benchmark released with the Informer paper (Zhou et al. 2021).</p>
 <br>
-<p>Multivariate transformer-temperature benchmark.</p>
+<div class="table-wrapper"><table class="data-table"><thead><tr><th>Variant</th><th>Stations</th><th>Steps</th><th>Resolution</th></tr></thead><tbody><tr><td>ETTh1/h2</td><td>2</td><td>17,420 each</td><td>hourly</td></tr><tr><td>ETTm1/m2</td><td>same 2 stations</td><td>69,680</td><td>15-min</td></tr></tbody></table></div>
 <br>
-<ul><li><strong>Reference</strong>: <a href="https://github.com/zhouhaoyi/ETDataset" target="_blank" rel="noopener" class="ext-link">https://github.com/zhouhaoyi/ETDataset</a></li></ul>
+<p>Each row carries 7 channels: oil temperature (target) + 6 informative power-load features. Two years of collection (Jul 2016 - Jun 2018).</p>
+<br>
+<h2>Usage in EV / Load Forecasting</h2>
+<p>The default long-horizon benchmark suite (<a href="../models/Informer.html" class="wiki-link" title="Navigate to Informer">Informer</a>, <a href="../models/Autoformer.html" class="wiki-link" title="Navigate to Autoformer">Autoformer</a>, <a href="../models/PatchTST.html" class="wiki-link" title="Navigate to PatchTST">PatchTST</a>, <a href="../models/DLinear.html" class="wiki-link" title="Navigate to DLinear">DLinear</a>, <a href="../models/TimesNet.html" class="wiki-link" title="Navigate to TimesNet">TimesNet</a>): standard splits predict {96, 192, 336, 720} steps ahead from 96-720 input steps.</p>
+<br>
+<h2>Access</h2>
+<ul><li><a href="https://github.com/zhouhaoyi/ETDataset" target="_blank" rel="noopener" class="ext-link">https://github.com/zhouhaoyi/ETDataset</a></li></ul>
         </article>
         
 <div class="related-box" data-reveal>

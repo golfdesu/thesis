@@ -180,15 +180,20 @@
         <h1 class="page-title">CRPS Learning</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2023</strong></span><span class="chip">👤 Authors: <strong>Jonathan Berrisch, Florian Ziel</strong></span><span class="chip">🏛️ Venue: <strong>arXiv preprint (Quantitative Finance lineage)</strong></span><span class="chip">🔗 DOI: <a href="https://arxiv.org/abs/2302.03511" target="_blank" rel="noopener" class="ext-link"><strong>https://arxiv.org/abs/2302.03511</strong></a></span></div>
         <article class="markdown-body">
-          <h1>Berrisch Ziel CRPS Learning</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Proposes <strong>CRPS learning</strong>: perform online gradient-descent-style learning directly in <strong>CRPS (Continuous Ranked Probability Score) space</strong>, building an adaptive <strong>ensemble of distributional forecasts</strong> (base learners' full predictive distributions) whose combination minimises CRPS rather than pinball losses per quantile.</li><li>Motivation: existing distributional ensembles either aggregate quantiles separately or assume exchangeability; CRPS learning yields one coherent predictive distribution and provable/observed robustness on non-stationary series.</li></ul>
 <br>
-<p>Berrisch Ziel CRPS Learning — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Base learners produce candidate predictive distributions; an online algorithm updates mixture weights by stochastic (mini-batch) gradient steps on the empirical CRPS risk, with expert-aggregation-style guarantees inherited from online learning under dynamic environments.</li><li>Evaluated against quantile-regression averaging (e.g., QRA) and related distributional aggregation methods.</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>On electricity-price/load forecasting case studies (including German market data typical of Ziel's line of work), CRPS learning matches or beats QRA-type benchmarks on CRPS and related scores while adapting faster after distribution shifts.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Requires differentiable CRPS approximation choices; base-learner quality still dominates. Connections to conformal and distribution-free calibration (cf. <a href="../guides/Conformal_Prediction.html" class="wiki-link" title="Navigate to Conformal_Prediction">Conformal_Prediction</a>, <a href="../papers/Zaffran2022_Adaptive_Conformal.html" class="wiki-link" title="Navigate to Zaffran2022_Adaptive_Conformal">Zaffran2022_Adaptive_Conformal</a>) remain open.</li></ul>
 <br>
-<p><a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>J. Berrisch, F. Ziel, "CRPS learning," 2023 (arXiv preprint; see also their ProfKriging/QRA line of work). R package `crpslearning`. Status: metadata partially verified — confirm journal version.</li></ul>
         </article>
         
 <div class="related-box" data-reveal>

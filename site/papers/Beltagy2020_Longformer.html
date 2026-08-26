@@ -180,15 +180,20 @@
         <h1 class="page-title">Longformer: The Long-Document Transformer</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2020</strong></span><span class="chip">👤 Authors: <strong>Iz Beltagy, Matthew E. Peters, Arman Cohan</strong></span><span class="chip">🏛️ Venue: <strong>arXiv preprint arXiv:2004.05150</strong></span><span class="chip">🔗 DOI: <a href="https://arxiv.org/abs/2004.05150" target="_blank" rel="noopener" class="ext-link"><strong>https://arxiv.org/abs/2004.05150</strong></a></span></div>
         <article class="markdown-body">
-          <h1>Beltagy2020 Longformer</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Solves the quadratic cost of full self-attention for long documents by introducing <strong>Longformer</strong>: a Transformer whose attention is a mixture of <strong>local sliding-window, dilated sliding-window, and small global attention</strong> patterns, scaling linearly with sequence length up to <strong>4,096 tokens</strong> (vs 512 for BERT).</li></ul>
 <br>
-<p>Beltagy2020 Longformer — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Sliding-window attention attends to $w$ neighbours per layer so information propagates across layers like a CNN stack; dilation widens receptive field without cost growth; a handful of task tokens (e.g., CLS, question tokens) receive <strong>global</strong> attention.</li><li>Initialized from RoBERTa checkpoints and continued pretraining on long documents, making it drop-in for downstream NLP tasks; the attention implementation uses custom CUDA/Triton kernels.</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>Matches or exceeds RoBERTa on character-level language modelling and long-document classification/QA benchmarks (arXiv, Hyperpartisan, TriviaQA, HotpotQA) while handling sequences up to 8x longer.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Attention-pattern choice is task-specific (which tokens get global attention requires design); kernel engineering burden; motivated later efficient-attention lines relevant to long-sequence time-series Transformers (cf. <a href="../models/FlashAttention.html" class="wiki-link" title="Navigate to FlashAttention">FlashAttention</a>).</li></ul>
 <br>
-<p><a href="../papers/2024_Qu_Forwardformer_Day_Ahead_Load.html" class="wiki-link" title="Navigate to 2024_Qu_Forwardformer_Day_Ahead_Load">2024_Qu_Forwardformer_Day_Ahead_Load</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>I. Beltagy, M. E. Peters, A. Cohan, "Longformer: The Long-Document Transformer," arXiv:2004.05150, 2020. Code: github.com/allenai/longformer</li></ul>
         </article>
         
 <div class="related-box" data-reveal>

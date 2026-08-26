@@ -180,15 +180,20 @@
         <h1 class="page-title">Neural Machine Translation by Jointly Learning to Align and Translate</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2016</strong></span><span class="chip">👤 Authors: <strong>Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio</strong></span><span class="chip">🏛️ Venue: <strong>ICLR 2015; arXiv:1409.0473 (cited as 2016 in LSTNet references)</strong></span><span class="chip">🔗 DOI: <a href="https://arxiv.org/abs/1409.0473" target="_blank" rel="noopener" class="ext-link"><strong>https://arxiv.org/abs/1409.0473</strong></a></span></div>
         <article class="markdown-body">
-          <h1>Bahdanau2016 LSTMa Attention</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Introduces the <strong>additive attention mechanism</strong> for sequence-to-sequence tasks: instead of compressing an entire source sequence into one fixed vector, the decoder learns to <strong>softly attend</strong> to all source hidden states, weighted per output step ("alignment").</li><li>This removed the information bottleneck of encoder-decoder RNN translation and became the conceptual ancestor of the Transformer attention used throughout modern forecasting (see <a href="../models/Multi_Head_Attention.html" class="wiki-link" title="Navigate to Multi_Head_Attention">Multi_Head_Attention</a>); the <a href="../models/LogSparse_Transformer.html" class="wiki-link" title="Navigate to LogSparse_Transformer">LogSparse_Transformer</a>-era LSTMa variant applies this attention to recurrent forecasting backbones.</li></ul>
 <br>
-<p>Bahdanau2016 LSTMa Attention — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Encoder BiGRU produces annotations $h_j$; the decoder scores compatibility $e_{ij} = v_a^\top \tanh(W_a s_{i-1} + U_a h_j)$, normalises with softmax into weights $\alpha_{ij}$, and forms a context vector $c_i = \sum_j \alpha_{ij} h_j$ fed together with state and previous target to predict the next token.</li><li>Training maximises the conditional log-likelihood of translations end-to-end (attention learned jointly, no alignment supervision).</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>Substantially improved English-French translation quality vs. vanilla encoder-decoder RNNs, especially on long sentences; alignment visualisations match linguistic intuition.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Sequential decoding limits parallelism (later fixed by self-attention Transformers); additive scoring is slower than dot-product forms at scale.</li></ul>
 <br>
-<p><a href="../papers/2024_Qu_Forwardformer_Day_Ahead_Load.html" class="wiki-link" title="Navigate to 2024_Qu_Forwardformer_Day_Ahead_Load">2024_Qu_Forwardformer_Day_Ahead_Load</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>D. Bahdanau, K. Cho, Y. Bengio, "Neural Machine Translation by Jointly Learning to Align and Translate," ICLR 2015; arXiv:1409.0473 (commonly cited with 2016 arXiv revision dates in energy-forecasting reference lists)</li></ul>
         </article>
         
 <div class="related-box" data-reveal>

@@ -180,15 +180,20 @@
         <h1 class="page-title">Probabilistic Forecasting of Regional Net-Load With Conditional Extremes and Gridded NWP</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2021</strong></span><span class="chip">👤 Authors: <strong>Jethro Browell, Matteo Fasiolo</strong></span><span class="chip">🏛️ Venue: <strong>IEEE Transactions on Smart Grid 12(6):5011-5019</strong></span><span class="chip">🔗 DOI: <a href="https://doi.org/10.1109/TSG.2021.3107159" target="_blank" rel="noopener" class="ext-link"><strong>https://doi.org/10.1109/TSG.2021.3107159</strong></a></span></div>
         <article class="markdown-body">
-          <h1>2021 Browell Fasiolo Regional Netload</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Produces <strong>probabilistic forecasts of regional net-load</strong> (transmission-level demand minus embedded wind/solar generation) with particular attention to the <strong>tails</strong> of predictive distributions, which drive risk decisions such as reserve procurement.</li><li>Novel combination: best-in-class load forecasting methodology adapted to net-load, plus <strong>conditional Generalised Pareto Distribution (cGPD)</strong> tails whose scale parameter varies smoothly with covariates, plus features derived from <strong>gridded NWP</strong>.</li></ul>
 <br>
-<p>2021 Browell Fasiolo Regional Netload — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Additive quantile regression framework (GAMLSS-style) for central quantiles; tails modelled by GPD with log-link scale conditioned on expected net-load, 100 m wind speed and surface solar irradiance; shape parameter held constant.</li><li>Evaluated on Great Britain Grid Supply Point Groups (14 regions), half-hourly metered, five years 2014-2018 — a period when embedded solar grew 3 GW → 13 GW.</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>Conditional tails produce calibrated and sharper forecasts than unconditional/static-tail benchmarks.</li><li>In a reserve-setting use case, cGPD reduces upward reserve volume by up to <strong>24.6%</strong> and downward reserve by up to <strong>10.8%</strong> at probability levels 0.01%-0.25%, while correctly identifying high-risk periods missed by static approaches.</li><li>Gridded NWP features added little value within this framework compared with station/NWP-point features.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Tail modelling needs sufficient extremes; shape-parameter constancy may fail under structural change. Reserve-simulation is GB-specific. Extension to joint/net-load-plus-generation distributions is open.</li></ul>
 <br>
-<p><a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a>, <a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>J. Browell, M. Fasiolo, "Probabilistic Forecasting of Regional Net-Load With Conditional Extremes and Gridded NWP," <em>IEEE Transactions on Smart Grid</em>, 12(6):5011-5019, 2021. DOI:10.1109/TSG.2021.3107159; preprint arXiv:2103.10335; data DOI:10.5281/zenodo.4618056</li></ul>
         </article>
         
 <div class="related-box" data-reveal>

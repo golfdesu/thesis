@@ -180,15 +180,20 @@
         <h1 class="page-title">Adaptive Conformal Predictions for Time Series</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2022</strong></span><span class="chip">👤 Authors: <strong>Margaux Zaffran, Olivier Féron, Yannig Goude, Julie Josse, Aymeric Dieuleveut</strong></span><span class="chip">🏛️ Venue: <strong>ICML 2022; arXiv:2202.07282</strong></span><span class="chip">🔗 DOI: <a href="https://arxiv.org/abs/2202.07282" target="_blank" rel="noopener" class="ext-link"><strong>https://arxiv.org/abs/2202.07282</strong></a></span></div>
         <article class="markdown-body">
-          <h1>Zaffran2022 Adaptive Conformal</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Brings <strong>conformal prediction</strong> to non-exchangeable time series: proposes <strong>AgACI (Aggregated Adaptive Conformal Inference)</strong>, combining multiple online conformal interval controllers (building on Gibbs & Candès' ACI) so the miscoverage rate tracks a target level automatically under distribution shift.</li><li>Adds a practical contribution for realistic pipelines: an imputation-aware variant handling <strong>missing values</strong> in the target series without breaking validity.</li></ul>
 <br>
-<p>Zaffran2022 Adaptive Conformal — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Base point forecasters (e.g., sequential GAM/ML models) produce point predictions; ACI-style controllers adjust the interval radius online via feedback on recent coverage errors; AgACI runs several controllers with different learning rates and aggregates them with online expert aggregation (BOA-flavoured).</li><li>Theory: validity guarantee maintained step-by-step even under arbitrary distribution drift, given only exchangeability-free coverage accounting.</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>Experiments on French electricity demand (industrial-scale, incl. the COVID-19 disruption period) show AgACI maintains near-nominal coverage where static conformal intervals under-cover, while keeping intervals competitive in width; the missing-data variant remains valid on gappy real smart-meter streams.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Adaptation speed vs stability trade-off controlled by controller learning rates; conditional coverage (per-time-step guarantees) beyond marginal validity remains open — connects to CQR/conformalized quantile regression lines (cf. <a href="../guides/Conformal_Prediction.html" class="wiki-link" title="Navigate to Conformal_Prediction">Conformal_Prediction</a>).</li></ul>
 <br>
-<p><a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>M. Zaffran, O. Féron, Y. Goude, J. Josse, A. Dieuleveut, "Adaptive Conformal Predictions for Time Series," ICML 2022; arXiv:2202.07282. Code: github.com/mzaffran/adaptiveconformaltimeseries</li></ul>
         </article>
         
 <div class="related-box" data-reveal>
@@ -197,6 +202,11 @@
     
 <a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="card">
   <div class="card-title">Adaptive Probabilistic Forecasting of Electricity (Net-)Load</div>
+  <div class="card-desc">Category: Papers &amp; Literature</div>
+</a>
+
+<a href="../papers/Berrisch_Ziel_CRPS_Learning.html" class="card">
+  <div class="card-title">CRPS Learning</div>
   <div class="card-desc">Category: Papers &amp; Literature</div>
 </a>
 

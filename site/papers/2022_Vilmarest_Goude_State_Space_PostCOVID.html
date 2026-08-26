@@ -180,21 +180,31 @@
         <h1 class="page-title">State-Space Models for Online Post-COVID Electricity Load Forecasting Competition</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2022</strong></span><span class="chip">👤 Authors: <strong>Joseph de Vilmarest, Yannig Goude</strong></span><span class="chip">🏛️ Venue: <strong>IEEE Open Access Journal of Power and Energy (doi:10.17023/yaz3-xp85); preprint arXiv:2110.00334</strong></span><span class="chip">🔗 DOI: <a href="https://arxiv.org/abs/2110.00334" target="_blank" rel="noopener" class="ext-link"><strong>https://arxiv.org/abs/2110.00334</strong></a></span></div>
         <article class="markdown-body">
-          <h1>2022 Vilmarest Goude State Space PostCOVID</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Presents the <strong>winning strategy of the IEEE DataPort competition</strong> "Day-Ahead Electricity Load Forecasting: Post-COVID Paradigm" — day-ahead forecasting of an undisclosed ~1.1 GW region whose consumption regime broke in March 2020.</li><li>Core claim: <strong>state-space adaptation gives the best of both worlds</strong> — autoregressive models are inherently adaptive but miss exogenous structure, while ML models capture exogenous dependence but fail on non-stationary data; wrapping ML features in a state-space recursion fixes both failures at once.</li></ul>
 <br>
-<p>2022 Vilmarest Goude State Space PostCOVID — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Pipeline: (1) statistical correction of meteorological variables; (2) base forecasters — GAM, MLP, random forest, autoregressions; (3) <strong>Kalman filter</strong> on linearised learner outputs with break settings; (4) <strong>VIKING</strong> (Variational Bayesian Variance Tracking) to learn observation/state variances adaptively instead of hard-coding breaks; (5) <strong>aggregation of experts</strong> across the resulting forecaster set.</li><li>Final procedure was assembled during the competition's evaluation period; the paper focuses on the clean final version.</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>The strategy achieved <strong>first place</strong> in the competition; ablations show each layer (Kalman adaptation, VIKING, aggregation) contributes measurable gains over static and singly-adaptive baselines.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Error propagation across the stacked adaptations (intraday correction → Kalman → VIKING → aggregation) lacks full interpretability; variance tracking assumes approximate Gaussianity. Code: gitlab.com/JosephdeVilmarest/state-space-post-covid-forecasting</li></ul>
 <br>
-<p><a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>J. de Vilmarest, Y. Goude, "State-Space Models for Online Post-Covid Electricity Load Forecasting Competition," <em>IEEE Open Access Journal of Power and Energy</em>, 2022 (DOI:10.17023/yaz3-xp85); preprint arXiv:2110.00334</li></ul>
         </article>
         
 <div class="related-box" data-reveal>
   <h3>🔗 Cross-Referenced Literature &amp; Models</h3>
   <div class="grid-cards">
     
+<a href="../papers/2021_Obst_Vilmarest_Goude_Kalman_COVID_France.html" class="card">
+  <div class="card-title">Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France</div>
+  <div class="card-desc">Category: Papers &amp; Literature</div>
+</a>
+
 <a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="card">
   <div class="card-title">Adaptive Probabilistic Forecasting of Electricity (Net-)Load</div>
   <div class="card-desc">Category: Papers &amp; Literature</div>

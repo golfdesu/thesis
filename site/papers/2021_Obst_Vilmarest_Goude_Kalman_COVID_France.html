@@ -180,15 +180,20 @@
         <h1 class="page-title">Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2021</strong></span><span class="chip">👤 Authors: <strong>Dustin Obst, Jacob Vilmarest, Yannig Goude</strong></span><span class="chip">🏛️ Venue: <strong>IEEE Transactions on Power Systems 36(6):5359-5370</strong></span><span class="chip">🔗 DOI: <a href="https://arxiv.org/abs/2101.05845" target="_blank" rel="noopener" class="ext-link"><strong>https://arxiv.org/abs/2101.05845</strong></a></span></div>
         <article class="markdown-body">
-          <h1>2021 Obst Vilmarest Goude Kalman COVID France</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Addresses the collapse of standard short-term load forecasting models during the <strong>COVID-19 lockdown in France</strong> (spring 2020), when consumption patterns shifted abruptly (~15% demand drop with strong regional heterogeneity).</li><li>Compares and combines <strong>adaptive methods</strong>: exponential smoothing variants, Kalman-filter-based state-space adaptation of GAMs and machine-learning models, and online aggregation of experts — providing practical guidance for forecasting through regime change.</li></ul>
 <br>
-<p>2021 Obst Vilmarest Goude Kalman COVID France — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li>Baseline GAM with weather/calendar decomposition (the industrial EDF-style model) is linearised and embedded in a <strong>linear-Gaussian state-space model</strong>, so its coefficients are tracked over time by Kalman filtering with break/forget settings tuned to adapt faster than classical smoothing.</li><li>The same adaptation wrapper is applied to other learners (e.g., random forests retrained incrementally), and experts are aggregated sequentially for robustness.</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>On French national/regional load spanning the lockdown, adaptive state-space versions recover forecast accuracy far faster than non-adaptive benchmarks; Kalman-adapted GAM is among the strongest single models, and expert aggregation stabilises performance across regions and periods.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Break detection/adaptation speeds are hand-set; the approach reacts after a regime shift begins rather than anticipating it. Follow-up work (VIKING variance tracking; the post-COVID competition win) directly extends this paper — see <a href="../papers/2022_Vilmarest_Goude_State_Space_PostCOVID.html" class="wiki-link" title="Navigate to 2022_Vilmarest_Goude_State_Space_PostCOVID">2022_Vilmarest_Goude_State_Space_PostCOVID</a>.</li></ul>
 <br>
-<p><a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>D. Obst, J. de Vilmarest, Y. Goude, "Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France," <em>IEEE Transactions on Power Systems</em>, 36(6), 2021. Preprint arXiv:2101.05845</li></ul>
         </article>
         
 <div class="related-box" data-reveal>

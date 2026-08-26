@@ -180,15 +180,20 @@
         <h1 class="page-title">Additive Models and Robust Aggregation for GEFCom2014 Probabilistic Electric Load and Electricity Price Forecasting</h1>
         <div class="meta-badges"><span class="chip">📅 Year: <strong>2016</strong></span><span class="chip">👤 Authors: <strong>Pierre Gaillard, Yannig Goude, Raphaël Nedellec</strong></span><span class="chip">🏛️ Venue: <strong>International Journal of Forecasting 32(3):1038-1050</strong></span><span class="chip">🔗 DOI: <a href="https://doi.org/10.1016/j.ijforecast.2015.12.001" target="_blank" rel="noopener" class="ext-link"><strong>https://doi.org/10.1016/j.ijforecast.2015.12.001</strong></a></span></div>
         <article class="markdown-body">
-          <h1>Gaillard2016 GEFCOM2014 Aggregation</h1>
+          <h2>🎯 Main Objective & Contribution</h2>
+<ul><li>Describes <strong>team Tololo's methodology</strong> for both probabilistic tracks (electric load and electricity price) of <strong>GEFCom2014</strong>: semi-parametric quantile GAMs combined with <strong>robust online aggregation of experts</strong>, forming the statistical backbone later reused across EDF forecasting systems.</li></ul>
 <br>
-<p>Gaillard2016 GEFCOM2014 Aggregation — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.</p>
+<h2>🧠 Methodology & Model Architecture</h2>
+<ul><li><strong>Load track</strong>: two-step scheme — first simulate probabilistic temperature scenarios, then plug them into a <strong>quantile generalized additive model (quantGAM)</strong> with nonlinear weather/calendar effects to yield load quantiles.</li><li><strong>Price track</strong>: three approaches explored, settling on aggregating 13 heterogeneous expert predictors (AR, TAR, ARX, TARX, spike-preprocessed PAR, GAM, random forests, gradient boosting machines) using <strong>ML-Poly-style robust sequential aggregation</strong> under the quantile loss, with weights allowed to vary over time (extending Nowotarski & Weron 2015).</li></ul>
 <br>
-<p>In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.</p>
+<h2>📈 Performance & Results</h2>
+<ul><li>Top-tier finishes in both GEFCom2014 tracks; the aggregation consistently improved upon any individual expert, demonstrating the practical value of sequential expert mixing under the pinball loss.</li></ul>
 <br>
-<h2>Referenced in this knowledge base</h2>
+<h2>💡 Limitations & Identified Research Gaps</h2>
+<ul><li>Expert-set design is manual; temperature-scenario simulation drives load-track uncertainty. Direct descendants: the `opera` R package (<a href="../papers/Wintenberger2017_BOA.html" class="wiki-link" title="Navigate to Wintenberger2017_BOA">Wintenberger2017_BOA</a> theory) and net-load aggregation work by the same group.</li></ul>
 <br>
-<p><a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="wiki-link" title="Navigate to 2024_DeVilmarest_Adaptive_Probabilistic_Netload">2024_DeVilmarest_Adaptive_Probabilistic_Netload</a></p>
+<h2>📚 BibTeX & Citation Reference</h2>
+<ul><li>P. Gaillard, Y. Goude, R. Nedellec, "Additive models and robust aggregation for GEFCom2014 probabilistic electric load and electricity price forecasting," <em>International Journal of Forecasting</em>, 32(3):1038-1050, 2016. DOI:10.1016/j.ijforecast.2015.12.001</li></ul>
         </article>
         
 <div class="related-box" data-reveal>
@@ -197,6 +202,11 @@
     
 <a href="../papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html" class="card">
   <div class="card-title">Adaptive Probabilistic Forecasting of Electricity (Net-)Load</div>
+  <div class="card-desc">Category: Papers &amp; Literature</div>
+</a>
+
+<a href="../papers/Wintenberger2017_BOA.html" class="card">
+  <div class="card-title">Optimal learning with Bernstein Online Aggregation</div>
   <div class="card-desc">Category: Papers &amp; Literature</div>
 </a>
 

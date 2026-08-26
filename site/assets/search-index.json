@@ -137,14 +137,14 @@
     "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Alvarez_APLF_Adaptive_Probabilistic_Load.html",
-    "body": "# 2021 Alvarez APLF Adaptive Probabilistic Load\n\n2021 Alvarez APLF Adaptive Probabilistic Load \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (author"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Proposes **APLF (Adaptive Probabilistic Load Forecasting)**: probabilistic load forecasts based on **adaptive online learning of hidden Markov models (HMMs)**, explicitly designed for consumption patterns that change over time (renewables integration, EVs, microg"
   },
   {
     "title": "Probabilistic Forecasting of Regional Net-Load With Conditional Extremes and Gridded NWP",
     "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Browell_Fasiolo_Regional_Netload.html",
-    "body": "# 2021 Browell Fasiolo Regional Netload\n\n2021 Browell Fasiolo Regional Netload \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue),"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Produces **probabilistic forecasts of regional net-load** (transmission-level demand minus embedded wind/solar generation) with particular attention to the **tails** of predictive distributions, which drive risk decisions such as reserve procurement.\n- Novel comb"
   },
   {
     "title": "An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations",
@@ -172,7 +172,7 @@
     "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Obst_Vilmarest_Goude_Kalman_COVID_France.html",
-    "body": "# 2021 Obst Vilmarest Goude Kalman COVID France\n\n2021 Obst Vilmarest Goude Kalman COVID France \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (author"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Addresses the collapse of standard short-term load forecasting models during the **COVID-19 lockdown in France** (spring 2020), when consumption patterns shifted abruptly (~15% demand drop with strong regional heterogeneity).\n- Compares and combines **adaptive me"
   },
   {
     "title": "Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting",
@@ -242,7 +242,7 @@
     "year": 2022,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2022_Vilmarest_Goude_State_Space_PostCOVID.html",
-    "body": "# 2022 Vilmarest Goude State Space PostCOVID\n\n2022 Vilmarest Goude State Space PostCOVID \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, yea"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Presents the **winning strategy of the IEEE DataPort competition** \"Day-Ahead Electricity Load Forecasting: Post-COVID Paradigm\" \u2014 day-ahead forecasting of an undisclosed ~1.1 GW region whose consumption regime broke in March 2020.\n- Core claim: **state-space ada"
   },
   {
     "title": "GCN-TRN: Efficient Transformer based Electric Vehicle Charging Demand Forecasting System",
@@ -788,42 +788,42 @@
     "year": 2016,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Bahdanau2016_LSTMa_Attention.html",
-    "body": "# Bahdanau2016 LSTMa Attention\n\nBahdanau2016 LSTMa Attention \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contrib"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Introduces the **additive attention mechanism** for sequence-to-sequence tasks: instead of compressing an entire source sequence into one fixed vector, the decoder learns to **softly attend** to all source hidden states, weighted per output step (\"alignment\").\n- "
   },
   {
     "title": "Longformer: The Long-Document Transformer",
     "year": 2020,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Beltagy2020_Longformer.html",
-    "body": "# Beltagy2020 Longformer\n\nBeltagy2020 Longformer \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, mode"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Solves the quadratic cost of full self-attention for long documents by introducing **Longformer**: a Transformer whose attention is a mixture of **local sliding-window, dilated sliding-window, and small global attention** patterns, scaling linearly with sequence "
   },
   {
     "title": "CRPS Learning",
     "year": 2023,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Berrisch_Ziel_CRPS_Learning.html",
-    "body": "# Berrisch Ziel CRPS Learning\n\nBerrisch Ziel CRPS Learning \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contribut"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Proposes **CRPS learning**: perform online gradient-descent-style learning directly in **CRPS (Continuous Ranked Probability Score) space**, building an adaptive **ensemble of distributional forecasts** (base learners' full predictive distributions) whose combina"
   },
   {
     "title": "Additive Models and Robust Aggregation for GEFCom2014 Probabilistic Electric Load and Electricity Price Forecasting",
     "year": 2016,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Gaillard2016_GEFCOM2014_Aggregation.html",
-    "body": "# Gaillard2016 GEFCOM2014 Aggregation\n\nGaillard2016 GEFCOM2014 Aggregation \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), ext"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Describes **team Tololo's methodology** for both probabilistic tracks (electric load and electricity price) of **GEFCom2014**: semi-parametric quantile GAMs combined with **robust online aggregation of experts**, forming the statistical backbone later reused acro"
   },
   {
     "title": "Optimal learning with Bernstein Online Aggregation",
     "year": 2017,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Wintenberger2017_BOA.html",
-    "body": "# Wintenberger2017 BOA\n\nWintenberger2017 BOA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models a"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Formalises **Bernstein Online Aggregation (BOA)**: exponentially weighted aggregation of experts whose weights depend on cumulative losses **and their variance**, yielding sharp second-order regret bounds of Bernstein type rather than the looser first-order/Hoeff"
   },
   {
     "title": "Adaptive Conformal Predictions for Time Series",
     "year": 2022,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Zaffran2022_Adaptive_Conformal.html",
-    "body": "# Zaffran2022 Adaptive Conformal\n\nZaffran2022 Adaptive Conformal \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted con"
+    "body": "## \ud83c\udfaf Main Objective & Contribution\n- Brings **conformal prediction** to non-exchangeable time series: proposes **AgACI (Aggregated Adaptive Conformal Inference)**, combining multiple online conformal interval controllers (building on Gibbs & Cand\u00e8s' ACI) so the miscoverage rate tracks a target level"
   },
   {
     "title": "1746 Node Distribution System",
@@ -4239,7 +4239,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/ETT.html",
-    "body": "# Electricity Transformer Temperature Dataset\n\nMultivariate transformer-temperature benchmark.\n\n- **Reference**: [https://github.com/zhouhaoyi/ETDataset](https://github.com/zhouhaoyi/ETDataset)"
+    "body": "Multivariate transformer-temperature benchmark released with the Informer paper (Zhou et al. 2021).\n\n| Variant | Stations | Steps | Resolution |\n|---|---|---|---|\n| ETTh1/h2 | 2 | 17,420 each | hourly |\n| ETTm1/m2 | same 2 stations | 69,680 | 15-min |\n\nEach row carries 7 channels: oil temperature (t"
   },
   {
     "title": "EV Intelligent Port Logistics Dataset",
@@ -4253,7 +4253,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Exchange.html",
-    "body": "# Exchange Rate Dataset\n\nMultivariate exchange-rate benchmark series.\n\n- **Reference**: [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)"
+    "body": "Daily exchange rates of **8 currencies against USD** (Australia, UK, Canada, Switzerland, China, Japan, New Zealand, Singapore), 1990-2016 \u2014 6,071 daily observations.\n\nReleased with LSTNet (Lai et al. 2018) as part of the multivariate time-series benchmark suite; widely used in LTSF papers ([[Inform"
   },
   {
     "title": "Favorita Retail",
@@ -4477,21 +4477,21 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/M3.html",
-    "body": "# M3 Competition Dataset\n\nHeterogeneous univariate competition series used by N-BEATS.\n\n- **Reference**: [https://forecasters.org/resources/time-series-data/m3-competition/](https://forecasters.org/resources/time-series-data/m3-competition/)"
+    "body": "The **M3-Competition** dataset (Makridakis & Hibon, *International Journal of Forecasting* 2000): **3,003 series** across yearly (645), quarterly (756), monthly (1,394) and other (208) categories drawn from demographic, finance, economics and industry domains.\n\nStandard protocol: forecasts over hori"
   },
   {
     "title": "M4 Competition Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/M4.html",
-    "body": "# M4 Competition Dataset\n\nLarge multi-frequency competition series used by N-BEATS and N-HiTS.\n\n- **Reference**: [https://github.com/M4Competition/M4-methods/tree/master/Dataset](https://github.com/M4Competition/M4-methods/tree/master/Dataset)"
+    "body": "The **M4 competition** dataset (Makridakis, Spiliotis & Assimakopoulos, *IJF* 2020): **100,000 real series** across six sampling frequencies (hourly 414, daily 9,743, weekly 3,599, monthly 48,000, quarterly 24,000, yearly 23,000) from finance, demography, tourism, economics and industry.\n\nProtocol: "
   },
   {
     "title": "M5 Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/M5_Dataset.html",
-    "body": "# M5 Dataset\n\nM5 Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base t"
+    "body": "The **M5 competition** dataset (Makridakis et al. 2022, *IJF*): Walmart **unit sales of 3,049 products across 10 stores** in 3 US states (CA, TX, WI), 2011-2016, with calendar/promo/price covariates - hierarchical bottom-up levels (item/store/state) totalling ~42,840 aggregated series.\n\nTwo parallel"
   },
   {
     "title": "Market Alipay",
@@ -4946,7 +4946,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Tourism.html",
-    "body": "# Tourism Forecasting Dataset\n\nTourism demand series used in long-horizon benchmarks.\n\n- **Reference**: [https://github.com/Mcompetitions/M4-methods](https://github.com/Mcompetitions/M4-methods)"
+    "body": "The **Tourism forecasting competition** dataset (Athanasopoulos, Hyndman, Song & Wu 2011): **366 series** of visitor flows (monthly/quarterly/yearly) from multiple countries and regions.\n\nProtocol: horizon-matched forecasts (24 months, 8 quarters, 4 years) evaluated with MASE-like relative measures;"
   },
   {
     "title": "Toy Synthetic Functions",
