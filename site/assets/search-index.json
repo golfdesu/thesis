@@ -133,14 +133,14 @@
     "body": "# Summary: DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks\n\n## \ud83c\udfaf Main Objective & Contribution\n- Introduces **[[DeepAR]]**, a methodology for probabilistic forecasting based on training an **autoregressive recurrent network** (multi-layer [[LSTM]]) as a **global model** acro"
   },
   {
-    "title": "Adaptive Probabilistic Load Forecasting (APLF)",
+    "title": "Probabilistic Load Forecasting Based on Adaptive Online Learning",
     "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Alvarez_APLF_Adaptive_Probabilistic_Load.html",
     "body": "# 2021 Alvarez APLF Adaptive Probabilistic Load\n\n2021 Alvarez APLF Adaptive Probabilistic Load \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (author"
   },
   {
-    "title": "Probabilistic Forecasting of Regional Net-Load",
+    "title": "Probabilistic Forecasting of Regional Net-Load With Conditional Extremes and Gridded NWP",
     "year": 2021,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2021_Browell_Fasiolo_Regional_Netload.html",
@@ -238,7 +238,7 @@
     "body": "# Summary: Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift\n\n## \ud83c\udfaf Main Objective & Contribution\n- Addresses the **distribution shift problem** in time-series forecasting: statistical properties (mean/variance) of training vs. test data diverge because"
   },
   {
-    "title": "State-Space Models for Post-COVID Short-Term Electricity Demand Forecasting",
+    "title": "State-Space Models for Online Post-COVID Electricity Load Forecasting Competition",
     "year": 2022,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2022_Vilmarest_Goude_State_Space_PostCOVID.html",
@@ -805,7 +805,7 @@
     "body": "# Berrisch Ziel CRPS Learning\n\nBerrisch Ziel CRPS Learning \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nIn this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contribut"
   },
   {
-    "title": "Forecasting Electricity Consumption by Aggregating Experts; How to Design a Good Set of Experts?",
+    "title": "Additive Models and Robust Aggregation for GEFCom2014 Probabilistic Electric Load and Electricity Price Forecasting",
     "year": 2016,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/Gaillard2016_GEFCOM2014_Aggregation.html",

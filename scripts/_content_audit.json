@@ -1,11 +1,6 @@
 {
   "yaml_errors": [],
-  "missing_fields": [
-    "papers/2021_Alvarez_APLF_Adaptive_Probabilistic_Load.md: missing ['doi_url']",
-    "papers/2021_Browell_Fasiolo_Regional_Netload.md: missing ['doi_url']",
-    "papers/2022_Vilmarest_Goude_State_Space_PostCOVID.md: missing ['doi_url']",
-    "papers/Gaillard2016_GEFCOM2014_Aggregation.md: missing ['doi_url']"
-  ],
+  "missing_fields": [],
   "year_mismatch": [],
   "bad_doi": [
     "papers/2024_Feng_LSTM_Transformer_EV_Consumption.md: https://ssrn.com/abstract=4747046"
@@ -36,7 +31,7 @@
     "metric": 57,
     "model": 460,
     "feedforward-neural-network": 1,
-    "paper": 120
+    "paper": 118
   },
-  "total": 1074
+  "total": 1072
 }
