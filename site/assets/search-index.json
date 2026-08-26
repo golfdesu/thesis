@@ -382,7 +382,7 @@
     "year": 2024,
     "cat_name": "Papers & Literature",
     "rel_url": "papers/2024_Feng_LSTM_Transformer_EV_Consumption.html",
-    "body": "# Summary: Energy Consumption Prediction Strategy for Electric Vehicle Based on LSTM-Transformer Framework\n\n## \ud83c\udfaf Main Objective & Contribution\n- Mitigate driver **range anxiety** via accurate real-time EV battery [[Battery_SOC]] / energy consumption prediction, integrating vehicle, environmental, **"
+    "body": "# Summary: Energy Consumption Prediction Strategy for Electric Vehicle Based on LSTM-Transformer Framework\n\n## \ud83c\udfaf Main Objective & Contribution\n- Mitigate driver **range anxiety** via accurate real-time EV battery [[State_of_Charge]] / energy consumption prediction, integrating vehicle, environmental"
   },
   {
     "title": "On the Utilization of Autoformer-Based Deep Learning for Electric Vehicle Charging Load Forecasting",
@@ -1033,7 +1033,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/BWO.html",
-    "body": "# BWO\n\nBlack Widow Optimization metaheuristic; used to tune hybrid decomposed forecasters.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# BWO\n\nBlack Widow Optimization metaheuristic; used to tune hybrid decomposed forecasters.\n\n## Referenced in this knowledge base\n\n[[2025_Zheng_BWO_ICEEMDAN_iTransformer]]"
   },
   {
     "title": "ByteNet",
@@ -1096,14 +1096,14 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Chronos-Bolt.html",
-    "body": "# Chronos Bolt\n\nFaster, patch-based descendant of [[Chronos]] for point and quantile forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Chronos Bolt\n\nFaster, patch-based descendant of [[Chronos]] for point and quantile forecasting.\n\n## Referenced in this knowledge base\n\n[[2025_Meyer_Benchmark_Foundation_Models]]"
   },
   {
     "title": "Chronos",
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Chronos.html",
-    "body": "# Chronos\n\nAmazon's pretrained time-series foundation model family tokenizing scaled values for probabilistic zero-shot forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Chronos\n\nAmazon's pretrained time-series foundation model family tokenizing scaled values for probabilistic zero-shot forecasting.\n\n## Referenced in this knowledge base\n\n[[2025_Meyer_Benchmark_Foundation_Models]]\n[[Chronos-Bolt]]\n[[LagLlama]]"
   },
   {
     "title": "CKA Similarity",
@@ -1299,7 +1299,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/DCRNN.html",
-    "body": "# DCRNN\n\nDiffusion Convolutional Recurrent Neural Network: traffic-style spatio-temporal graph forecasting with diffusion convolution.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# DCRNN\n\nDiffusion Convolutional Recurrent Neural Network: traffic-style spatio-temporal graph forecasting with diffusion convolution.\n\n## Referenced in this knowledge base\n\n[[2022_Zhang_GCN_TRN_EV_Availability]]\n[[2026_Hao_Mamba_KAN_HyKANet_EV]]\n[[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywid"
   },
   {
     "title": "DCT EV",
@@ -2055,7 +2055,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Kalman_Filter.html",
-    "body": "# Kalman Filter\n\nRecursive Bayesian estimator for linear-Gaussian state-space models; classic adaptive baseline for load forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Kalman Filter\n\nRecursive Bayesian estimator for linear-Gaussian state-space models; classic adaptive baseline for load forecasting.\n\n## Referenced in this knowledge base\n\n[[2013_Roberts_Gaussian_Processes_Time_Series]]\n[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]\n[[2024_DeVilmarest_Adaptive_Pro"
   },
   {
     "title": "KAN (Kolmogorov-Arnold Network)",
@@ -2083,7 +2083,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/KMeans_Clustering.html",
-    "body": "# KMeans Clustering\n\nCentroid-based partitional clustering; groups stations or load shapes before per-cluster modeling.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# KMeans Clustering\n\nCentroid-based partitional clustering; groups stations or load shapes before per-cluster modeling.\n\n## Referenced in this knowledge base\n\n[[2024_Feng_LSTM_Transformer_EV_Consumption]]\n[[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]"
   },
   {
     "title": "Kohonen SOM",
@@ -2118,7 +2118,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/LagLlama.html",
-    "body": "# LagLlama\n\nOpen-source lag-feature-based foundation model for univariate probabilistic forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*\n\nLagLlama builds its input representation purely from lagged values of the target series, making it a lightweight open-source alternative to ["
+    "body": "# LagLlama\n\nOpen-source lag-feature-based foundation model for univariate probabilistic forecasting.\n\n## Referenced in this knowledge base\n\n[[2025_Meyer_Benchmark_Foundation_Models]]\n\nLagLlama builds its input representation purely from lagged values of the target series, making it a lightweight ope"
   },
   {
     "title": "LAN",
@@ -2167,7 +2167,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/LightGBM.html",
-    "body": "# LightGBM\n\nMicrosoft's gradient-boosted tree framework; fast tabular baseline (cf. [[XGBoost]]).\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# LightGBM\n\nMicrosoft's gradient-boosted tree framework; fast tabular baseline (cf. [[XGBoost]]).\n\n## Referenced in this knowledge base\n\n[[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]]\n[[2026_Wang_Xu_Similar_Day_Selection_EV_Load]]"
   },
   {
     "title": "Linear Dynamical Systems",
@@ -2272,7 +2272,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/LSTNet.html",
-    "body": "# LSTNet\n\nLong- and Short-term Time-series Network combining convolutional, recurrent, and skip-recurrent components.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# LSTNet\n\nLong- and Short-term Time-series Network combining convolutional, recurrent, and skip-recurrent components.\n\n## Referenced in this knowledge base\n\n[[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]]\n[[2021_Zhou_Informer_Beyond_Efficient_Transformer]]"
   },
   {
     "title": "LTLM",
@@ -2475,7 +2475,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Moirai.html",
-    "body": "# Moirai\n\nSalesforce's masked-encoder universal time-series foundation model handling arbitrary variates and frequencies.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Moirai\n\nSalesforce's masked-encoder universal time-series foundation model handling arbitrary variates and frequencies.\n\n## Referenced in this knowledge base\n\n[[2025_Meyer_Benchmark_Foundation_Models]]\n[[LagLlama]]"
   },
   {
     "title": "Moving Average Decomposition",
@@ -2489,14 +2489,14 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/MPC.html",
-    "body": "# MPC\n\nModel Predictive Control: rolling-horizon optimization using forecasts; cf. [[Stochastic_MPC]] and [[Lyapunov_Optimization]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# MPC\n\nModel Predictive Control: rolling-horizon optimization using forecasts; cf. [[Stochastic_MPC]] and [[Lyapunov_Optimization]].\n\n## Referenced in this knowledge base\n\n[[2025_Yang_Stochastic_MPC_Microgrid_EV]]\n[[2026_Huang_Lyapunov_EV_Scheduling]]\n[[2026_Tang_PC_M3_Mamba_EV_Clusters]]\n[[V2G]]"
   },
   {
     "title": "MQ RNN",
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/MQ-RNN.html",
-    "body": "# MQ RNN\n\nMulti-Quantile RNN: seq2seq network trained on multiple quantile outputs for probabilistic forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# MQ RNN\n\nMulti-Quantile RNN: seq2seq network trained on multiple quantile outputs for probabilistic forecasting.\n\n## Referenced in this knowledge base\n\n[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]"
   },
   {
     "title": "Multi-Quantile Temporal Convolutional Network (MQ-TCN)",
@@ -2657,7 +2657,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/NILM.html",
-    "body": "# NILM\n\nNon-Intrusive Load Monitoring: disaggregating aggregate meter readings into appliance-level consumption.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# NILM\n\nNon-Intrusive Load Monitoring: disaggregating aggregate meter readings into appliance-level consumption.\n\n## Referenced in this knowledge base\n\n[[2024_Ke_Divide_Conquer_Transformer_EV]]\n[[2025_Zhu_Personalized_Federated_Learning]]"
   },
   {
     "title": "NLinear",
@@ -2755,7 +2755,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/PCA.html",
-    "body": "# PCA\n\nPrincipal Component Analysis: linear dimensionality reduction retaining maximal variance; used for input compression and clustering.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# PCA\n\nPrincipal Component Analysis: linear dimensionality reduction retaining maximal variance; used for input compression and clustering.\n\n## Referenced in this knowledge base\n\n[[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]"
   },
   {
     "title": "Periodic Kernel",
@@ -2958,7 +2958,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Queuing_Model.html",
-    "body": "# Queuing Model\n\nStochastic arrival-service models (M/G/\u221e etc.) describing aggregate EV plug-in demand at stations.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Queuing Model\n\nStochastic arrival-service models (M/G/\u221e etc.) describing aggregate EV plug-in demand at stations.\n\n## Referenced in this knowledge base\n\n[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]\n[[2021_Zhang_Probabilistic_Queuing_EV_Load]]\n[[2026_Huang_Lyapunov_EV_Scheduling]]"
   },
   {
     "title": "Q-Learning Reinforcement Learning",
@@ -3252,7 +3252,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Seq2Seq.html",
-    "body": "# Seq2Seq\n\nEncoder-decoder sequence-to-sequence framework mapping an input sequence to an output sequence; basis of many early deep forecasters.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Seq2Seq\n\nEncoder-decoder sequence-to-sequence framework mapping an input sequence to an output sequence; basis of many early deep forecasters.\n\n## Referenced in this knowledge base\n\n[[2025_Matrone_QR_LSTM_Attention_EV_Load]]"
   },
   {
     "title": "SeqDec",
@@ -3462,7 +3462,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/STL.html",
-    "body": "# STL\n\nSeasonal-Trend decomposition using Loess; classical decomposition baseline and preprocessing step.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# STL\n\nSeasonal-Trend decomposition using Loess; classical decomposition baseline and preprocessing step.\n\n## Referenced in this knowledge base\n\n[[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]"
   },
   {
     "title": "STL Hybrid",
@@ -3504,7 +3504,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/SVM.html",
-    "body": "# SVM\n\nSupport Vector Machine; classification sibling of [[SVR]] using maximum-margin kernels.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# SVM\n\nSupport Vector Machine; classification sibling of [[SVR]] using maximum-margin kernels.\n\n## Referenced in this knowledge base\n\n[[2015_Raza_Review_AI_Load_Demand]]\n[[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]]\n[[2021_Zhang_Probabilistic_Queuing_EV_Load]]"
   },
   {
     "title": "Support Vector Regression (SVR)",
@@ -3609,7 +3609,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Time-MoE.html",
-    "body": "# Time MoE\n\nBillion-scale mixture-of-experts time-series foundation model.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Time MoE\n\nBillion-scale mixture-of-experts time-series foundation model.\n\n## Referenced in this knowledge base\n\n[[2025_Meyer_Benchmark_Foundation_Models]]"
   },
   {
     "title": "TimeGrad",
@@ -3623,7 +3623,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/TimesFM.html",
-    "body": "# TimesFM\n\nGoogle's decoder-only patched time-series foundation model for zero-shot point forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# TimesFM\n\nGoogle's decoder-only patched time-series foundation model for zero-shot point forecasting.\n\n## Referenced in this knowledge base\n\n[[2025_Meyer_Benchmark_Foundation_Models]]\n[[LagLlama]]"
   },
   {
     "title": "TimesFM 2.0",
@@ -3819,7 +3819,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/V2G.html",
-    "body": "# V2G\n\nVehicle-to-Grid: bidirectional charging letting EV fleets provide storage services; scheduling studied with [[Lyapunov_Optimization]] and [[MPC]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# V2G\n\nVehicle-to-Grid: bidirectional charging letting EV fleets provide storage services; scheduling studied with [[Lyapunov_Optimization]] and [[MPC]].\n\n## Referenced in this knowledge base\n\n[[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]\n[[2024_Zhong_V2G_SVE_Evaluation_Metric]]"
   },
   {
     "title": "VAE DGP",
@@ -3896,7 +3896,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/Wavelet_Decomposition.html",
-    "body": "# Wavelet Decomposition\n\nMulti-resolution signal decomposition; preprocessing for denoising and component-wise forecasting (cf. [[VMD]]).\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Wavelet Decomposition\n\nMulti-resolution signal decomposition; preprocessing for denoising and component-wise forecasting (cf. [[VMD]]).\n\n## Referenced in this knowledge base\n\n[[2021_Zhang_Probabilistic_Queuing_EV_Load]]\n[[2025_Bao_ResMMoT_Informer_Time_Series]]"
   },
   {
     "title": "Wavelet Neural Network",
@@ -5184,14 +5184,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Battery_Capacity.html",
-    "body": "## Overview\nTotal energy storage of an EV battery (kWh), determining maximum charge demand per session; distinct from dynamic [[Battery_SOC]].\n\n## Usage in EV / Load Forecasting\nInput to V2G scheduling and charging-session demand models."
-  },
-  {
-    "title": "Battery State of Charge (SOC)",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Battery_SOC.html",
-    "body": "## Overview\nRemaining battery energy as a fraction of capacity. Determines remaining charging need and session duration.\n\n## Usage in EV / Load Forecasting\nKey input for charging-demand and scheduling models (cf. [[State_of_Charge]])."
+    "body": "## Overview\nTotal energy storage of an EV battery (kWh), determining maximum charge demand per session; distinct from dynamic [[State_of_Charge]].\n\n## Usage in EV / Load Forecasting\nInput to V2G scheduling and charging-session demand models."
   },
   {
     "title": "Byte Pair Encoding",
@@ -5215,18 +5208,11 @@
     "body": "# Changepoint Kernel\n\nChangepoint Kernel \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the stud"
   },
   {
-    "title": "Charging Demand",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Charging_Demand.html",
-    "body": "# Charging Demand\n\nCharging Demand \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies an"
-  },
-  {
     "title": "Charging Duration",
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Charging_Duration.html",
-    "body": "# Charging Duration\n\nSession length from plug-in to plug-out; determines energy delivered at a given power level.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Charging Duration\n\nSession length from plug-in to plug-out; determines energy delivered at a given power level.\n\n## Referenced in this knowledge base\n\n[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]\n[[2019_Zhu_ApplSci_EV_Load_Forecasting]]\n[[2020_Huang_Ensemble_EV_Load]]\n[[2025_Alghamdi_REST_Netwo"
   },
   {
     "title": "Charging Efficiency Metrics",
@@ -5268,7 +5254,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Charging_Power.html",
-    "body": "# Charging Power\n\nPower delivered during a charging session (kW); bounded by vehicle and connector limits.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Charging Power\n\nPower delivered during a charging session (kW); bounded by vehicle and connector limits.\n\n## Referenced in this knowledge base\n\n[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]\n[[2025_Li_DC_Charging_Profiles_TFT]]\n[[2026_Huang_Lyapunov_EV_Scheduling]]\n[[2026_Tang_PC_M3_Mamba_EV_Clus"
   },
   {
     "title": "Charging Price",
@@ -5318,13 +5304,6 @@
     "cat_name": "Features & Inputs",
     "rel_url": "features/Cloud_Type.html",
     "body": "# Cloud Type\n\nCloud Type \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and model pa"
-  },
-  {
-    "title": "Computational Time",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Computational_Time.html",
-    "body": "# Computational Time\n\nComputational Time \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the stud"
   },
   {
     "title": "Computation Time",
@@ -5390,13 +5369,6 @@
     "body": "# Daily Mileage\n\nDaily Mileage \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and mo"
   },
   {
-    "title": "Daily Rainfall",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Daily_Rainfall.html",
-    "body": "# Daily Rainfall\n\nDaily Rainfall \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and "
-  },
-  {
     "title": "Daily Weekly Cycles",
     "year": "",
     "cat_name": "Features & Inputs",
@@ -5408,7 +5380,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Depth_of_Discharge.html",
-    "body": "# Depth of Discharge\n\nFraction of battery capacity cycled between charges; degradation-related battery feature.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Depth of Discharge\n\nFraction of battery capacity cycled between charges; degradation-related battery feature.\n\n## Referenced in this knowledge base\n\n[[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]\n\n## Usable Window\nManufacturers typically constrain the usable DoD window (e.g. 10-90%) to limit degra"
   },
   {
     "title": "Dew Point",
@@ -5600,13 +5572,6 @@
     "body": "# Grid Demand\n\nGrid Demand \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and model "
   },
   {
-    "title": "Historical Demand",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Historical_Demand.html",
-    "body": "# Historical Demand\n\nHistorical Demand \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studie"
-  },
-  {
     "title": "Historical EV Charging Energy",
     "year": "",
     "cat_name": "Features & Inputs",
@@ -5625,14 +5590,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Holiday_Flag.html",
-    "body": "## Overview\nBinary indicator marking public holidays or special days, which shift commuting and charging patterns.\n\n## Usage in EV / Load Forecasting\nCalendar-derived binary input used alongside [[Calendar_Features]]."
-  },
-  {
-    "title": "Holiday Indicator",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Holiday_Indicator.html",
-    "body": "## Overview\nAlias form of [[Holiday_Flag]]: binary marker for holiday periods in calendar feature sets.\n\n## Usage in EV / Load Forecasting\nUsed in day-ahead forecasting studies to distinguish holiday load shapes."
+    "body": "## Overview\nBinary indicator marking public holidays or special days, which shift commuting and charging patterns.\n\n## Usage in EV / Load Forecasting\nCalendar-derived binary input used alongside [[Calendar_Features]]. Also referred to as a holiday indicator in day-ahead forecasting studies to distin"
   },
   {
     "title": "Hourly Aggregated Load",
@@ -5667,14 +5625,14 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Known_Future_Inputs.html",
-    "body": "# Known Future Inputs\n\nTime-varying inputs known in advance (calendar, planned events, weather forecasts) in the [[Temporal_Fusion_Transformer]] taxonomy.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Known Future Inputs\n\nTime-varying inputs known in advance (calendar, planned events, weather forecasts) in the [[Temporal_Fusion_Transformer]] taxonomy.\n\n## Referenced in this knowledge base\n\n[[2021_Lim_TFT_Temporal_Fusion_Transformers]]\n[[Temporal_Fusion_Transformer]]"
   },
   {
     "title": "Lag Features",
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Lag_Features.html",
-    "body": "# Lag Features\n\nAutoregressive input features constructed from past values of the target series (y(t-lag)); the workhorse of tabular forecasting pipelines.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Lag Features\n\nAutoregressive input features constructed from past values of the target series (y(t-lag)); the workhorse of tabular forecasting pipelines.\n\n## Referenced in this knowledge base\n\n[[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]]\n[[2021_Rasul_TimeGrad_Diffusion_Forecasting]"
   },
   {
     "title": "Last Observed Power Anchor",
@@ -5716,7 +5674,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Lookback_Window.html",
-    "body": "# Lookback Window\n\nLength of the historical input window fed to sequence models; key hyperparameter trading context against compute.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Lookback Window\n\nLength of the historical input window fed to sequence models; key hyperparameter trading context against compute.\n\n## Referenced in this knowledge base\n\n[[2019_Zhu_EV_Load_Forecasting]]\n[[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]]\n[[2023_Zeng_DLinear_Are_Transfor"
   },
   {
     "title": "Maximum Charging Delay",
@@ -5765,7 +5723,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Past_Observed_Inputs.html",
-    "body": "# Past Observed Inputs\n\nTime-varying inputs observable only up to forecast time in the [[Temporal_Fusion_Transformer]] taxonomy.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Past Observed Inputs\n\nTime-varying inputs observable only up to forecast time in the [[Temporal_Fusion_Transformer]] taxonomy.\n\n## Referenced in this knowledge base\n\n[[2021_Lim_TFT_Temporal_Fusion_Transformers]]\n[[Temporal_Fusion_Transformer]]"
   },
   {
     "title": "Patched Embeddings",
@@ -5828,7 +5786,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Pressure.html",
-    "body": "# Pressure\n\nBarometric pressure covariate (station or sea-level); minor weather input used in some forecasting studies.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Pressure\n\nBarometric pressure covariate (station or sea-level); minor weather input used in some forecasting studies.\n\n## Referenced in this knowledge base\n\n[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]\n[[2024_Qu_Forwardformer_Day_Ahead_Load]]"
   },
   {
     "title": "Price Elasticity Modulator",
@@ -5943,13 +5901,6 @@
     "body": "# Sinusoidal Positional Encoding\n\nSinusoidal Positional Encoding \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links"
   },
   {
-    "title": "Sliding Window Lags",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Sliding_Window_Lags.html",
-    "body": "# Sliding Window Lags\n\nSliding Window Lags \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the st"
-  },
-  {
     "title": "Smart Meter Load",
     "year": "",
     "cat_name": "Features & Inputs",
@@ -5989,7 +5940,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Solar_Radiation.html",
-    "body": "# Solar Radiation\n\nIncoming solar radiation (GHI/DNI/DHI components); weather covariate for PV-aware load forecasting.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Solar Radiation\n\nIncoming solar radiation (GHI/DNI/DHI components); weather covariate for PV-aware load forecasting.\n\n## Referenced in this knowledge base\n\n[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]\n[[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]]"
   },
   {
     "title": "Spatio Temporal Embedding",
@@ -6017,7 +5968,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Static_Covariates.html",
-    "body": "# Static Covariates\n\nTime-invariant inputs (location, capacity, connector type) in the Temporal Fusion Transformer input taxonomy.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Static Covariates\n\nTime-invariant inputs (location, capacity, connector type) in the Temporal Fusion Transformer input taxonomy.\n\n## Referenced in this knowledge base\n\n[[2021_Lim_TFT_Temporal_Fusion_Transformers]]\n[[Temporal_Fusion_Transformer]]"
   },
   {
     "title": "StationID Embedding",
@@ -6038,7 +5989,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Station_Occupancy.html",
-    "body": "# Station Occupancy\n\nNumber/proportion of occupied chargers at a station over time; direct precursor of station-level load.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Station Occupancy\n\nNumber/proportion of occupied chargers at a station over time; direct precursor of station-level load.\n\n## Referenced in this knowledge base\n\n[[2022_Zhang_GCN_TRN_EV_Availability]]\n[[2024_Qu_Physics_Informed_GAT_EV_Load]]\n[[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]]\n[[2026_Wang_Xia"
   },
   {
     "title": "Super User Features",
@@ -6052,7 +6003,7 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Temperature.html",
-    "body": "## Overview\nAmbient temperature, the dominant exogenous weather driver of electricity demand (heating/cooling) and EV battery behavior.\n\n## Usage in EV / Load Forecasting\nStandard input feature in weather-aware forecasting models; often paired with [[Humidity]]."
+    "body": "## Overview\nAmbient temperature, the dominant exogenous weather driver of electricity demand (heating/cooling) and EV battery behavior.\n\n## Usage in EV / Load Forecasting\nStandard input feature in weather-aware forecasting models; often paired with [[Humidity]].\n\n## See also\n- [[Climate_Features]] \u2014"
   },
   {
     "title": "Temperature Forecast",
@@ -6081,13 +6032,6 @@
     "cat_name": "Features & Inputs",
     "rel_url": "features/Timestamp.html",
     "body": "# Timestamp\n\nTimestamp \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and model page"
-  },
-  {
-    "title": "Timestamps",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Timestamps.html",
-    "body": "# Timestamps\n\nTimestamps \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and model pa"
   },
   {
     "title": "Time Derived Features",
@@ -6164,21 +6108,14 @@
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Weather_Features.html",
-    "body": "# Weather Features\n\nFamily of meteorological input variables ([[Temperature]], [[Humidity]], [[Wind_Speed]], radiation, precipitation) driving demand.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Weather Features\n\nFamily of meteorological input variables ([[Temperature]], [[Humidity]], [[Wind_Speed]], radiation, precipitation) driving demand.\n\n## Referenced in this knowledge base\n\n[[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]]\n[[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]\n["
   },
   {
     "title": "Weather Forecast",
     "year": "",
     "cat_name": "Features & Inputs",
     "rel_url": "features/Weather_Forecast.html",
-    "body": "# Weather Forecast\n\nNumerical weather predictions used as future covariates in day-ahead forecasting (as opposed to observed weather).\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
-  },
-  {
-    "title": "Weather Forecast Features",
-    "year": "",
-    "cat_name": "Features & Inputs",
-    "rel_url": "features/Weather_Forecast_Features.html",
-    "body": "# Weather Forecast Features\n\nWeather Forecast Features \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nAs an input feature it appears in the feature lists of forecasting papers collected here. The links below poi"
+    "body": "# Weather Forecast\n\nNumerical weather predictions used as future covariates in day-ahead forecasting (as opposed to observed weather).\n\n## Referenced in this knowledge base\n\n[[2001_Hippert_Neural_Networks_STLF_Review]]\n[[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]\n\n[[2021_Buzna_Hierarchical_Prob"
   },
   {
     "title": "Weather & Traffic Conditions",
@@ -6248,7 +6185,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/AUC.html",
-    "body": "# AUC\n\nArea Under the ROC Curve: threshold-independent classification quality measure.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# AUC\n\nArea Under the ROC Curve: threshold-independent classification quality measure.\n\n## Referenced in this knowledge base\n\n[[2024_Ke_Divide_Conquer_Transformer_EV]]\n[[2026_Wang_Xu_Similar_Day_Selection_EV_Load]]"
   },
   {
     "title": "Autocorrelation Time Delay",
@@ -6472,7 +6409,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/NLL.html",
-    "body": "# NLL\n\nNegative Log-Likelihood: proper scoring rule evaluating the full predictive density; lower is better.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# NLL\n\nNegative Log-Likelihood: proper scoring rule evaluating the full predictive density; lower is better.\n\n## Referenced in this knowledge base\n\n[[2014_Kingma_Adam_Stochastic_Optimization]]\n[[2018_Bai_Empirical_TCN_Sequence_Modeling]]\n[[2019_Li_LogSparse_Enhancing_Locality_Transformer]]\n[[2021_Ta"
   },
   {
     "title": "NMAE (Normalized Mean Absolute Error)",
@@ -6507,7 +6444,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Pearson_Correlation.html",
-    "body": "# Pearson Correlation\n\nLinear correlation coefficient between forecast and observation; see [[Pearson_Correlation_Coefficient]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Pearson Correlation\n\nLinear correlation coefficient between forecast and observation; see [[Pearson_Correlation_Coefficient]].\n\n## Referenced in this knowledge base\n\n[[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]]\n[[Pearson_Correlation_Coefficient]]"
   },
   {
     "title": "Pearson Correlation Coefficient",
@@ -6549,7 +6486,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Precision.html",
-    "body": "# Precision\n\nFraction of predicted positives that are correct; pairs with [[Recall]] and [[Accuracy]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Precision\n\nFraction of predicted positives that are correct; pairs with [[Recall]] and [[Accuracy]].\n\n## Referenced in this knowledge base\n\n[[2024_Ke_Divide_Conquer_Transformer_EV]]\n[[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]\n[[2026_Wang_Xu_Similar_Day_Selection_EV_Load]]\n[[Recall]]"
   },
   {
     "title": "Prediction Intervals",
@@ -6577,7 +6514,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Recall.html",
-    "body": "# Recall\n\nFraction of actual positives that are detected; pairs with [[Precision]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Recall\n\nFraction of actual positives that are detected; pairs with [[Precision]].\n\n## Referenced in this knowledge base\n\n[[2024_Ke_Divide_Conquer_Transformer_EV]]\n[[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]\n[[2026_Wang_Xu_Similar_Day_Selection_EV_Load]]\n[[Precision]]"
   },
   {
     "title": "Relative Accuracy",
@@ -6598,10 +6535,10 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/RPS.html",
-    "body": "# RPS\n\nRanked Probability Score: quadratic measure of the distance between a full predictive distribution and the observation, standard for probabilistic forecasts.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# RPS\n\nRanked Probability Score: quadratic measure of the distance between a full predictive distribution and the observation, standard for probabilistic forecasts.\n\n## Referenced in this knowledge base\n\n[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]"
   },
   {
-    "title": "R-squared (R\u00b2)",
+    "title": "R-squared (Coefficient of Determination, R\u00b2)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/R_squared.html",
@@ -6626,7 +6563,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/sMAPE.html",
-    "body": "# sMAPE\n\nSymmetric Mean Absolute Percentage Error; MAPE variant that symmetrizes the denominator to avoid penalizing low actual values.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# sMAPE\n\nSymmetric Mean Absolute Percentage Error; MAPE variant that symmetrizes the denominator to avoid penalizing low actual values.\n\n## Referenced in this knowledge base\n\n[[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]]\n[[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]]\n[[2024_Cao"
   },
   {
     "title": "Spearman Correlation",
@@ -6941,7 +6878,7 @@
     "year": "",
     "cat_name": "Forecasting Horizons",
     "rel_url": "horizons/Short_Term_Forecasting.html",
-    "body": "# \u23f1\ufe0f Short-Term Load Forecasting (STLF)\n\n## Definition\n\nShort-term EV charging load forecasting covers prediction horizons from **5 minutes to 1 hour ahead**. The primary use cases are real-time grid frequency regulation, dynamic pricing, and demand response activation.\n\n## Temporal Resolution\n\n| Re"
+    "body": "# \u23f1\ufe0f Short-Term Load Forecasting (STLF)\n\n## Definition\n\nShort-term EV charging load forecasting covers prediction horizons from **5 minutes to a few hours ahead** (typically \u2264 6 hours; some multi-step probabilistic works extend to 24 hours). The primary use cases are real-time grid frequency regulat"
   },
   {
     "title": "Spatial-Temporal Network Forecasting",
@@ -6972,413 +6909,413 @@
     "body": "# \ud83d\udc19 Time Series Foundation Models Repositories\n\n## Overview\nThis note indexes foundational open-source repositories for time-series Transformer variants, State Space Models (Mamba), and baseline linear models benchmarked across EV load forecasting literature.\n\n## Repositories & Citation Graph\n\n### 1"
   },
   {
-    "title": "References \u2014 [[1997_Hochreiter_Long_Short_Term_Memory]]",
+    "title": "References \u2014 1997_Hochreiter_Long_Short_Term_Memory",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/1997_Hochreiter_Long_Short_Term_Memory_refs.html",
     "body": "# References \u2014 [[1997_Hochreiter_Long_Short_Term_Memory]]\n\n> **39 references** extracted from this paper.\n\n---\n\n1. Almeida, L. B. (1987). A learning rule for asynchronous perceptrons with feed- back in a combinatorial environment. In IEEE 1st International Conference on Neural Networks, San Diego (V"
   },
   {
-    "title": "References \u2014 [[2001_Hippert_Neural_Networks_STLF_Review]]",
+    "title": "References \u2014 2001_Hippert_Neural_Networks_STLF_Review",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2001_Hippert_Neural_Networks_STLF_Review_refs.html",
     "body": "# References \u2014 [[2001_Hippert_Neural_Networks_STLF_Review]]\n\n> **90 references** extracted from this paper.\n\n---\n\n1. M. Adya and F. Collopy, \u201cHow effective are neural networks at fore- casting and prediction? A review and evaluation,\u201d J. Forecast., vol. 17, pp. 481\u2013495, 1998.\n2. A. S. AlFuhaid, M. A"
   },
   {
-    "title": "References \u2014 [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]",
+    "title": "References \u2014 2014_Alizadeh_Scalable_Stochastic_EV_Demand",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2014_Alizadeh_Scalable_Stochastic_EV_Demand_refs.html",
     "body": "# References \u2014 [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. J. Axsen et al., \u201cPlug-in hybrid vehicle ghg impacts in california: In- tegrating consumer-informed recharge profiles with an electricity-dis- patch model,\u201d Energy Policy, vol. 39,"
   },
   {
-    "title": "References \u2014 [[2014_Kingma_Adam_Stochastic_Optimization]]",
+    "title": "References \u2014 2014_Kingma_Adam_Stochastic_Optimization",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2014_Kingma_Adam_Stochastic_Optimization_refs.html",
     "body": "# References \u2014 [[2014_Kingma_Adam_Stochastic_Optimization]]\n\n> **3 references** extracted from this paper.\n\n---\n\n1. Amari, Shun-Ichi. Natural gradient works efficiently in learning. Neural computation, 10(2):251\u2013276, 1998. Deng, Li, Li, Jinyu, Huang, Jui-Ting, Yao, Kaisheng, Yu, Dong, Seide, Frank, "
   },
   {
-    "title": "References \u2014 [[2015_Raza_Review_AI_Load_Demand]]",
+    "title": "References \u2014 2015_Raza_Review_AI_Load_Demand",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2015_Raza_Review_AI_Load_Demand_refs.html",
     "body": "# References \u2014 [[2015_Raza_Review_AI_Load_Demand]]\n\n> **201 references** extracted from this paper.\n\n---\n\n1. [31] Proposed the concept of first artificial neurons. 2 1942 Hebb & Pitts\n2. [32] Proposed first learning algorithm to memorize the adapting weight values. 3 1958 Rosenblatt\n3. [33] Develope"
   },
   {
-    "title": "References \u2014 [[2017_Attention_Is_All_You_Need]]",
+    "title": "References \u2014 2017_Attention_Is_All_You_Need",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2017_Attention_Is_All_You_Need_refs.html",
     "body": "# References \u2014 [[2017_Attention_Is_All_You_Need]]\n\n> **40 references** extracted from this paper.\n\n---\n\n1. Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.\n2. Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translat"
   },
   {
-    "title": "References \u2014 [[2019_Zhu_ApplSci_EV_Load_Forecasting]]",
+    "title": "References \u2014 2019_Zhu_ApplSci_EV_Load_Forecasting",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2019_Zhu_ApplSci_EV_Load_Forecasting_refs.html",
     "body": "# References \u2014 [[2019_Zhu_ApplSci_EV_Load_Forecasting]]\n\n> **32 references** extracted from this paper.\n\n---\n\n1. 1. Raza, M.Q.; Khosravi, A. A review on artificial intelligence based load demand forecasting techniques for smart grid and buildings. Renew. Sustain. Energy Rev. 2015, 50, 1352\u20131372. [Cr"
   },
   {
-    "title": "References \u2014 [[2019_Zhu_EV_Load_Forecasting]]",
+    "title": "References \u2014 2019_Zhu_EV_Load_Forecasting",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2019_Zhu_EV_Load_Forecasting_refs.html",
     "body": "# References \u2014 [[2019_Zhu_EV_Load_Forecasting]]\n\n> **54 references** extracted from this paper.\n\n---\n\n1. 1. Raza, M.Q.; Khosravi, A. A review on artificial intelligence based load demand forecasting techniques for smart grid and buildings. Renew. Sustain. Energy Rev. 2015, 50, 1352\u20131372. [CrossRef]\n"
   },
   {
-    "title": "References \u2014 [[2020_Huang_Ensemble_EV_Load]]",
+    "title": "References \u2014 2020_Huang_Ensemble_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2020_Huang_Ensemble_EV_Load_refs.html",
     "body": "# References \u2014 [[2020_Huang_Ensemble_EV_Load]]\n\n> **24 references** extracted from this paper.\n\n---\n\n1. D. Wu, H. Zeng, and B. Boulet, \u201cNeighborhood level network aware electric vehicle charging management with mixed control strategy,\u201d in 2014 IEEE International Electric Vehicle Conference (IEVC). I"
   },
   {
-    "title": "References \u2014 [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]",
+    "title": "References \u2014 2020_Salinas_DeepAR_Probabilistic_Forecasting",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2020_Salinas_DeepAR_Probabilistic_Forecasting_refs.html",
     "body": "# References \u2014 [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]\n\n> **24 references** extracted from this paper.\n\n---\n\n1. Samy Bengio, Oriol Vinyals, Navdeep Jaitly, and Noam Shazeer. Scheduled sampling for sequence prediction with recurrent neural networks. In Advances in Neural Information Pro- ce"
   },
   {
-    "title": "References \u2014 [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]",
+    "title": "References \u2014 2021_Buzna_Hierarchical_Probabilistic_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2021_Buzna_Hierarchical_Probabilistic_EV_Load_refs.html",
     "body": "# References \u2014 [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]\n\n> **57 references** extracted from this paper.\n\n---\n\n1. IEA Global EV Outlook 2020. Available online: https://www.iea.org/reports/ global-ev-outlook-2020 (Accessed on June 25 2020).\n2. Buonomano A, Calise F, Cappiello FL, Palombo A, V"
   },
   {
-    "title": "References \u2014 [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]",
+    "title": "References \u2014 2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load_refs.html",
     "body": "# References \u2014 [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]\n\n> **28 references** extracted from this paper.\n\n---\n\n1. E. Taherzadeh, S. Javadi, and M. Dabbaghjamanesh, \u201cNew optimal power management strategy for series plug-in hybrid electric vehicles,\u201d Int. J. Auto. Technol., vol. 19, no. 6, pp. 10"
   },
   {
-    "title": "References \u2014 [[2021_VanKriekinge_Day_Ahead_EV_Demand]]",
+    "title": "References \u2014 2021_VanKriekinge_Day_Ahead_EV_Demand",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2021_VanKriekinge_Day_Ahead_EV_Demand_refs.html",
     "body": "# References \u2014 [[2021_VanKriekinge_Day_Ahead_EV_Demand]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. 1. Masson-Delmotte, V.; Zhai, P.; Pirani, A.; Connors, S.L.; P\u00e9an, C.; Berger, S.; Caud, N.; Chen, Y.; Goldfarb, L.; Gomis, M.I.; et al. (Eds.) Climate Change 2021: The Physical Science "
   },
   {
-    "title": "References \u2014 [[2021_Zhang_Probabilistic_Queuing_EV_Load]]",
+    "title": "References \u2014 2021_Zhang_Probabilistic_Queuing_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2021_Zhang_Probabilistic_Queuing_EV_Load_refs.html",
     "body": "# References \u2014 [[2021_Zhang_Probabilistic_Queuing_EV_Load]]\n\n> **47 references** extracted from this paper.\n\n---\n\n1. G. Wang et al., \u201cRobust planning of electric vehicle charging facili- ties with an advanced evaluation method,\u201d IEEE Trans. Ind. Informat., vol. 14, no. 3, pp. 866\u2013876, Mar. 2018.\n2. "
   },
   {
-    "title": "References \u2014 [[2022_Cao_Robust_Deep_Gaussian_Process_Load]]",
+    "title": "References \u2014 2022_Cao_Robust_Deep_Gaussian_Process_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2022_Cao_Robust_Deep_Gaussian_Process_Load_refs.html",
     "body": "# References \u2014 [[2022_Cao_Robust_Deep_Gaussian_Process_Load]]\n\n> **29 references** extracted from this paper.\n\n---\n\n1. Paaso et al., \u201cSharing knowledge on electrical energy industry's first response to COVID-19,\u201d 2020. [Online]. Available: https://resourcecenter. ieee pes.org/publications/whitepaper"
   },
   {
-    "title": "References \u2014 [[2022_Zhang_GCN_TRN_EV_Availability]]",
+    "title": "References \u2014 2022_Zhang_GCN_TRN_EV_Availability",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2022_Zhang_GCN_TRN_EV_Availability_refs.html",
     "body": "# References \u2014 [[2022_Zhang_GCN_TRN_EV_Availability]]\n\n> **16 references** extracted from this paper.\n\n---\n\n1. R. Luo and R. Su, \u201cTraffic signal transition time prediction based on aerial captures during peak hours, \u201din 2020 16th International Conference on Control, Automation, Robotics and Vision ("
   },
   {
-    "title": "References \u2014 [[2023_Cheng_VMD_Prophet_LSTM]]",
+    "title": "References \u2014 2023_Cheng_VMD_Prophet_LSTM",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2023_Cheng_VMD_Prophet_LSTM_refs.html",
     "body": "# References \u2014 [[2023_Cheng_VMD_Prophet_LSTM]]\n\n> **21 references** extracted from this paper.\n\n---\n\n1. Parastegari, M. (2014). Short term electric load forecasting by wavelet transform and grey model improved by PSO (particle swarm optimization) algorithm. Energy 72, 434\u2013442. doi:10.1016/j.energy.2"
   },
   {
-    "title": "References \u2014 [[2023_Huang_MetaProbformer_EV_Load]]",
+    "title": "References \u2014 2023_Huang_MetaProbformer_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2023_Huang_MetaProbformer_EV_Load_refs.html",
     "body": "# References \u2014 [[2023_Huang_MetaProbformer_EV_Load]]\n\n> **51 references** extracted from this paper.\n\n---\n\n1. H. He et al., \u201cChina's battery electric vehicles lead the world: Achieve- ments in technology system architecture and technological break- throughs,\u201d Green Energy Intell. Transp., vol. 1, no"
   },
   {
-    "title": "References \u2014 [[2023_Koohfar_Transformer_EV_Demand]]",
+    "title": "References \u2014 2023_Koohfar_Transformer_EV_Demand",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2023_Koohfar_Transformer_EV_Demand_refs.html",
     "body": "# References \u2014 [[2023_Koohfar_Transformer_EV_Demand]]\n\n> **28 references** extracted from this paper.\n\n---\n\n1. 1. Zheng, X.; Streimikiene, D.; Balezentis, T.; Mardani, A.; Cavallaro, F.; Liao, H. A review of greenhouse gas emission profiles, dynamics, and climate change mitigation efforts across the"
   },
   {
-    "title": "References \u2014 [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]",
+    "title": "References \u2014 2023_Ziyabari_Multi_Branch_ResTrans_Solar",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2023_Ziyabari_Multi_Branch_ResTrans_Solar_refs.html",
     "body": "# References \u2014 [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]\n\n> **30 references** extracted from this paper.\n\n---\n\n1. S. Ziyabari, L. Du, and S. Biswas, \u201cMulti-branch resnet-transformer based deep hybrid approach for short-term spatio-temporal solar irradiance forecasting,\u201d in Proc. IEEE Energy Conv"
   },
   {
-    "title": "References \u2014 [[2024_Ali_MQ_TCN_Transfer_Learning_EV]]",
+    "title": "References \u2014 2024_Ali_MQ_TCN_Transfer_Learning_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Ali_MQ_TCN_Transfer_Learning_EV_refs.html",
     "body": "# References \u2014 [[2024_Ali_MQ_TCN_Transfer_Learning_EV]]\n\n> **42 references** extracted from this paper.\n\n---\n\n1. A. Banerji, K. Sharma, and R. L. R. Singh, \u201cIntegrating renewable energy and electric vehicle systems into power grid: Benefits and challenges,\u201d 2021 Innovations in Power and Advanced Com"
   },
   {
-    "title": "References \u2014 [[2024_Bampos_EV_Load_Forecasting_DAM]]",
+    "title": "References \u2014 2024_Bampos_EV_Load_Forecasting_DAM",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Bampos_EV_Load_Forecasting_DAM_refs.html",
     "body": "# References \u2014 [[2024_Bampos_EV_Load_Forecasting_DAM]]\n\n> **48 references** extracted from this paper.\n\n---\n\n1. Global EV Outlook 2022. International Energy Agency; 2022 [Online]. Available: https://www.iea.org/reports/global-ev-outlook-2022/executive-summary.\n2. Vagropoulos SI, Bakirtzis AG. Optima"
   },
   {
-    "title": "References \u2014 [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]]",
+    "title": "References \u2014 2024_Cao_Feature_Enhanced_Probabilistic_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Cao_Feature_Enhanced_Probabilistic_EV_Load_refs.html",
     "body": "# References \u2014 [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. IEA. Global EV Outlook 2022. https://www.iea.org/reports/global-ev-outl ook-2022;; 2022.\n2. Wang G, Zhao J, Wen F, Xue Y, Ledwich G. Dispatch strategy of PHEVs to mitigate sele"
   },
   {
-    "title": "References \u2014 [[2024_Feng_LSTM_Transformer_EV_Consumption]]",
+    "title": "References \u2014 2024_Feng_LSTM_Transformer_EV_Consumption",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Feng_LSTM_Transformer_EV_Consumption_refs.html",
     "body": "# References \u2014 [[2024_Feng_LSTM_Transformer_EV_Consumption]]\n\n> **67 references** extracted from this paper.\n\n---\n\n1. [1] Feng, S., & Magee, C. L. (2020). Technological development of key domains in electric vehicles: Improvement rates, technology trajectories and key assignees. Applied Energy, 260,"
   },
   {
-    "title": "References \u2014 [[2024_Helmy_Autoformer_EV_Charging]]",
+    "title": "References \u2014 2024_Helmy_Autoformer_EV_Charging",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Helmy_Autoformer_EV_Charging_refs.html",
     "body": "# References \u2014 [[2024_Helmy_Autoformer_EV_Charging]]\n\n> **33 references** extracted from this paper.\n\n---\n\n1. International Energy Agency (IEA), \u201cGlobal EV Outlook 2023,\u201d April 2023. [Online]. Available: https://www.iea.org/reports/ global-ev-outlook-2023\n2. F. Marzbani, A. H. Osman, and M. S. Hassa"
   },
   {
-    "title": "References \u2014 [[2024_Ke_Divide_Conquer_Transformer_EV]]",
+    "title": "References \u2014 2024_Ke_Divide_Conquer_Transformer_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Ke_Divide_Conquer_Transformer_EV_refs.html",
     "body": "# References \u2014 [[2024_Ke_Divide_Conquer_Transformer_EV]]\n\n> **32 references** extracted from this paper.\n\n---\n\n1. Zhuowei Luo, Yonghua Song, Zechun Hu, Zhiwei Xu, Xia Yang, and Kaiqiao Zhan. Forecasting charging load of plug-in electric vehicles in china. In 2011 IEEE Power and Energy Society Genera"
   },
   {
-    "title": "References \u2014 [[2024_Li_DiffPLF_Conditional_Diffusion_EV]]",
+    "title": "References \u2014 2024_Li_DiffPLF_Conditional_Diffusion_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Li_DiffPLF_Conditional_Diffusion_EV_refs.html",
     "body": "# References \u2014 [[2024_Li_DiffPLF_Conditional_Diffusion_EV]]\n\n> **28 references** extracted from this paper.\n\n---\n\n1. H. Tu, H. Feng, S. Srdic, and S. Lukic, \u201cExtreme fast charging of electric vehicles: A technology overview,\u201d IEEE Trans. Transp. Electrif., vol. 5, no. 4, pp. 861\u2013878, 2019.\n2. \u201cThe 2"
   },
   {
-    "title": "References \u2014 [[2024_Menati_PowerMamba_Power_Systems_SSM]]",
+    "title": "References \u2014 2024_Menati_PowerMamba_Power_Systems_SSM",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Menati_PowerMamba_Power_Systems_SSM_refs.html",
     "body": "# References \u2014 [[2024_Menati_PowerMamba_Power_Systems_SSM]]\n\n> **22 key references** extracted from this paper.\n\n---\n\n1. C. Zhang and Y. Fu, \"Probabilistic electricity price forecast with optimal prediction interval,\" IEEE Transactions on Power Systems, vol. 39, no. 1 (2024), pp. 442\u2013452.\n2. J. Lago"
   },
   {
-    "title": "References \u2014 [[2024_Qu_Physics_Informed_GAT_EV_Load]]",
+    "title": "References \u2014 2024_Qu_Physics_Informed_GAT_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Qu_Physics_Informed_GAT_EV_Load_refs.html",
     "body": "# References \u2014 [[2024_Qu_Physics_Informed_GAT_EV_Load]]\n\n> **50 references** extracted from this paper.\n\n---\n\n1. S. Powell, G. V. Cezar, L. Min, I. M. L. Azevedo, and R. Rajagopal, \u201cCharging infrastructure access and operation to reduce the grid impacts of deep electric vehicle adoption,\u201d Nature Ene"
   },
   {
-    "title": "References \u2014 [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]",
+    "title": "References \u2014 2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot_refs.html",
     "body": "# References \u2014 [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]\n\n> **37 references** extracted from this paper.\n\n---\n\n1. [1] Wang B, Dehghanian P, Wang S, Mitolo M. Electrical safety considerations in large-Scale electric vehicle charging stations. IEEE Transactions on Industry Applications 2019;55(6):66"
   },
   {
-    "title": "References \u2014 [[2024_Zhong_V2G_SVE_Evaluation_Metric]]",
+    "title": "References \u2014 2024_Zhong_V2G_SVE_Evaluation_Metric",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Zhong_V2G_SVE_Evaluation_Metric_refs.html",
     "body": "# References \u2014 [[2024_Zhong_V2G_SVE_Evaluation_Metric]]\n\n> **46 references** extracted from this paper.\n\n---\n\n1. M. Muratori, \u201cImpact of uncoordinated plug-in electric vehicle charging on residential power demand,\u201d Nat. Energy, vol. 3, no. 3, pp. 193\u2013201, 2018.\n2. X. Shi, Y. Xu, G. Chen, and Y. Guo,"
   },
   {
-    "title": "References \u2014 [[2024_Zhou_Conformal_Prediction_DER]]",
+    "title": "References \u2014 2024_Zhou_Conformal_Prediction_DER",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2024_Zhou_Conformal_Prediction_DER_refs.html",
     "body": "# References \u2014 [[2024_Zhou_Conformal_Prediction_DER]]\n\n> **19 references** extracted from this paper.\n\n---\n\n1. 006. Rafael Izbicki, Gilson Shimizu, and Rafael B Stern. Cd-split and hpd-split: Efficient con- formal regions in high dimensions. Journal of Machine Learning Research, 23(87):1\u201332, 2022. 2"
   },
   {
-    "title": "References \u2014 [[2025_Alghamdi_REST_Network_Port_EV]]",
+    "title": "References \u2014 2025_Alghamdi_REST_Network_Port_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Alghamdi_REST_Network_Port_EV_refs.html",
     "body": "# References \u2014 [[2025_Alghamdi_REST_Network_Port_EV]]\n\n> **35 references** extracted from this paper.\n\n---\n\n1. B. Jiang, J. Haider, J. Li, Y. Wang, T. L. Yip, and Y. Wang, \u2018\u2018Exploring the impact of port-centric information integration on port performance: The case of Qingdao port,'' Maritime Policy "
   },
   {
-    "title": "References \u2014 [[2025_Bao_ResMMoT_Informer_Time_Series]]",
+    "title": "References \u2014 2025_Bao_ResMMoT_Informer_Time_Series",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Bao_ResMMoT_Informer_Time_Series_refs.html",
     "body": "# References \u2014 [[2025_Bao_ResMMoT_Informer_Time_Series]]\n\n> **42 references** extracted from this paper.\n\n---\n\n1. [1] W. Bao, Y. Cao, Y. Yang, H. Che, J. Huang, and S. Wen, \u201cData-driven stock forecasting models based on neural networks: A review,\u201d Inf. Fusion, vol. 113, Jan. 2025, Art. no. 102616.\n2"
   },
   {
-    "title": "References \u2014 [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]]",
+    "title": "References \u2014 2025_Fan_EV_STLLM_Spatio_Temporal_LLM",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Fan_EV_STLLM_Spatio_Temporal_LLM_refs.html",
     "body": "# References \u2014 [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]]\n\n> **57 references** extracted from this paper.\n\n---\n\n1. [33] . It also offers the flexibility to define the number of decomposition layers and maintains strong robustness against noise. The core of VMD is to find a set of modes {uk} and their"
   },
   {
-    "title": "References \u2014 [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]",
+    "title": "References \u2014 2025_FernandezZapico_Stochastic_MPC_Conformal_Hub",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_FernandezZapico_Stochastic_MPC_Conformal_Hub_refs.html",
     "body": "# References \u2014 [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]\n\n> **19 references** extracted from this paper.\n\n---\n\n1. The European Parliament and The Council, \"Regulation on the deployment of alternative fuels infrastructure, and repealing directive 2014/94/EU,\" European Union, 2023.\n2. Gove"
   },
   {
-    "title": "References \u2014 [[2025_Han_Vertical_Federated_EGAT_LSTM]]",
+    "title": "References \u2014 2025_Han_Vertical_Federated_EGAT_LSTM",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Han_Vertical_Federated_EGAT_LSTM_refs.html",
     "body": "# References \u2014 [[2025_Han_Vertical_Federated_EGAT_LSTM]]\n\n> **32 references** extracted from this paper.\n\n---\n\n1. 1. Guo, S.; Lin, Y.; Li, S.; Chen, Z.; Wan, H. Deep Spatial\u2013Temporal 3D Convolutional Neural Networks for Traffic Data Forecasting. IEEE Trans. Intell. Transp. Syst. 2019, 20, 3913\u20133926."
   },
   {
-    "title": "References \u2014 [[2025_Hussain_CAT_Former_Short_Term_EV]]",
+    "title": "References \u2014 2025_Hussain_CAT_Former_Short_Term_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Hussain_CAT_Former_Short_Term_EV_refs.html",
     "body": "# References \u2014 [[2025_Hussain_CAT_Former_Short_Term_EV]]\n\n> **37 references** extracted from this paper.\n\n---\n\n1. 1. Rubino, L., Capasso, C. & Veneri, O. Review on plug-in electric vehicle charging architectures integrated with distributed energy sources for sustainable mobility. Appl. Energy. 207, "
   },
   {
-    "title": "References \u2014 [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]]",
+    "title": "References \u2014 2025_Hussain_Hybrid_LSTM_Transformer_Demand",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Hussain_Hybrid_LSTM_Transformer_Demand_refs.html",
     "body": "# References \u2014 [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]]\n\n> **52 references** extracted from this paper.\n\n---\n\n1. 1. Breyer, C., Khalili, S., Rantanen, E. & Bogdanov, D. Solar photovoltaic capacity demand for a fully sustainable transport sector\u2013 how to fulfil the Paris agreement by 2050, in I"
   },
   {
-    "title": "References \u2014 [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]]",
+    "title": "References \u2014 2025_Khan_Transformer_BiLSTM_Price_Forecasting",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Khan_Transformer_BiLSTM_Price_Forecasting_refs.html",
     "body": "# References \u2014 [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]]\n\n> **50 references** extracted from this paper.\n\n---\n\n1. A. Al Ahad Khan, M. H. Ullah, R. Tabassum, and M. F. Kabir, \u201cA transformer-BILSTM based hybrid deep learning approach for day-ahead electricity price forecasting,\u201d in Proc. IEEE"
   },
   {
-    "title": "References \u2014 [[2025_Li_DC_Charging_Profiles_TFT]]",
+    "title": "References \u2014 2025_Li_DC_Charging_Profiles_TFT",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Li_DC_Charging_Profiles_TFT_refs.html",
     "body": "# References \u2014 [[2025_Li_DC_Charging_Profiles_TFT]]\n\n> **42 references** extracted from this paper.\n\n---\n\n1. 1. Nykvist, B. & Nilsson, M. Rapidly falling costs of battery packs for electric vehicles. Nat. Clim. Change 5, 329\u2013332 (2015).\n2. 2. Harper, G. et al. Recycling lithium-ion batteries from el"
   },
   {
-    "title": "References \u2014 [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]",
+    "title": "References \u2014 2025_Li_Multi_View_Graph_Intrusion_Detection_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Li_Multi_View_Graph_Intrusion_Detection_EV_refs.html",
     "body": "# References \u2014 [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]\n\n> **34 references** extracted from this paper.\n\n---\n\n1. Alcaraz C, Lopez J, Wolthusen S. OCPP protocol: Security threats and challenges. IEEE Trans Smart Grid 2017;8(5):2452\u20139.\n2. Chen S, Cheng H, Zhang H, Lv S, Wei Z, Jin Y. Privac"
   },
   {
-    "title": "References \u2014 [[2025_Matrone_QR_LSTM_Attention_EV_Load]]",
+    "title": "References \u2014 2025_Matrone_QR_LSTM_Attention_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Matrone_QR_LSTM_Attention_EV_Load_refs.html",
     "body": "# References \u2014 [[2025_Matrone_QR_LSTM_Attention_EV_Load]]\n\n> **6 references** extracted from this paper.\n\n---\n\n1. Julian Huber, David Dann, and Christof Weinhardt. 2020. Probabilistic forecasts of time and energy flexibility in battery electric vehicle charging. Applied Energy 262 (March 2020).\n2. M"
   },
   {
-    "title": "References \u2014 [[2025_Meyer_Benchmark_Foundation_Models]]",
+    "title": "References \u2014 2025_Meyer_Benchmark_Foundation_Models",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Meyer_Benchmark_Foundation_Models_refs.html",
     "body": "# References \u2014 [[2025_Meyer_Benchmark_Foundation_Models]]\n\n> **69 references** extracted from this paper.\n\n---\n\n1. A. Tavakoli, S. Saha, M. T. Arif, M. E. Haque, N. Mendis, and A. M. Oo, \u2018\u2018Impacts of grid integration of solar PV and electric vehicle on grid stability, power quality and energy econom"
   },
   {
-    "title": "References \u2014 [[2025_Tian_MSSTGAN_City_EV_Load]]",
+    "title": "References \u2014 2025_Tian_MSSTGAN_City_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Tian_MSSTGAN_City_EV_Load_refs.html",
     "body": "# References \u2014 [[2025_Tian_MSSTGAN_City_EV_Load]]\n\n> **34 references** extracted from this paper.\n\n---\n\n1. X. Ge, L. Shi, Y. Fu, S. M. Muyeen, Z. Zhang, and H. He, \u2018\u2018Data-driven spatial\u2013temporal prediction of electric vehicle load profile consider- ing charging behavior,'' Electr. Power Syst. Res., "
   },
   {
-    "title": "References \u2014 [[2025_Weqar_LTLM_LSTM_EV_Load]]",
+    "title": "References \u2014 2025_Weqar_LTLM_LSTM_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Weqar_LTLM_LSTM_EV_Load_refs.html",
     "body": "# References \u2014 [[2025_Weqar_LTLM_LSTM_EV_Load]]\n\n> **35 references** extracted from this paper.\n\n---\n\n1. [1] S. Hashemi, J. Ostergaard, and G. Yang, \u201cA scenario-based approach for energy storage capacity determination in LV grids with high PV penetration,\u201d IEEE Transactions on Smart Grid, vol. 5, no"
   },
   {
-    "title": "References \u2014 [[2025_Yang_Stochastic_MPC_Microgrid_EV]]",
+    "title": "References \u2014 2025_Yang_Stochastic_MPC_Microgrid_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Yang_Stochastic_MPC_Microgrid_EV_refs.html",
     "body": "# References \u2014 [[2025_Yang_Stochastic_MPC_Microgrid_EV]]\n\n> **29 references** extracted from this paper.\n\n---\n\n1. A. Alsharif et al., \u201cImpact of electric vehicle on residential power distribution considering energy management strategy and stochastic Monte Carlo algorithm,\u201d Energies, vol. 16, no. 3, "
   },
   {
-    "title": "References \u2014 [[2025_Zheng_BWO_ICEEMDAN_iTransformer]]",
+    "title": "References \u2014 2025_Zheng_BWO_ICEEMDAN_iTransformer",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Zheng_BWO_ICEEMDAN_iTransformer_refs.html",
     "body": "# References \u2014 [[2025_Zheng_BWO_ICEEMDAN_iTransformer]]\n\n> **35 references** extracted from this paper.\n\n---\n\n1. 1. Lee, C.-M.; Ko, C.-N. Short-term load forecasting using lifting scheme and ARIMA models. Expert Syst. Appl. 2011, 38, 5902\u20135911. [CrossRef]\n2. 2. Li, Y.; Niu, D. Application of Princip"
   },
   {
-    "title": "References \u2014 [[2025_Zheng_Coherent_Hierarchical_EV_Load]]",
+    "title": "References \u2014 2025_Zheng_Coherent_Hierarchical_EV_Load",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Zheng_Coherent_Hierarchical_EV_Load_refs.html",
     "body": "# References \u2014 [[2025_Zheng_Coherent_Hierarchical_EV_Load]]\n\n> **43 references** extracted from this paper.\n\n---\n\n1. \u201cGlobal EV outlook 2022,\u201d Int. Energy Agency, Paris, France, Tech. Rep., 2022. [Online]. Available: https://www.iea.org/reports/global-ev- outlook-2022\n2. A. Vallera, P. Nunes, and M."
   },
   {
-    "title": "References \u2014 [[2025_Zhu_Personalized_Federated_Learning]]",
+    "title": "References \u2014 2025_Zhu_Personalized_Federated_Learning",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2025_Zhu_Personalized_Federated_Learning_refs.html",
     "body": "# References \u2014 [[2025_Zhu_Personalized_Federated_Learning]]\n\n> **46 references** extracted from this paper.\n\n---\n\n1. Stute Judith, Pelka Sabine, K\u00fchnbach Matthias, Klobasa Marian. Assessing the conditions for economic viability of dynamic electricity retail tariffs for households. Adv Appl Energy 20"
   },
   {
-    "title": "References \u2014 [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]]",
+    "title": "References \u2014 2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand_refs.html",
     "body": "# References \u2014 [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]]\n\n> **26 references** extracted from this paper.\n\n---\n\n1. International Energy Agency, Global EV Outlook 2023. Technical report, IEA, Paris, 2023.\n2. T. Gnann, S. Funke, N. Jakobsson, P. Pl\u00f6tz, F. Sprei, and A. Bennehag, \"Fast charging "
   },
   {
-    "title": "References \u2014 [[2026_Hao_Mamba_KAN_HyKANet_EV]]",
+    "title": "References \u2014 2026_Hao_Mamba_KAN_HyKANet_EV",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Hao_Mamba_KAN_HyKANet_EV_refs.html",
     "body": "# References \u2014 [[2026_Hao_Mamba_KAN_HyKANet_EV]]\n\n> **35 references** extracted from this paper.\n\n---\n\n1. [12] , as the final prediction head to transform the fused latent representation \u02c6H \u2208RP \u00d7d into multi-step charging demand forecasts: bY = KAN( \u02c6H) \u2208RQ\u00d7N\u00d7C, (9) where Q is forecasting horizon, N"
   },
   {
-    "title": "References \u2014 [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]]",
+    "title": "References \u2014 2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark_refs.html",
     "body": "# References \u2014 [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]]\n\n> **22 key references** extracted from this paper.\n\n---\n\n1. T. Hong and S. Fan, \"Probabilistic electric load forecasting: A tutorial review,\" International Journal of Forecasting, vol. 32, no. 3 (2016), pp. 914\u2013938.\n2. A. J. Wood, B. "
   },
   {
-    "title": "References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]",
+    "title": "References \u2014 2026_Huang_Lyapunov_EV_Scheduling",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Huang_Lyapunov_EV_Scheduling_refs.html",
     "body": "# References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]\n\n> **25 references** extracted from this paper.\n\n---\n\n1. \u201cGlobal EV Outlook 2025,\u201d International Energy Agency, Tech. Rep., 2025.\n2. Y. Li and A. Jenn, \u201cImpact of electric vehicle charging demand on power distribution grid congestion,\u201d Proceedings"
   },
   {
-    "title": "References \u2014 [[2026_Lahoti_Mamba_3_Sequence_Modeling]]",
+    "title": "References \u2014 2026_Lahoti_Mamba_3_Sequence_Modeling",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Lahoti_Mamba_3_Sequence_Modeling_refs.html",
     "body": "# References \u2014 [[2026_Lahoti_Mamba_3_Sequence_Modeling]]\n\n> **65 references** extracted from this paper.\n\n---\n\n1. [1] Zeyuan Allen-Zhu. \u201cPhysics of Language Models: Part 4.1, Architecture Design and the Magic of Canon Layers\u201d. In: SSRN Electronic Journal (May 2025). https://ssrn.com/abstract=5240330"
   },
   {
-    "title": "References \u2014 [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]",
+    "title": "References \u2014 2026_Liu_MFT_Multi_Scale_Fusion_Transformer",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Liu_MFT_Multi_Scale_Fusion_Transformer_refs.html",
     "body": "# References \u2014 [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]\n\n> **34 references** extracted from this paper.\n\n---\n\n1. 1. Agency, I. E. CO2 emissions in 2022 (2023). https://www.iea.org/reports/co2-emissions-in-2022\n2. 2. Wang, Y. et al. Service-quality based pricing approach for charging electric "
   },
   {
-    "title": "References \u2014 [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]]",
+    "title": "References \u2014 2026_Romia_CNN_LSTM_Attention_Fast_Charging",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Romia_CNN_LSTM_Attention_Fast_Charging_refs.html",
     "body": "# References \u2014 [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]]\n\n> **53 references** extracted from this paper.\n\n---\n\n1. A. Romia and Q. Huang, \u201cA hybrid CNN-LSTM-Attention deep learning model for forecasting time-series electric vehicles fast charging loads at public stations,\u201d in 2024 IEEE Industry"
   },
   {
-    "title": "References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]",
+    "title": "References \u2014 2026_Tang_PC_M3_Mamba_EV_Clusters",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Tang_PC_M3_Mamba_EV_Clusters_refs.html",
     "body": "# References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. 1. Yip, A.; Hoehne, C.; Jadun, P.; Ledna, C.; Hale, E.; Muratori, M. Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States; Technical Repo"
   },
   {
-    "title": "References \u2014 [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]]",
+    "title": "References \u2014 2026_Yu_EnergyMamba_Graph_Mamba_ASCQR",
     "year": "",
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Yu_EnergyMamba_Graph_Mamba_ASCQR_refs.html",
@@ -7403,7 +7340,7 @@
     "year": "",
     "cat_name": "Research Syntheses & Gaps",
     "rel_url": "guides/Adjacency_Matrix.html",
-    "body": "# Adjacency Matrix\n\nMatrix encoding graph connectivity between nodes (stations, regions); weighted by distance, correlation, or topology in spatio-temporal models.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Adjacency Matrix\n\nMatrix encoding graph connectivity between nodes (stations, regions); weighted by distance, correlation, or topology in spatio-temporal models.\n\n## Referenced in this knowledge base\n\n[[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]]\n[[2022_Zhang_GCN_TRN_EV_Availability]]\n[[2023"
   },
   {
     "title": "Artificial Intelligence",
@@ -7452,7 +7389,7 @@
     "year": "",
     "cat_name": "Research Syntheses & Gaps",
     "rel_url": "guides/Grid_Topology.html",
-    "body": "# Grid Topology\n\nPhysical/network structure of the distribution grid; constrains feasible charging schedules and defines electrical adjacency.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# Grid Topology\n\nPhysical/network structure of the distribution grid; constrains feasible charging schedules and defines electrical adjacency.\n\n## Referenced in this knowledge base\n\n[[2024_Zhou_Conformal_Prediction_DER]]\n[[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]]"
   },
   {
     "title": "Keras",
@@ -7501,28 +7438,28 @@
     "year": "",
     "cat_name": "Research Syntheses & Gaps",
     "rel_url": "guides/index.html",
-    "body": "# \ud83d\udcda EV Charging Demand Load Forecasting - Master Research Index\n\nWelcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning in EV Charging Load Forecasting**.\n\n---\n\n## \ud83d\udcc4 Paper Summaries (`wiki/papers/`)\n- [[paper_digest]] - **One-file digest of ALL 108 papers** (contribution + m"
+    "body": "# \ud83d\udcda EV Charging Demand Load Forecasting - Master Research Index\n\nWelcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning in EV Charging Load Forecasting**.\n\n---\n\n## \ud83d\udcc4 Paper Summaries (`wiki/papers/`)\n- [[paper_digest]] - **One-file digest of ALL 118 papers** (contribution + m"
   },
   {
     "title": "Research Gaps & Identified Limitations",
     "year": "",
     "cat_name": "Research Syntheses & Gaps",
     "rel_url": "guides/research_gaps.html",
-    "body": "# \ud83d\udd2c Master Synthesis: Literature Taxonomy & Research Gaps for Thesis\n\nThis document synthesizes the core findings, mathematical methods, and open research gaps identified across all **108 PDF research papers** ingested into your Obsidian Second Brain.\n\n> [!NOTE]\n> Last updated: 2026-08-23 | Covers a"
+    "body": "# \ud83d\udd2c Master Synthesis: Literature Taxonomy & Research Gaps for Thesis\n\nThis document synthesizes the core findings, mathematical methods, and open research gaps identified across **118 research papers** (108 ingested PDFs + 10 web-discovered notes) in your Obsidian Second Brain.\n\n> [!NOTE]\n> Last upd"
   },
   {
     "title": "Progress Summary & Research Gaps",
     "year": "",
     "cat_name": "Research Syntheses & Gaps",
     "rel_url": "guides/progress_summary_and_research_gaps.html",
-    "body": "# \ud83d\udcdd Thesis Progress Summary: Model Benchmarks, Architectural Analysis & Research Gaps\n\n> **Topic:** Improving Baseline Time-Series Transformer for EV Charging Station Load Forecasting  \n> **Last Updated:** 2026-08-23 (refreshed after ingestion of papers 81\u2013103 plus gap-targeted Batch 4 web-discovery"
+    "body": "# \ud83d\udcdd Thesis Progress Summary: Model Benchmarks, Architectural Analysis & Research Gaps\n\n> **Topic:** Improving Baseline Time-Series Transformer for EV Charging Station Load Forecasting  \n> **Last Updated:** 2026-08-26 (corpus count refreshed against `wiki/papers/`: now **118 papers**)  \n> **Status:**"
   },
   {
     "title": "Proposed Novel Architectures",
     "year": "",
     "cat_name": "Research Syntheses & Gaps",
     "rel_url": "guides/proposed_architectures.html",
-    "body": "# \ud83d\ude80 Proposed Architectural Innovations for EV Charging Load Forecasting\n\nThis document outlines three high-impact architectural proposals to overcome the limitations of current Transformer-based models for EV charging load forecasting. These proposals are synthesized from the gap analysis of all 103"
+    "body": "# \ud83d\ude80 Proposed Architectural Innovations for EV Charging Load Forecasting\n\nThis document outlines three high-impact architectural proposals to overcome the limitations of current Transformer-based models for EV charging load forecasting. These proposals are synthesized from the gap analysis of all 118"
   },
   {
     "title": "Transformer & Diffusion Research Ideas",

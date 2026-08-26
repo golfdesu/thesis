@@ -35,7 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 2. Expand / Collapse Sidebar Tree with localStorage persistence
-  const savedOpenNodes = JSON.parse(localStorage.getItem("kb-open-nodes") || "null");
+  let savedOpenNodes = null;
+  try {
+    savedOpenNodes = JSON.parse(localStorage.getItem("kb-open-nodes") || "null");
+  } catch (err) {
+    localStorage.removeItem("kb-open-nodes"); // corrupt storage — reset
+  }
 
   if (savedOpenNodes && Array.isArray(savedOpenNodes)) {
     document.querySelectorAll(".tree-node").forEach(node => {

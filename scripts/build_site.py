@@ -68,6 +68,11 @@ def extract_title_and_meta(file_path, meta, body):
             title = file_stem.replace("_", " ")
     # Strip leading emojis or special icon characters (e.g. 📁, 🧠, 📊, etc.)
     title = re.sub(r"^[^\w\s\(\)\[\]\-\:\,\.\']+", "", title, flags=re.UNICODE).strip()
+    # Resolve wiki-links so [[target|alias]] / [[target]] never leak into titles
+    def _title_wiki(m):
+        target = m.group(1)
+        return target.split("|", 1)[1].strip() if "|" in target else target.strip()
+    title = re.sub(r"\[\[([^\]]+)\]\]", _title_wiki, title).strip()
     return title
 
 def clean_wiki_target(target):
