@@ -6,9 +6,9 @@ year: 2024
 journal_conference: "arXiv preprint (IEEE journal template, Journal of LaTeX Class Files style); arXiv:2407.13194"
 doi_url: "https://doi.org/10.48550/arXiv.2407.13194"
 models_used: ["[[JointPGM]]"]
-datasets_used: ["[[Exchange_Dataset]]", "[[ETTh1]]", "[[ETTm2]]", "[[ElectricityLoadDiagrams]]", "[[METR-LA]]", "[[ILI_Dataset]]"]
+datasets_used: ["[[Exchange]]", "[[ETT]]", "[[ETT]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[ILI]]"]
 features_used: ["[[Multivariate_Time_Series]]", "[[Temporal_Order_Features]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

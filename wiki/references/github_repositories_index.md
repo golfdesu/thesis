@@ -205,3 +205,23 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
 
 ### Demographics & Other
 - **US Census Bureau Data**: `https://data.census.gov` ; **Google Project Sunroof**: `https://sunroof.withgoogle.com` — *Paper:* [[2024_Zhou_Conformal_Prediction_DER]]
+
+---
+
+## ⚡ 7. Power-System SSMs, Grid Benchmarks & Conformal MPC — Newly Catalogued ([2026-08-23] ingestion pass)
+
+- **EnergyMamba / GE-Mamba (Graph-Enhanced Selective SSM for Energy Consumption Prediction)**:
+  `https://github.com/UFOdestiny/EnergyMamba`
+  *Paper:* [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]]
+
+- **PowerMamba (Dual-Path SSM for Power Systems) + ERCOT GridSet dataset/toolbox**:
+  `https://github.com/alimenati/PowerMamba`
+  *Paper:* [[2024_Menati_PowerMamba_Power_Systems_SSM]]
+
+- **US Grid Forecast Benchmark (SSM vs Transformer vs RNN on EIA-930; code + checkpoints)**:
+  `https://github.com/gramm-ai/grid-forecast-benchmark`
+  *Paper:* [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]]
+
+- **ChargingEnergyHubs_MPC (Stochastic MPC of Charging Energy Hubs with Conformal Prediction)**:
+  `https://github.com/diegofz/ChargingEnergyHubs_MPC`
+  *Paper:* [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]

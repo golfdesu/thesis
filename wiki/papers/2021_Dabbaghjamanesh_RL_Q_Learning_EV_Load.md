@@ -7,8 +7,8 @@ journal_conference: "IEEE Transactions on Industrial Informatics, Vol. 17, No. 6
 doi_url: "https://doi.org/10.1109/TII.2020.2990397"
 models_used: ["[[Q_Learning|Q-Learning (off-policy RL)]]", "[[ANN]]", "[[RNN]]"]
 datasets_used: ["[[Simulated_PHEV_Charging_Data|MATLAB-simulated PHEV charging scenarios (uncoordinated / coordinated / smart)]]"]
-features_used: ["[[Historical_Load|Previous 24-h PHEV loads]]", "[[Charging_Start_Time]]", "[[SOC|State of Charge (SOC)]]", "[[Battery_Capacity]]", "[[All_Electric_Range|AER]]", "[[Daily_Driven_Miles]]", "[[Depth_of_Discharge|DOD]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Historical_Load|Previous 24-h PHEV loads]]", "[[Charging_Start_Time]]", "[[State_of_Charge|State of Charge (SOC)]]", "[[Battery_Capacity]]", "[[All_Electric_Range|AER]]", "[[Daily_Driven_Miles]]", "[[Depth_of_Discharge|DOD]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[Training_Epochs]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -83,7 +83,7 @@ MSE comparison across scenarios at 30%/50% penetration (Table IV; best in bold):
 - Reward requires ground truth during learning — formulation is closer to adaptive model weighting than true online forecasting without labels.
 - Only residential level-1/2 charging modeled (public DC fast charging excluded); single aggregation-level station load, no spatial/network dimension.
 - Fairness caveat: Q-learning used 10,000 iterations vs 500–3,000 for baselines, so part of the gain is compute rather than methodology.
-- Gap for thesis: combining RL model selection with probabilistic forecasts ([[TimeGrad]], [[TFT]]) or applying it as a meta-learner over deep ensembles on real EV session data remains untested.
+- Gap for thesis: combining RL model selection with probabilistic forecasts ([[TimeGrad]], [[Temporal_Fusion_Transformer]]) or applying it as a meta-learner over deep ensembles on real EV session data remains untested.
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -103,5 +103,5 @@ MSE comparison across scenarios at 30%/50% penetration (Table IV; best in bold):
 - Foundation: Rummery & Niranjan, *On-line Q(-)learning Using Connectionist Systems* (Cambridge, 1994) [27] — original Q-learning; Zurada (ANN) [25]; Hecht-Nielsen (backpropagation/RNN theory) [26].
 - Data-modeling sources: Rostami et al. [22] and Qian et al. [23] (charging levels/start-time models); Li & Zhang [24] (log-normal daily mileage).
 - Tooling: Keras — https://keras.io
-- Related vault concepts: [[Q_Learning]], [[Ensemble_Learning]], [[Short_Term]], [[MSE]]
+- Related vault concepts: [[Q_Learning]], [[Ensemble_Stacking]], [[Short_Term_Forecasting]], [[MSE]]
 - Contrast with vault: forecast-driven control alternatives [[2021_Huang_Lyapunov_EV_Scheduling]]; probabilistic deep forecasters [[2021_Rasul_TimeGrad_Diffusion_Forecasting]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]].

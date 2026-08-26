@@ -5,11 +5,11 @@ authors: [Hany S. E. Mansour, Amira S. Mohamed, M. Abdel-Aziz]
 year: 2025
 journal_conference: "Scientific Reports 16:374"
 doi_url: "https://doi.org/10.1038/s41598-025-29739-z"
-models_used: ["[[XGBoost]]", "[[BiLSTM]]", "[[LightGBM]]", "[[Stacking_Ensemble]]", "[[CNN]]", "[[TCN]]", "[[Transformer]]", "[[SARIMAX]]", "[[Prophet]]"]
-datasets_used: ["[[Caltech_ACN_Dataset]]", "[[Synthetic_Cross_Site_EVCS_Dataset]]"]
-features_used: ["[[kWhDelivered]]", "[[Charging_Duration_Log]]", "[[Arrival_Departure_Time]]", "[[Hour_Of_Day]]", "[[Day_Of_Week]]", "[[Lag_Features]]", "[[Rolling_Mean_Features]]", "[[Holiday_Indicator]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAE]]", "[[MSE]]", "[[RMSE]]", "[[R2_Score]]"]
+models_used: ["[[XGBoost]]", "[[BiLSTM]]", "[[LightGBM]]", "[[Ensemble_Stacking]]", "[[CNN]]", "[[TCN]]", "[[Transformer]]", "[[SARIMAX]]", "[[Prophet]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[Synthetic_Cross_Site_EVCS_Dataset]]"]
+features_used: ["[[kWhDelivered]]", "[[Charging_Duration]]", "[[Arrival_Departure_Time]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Lag_Features]]", "[[Rolling_Mean_Features]]", "[[Holiday_Indicator]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[MSE]]", "[[RMSE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

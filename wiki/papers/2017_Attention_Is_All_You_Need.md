@@ -5,10 +5,10 @@ authors: [Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jone
 year: 2017
 journal_conference: "Advances in Neural Information Processing Systems 30 (NIPS 2017), Long Beach, CA"
 doi_url: "https://arxiv.org/abs/1706.03762"
-models_used: ["[[Transformer]]", "[[Scaled_Dot_Product_Attention]]", "[[Multi_Head_Attention]]", "[[ByteNet]]", "[[ConvS2S]]"]
+models_used: ["[[Transformer]]", "[[Multi_Head_Attention]]", "[[Multi_Head_Attention]]", "[[ByteNet]]", "[[ConvS2S]]"]
 datasets_used: ["[[WMT_2014_EN-DE]]", "[[WMT_2014_EN-FR]]", "[[Penn_Treebank|WSJ_Penn_Treebank]]", "[[BerkleyParser_Corpus]]"]
 features_used: ["[[Token_Embeddings]]", "[[Sinusoidal_Positional_Encoding]]", "[[Byte_Pair_Encoding]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[BLEU]]", "[[Perplexity]]", "[[F1_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

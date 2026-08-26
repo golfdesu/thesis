@@ -5,10 +5,10 @@ authors: [Mahnoosh Alizadeh, Anna Scaglione, Jamie Davies, Kenneth S. Kurani]
 year: 2014
 journal_conference: "IEEE Transactions on Smart Grid, 5(2), 848-860"
 doi_url: "https://doi.org/10.1109/TSG.2013.2275988"
-models_used: ["[[M_G_Infinity_Queuing_Model]]", "[[Non_Homogeneous_Poisson_Process]]", "[[Factor_Model]]", "[[ARIMA]]", "[[Kalman_Filter]]", "[[EM_Algorithm]]", "[[ARMA_Baseline]]", "[[Persistence_Model]]"]
-datasets_used: ["[[UC_Davis_PHEV_PH EV_Center_Data]]", "[[NHTS_2009]]"]
-features_used: ["[[Arrival_Rate]]", "[[Charge_Duration]]", "[[Charging_Rate_kW]]", "[[Laxity_Slack_Time]]", "[[Plug_in_Probability]]", "[[Daily_Mileage]]", "[[Day_of_Week]]", "[[Submetering_Triplets]]"]
-forecasting_horizon: "[[Short_Term]]"
+models_used: ["[[Queuing_Model]]", "[[Queuing_Model]]", "[[Factor_Model]]", "[[ARIMA]]", "[[Kalman_Filter]]", "[[EM_Algorithm]]", "[[ARIMA]]", "[[Persistence_Model]]"]
+datasets_used: ["[[UC_Davis_PH_EV_Center_Data]]", "[[NHTS_2009]]"]
+features_used: ["[[EV_Arrival_Rate]]", "[[Charging_Duration]]", "[[Charging_Power]]", "[[Laxity_Slack_Time]]", "[[EV_Arrival_Rate]]", "[[Daily_Mileage]]", "[[Calendar_Features]]", "[[Submetering_Triplets]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[Absolute_Error_kW]]", "[[Kolmogorov_Smirnov_Test]]", "[[Log_Likelihood]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: A Scalable Stochastic Model for EV/PHEV Electricity Demand
 
 ## 🎯 Main Objective & Contribution
-- Proposes a **queueing-theoretic stochastic model** ([[M/G/∞ queues]]) for aggregate EV/PHEV charging demand that yields: (1) more accurate **short-term forecasts with uncertainty** when real-time sub-metering data is available; (2) a mathematical description of load **plus demand flexibility** at wholesale level, useful for [[Demand_Response]] and dynamic pricing design.
+- Proposes a **queueing-theoretic stochastic model** ([[Queuing_Model|M/G/∞ queueing model]]) for aggregate EV/PHEV charging demand that yields: (1) more accurate **short-term forecasts with uncertainty** when real-time sub-metering data is available; (2) a mathematical description of load **plus demand flexibility** at wholesale level, useful for [[Demand_Response]] and dynamic pricing design.
 - Answers four essential behavioral questions from real data: when vehicles arrive at chargers, how often parked customers request charge, energy required per charge event, and flexibility (laxity) per request.
 - Adds **scalability**: quantized ("digital") sub-metering classifies each charge request into $L\times K$ service classes so only class counts per epoch need storage/communication, independent of vehicle-population size.
 - Validates statistics on real PHEV home-charging data and shows the resulting forecasting method beats classical univariate load prediction.
@@ -47,8 +47,8 @@ white noise uncorrelated across factors; combined into linear-Gaussian **state-s
 - Classifiers quantize durations into $K$ levels ⇒ classes $(r,k)$; load reconstructed from class-arrival counts with unit pulses (Eqs. 17–18); only $LK$ numbers stored per epoch regardless of population size. Directly-controlled charging modeled by activation function $\beta$ rewriting load (Eq. 19), extensible toward V2G.
 
 ## 📊 Dataset & Input Features
-- **[[UC_Davis_PHEV_PHEV_Center_Data]]** — real-world PHEV level-1 home-charging data from households, provided by the UC Davis PH&EV center (Kurani et al., *Learning from consumers*, Res. Rep. UCD-ITS-RR-10-21 [11]); **620 charging samples** (charge durations & laxity); full charge 4–6 kWh ⇒ 4–5 h at average ≈ 1.1 kW; used for duration/laxity PDFs and a small-scale arrival test.
-- **[[2009_National_Household_Travel_Survey]] (NHTS)** — US DOT/FHWA ICEV daily travel patterns (mode, duration, distance, purpose), mapped into synthetic PHEV charge requests via miles→kWh conversion; **~150,000 derived charging amounts** used to learn arrival-rate statistics and principal components.
+- **[[UC_Davis_PH_EV_Center_Data]]** — real-world PHEV level-1 home-charging data from households, provided by the UC Davis PH&EV center (Kurani et al., *Learning from consumers*, Res. Rep. UCD-ITS-RR-10-21 [11]); **620 charging samples** (charge durations & laxity); full charge 4–6 kWh ⇒ 4–5 h at average ≈ 1.1 kW; used for duration/laxity PDFs and a small-scale arrival test.
+- **[[NHTS_2009]] (NHTS)** — US DOT/FHWA ICEV daily travel patterns (mode, duration, distance, purpose), mapped into synthetic PHEV charge requests via miles→kWh conversion; **~150,000 derived charging amounts** used to learn arrival-rate statistics and principal components.
   - Data URL stated in the paper: **`http://nhts.ornl.gov`**
 - Simulation testbed: substation serving **≈1000 PHEVs**, all level-1 (1.1 kW); **60 simulated days** (30 train / 30 test); peak daily EV charging load ≈ 250 kW.
 - Input features: arrival times (5-min-rounded trip ends, dithered with N(0, 2 min²)/N(0,15 min²) noise for multiples of 5/30 min), daily mileage, plug-in decision (Bernoulli, probability increasing in miles driven since last charge; threshold model with 5-mile cutoff), charge rate, charge duration, battery capacity, parking duration, day-of-week periodic mean.

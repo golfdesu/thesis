@@ -6,10 +6,10 @@ year: 2025
 journal_conference: "Nature Communications 16:10921"
 doi_url: "https://doi.org/10.1038/s41467-025-65970-y"
 models_used: ["[[Temporal_Fusion_Transformer]]", "[[beta-VAE]]", "[[LSTM]]"]
-datasets_used: ["[[NW_Europe_DCFC_Dataset]]", "[[ERA5_Reanalysis]]"]
-features_used: ["[[Charging_Power]]", "[[Battery_SOC]]", "[[Starting_SOC]]", "[[Ambient_Temperature]]", "[[Connector_Power_Rating]]", "[[Connector_Type]]", "[[Estimated_Battery_Capacity]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAE]]", "[[Relative_Accuracy]]", "[[Quantile_Loss]]", "[[MSE]]"]
+datasets_used: ["[[NW_Europe_DCFC_Dataset]]", "[[Weather]]"]
+features_used: ["[[Charging_Power]]", "[[Battery_SOC]]", "[[State_of_Charge]]", "[[Temperature]]", "[[Connector_Power_Rating]]", "[[Connector_Type]]", "[[Estimated_Battery_Capacity]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[Relative_Accuracy]]", "[[Pinball_Loss]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -52,7 +52,7 @@ tags: [paper, ev-load-forecasting, ml]
   - Splits: anomaly model train 810,765 / val 90,086; prediction model train 713,213 (Nov 2021–16 Jun 2024), test set one = 44,575 contemporaneous sessions, test set two = 44,578 sessions from 17 Jun–9 Jul 2024 (operational near-future scenario).
 - **Data availability**: proprietary, under NDA with Shell; access restricted upon approved NDA — contact R.D. Source data provided with paper.
 - **Code availability**: https://github.com/acses-l420/ev_charging_ml ; archived snapshot on Zenodo: https://doi.org/10.5281/zenodo.17183022 ; pretrained models on Zenodo: https://doi.org/10.5281/zenodo.17183746
-- **Input features**: time series of [[Charging_Power]] and [[Battery_SOC]]; static covariates = starting SoC, [[Connector_Power_Rating]], [[Connector_Type]] (CCS/CHAdeMO, trainable embedding), estimated EV battery capacity (from energy delivered ÷ ΔSoC), ambient temperature from [[ERA5_Reanalysis]]. Logging at 60 s intervals; updates event-driven when reported SoC rises ≥1% (OCPP integer precision).
+- **Input features**: time series of [[Charging_Power]] and [[Battery_SOC]]; static covariates = starting SoC, [[Connector_Power_Rating]], [[Connector_Type]] (CCS/CHAdeMO, trainable embedding), estimated EV battery capacity (from energy delivered ÷ ΔSoC), ambient temperature from [[Weather]]. Logging at 60 s intervals; updates event-driven when reported SoC rises ≥1% (OCPP integer precision).
 
 ## 📈 Performance & Results
 - **Duration prediction**: ~90% average relative accuracy from a single input point (MAE < 2.5 min); explains 91% of variance at n=1. With 6 points (≤5 min): >90% accuracy for 90% of sessions; headline result **95% relative accuracy, absolute error < 1 min**. At n=15 points only 1.45% of sessions fall below 90% accuracy, 0.79% below 80%. Errors converge to within ±5% relative / <1 min absolute.

@@ -7,9 +7,9 @@ journal_conference: "Processes"
 doi_url: "https://doi.org/10.3390/pr13020468"
 models_used: ["[[V2AFedEGAT-LSTM]]", "[[EGAT]]", "[[LSTM]]", "[[GGNN]]", "[[GAT]]", "[[Time_Aware_Attention]]"]
 datasets_used: ["[[CTPS_IEEE33_7Node_TN]]", "[[CTPS_IEEE69_12Node_TN]]", "[[NYISO]]"]
-features_used: ["[[Node_Voltage]]", "[[Active_Power]]", "[[Reactive_Power]]", "[[Line_Active_Power]]", "[[Line_Reactive_Power]]", "[[Traffic_Flow]]", "[[Congestion_Rate]]", "[[Electricity_Price]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[R2]]", "[[MAE]]", "[[MAPE]]", "[[MSE]]"]
+features_used: ["[[Node_Voltage]]", "[[Active_Power]]", "[[Reactive_Power]]", "[[Line_Active_Power]]", "[[Line_Reactive_Power]]", "[[Traffic]]", "[[Congestion_Rate]]", "[[Electricity_Tariff]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[R_squared]]", "[[MAE]]", "[[MAPE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

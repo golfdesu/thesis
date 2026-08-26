@@ -7,8 +7,8 @@ journal_conference: "Scientific Reports (Nature Portfolio), vol. 16, art. 8609"
 doi_url: "https://doi.org/10.1038/s41598-026-38562-z"
 models_used: ["[[MFT]]", "[[Transformer]]", "[[LSTM]]", "[[BiLSTM]]", "[[GRU]]"]
 datasets_used: ["[[Norway_Residential_EV_Charging_Dataset]]"]
-features_used: ["[[Charging_Load_Sequence]]", "[[Weather_Features]]", "[[Traffic_Density]]", "[[Scale_Mask]]", "[[Positional_Encoding]]"]
-forecasting_horizon: "[[Long_Term]]"
+features_used: ["[[Historical_Load]]", "[[Weather_Features]]", "[[Traffic_Density]]", "[[Scale_Mask]]", "[[Positional_Encoding]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[RMSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

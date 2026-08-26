@@ -6,9 +6,9 @@ year: 2025
 journal_conference: "Scientific Reports (Nature Portfolio), vol. 15, art. 36639"
 doi_url: "https://doi.org/10.1038/s41598-025-20421-y"
 models_used: ["[[LSTM]]", "[[Transformer]]", "[[LSTM_Transformer|Hybrid LSTM-Transformer]]"]
-datasets_used: ["[[ACN_Dataset]]", "[[Caltech_ACN_Dataset]]", "[[JPL_ACN_Dataset]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[Caltech_ACN]]", "[[Caltech_ACN]]"]
 features_used: ["[[Historical_EV_Charging_Energy]]", "[[Lookback_Window]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -38,9 +38,9 @@ global average pooling $h_{pool} = \frac{1}{n}\sum_{i=1}^{n} h_i$; flatten $\hat
 $$MAE = \frac{1}{N}\sum_{i=1}^{n}|y_i - \hat{y}_i|, \qquad MSE = \frac{1}{N}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2$$
 
 ## 📊 Dataset & Input Features
-- **[[ACN_Dataset]]** (Adaptive Charging Network, California):
-  - [[Caltech_ACN_Dataset]] — Caltech campus parking garage, public workplace charger: **54 EVSE units + one 50 kW DC fast charger**; energy data April 2018 – mid-2021 (0–1000 kWh range).
-  - [[JPL_ACN_Dataset]] — JPL campus restricted employee parking: **52 EVSEs**; data September 2018 – mid-2021 (0–1200 kWh); high utilization, drivers shuffle cars after charging.
+- **[[Caltech_ACN]]** (Adaptive Charging Network, California):
+  - [[Caltech_ACN]] — Caltech campus parking garage, public workplace charger: **54 EVSE units + one 50 kW DC fast charger**; energy data April 2018 – mid-2021 (0–1000 kWh range).
+  - [[Caltech_ACN]] — JPL campus restricted employee parking: **52 EVSEs**; data September 2018 – mid-2021 (0–1200 kWh); high utilization, drivers shuffle cars after charging.
 - Aggregated daily energy consumption (kWh) as univariate time series; train/test timesteps for JPL: **739 training / 210 testing**; training ~2018–early/mid-2020(2021), test later periods per figures.
 - Features: historical charging demand only (univariate, input size 1); look-back window = forecast horizon.
 - **Data availability statement**: "The data will be made available upon request to the corresponding authors." ACN source: https://doi.org/10.1038/s41598-025-20421-y (paper); ACN-Data platform referenced for Caltech/JPL charging sessions.

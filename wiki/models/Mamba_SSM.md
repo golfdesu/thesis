@@ -14,8 +14,8 @@ tags:
 ## Overview
 The Mamba family comprises **selective state-space models** — sub-quadratic sequence models with constant memory and linear compute that compete with Transformers while decoding far faster. The continuous SSM $\dot{h}(t) = A(t)h(t) + B(t)x(t),\ y(t) = C(t)^\top h(t)$ is discretized into a recurrence $h_t = \alpha_t h_{t-1} + \gamma_t B_t x_t,\ y_t = C_t^\top h_t$ with **input-dependent (selective)** transitions.
 
-- **[[Mamba]]** (Gu & Dao, 2023): selective scan + hardware-aware parallelization; the original linear-time architecture.
-- **[[Mamba-2]]** (Dao & Gu, ICML 2024): Structured State-Space Duality (SSD); fails state-tracking tasks like parity.
+- **[[Mamba_SSM]]** (Gu & Dao, 2023): selective scan + hardware-aware parallelization; the original linear-time architecture.
+- **[[Mamba_SSM]]** (Dao & Gu, ICML 2024): Structured State-Space Duality (SSD); fails state-tracking tasks like parity.
 - **[[Mamba-3]]** (Lahoti et al., 2026): three SSM-principled improvements —
   1. **Exponential-trapezoidal discretization** acting as an implicit width-2 convolution inside the recurrence:
 $$h_t = e^{\Delta_t A_t} h_{t-1} + (1-\lambda_t)\Delta_t e^{\Delta_t A_t} B_{t-1} x_{t-1} + \lambda_t \Delta_t B_t x_t \equiv \alpha_t h_{t-1} + \beta_t B_{t-1}x_{t-1} + \gamma_t B_t x_t$$
@@ -31,7 +31,7 @@ EV-domain derivatives:
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: multivariate spatiotemporal sequences (HyKANet: 5-min demand + weather/price/calendar; PC-M3: per-vehicle status channels).
-- **Forecasting Horizon**: [[Short_Term]] (15–60 min HyKANet) to [[Day_Ahead]] flexibility envelopes (PC-M3, T=96 @ 15 min).
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] (15–60 min HyKANet) to [[Day_Ahead_Forecasting]] flexibility envelopes (PC-M3, T=96 @ 15 min).
 - **Strengths**: linear-time long-range modeling; fastest decode latency of all sub-quadratic baselines; selective memory adapts to input.
 - **Weaknesses**: weaker than exact attention on semi/unstructured extraction tasks (hybrids needed); fixed-state limits on very high channel counts (vehicle-as-channel beyond validated rank range carries no guarantees).
 
@@ -42,3 +42,5 @@ EV-domain derivatives:
 - [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]] — Identifies absence of SSM/Mamba comparisons as a gap for multi-scale EV station-load forecasting Transformers.
 - [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]] — TimeMachine: quadruple-Mamba LTSF architecture unifying channel-mixing and channel-independence via transposition (two outer Mambas at fine scale $n_1$, two inner at coarse scale $n_2$); Electricity T=96 MSE 0.142/MAE 0.236 vs iTransformer 0.148/0.240 with DLinear-level memory on 862-channel Traffic.
 - [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]] — Bi-Mamba+: forget-gated Mamba+ block run forward AND backward over time plus a Spearman-based Series-Relation-Aware decider that auto-selects channel-independent vs channel-mixing tokenization per dataset; critiques TimeMachine's heuristic channel-strategy choice (−4.72% avg MSE vs iTransformer; Electricity T=96 MSE 0.140).
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] — S-Mamba & PowerMamba benchmark wins under weather covariates across six US ISOs (SSMs best on 5/7 grids at W=24; avg ΔMAPE −0.71/−0.74 pp vs PatchTST −0.52), though PatchTST leads load-only.
+- 2026 — [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] — GE-Mamba conditions the selective scan itself on spatial context: per-time-step GCN output modulates B/C/Δ inside bidirectional Mamba blocks (U-Net stack), ~5% MAE gain over 15 baselines; see [[EnergyMamba]].

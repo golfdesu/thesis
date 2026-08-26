@@ -25,7 +25,7 @@ MSE loss: $\mathcal{L} = \mathbb{E}_x \frac{1}{M}\sum_{i=1}^{M} \left\| \hat{x}_
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: long look-back windows (up to $L=512$) of multivariate load series, treated channel-wise.
-- **Forecasting Horizon**: [[Long_Term]] ($T \in \{96,...,720\}$).
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] ($T \in \{96,...,720\}$).
 - **Strengths**: overall −21.0% MSE / −16.7% MAE vs best Transformer baselines; ×19–22 patching speedups at $L=336$; benefits monotonically from longer look-backs (unlike prior Transformers).
 - **Weaknesses**: channel-independence ignores explicit cross-channel correlations (GNN extension suggested); point forecasts only (no uncertainty); memory-heavy for very long inputs (OOMs ≥ L=1440).
 
@@ -37,3 +37,4 @@ MSE loss: $\mathcal{L} = \mathbb{E}_x \frac{1}{M}\sum_{i=1}^{M} \left\| \hat{x}_
 - [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Prior SOTA baseline framed as "extreme patching"; iTransformer beats PatchTST on ECL (0.178 vs 0.205 avg MSE), Traffic, Solar; PatchTST fails on fluctuating PEMS.
 - [[2025_Bao_ResMMoT_Informer_Time_Series]] — PatchTST baseline on NASDAQ100 beaten by ResMMoT-Informer (~30–40%); noted as weak at long-term dependencies.
 - [[2025_Meyer_Benchmark_Foundation_Models]] — Best trained-from-scratch baseline for household STLF (MAE_h 0.494–0.535); ranks best at input size 24 but overtaken by foundation models at 96/168.
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] — Best load-only model in the controlled six-ISO EIA-930 benchmark (avg 5.59% MAPE, 15/30 grid-wins, 7.53 MSE%) but weakest weather utilization of all architectures (ΔMAPE only −0.52 pp vs iTransformer's −1.62) — channel independence caps covariate benefit; still wins rhythmic tasks (solar 23.1%, ancillary nMAE).

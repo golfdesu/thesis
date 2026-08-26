@@ -5,10 +5,10 @@ authors: [Haixu Wu, Tengge Hu, Yong Liu, Hang Zhou, Jianmin Wang, Mingsheng Long
 year: 2023
 journal_conference: "ICLR 2023"
 doi_url: "https://arxiv.org/abs/2210.02186"
-models_used: ["[[TimesNet]]", "[[TimesBlock]]", "[[Inception_2D_CNN]]", "[[FFT_Periodicity_Detection]]"]
-datasets_used: ["[[ETTm1]]", "[[ETTm2]]", "[[ETTh1]]", "[[ETTh2]]", "[[Electricity_ECL]]", "[[Traffic_PEMS]]", "[[Weather]]", "[[Exchange]]", "[[ILI]]", "[[M4_Competition]]", "[[UEA_Archive]]", "[[SMD]]", "[[MSL]]", "[[SMAP]]", "[[SWaT]]", "[[PSM]]"]
+models_used: ["[[TimesNet]]", "[[TimesNet]]", "[[Inception_2D_CNN]]", "[[FFT_Periodicity_Detection]]"]
+datasets_used: ["[[ETT]]", "[[ETT]]", "[[ETT]]", "[[ETT]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[Weather]]", "[[Exchange]]", "[[ILI]]", "[[M4]]", "[[UEA_Archive]]", "[[SMD]]", "[[MSL]]", "[[SMAP]]", "[[SWaT]]", "[[PSM]]"]
 features_used: ["[[Multi_Periodicity]]", "[[Intraperiod_Variation]]", "[[Interperiod_Variation]]", "[[Temporal_2D_Variations]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "[[SMAPE]]", "[[MASE]]", "[[OWA]]", "[[F1_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -21,7 +21,7 @@ tags: [paper, ev-load-forecasting, ml]
 - Key innovation: transform the 1D series into a set of **2D tensors** based on discovered periods so both variation types are simultaneously representable (columns = intraperiod, rows = interperiod) and processable by mature 2D vision backbones ([[Inception_2D_CNN]]), bridging 1D time-series analysis with computer vision.
 
 ## 🧠 Methodology & Model Architecture
-- Modular architecture: stacked [[TimesBlock]]s in residual fashion. Input embedding $X^0_{1D} = \text{Embed}(X_{1D}) \in \mathbb{R}^{T \times d_{model}}$; layer update:
+- Modular architecture: stacked [[TimesNet]]s in residual fashion. Input embedding $X^0_{1D} = \text{Embed}(X_{1D}) \in \mathbb{R}^{T \times d_{model}}$; layer update:
 $$X^l_{1D} = \text{TimesBlock}\left(X^{l-1}_{1D}\right) + X^{l-1}_{1D}$$
 - **Period discovery via FFT (Eq. 1–2)** — amplitude averaged over variates, top-$k$ frequencies selected within $\{1,\dots,\lfloor T/2\rfloor\}$ (conjugacy), periods as $\lceil T/f_i \rceil$:
 $$A = \text{Avg}\left(\text{Amp}\left(\text{FFT}(X_{1D})\right)\right), \quad \{f_1,\dots,f_k\} = \arg\text{Top}_k\left(A\right), \quad p_i = \left\lceil \frac{T}{f_i} \right\rceil$$

@@ -5,10 +5,10 @@ authors: [Md Atik Ahamed, Qiang Cheng]
 year: 2024
 journal_conference: "arXiv preprint (arXiv:2403.09898v2, cs.LG, 22 Aug 2024), University of Kentucky"
 doi_url: "https://doi.org/10.48550/arXiv.2403.09898"
-models_used: ["[[TimeMachine]]", "[[Mamba]]"]
-datasets_used: ["[[Weather_Dataset]]", "[[Traffic_Dataset]]", "[[Electricity_Dataset]]", "[[ETTh1]]", "[[ETTh2]]", "[[ETTm1]]", "[[ETTm2]]"]
+models_used: ["[[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]]", "[[Mamba_SSM]]"]
+datasets_used: ["[[Weather_Dataset]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[ETT]]", "[[ETT]]", "[[ETT]]", "[[ETT]]"]
 features_used: ["[[Historical_Load]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -89,9 +89,9 @@ Seven standard LTSF benchmarks (no external URLs given in paper; code/baselines 
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[Mamba]] — Gu & Dao 2023 (arXiv:2312.00752): selective scan SSM, core inference engine of TimeMachine.
+- [[Mamba_SSM]] — Gu & Dao 2023 (arXiv:2312.00752): selective scan SSM, core inference engine of TimeMachine.
 - [[S4]] — Gu et al.: structured state spaces; not compared since TiDE already outperformed it.
-- [[PatchTST]] (ICLR 2023), [[iTransformer]] (ICLR 2024), [[DLinear]] (AAAI 2023), [[TiDE]] (TMLR 2023), [[Autoformer]] (NeurIPS 2021), [[Informer]] (AAAI 2021), [[Crossformer]] (ICLR 2022), [[FEDformer]] (ICML 2022), [[TimesNet]] (ICLR 2022), [[SCINet]] (NeurIPS 2022), [[Stationary/Non-stationary Transformers]] (NeurIPS 2022), [[RLinear]] — main baselines.
+- [[PatchTST]] (ICLR 2023), [[iTransformer]] (ICLR 2024), [[DLinear]] (AAAI 2023), [[TiDE]] (TMLR 2023), [[Autoformer]] (NeurIPS 2021), [[Informer]] (AAAI 2021), [[Crossformer]] (ICLR 2022), [[FEDformer]] (ICML 2022), [[TimesNet]] (ICLR 2022), [[SCINet]] (NeurIPS 2022), [[Stationary_Transformer|Stationary / Non-stationary Transformers]] (NeurIPS 2022), [[RLinear]] — main baselines.
 - [[RevIN]] — Kim et al., ICLR 2022: reversible instance normalization used for normalization.
 - [[MambaTab]] — Ahamed & Cheng 2024 (arXiv:2401.08867): same authors' prior tabular Mamba work.
 - Cited-by relation: [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]] critiques and builds upon TimeMachine's channel strategy selection.

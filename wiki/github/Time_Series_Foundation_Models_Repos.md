@@ -138,3 +138,17 @@ This note indexes foundational open-source repositories for time-series Transfor
 - **What you can reuse**:
   - *Code*: KAN layers with learnable B-spline edge activations, grid-extension refinement, sparsification/pruning/symbolification pipeline for interpretable small models (e.g., KAN decoders as in [[2026_Hao_Mamba_KAN_HyKANet_EV]]).
   - *Pretrained*: none; toy/Feynman/knot-theory experiment notebooks included.
+
+### 20. PowerMamba (Dual-Path SSM for Power Systems) + ERCOT GridSet toolbox — *added in [2026-08-23] ingestion pass*
+- **Repository URL**: `https://github.com/alimenati/PowerMamba`
+- **Cited Paper**: [[2024_Menati_PowerMamba_Power_Systems_SSM]]
+- **What you can reuse**:
+  - *Code*: dual-path standard/inverse Mamba blocks + series decomposition + external-forecast token module; full benchmarking toolbox (baselines via thuml Time-Series-Library) reproducing the GridSet experiments.
+  - *Data*: **[[ERCOT_GridSet]]** — 5-year hourly ERCOT 2019–2023 (43,824 h), 22 core channels / extended 262-channel version with external day-ahead load & renewable forecasts.
+
+### 21. grid-forecast-benchmark (SSM vs Transformer vs RNN on US EIA-930 grids) — *added in [2026-08-23] ingestion pass*
+- **Repository URL**: `https://github.com/gramm-ai/grid-forecast-benchmark`
+- **Cited Paper**: [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]]
+- **What you can reuse**:
+  - *Code*: architecture-matched implementations of S-Mamba/[[PowerMamba]]/PatchTST/iTransformer/LSTM with shared preprocessing, weather-fusion layers, and capacity-controlled tiers; checkpoints included.
+  - *Data*: EIA-930 hourly demand pipelines for six/seven US ISOs plus Open-Meteo weather-covariate alignment.

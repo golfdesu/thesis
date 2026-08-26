@@ -5,11 +5,11 @@ authors: [Abdullah Al Ahad Khan, Md Habib Ullah, Ruchira Tabassum, Md Faisal Kab
 year: 2025
 journal_conference: "IEEE Transactions on Industry Applications, vol. 62, no. 2, pp. 1933-1947 (Mar/Apr 2026 issue)"
 doi_url: "https://doi.org/10.1109/TIA.2025.3599812"
-models_used: ["[[Transformer_BiLSTM]]", "[[Transformer]]", "[[BiLSTM]]", "[[XGBoost]]", "[[GRU]]", "[[CNN]]", "[[CNN_LSTM]]", "[[CNN_BiLSTM]]", "[[LSTM]]"]
-datasets_used: ["[[NYISO_LBMP_Dataset]]", "[[PJM_Energy_Market_Dataset]]", "[[MISO_Market_Dataset]]"]
+models_used: ["[[Transformer_BiLSTM]]", "[[Transformer]]", "[[BiLSTM]]", "[[XGBoost]]", "[[GRU]]", "[[CNN]]", "[[CNN_LSTM]]", "[[BiLSTM]]", "[[LSTM]]"]
+datasets_used: ["[[NYISO]]", "[[PJM_Energy_Market_Dataset]]", "[[MISO_Market_Dataset]]"]
 features_used: ["[[Historical_Zonal_Price]]", "[[Sliding_Window_Lags]]", "[[Positional_Encoding]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]", "[[sMAPE]]", "[[R2_Score]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]", "[[sMAPE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

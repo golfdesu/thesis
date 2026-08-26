@@ -25,7 +25,7 @@ $$\text{Auto-Correlation}(Q,K,V) = \sum_{i=1}^{k} \text{Roll}(V, \tau_i)\ \hat{R
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: past window (length $I=96$ standard) of strongly periodic station-level/aggregated charging series.
-- **Forecasting Horizon**: [[Long_Term]] ($O \in \{96,192,336,720\}$; EV studies use 30/60/90-day horizons).
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] ($O \in \{96,192,336,720\}$; EV studies use 30/60/90-day horizons).
 - **Strengths**: discovers interpretable periods (24h/168h cycles); flat error growth across horizons; learned lags recover human-interpretable seasonality.
 - **Weaknesses**: hyper-parameter $c$ trades performance vs efficiency; degrades on weak-periodicity data; high MAPE persists in sparse-feature EV settings.
 

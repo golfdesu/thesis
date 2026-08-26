@@ -5,10 +5,10 @@ authors: [Chelsea Finn, Pieter Abbeel, Sergey Levine]
 year: 2017
 journal_conference: "Proceedings of the 34th International Conference on Machine Learning (ICML 2017), Sydney, PMLR 70"
 doi_url: "https://arxiv.org/abs/1703.03400"
-models_used: ["[[MAML]]", "[[First_Order_MAML|FOMAML]]", "[[Fully_Connected_Network]]", "[[Convolutional_Network]]", "[[TRPO]]", "[[REINFORCE]]"]
+models_used: ["[[MAML]]", "[[Reptile|FOMAML]]", "[[MLP]]", "[[CNN]]", "[[TRPO]]", "[[REINFORCE]]"]
 datasets_used: ["[[Sinusoid_Regression]]", "[[Omniglot]]", "[[miniImageNet]]", "[[rllab_2D_Navigation]]", "[[MuJoCo_Half_Cheetah]]", "[[MuJoCo_Ant]]"]
 features_used: ["[[Task_Distribution]]", "[[K_Shot_Support_Set]]", "[[Meta_Gradient]]", "[[Hessian_Vector_Products]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[Accuracy]]", "[[MSE]]", "[[Average_Return]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -35,7 +35,7 @@ $$\min_\theta \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \mathcal{L}_{\mathcal{T}_
 
 **Outer loop — SGD meta-update (Equation 1):**
 $$\theta \leftarrow \theta - \beta \nabla_\theta \sum_{\mathcal{T}_i \sim p(\mathcal{T})} \mathcal{L}_{\mathcal{T}_i}(f_{\theta'_i})$$
-The meta-gradient requires a gradient through a gradient (Hessian-vector products via an extra backward pass, supported by TensorFlow); dropping this gives the first-order approximation ([[First_Order_MAML|FOMAML]]) that still evaluates gradients at post-update parameters $\theta'_i$, yielding ≈33% speed-up with nearly identical accuracy.
+The meta-gradient requires a gradient through a gradient (Hessian-vector products via an extra backward pass, supported by TensorFlow); dropping this gives the first-order approximation ([[Reptile|FOMAML]]) that still evaluates gradients at post-update parameters $\theta'_i$, yielding ≈33% speed-up with nearly identical accuracy.
 
 **Supervised losses.** MSE for K-shot regression (Equation 2):
 $$\mathcal{L}_{\mathcal{T}_i}(f_\phi) = \sum_{x^{(j)}, y^{(j)} \sim \mathcal{T}_i} \| f_\phi(x^{(j)}) - y^{(j)} \|_2^2$$

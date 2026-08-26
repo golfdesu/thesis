@@ -1781,3 +1781,22 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
 | Shi PI evaluation (2024) | US feeder smart meter + synthetic EV | no URL |
 | DeVilmarest adaptive net-load (2024) | GB 14 GSP half-hourly; US 7-city COVID | zenodo DOIs 10.5281/zenodo.7849665 / .5031704 |
 | Qu Forwardformer (2024) | CEL-NW/SE China; AEL New York State | no URLs printed |
+
+
+## [2026-08-23] Batch 4 Web-Ingest | New Dataset & Repo URLs (papers 104-108)
+
+| Paper | Datasets / Resources | Links |
+|-------|----------------------|-------|
+| Yu EnergyMamba (KDD '26) | NYISO load data | https://www.nyiso.com/load-data |
+| Yu EnergyMamba (KDD '26) | CAISO today's outlook | https://www.caiso.com/TodaysOutlook |
+| Yu EnergyMamba (KDD '26) | Florida census block group smart-meter data | NDA-restricted, not public |
+| Yu EnergyMamba (KDD '26) | Official code | https://github.com/UFOdestiny/EnergyMamba |
+| Hong & Lee US-grid benchmark (2026) | EIA-930 hourly system load, six ISOs (CAISO/ISO-NE/MISO/PJM/ERCOT/NYISO) | https://www.eia.gov/electricity/gridmonitor/ |
+| Hong & Lee US-grid benchmark (2026) | Open-Meteo weather archive | https://open-meteo.com |
+| Hong & Lee US-grid benchmark (2026) | Benchmark code + checkpoints | https://github.com/gramm-ai/grid-forecast-benchmark |
+| Menati PowerMamba (2024) | ERCOT GridSet (5-year hourly, 22 core / 262 extended channels) + toolbox | https://github.com/alimenati/PowerMamba |
+| Bouaachra INLA Scotland (2026) | ChargePlace Scotland open-access repository (Transport Scotland); Oct 2022 - Apr 2025; Glasgow subset 96 CPIDs / 104,041 sessions | chargeplace.org.uk open data portal (exact Zenodo/Git mirror URLs pending from arXiv HTML source) |
+| Fernandez-Zapico MPC hub (CDC 2025) | Hub simulation code | https://github.com/diegofz/ChargingEnergyHubs_MPC |
+| Fernandez-Zapico MPC hub (CDC 2025) | ENTSO-E Transparency Platform (NL prices/CO2) | https://transparency.entsoe.eu/ |
+| Fernandez-Zapico MPC hub (CDC 2025) | EV session source: Gholizadeh & Musilek, Data in Brief 2024 | see paper references |
+| Fernandez-Zapico MPC hub (CDC 2025) | NREL OpenEI PVDAQ farm solar array | https://openei.org/wiki/PVDAQ/Sites/Farm_Solar_Array |

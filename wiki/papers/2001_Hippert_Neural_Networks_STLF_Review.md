@@ -5,10 +5,10 @@ authors: [Henrique Steinherz Hippert, Carlos Eduardo Pedreira, Reinaldo Castro S
 year: 2001
 journal_conference: "IEEE Transactions on Power Systems, 16(1), 44-55"
 doi_url: "https://doi.org/10.1109/59.912452"
-models_used: ["[[MLP]]", "[[ANN]]", "[[ARIMA]]", "[[Linear_Regression]]", "[[Kohonen_SOM]]", "[[Recurrent_Neural_Network]]", "[[Fuzzy_Neural_Network]]", "[[Projection_Pursuit_Regression]]", "[[Adaline]]"]
+models_used: ["[[MLP]]", "[[ANN]]", "[[ARIMA]]", "[[Linear_Regression]]", "[[Kohonen_SOM]]", "[[RNN]]", "[[Fuzzy_Neural_Network]]", "[[Projection_Pursuit_Regression]]", "[[Adaline]]"]
 datasets_used: ["[[Utility_Load_Data_1990s]]", "[[Taiwan_Power_System]]", "[[Greek_Power_System]]", "[[Autonomous_Island_System_Crete]]"]
-features_used: ["[[Lagged_Load]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Variables]]", "[[Day_Type_Dummy]]", "[[Nonlinear_Temperature_Functions]]", "[[Weather_Forecast]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Nonlinear_Temperature_Functions]]", "[[Weather_Forecast]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAPE]]", "[[RMSE]]", "[[MSPE]]", "[[MAE]]", "[[Standard_Deviation_Errors]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: Neural Networks for Short-Term Load Forecasting: A Review and Evaluation
 
 ## 🎯 Main Objective & Contribution
-- Critical review of **40 papers (1991–1999, leading EE journals only)** applying [[ANN]]s to short-term load forecasting ([[STLF]]), written to explain researcher skepticism about NN forecasting claims.
+- Critical review of **40 papers (1991–1999, leading EE journals only)** applying [[ANN]]s to short-term load forecasting ([[Short_Term_Forecasting]]), written to explain researcher skepticism about NN forecasting claims.
 - **Two major findings**: (a) most proposed [[MLP]]s — especially profile forecasters with 24 output nodes — were **overparameterized** (more weights than training samples → expected overfitting); (b) models were **not systematically tested** against standard benchmarks and error analysis bypassed standard forecasting practice.
 - Establishes methodological protocols still cited today: compare vs. naïve + standard statistical baselines, report in-sample AND out-of-sample errors, use multiple error metrics and error-distribution diagnostics.
 - Economic motivation quoted from Bunn & Farmer [10]: a 1% increase in forecast error implied ~£10 million/year extra operating cost (1984 estimate).

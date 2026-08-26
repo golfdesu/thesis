@@ -7,8 +7,8 @@ journal_conference: "2025 IEEE DELCON - International Conference on Recent Smart
 doi_url: "https://doi.org/10.1109/DELCON68055.2025.11400364"
 models_used: ["[[LTLM]]", "[[LSTM]]"]
 datasets_used: ["[[LA_Charging_Station_Dataset]]"]
-features_used: ["[[Historical_EV_Charging_Load]]", "[[Daily_Weekly_Cycles]]", "[[Seasonal_Trends]]"]
-forecasting_horizon: "[[Long_Term]]"
+features_used: ["[[Historical_Load]]", "[[Daily_Weekly_Cycles]]", "[[Seasonal_Trends]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: []
 tags: [paper, ev-load-forecasting, ml]
 ---

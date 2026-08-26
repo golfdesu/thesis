@@ -57,9 +57,20 @@ Follow this order for every ingestion. Do not skip steps.
 10. `index.md` — add the paper under `## 📄 Paper Summaries`.
 11. `dataset_extraction_report.md` — append new datasets/URLs (append-only).
 12. `log.md` — add an entry: `## [YYYY-MM-DD] ingest | <paper name>` summarizing what was done.
+13. **Regenerate the one-file AI digest**: run `python gen_paper_digest.py` from the vault root so `paper_digest.md` includes the new paper (see section "One-File Paper Digest" below — never hand-edit it).
 
 ### Step 5 — Synthesis docs (for batch ingestions or when requested)
 13. `research_gaps.md`, `progress_summary_and_research_gaps.md`, `proposed_architectures.md`, `transformer_research_ideas.md` — update paper counts, gap mappings, and novelty claims to match the current corpus.
+
+---
+
+# One-File Paper Digest (`paper_digest.md`)
+
+- `paper_digest.md` at the vault root is a GENERATED, self-contained summary of ALL notes in `wiki/papers/`. Its purpose: an AI agent can read this ONE file and immediately know what every paper did (contribution, method core, key results, and the full limitations/gaps section) to make research-gap identification fast.
+- **It is mandatory output of every ingestion** (Step 4, item 13): after adding any paper note, run `python gen_paper_digest.py` from the vault root. Also rerun it after any batch edit of notes in `wiki/papers/` or template changes.
+- **Never hand-edit `paper_digest.md` entries.** The source of truth is always the per-paper note in `wiki/papers/` — fix the note, then regenerate.
+- If the paper-note template in `schema.md` changes (frontmatter keys or section headers), update `gen_paper_digest.py` accordingly so extraction stays correct.
+- Record regeneration in `log.md` (a one-line note inside the ingestion entry is enough; no separate entry needed).
 
 ---
 

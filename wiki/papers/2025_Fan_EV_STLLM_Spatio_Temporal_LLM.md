@@ -6,9 +6,9 @@ year: 2025
 journal_conference: "arXiv preprint (arXiv:2507.09527), preprint submitted to Elsevier"
 doi_url: "https://doi.org/10.48550/arXiv.2507.09527"
 models_used: ["[[EV-STLLM]]", "[[GPT-2]]", "[[PFGA]]", "[[QLoRA]]", "[[VMD]]", "[[ICEEMDAN]]", "[[FIG]]", "[[ReliefF]]", "[[GCN]]", "[[LSTM]]"]
-datasets_used: ["[[UrbanEV_Dataset]]", "[[Shenzhen_EV_Charging_Dataset]]"]
-features_used: ["[[Charging_Volume]]", "[[Station_Occupancy]]", "[[Holiday_Indicator]]", "[[Adjacency_Matrix]]", "[[Spatio_Temporal_Frequency_Embeddings]]", "[[Electricity_Price]]", "[[Weather]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[UrbanEV_Dataset]]", "[[Shenzhen_ST_EVCDP]]"]
+features_used: ["[[Charging_Volume]]", "[[Station_Occupancy]]", "[[Holiday_Indicator]]", "[[Adjacency_Matrix]]", "[[Spatio_Temporal_Frequency_Embeddings]]", "[[Electricity_Tariff]]", "[[Weather]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -74,7 +74,7 @@ tags: [paper, ev-load-forecasting, ml]
   - Targets: charging volume and occupancy per station. Additional dynamic factors: time-varying electricity price, service price, weather conditions. Spatial attributes: coordinates, adjacency, distances; static features: pile number, station number.
   - Experiment subsets: two randomly selected zones (**Data 1** and **Data 2**), each 4,345 hourly data points, split 80%/10%/10% train/valid/test. Data 1 volume mean 198.02 kWh (std 98.78); Data 2 volume mean 528.99 (std 225.88).
   - Critical-day experiment: training to Jan 16 2023, validation Jan 17–21, test on five Chinese Spring Festival holiday days (2023-01-22–26) plus subsequent workdays.
-- **Features**: [[Historical_Charging_Volume]], [[Station_Occupancy]], binary [[Holiday_Indicator]] (holiday=1, ordinary day=0, selected via ReliefF), hour-of-day/day-of-week temporal features, high/mid/low-frequency components from VMD-ICEEMDAN, multi-scale (daily/weekly) FIG granules, station adjacency matrix from network topology.
+- **Features**: [[Historical_Load]], [[Station_Occupancy]], binary [[Holiday_Indicator]] (holiday=1, ordinary day=0, selected via ReliefF), hour-of-day/day-of-week temporal features, high/mid/low-frequency components from VMD-ICEEMDAN, multi-scale (daily/weekly) FIG granules, station adjacency matrix from network topology.
 - No dedicated code/data repository URL stated in the paper beyond the UrbanEV dataset citation above.
 
 ## 📈 Performance & Results

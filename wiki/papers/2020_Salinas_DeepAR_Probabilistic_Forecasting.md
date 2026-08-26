@@ -6,10 +6,10 @@ year: 2020
 journal_conference: "International Journal of Forecasting, 36(3), 1181-1191"
 doi_url: "https://doi.org/10.1016/j.ijforecast.2019.11.003"
 models_used: ["[[DeepAR]]", "[[LSTM]]"]
-datasets_used: ["[[Parts_Dataset]]", "[[Electricity_Dataset]]", "[[Traffic_Dataset]]", "[[Amazon_EC_Dataset]]", "[[Amazon_EC_Sub_Dataset]]"]
-features_used: ["[[Age_Feature]]", "[[Time_Covariates]]", "[[Item_Embedding]]", "[[Scale_Factor]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Quantile_Loss]]", "[[ND]]", "[[RMSE]]"]
+datasets_used: ["[[Parts_Dataset]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[Amazon_EC_Dataset]]", "[[Amazon_EC_Dataset]]"]
+features_used: ["[[Age_Feature]]", "[[Calendar_Features]]", "[[Item_Embedding]]", "[[Scale_Factor]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[Pinball_Loss]]", "[[ND]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

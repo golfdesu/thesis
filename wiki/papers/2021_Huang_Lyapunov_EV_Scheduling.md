@@ -5,10 +5,10 @@ authors: [Shihan Huang, Yue Chen, Richard Chen, Adam Wierman]
 year: 2026
 journal_conference: "arXiv preprint arXiv:2604.16873 [math.OC]"
 doi_url: "https://arxiv.org/abs/2604.16873"
-models_used: ["[[Lyapunov_Optimization|Forecast-Enhanced Lyapunov Optimization]]", "[[Receding_Horizon_Control|RHC]]", "[[Virtual_Queues]]", "[[Linear_Programming]]", "[[MPC]] (benchmark)"]
-datasets_used: ["[[Shanghai_EV_Arrival_Data]]", "[[CAISO_Electricity_Prices]]"]
-features_used: ["[[EV_Arrival_Rate]]", "[[Electricity_Price]]", "[[Parking_Time]]", "[[Required_Charging_Energy]]", "[[Maximum_Charging_Power]]"]
-forecasting_horizon: "[[Short_Term]]"
+models_used: ["[[Lyapunov_Optimization|Forecast-Enhanced Lyapunov Optimization]]", "[[MPC|RHC]]", "[[Queuing_Model]]", "[[Linear_Programming]]", "[[MPC]] (benchmark)"]
+datasets_used: ["[[Shanghai_EV_Arrival_Data]]", "[[CAISO]]"]
+features_used: ["[[EV_Arrival_Rate]]", "[[Electricity_Tariff]]", "[[Arrival_Departure_Time]]", "[[EV_Charging_Demand]]", "[[Charging_Power]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[Total_Cost]]", "[[Unit_Cost_USD_per_kWh]]", "[[Maximum_Charging_Delay]]", "[[Optimality_Gap]]", "[[Computational_Time]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - **First work to incorporate short-term forecasts into the Lyapunov optimization framework** for online EV charging scheduling, overcoming the myopia of prediction-free Lyapunov methods while retaining rigorous theoretical guarantees.
-- Novel **forecast-integrated virtual queue design** ($q_g$, $z_g$) embedded in a [[Receding_Horizon_Control]] framework; extended with **heterogeneous penalty parameters** $V_g$ per EV group to shrink the optimality gap.
+- Novel **forecast-integrated virtual queue design** ($q_g$, $z_g$) embedded in a [[MPC]] framework; extended with **heterogeneous penalty parameters** $V_g$ per EV group to shrink the optimality gap.
 - Proves charging delay upper bound $O(w)$ and optimality gap bound $O(1/(wV))$ — both improving with lookahead window length $w$.
 - Case study (100 EVs, real Shanghai arrivals + CAISO prices): A1 reaches within **1% of offline optimal cost**, vs 46% for homogeneous-penalty A2; both beat MPC and greedy.
 
@@ -64,7 +64,7 @@ Heterogeneous penalties (P5′): objective $\sum_{\tau=0}^{w-1}(\pi(t+\tau)V - q
 
 ## 📊 Dataset & Input Features
 - **[[Shanghai_EV_Arrival_Data]]**: real-world EV arrival/departure times in Shanghai ([23] Du et al., Applied Energy, vol. 383, p. 125302, Apr. 2025); typical working day — most EVs arrive ~8:00 am, leave ~6:00 pm. **100 EVs**, 24-h horizon, **5-min time slots** ($\Delta t$); initial SOC 25–80%, max charging power 150–350 kW, target SOC ≥ 80%, efficiency $\eta=0.95$.
-- **[[CAISO_Electricity_Prices]]**: California ISO electricity prices obtained via Grid Status.
+- **[[CAISO]]**: California ISO electricity prices obtained via Grid Status.
   - Data URL: https://www.gridstatus.io/
 - Features fed as forecasts into the LP: short-term EV arrival/demand $a_g(t)$, electricity price $\pi(t)$ within window $w$; system state: virtual-queue backlogs $q_g,z_g$.
 - No public code/data repository stated; simulation in MATLAB on Intel Core i5-10505, 16 GB RAM.
@@ -92,7 +92,7 @@ Cost & delay comparison (Table II, 100 EVs, MPC at $w=12$):
 - Grouping by parking time is an aggregation approximation; per-EV disaggregation via FIFO may be suboptimal.
 - Single-station scope; no network constraints, transformer limits, or renewable co-optimization; V2G explicitly left to future work.
 - Heterogeneous penalty (A1) requires careful per-group tuning of $V_g$ and degrades under forecast error.
-- Gap for thesis: the framework consumes generic short-term load/price forecasts — coupling probabilistic forecasters ([[TimeGrad]], [[TFT]]) with uncertainty-aware Lyapunov control is unexplored.
+- Gap for thesis: the framework consumes generic short-term load/price forecasts — coupling probabilistic forecasters ([[TimeGrad]], [[Temporal_Fusion_Transformer]]) with uncertainty-aware Lyapunov control is unexplored.
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -106,6 +106,6 @@ Cost & delay comparison (Table II, 100 EVs, MPC at $w=12$):
 
 ## 🔗 Key References & Citation Graph
 - Foundation: Neely, *Stochastic Network Optimization with Application to Communication and Queueing Systems* (2010) — standard Lyapunov drift-plus-penalty [12].
-- Data sources: [[Shanghai_EV_Arrival_Data]] (Du et al. 2025), [[CAISO_Electricity_Prices]] via Grid Status (https://www.gridstatus.io/).
-- Related vault concepts: [[Receding_Horizon_Control]], [[Virtual_Queues]], [[Lyapunov_Optimization]], [[Short_Term]]
+- Data sources: [[Shanghai_EV_Arrival_Data]] (Du et al. 2025), [[CAISO]] via Grid Status (https://www.gridstatus.io/).
+- Related vault concepts: [[MPC]], [[Queuing_Model]], [[Lyapunov_Optimization]], [[Short_Term_Forecasting]]
 - Contrast baselines: [[MPC]], greedy scheduling; related RL-based alternatives ([[Q_Learning]]) lack hard-constraint safety guarantees.

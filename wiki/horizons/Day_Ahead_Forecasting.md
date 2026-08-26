@@ -58,6 +58,8 @@ Day-ahead EV charging load forecasting covers prediction horizons of **24 to 36 
 - 2024 — [[2024_Qu_Forwardformer_Day_Ahead_Load]] : Forwardformer (day-as-token encoder-dual-decoder, forward sliding/dilated/global attention) emits the full next-day curve in one inference — best ACC 98.51% (China) / 96.94% (US), SOTA on weekends/holidays via holiday-weighted dual-MSE loss.
 - 2024 — [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] : Day-ahead GB half-hourly net-load (14 GSP groups) via Kalman-adapted GAM + OGD/BOA-adapted quantile regression — ≈10% RMSE reduction vs periodic retraining and >20% RPS gain on US cities during COVID.
 - 2024 — [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] : Day-ahead recursive GPR feeder forecasting with EV charging-habit probability CH(t) — MAPE restored to 9.21% and PI coverage near nominal despite integrated EV loads.
+- 2025 — [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] : GBT+EnbPI probabilistic scenarios (24 h @ 15-min load/PV; hourly prices upsampled) feed scenario-based stochastic MPC of a charging energy hub — day-ahead forecast quality valued via downstream control cost (112.76% of omniscient).
+- 2026 — [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] : Day-ahead daily session counts per charge point via Bayesian [[INLA_Latent_Gaussian_Model]] (ICAR/SPDE + RW2), beating per-station no-pooling XGBoost/GLM on MAE at 70–77% of Glasgow stations.
 
 ## Key Input Features
 

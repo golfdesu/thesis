@@ -6,10 +6,10 @@ year: 2021
 journal_conference: "Applied Energy, 283, 116337"
 doi_url: "https://doi.org/10.1016/j.apenergy.2020.116337"
 models_used: ["[[GBRT]]", "[[QRF]]", "[[QRNN]]", "[[PLQR]]", "[[PCA]]"]
-datasets_used: ["[[EVnetNL_ElaadNL_Dataset]]", "[[ECMWF_Weather_Data]]", "[[COROP_Regions]]"]
-features_used: ["[[Historical_EV_Load]]", "[[Weather_Forecast_Features]]", "[[Super_User_Features]]", "[[Calendar_Features]]", "[[Principal_Components]]", "[[Lagged_Load]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Pinball_Score]]", "[[AACE]]"]
+datasets_used: ["[[ElaadNL]]", "[[Weather]]", "[[COROP_Regions]]"]
+features_used: ["[[Historical_Load]]", "[[Weather_Forecast_Features]]", "[[Super_User_Features]]", "[[Calendar_Features]]", "[[PCA]]", "[[Historical_Load]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[Pinball_Loss]]", "[[AACE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -58,11 +58,11 @@ $$\hat{\beta}^{\langle\alpha_q\rangle} = \arg\min_{\beta^{\langle\alpha_q\rangle
 Low-level: same models without PCA ("no PCA"), persistence BPersB ($\hat{P}_{i,h}=P_{i,h-1}$ hour-ahead Eq. 18; $P_{i,h-24}$ day-ahead Eq. 19). High-level: direct GBRT/QRF/QRNN on high-level series, Sum-and-Sort (SaS) of homologous quantiles, non-penalized NPLQR (λ=0), PLQR without recency lags, HPersB persistence.
 
 ## 📊 Dataset & Input Features
-- **[[EVnetNL_ElaadNL_Dataset]]** provided by ElaadNL (Dutch smart-charging knowledge centre): two tables — "Transactions" with **1,822,884 rows** (unique charging events: station/charge-point IDs, lat/long, meter start/end, max power, hashed RFID card, UTC start/end); "Meter readings" with **52,294,851 rows** recorded every **15 min** during each transaction (UTC timestamp, transferred energy, meter value). Coverage: **Jan 1, 2012 – June 30, 2018**; analysis restricted to transactions ending after June 30, 2015.
+- **[[ElaadNL]]** provided by ElaadNL (Dutch smart-charging knowledge centre): two tables — "Transactions" with **1,822,884 rows** (unique charging events: station/charge-point IDs, lat/long, meter start/end, max power, hashed RFID card, UTC start/end); "Meter readings" with **52,294,851 rows** recorded every **15 min** during each transaction (UTC timestamp, transferred energy, meter value). Coverage: **Jan 1, 2012 – June 30, 2018**; analysis restricted to transactions ending after June 30, 2015.
   - Data availability/source URLs found: ElaadNL website https://www.elaad.nl ; transfer of stations to municipalities https://www.evnet.nl/nieuws/meer-dan-de-helft-van-publieke-laadpalen-van-pionier-evnetnl-gaat-over-naar-gemeenten/
 - Study period: **July 1, 2015 – June 30, 2018** (hourly resolution); only stations active throughout the whole period. Cleaning: 565 transactions lacking meter readings removed.
 - Spatial aggregation into **[[COROP_Regions]]** (40 Dutch statistical regions; https://www.regioatlas.nl/indelingen/indelingen_indeling/t/corop_regio_s); four highest-consumption COROP regions used as low-level regions: Zuidoost-Noord-Brabant (**104 stations**), Rijnmond (**91**), Noordoost-Noord-Brabant (**71**), Utrecht (**40**) → high-level region = sum of the four (~306 stations).
-- Weather: real + forecast meteorological data (precipitation [m], snowfall [m water eq.], temperature [°C], wind speed [m/s]) from **[[ECMWF_Weather_Data]]** (https://www.ecmwf.int/) on 0.1°×0.1° grids; day-ahead predictions issued at midnight D−1, hourly resolution.
+- Weather: real + forecast meteorological data (precipitation [m], snowfall [m water eq.], temperature [°C], wind speed [m/s]) from **[[Weather]]** (https://www.ecmwf.int/) on 0.1°×0.1° grids; day-ahead predictions issued at midnight D−1, hourly resolution.
 - Predictors (219 total): weather forecasts per grid square; **super-user predictors** (# users and aggregated consumption of top 100/300/500 users, at 1-h/24-h/48-h/168-h lags); calendar features (working/non-working-day dummy `hol`, hour-of-day integer `hod`). PCA retains **4 principal components** for weather+super-user blocks; calendar variables passed through directly.
 - Splits: baseline training Jul 2015–Dec 2016 (~50%, 13,200 points), hierarchical PLQR training year 2017 (~30%, 8,760 pts), test first half of 2018 (~20%, 4,344 pts).
 

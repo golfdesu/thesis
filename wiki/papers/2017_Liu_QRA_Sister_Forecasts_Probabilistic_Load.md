@@ -5,10 +5,10 @@ authors: [Bidong Liu, Jakub Nowotarski, Tao Hong, Rafał Weron]
 year: 2017
 journal_conference: "IEEE Transactions on Smart Grid, vol. 8, no. 2, pp. 730-737"
 doi_url: "https://doi.org/10.1109/TSG.2015.2437877"
-models_used: ["[[QRA]]", "[[Quantile_Regression]]", "[[Recency_Effect_Regression]]", "[[Tao's_Vanilla_Benchmark]]"]
+models_used: ["[[QRA]]", "[[Quantile_Regression]]", "[[Recency_Effect_Regression]]", "[[Taos_Vanilla_Benchmark]]"]
 datasets_used: ["[[GEFCom2014]]"]
-features_used: ["[[Sister_Point_Forecasts]]", "[[Temperature]]", "[[Month_Of_Year]]", "[[Day_Of_Week]]", "[[Hour_Of_Day]]", "[[Lagged_Temperature]]", "[[Daily_Moving_Average_Temperature]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+features_used: ["[[Sister_Point_Forecasts]]", "[[Temperature]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Temperature]]", "[[Temperature]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[Pinball_Loss]]", "[[Winkler_Score]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

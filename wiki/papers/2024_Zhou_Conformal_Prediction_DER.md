@@ -5,11 +5,11 @@ authors: [Wenbin Zhou, Shixiang Zhu]
 year: 2024
 journal_conference: "arXiv preprint arXiv:2411.12193 (v4)"
 doi_url: "https://arxiv.org/abs/2411.12193"
-models_used: ["[[HPCP]]", "[[Multivariate_Hawkes_Process]]", "[[Split_Conformal_Prediction]]", "[[VAR]]", "[[Gaussian_Process_Regression]]", "[[Quantile_Regression]]", "[[RNN]]", "[[LSTM]]"]
+models_used: ["[[HPCP]]", "[[Multivariate_Hawkes_Process]]", "[[Conformal_Prediction]]", "[[VAR]]", "[[Gaussian_Process_Regression]]", "[[Quantile_Regression]]", "[[RNN]]", "[[LSTM]]"]
 datasets_used: ["[[Indianapolis_DER_Adoption_Dataset]]"]
-features_used: ["[[Grid_Topology_Affiliation_Matrix]]", "[[Historical_Installation_Events]]", "[[SAIDI_Outages]]", "[[Feeder_Electrical_Load]]", "[[Electricity_Price]]", "[[Education_Level]]", "[[Median_Household_Income]]", "[[Solar_Potential_Sunroof]]"]
-forecasting_horizon: "[[Long_Term]]"
-metrics: ["[[MAE]]", "[[Coverage_Rate]]", "[[Interval_Size]]"]
+features_used: ["[[Grid_Topology]]", "[[Historical_Installation_Events]]", "[[SAIDI_Outages]]", "[[Feeder_Electrical_Load]]", "[[Electricity_Tariff]]", "[[Education_Level]]", "[[Median_Household_Income]]", "[[Solar_Potential_Sunroof]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[PICP]]", "[[Interval_Size]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -78,4 +78,4 @@ $$\hat{\alpha} \leq \left[1 - \frac{1-\alpha}{1 - ((\log n)^2 W/2n)^{1/3} - (W/2
 - [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]] — related conformal time-series forecasting lineage (weighted-quantile adaptation builds on Xu & Xie line cited therein).
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — contrast: probabilistic DL forecasting vs distribution-free conformal approach.
 - [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]] — vault concept of hierarchical forecasting structure (coherent aggregation theme).
-- Related vault concepts: [[Multivariate_Hawkes_Process]], [[Conformal_Prediction]], [[DER_Adoption]], [[Grid_Topology]], [[Coverage_Rate]]
+- Related vault concepts: [[Multivariate_Hawkes_Process]], [[Conformal_Prediction]], [[DER_Adoption]], [[Grid_Topology]], [[PICP]]

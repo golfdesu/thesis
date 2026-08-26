@@ -6,9 +6,9 @@ year: 2019
 journal_conference: "IJCAI 2019 (28th International Joint Conference on Artificial Intelligence), pp. 1907-1913"
 doi_url: "https://doi.org/10.48550/arXiv.1906.00121"
 models_used: ["[[Graph_WaveNet]]"]
-datasets_used: ["[[METR-LA]]", "[[PEMS-BAY]]"]
-features_used: ["[[Traffic_Speed]]", "[[Sensor_Time_Series]]", "[[Distance_Based_Adjacency_Matrix]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[Traffic]]", "[[Traffic]]"]
+features_used: ["[[Traffic_Speed]]", "[[Sensor_Time_Series]]", "[[Adjacency_Matrix]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

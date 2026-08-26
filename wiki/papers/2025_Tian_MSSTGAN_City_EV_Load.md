@@ -6,9 +6,9 @@ year: 2025
 journal_conference: "IEEE Access, Vol. 13, pp. 29000-29017"
 doi_url: "https://doi.org/10.1109/ACCESS.2025.3541118"
 models_used: ["[[MSSTGAN|Multi-Scale Spatial-Temporal Graph Attention Network (MSSTGAN)]]", "[[Pyramid_Split_Attention|Pyramid Split Attention (PSA)]]", "[[Multi_Head_Attention]]", "[[Gated_Fusion]]", "[[Transform_Attention|Transform Attention (TA)]]", "[[ST-GAT]]", "[[T-GCN]]", "[[STSGCN]]", "[[STFGNN]]", "[[Informer]]", "[[LDformer]]"]
-datasets_used: ["[[Palo_Alto_EV_Charging_Dataset]]", "[[Boulder_EV_Charging_Dataset]]", "[[Dundee_EV_Charging_Dataset]]", "[[Perth_EV_Charging_Dataset]]"]
-features_used: ["[[Adjacency_Matrix]] $A \\in \\mathbb{R}^{N\\times N}$", "[[Spatio_Temporal_Embedding]] $X_{STE}$", "[[Temporal_Features]] (week/day)", "[[Charging_Energy_kWh]]"]
-forecasting_horizon: "[[Spatial_Temporal|City-Level Multi-Station Forecasting: Task 7-1 (7 days → 1 day) & Task 30-7 (30 days → 7 days)]]"
+datasets_used: ["[[Palo_Alto_EV]]", "[[Boulder_Colorado]]", "[[Dundee_EV]]", "[[Perth_EV]]"]
+features_used: ["[[Adjacency_Matrix]] $A \\in \\mathbb{R}^{N\\times N}$", "[[Spatio_Temporal_Embedding]] $X_{STE}$", "[[Calendar_Features]] (week/day)", "[[EV_Charging_Demand]]"]
+forecasting_horizon: "[[Spatial_Temporal_Forecasting|City-Level Multi-Station Forecasting: Task 7-1 (7 days → 1 day) & Task 30-7 (30 days → 7 days)]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -64,10 +64,10 @@ $X \in \mathbb{R}^{P\times N\times C}$ → FC → $H^{(0)}$ → $L$ PMABs → $H
 ## 📊 Dataset & Input Features
 | Dataset | Location | Sites | Period | Resolution |
 | :--- | :--- | :---: | :--- | :--- |
-| [[Palo_Alto_EV_Charging_Dataset]] | Palo Alto, CA, USA | **47 stations** | 2011–2013 (3,443 timesteps) | minute-level charging energy (kWh) aggregated to daily sums per site |
-| [[Boulder_EV_Charging_Dataset]] | Boulder, CO, USA | **27 public stations** (city facilities, entertainment centers, downtown parking) | Jan 2018 – Nov 2021 (1,150 timesteps) | daily energy |
-| [[Dundee_EV_Charging_Dataset]] | Dundee, Scotland, UK | **33 stations** | 2017–2018 (370 timesteps) | session records (IDs, transaction IDs, dates/times, kWh) |
-| [[Perth_EV_Charging_Dataset]] | Perth, Australia | **21 stations** | Jan 2016 – Dec 2019 (1,094 timesteps) | anonymized per-session data |
+| [[Palo_Alto_EV]] | Palo Alto, CA, USA | **47 stations** | 2011–2013 (3,443 timesteps) | minute-level charging energy (kWh) aggregated to daily sums per site |
+| [[Boulder_Colorado]] | Boulder, CO, USA | **27 public stations** (city facilities, entertainment centers, downtown parking) | Jan 2018 – Nov 2021 (1,150 timesteps) | daily energy |
+| [[Dundee_EV]] | Dundee, Scotland, UK | **33 stations** | 2017–2018 (370 timesteps) | session records (IDs, transaction IDs, dates/times, kWh) |
+| [[Perth_EV]] | Perth, Australia | **21 stations** | Jan 2016 – Dec 2019 (1,094 timesteps) | anonymized per-session data |
 
 - Preprocessing: cleaning of duplicates/corrupted points, distribution-based imputation of missing values, Min-Max normalization to [0,1].
 - Node correlation analysis (cosine similarity between all station pairs) confirmed significant spatial correlations motivating graph modeling.

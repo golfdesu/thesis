@@ -6,10 +6,10 @@ year: 2026
 journal_conference: "Computers and Electrical Engineering, Vol. 135, Art. 111201 (Elsevier)"
 doi_url: "https://doi.org/10.1016/j.compeleceng.2026.111201"
 models_used: ["[[Temporal_Fusion_Transformer]]", "[[Conformal_Prediction]]", "[[Quantile_Regression]]"]
-datasets_used: ["[[Palo_Alto_EV_Charging_Dataset]]", "[[Open-Meteo_Weather_Data]]"]
-features_used: ["[[Temperature]]", "[[Precipitation]]", "[[Solar_Radiation]]", "[[Calendar_Features]]", "[[Hour_Of_Day]]", "[[Day_Of_Week]]", "[[Weekend_Indicator]]", "[[Sine_Cosine_Time_Encoding]]", "[[Historical_Charging_Load]]", "[[Rolling_Energy_Aggregates]]", "[[Session-Level_Statistics]]", "[[Charging_Efficiency_Metrics]]", "[[Charging_Fee_Statistics]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[MAPE]]", "[[SMAPE]]", "[[R2]]", "[[Pinball_Loss]]", "[[PICP]]", "[[MPIW]]", "[[NPIW]]"]
+datasets_used: ["[[Palo_Alto_EV]]", "[[Weather]]"]
+features_used: ["[[Temperature]]", "[[Precipitation]]", "[[Solar_Radiation]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Cyclical_Encodings]]", "[[Historical_Load]]", "[[Rolling_Energy_Aggregates]]", "[[Session-Level_Statistics]]", "[[Charging_Efficiency_Metrics]]", "[[Charging_Fee_Statistics]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[MAPE]]", "[[SMAPE]]", "[[R_squared]]", "[[Pinball_Loss]]", "[[PICP]]", "[[MPIW]]", "[[NPIW]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -20,14 +20,14 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 
-Develop a unified, interpretable, probabilistic framework for [[EV_Charging_Load_Forecasting|EV charging load forecasting]] using the [[Temporal_Fusion_Transformer]] (TFT), providing **native multi-horizon** predictions at two timescales — **hourly (1–24 h ahead)** and **daily (1–7 days ahead)** — enriched with environmental covariates and calibrated by conformal prediction. Four identified research gaps motivate the work:
+Develop a unified, interpretable, probabilistic framework for [[EV_Charging_Demand|EV charging load forecasting]] using the [[Temporal_Fusion_Transformer]] (TFT), providing **native multi-horizon** predictions at two timescales — **hourly (1–24 h ahead)** and **daily (1–7 days ahead)** — enriched with environmental covariates and calibrated by conformal prediction. Four identified research gaps motivate the work:
 
 - **RG1**: Prior models target a single resolution or rely on recursive/iterative multi-step strategies prone to error accumulation; no unified native dual-timescale architecture existed.
 - **RG2**: Environmental variables (temperature, rainfall, solar radiation) are underutilized despite their documented effect on EV user behavior.
 - **RG3**: Most DL forecasters are black boxes without actionable feature attribution.
 - **RG4**: Literature fragments into point-accuracy work vs. probabilistic pipelines; no single end-to-end DL model delivers both.
 
-Contributions: (C1) first native short-term + medium-term EV load forecaster in one end-to-end TFT; (C2) rich environmental + calendar covariate integration synchronized to high-resolution records; (C3) built-in interpretability via variable selection networks, attention, GRNs; (C4) validation on multi-year real-world [[Palo_Alto_EV_Charging_Dataset|Palo Alto]] data with hybrid imputation and sine–cosine encoding; (C5) quantile-loss training enabling conditional probabilistic forecasts, evaluated by a **dual-track** framework (point metrics + probabilistic metrics) with post-hoc conformal calibration.
+Contributions: (C1) first native short-term + medium-term EV load forecaster in one end-to-end TFT; (C2) rich environmental + calendar covariate integration synchronized to high-resolution records; (C3) built-in interpretability via variable selection networks, attention, GRNs; (C4) validation on multi-year real-world [[Palo_Alto_EV|Palo Alto]] data with hybrid imputation and sine–cosine encoding; (C5) quantile-loss training enabling conditional probabilistic forecasts, evaluated by a **dual-track** framework (point metrics + probabilistic metrics) with post-hoc conformal calibration.
 
 ## 🧠 Methodology & Model Architecture
 
@@ -66,8 +66,8 @@ Preprocessing: linear interpolation for gaps <6 h; nearest-valid-neighbor imputa
 
 ## 📊 Dataset & Input Features
 
-- **[[Palo_Alto_EV_Charging_Dataset]]**: public EV charging stations in **Palo Alto, California**, **2018–2022** (multiple years of hourly energy consumption, kWh per record with timestamp). Data availability statement: *"Data will be made available on request."* No explicit public URL given in the text (dataset originates from the City of Palo Alto open data portal per related literature, e.g., Amara-Ouali et al. used the same source).
-- **[[Open-Meteo_Weather_Data]]**: temperature, solar radiation, rainfall retrieved via the **Open-Meteo API** (https://open-meteo.com) for the same location/time; environmental variables interpolated/synchronized to hourly resolution.
+- **[[Palo_Alto_EV]]**: public EV charging stations in **Palo Alto, California**, **2018–2022** (multiple years of hourly energy consumption, kWh per record with timestamp). Data availability statement: *"Data will be made available on request."* No explicit public URL given in the text (dataset originates from the City of Palo Alto open data portal per related literature, e.g., Amara-Ouali et al. used the same source).
+- **[[Weather]]**: temperature, solar radiation, rainfall retrieved via the **Open-Meteo API** (https://open-meteo.com) for the same location/time; environmental variables interpolated/synchronized to hourly resolution.
 
 Features (Tables 2–3, 10): consumption energy (kWh, time-varying target); known inputs = mean daily temperature (°C), cumulative daily rainfall (mm), total daily solar radiation (Wh/m²), hour/day/month calendar features, weekend indicator. Engineered: cyclical sine/cosine encodings (hour_sin/cos, day_of_week_sin), relative time index, time-of-day binary flags (is_morning/is_evening/is_peak_hour), rolling energy sums over 3/7/14-day windows, min–max normalized total energy, session-level statistics (total/average duration, energy per session, number of sessions), charging efficiency mean/std, charging fee sum/mean, historical lagged load ($y_{t-1}, y_{t-2},\dots$).
 

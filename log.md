@@ -4,6 +4,17 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 
 ---
 
+## [2026-08-24] maintenance | Added gen_paper_digest.py + digest rule to AGENTS.md
+- Moved the digest generator into the vault root as `gen_paper_digest.py` (vault-relative paths, auto date).
+- Updated `AGENTS.md`: Step 4 now includes mandatory regeneration of `paper_digest.md` (item 13) + new section "One-File Paper Digest" defining purpose, generation rule, and no-hand-edit policy.
+
+## [2026-08-24] synthesis | paper_digest.md (one-file AI digest)
+- Generated `paper_digest.md` at vault root: a single-file digest of ALL 108 papers in `wiki/papers/`.
+- Purpose: let an AI agent read ONE file and immediately know what every paper did, for fast research-gap identification.
+- Each entry keeps: title / venue / year / DOI, models-horizon-metrics-data-features line, full contribution bullets ("What they did"), method-core line, key numeric results, and the complete limitations/gaps section.
+- Wikilinks flattened to plain text; equations and BibTeX omitted (remain in the linked per-paper notes). Ordered newest-first with a quick-scan table + corpus snapshot at top.
+- Source of truth unchanged: `wiki/papers/*.md`; regenerate by re-running the digest script if many new papers are ingested.
+
 ## [2026-08-10] maintenance | Created wiki/github/
 - Created dedicated `wiki/github/` folder with repository notes (`EV_Load_Forecasting_Repos.md`, `Probabilistic_Time_Series_Repos.md`, `Time_Series_Foundation_Models_Repos.md`).
 - Linked repository URLs and cross-referenced with paper summaries across the vault.
@@ -409,3 +420,39 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Refreshed research_gaps.md, progress_summary_and_research_gaps.md, proposed_architectures.md, transformer_research_ideas.md against the full 103-paper corpus.
 - Novelty re-validation: flagship combo (Mamba + cross-attention exogenous fusion + conformalized PICNN head) remains unexplored; refuted sub-claims recorded (USDT = first probabilistic EV Transformer; MoghadamDost = first conformalized EV Transformer; EVformer = dynamic-graph pure Transformer).
 - Exported thesis_references.bib with all 103 BibTeX entries.
+
+
+## [2026-08-23] ingest | Batch 4: 5 Gap-Targeted Papers (web-discovered)
+
+- Downloaded PDFs to raw_sources/ (arXiv / KDD '26 / CDC) and extracted full texts to scratch/txt/:
+  - 2026_Yu_EnergyMamba_Graph_Mamba_ASCQR (KDD '26): GE-Mamba (GCN-conditioned bidirectional selective SSM in U-Net) + AS-CQR adaptive conformalized quantile regression (width-normalized nonconformity + online feedback); Florida CBG / NYISO / CAISO energy datasets.
+  - 2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark (arXiv 2602.21415): S-Mamba & PowerMamba vs PatchTST & iTransformer vs LSTM across six US ISO grids, 24-168 h; weather-covariate ranking reversal confirmed architecture-driven (parameter-controlled).
+  - 2024_Menati_PowerMamba_Power_Systems_SSM (arXiv 2412.06112): dual-path standard/inverse Mamba with trend-seasonal decomposition + external-forecast token module; releases ERCOT GridSet (5-year hourly).
+  - 2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand (arXiv 2604.19841): Bayesian latent Gaussian model (SPDE-RW2 / ICAR-RW2) via INLA on new open ChargePlace Scotland station-level dataset (Oct 2022 - Apr 2025; Glasgow subset 96 CPIDs, 104,041 sessions); dominance vs per-station XGBoost/Poisson GLM on MAE at 70-77% of stations.
+  - 2025_FernandezZapico_Stochastic_MPC_Conformal_Hub (CDC 2025): GBT point forecasts wrapped by EnbPI conformal intervals feeding scenario-based stochastic MPC of a charging energy hub (280-day closed loop).
+- Created full-schema wiki/papers/ notes (verbatim equations, BibTeX, citation-graph links); created new concept pages ([[EnergyMamba]], [[AS_CQR]], [[EnbPI]], [[S_Mamba]], [[PowerMamba]], [[INLA_Latent_Gaussian_Model]] plus datasets/metrics) and propagated Literature-Usage bullets across wiki/.
+- Corpus now **108 papers**. BibTeX appended to thesis_references.bib.
+- Gap impact:
+  - P-3 narrowed but OPEN: AS-CQR already does online width-normalized conformal recalibration under shift - but aggregate regional load, non-EV, scalar (non-covariate-conditioned) update; EnbPI hub experiment shows price-interval coverage collapse (CPI 0.60 overall, 0.22 in Autumn gas-crisis) = direct empirical evidence for adaptive recalibration need.
+  - T-7 three-way benchmark CLOSED for grid-level hourly load (Hong & Lee), still OPEN for EV station-level sub-hourly probabilistic forecasting.
+  - Flagship novelty repositioned: EnergyMamba refutes any bare "no Mamba+conformal combination" claim at aggregate granularity; surviving composition = EV-station-level loads + cross-attention exogenous fusion + monotone PICNN head + adaptive conformal guarantees. See research_gaps.md refresh.
+
+
+## [2026-08-23] synthesis | NEW Methodology & System-Level Gaps (M-1..M-5)
+- Added cross-cutting gap section to research_gaps.md, derived from Batch-4 refresh + full-corpus synthesis; no new PDFs ingested:
+  - M-1 Benchmark aging / temporal validity drift (rolling-origin accuracy-vs-data-age curves across Palo Alto/Boulder/ElaadNL/ChargePlace Scotland).
+  - M-2 Leakage audit + unified probabilistic benchmark protocol (CRPS/PICP/Winkler + peak-zone WAPE, fixed rolling origins).
+  - M-3 Continual season-adaptive station models with jointly-guaranteed calibration (backbone updates + online quantile recalibration without forgetting rare regimes).
+  - M-4 Adversarial/poisoning robustness of probabilistic EV forecasts (interval distortion under manipulated history; attack-aware recalibration).
+  - M-5 Task-oriented calibration targets (calibration level x sharpness -> cost/CO2 per downstream operation).
+- Priority matrix added; positioning notes: M-2 = thesis-defensibility infrastructure, M-1 = standalone analysis chapter.
+
+
+## [2026-08-23] synthesis | Point-Forecast Track positioning added
+- Added dedicated section to research_gaps.md recording that the thesis core remains DL point forecasting:
+  - PF-1 peak-zone accuracy via asymmetric/peak-weighted loss (own benchmark: Peak-Zone WAPE 24-37%).
+  - PF-2 multi-horizon Transformer (answer Kyriakopoulos: Transformers currently win short-term only).
+  - PF-3 tokenization & exogenous-fusion mechanism benchmark for EV (T-2/T-3 sharpened).
+  - PF-4 DC fast-charging point forecasting (remaining sliver of primary Gap 3).
+  - M-1/M-2 reused as model-agnostic methodology infrastructure.
+- Thesis formula recorded: RevIN + series decomposition + multi-scale patching + asymmetric peak-loss, evaluated under M-2 protocol with horizon-split reporting; probabilistic head demoted to optional extension axis (not identity change).

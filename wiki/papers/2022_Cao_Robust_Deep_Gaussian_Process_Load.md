@@ -6,9 +6,9 @@ year: 2022
 journal_conference: "IEEE Transactions on Industrial Informatics, 18(2), 1142-1153"
 doi_url: "https://doi.org/10.1109/TII.2021.3081531"
 models_used: ["[[Deep_Gaussian_Process]]", "[[Sparse_GP]]", "[[VAE_DGP]]", "[[SVR]]", "[[BPNN]]"]
-datasets_used: ["[[COVID19_US_City_Load]]", "[[ENTSOE_Transparency_Platform]]", "Google/Apple Mobility Data"]
+datasets_used: ["[[COVID19_US_City_Load]]", "[[Weather]]", "Google/Apple Mobility Data"]
 features_used: ["[[Historical_Load|Past 24h load (Italy case)]]", "[[Temperature]]", "[[Humidity]]", "[[Cloud_Cover]]", "[[Precipitation]]", "[[Air_Pressure]]", "Timing features (month/day/hour index, weekday/holiday)", "[[Google_Mobility_Index|Google mobility: parks, workplaces, residential, retail & recreation, grocery & pharmacy]]", "[[Apple_Mobility_Index|Apple mobility: walking, driving, transit]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAPE]]", "[[Pinball_Loss]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -65,7 +65,7 @@ Implemented in Python/TensorFlow + GPyFlow on Intel Xeon E5-2630.
 - Splits: small-scale test — train May 7–9, val May 10–12, test May 13–15, 2020 (3 days training); middle-scale — train Feb 15–Apr 29, val May 2–8, test May 9–15, 2020 (~75 days). Italy: train Apr 20–22 / Jan 11–Mar 25 variants.
 
 ## 📈 Performance & Results
-- **Small-scale (3 days training)**: proposed DGP best in most cases; beats one-layer [[Sparse_GP]] in 5/6 regions and both [[SVR]] and [[VAE-DGP]]; parametric [[BPNN]] overfits severely (large validation/test gaps). Max MAPE reduction vs other methods: **70.9%**.
+- **Small-scale (3 days training)**: proposed DGP best in most cases; beats one-layer [[Sparse_GP]] in 5/6 regions and both [[SVR]] and [[VAE_DGP]]; parametric [[BPNN]] overfits severely (large validation/test gaps). Max MAPE reduction vs other methods: **70.9%**.
 - **Middle-scale (~75 days)**: outperforms SVR/BPNN/VAE-DGP in all cases and SGP in 5 cases; max MAPE reduction **50.7%**.
 - **Probabilistic**: Pinball loss up to **46.6%** (small-scale) and **39.7%** (middle-scale) lower than SGP/VAE-DGP; at least 23.0% lower than SGP/VAE-DGP with more data. The proposed 95% CI covers almost all actual loads where SGP/VAE-DGP miss large stretches (Seattle t=50–70 etc.); peak/valley values well predicted; density curves appropriately less steep (conservative under high uncertainty).
 - **Northern Italy**: lowest error in both small- and middle-scale tests; max MAPE reductions **70.1%** and **80.7%** respectively.
@@ -94,8 +94,8 @@ Implemented in Python/TensorFlow + GPyFlow on Intel Xeon E5-2630.
 ## 🔗 Key References & Citation Graph
 - [[2013_Roberts_Gaussian_Processes_Time_Series]]
 - [[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]]
-- [[1997_Long_Short_Term_Memory]] ([[LSTM]] baseline family)
-- [[2001_Neural_Networks_for_Short_Term_Load_Forecasting_A_Review_and_Evaluation]]
+- [[1997_Hochreiter_Long_Short_Term_Memory]] ([[LSTM]] baseline family)
+- [[2001_Hippert_Neural_Networks_STLF_Review]]
 - [[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]]
-- [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]]
+- [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
 - [[2023_Huang_MetaProbformer_EV_Load]] (alternative few-shot probabilistic approach)

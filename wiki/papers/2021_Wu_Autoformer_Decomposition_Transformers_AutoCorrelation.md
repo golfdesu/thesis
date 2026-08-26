@@ -5,10 +5,10 @@ authors: [Haixu Wu, Jiehui Xu, Jianmin Wang, Mingsheng Long]
 year: 2021
 journal_conference: "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)"
 doi_url: "https://arxiv.org/abs/2106.13008"
-models_used: ["[[Autoformer]]", "[[Auto_Correlation|Auto-Correlation Mechanism]]", "[[Series_Decomposition_Block]]", "[[Informer]]", "[[LogTrans]]", "[[Reformer]]", "[[LSTNet]]", "[[DeepAR]]", "[[N-BEATS]]", "[[Prophet]]"]
-datasets_used: ["[[ETT]]", "[[Electricity_ECL]]", "[[Exchange_Rates]]", "[[Traffic_PEMS-SF]]", "[[Weather_Jena]]", "[[ILI_CDC]]", "[[COVID19_Dashboard]]"]
+models_used: ["[[Autoformer]]", "[[Auto_Correlation|Auto-Correlation Mechanism]]", "[[Series_Decomposition_Block]]", "[[Informer]]", "[[LogTrans]]", "[[Reformer]]", "[[LSTNet]]", "[[DeepAR]]", "[[NBEATS]]", "[[Prophet]]"]
+datasets_used: ["[[ETT]]", "[[Electricity_ECL]]", "[[Exchange]]", "[[Traffic]]", "[[Weather]]", "[[ILI]]", "[[COVID19_Dashboard]]"]
 features_used: ["[[Trend_Component|Trend-cyclical Component]]", "[[Seasonal_Component]]", "[[Autocorrelation_Time_Delay]]", "[[Moving_Average_Decomposition]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -46,12 +46,12 @@ giving overall $O(L\log L)$ complexity in both memory and time (vs full attentio
 
 ## 📊 Dataset & Input Features
 Six real-world benchmarks (multivariate), chronological splits 6:2:2 for ETT and 7:1:2 for others:
-- **[[ETT]]** (Zhou et al., Informer): electricity transformer load + oil temperature, recorded every 15 minutes, July 2016–July 2018; four subsets [[ETTh1]], [[ETTh2]] (hourly), [[ETTm1]], [[ETTm2]] (15-min).
+- **[[ETT]]** (Zhou et al., Informer): electricity transformer load + oil temperature, recorded every 15 minutes, July 2016–July 2018; four subsets [[ETT]], [[ETT]] (hourly), [[ETT]], [[ETT]] (15-min).
 - **[[Electricity_ECL]]**: hourly electricity consumption of 321 customers, 2012–2014 — https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
-- **[[Exchange_Rates]]**: daily exchange rates of 8 countries, 1990–2016 (from LSTNet).
-- **[[Traffic_PEMS-SF]]**: hourly road occupancy rates, San Francisco Bay Area freeways (CalTrans sensors) — http://pems.dot.ca.gov
-- **[[Weather_Jena]]**: 21 meteorological indicators (air temperature, humidity, etc.), every 10 minutes, whole year 2020 — https://www.bgc-jena.mpg.de/wetter/
-- **[[ILI_CDC]]**: weekly influenza-like-illness patient ratio, US CDC, 2002–2021 — https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html
+- **[[Exchange]]**: daily exchange rates of 8 countries, 1990–2016 (from LSTNet).
+- **[[Traffic]]**: hourly road occupancy rates, San Francisco Bay Area freeways (CalTrans sensors) — http://pems.dot.ca.gov
+- **[[Weather]]**: 21 meteorological indicators (air temperature, humidity, etc.), every 10 minutes, whole year 2020 — https://www.bgc-jena.mpg.de/wetter/
+- **[[ILI]]**: weekly influenza-like-illness patient ratio, US CDC, 2002–2021 — https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html
 - **Case study [[COVID19_Dashboard]]**: daily confirmed deaths/recoveries, Jan 22 2020–May 20 2021, two anonymous European countries (Dong et al., Lancet Infect. Dis.) — split 7:1:2.
 - Features: past window $X_{en} \in \mathbb{R}^{I\times d}$ (input length $I=96$ standard, $I=36$ for ILI); decomposed seasonal/trend-cyclical components; prediction lengths $O \in \{96,192,336,720\}$ (ILI: {24,36,48,60}; COVID-19: {7,15,30}).
 - Code: https://github.com/thuml/Autoformer

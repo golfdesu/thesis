@@ -7,9 +7,9 @@ journal_conference: "IEEE Transactions on Power Systems, Vol. 39, No. 2, pp. 415
 doi_url: "https://doi.org/10.1109/TPWRS.2023.3310280"
 models_used: ["[[GAM]]", "[[Kalman_Filter]]", "[[Quantile_Regression]]", "[[Online_Gradient_Descent]]", "[[Bernstein_Online_Aggregation]]"]
 datasets_used: ["[[GB_Regional_Netload]]", "[[US_City_Daily_Load_COVID]]"]
-features_used: ["[[Historical_Load_Lag]]", "[[Temperature_Forecast]]", "[[Solar_Radiation]]", "[[Wind_Speed]]", "[[Embedded_Generation_Capacity]]", "[[Calendar_Covariates]]", "[[School_Holidays]]", "[[Precipitation]]", "[[Humidity]]", "[[Time_of_Year]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[RMSE]]", "[[MAE]]", "[[nRMSE]]", "[[nMAE]]", "[[RPS]]", "[[nRPS]]", "[[Pinball_Loss]]", "[[CRPS]]"]
+features_used: ["[[Historical_Load]]", "[[Temperature_Forecast]]", "[[Solar_Radiation]]", "[[Wind_Speed]]", "[[Embedded_Generation_Capacity]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Precipitation]]", "[[Humidity]]", "[[Time_of_Year]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[RMSE]]", "[[MAE]]", "[[nRMSE]]", "[[nMAE]]", "[[RPS]]", "[[RPS]]", "[[Pinball_Loss]]", "[[CRPS]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -138,4 +138,4 @@ Key results:
 - [[2021_Obst_Vilmarest_Goude_Kalman_COVID_France]] [10] and [[2022_Vilmarest_Goude_State_Space_PostCOVID]] [11] — prior Kalman-filter adaptive point load forecasting that this work extends to probabilistic settings.
 - [[2021_Alvarez_APLF_Adaptive_Probabilistic_Load]] [12] — adaptive probabilistic benchmark (hidden Markov models, Gaussian predictive distributions; poor tail calibration here).
 - [[Gaillard2016_GEFCOM2014_Aggregation]] [13], [[Wintenberger2017_BOA]] [19], [[Berrisch_Ziel_CRPS_Learning]] [18] — expert aggregation lineage for online quantile forecasting.
-- [[Day_Ahead]] — both applications forecast one day ahead (half-hourly GB net-load with 24 h update delay; daily US city load).
+- [[Day_Ahead_Forecasting]] — both applications forecast one day ahead (half-hourly GB net-load with 24 h update delay; daily US city load).

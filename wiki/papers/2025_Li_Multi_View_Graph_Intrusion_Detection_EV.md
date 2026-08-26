@@ -8,7 +8,7 @@ doi_url: "https://doi.org/10.1016/j.apenergy.2025.125439"
 models_used: ["[[MVGCRL]]", "[[Mask_Attention_Graph_Transformer]]", "[[GNN]]", "[[GCN]]", "[[GAT]]", "[[EdgeConv]]", "[[CNN]]", "[[LSTM]]", "[[DGI]]", "[[GRACE]]", "[[MVGRL]]"]
 datasets_used: ["[[CICEVSE2024]]"]
 features_used: ["[[Hardware_Performance_Counters]]", "[[Kernel_Events]]", "[[Microarchitecture_Events]]"]
-forecasting_horizon: "[[Spatial_Temporal]]"
+forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
 metrics: ["[[Precision]]", "[[Recall]]", "[[F1_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

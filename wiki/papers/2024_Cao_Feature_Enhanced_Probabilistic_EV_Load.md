@@ -5,11 +5,11 @@ authors: [Tingwei Cao, Yinliang Xu, Guowei Liu, Shengyu Tao, Wenjun Tang, Hongbi
 year: 2024
 journal_conference: "Applied Energy 371 (2024) 123751"
 doi_url: "https://doi.org/10.1016/j.apenergy.2024.123751"
-models_used: ["[[FEDM]]", "[[GRN]]", "[[GLU]]", "[[LSTM]]", "[[Transformer]]", "[[NBEATS]]", "[[DeepAR]]", "[[DeepTCN]]", "[[TFT]]", "[[LGBM]]", "[[ARIMA]]", "[[ESM]]", "[[Persistence_Model]]"]
-datasets_used: ["[[Shenzhen_Core_Station_Dataset]]"]
-features_used: ["[[Pearson_Correlation_Coefficient]]", "[[TOU_Electricity_Price]]", "[[Daily_Average_Temperature]]", "[[Weekday_Flag]]", "[[Weather_Conditions]]", "[[[Charging_Demand_Series]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[Qualified_Rate]]", "[[Accuracy_Rate]]", "[[Winkler_Score]]", "[[AIW]]", "[[Pinball_Loss]]", "[[SMAPE]]", "[[RMSE]]", "[[R2_Score]]", "[[NRMSE]]", "[[MAPE]]"]
+models_used: ["[[FEDM]]", "[[GRN]]", "[[GLU]]", "[[LSTM]]", "[[Transformer]]", "[[NBEATS]]", "[[DeepAR]]", "[[TCN]]", "[[Temporal_Fusion_Transformer]]", "[[LGBM]]", "[[ARIMA]]", "[[ESM]]", "[[Persistence_Model]]"]
+datasets_used: ["[[Shenzhen_ST_EVCDP]]"]
+features_used: ["[[Pearson_Correlation_Coefficient]]", "[[Electricity_Tariff]]", "[[Temperature]]", "[[Calendar_Features]]", "[[Weather_Conditions]]", "[[EV_Charging_Demand|Charging demand series]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[Qualified_Rate]]", "[[Accuracy]]", "[[Winkler_Score]]", "[[AIW]]", "[[Pinball_Loss]]", "[[SMAPE]]", "[[RMSE]]", "[[R_squared]]", "[[NRMSE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -51,7 +51,7 @@ Normalized test risk (**Eq. 30**) reported at 50% and 90% levels. Hyperparameter
 $$S_W^{(\beta)} = -\bar{W} + \frac{1}{T}\sum_{t=1}^T\left[-\frac{2}{\alpha}(\hat{q}_t^{(\bar{\alpha})} - y_t)\mathbb{I}(\hat{q}_t^{(\bar{\alpha})}-y_t \geq 0) + \frac{2}{1-\alpha}(y_t - \hat{q}_t^{(\underline{\alpha})})\mathbb{I}(y_t - \hat{q}_t^{(\underline{\alpha})} \geq 0)\right]$$
 
 ## 📊 Dataset & Input Features
-- **[[Shenzhen_Core_Station_Dataset]]** — real EV charging demand from one of the earliest charging stations in the core area of a city in southern China ([[Shenzhen]] region; city has ≈**930,000 EVs and 260,000 charging points** in 2023). Time range: **2022-01-01 to 2022-12-31**, resolution **15-min (96 points/day)**, no missing values/outliers. Station count: individual station case study + 2 additional same-city stations for generalization tests.
+- **[[Shenzhen_ST_EVCDP]]** — real EV charging demand from one of the earliest charging stations in the core area of a city in southern China ([[Shenzhen_ST_EVCDP]] region; city has ≈**930,000 EVs and 260,000 charging points** in 2023). Time range: **2022-01-01 to 2022-12-31**, resolution **15-min (96 points/day)**, no missing values/outliers. Station count: individual station case study + 2 additional same-city stations for generalization tests.
 - **Data availability**: GitHub dataset link given in ref [37]: https://github.com/Kenny4everlucky/FEDQR_dataset ; statement: *"Data will be made available on request."* Weather from historical local weather records; prices from historical station charging pricing data. Funding: China Southern Power Grid Innovation Project SZKJXM20210138.
 - **Input features**: demand series (96 pts/day); daily average temperature; TOU electricity price split into peak (10:00–12:00, 14:00–19:00), flat (08:00–10:00, 12:00–14:00, 19:00–24:00), valley (00:00–08:00); weekday one-hot (weekend=1); weather conditions (sunny/cloudy/overcast/rainy + intermediates). Train/test ratio 8:2; training sets of 12–24 days before forecast day; output window fixed at 1 day ahead.
 - Pearson analysis: electricity price most influential (charging peaks align with valley prices); temperature/weekday/weather effects are seasonal.
@@ -92,4 +92,4 @@ $$S_W^{(\beta)} = -\bar{W} + \frac{1}{T}\sum_{t=1}^T\left[-\frac{2}{\alpha}(\hat
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — DeepAR benchmark and risk metric convention ([36]).
 - [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — NBEATS basis/benchmark ([26]).
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] — ensemble probabilistic EV load forecasting ([20]).
-- Vault concepts: [[FEDM]], [[GRN]], [[GLU]], [[Pinball_Loss]], [[Winkler_Score]], [[Qualified_Rate]], [[TOU_Electricity_Price]]
+- Vault concepts: [[FEDM]], [[GRN]], [[GLU]], [[Pinball_Loss]], [[Winkler_Score]], [[Qualified_Rate]], [[Electricity_Tariff]]

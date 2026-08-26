@@ -7,9 +7,9 @@ journal_conference: "Algorithms (MDPI), vol. 18, no. 5, art. 243"
 doi_url: "https://doi.org/10.3390/a18050243"
 models_used: ["[[iTransformer]]", "[[ICEEMDAN]]", "[[BWO]]"]
 datasets_used: ["[[Singapore_Energy_Market_Dataset]]"]
-features_used: ["[[Electricity_Load]]", "[[Electricity_Price]]", "[[Temperature]]", "[[Relative_Humidity]]", "[[Lagged_Load]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[R2]]", "[[MAE]]", "[[RMSE]]"]
+features_used: ["[[Electricity_Load]]", "[[Electricity_Tariff]]", "[[Temperature]]", "[[Humidity]]", "[[Historical_Load]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[R_squared]]", "[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

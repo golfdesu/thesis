@@ -60,6 +60,7 @@ tags: [feature, weather, traffic, contextual, external]
 - 2026 — [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]] : 6-D weather state vectors (temperature, station/sea-level pressure, humidity, rainfall intensity, dew point) aligned across days via Multi-DTW for similar-day matching.
 - 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : Temperature retained after Pearson/MIC screening (Pearson 0.4738, MIC 0.5698) while rain/wind rejected (MIC < 0.22) — screened meteorological factors spliced into CNN-GRU inputs.
 - 2024 — [[2024_Qu_Forwardformer_Day_Ahead_Load]] : Weather information embeddings (max/min temperature + pressure/humidity on CEL; wet-bulb temperature on AEL) injected in Decoder-2 to correct the predicted day's load across five China/US datasets.
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] : Grid-level hourly weather-covariate reversal finding — thermal-lag-aligned temperature/humidity/wind/GHI/cloud features invert the load-only model ranking (iTransformer gains 3× more MAPE than PatchTST; SSMs win 5/7 grids); caveat: reanalysis weather, not operational NWP forecasts.
 
 ## Feature Engineering Approaches
 

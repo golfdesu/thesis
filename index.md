@@ -5,6 +5,7 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 ---
 
 ## 📄 Paper Summaries (`wiki/papers/`)
+- [[paper_digest]] - **One-file digest of ALL 108 papers** (contribution + method + results + gaps per paper) built for fast AI-agent reading & research-gap analysis.
 - [[github_repositories_index]] - Master Catalog of Official GitHub Repositories & Code Bases across all papers.
 - [[dataset_extraction_report]] - Comprehensive Dataset Extraction & URL Report across all 70 papers.
 
@@ -237,3 +238,8 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] - Shi et al. (2024): GPR day-ahead feeder forecasting with EV charging-habit probability feature and prediction interval evaluation (IEEE/LBNL).
 - [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] - de Vilmarest et al. (2024): Adaptive probabilistic electricity (net-)load forecasting via Kalman-adapted GAM + online-aggregated quantile regression (IEEE TPWRS).
 - [[2024_Qu_Forwardformer_Day_Ahead_Load]] - Qu et al. (2024): Forwardformer - efficient multi-scale forward self-attention Transformer for day-ahead load forecasting (IEEE TPWRS).
+- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] - Yu et al. (2026): EnergyMamba - graph-enhanced selective SSM in U-Net + AS-CQR adaptive conformalized quantile regression (width-normalized nonconformity + online feedback) for energy consumption prediction (KDD '26).
+- [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] - Hong & Lee (2026): Controlled benchmark of S-Mamba/PowerMamba vs PatchTST/iTransformer vs LSTM across six US ISO grids; weather covariates reverse rankings toward SSMs (arXiv).
+- [[2024_Menati_PowerMamba_Power_Systems_SSM]] - Menati et al. (2024): PowerMamba dual-path standard/inverse Mamba with series decomposition + external-forecast tokens; releases 5-year ERCOT GridSet toolbox (arXiv).
+- [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] - Bouaachra, Amara-Ouali, Goude & Lachieze-Rey (2026): Bayesian latent Gaussian model (SPDE/ICAR-RW2) fitted by INLA on a new open ChargePlace Scotland station-level dataset 2022-2025 (arXiv).
+- [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] - Fernandez-Zapico, Hofman & Salazar (2025): Scenario-based stochastic MPC of charging energy hubs using GBT + EnbPI conformal probabilistic day-ahead forecasts (CDC 2025).

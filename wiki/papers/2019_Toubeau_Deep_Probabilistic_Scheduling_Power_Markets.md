@@ -5,10 +5,10 @@ authors: [Jean-François Toubeau, Jérémie Bottieau, François Vallée, Zachari
 year: 2019
 journal_conference: "IEEE Transactions on Power Systems, Vol. 34, No. 2 (March 2019), pp. 1203-1215"
 doi_url: "https://doi.org/10.1109/TPWRS.2018.2870041"
-models_used: ["[[BLSTM|Bidirectional LSTM (BLSTM)]]", "[[LSTM]]", "[[MLP]]", "[[ARIMA]]", "[[SVR]]", "[[Random_Forest|RF]]", "[[Empirical_Copula]]"]
-datasets_used: ["[[Belgian_Power_Grid_Data]]", "[[NWP_Belgium]]"]
-features_used: ["[[Electricity_Load]]", "[[Wind_Power]]", "[[Solar_Power]]", "[[Market_Price|Day-Ahead Electricity Price]]", "[[Weather_Features|NWP: temperature, wind speed, cloud cover, solar radiation]]", "[[Calendar_Encoding|Mutually exclusive binary hour/day/month + holiday index]]", "[[Lagged_Values]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+models_used: ["[[BiLSTM|Bidirectional LSTM (BLSTM)]]", "[[LSTM]]", "[[MLP]]", "[[ARIMA]]", "[[SVR]]", "[[Random_Forest|RF]]", "[[Empirical_Copula]]"]
+datasets_used: ["[[ELIA_Belgian_Grid]]", "[[NWP_Belgium]]"]
+features_used: ["[[Electricity_Load]]", "[[Wind_Power]]", "[[Solar_Power]]", "[[Market_Price|Day-Ahead Electricity Price]]", "[[Weather_Features|NWP: temperature, wind speed, cloud cover, solar radiation]]", "[[Calendar_Features|Mutually exclusive binary hour/day/month + holiday index]]", "[[Lag_Features]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[RMSE]]", "[[Pinball_Loss|Quantile (Pinball) Loss]]", "[[ACF_Deviation|Autocorrelation Function Deviation]]", "[[Pearson_Correlation]]", "[[Spearman_Correlation]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -18,7 +18,7 @@ tags: [paper, ev-load-forecasting, ml]
 ## 🎯 Main Objective & Contribution
 - Generates **short-term multivariate probabilistic forecasts and predictive scenarios** for day-ahead operational scheduling of electricity aggregators/VPPs in power markets (predictions issued daily at 12:00 for hours m = 12–36 ahead).
 - Four contributions:
-  1. Tailored architectural variations exploiting the structure of day-ahead planning: **bidirectional LSTM ([[BLSTM]])** since all 24 hourly predictions are needed simultaneously; bidirectional processing lowers forecast error and avoids the error accumulation of recursive unidirectional strategies.
+  1. Tailored architectural variations exploiting the structure of day-ahead planning: **bidirectional LSTM ([[BiLSTM]])** since all 24 hourly predictions are needed simultaneously; bidirectional processing lowers forecast error and avoids the error accumulation of recursive unidirectional strategies.
   2. Compares **two uncertainty characterizations** trained on the same BLSTM: parametric Gaussian likelihood vs non-parametric [[Quantile_Regression]] (pinball loss).
   3. Extends intervals/densities to **predictive scenarios** via copula-based sampling of the multivariate forecast distribution, capturing both temporal autocorrelation and cross-variable dependencies.
   4. Evaluates value not only statistically but through a **scenario-based stochastic optimization** case study of an electricity retailer's day-ahead multi-market bidding.
@@ -88,6 +88,6 @@ Phase II samples dependent uniforms $u^{gen}$ (first from U(0,1), then condition
 
 ## 🔗 Key References & Citation Graph
 - Foundation: [[1997_Hochreiter_Long_Short_Term_Memory]] (Hochreiter & Schmidhuber); Bidirectional RNNs (Schuster & Paliwal, IEEE Trans. Signal Process. 1997)
-- Uncertainty paradigms cited: DeepAR (Flunkert et al., arXiv:1704.04110 → vault [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]]), Multi-horizon Quantile Recurrent Forecaster (Wen et al., arXiv:1711.11053), Quantile Regression (Koenker & Bassett, Econometrica 1978)
+- Uncertainty paradigms cited: DeepAR (Flunkert et al., arXiv:1704.04110 → vault [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]), Multi-horizon Quantile Recurrent Forecaster (Wen et al., arXiv:1711.11053), Quantile Regression (Koenker & Bassett, Econometrica 1978)
 - Scenario-generation lineage: Morales et al. (2010), Pinson et al. (Wind Energy 2008), vine copulas (Wang et al., IEEE TPWRS 2018), empirical copula tools (Strelen & Nassaj, 2007)
-- Related vault papers: [[2019_Zhu_EV_Load_Forecasting]], [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]]
+- Related vault papers: [[2019_Zhu_EV_Load_Forecasting]], [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]]

@@ -26,7 +26,7 @@ Special treatment of **power-law scale heterogeneity**: item-dependent rescaling
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: target history + covariates (age feature, time features, item embedding), all known over the horizon.
-- **Forecasting Horizon**: [[Short_Term]] (encoder/decoder e.g. 168/24 hourly).
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] (encoder/decoder e.g. 168/24 hourly).
 - **Strengths**: minimal feature engineering; calibrated marginal distributions; forecasts for cold-start series; Monte Carlo samples give all sub-range quantiles.
 - **Weaknesses**: teacher-forcing exposure bias; heuristic scale factor; autoregressive decoding slow for long horizons; degrades on long-dependency synthetic tasks beyond ~96 steps.
 

@@ -45,3 +45,8 @@ This note collects open-source repositories implementing probabilistic time seri
 - **Repository URL**: `https://github.com/kamilest/conformal-rnn`
 - **Description**: Official NeurIPS 2021 implementation of conformalized quantile regression (MQR baseline) wrapped around recurrent forecasters for valid, adaptive prediction intervals.
 - **Cited Paper**: [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]
+
+### 7. ChargingEnergyHubs_MPC (Stochastic MPC with Conformal Prediction) — *added in [2026-08-23] ingestion pass*
+- **Repository URL**: `https://github.com/diegofz/ChargingEnergyHubs_MPC`
+- **Description**: IEEE CDC 2025 code for an EV+PV+BESS charging energy hub EMS: GBT point forecasters wrapped by EnbPI conformal intervals (MAPIE) feeding scenario-based stochastic/recourse SOCP-MPC, evaluated closed-loop over 280 days.
+- **Cited Paper**: [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]

@@ -5,11 +5,11 @@ authors: [Diederik P. Kingma, Jimmy Lei Ba]
 year: 2014
 journal_conference: "ICLR 2015 (arXiv:1412.6980)"
 doi_url: "https://arxiv.org/abs/1412.6980"
-models_used: ["[[Adam]]", "[[AdaMax]]", "[[SGD]]", "[[AdaGrad]]", "[[RMSProp]]", "[[AdaDelta]]", "[[SFO_Optimizer]]"]
+models_used: ["[[Adam]]", "[[Adam]]", "[[SGD]]", "[[AdaGrad]]", "[[RMSProp]]", "[[Adam]]", "[[SFO_Optimizer]]"]
 datasets_used: ["[[MNIST]]", "[[CIFAR-10]]", "[[IMDB_Movie_Reviews]]", "[[Synthetic_VAE_Objective]]"]
-features_used: ["[[First_Moment_Estimate]]", "[[Second_Raw_Moment_Estimate]]", "[[Bias_Correction_Terms]]", "[[Signal_to_Noise_Ratio]]", "[[Dropout_Noise]]", "[[Bag_of_Words_Features]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Training_Cost_Negative_Log_Likelihood]]", "[[Regret_Bound]]", "[[Convergence_Iterations]]", "[[Wall_Clock_Time]]"]
+features_used: ["[[Adam]]", "[[Adam]]", "[[Adam]]", "[[Signal_to_Noise_Ratio]]", "[[Dropout_Noise]]", "[[Bag_of_Words_Features]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[NLL]]", "[[Regret_Bound]]", "[[Convergence_Iterations]]", "[[Wall_Clock_Time]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

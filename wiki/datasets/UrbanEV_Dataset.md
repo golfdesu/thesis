@@ -5,7 +5,7 @@ location: Shenzhen, Guangdong Province, China
 resolution: 5-minute occupancy & electricity price (hourly variants derived in papers)
 access: on request
 data_type: Urban-scale EV charging demand benchmark (occupancy + pricing per traffic zone)
-source_publication: "[[UrbanEV]] Li et al., Scientific Data 12:523 (2025)"
+source_publication: "[[UrbanEV_Dataset]] Li et al., Scientific Data 12:523 (2025)"
 tags:
   - dataset
   - ev-charging

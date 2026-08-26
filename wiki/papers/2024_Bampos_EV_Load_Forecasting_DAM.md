@@ -6,17 +6,17 @@ year: 2024
 journal_conference: "Applied Energy 360 (2024) 122801"
 doi_url: "https://doi.org/10.1016/j.apenergy.2024.122801"
 models_used: ["[[XGBoost]]", "[[MLP]]", "[[CNN_Dense]]", "[[CNN_LSTM]]", "[[TCN]]", "[[SARIMA]]", "[[Persistence_Model]]", "[[Holt_Exponential_Smoothing]]"]
-datasets_used: ["[[Palo_Alto_EV_Charging]]", "[[Crowdcharge]]", "[[Greenflux]]", "[[ACN_Data]]"]
-features_used: ["[[EV_Load_Curve]]", "[[Trend_Residual_Decomposition]]", "[[Cyclical_Time_Features]]", "[[Week_of_Year]]", "[[Holiday_Flag]]", "[[Historical_Lags]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[nMAE]]", "[[nRMSE]]", "[[R2_Score]]"]
+datasets_used: ["[[Palo_Alto_EV]]", "[[CrowdCharge_EV]]", "[[Greenflux]]", "[[Caltech_ACN]]"]
+features_used: ["[[EV_Charging_Demand]]", "[[Trend_Residual_Decomposition]]", "[[Cyclical_Encodings]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Lag_Features]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[nMAE]]", "[[nRMSE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
 # Summary: Electric Vehicles Load Forecasting for Day-Ahead Market Participation Using Machine and Deep Learning Methods
 
 ## 🎯 Main Objective & Contribution
-- First-of-its-kind systematic benchmark of **9 EV Load Curve (EVLC) forecasting methods** (statistical, [[ML]], [[DL]]) designed specifically for the operational requirements of **[[Day_Ahead_Market]] (DAM)** participation by EV aggregators/suppliers.
+- First-of-its-kind systematic benchmark of **9 EV Load Curve (EVLC) forecasting methods** (statistical, [[ML]], [[DL]]) designed specifically for the operational requirements of **[[Day_Ahead_Forecasting]] (DAM)** participation by EV aggregators/suppliers.
 - **36-h ahead hourly horizon** aligned with European DAM gate closure at 12 pm CET (first 12 h omitted → day-ahead 24 h forecast); conservative offline scenario extends to 48 h with 24 h omitted.
 - Compares models **with online data ("sc") vs without online data ("wo, sc")**; evaluates over a **full year of rolling daily simulations** to expose seasonal variation.
 - Provides a step-by-step methodology for **constructing hourly EVLCs from session-based tabular charging data**.
@@ -44,10 +44,10 @@ Residual approximates white noise; trend captured with **[[Holt_Exponential_Smoo
 ## 📊 Dataset & Input Features
 | Dataset | Period used | Sessions | Stations | Mean/max kWh |
 |---|---|---|---|---|
-| [[Palo_Alto_EV_Charging]] | 01/2017–12/2018 | **259,415** | 52 | 8.54 / 97.36 |
-| [[Crowdcharge]] (Electric Nation, UK) | 03/2017–12/2018 | **71,257** | 301 | 10.39 / 393 |
+| [[Palo_Alto_EV]] | 01/2017–12/2018 | **259,415** | 52 | 8.54 / 97.36 |
+| [[CrowdCharge_EV]] (Electric Nation, UK) | 03/2017–12/2018 | **71,257** | 301 | 10.39 / 393 |
 | [[Greenflux]] (Electric Nation, UK) | 03/2017–12/2018 | **86,256** | 400 | 10.11 / 628.8 |
-| [[ACN_Data]] (Caltech, CA) | 04/23–10/23/2018 | **581** | 54 | 17.17 / 69.37 |
+| [[Caltech_ACN]] (Caltech, CA) | 04/23–10/23/2018 | **581** | 54 | 17.17 / 69.37 |
 
 - **Data URLs / availability**: Palo Alto Open Data Portal: https://data.cityofpaloalto.org/datasets/194693-electric-vehicle-charging-station-usage-july-2011-dec-2020.download/ ; Electric Nation (Crowdcharge & Greenflux): https://opennetzero.org/dataset/electric-nation ; ACN-Data: https://ev.caltech.edu/dataset . Data availability statement: *"We have used publicly available data. All data reference can be found in the manuscript."*
 - Hourly granularity; training/validation = 2017, evaluation = full year 2018 (ACN: Jun–Oct 2018 due to limited history).
@@ -69,7 +69,7 @@ Yearly nMAE (%) / nRMSE (%) / R² (baseline = Persistence$_{wo,sc}$):
 | Persistence baseline | 6.445 / 9.211 / 0.78 | 8.511 / 11.373 / 0.57 | 6.036 / 8.703 / 0.60 | 7.560 / 10.353 / 0.70 |
 
 - **Key findings**: simple [[ML]] ([[XGBoost]], [[MLP]]) beats all complex [[DL]] models on nearly every dataset/metric. Best gains vs baseline: XGBoost$_{sc}$ +1.058% nMAE (Palo Alto); MLP$_{sc}$ +1.707% nMAE (Crowdcharge), +0.914% nMAE & +1.355% nMSE (Greenflux); MLP$_{wo,sc}$ +0.673% nMAE (ACN). Only TCN$_{sc}$ beat the baseline on one dataset (+0.268% nMAE, Palo Alto) yet still lost to ML models.
-- On the small [[ACN_Data]] set, offline simple models outperformed online ones; DL architectures overfit (CNN-Dense R² = −0.9).
+- On the small [[Caltech_ACN]] set, offline simple models outperformed online ones; DL architectures overfit (CNN-Dense R² = −0.9).
 - Online data helps but only marginally (~0.5–1%) → robust DAM forecasting possible without real-time feeds.
 - Monthly analysis: top models hold ~5% monthly nMAE; all models struggle in September on Greenflux (peak-load surge); errors rise during peak-load hours regardless of time of day.
 
@@ -97,4 +97,4 @@ Yearly nMAE (%) / nRMSE (%) / R² (baseline = Persistence$_{wo,sc}$):
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM within CNN-LSTM hybrid ([43]).
 - [[2018_Bai_Empirical_TCN_Sequence_Modeling]] — [[TCN]] basis ([44]).
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] — prior hierarchical probabilistic EV forecasting benchmark ([33]).
-- Related vault concepts: [[Day_Ahead_Market]], [[EV_Aggregator]], [[XGBoost]], [[MLP]], [[TCN]], [[SARIMA]], [[Persistence_Model]], [[Palo_Alto_EV_Charging]], [[ACN_Data]]
+- Related vault concepts: [[Day_Ahead_Forecasting]], [[EV_Aggregator]], [[XGBoost]], [[MLP]], [[TCN]], [[SARIMA]], [[Persistence_Model]], [[Palo_Alto_EV]], [[Caltech_ACN]]

@@ -5,10 +5,10 @@ authors: [Alex Nichol, Joshua Achiam, John Schulman]
 year: 2018
 journal_conference: "arXiv preprint (OpenAI), arXiv:1803.02999"
 doi_url: "https://arxiv.org/abs/1803.02999"
-models_used: ["[[Reptile]]", "[[MAML]]", "[[First_Order_MAML|FOMAML]]"]
+models_used: ["[[Reptile]]", "[[MAML]]", "[[Reptile|FOMAML]]"]
 datasets_used: ["[[Omniglot]]", "[[MiniImageNet]]", "[[Sine_Wave_Regression]]"]
 features_used: ["[[Task_Sampling]]", "[[K-Shot_N-Way_Classification]]", "[[Transduction|Transductive_Batch_Normalization]]", "[[Weight_Interpolation]]"]
-forecasting_horizon: "[[Few_Shot_Adaptation]]"
+forecasting_horizon: "[[MAML]]"
 metrics: ["[[Accuracy]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

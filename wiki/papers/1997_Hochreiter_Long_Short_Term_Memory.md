@@ -5,10 +5,10 @@ authors: [Sepp Hochreiter, Jürgen Schmidhuber]
 year: 1997
 journal_conference: "Neural Computation, 9(8), 1735-1780"
 doi_url: "https://doi.org/10.1162/neco.1997.9.8.1735"
-models_used: ["[[LSTM]]", "[[RNN]]", "[[BPTT]]", "[[RTRL]]", "[[Elman_Network]]", "[[Recurrent_Cascade_Correlation]]"]
+models_used: ["[[LSTM]]", "[[RNN]]", "[[BPTT]]", "[[RTRL]]", "[[RNN]]", "[[Recurrent_Cascade_Correlation]]"]
 datasets_used: ["[[Embedded_Reber_Grammar]]", "[[Synthetic_Long_Time_Lag_Benchmarks]]", "[[Adding_Problem]]", "[[Multiplication_Problem]]", "[[Temporal_Order_Problem]]"]
-features_used: ["[[Cell_State]]", "[[Input_Gate]]", "[[Output_Gate]]", "[[Constant_Error_Carousel]]", "[[Memory_Cell_Block]]"]
-forecasting_horizon: "[[Long_Term]]"
+features_used: ["[[LSTM]]", "[[LSTM]]", "[[LSTM]]", "[[LSTM]]", "[[LSTM]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[Classification_Error]]", "[[MSE]]", "[[Absolute_Error]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -96,7 +96,7 @@ $$O(KH + KCS + HI + CSI) = O(W)$$
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[RNN]] / [[Elman_Network]] — simple recurrent baselines that fail on long time lags
+- [[RNN]] / [[RNN]] — simple recurrent baselines that fail on long time lags
 - [[BPTT]] (Williams & Zipser 1992; Werbos 1988) and [[RTRL]] (Robinson & Fallside 1987) — gradient algorithms whose error flow vanishes/blows up exponentially
 - Bengio, Simard & Frasconi (1994), *Learning long-term dependencies with gradient descent is difficult* — motivating analysis; two-sequence/latch problems reused here
 - Fahlman (1991) Recurrent Cascade-Correlation; Mozer (1992) time constants; Schmidhuber (1992b, 1993) neural sequence chunkers — competing long-time-lag approaches

@@ -23,7 +23,7 @@ Properties: $O(1)$ maximum signal traversing path length, only ~2TL parameters, 
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: raw look-back window ($L=336$ default), no covariates.
-- **Forecasting Horizon**: [[Long_Term]] ($T \in \{96,...,720\}$).
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] ($T \in \{96,...,720\}$).
 - **Strengths**: near-zero cost (0.04G MACs, 139.7K params, 0.4 ms vs Informer 49.3 ms); improves markedly with longer look-backs; strong baseline that many deep models still fail to beat.
 - **Weaknesses**: limited capacity — cannot capture change points; no cross-variate modeling; authors position it as a baseline, not an end model.
 

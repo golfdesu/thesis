@@ -5,10 +5,10 @@ authors: [Zhanyu Feng, Jian Zhang, Han Jiang, Xuejian Yao, Yu Qian, Haiyan Zhang
 year: 2024
 journal_conference: "SSRN Preprint 4747046 (not peer reviewed)"
 doi_url: "https://ssrn.com/abstract=4747046"
-models_used: ["[[LSTM_Transformer]]", "[[LSTM]]", "[[Transformer]]", "[[KMeans_Clustering]]", "[[MLR]]"]
+models_used: ["[[LSTM_Transformer]]", "[[LSTM]]", "[[Transformer]]", "[[KMeans_Clustering]]", "[[Linear_Regression]]"]
 datasets_used: ["[[GBT_32960_Telemetry_Dataset]]"]
-features_used: ["[[Battery_SOC]]", "[[Vehicle_Speed_Features]]", "[[Acceleration_Ratios]]", "[[Wind_Speed]]", "[[Sensible_Temperature]]", "[[Visibility]]", "[[Driver_Style]]", "[[Driving_Condition_Clusters]]", "[[Cruise_Time_Ratio]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Battery_SOC]]", "[[Vehicle_Speed_Features]]", "[[Acceleration_Ratios]]", "[[Wind_Speed]]", "[[Temperature]]", "[[Visibility]]", "[[Driver_Style]]", "[[Driving_Condition_Clusters]]", "[[Cruise_Time_Ratio]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAPE]]", "[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -65,7 +65,7 @@ Cumulative stage-wise roll-up of 400-s segment predictions over the trip.
 - Features: 15 vehicle factors ($x_1$–$x_{15}$), 3 environmental factors ($x_{16}$–$x_{18}$), plus per-driver model specialization and k-means driving-condition labels.
 
 ## 📈 Performance & Results
-- **400-s window test set (10 drivers)**: [[LSTM_Transformer]] avg **MAPE = 4.63%**, MAE ≈ 0.027, RMSE ≈ 0.036; standalone [[LSTM]] MAPE = 10.69% (+6.06%); [[MLR]] MAPE = 21.87%. Per-driver best/worst: B3 MAPE 3.0%, A5 5.9%.
+- **400-s window test set (10 drivers)**: [[LSTM_Transformer]] avg **MAPE = 4.63%**, MAE ≈ 0.027, RMSE ≈ 0.036; standalone [[LSTM]] MAPE = 10.69% (+6.06%); [[Linear_Regression]] MAPE = 21.87%. Per-driver best/worst: B3 MAPE 3.0%, A5 5.9%.
 - **Window sensitivity**: MAPE = 13.9% (200 s), **4.6–4.63% (400 s, best)**, ~5.1% (600 s), 8.3% (1000 s) — too-short windows lose motion context at 0.05 Hz sampling; too-long windows dilute fine-grained detail.
 - **Ablation**: removing driver-style personalization raised MAPE by up to **18.47%**; removing driving-condition features raised it by **15.27%**; ignoring both increased MAPE by 12.4%/17.0%/16.5%/14.0% at 200/400/600/1000 s.
 - **Long-distance (250 km-class trip, SOC 90→40%)**: cumulative strategy achieves avg **MAPE = 6.7%** across drivers (best B3 5.1%, worst A5 7.7%).

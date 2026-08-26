@@ -5,10 +5,10 @@ authors: [Jinyi Tang, Xuan Zhou, Qin Yan]
 year: 2026
 journal_conference: "Electronics (MDPI), vol. 15, art. 2380"
 doi_url: "https://doi.org/10.3390/electronics15112380"
-models_used: ["[[PC-M3]]", "[[Mamba-3]]", "[[Routing_Mamba]]", "[[PowerMamba]]", "[[Informer]]", "[[Mamba-2]]", "[[TD3]]", "[[MPC]]"]
-datasets_used: ["[[ACN-Data]]", "[[ACN-Sim]]", "[[ElaadNL]]", "[[NREL_dsgrid_TEMPO]]", "[[National_Household_Travel_Survey]]"]
-features_used: ["[[State_of_Charge]]", "[[Charging_Power]]", "[[Arrival_Time]]", "[[Departure_Time]]", "[[Energy_Requirement]]", "[[Battery_Capacity]]", "[[Pilot_Signal]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+models_used: ["[[PC-M3]]", "[[Mamba-3]]", "[[Routing_Mamba]]", "[[PowerMamba]]", "[[Informer]]", "[[Mamba_SSM]]", "[[TD3]]", "[[MPC]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[ACN-Sim]]", "[[ElaadNL]]", "[[NREL_dsgrid_TEMPO]]", "[[NHTS_2009]]"]
+features_used: ["[[State_of_Charge]]", "[[Charging_Power]]", "[[Arrival_Departure_Time]]", "[[Arrival_Departure_Time]]", "[[Energy_Requirement]]", "[[Battery_Capacity]]", "[[Pilot_Signal]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[RMSE]]", "[[Hausdorff_Distance]]", "[[Polytope_Feasibility]]", "[[Inference_Latency]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -45,10 +45,10 @@ $$ \mathcal{L}_{\text{env}} = \begin{cases} \mathcal{L}^{\text{exact}}_{\text{en
 - Implementation: PyTorch 2.2, $D=256$, 6 Mamba blocks, 12.4M params, AdamW lr $3\times10^{-4}$ cosine, 120 epochs, batch 32, single A100 40GB; compiled to $N_{\max}=10{,}240$ channels with masked dummy channels; permutation-equivariant.
 
 ## 📊 Dataset & Input Features
-- **[[ACN-Data]]** (Caltech Adaptive Charging Network): 114,503 real workplace sessions, 25 Apr 2018–28 Feb 2024, Caltech (54 EVSE ports) + JPL (50 ports) + office site; minute-resolution current/pilot signals resampled to 15 min; chronological split (train ≤30 Jun 2022: 78,642 sessions; val Jul–Dec 2022; test CY2023: 20,214). Mean energy 9.12 kWh/session, median stay 5.42 h. URL: https://ev.caltech.edu/dataset ; simulator [[ACN-Sim]]: https://github.com/zach401/acnportal
+- **[[Caltech_ACN]]** (Caltech Adaptive Charging Network): 114,503 real workplace sessions, 25 Apr 2018–28 Feb 2024, Caltech (54 EVSE ports) + JPL (50 ports) + office site; minute-resolution current/pilot signals resampled to 15 min; chronological split (train ≤30 Jun 2022: 78,642 sessions; val Jul–Dec 2022; test CY2023: 20,214). Mean energy 9.12 kWh/session, median stay 5.42 h. URL: https://ev.caltech.edu/dataset ; simulator [[ACN-Sim]]: https://github.com/zach401/acnportal
 - **[[ElaadNL]]** Open Datasets (2020 release): 10,397 anonymised public-charging transactions across 1812 Dutch public points, calendar year 2019; mean energy 10.72 kWh, median stay 3.08 h; used strictly for zero-shot cross-regional transfer. URL: https://platform.elaad.io/analyses/
 - **[[NREL_dsgrid_TEMPO]]** v2022: county-resolved hourly light-duty EV charging profiles, contiguous US, 2018–2050, three scenarios; used 2030 All-EV-Sales-by-2035 LA County profile to calibrate a synthetic 10,000-vehicle cluster bootstrapped from ACN-Data-conditioned distributions (V2G capability share imposed by scenario; not native). URL: https://data.openei.org/submissions/5958
-- Auxiliary: 2022 [[National_Household_Travel_Survey]] for synthetic disconnection-period states only.
+- Auxiliary: 2022 [[NHTS_2009]] for synthetic disconnection-period states only.
 - Per-vehicle parameters ($C_i$, SoC bounds $[0.10,0.95]$, $s_i^0$, $\eta_i = 0.92$) imputed since datasets don't expose battery capacity/SoC; all feasibility numbers are relative to specified/imputed polytopes; ±15% sensitivity analysis confirms robustness.
 - Data availability statement: all datasets public (accessed 19 May 2026).
 
@@ -85,9 +85,9 @@ $$ \mathcal{L}_{\text{env}} = \begin{cases} \mathcal{L}^{\text{exact}}_{\text{en
 - [[Routing_Mamba]] (Zhan et al., arXiv:2506.18145) — MoE expert layer [10]
 - [[PowerMamba]] (Menati et al., arXiv:2412.06112) — closest SSM baseline [11]
 - [[2017_Attention_Is_All_You_Need]]-lineage Transformers: [[Informer]] (AAAI 2021) [8], Autoformer (NeurIPS 2021) [20]
-- [[Mamba]] (Gu & Dao, arXiv:2312.00752) [22], [[Mamba-2]]/Structured State-Space Duality (ICML 2024) [23], S4 (Gu et al., ICLR 2022) [21]
+- [[Mamba_SSM]] (Gu & Dao, arXiv:2312.00752) [22], [[Mamba_SSM]]/Structured State-Space Duality (ICML 2024) [23], S4 (Gu et al., ICLR 2022) [21]
 - [[OptNet]] differentiable optimization layers (Amos & Kolter, ICML 2017) [24]; safe-exploration projection layers (Dalal et al.) [25]
 - Switch Transformer load-balance loss (Fedus et al., JMLR 2022) [35]; TD3 (Fujimoto et al., ICML 2018) [28]; SAC [29]
 - Aggregate flexibility geometry: Nazir & Hiskens inner-box CDC 2018 [5]; Zhao et al. zonotope IEEE TPWRS 2017 [6]; Müller et al. IEEE TSG 2019 [3]; Barot & Taylor 2017 [4]
-- [[ACN-Data]] (Lee et al., ACM e-Energy 2019) [2]; [[ACN-Sim]] (Lee et al., IEEE TSG 2021) [12]
+- [[Caltech_ACN]] (Lee et al., ACM e-Energy 2019) [2]; [[ACN-Sim]] (Lee et al., IEEE TSG 2021) [12]
 - PINN soft-constraint contrast: Raissi et al. 2019 [37]; Cuomo et al. 2022 [38]

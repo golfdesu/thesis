@@ -6,10 +6,10 @@ year: 2021
 journal_conference: "ICML 2021 (International Conference on Machine Learning), Zalando Research"
 doi_url: "https://arxiv.org/abs/2101.12072"
 models_used: ["[[TimeGrad]]", "[[DDPM|Denoising Diffusion Probabilistic Model]]", "[[LSTM|2-layer LSTM RNN]]", "[[Dilated_Convolution|Conditional Dilated ConvNet (εθ)]]", "[[Score_Matching]]"]
-datasets_used: ["[[Exchange_Dataset]]", "[[Solar_Energy|Solar]]", "[[Electricity_ECL|Electricity (UCI Load Diagrams)]]", "[[Traffic|PEM-SF Traffic]]", "[[NYC_Taxi]]", "[[Wikipedia_Pageviews]]"]
+datasets_used: ["[[Exchange]]", "[[Solar_Energy|Solar]]", "[[Electricity_ECL|Electricity (UCI Load Diagrams)]]", "[[Traffic|PEM-SF Traffic]]", "[[NYC_Taxi]]", "[[Wikipedia_Pageviews]]"]
 features_used: ["[[Multivariate_Time_Series]]", "[[Historical_Load]]", "[[Calendar_Features]]", "[[Lag_Features]]", "[[Mean_Scaling]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[CRPS]]", "[[CRPSsum]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[CRPS]]", "[[CRPS]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -51,7 +51,7 @@ Six real-world open datasets (Table 1), preprocessed exactly as Salinas et al. (
 
 | Dataset | Dim $D$ | Domain | Freq | Train steps | Pred steps |
 | :-- | :--: | :--: | :--: | :--: | :--: |
-| [[Exchange_Dataset]] | 8 | $\mathbb{R}^+$ | day | 6,071 | 30 |
+| [[Exchange]] | 8 | $\mathbb{R}^+$ | day | 6,071 | 30 |
 | [[Solar_Energy|Solar]] | 137 PV plants | $\mathbb{R}^+$ | hour | 7,009 | 24 |
 | [[Electricity_ECL|Electricity]] | 370 customers | $\mathbb{R}^+$ | hour | 5,833 | 24 |
 | [[Traffic]] | 963 freeway sensors | (0,1) occupancy | hour | 4,001 | 24 |
@@ -68,7 +68,7 @@ Six real-world open datasets (Table 1), preprocessed exactly as Salinas et al. (
 - Features: historical multivariate target, time-dependent covariates (day-of-week, hour-of-day), categorical embeddings, frequency-specific lag features — all known over the forecast horizon; no normalization needed for Traffic.
 
 ## 📈 Performance & Results
-Test-set [[CRPSsum]] (lower better; TimeGrad = mean ± SE over 10 retraining runs, Table 2):
+Test-set [[CRPS]] (lower better; TimeGrad = mean ± SE over 10 retraining runs, Table 2):
 
 | Method | Exchange | Solar | Electricity | Traffic | Taxi | Wikipedia |
 | :-- | :--: | :--: | :--: | :--: | :--: | :--: |

@@ -5,11 +5,11 @@ authors: [Juncheng Zhu, Zhile Yang, Monjur Mourshed, Yuanjun Guo, Yimin Zhou, Ya
 year: 2019
 journal_conference: "Energies 2019, 12(14), 2692 (MDPI)"
 doi_url: "https://doi.org/10.3390/en12142692"
-models_used: ["[[ANN]]", "[[RNN]]", "[[LSTM]]", "[[Bi-LSTM]]", "[[GRU]]", "[[Stacked_AutoEncoder|SAEs]]"]
-datasets_used: ["[[Shenzhen_PEV_Charging_Station_Dataset]]", "[[Shenzhen_PEV_Aggregator_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Minute_Level_Load]]", "[[Seasonality|Rainy/Dry_Season_Indicator]]", "[[Holiday_Flag]]", "[[Time_Step_Lookback]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAE]]", "[[RMSE]]", "[[R2|R² Score]]"]
+models_used: ["[[ANN]]", "[[RNN]]", "[[LSTM]]", "[[BiLSTM]]", "[[GRU]]", "[[Stacked_AutoEncoder|SAEs]]"]
+datasets_used: ["[[Shenzhen_ST_EVCDP]]", "[[Shenzhen_ST_EVCDP]]"]
+features_used: ["[[Historical_Load]]", "[[Historical_Load]]", "[[Seasonality|Rainy/Dry_Season_Indicator]]", "[[Holiday_Flag]]", "[[Lookback_Window]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[RMSE]]", "[[R_squared|R² Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - First study to use **real-world super-short-term (minute-level) EV charging data** (rather than simulation) for multi-time-step extra-short-term PEV charging load forecasting.
-- Proposes a **super-short-term multi-step forecasting framework** comparing six models — [[ANN]], [[RNN]], canonical [[LSTM]], [[GRU]], [[Stacked_AutoEncoder|SAEs]], [[Bi-LSTM]] — across three look-back time steps ($T_{\text{step}} = 1, 5, 15$ minutes).
+- Proposes a **super-short-term multi-step forecasting framework** comparing six models — [[ANN]], [[RNN]], canonical [[LSTM]], [[GRU]], [[Stacked_AutoEncoder|SAEs]], [[BiLSTM]] — across three look-back time steps ($T_{\text{step}} = 1, 5, 15$ minutes).
 - Headline result: [[LSTM]] performs best, reducing forecasting error by **over 30%** on all index criteria vs. the best counterparts (and ~80% MAE reduction vs. ANN).
 - Claims univariate historical-load input suffices: deep sequence models capture nonlinear features and temporal correlations without exogenous variables.
 
@@ -45,8 +45,8 @@ $$\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2},\quad \text{
 - **Hyperparameters**: ANN = 1 hidden layer; RNN/GRU/Bi-LSTM/LSTM = 2 hidden layers; SAEs = 4 hidden layers; all hidden layers 16 nodes; learning rate 0.001 (RMSprop optimizer); epochs 30; batch size 512; dropout 0.3; MAE as loss function.
 
 ## 📊 Dataset & Input Features
-- **[[Shenzhen_PEV_Charging_Station_Dataset]] (Case 1)**: large-scale PEV charging station in Shenzhen with rooftop PV panels and battery energy storage; 64 bus parking spaces, 12 car charging spaces, **24 charging piles**. Original records contain charging start time, end time, total charging amount; raw data span 31 Mar 2017 – 17 Jul 2018; one full year used: 1 Jul 2017 – 30 Jun 2018 (built from data of 3 Jun 2017 – 1 Jul 2018 since night charging spans two days). Resampled to **1-minute intervals → 525,600 rows**.
-- **[[Shenzhen_PEV_Aggregator_Dataset]] (Case 2)**: second minute-level dataset from a PEV aggregator of commercial building chargers in Shenzhen (more random/fluctuating profile); same year-long, 525,600-point setup.
+- **[[Shenzhen_ST_EVCDP]] (Case 1)**: large-scale PEV charging station in Shenzhen with rooftop PV panels and battery energy storage; 64 bus parking spaces, 12 car charging spaces, **24 charging piles**. Original records contain charging start time, end time, total charging amount; raw data span 31 Mar 2017 – 17 Jul 2018; one full year used: 1 Jul 2017 – 30 Jun 2018 (built from data of 3 Jun 2017 – 1 Jul 2018 since night charging spans two days). Resampled to **1-minute intervals → 525,600 rows**.
+- **[[Shenzhen_ST_EVCDP]] (Case 2)**: second minute-level dataset from a PEV aggregator of commercial building chargers in Shenzhen (more random/fluctuating profile); same year-long, 525,600-point setup.
 - **Split**: 0.7/0.2/0.1 — train 1 Jul 2017–31 Jan 2018 & 22 Apr–21 May 2018; test 1 Feb–21 Apr 2018; validation 22 May–30 Jun 2018.
 - **Features**: univariate [[Historical_Load]] only; seasonality analysis (rainy season April–September vs dry October–March; rainy-season peak > 40 kW), weekday/holiday patterns (Spring Festival Feb 2018 load drop), 23:00 off-peak-tariff charging spike of electric buses/taxis.
 - **Data availability**: no public repository; data kindly provided by Huikun Yang, Winline Co. Ltd. (Shenzhen). Only URLs in the text are tool/library links: https://keras.io/ ; code stack TensorFlow/Keras. Paper open access under CC BY: http://creativecommons.org/licenses/by/4.0/
@@ -97,5 +97,5 @@ $$\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2},\quad \text{
 ## 🔗 Key References & Citation Graph
 - Companion hourly-level predecessor: [[2019_Zhu_ApplSci_EV_Load_Forecasting]] (Appl. Sci. 9, 1723)
 - Foundation: [[1997_Hochreiter_Long_Short_Term_Memory|Hochreiter & Schmidhuber, LSTM (1997)]]
-- Related vault papers: [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]]
+- Related vault papers: [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
 - Cited methodological anchors: GRU (Cho et al., 2014), Stacked denoising autoencoders (Vincent et al., JMLR 2010), Bi-LSTM (Graves & Schmidhuber, 2005), RMSprop (Tieleman & Hinton, 2012), BPTT (Werbos, 1990), Dropout (Hinton et al., 2012)

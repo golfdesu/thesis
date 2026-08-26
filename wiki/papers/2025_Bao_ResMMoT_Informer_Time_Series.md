@@ -7,9 +7,9 @@ journal_conference: "IEEE Transactions on Neural Networks and Learning Systems, 
 doi_url: "https://doi.org/10.1109/TNNLS.2025.3584369"
 models_used: ["[[ResMMoT_Informer]]", "[[Sparse_Mixture_of_Experts]]", "[[TCN]]", "[[Informer]]", "[[LSTM]]"]
 datasets_used: ["[[NASDAQ100_Stock_Price_Dataset]]", "[[Cryptocurrency_Dataset]]", "[[Forex_Dataset]]"]
-features_used: ["[[DWT_db4_Wavelet_Denoised_Prices]]", "[[Multiscale_Dilated_TCN_Kernels]]", "[[Top_K_Gating_Routing]]", "[[Positional_Encoding]]", "[[Temporal_Feature_Encoding]]"]
-forecasting_horizon: "[[Long_Term]]"
-metrics: ["[[MAE]]", "[[RMSE]]", "[[R2_Score]]"]
+features_used: ["[[Wavelet_Decomposition]]", "[[TCN]]", "[[Top_K_Gating_Routing]]", "[[Positional_Encoding]]", "[[Cyclical_Encodings]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[RMSE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -45,7 +45,7 @@ tags: [paper, ev-load-forecasting, ml]
     $$ RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^n (y_i-\hat{y}_i)^2}, \quad MAE = \frac{1}{n}\sum_{i=1}^n |y_i-\hat{y}_i|, \quad R^2 = 1-\frac{\sum_{i=1}^n(y_i-\hat{y}_i)^2}{\sum_{i=1}^n(y_i-\bar{y})^2} $$
 
 ## 📊 Dataset & Input Features
-- **Dataset**: [[NASDAQ100 Stock Price Data]] from Kaggle (ref. [33]): daily stock prices of **102 largest non-financial companies by market capitalization** on Nasdaq; accessed Sep. 14, 2024.
+- **Dataset**: [[NASDAQ100_Stock_Price_Dataset]] from Kaggle (ref. [33]): daily stock prices of **102 largest non-financial companies by market capitalization** on Nasdaq; accessed Sep. 14, 2024.
   - URL: https://www.kaggle.com/datasets/kalilurrahman/nasdaq100-stock-price-data
 - **Cross-market validation datasets** (Appendix H): cryptocurrency and foreign exchange datasets (details in supplementary material available via https://doi.org/10.1109/TNNLS.2025.3584369).
 - **Features**: historical price series (closing prices); WNR db4-denoised variant fed alongside raw series as augmentation; min–max scaled to [0,1]; sliding-window inputs with lookback = 3× prediction horizon (steps ahead: 1, 5, 10, 20). Qualitative evaluation on VRTX, MSFT, CTAS, INTC across four industries.

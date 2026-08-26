@@ -5,11 +5,11 @@ authors: [Ruihan Zhang, Virgia Wang]
 year: 2022
 journal_conference: "2022 5th International Conference on Computer Science and Software Engineering (CSSE 2022), Guilin, China, pp. 527-533"
 doi_url: "https://doi.org/10.1145/3569966.3570101"
-models_used: ["[[GCN_TRN|GCN-TRN]]", "[[GCN]]", "[[Transformer]]", "[[GRU]]", "[[GCN-GRU]]", "[[SVR]]", "[[Historical_Average|HA]]"]
-datasets_used: ["[[Dundee_EV_Charging_Dataset]]"]
-features_used: ["[[Gaussian_Kernel_Adjacency|Spatial Adjacency Matrix A_ij (true path distances)]]", "[[Station_Availability|Availability p_n]]", "[[Connector_Occupancy_Time]]", "[[Station_Latitude_Longitude|Latitude/Longitude]]", "[[30_Min_Slot_Aggregation|30-min Occupancy Slots]]"]
-forecasting_horizon: "[[Spatial_Temporal]]"
-metrics: ["[[Accuracy_Index]]", "[[RMSE]]", "[[MAE]]", "[[R2|R² Score]]", "[[Explained_Variance_Score]]"]
+models_used: ["[[GCN|GCN-TRN]]", "[[GCN]]", "[[Transformer]]", "[[GRU]]", "[[GCN-GRU]]", "[[SVR]]", "[[Historical_Average|HA]]"]
+datasets_used: ["[[Dundee_EV]]"]
+features_used: ["[[Adjacency_Matrix|Spatial Adjacency Matrix A_ij (true path distances)]]", "[[Station_Occupancy|Availability p_n]]", "[[Station_Occupancy]]", "[[Station_Latitude_Longitude|Latitude/Longitude]]", "[[30_Min_Slot_Aggregation|30-min Occupancy Slots]]"]
+forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
+metrics: ["[[Accuracy]]", "[[RMSE]]", "[[MAE]]", "[[R_squared|R² Score]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - **Core problem**: EV charging station (CS) availability forecasting must capture both **spatial relations** (correlations between neighboring stations via non-Euclidean road topology — ARIMA/SVR/KNN cannot mine spatio-temporal relations; CNN only handles Euclidean data) and **temporal dependence** (rush-hour-like charging periodicity). RNNs lose spatial info; GNNs can't process time series; Transformers aggregate poorly local/spatial information.
-- **Primary contribution**: **[[GCN_TRN|GCN-TRN]]** — combines a [[GCN]] (spatial extraction from station graph $G=(V,E,A)$) with a [[Transformer]] (global-view temporal modeling, no sequential information loss) for long-term multi-step EV CS availability prediction.
+- **Primary contribution**: **[[GCN|GCN-TRN]]** — combines a [[GCN]] (spatial extraction from station graph $G=(V,E,A)$) with a [[Transformer]] (global-view temporal modeling, no sequential information loss) for long-term multi-step EV CS availability prediction.
 - Result: >80% accuracy at 30- and 60-min horizons on the Dundee City dataset; beats all baselines including vanilla Transformer (+14.3% accuracy at 30 min).
 
 ## 🧠 Methodology & Model Architecture
@@ -37,7 +37,7 @@ $$A(q_i,K,V) = \sum_j \frac{k(q_i,k_j)}{\sum_l k(q_i,k_l)} \times v_j, \qquad k(
 followed by Softmax($x_i$) = $\exp(x_i)/\sum_j \exp(x_j)$ weighting; $d$ = embedding dimension. GCN output feeds the Transformer for temporal refinement.
 
 ## 📊 Dataset & Input Features
-- **[[Dundee_EV_Charging_Dataset]]**: Dundee City (Scotland, UK) public EV charging stations, **February 13 – February 28, 2018** (~15 days); **2746 usage records across 23 charging stations**; records contain Connector ID, session start/end times, and station latitude/longitude.
+- **[[Dundee_EV]]**: Dundee City (Scotland, UK) public EV charging stations, **February 13 – February 28, 2018** (~15 days); **2746 usage records across 23 charging stations**; records contain Connector ID, session start/end times, and station latitude/longitude.
 - Preprocessing: sessions aggregated into **30-minute time slots**; per-station availability normalized to [0,1] (0 = all connectors occupied, 1 = all vacant) (Eq. 8):
 $$p_n = 1 - \frac{\sum t_n}{30 \cdot M_{\text{Connector},n}}$$
 where $\sum t_n$ is accumulated occupancy time and $M_{\text{Connector},n}$ the connector count at station $n$.
@@ -88,5 +88,5 @@ Baselines: [[Historical_Average|HA]], [[SVR]], [[GRU]], [[GCN-GRU]], vanilla [[T
 ```
 
 ## 🔗 Key References & Citation Graph
-- Vault papers: [[2017_Attention_Is_All_You_Need]] (Transformer base architecture, ref [15]), [[2017_Zhang_DCRNN_Deep_Spatio_Temporal_Residual_Networks|Deep Spatio-Temporal Residual Networks]] (ref [3], citywide crowd flows)
+- Vault papers: [[2017_Attention_Is_All_You_Need]] (Transformer base architecture, ref [15]), [[DCRNN|Deep Spatio-Temporal Residual Networks]] (ref [3], citywide crowd flows)
 - Cited-in-text foundations: Kipf & Welling GCN (arXiv:1609.02907, ref [14] — source of Eqs. 2–5), T-GCN traffic prediction (Zhao et al. 2019, ref [11]), GMAN graph multi-attention network (Zheng et al. 2020, ref [12]), Spatial-Temporal Transformer Networks (Xu et al. 2020, ref [13]), AST-GCN (Zhu et al. 2021, ref [9]), UK EV charging behavior statistical analysis (Quirós-Tortós et al. 2015, ref [2]), ACN-Data open EV charging dataset (Lee et al. 2019, ref [7]), EV CS availability deep learning (Luo et al. ITSC 2021, ref [16] — source of Eq. 8)

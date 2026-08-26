@@ -5,10 +5,10 @@ authors: [Muhammad Qamar Raza, Abbas Khosravi]
 year: 2015
 journal_conference: "Renewable and Sustainable Energy Reviews, vol. 50, pp. 1352-1372"
 doi_url: "https://doi.org/10.1016/j.rser.2015.04.065"
-models_used: ["[[ANN]]", "[[MLP]]", "[[Backpropagation_ANN]]", "[[Fuzzy_Logic]]", "[[ANFIS]]", "[[SVM]]", "[[SVR]]", "[[Wavelet_Neural_Network|WNN]]", "[[Artificial_Immune_System|AIS]]", "[[Genetic_Algorithm|GA]]", "[[Particle_Swarm_Optimization|PSO]]", "[[Ant_Colony_Optimization|ACO]]"]
+models_used: ["[[ANN]]", "[[MLP]]", "[[ANN]]", "[[Fuzzy_Logic]]", "[[ANFIS]]", "[[SVM]]", "[[SVR]]", "[[Wavelet_Neural_Network|WNN]]", "[[Artificial_Immune_System|AIS]]", "[[Genetic_Algorithm|GA]]", "[[Particle_Swarm_Optimization|PSO]]", "[[Ant_Colony_Optimization|ACO]]"]
 datasets_used: ["[[ISO_New_England_Grid]]", "[[California_Grid]]", "[[New_York_Grid]]", "[[Singapore_Grid]]", "[[ELIA_Belgian_Grid]]", "[[Ontario_Grid]]", "[[Victoria_Australia_Grid]]", "[[UK_National_Grid]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Dew_Point]]", "[[Dry_Bulb_Temperature]]", "[[Relative_Humidity]]", "[[Hour_Of_Day]]", "[[Day_Of_Week]]", "[[Working_Day_Flag]]", "[[Electricity_Price]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Dew_Point]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Electricity_Tariff]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAPE]]", "[[RMSE]]", "[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

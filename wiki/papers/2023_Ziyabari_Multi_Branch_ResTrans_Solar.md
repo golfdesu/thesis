@@ -7,9 +7,9 @@ journal_conference: "IEEE Transactions on Industry Applications, 59(5), 5293-530
 doi_url: "https://doi.org/10.1109/TIA.2023.3285202"
 models_used: ["[[ResTrans|Multi-Branch ResNet-Transformer (ResTrans)]]", "[[Transformer]]", "[[ResLSTM]]", "[[CNN_LSTM]]", "[[AttLSTM]]", "[[ResNet]]", "[[LSTM]]", "[[CNN]]"]
 datasets_used: ["[[NSRDB|NSRDB Philadelphia, USA (18 sites, 2000-2017, 30-min, 3,784,320 observations)]]"]
-features_used: ["[[GHI]]", "[[DNI]]", "[[DHI]]", "[[Clearsky_GHI_DNI_DHI|Clear-sky GHI/DHI/DNI]]", "[[Temperature]]", "[[Relative_Humidity]]", "[[Wind_Speed]]", "[[Wind_Direction]]", "[[Pressure]]", "[[Dew_Point]]", "[[Solar_Zenith_Angle]]", "[[Precipitable_Water]]", "[[Cloud_Type]]"]
-forecasting_horizon: "[[Spatial_Temporal]]"
-metrics: ["[[RMSE]]", "[[MAE]]", "[[R2|R² score]]"]
+features_used: ["[[GHI]]", "[[DNI]]", "[[DHI]]", "[[Clearsky_GHI_DNI_DHI|Clear-sky GHI/DHI/DNI]]", "[[Temperature]]", "[[Humidity]]", "[[Wind_Speed]]", "[[Wind_Direction]]", "[[Pressure]]", "[[Dew_Point]]", "[[Solar_Zenith_Angle]]", "[[Precipitable_Water]]", "[[Cloud_Type]]"]
+forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
+metrics: ["[[RMSE]]", "[[MAE]]", "[[R_squared|R² score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -82,7 +82,7 @@ Spatio-temporal models (Tables IV–V):
 
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]]
-- [[1997_Long_Short_Term_Memory]]
+- [[1997_Hochreiter_Long_Short_Term_Memory]]
 - [[2022_Kim_RevIN_Reversible_Instance_Normalization]]
 - [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]
 - [[2023_Huang_MetaProbformer_EV_Load]]

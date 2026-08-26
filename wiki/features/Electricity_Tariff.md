@@ -59,6 +59,7 @@ $$\frac{\partial D}{\partial P} < 0 \quad \text{(demand decreases as price incre
 - 2026 — [[2026_Hao_Mamba_KAN_HyKANet_EV]] : External encoding includes price/weather; removing it degrades MAPE by +35.7% relative.
 - 2026 — [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] : Electricity price elevated to a core modeling modality in TriCast's PEM module (random-walk-smoothed, behavior-modulated price with elasticity gating) on UrbanEV Shenzhen; only 57/247 zones have dynamic pricing.
 - 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : TOU price tops Pearson/MIC factor screening (r = 0.7259, MIC = 0.5946) as a CNN-GRU input at a Chinese mall station; users shift charging into off-peak windows (peak 1.1526 / flat 0.6703 / off-peak 0.2805 Yuan/kWh).
+- 2026 — [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] : Free→paid tariff introduction at 12 Scottish local authorities caused sharp lasting session drops (−66% AC / −47% rapid) with an early-2023 structural break cleanly absorbed by the RW2 latent trend — a natural experiment in price elasticity (AC more price-sensitive than Rapid).
 
 ## Feature Engineering
 

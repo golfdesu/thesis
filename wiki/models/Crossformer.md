@@ -22,7 +22,7 @@ $$B_{i,:} = \text{MSA}^{dim}_1(R_{i,:}, Z^{time}_{i,:}, Z^{time}_{i,:}), \qquad 
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: past window of correlated multivariate series only (baselines additionally use timestamp covariates).
-- **Forecasting Horizon**: [[Long_Term]] ($\tau$ up to 720; per-horizon look-back searched in {24,...,720}).
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] ($\tau$ up to 720; per-horizon look-back searched in {24,...,720}).
 - **Strengths**: top-1 in 36/58, top-2 in 51/58 benchmark settings; router enables linear scaling in D (handles D=300 where no-router OOMs); lowest memory/fastest runtime among five tested Transformers.
 - **Weaknesses**: all-to-all routing introduces noise on high-dimensional data; outperformed by [[DLinear]] on several datasets (ETTm1 long horizons, ECL, Traffic) — order-preservation flagged as future work; straightforward covariate embedding does not help.
 

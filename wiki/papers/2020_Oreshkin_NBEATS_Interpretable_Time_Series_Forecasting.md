@@ -6,9 +6,9 @@ year: 2020
 journal_conference: "ICLR 2020"
 doi_url: "https://arxiv.org/abs/1905.10437"
 models_used: ["[[NBEATS]]", "[[NBEATS-G]]", "[[NBEATS-I]]"]
-datasets_used: ["[[M4_Dataset]]", "[[M3_Dataset]]", "[[TOURISM_Dataset]]", "[[Electricity_Dataset]]", "[[Traffic_PEMS_SF_Dataset]]"]
+datasets_used: ["[[M4]]", "[[M3]]", "[[Tourism]]", "[[Electricity_ECL]]", "[[Traffic]]"]
 features_used: ["[[Lookback_Window]]", "[[Learned_Basis]]", "[[Polynomial_Trend_Basis]]", "[[Fourier_Seasonality_Basis]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[sMAPE]]", "[[MAPE]]", "[[MASE]]", "[[OWA]]", "[[ND]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - Pure deep learning architecture for **univariate point forecasting**: deep stack of fully connected layers with **backward (backcast) and forward (forecast) residual links** — no time-series-specific components, no feature engineering, no input scaling.
-- First empirical proof that pure DL outperforms well-established statistical approaches on [[M4_Dataset]], [[M3_Dataset]], and [[TOURISM_Dataset]]: on M4 by **11% over the statistical benchmark**, 7% over the best statistical entry, and **3% over the M4 competition winner** (Smyl's DL/TS hybrid).
+- First empirical proof that pure DL outperforms well-established statistical approaches on [[M4]], [[M3]], and [[Tourism]]: on M4 by **11% over the statistical benchmark**, 7% over the best statistical entry, and **3% over the M4 competition winner** (Smyl's DL/TS hybrid).
 - Second contribution: an **interpretable configuration** whose outputs decompose into human-readable trend and seasonality components (like STL / X-13ARIMA) with negligible accuracy loss.
 
 ## 🧠 Methodology & Model Architecture

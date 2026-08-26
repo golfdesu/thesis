@@ -6,9 +6,9 @@ year: 2024
 journal_conference: "23rd Power Systems Computation Conference (PSCC 2024), Paris, France, June 4-7 2024"
 doi_url: "https://arxiv.org/abs/2402.13548"
 models_used: ["[[DiffPLF]]", "[[DDPM]]", "[[TimeGrad]]", "[[CSDI]]", "Quantile Regression", "[[LSTM]]"]
-datasets_used: ["[[Palo_Alto_EV_Charging_Station_Usage_Dataset]]", "[[Meteostat_Weather]]"]
-features_used: ["[[Historical_Charging_Demand]]", "[[Temperature_Forecast]]", "[[Humidity_Forecast]]", "[[Calendar_Variables]]", "[[EV_Number]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+datasets_used: ["[[Palo_Alto_EV]]", "[[Weather]]"]
+features_used: ["[[Historical_Load]]", "[[Temperature_Forecast]]", "[[Humidity]]", "[[Calendar_Features]]", "[[EV_Number]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAE]]", "[[CRPS]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: DiffPLF: A Conditional Diffusion Model for Probabilistic Forecasting of EV Charging Load
 
 ## 🎯 Main Objective & Contribution
-- Probabilistic [[EV_Load_Forecasting]]: explicitly approximate the predictive distribution $q(x_0|p,r)$ of future charging load profiles conditioned on historical demand and covariates, instead of point forecasts or quantile regression (which struggles with the extreme volatility and conditioning information of EV charging).
+- Probabilistic [[EV_Charging_Demand]]: explicitly approximate the predictive distribution $q(x_0|p,r)$ of future charging load profiles conditioned on historical demand and covariates, instead of point forecasts or quantile regression (which struggles with the extreme volatility and conditioning information of EV charging).
 - Proposes **[[DiffPLF]]**: a conditional denoising diffusion model ([[DDPM]]) with a **cross-attention conditioning mechanism** (from latent diffusion / text-to-image models) entangling perturbed load series with conditions; plus a **task-informed fine-tuning** stage via a 50%-quantile deviation minimization (QDM) loss that sharpens prediction intervals (~40% improvement vs standard quantile regression training).
 - Results: **39.58% MAE and 49.87% CRPS improvement** over conventional quantile regression; supports controllable generation conditioned on EV number and flexible horizons (24/12/6/4/1 h). Code public: https://github.com/LSY-Cython/DiffPLF
 
@@ -54,8 +54,8 @@ Algorithm: Stage 1 pre-train $\epsilon_\theta$ via Eq. 7 → Stage 2 generate sa
 Hidden dims of LSTM/cross-attention/self-attention all 32; attention heads 4; quadratic noise schedule β₁=0.0001, β_T=0.5, **T=200 diffusion steps**; context = past 5 days; PyTorch, Linux, 48 GB Nvidia A40 GPU; Adam, batch size 16; lr 0.001 (pre-training, 200 epochs) / 0.0002 (fine-tuning, 100 epochs); best QDM weight λ=0.001; 1000 trajectories generated per test case. Avg epoch time: 2.0174 s (pre-training) vs 2.5514 s (fine-tuning); mean inference time per test case 5.7511 s.
 
 ## 📊 Dataset & Input Features
-- **[[Palo_Alto_EV_Charging_Station_Usage_Dataset]]** ("EV Charging Station Usage of California City"): real-world daily charging session details of individual stations in Palo Alto, California — charging durations and delivered energy per session; aggregated to total city charging load at **15-min resolution** using the transformation method of Arias & Bae. Train/fine-tune: 2016–2018; test: 2019. URL: https://www.kaggle.com/datasets/venkatsairo4899/ev-charging-station-usage-of-california-city
-- **[[Meteostat_Weather]]**: Palo Alto weather forecasts (temperature, humidity — identified as the two most influential weather factors). URL: https://dev.meteostat.net/
+- **[[Palo_Alto_EV]]** ("EV Charging Station Usage of California City"): real-world daily charging session details of individual stations in Palo Alto, California — charging durations and delivered energy per session; aggregated to total city charging load at **15-min resolution** using the transformation method of Arias & Bae. Train/fine-tune: 2016–2018; test: 2019. URL: https://www.kaggle.com/datasets/venkatsairo4899/ev-charging-station-usage-of-california-city
+- **[[Weather]]**: Palo Alto weather forecasts (temperature, humidity — identified as the two most influential weather factors). URL: https://dev.meteostat.net/
 - Covariates: historical aggregate demand (5-day look-back), temperature/humidity forecasts, one-hot weekday vector, number of charged EVs in forecast window.
 - Context: US projection of 30–42 M EVs served by 26–35 M charging piles by 2030 (NREL report https://www.nrel.gov/docs/fy23osti/85970.pdf).
 

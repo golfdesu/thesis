@@ -5,10 +5,10 @@ authors: [Silvana Matrone, Amirhossein Heydarian Ardakani, Emanuele Ogliari, Elh
 year: 2025
 journal_conference: "ACM E-Energy '25: 16th ACM International Conference on Future and Sustainable Energy Systems (June 17-20, 2025, Rotterdam, Netherlands)"
 doi_url: "https://doi.org/10.1145/3679240.3734687"
-models_used: ["[[QR_LSTM_Attention|QR-LSTM-Attention]]", "[[LSTM]]", "[[Seq2Seq|Encoder-Decoder with Attention]]", "[[Quantile_Regression]]", "[[Weekly_Persistence|Persistence Benchmark]]"]
-datasets_used: ["[[SmoothEMS_Met_GridShield_ASR_Utrecht_Dataset]]", "[[KNMI_Weather_Data]]"]
+models_used: ["[[QR_LSTM_Attention|QR-LSTM-Attention]]", "[[LSTM]]", "[[Seq2Seq|Encoder-Decoder with Attention]]", "[[Quantile_Regression]]", "[[Persistence_Model|Persistence Benchmark]]"]
+datasets_used: ["[[SmoothEMS_Met_GridShield_ASR_Utrecht_Dataset]]", "[[Weather]]"]
 features_used: ["[[Historical_Load]] (96 input steps = previous day)", "[[Temperature]]", "[[Global_Solar_Radiation]]", "[[Number_of_Active_Sessions]]", "[[Calendar_Features]] (month, day, hour, minute)"]
-forecasting_horizon: "[[Day_Ahead|24-Hour Day-Ahead Probabilistic Forecast, Rolling Horizon Refreshed Hourly (15-min resolution)]]"
+forecasting_horizon: "[[Day_Ahead_Forecasting|24-Hour Day-Ahead Probabilistic Forecast, Rolling Horizon Refreshed Hourly (15-min resolution)]]"
 metrics: ["[[CRPS]]", "[[Pinball_Loss]] (q20/q50/q80)", "[[PICP]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -46,7 +46,7 @@ Encoder/decoder depth {1, 2} layers × units {24, 48, 64} → six configurations
   - Input window: **96 steps (= previous full day)** → predict next day, no lag
   - Forecast protocol: **rolling horizon refreshed once every hour**, providing a 24-hour horizon.
   - Size (#sessions/#chargers): not disclosed in the paper text.
-- **[[KNMI_Weather_Data]]**: Royal Netherlands Meteorological Institute weather data — official download page: https://www.knmi.nl/nederland-nu/klimatologie/daggegevens (accessed 2025-04-07).
+- **[[Weather]]**: Royal Netherlands Meteorological Institute weather data — official download page: https://www.knmi.nl/nederland-nu/klimatologie/daggegevens (accessed 2025-04-07).
 - **Input features**: month, day, hour, minute, temperature, global radiation, number of active charging sessions.
 - Paper is Open Access (CC BY 4.0), ACM ISBN 979-8-4007-1125-1/25/06; no separate code/data repository stated beyond KNMI weather portal.
 
@@ -70,7 +70,7 @@ Encoder/decoder depth {1, 2} layers × units {24, 48, 64} → six configurations
 - Single site (one parking lot), single dataset; generalization to other station types untested.
 - Authors' stated future work: include **additional input lags** and **extend the forecasting horizon** beyond 24 h.
 - No exogenous events (holidays, pricing) beyond calendar/weather features; no comparison against modern deep probabilistic baselines (e.g., DeepAR, diffusion models).
-- Thesis gap: clean, reproducible QR-LSTM-Attention benchmark for [[Day_Ahead]] probabilistic EV load forecasting; motivates conformal or distributional extensions.
+- Thesis gap: clean, reproducible QR-LSTM-Attention benchmark for [[Day_Ahead_Forecasting]] probabilistic EV load forecasting; motivates conformal or distributional extensions.
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -91,5 +91,5 @@ Encoder/decoder depth {1, 2} layers × units {24, 48, 64} → six configurations
 - Matrone et al. (2024), *EV supply equipment day-ahead power forecast based on deep learning and the attention mechanism* (IEEE T-ITS) — direct predecessor point-forecast model, ref [4].
 - Huber, Dann & Weinhardt (2020), *Probabilistic forecasts of time and energy flexibility in battery electric vehicle charging* (Applied Energy) — quantile-based EV probabilistic forecasting, ref [1].
 - Islam et al. (2018), *A Day-Ahead Forecasting Model for Probabilistic EV Charging Loads at Business Premises* (IEEE Trans. Sustain. Energy), ref [2].
-- Zhou et al. (2022), *Using Bayesian Deep Learning for Electric Vehicle Charging Station Load Forecasting* (Energies) — Bayesian alternative, cf. [[2023_MetaProbformer_for_Charging_Load_Probabilistic_Forecasting_of_Electric_Vehicle_Charging_Stations]], ref [5].
+- Zhou et al. (2022), *Using Bayesian Deep Learning for Electric Vehicle Charging Station Load Forecasting* (Energies) — Bayesian alternative, cf. [[2023_Huang_MetaProbformer_EV_Load]], ref [5].
 - KNMI (n.d.), *Daggegevens van het weer in Nederland*, https://www.knmi.nl/nederland-nu/klimatologie/daggegevens — weather source, ref [3].

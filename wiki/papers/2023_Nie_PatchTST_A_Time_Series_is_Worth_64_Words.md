@@ -5,10 +5,10 @@ authors: [Yuqi Nie, Nam H. Nguyen, Phanwadee Sinthong, Jayant Kalagnanam]
 year: 2023
 journal_conference: "ICLR 2023"
 doi_url: "https://arxiv.org/abs/2211.14730"
-models_used: ["[[PatchTST]]", "[[Transformer_Encoder]]", "[[RevIN]]", "[[Masked_Autoencoder]]"]
-datasets_used: ["[[Weather]]", "[[Traffic_PEMS]]", "[[Electricity_ECL]]", "[[ILI]]", "[[ETTh1]]", "[[ETTh2]]", "[[ETTm1]]", "[[ETTm2]]"]
+models_used: ["[[PatchTST]]", "[[Transformer]]", "[[RevIN]]", "[[Masked_Autoencoder]]"]
+datasets_used: ["[[Weather]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[ILI]]", "[[ETT]]", "[[ETT]]", "[[ETT]]", "[[ETT]]"]
 features_used: ["[[Multivariate_Time_Series]]", "[[Patched_Embeddings]]", "[[Channel_Independence]]", "[[Positional_Encoding]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

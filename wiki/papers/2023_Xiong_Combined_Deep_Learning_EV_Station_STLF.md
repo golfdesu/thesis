@@ -5,10 +5,10 @@ authors: [Xiaozhou Xiong, Lanzhihao Zhou]
 year: 2023
 journal_conference: "2023 2nd Asia Power and Electrical Technology Conference (APET), IEEE"
 doi_url: "https://doi.org/10.1109/APET59977.2023.10489548"
-models_used: ["[[CNN_LSTM_Transformer_Combined_Model]]", "[[CNN]]", "[[LSTM]]", "[[Transformer_Encoder]]"]
-datasets_used: ["[[Boulder_EV_Charging_Stations_Dataset]]"]
+models_used: ["[[CNN_LSTM_Transformer_Combined_Model]]", "[[CNN]]", "[[LSTM]]", "[[Transformer]]"]
+datasets_used: ["[[Boulder_Colorado]]"]
 features_used: ["[[Historical_Load]]", "[[Charging_Event_Records]]", "[[Timestamp]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

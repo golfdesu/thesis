@@ -6,9 +6,9 @@ year: 2024
 journal_conference: "2024 6th International Conference on Communications, Signal Processing, and their Applications (ICCSPA)"
 doi_url: "https://doi.org/10.1109/ICCSPA61559.2024.10794251"
 models_used: ["[[Autoformer]]", "[[LSTM]]"]
-datasets_used: ["[[Boulder_EV_Charging_Dataset]]"]
-features_used: ["[[Charging_Demand]]", "[[Weekday]]", "[[Month]]"]
-forecasting_horizon: "[[Long_Term]]"
+datasets_used: ["[[Boulder_Colorado]]"]
+features_used: ["[[Charging_Demand]]", "[[Calendar_Features]]", "[[Calendar_Features]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -34,7 +34,7 @@ Confidence $R(\tau)$ selects top-k period lengths $\tau_1,\dots,\tau_k$; a **Rol
 **Training setup** (**Eq. 5 – Min-max normalization**): $x = \frac{x - x_{min}}{x_{max}-x_{min}}$; metrics RMSE/MAE/MAPE (**Eq. 6–8**). Hyperparameters: hidden dim 128, 100 epochs, 2 encoder layers, 1 decoder layer, input length 96, prediction lengths {30, 60, 90}, 8 attention heads, batch size 64. Benchmark: LSTM trained identically.
 
 ## 📊 Dataset & Input Features
-- **[[Boulder_EV_Charging_Dataset]]**: open-source City of Boulder (Colorado, U.S.) charger data from **51 public charging stations**, Jan 1 2018 – Nov 30 2023.
+- **[[Boulder_Colorado]]**: open-source City of Boulder (Colorado, U.S.) charger data from **51 public charging stations**, Jan 1 2018 – Nov 30 2023.
 - Raw data: **148,136 individual EV charging events**; aggregated to daily charging demand across all stations → **2155 records** (kWh/h/day); missing/negative entries removed.
 - Input variables: charging demand (numeric, kWh/h/day), weekday (categorical Mon–Sun), month (categorical Jan–Dec). Output: EV charging demand (kWh/h).
 - Split: 70% train / 10% validation / 20% test; min-max normalized.

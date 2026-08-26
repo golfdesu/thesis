@@ -6,9 +6,9 @@ year: 2024
 journal_conference: "2024 56th North American Power Symposium (NAPS), IEEE"
 doi_url: "https://doi.org/10.1109/NAPS61145.2024.10741734"
 models_used: ["[[Gaussian_Process_Regression]]", "[[Kernel_Density_Estimation]]"]
-datasets_used: ["[[US_Utility_Feeder_Residential_Load]]", "[[Real_World_EV_Charging_Load_Profiles]]"]
-features_used: ["[[Historical_Load]]", "[[Weather_Traffic]]", "[[Time_Index_Features]]", "[[Charging_Habit_Probability]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[US_Utility_Feeder_Residential_Load]]", "[[Real_World_EV_DC_Charging]]"]
+features_used: ["[[Historical_Load]]", "[[Weather_Traffic]]", "[[Calendar_Features]]", "[[Charging_Habit_Probability]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAPE]]", "[[PICP]]", "[[NMPIL]]", "[[CLC]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

@@ -26,7 +26,7 @@ Shared weights across the $k$ tensors keep model size invariant to $k$; Inceptio
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: multivariate series with multi-periodicity (e.g., daily + weekly electricity cycles).
-- **Forecasting Horizon**: both short-term (M4) and [[Long_Term]] ($T \in \{96,...,720\}$).
+- **Forecasting Horizon**: both short-term (M4) and [[Long_Term_Forecasting]] ($T \in \{96,...,720\}$).
 - **Strengths**: SOTA in >80% of forecasting cases (Electricity avg MSE 0.192); best imputation (ETTm1 avg MSE 0.027); anomaly F1 86.34%; unified pre-training potential demonstrated.
 - **Weaknesses**: point forecasts only; sensitive to top-k frequency count in low-level tasks; no explicit cross-variate dependency mechanism.
 

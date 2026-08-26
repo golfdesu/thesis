@@ -6,9 +6,9 @@ year: 2026
 journal_conference: "arXiv preprint arXiv:2512.17257 [cs.LG] (v2, 31 Mar 2026; dated April 1, 2026), University of Piraeus"
 doi_url: "https://doi.org/10.48550/arXiv.2512.17257"
 models_used: ["[[ARIMA]]", "[[XGBoost]]", "[[GRU]]", "[[LSTM]]", "[[Transformer]]"]
-datasets_used: ["[[Palo_Alto_EV_Charging_Dataset]]", "[[Boulder_EV_Charging_Dataset]]", "[[Dundee_EV_Charging_Dataset]]", "[[Perth_EV_Charging_Dataset]]"]
-features_used: ["[[Historical_Load_Lags]]", "[[Calendar_Features]]", "[[Holiday_Indicator]]", "[[Weekend_Indicator]]", "[[Day_of_Week]]", "[[Month_of_Year]]", "[[Station_ID_One_Hot]]", "[[Region_ID_One_Hot]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[Palo_Alto_EV]]", "[[Boulder_Colorado]]", "[[Dundee_EV]]", "[[Perth_EV]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Holiday_Indicator]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Station_ID_One_Hot]]", "[[Region_ID_One_Hot]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -83,7 +83,7 @@ All values are MAE/RMSE in the normalized domain (Tables 2–4 of the paper). Ke
 
 ## 💡 Limitations & Identified Research Gaps
 - Input space deliberately restricted to historical load + calendar features; exogenous drivers (weather, electricity prices, traffic, events) unmodeled → reported scores are a **lower bound**.
-- Only widely used baselines; excludes GNNs, decomposition hybrids, EV-specific global/foundation models ([29][30] reviewed only) ↔ benchmark positioning against [[2024_Bampos_EV_Load_Forecasting_DAM]], [[2025_Meyer_Benchmark_Foundation_Models]], [[2024_Wang_Shengyou_ML_Geographical_Transferability_EV]].
+- Only widely used baselines; excludes GNNs, decomposition hybrids, EV-specific global/foundation models ([29][30] reviewed only) ↔ benchmark positioning against [[2024_Bampos_EV_Load_Forecasting_DAM]], [[2025_Meyer_Benchmark_Foundation_Models]], [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]].
 - Recursive multi-step forecasting introduces error accumulation, hurting some architectures (Transformers on sparse data like Dundee) disproportionately.
 - Fixed hyperparameters trade peak performance for comparability.
 - Future work: hyperparameter optimization/deeper architectures; exogenous variables; explainable AI (XAI); transfer learning across cities (explicitly proposed as follow-up, connecting to [[2024_Ali_MQ_TCN_Transfer_Learning_EV]], [[2023_Huang_MetaProbformer_EV_Load]]).

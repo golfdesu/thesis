@@ -13,7 +13,7 @@ tags:
 # ⚖️ USDT (Uncertainty-Scale Dual-Direction Transformer)
 
 ## Overview
-USDT (Zhang et al., Sustainable Energy, Grids and Networks 2026) is a probabilistic EV charging-load forecasting model built on an [[Informer]]/[[Probformer]] backbone, augmented with two new modules for multi-station load:
+USDT (Zhang et al., Sustainable Energy, Grids and Networks 2026) is a probabilistic EV charging-load forecasting model built on an [[Informer]]/[[MetaProbformer]] backbone, augmented with two new modules for multi-station load:
 
 - **SMAN (Scalable Multi-Scale Linear Attention Network)** — convolutional Q/K/V projections embedding spatial-temporal neighborhood structure, $Q = \text{Conv}_Q(X)$, $K = \text{Conv}_K(X)$, $V = \text{Conv}_V(X)$, with multi-scale processing of fast spikes + slow diurnal/weekly cycles and query sparsity via KL-divergence-style max–mean gap:
 $$S(q_l, K) = \max_j \left\{ q_l k_j^\top \right\} - \frac{1}{L_K}\sum_{j=1}^{L_K} q_l k_j^\top$$
@@ -25,7 +25,7 @@ Encoder: embeddings → SMAN → DDI → MHPSA → SAD → MHPSA; decoder adds M
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: univariate hourly station load (96-h input window, 48 label length) + cyclical/discrete calendar encodings; z-score normalization on train-split statistics only.
-- **Forecasting Horizon**: [[Long_Term]] — hourly steps; benefits grow with horizon length and input length.
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] — hourly steps; benefits grow with horizon length and input length.
 - **Strengths**: EVnetNL RMSE 8.781 vs Informer 9.866 (−10.99%) and MSE −21%; robust across 5 seeds (9.222 ± 0.181); zero-shot cross-domain transfer degrades only +26.8% vs Informer's +102% (on Perth it even beats in-domain training by −2.0%); −36.5% peak VRAM vs Informer; well-calibrated intervals (ACE 0.0659, near-uniform PIT).
 - **Weaknesses**: modest short-horizon gains over strong baselines; +213% iteration latency from multi-scale/dual-direction pathways; degrades under pronounced domain shift.
 

@@ -8,7 +8,7 @@ doi_url: "https://doi.org/10.1109/CIEEC60922.2024.10583059"
 models_used: ["[[MLP]]", "[[SVR]]", "[[XGBoost]]"]
 datasets_used: ["[[Caltech_ACN]]"]
 features_used: ["[[Historical_Load]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

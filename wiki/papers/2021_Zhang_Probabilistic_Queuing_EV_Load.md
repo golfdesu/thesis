@@ -5,10 +5,10 @@ authors: [Xian Zhang, Ka Wing Chan, Hairong Li, Huaizhi Wang, Jing Qiu, Guibin W
 year: 2021
 journal_conference: "IEEE Transactions on Cybernetics, Vol. 51, No. 6, pp. 3157-3170"
 doi_url: "https://doi.org/10.1109/TCYB.2020.2975134"
-models_used: ["[[CNN]]", "[[Wavelet_Decomposition|Discrete Wavelet Transform (WT)]]", "[[GMM|Gaussian Mixture Model]]", "[[Queuing_Model|M/M/C/K Markov Queuing Model]]", "[[Ensemble_Learning|CNN Ensemble PIs]]", "[[BPNN]]", "[[SVM]]", "[[SAE|Stacked Autoencoder (SAE)]]"]
+models_used: ["[[CNN]]", "[[Wavelet_Decomposition|Discrete Wavelet Transform (WT)]]", "[[GMM|Gaussian Mixture Model]]", "[[Queuing_Model|M/M/C/K Markov Queuing Model]]", "[[Ensemble_Stacking|CNN Ensemble PIs]]", "[[BPNN]]", "[[SVM]]", "[[SAE|Stacked Autoencoder (SAE)]]"]
 datasets_used: ["[[M42_Motorway_Traffic_Flow]]", "[[UK_National_Travel_Survey]]", "[[NHTS_2009|2009 US National Household Travel Survey]]"]
-features_used: ["[[Traffic_Flow]]", "[[Daily_Travel_Distance]]", "[[EV_Arrival_Rate]]", "[[SOC|State of Charge (SOC)]]", "[[Driver_Behavior]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Traffic]]", "[[Daily_Travel_Distance]]", "[[EV_Arrival_Rate]]", "[[State_of_Charge|State of Charge (SOC)]]", "[[Driver_Behavior]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]", "[[PICP]]", "[[ACE]]", "[[Interval_Sharpness|IS]]", "[[Pinball_Loss|PL]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,9 +16,9 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: Deep-Learning-Based Probabilistic Forecasting of Electric Vehicle Charging Load With a Novel Queuing Model
 
 ## 🎯 Main Objective & Contribution
-- First framework to forecast **EV charging station load probabilistically** by chaining: (1) deep-learning [[Traffic_Flow]] prediction with [[Prediction_Intervals|prediction intervals (PIs)]], (2) mixture-model-based EV arrival rate estimation, (3) a novel capacity-constrained $M/M/C/K$ [[Queuing_Model]] that converts TF → charging power while modeling **charging service limitations and three driver behaviors** (forced leave, refuse to join, impatient leave).
+- First framework to forecast **EV charging station load probabilistically** by chaining: (1) deep-learning [[Traffic]] prediction with [[Prediction_Intervals|prediction intervals (PIs)]], (2) mixture-model-based EV arrival rate estimation, (3) a novel capacity-constrained $M/M/C/K$ [[Queuing_Model]] that converts TF → charging power while modeling **charging service limitations and three driver behaviors** (forced leave, refuse to join, impatient leave).
 - Quantifies both **model uncertainty** ($\sigma_m^2$) and **data uncertainty** ($\sigma_d^2$) via a CNN ensemble to build reliable PIs at PINC = 90%, 95%, 99%.
-- Supports multiple horizons: 1-h ahead (main), plus 6-h, 12-h, 18-h, and 24-h ([[Day_Ahead]]) multi-output forecasting.
+- Supports multiple horizons: 1-h ahead (main), plus 6-h, 12-h, 18-h, and 24-h ([[Day_Ahead_Forecasting]]) multi-output forecasting.
 
 ## 🧠 Methodology & Model Architecture
 Pipeline (Algorithm 1): normalize TF → wavelet decomposition per frequency → per-frequency CNN training → wavelet reconstruction → deterministic point forecast → PI construction from model+data uncertainty → arrival rate estimation → queuing-model load conversion.
@@ -89,7 +89,7 @@ Charging load: strong Pearson/Kendall/Spearman correlation with TF (all coeffici
 - Single-station scope (one motorway segment); no spatial generalization across networks.
 - Driver behavior modeled via stylized exponential/logarithmic heuristics; no price-responsive or dynamic behavioral adaptation.
 - PI construction assumes Gaussian error structure via $z_{1-\alpha/2}$ critical values; no nonparametric quantile learning.
-- Gap for thesis: combining this traffic-to-power physical conversion with end-to-end probabilistic deep models ([[TimeGrad]], [[TFT]]) remains open.
+- Gap for thesis: combining this traffic-to-power physical conversion with end-to-end probabilistic deep models ([[TimeGrad]], [[Temporal_Fusion_Transformer]]) remains open.
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -107,6 +107,6 @@ Charging load: strong Pearson/Kendall/Spearman correlation with TF (all coeffici
 
 ## 🔗 Key References & Citation Graph
 - Foundation: Mallat's multiresolution wavelet theory [26]; Dempster–Laird–Rubin EM algorithm [31]; Kendall queuing notation via Khinchine [8].
-- Related vault concepts: [[Queuing_Model]], [[Prediction_Intervals]], [[Traffic_Flow]], [[GMM]], [[PICP]]
+- Related vault concepts: [[Queuing_Model]], [[Prediction_Intervals]], [[Traffic]], [[GMM]], [[PICP]]
 - Comparable baselines in vault: [[2017_Attention_Is_All_You_Need]] (attention alternatives to CNN ensembles)
-- Follow-up direction: probabilistic EV load forecasting feeding [[Short_Term]] dispatch decisions.
+- Follow-up direction: probabilistic EV load forecasting feeding [[Short_Term_Forecasting]] dispatch decisions.

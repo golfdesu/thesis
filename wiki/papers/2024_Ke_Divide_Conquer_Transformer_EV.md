@@ -5,10 +5,10 @@ authors: [Fucai Ke, Hao Wang]
 year: 2024
 journal_conference: "arXiv preprint (arXiv:2403.13246)"
 doi_url: "https://arxiv.org/abs/2403.13246"
-models_used: ["[[DCT-EV]]", "[[Transformer]]", "[[Random_Forest]]", "[[XGBoost]]", "[[DNN]]", "[[LSTM]]"]
-datasets_used: ["[[Pecan_Street_Dataport]]"]
+models_used: ["[[DCT-EV]]", "[[Transformer]]", "[[Random_Forest]]", "[[XGBoost]]", "[[ANN]]", "[[LSTM]]"]
+datasets_used: ["[[Pecan_Street]]"]
 features_used: ["[[Smart_Meter_Load]]", "[[Electricity_Usage]]", "[[EV_Charging_Label]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[F1_Score]]", "[[AUC]]", "[[Average_Precision]]", "[[Accuracy]]", "[[MSE]]", "[[Precision]]", "[[Recall]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -48,7 +48,7 @@ where $W'_m \in \mathbb{R}^{(N*D)\times 1}$, $\sigma(\cdot)$ sigmoid.
 $$\mathcal{L} = -\sum_i \sum_m \left(y_{i,m}\log(\hat{y}_{i,m}) + (1-y_{i,m})\log(1-\hat{y}_{i,m})\right)$$
 
 ## 📊 Dataset & Input Features
-- **[[Pecan_Street_Dataport]]** (Pecan Street, Austin, TX, USA), 2018 minute-interval residential smart meter data aligned with EV charging profiles.
+- **[[Pecan_Street]]** (Pecan Street, Austin, TX, USA), 2018 minute-interval residential smart meter data aligned with EV charging profiles.
   - URL/data availability: https://www.pecanstreet.org/dataport/ (accessed Sep. 2019).
   - Size: **22 households** with EVs, **8,063,175 electricity usage records**, of which **402,296 EV charging records**; label = "charging" when EV load > 3 kW.
 - **Input features**: household electricity usage only (EV charging records used solely to construct labels/validation). 80:20 train/test chronological split per home. Class-imbalanced (charging occurs only a few hours/week).
@@ -80,4 +80,4 @@ $$\mathcal{L} = -\sum_i \sum_m \left(y_{i,m}\log(\hat{y}_{i,m}) + (1-y_{i,m})\lo
 - [[2017_Attention_Is_All_You_Need]] — Transformer/self-attention backbone ([26]).
 - [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — inspiration for sub-sequence ("patch") partitioning ([25]).
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM baseline ([32]).
-- Related vault concepts: [[NILM]], [[Smart_Meter_Load]], [[Pecan_Street_Dataport]], [[DCT-EV]]
+- Related vault concepts: [[NILM]], [[Smart_Meter_Load]], [[Pecan_Street]], [[DCT-EV]]

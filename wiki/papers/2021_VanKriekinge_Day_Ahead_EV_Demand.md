@@ -7,8 +7,8 @@ journal_conference: "World Electric Vehicle Journal, 12(4), 178"
 doi_url: "https://doi.org/10.3390/wevj12040178"
 models_used: ["[[LSTM]]", "[[LSTM_B]]", "[[LSTM_C]]", "[[LSTM_W]]", "[[RNN]]"]
 datasets_used: ["[[Hospital_Semi_Public_Charging_Site_Dataset]]"]
-features_used: ["[[EV_Charging_Demand]]", "[[Average_Weekly_EV_Demand]]", "[[Cyclical_Quarter_Hour_Features]]", "[[Cyclical_Day_Number_Features]]", "[[Binary_Working_Day]]", "[[Binary_Holiday]]", "[[Daily_Temperature]]", "[[Daily_Rainfall]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+features_used: ["[[EV_Charging_Demand]]", "[[EV_Charging_Demand]]", "[[Cyclical_Quarter_Hour_Features]]", "[[Cyclical_Day_Number_Features]]", "[[Holiday_Flag]]", "[[Holiday_Flag]]", "[[Temperature]]", "[[Daily_Rainfall]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

@@ -5,10 +5,10 @@ authors: [Cristian Challu, Kin G. Olivares, Boris N. Oreshkin, Federico Garza, M
 year: 2023
 journal_conference: "AAAI 2023"
 doi_url: "https://arxiv.org/abs/2201.12886"
-models_used: ["[[NHiTS]]", "[[N-BEATS]]", "[[Autoformer]]", "[[Informer]]", "[[FEDformer]]", "[[Reformer]]", "[[LogTrans]]", "[[DilRNN]]", "[[DeepAR]]", "[[Prophet]]", "[[ARIMA]]"]
-datasets_used: ["[[ETTm2]]", "[[Exchange_Rate]]", "[[ECL_Dataset]]", "[[TrafficL_PeMS]]", "[[Weather_Jena]]", "[[ILI_CDC]]"]
+models_used: ["[[NHiTS]]", "[[NBEATS]]", "[[Autoformer]]", "[[Informer]]", "[[FEDformer]]", "[[Reformer]]", "[[LogTrans]]", "[[DilRNN]]", "[[DeepAR]]", "[[Prophet]]", "[[ARIMA]]"]
+datasets_used: ["[[ETT]]", "[[Exchange]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[Weather]]", "[[ILI]]"]
 features_used: ["[[Historical_Load|Univariate lags only (own history y_{t-L:t})]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - Tackles **long-horizon forecasting** volatility + computational complexity: attention and fully-connected layers scale quadratically in memory/compute with horizon $H$, and forecast errors inflate with $H$.
-- Proposes **[[NHiTS]]**, extending [[N-BEATS]] with two complementary techniques: (1) **multi-rate input sampling** (MaxPool subsampling per block) and (2) **hierarchical interpolation** (few forecast coefficients upsampled via temporal interpolation).
+- Proposes **[[NHiTS]]**, extending [[NBEATS]] with two complementary techniques: (1) **multi-rate input sampling** (MaxPool subsampling per block) and (2) **hierarchical interpolation** (few forecast coefficients upsampled via temporal interpolation).
 - Contributions: multi-rate sampling layers; interpolation-based output synthesis (architecture-agnostic); hierarchically synchronized block specialization into frequency bands; SOTA on six large-scale long-horizon benchmarks — average accuracy improvement of ~20%/14-16% over latest Transformer architectures while reducing compute time by an order of magnitude (~50×).
 
 ## 🧠 Methodology & Model Architecture
@@ -49,12 +49,12 @@ Appendix interpolators (Eqs. 10–13d): nearest-neighbor $\hat{y}_\tau=\theta[t^
 
 ## 📊 Dataset & Input Features
 All datasets publicly available (Table A1); normalized by train mean/std; univariate inputs (own history only); splits 70/10/20 (ETTm2 val 20%), rolling-window test evaluation:
-- **[[ETTm2]]**: electricity transformer temperature, region of a province in China; oil temp + load variants; Jul 2016–Jul 2018; 15-min; 7 series; 403,200 obs (80,640 test); horizons {96,192,336,720}.
-- **[[Exchange_Rate]]**: daily exchange rates of 8 countries vs USD (Australia, UK, Canada, Switzerland, China, Japan, New Zealand, Singapore), 1990–2016; 8 series; 60,704 obs.
-- **[[ECL_Dataset]]**: electricity consumption (kWh) of 321 customers, 2012–2014; 15-min aggregated to hourly; 321 series; 8,443,584 obs.
-- **[[TrafficL_PeMS]]**: San Francisco Bay Area highway hourly occupancy rates, 862 sensors, California DOT (Caltrans/PeMS), Jan 2015–Dec 2016; 862 series; 15,122,928 obs.
-- **[[Weather_Jena]]**: 21 meteorological measures every 10 min, Weather Station of the Max Planck Biogeochemistry Institute, Jena, Germany; year 2020; 21 series; 1,106,595 obs.
-- **[[ILI_CDC]]**: weekly influenza-like illness patient ratio, US Centers for Disease Control and Prevention, 2002–2021; 7 series; 6,762 obs; horizons {24,36,48,60}.
+- **[[ETT]]**: electricity transformer temperature, region of a province in China; oil temp + load variants; Jul 2016–Jul 2018; 15-min; 7 series; 403,200 obs (80,640 test); horizons {96,192,336,720}.
+- **[[Exchange]]**: daily exchange rates of 8 countries vs USD (Australia, UK, Canada, Switzerland, China, Japan, New Zealand, Singapore), 1990–2016; 8 series; 60,704 obs.
+- **[[Electricity_ECL]]**: electricity consumption (kWh) of 321 customers, 2012–2014; 15-min aggregated to hourly; 321 series; 8,443,584 obs.
+- **[[Traffic]]**: San Francisco Bay Area highway hourly occupancy rates, 862 sensors, California DOT (Caltrans/PeMS), Jan 2015–Dec 2016; 862 series; 15,122,928 obs.
+- **[[Weather]]**: 21 meteorological measures every 10 min, Weather Station of the Max Planck Biogeochemistry Institute, Jena, Germany; year 2020; 21 series; 1,106,595 obs.
+- **[[ILI]]**: weekly influenza-like illness patient ratio, US Centers for Disease Control and Prevention, 2002–2021; 7 series; 6,762 obs; horizons {24,36,48,60}.
 - Code/data availability: official implementation https://github.com/Nixtla/neuralforecast ; paper preprint https://arxiv.org/abs/2201.12886 . No other dataset URLs given in text (datasets follow Autoformer/Informer releases).
 
 ## 📈 Performance & Results
@@ -87,7 +87,7 @@ Multivariate, averaged over 8 runs (Table 1):
 - [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]]
 - [[2021_Zhou_Informer_Beyond_Efficient_Transformer]]
 - [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]
-- [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]]
+- [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
 - [[2021_Lim_TFT_Temporal_Fusion_Transformers]]
 - [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]]
 - [[2022_Kim_RevIN_Reversible_Instance_Normalization]]

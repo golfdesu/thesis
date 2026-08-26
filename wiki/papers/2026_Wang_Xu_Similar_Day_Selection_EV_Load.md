@@ -5,10 +5,10 @@ authors: [Xu Wang, Zihan Wang, Fei Ma, Rongjian Dai, Xiaoteng Zhou]
 year: 2026
 journal_conference: "Applied Energy"
 doi_url: "https://doi.org/10.1016/j.apenergy.2026.127731"
-models_used: ["[[XGBoost]]", "[[NSGA-II]]", "[[Random_Forest]]", "[[SVR]]", "[[LSTM]]", "[[LightGBM]]", "[[ShapeDTW]]", "[[Multi_Dimensional_DTW]]", "[[MAD_Similarity]]"]
+models_used: ["[[XGBoost]]", "[[NSGA-II]]", "[[Random_Forest]]", "[[SVR]]", "[[LSTM]]", "[[LightGBM]]", "[[ShapeDTW]]", "[[Multi_Dimensional_DTW]]", "[[Adjacency_Matrix]]"]
 datasets_used: ["[[UrbanEV_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Air_Pressure]]", "[[Sea_Level_Pressure]]", "[[Relative_Humidity]]", "[[Rainfall_Intensity]]", "[[Dew_Point]]", "[[Weekend_Indicator]]", "[[Workday_Indicator]]", "[[Holiday_Flag]]", "[[POI_Functional_Entropy]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Air_Pressure]]", "[[Sea_Level_Pressure]]", "[[Humidity]]", "[[Rainfall_Intensity]]", "[[Dew_Point]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Holiday_Flag]]", "[[POI_Functional_Entropy]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[Precision]]", "[[Recall]]", "[[F1_Score]]", "[[AUC]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -18,7 +18,7 @@ tags: [paper, ev-load-forecasting, ml]
 > Xu Wang, Zihan Wang, Fei Ma, Rongjian Dai (corresponding, Shandong University, School of Qilu Transportation), Xiaoteng Zhou (Shandong Hi-Speed Group). Applied Energy 413 (2026) 127731. Received 6 Jan 2026; revised 9 Mar 2026; accepted 14 Mar 2026; online 1 Apr 2026. DOI: https://doi.org/10.1016/j.apenergy.2026.127731
 
 ## 🎯 Main Objective & Contribution
-Improve [[Day_Ahead]] [[EV charging load forecasting]] by optimizing the **training-data structure** rather than the forecaster itself: select a set of historical "similar days" whose load patterns match the target day, then feed them into standard forecasting models. Key contributions:
+Improve [[Day_Ahead_Forecasting]] [[EV charging load forecasting]] by optimizing the **training-data structure** rather than the forecaster itself: select a set of historical "similar days" whose load patterns match the target day, then feed them into standard forecasting models. Key contributions:
 1. **Hybrid similarity engine** combining [[ShapeDTW]] (load curves), [[Multi_Dimensional_DTW]] (weather vectors), and MAD (contextual labels) — morphological alignment that avoids "pseudo-similar" days caused by point-to-point distance sensitivity to temporal shifts.
 2. **Leakage-aware XGBoost surrogate bridge**: an offline-to-online pattern-matching model that maps observable weather/context drivers to latent load-shape similarity so the high-fidelity load-similarity signal can be used **without target-day load** (zero-leakage inference).
 3. **Localized adaptive mechanism via [[NSGA-II]]**: zone-specific feature weights and optimal similar-day set size per traffic zone (spatial heterogeneity of feature importance).

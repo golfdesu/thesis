@@ -6,10 +6,10 @@ year: 2025
 journal_conference: "IEEE Transactions on Industry Applications, vol. 61, no. 1, pp. 1329-1340"
 doi_url: "https://doi.org/10.1109/TIA.2023.3344544"
 models_used: ["[[LSTM]]", "[[PICNN]]", "[[DCL]]", "[[DeepAR]]", "[[DeepVAR]]", "[[MLP]]"]
-datasets_used: ["[[ACN_Dataset]]"]
-features_used: ["[[EV_Charging_Demand]]", "[[Air_Temperature]]", "[[Dew_Point]]", "[[Precipitation]]", "[[Calendar_Features]]", "[[Holiday_Indicator]]", "[[Weekday_Indicator]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[MAE]]", "[[RMSE]]", "[[MASE]]", "[[Quantile_Loss]]", "[[Winkler_Score]]", "[[Energy_Score]]"]
+datasets_used: ["[[Caltech_ACN]]"]
+features_used: ["[[EV_Charging_Demand]]", "[[Temperature]]", "[[Dew_Point]]", "[[Precipitation]]", "[[Calendar_Features]]", "[[Holiday_Indicator]]", "[[Calendar_Features]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[MAE]]", "[[RMSE]]", "[[MASE]]", "[[Pinball_Loss]]", "[[Winkler_Score]]", "[[Energy_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -46,7 +46,7 @@ $$L_{ES} = \mathbb{E}_{w_1,w_2\in\Omega}\left(-\frac{1}{2}\|w_1-w_2\|_2^\beta + 
 - **Hyperparameters**: Adam lr 0.001, batch 64, max 200 epochs, context length T = 7×24 (168 h); LSTM 2 layers ×100 hidden; PICNN 2 layers ×40 hidden, activation per layer ReLU then Gaussian softplus (best combo in ablation, Table VII); MLP baseline 2–4 layers ×100–250 neurons trained with summed pinball loss over α ∈ {0.05,...,0.95}; DeepAR/DeepVAR 2 LSTM layers ×100. Hardware: 36-core 3 GHz server, RTX 3080, Python 3.8, PyTorch 1.13, Cvxpylayers 0.1.5, CUDA 11.7.
 
 ## 📊 Dataset & Input Features
-- **[[ACN_Dataset]]** (Lee, Li & Low, "ACN-Data: Analysis and applications of an open EV charging dataset", ACM e-Energy 2019): three California EVCSs — **Caltech**, **JPL** (NASA Jet Propulsion Laboratory), **Office001** (Silicon Valley office building). Records delivered energy (kWh) per anonymous charging session plus start/end time and charging-pile ID; aggregated to **hourly charging demand** per station + Total (3 bottom series + 1 top).
+- **[[Caltech_ACN]]** (Lee, Li & Low, "ACN-Data: Analysis and applications of an open EV charging dataset", ACM e-Energy 2019): three California EVCSs — **Caltech**, **JPL** (NASA Jet Propulsion Laboratory), **Office001** (Silicon Valley office building). Records delivered energy (kWh) per anonymous charging session plus start/end time and charging-pile ID; aggregated to **hourly charging demand** per station + Total (3 bottom series + 1 top).
 - Period: **Jan 15, 2019 – Mar 15, 2020** (14 months, pre-COVID to avoid lockdown distortion). Splits: first 12 months training / next month validation / final month test; DCL further splits validation 80/20.
 - Weather covariates from Meteostat API (NOAA open data): https://github.com/meteostat/meteostat-python
 - Code references: PICNN structure from Convex Potential Flows implementation https://github.com/CW-Huang/CP-Flow ; DCL https://github.com/cvxgrp/cvxpylayers
