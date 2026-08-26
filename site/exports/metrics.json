@@ -1,0 +1,771 @@
+[
+  {
+    "id": "Absolute_Error",
+    "name": "Absolute Error",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "absolute_error",
+      "point-forecast"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "metrics/Absolute_Error.html"
+  },
+  {
+    "id": "Absolute_Error_kW",
+    "name": "Absolute Error kW",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "absolute_error_kw",
+      "point-forecast"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Absolute_Error_kW.html"
+  },
+  {
+    "id": "Accuracy",
+    "name": "Accuracy",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "accuracy"
+    ],
+    "inbound_link_count": 11,
+    "rel_url": "metrics/Accuracy.html"
+  },
+  {
+    "id": "ACE",
+    "name": "ACE (Average Coverage Error)",
+    "category": "probabilistic-interval-metric",
+    "tags": [
+      "metric",
+      "ace",
+      "coverage",
+      "probabilistic-forecast"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "metrics/ACE.html"
+  },
+  {
+    "id": "ACF_Deviation",
+    "name": "ACF Deviation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "acf_deviation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/ACF_Deviation.html"
+  },
+  {
+    "id": "AUC",
+    "name": "AUC",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "auc"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "metrics/AUC.html"
+  },
+  {
+    "id": "Auto_Correlation",
+    "name": "Auto Correlation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "auto_correlation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Auto_Correlation.html"
+  },
+  {
+    "id": "Autocorrelation_Time_Delay",
+    "name": "Autocorrelation Time Delay",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "autocorrelation_time_delay"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Autocorrelation_Time_Delay.html"
+  },
+  {
+    "id": "Average_Precision",
+    "name": "Average Precision",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "average_precision"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Average_Precision.html"
+  },
+  {
+    "id": "BLEU",
+    "name": "BLEU (Bilingual Evaluation Understudy)",
+    "category": "language-model-metric",
+    "tags": [
+      "metric",
+      "bleu",
+      "generation-quality"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/BLEU.html"
+  },
+  {
+    "id": "Classification_Error",
+    "name": "Classification Error",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "classification_error"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Classification_Error.html"
+  },
+  {
+    "id": "Congestion_Rate",
+    "name": "Congestion Rate",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "congestion_rate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Congestion_Rate.html"
+  },
+  {
+    "id": "CRPS",
+    "name": "Continuous Ranked Probability Score (CRPS)",
+    "category": "probabilistic-forecast-metric",
+    "tags": [
+      "metric",
+      "crps",
+      "probabilistic-forecast",
+      "distributional"
+    ],
+    "inbound_link_count": 13,
+    "rel_url": "metrics/CRPS.html"
+  },
+  {
+    "id": "Cruise_Time_Ratio",
+    "name": "Cruise Time Ratio",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "cruise_time_ratio"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Cruise_Time_Ratio.html"
+  },
+  {
+    "id": "Daily_Travel_Distance",
+    "name": "Daily Travel Distance",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "daily_travel_distance"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Daily_Travel_Distance.html"
+  },
+  {
+    "id": "DCL",
+    "name": "DCL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "dcl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/DCL.html"
+  },
+  {
+    "id": "Distance_Graph",
+    "name": "Distance Graph",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "distance_graph"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Distance_Graph.html"
+  },
+  {
+    "id": "Energy_Score",
+    "name": "Energy Score",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "energy_score"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Energy_Score.html"
+  },
+  {
+    "id": "EV_Arrival_Rate",
+    "name": "EV Arrival Rate",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "ev_arrival_rate"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "metrics/EV_Arrival_Rate.html"
+  },
+  {
+    "id": "F1_Score",
+    "name": "F1 Score",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "f1_score"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "metrics/F1_Score.html"
+  },
+  {
+    "id": "H1_Error",
+    "name": "H1 Error",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "h1_error"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/H1_Error.html"
+  },
+  {
+    "id": "Hausdorff_Distance",
+    "name": "Hausdorff Distance",
+    "category": "geometric-distance-metric",
+    "tags": [
+      "metric",
+      "hausdorff_distance",
+      "set-distance"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Hausdorff_Distance.html"
+  },
+  {
+    "id": "Interval_Score",
+    "name": "Interval Score",
+    "category": "probabilistic-forecast-metric",
+    "tags": [
+      "metric",
+      "interval-score",
+      "winkler",
+      "prediction-interval",
+      "probabilistic-forecast"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "metrics/Interval_Score.html"
+  },
+  {
+    "id": "Interval_Sharpness",
+    "name": "Interval Sharpness",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "interval_sharpness"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "metrics/Interval_Sharpness.html"
+  },
+  {
+    "id": "Interval_Size",
+    "name": "Interval Size",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "interval_size"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Interval_Size.html"
+  },
+  {
+    "id": "Joint_Coverage",
+    "name": "Joint Coverage",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "joint_coverage"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Joint_Coverage.html"
+  },
+  {
+    "id": "L2_Error",
+    "name": "L2 Error",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "l2_error"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/L2_Error.html"
+  },
+  {
+    "id": "Log_Likelihood",
+    "name": "Log Likelihood",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "log_likelihood"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Log_Likelihood.html"
+  },
+  {
+    "id": "Log_Marginal_Likelihood",
+    "name": "Log Marginal Likelihood",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "log_marginal_likelihood"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Log_Marginal_Likelihood.html"
+  },
+  {
+    "id": "MAE",
+    "name": "Mean Absolute Error (MAE)",
+    "category": "Evaluation Metric / Loss Function",
+    "tags": [
+      "metric",
+      "mae",
+      "loss-function"
+    ],
+    "inbound_link_count": 89,
+    "rel_url": "metrics/MAE.html"
+  },
+  {
+    "id": "MAPE",
+    "name": "Mean Absolute Percentage Error (MAPE)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "MAPE",
+      "point-forecast",
+      "percentage-error"
+    ],
+    "inbound_link_count": 36,
+    "rel_url": "metrics/MAPE.html"
+  },
+  {
+    "id": "MASE",
+    "name": "Mean Absolute Scaled Error (MASE)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "mase"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "metrics/MASE.html"
+  },
+  {
+    "id": "MPIW",
+    "name": "Mean Prediction Interval Width (MPIW)",
+    "category": "probabilistic-forecast-metric",
+    "tags": [
+      "metric",
+      "mpiw",
+      "sharpness",
+      "prediction-interval",
+      "probabilistic-forecast"
+    ],
+    "inbound_link_count": 7,
+    "rel_url": "metrics/MPIW.html"
+  },
+  {
+    "id": "MSE",
+    "name": "Mean Squared Error (MSE)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "mse"
+    ],
+    "inbound_link_count": 42,
+    "rel_url": "metrics/MSE.html"
+  },
+  {
+    "id": "MSPE",
+    "name": "MSPE (Mean Squared Percentage Error)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "mspe",
+      "percentage-error",
+      "point-forecast"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/MSPE.html"
+  },
+  {
+    "id": "Multivariate_Correlation_Map",
+    "name": "Multivariate Correlation Map",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "multivariate_correlation_map"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Multivariate_Correlation_Map.html"
+  },
+  {
+    "id": "ND",
+    "name": "ND (Normalized Deviation)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "nd",
+      "normalized-deviation",
+      "point-forecast"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "metrics/ND.html"
+  },
+  {
+    "id": "NLL",
+    "name": "NLL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "nll"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "metrics/NLL.html"
+  },
+  {
+    "id": "NMAE",
+    "name": "NMAE (Normalized Mean Absolute Error)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "nmae",
+      "normalized-error",
+      "point-forecast"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "metrics/NMAE.html"
+  },
+  {
+    "id": "NPIW",
+    "name": "NPIW",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "npiw"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/NPIW.html"
+  },
+  {
+    "id": "NRMSE",
+    "name": "Normalized RMSE (NRMSE)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "nrmse",
+      "normalized-error",
+      "point-forecast"
+    ],
+    "inbound_link_count": 7,
+    "rel_url": "metrics/NRMSE.html"
+  },
+  {
+    "id": "OWA",
+    "name": "OWA (Overall Weighted Average)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "owa",
+      "benchmark",
+      "point-forecast"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "metrics/OWA.html"
+  },
+  {
+    "id": "Pearson_Correlation",
+    "name": "Pearson Correlation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "pearson_correlation"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "metrics/Pearson_Correlation.html"
+  },
+  {
+    "id": "Pearson_Correlation_Coefficient",
+    "name": "Pearson Correlation Coefficient",
+    "category": "association-metric",
+    "tags": [
+      "metric",
+      "pearson_correlation_coefficient"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "metrics/Pearson_Correlation_Coefficient.html"
+  },
+  {
+    "id": "Perplexity",
+    "name": "Perplexity",
+    "category": "language-model-metric",
+    "tags": [
+      "metric",
+      "perplexity",
+      "language-modeling"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "metrics/Perplexity.html"
+  },
+  {
+    "id": "PICP",
+    "name": "Prediction Interval Coverage Probability (PICP)",
+    "category": "probabilistic-forecast-metric",
+    "tags": [
+      "metric",
+      "picp",
+      "coverage",
+      "prediction-interval",
+      "probabilistic-forecast"
+    ],
+    "inbound_link_count": 21,
+    "rel_url": "metrics/PICP.html"
+  },
+  {
+    "id": "Pile_Utilization_Rate",
+    "name": "Pile Utilization Rate",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "pile_utilization_rate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Pile_Utilization_Rate.html"
+  },
+  {
+    "id": "Pinball_Loss",
+    "name": "Pinball Loss (Quantile Loss)",
+    "category": "probabilistic-forecast-metric",
+    "tags": [
+      "metric",
+      "pinball-loss",
+      "quantile-loss",
+      "probabilistic-forecast"
+    ],
+    "inbound_link_count": 25,
+    "rel_url": "metrics/Pinball_Loss.html"
+  },
+  {
+    "id": "Precision",
+    "name": "Precision",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "precision"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "metrics/Precision.html"
+  },
+  {
+    "id": "Prediction_Intervals",
+    "name": "Prediction Intervals",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "prediction_intervals"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Prediction_Intervals.html"
+  },
+  {
+    "id": "Qualified_Rate",
+    "name": "Qualified Rate",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "qualified_rate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Qualified_Rate.html"
+  },
+  {
+    "id": "R_squared",
+    "name": "R-squared (Coefficient of Determination, R²)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "r-squared",
+      "r2",
+      "goodness-of-fit",
+      "point-forecast"
+    ],
+    "inbound_link_count": 20,
+    "rel_url": "metrics/R_squared.html"
+  },
+  {
+    "id": "RAE",
+    "name": "RAE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "rae"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "metrics/RAE.html"
+  },
+  {
+    "id": "Recall",
+    "name": "Recall",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "recall"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "metrics/Recall.html"
+  },
+  {
+    "id": "Relative_Accuracy",
+    "name": "Relative Accuracy",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "relative_accuracy"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Relative_Accuracy.html"
+  },
+  {
+    "id": "RMSE",
+    "name": "Root Mean Squared Error (RMSE)",
+    "category": "point-forecast-metric",
+    "tags": [
+      "metric",
+      "RMSE",
+      "point-forecast",
+      "error"
+    ],
+    "inbound_link_count": 64,
+    "rel_url": "metrics/RMSE.html"
+  },
+  {
+    "id": "RPS",
+    "name": "RPS",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "rps"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/RPS.html"
+  },
+  {
+    "id": "Score_Matching",
+    "name": "Score Matching",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "score_matching"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Score_Matching.html"
+  },
+  {
+    "id": "Signal_to_Noise_Ratio",
+    "name": "Signal to Noise Ratio (SNR)",
+    "category": "signal-quality-metric",
+    "tags": [
+      "metric",
+      "signal_to_noise_ratio",
+      "snr"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Signal_to_Noise_Ratio.html"
+  },
+  {
+    "id": "sMAPE",
+    "name": "sMAPE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "smape"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "metrics/sMAPE.html"
+  },
+  {
+    "id": "Spearman_Correlation",
+    "name": "Spearman Correlation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "spearman_correlation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Spearman_Correlation.html"
+  },
+  {
+    "id": "Standard_Deviation_Errors",
+    "name": "Standard Deviation Errors",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "standard_deviation_errors"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Standard_Deviation_Errors.html"
+  },
+  {
+    "id": "Unbalance_Deviation",
+    "name": "Unbalance Deviation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "unbalance_deviation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Unbalance_Deviation.html"
+  },
+  {
+    "id": "V2G_SVE",
+    "name": "V2G Scheduling Value Error (V2G-SVE)",
+    "category": "Evaluation Metric / Forecast Value",
+    "tags": [
+      "metric",
+      "v2g-sve",
+      "forecast-value",
+      "v2g-scheduling"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "metrics/V2G_SVE.html"
+  },
+  {
+    "id": "Winkler_Score",
+    "name": "Winkler Score",
+    "category": "probabilistic-forecast-metric",
+    "tags": [
+      "metric",
+      "winkler-score",
+      "prediction-interval",
+      "probabilistic-forecast"
+    ],
+    "inbound_link_count": 11,
+    "rel_url": "metrics/Winkler_Score.html"
+  },
+  {
+    "id": "Zero_Crossing_Rate",
+    "name": "Zero Crossing Rate",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "metric",
+      "zero_crossing_rate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "metrics/Zero_Crossing_Rate.html"
+  }
+]

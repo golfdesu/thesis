@@ -1,0 +1,1803 @@
+[
+  {
+    "id": "AEL_CNYS_America_Electric_Load",
+    "name": "AEL CNYS America Electric Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "ael_cnys_america_electric_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/AEL_CNYS_America_Electric_Load.html"
+  },
+  {
+    "id": "AEL_NNYS_America_Electric_Load",
+    "name": "AEL NNYS America Electric Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "ael_nnys_america_electric_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/AEL_NNYS_America_Electric_Load.html"
+  },
+  {
+    "id": "AEL_WNYS_America_Electric_Load",
+    "name": "AEL WNYS America Electric Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "ael_wnys_america_electric_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/AEL_WNYS_America_Electric_Load.html"
+  },
+  {
+    "id": "AIR-BJ",
+    "name": "AIR BJ",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "air-bj"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/AIR-BJ.html"
+  },
+  {
+    "id": "AIR-GZ",
+    "name": "AIR GZ",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "air-gz"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/AIR-GZ.html"
+  },
+  {
+    "id": "Amazon_EC_Dataset",
+    "name": "Amazon EC Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "amazon_ec_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Amazon_EC_Dataset.html"
+  },
+  {
+    "id": "Anderson_Localization_Synthetic_Data",
+    "name": "Anderson Localization Synthetic Data",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "anderson_localization_synthetic_data"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Anderson_Localization_Synthetic_Data.html"
+  },
+  {
+    "id": "Apple_Mobility_Index",
+    "name": "Apple Mobility Index",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "apple_mobility_index"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Apple_Mobility_Index.html"
+  },
+  {
+    "id": "Appliance_Level_Load",
+    "name": "Appliance Level Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "appliance_level_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Appliance_Level_Load.html"
+  },
+  {
+    "id": "ARC",
+    "name": "ARC",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "arc"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/ARC.html"
+  },
+  {
+    "id": "Ausgrid_Zone_Substation_Dataset",
+    "name": "Ausgrid Zone Substation Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "ausgrid_zone_substation_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Ausgrid_Zone_Substation_Dataset.html"
+  },
+  {
+    "id": "Beijing_Fast_Charging",
+    "name": "Beijing Fast Charging Station Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Beijing_Fast_Charging.html"
+  },
+  {
+    "id": "Beijing_PM25_Air_Quality",
+    "name": "Beijing PM25 Air Quality",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "beijing_pm25_air_quality"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Beijing_PM25_Air_Quality.html"
+  },
+  {
+    "id": "BerkleyParser_Corpus",
+    "name": "BerkleyParser Corpus",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "berkleyparser_corpus"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/BerkleyParser_Corpus.html"
+  },
+  {
+    "id": "Boulder_Colorado",
+    "name": "Boulder Colorado EV Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "public-charging",
+      "level-2",
+      "USA"
+    ],
+    "inbound_link_count": 16,
+    "rel_url": "datasets/Boulder_Colorado.html"
+  },
+  {
+    "id": "Bramblemet_Sensor_Network",
+    "name": "Bramblemet Sensor Network",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "bramblemet_sensor_network"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Bramblemet_Sensor_Network.html"
+  },
+  {
+    "id": "CAISO",
+    "name": "CAISO Load Data (Today's Outlook)",
+    "category": "",
+    "tags": [
+      "dataset",
+      "power-systems",
+      "load-forecasting",
+      "open-data"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "datasets/CAISO.html"
+  },
+  {
+    "id": "California_Grid",
+    "name": "California Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "california_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/California_Grid.html"
+  },
+  {
+    "id": "Caltech_ACN",
+    "name": "Caltech Adaptive Charging Network (ACN-Data)",
+    "category": "",
+    "tags": [
+      "dataset",
+      "acn",
+      "open-source"
+    ],
+    "inbound_link_count": 14,
+    "rel_url": "datasets/Caltech_ACN.html"
+  },
+  {
+    "id": "CEL_NW_China_Electric_Load",
+    "name": "CEL NW China Electric Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "cel_nw_china_electric_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/CEL_NW_China_Electric_Load.html"
+  },
+  {
+    "id": "CEL_SE_China_Electric_Load",
+    "name": "CEL SE China Electric Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "cel_se_china_electric_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/CEL_SE_China_Electric_Load.html"
+  },
+  {
+    "id": "CICEVSE2024",
+    "name": "CICEVSE2024 EV Charging Station Security Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/CICEVSE2024.html"
+  },
+  {
+    "id": "CIFAR-10",
+    "name": "CIFAR 10",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "cifar-10"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/CIFAR-10.html"
+  },
+  {
+    "id": "COVID-19_German_Districts",
+    "name": "COVID 19 German Districts",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "covid-19_german_districts"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/COVID-19_German_Districts.html"
+  },
+  {
+    "id": "COVID19_Dashboard",
+    "name": "COVID19 Dashboard",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "covid19_dashboard"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/COVID19_Dashboard.html"
+  },
+  {
+    "id": "COVID19_UK_Dataset",
+    "name": "COVID19 UK Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "covid19_uk_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/COVID19_UK_Dataset.html"
+  },
+  {
+    "id": "COVID19_US_City_Load",
+    "name": "COVID19 US City Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "covid19_us_city_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/COVID19_US_City_Load.html"
+  },
+  {
+    "id": "CrowdCharge_EV",
+    "name": "CrowdCharge / UK Power Networks EV Trial Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "crowdcharge",
+      "uk-power-networks"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/CrowdCharge_EV.html"
+  },
+  {
+    "id": "Cryptocurrency_Dataset",
+    "name": "Cryptocurrency Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "cryptocurrency_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Cryptocurrency_Dataset.html"
+  },
+  {
+    "id": "Dallas_Port_EV",
+    "name": "Dallas Port EV Logistics Charging Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/Dallas_Port_EV.html"
+  },
+  {
+    "id": "DiffPLF_Dataset",
+    "name": "DiffPLF California City EV Charging Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "diffplf",
+      "diffusion-models",
+      "kaggle"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/DiffPLF_Dataset.html"
+  },
+  {
+    "id": "Dow_Jones_1972_1975",
+    "name": "Dow Jones 1972 1975",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dow_jones_1972_1975"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Dow_Jones_1972_1975.html"
+  },
+  {
+    "id": "Dundee_EV",
+    "name": "Dundee City Council Public EV Charging Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "dundee",
+      "open-data",
+      "uk-ev"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "datasets/Dundee_EV.html"
+  },
+  {
+    "id": "ElaadNL",
+    "name": "ElaadNL Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "public-charging",
+      "netherlands",
+      "hierarchical",
+      "elaadnl"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "datasets/ElaadNL.html"
+  },
+  {
+    "id": "Electricity_ECL",
+    "name": "Electricity (ECL) Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "electricity_ecl"
+    ],
+    "inbound_link_count": 20,
+    "rel_url": "datasets/Electricity_ECL.html"
+  },
+  {
+    "id": "ELIA_Belgian_Grid",
+    "name": "ELIA Belgian Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "elia_belgian_grid"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "datasets/ELIA_Belgian_Grid.html"
+  },
+  {
+    "id": "Embedded_Reber_Grammar",
+    "name": "Embedded Reber Grammar",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "embedded_reber_grammar"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Embedded_Reber_Grammar.html"
+  },
+  {
+    "id": "ETT",
+    "name": "Electricity Transformer Temperature Dataset",
+    "category": "",
+    "tags": [],
+    "inbound_link_count": 14,
+    "rel_url": "datasets/ETT.html"
+  },
+  {
+    "id": "EV_Intelligent_Port_Logistics_Dataset",
+    "name": "EV Intelligent Port Logistics Dataset",
+    "category": "Alias (duplicate of Dallas_Port_EV)",
+    "tags": [
+      "dataset",
+      "duplicate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/EV_Intelligent_Port_Logistics_Dataset.html"
+  },
+  {
+    "id": "Exchange",
+    "name": "Exchange Rate Dataset",
+    "category": "",
+    "tags": [],
+    "inbound_link_count": 7,
+    "rel_url": "datasets/Exchange.html"
+  },
+  {
+    "id": "Favorita_Retail",
+    "name": "Favorita Retail",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "favorita_retail"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Favorita_Retail.html"
+  },
+  {
+    "id": "FEDQR_Dataset",
+    "name": "FEDQR Feature-Enhanced EV Charging Station Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "feature-enhanced",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/FEDQR_Dataset.html"
+  },
+  {
+    "id": "Feeder_Electrical_Load",
+    "name": "Feeder Electrical Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "feeder_electrical_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Feeder_Electrical_Load.html"
+  },
+  {
+    "id": "Feynman_Dataset",
+    "name": "Feynman Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "feynman_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Feynman_Dataset.html"
+  },
+  {
+    "id": "Florida_CBG_Smart_Meter",
+    "name": "Florida Census Block Group Smart Meter Data",
+    "category": "",
+    "tags": [
+      "dataset",
+      "smart-meter",
+      "energy-consumption",
+      "restricted-data"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "datasets/Florida_CBG_Smart_Meter.html"
+  },
+  {
+    "id": "Forex_Dataset",
+    "name": "Forex Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "forex_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Forex_Dataset.html"
+  },
+  {
+    "id": "Fujian_Province_EV_Charging_Station_Data",
+    "name": "Fujian Province EV Charging Station Data",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Fujian_Province_EV_Charging_Station_Data.html"
+  },
+  {
+    "id": "GBT_32960_Telemetry_Dataset",
+    "name": "GBT 32960 Telemetry Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "gbt_32960_telemetry_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/GBT_32960_Telemetry_Dataset.html"
+  },
+  {
+    "id": "GEFCom2014",
+    "name": "GEFCom2014",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gefcom2014"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/GEFCom2014.html"
+  },
+  {
+    "id": "Google_Mobility_Index",
+    "name": "Google Mobility Index",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "google_mobility_index"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Google_Mobility_Index.html"
+  },
+  {
+    "id": "Greek_Power_System",
+    "name": "Greek Power System",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "greek_power_system"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Greek_Power_System.html"
+  },
+  {
+    "id": "Greenflux",
+    "name": "Greenflux",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "greenflux"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Greenflux.html"
+  },
+  {
+    "id": "HD_189733_Photometry",
+    "name": "HD 189733 Photometry",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "hd_189733_photometry"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/HD_189733_Photometry.html"
+  },
+  {
+    "id": "HellaSwag",
+    "name": "HellaSwag",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hellaswag"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/HellaSwag.html"
+  },
+  {
+    "id": "Historical_Installation_Events",
+    "name": "Historical Installation Events",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "historical_installation_events"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Historical_Installation_Events.html"
+  },
+  {
+    "id": "Hong_Kong_EV_Charging_Dataset",
+    "name": "Hong Kong EV Charging Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "hong_kong_ev_charging_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Hong_Kong_EV_Charging_Dataset.html"
+  },
+  {
+    "id": "Hospital_Semi_Public_Charging_Site_Dataset",
+    "name": "Hospital Semi Public Charging Site Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "hospital_semi_public_charging_site_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Hospital_Semi_Public_Charging_Site_Dataset.html"
+  },
+  {
+    "id": "Hourly_EV_Load",
+    "name": "Norway Hourly EV Charging Load Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "hourly-ev",
+      "time-series"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Hourly_EV_Load.html"
+  },
+  {
+    "id": "Household_Electricity_Consumption",
+    "name": "Household Electricity Consumption",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "household_electricity_consumption"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Household_Electricity_Consumption.html"
+  },
+  {
+    "id": "IDEAL_Dataset",
+    "name": "IDEAL Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "ideal_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/IDEAL_Dataset.html"
+  },
+  {
+    "id": "ILI",
+    "name": "Influenza-like Illness Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ltsf-benchmark"
+    ],
+    "inbound_link_count": 7,
+    "rel_url": "datasets/ILI.html"
+  },
+  {
+    "id": "IMDB_Movie_Reviews",
+    "name": "IMDB Movie Reviews",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "imdb_movie_reviews"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/IMDB_Movie_Reviews.html"
+  },
+  {
+    "id": "Indianapolis_DER_Adoption_Dataset",
+    "name": "Indianapolis DER Adoption Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "indianapolis_der_adoption_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Indianapolis_DER_Adoption_Dataset.html"
+  },
+  {
+    "id": "ISO_New_England_Grid",
+    "name": "ISO New England Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "iso_new_england_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/ISO_New_England_Grid.html"
+  },
+  {
+    "id": "Jining_Mall_EV_Charging_Station",
+    "name": "Jining Mall EV Charging Station",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "jining_mall_ev_charging_station"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Jining_Mall_EV_Charging_Station.html"
+  },
+  {
+    "id": "JSB_Chorales",
+    "name": "JSB Chorales",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "jsb_chorales"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/JSB_Chorales.html"
+  },
+  {
+    "id": "Knot_Theory_Dataset",
+    "name": "Knot Theory Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "knot_theory_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Knot_Theory_Dataset.html"
+  },
+  {
+    "id": "LA_Charging_Station_Dataset",
+    "name": "LA Charging Station Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "la_charging_station_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/LA_Charging_Station_Dataset.html"
+  },
+  {
+    "id": "LAMBADA",
+    "name": "LAMBADA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lambada"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/LAMBADA.html"
+  },
+  {
+    "id": "Liuyue_Charging_Station_Dataset",
+    "name": "Liuyue Charging Station Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "liuyue_charging_station_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Liuyue_Charging_Station_Dataset.html"
+  },
+  {
+    "id": "Lower_Saxony_Dataset",
+    "name": "Lower Saxony Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "lower_saxony_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Lower_Saxony_Dataset.html"
+  },
+  {
+    "id": "M3",
+    "name": "M3 Competition Dataset",
+    "category": "",
+    "tags": [],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/M3.html"
+  },
+  {
+    "id": "M4",
+    "name": "M4 Competition Dataset",
+    "category": "",
+    "tags": [],
+    "inbound_link_count": 5,
+    "rel_url": "datasets/M4.html"
+  },
+  {
+    "id": "M5_Dataset",
+    "name": "M5 Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "m5_dataset"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/M5_Dataset.html"
+  },
+  {
+    "id": "Market_Alipay",
+    "name": "Market Alipay",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "market_alipay"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Market_Alipay.html"
+  },
+  {
+    "id": "Market_Price",
+    "name": "Market Price",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "market_price"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Market_Price.html"
+  },
+  {
+    "id": "MIMIC-III",
+    "name": "MIMIC III",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "mimic-iii"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/MIMIC-III.html"
+  },
+  {
+    "id": "MISO_Market_Dataset",
+    "name": "MISO Market Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "miso_market_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/MISO_Market_Dataset.html"
+  },
+  {
+    "id": "MNIST",
+    "name": "MNIST",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "mnist"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/MNIST.html"
+  },
+  {
+    "id": "MSL",
+    "name": "MSL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "msl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/MSL.html"
+  },
+  {
+    "id": "MuJoCo_Ant",
+    "name": "MuJoCo Ant",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "mujoco_ant"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/MuJoCo_Ant.html"
+  },
+  {
+    "id": "MuJoCo_Half_Cheetah",
+    "name": "MuJoCo Half Cheetah",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "mujoco_half_cheetah"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/MuJoCo_Half_Cheetah.html"
+  },
+  {
+    "id": "NASDAQ100_Stock_Price_Dataset",
+    "name": "NASDAQ100 Stock Price Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nasdaq100_stock_price_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/NASDAQ100_Stock_Price_Dataset.html"
+  },
+  {
+    "id": "Nasdaq_CNNpred",
+    "name": "Nasdaq CNNpred",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nasdaq_cnnpred"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Nasdaq_CNNpred.html"
+  },
+  {
+    "id": "New_York_Grid",
+    "name": "New York Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "new_york_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/New_York_Grid.html"
+  },
+  {
+    "id": "NHTS_2009",
+    "name": "NHTS 2009 (US National Household Travel Survey)",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "datasets/NHTS_2009.html"
+  },
+  {
+    "id": "Nile_River_Water_Levels",
+    "name": "Nile River Water Levels",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nile_river_water_levels"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Nile_River_Water_Levels.html"
+  },
+  {
+    "id": "NMMV_Platform_Data",
+    "name": "NMMV Platform Data",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nmmv_platform_data"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/NMMV_Platform_Data.html"
+  },
+  {
+    "id": "Norway_Residential_EV_Charging_Dataset",
+    "name": "Norway Residential EV Charging Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "norway_residential_ev_charging_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Norway_Residential_EV_Charging_Dataset.html"
+  },
+  {
+    "id": "Nottingham",
+    "name": "Nottingham",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nottingham"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Nottingham.html"
+  },
+  {
+    "id": "NREL_dsgrid_TEMPO",
+    "name": "NREL dsgrid TEMPO",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nrel_dsgrid_tempo"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/NREL_dsgrid_TEMPO.html"
+  },
+  {
+    "id": "NREL_Workplace_Charging",
+    "name": "NREL Workplace Charging",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nrel_workplace_charging"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/NREL_Workplace_Charging.html"
+  },
+  {
+    "id": "NSRDB",
+    "name": "NSRDB",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nsrdb"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/NSRDB.html"
+  },
+  {
+    "id": "NW_Europe_DCFC_Dataset",
+    "name": "NW Europe DCFC Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "nw_europe_dcfc_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/NW_Europe_DCFC_Dataset.html"
+  },
+  {
+    "id": "NYC_Taxi",
+    "name": "NYC Taxi",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nyc_taxi"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/NYC_Taxi.html"
+  },
+  {
+    "id": "NYISO",
+    "name": "NYISO Zonal Load Data",
+    "category": "",
+    "tags": [
+      "dataset",
+      "power-systems",
+      "load-forecasting",
+      "open-data"
+    ],
+    "inbound_link_count": 9,
+    "rel_url": "datasets/NYISO.html"
+  },
+  {
+    "id": "Omniglot",
+    "name": "Omniglot Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "omniglot"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/Omniglot.html"
+  },
+  {
+    "id": "Ontario_Grid",
+    "name": "Ontario Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "ontario_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Ontario_Grid.html"
+  },
+  {
+    "id": "OpenBookQA",
+    "name": "OpenBookQA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "openbookqa"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/OpenBookQA.html"
+  },
+  {
+    "id": "Oxford_Man_Realized_Library",
+    "name": "Oxford Man Realized Library",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "oxford_man_realized_library"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Oxford_Man_Realized_Library.html"
+  },
+  {
+    "id": "Palo_Alto_EV",
+    "name": "City of Palo Alto EV Charging Station Usage Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "palo-alto",
+      "open-data",
+      "public-ev-charging"
+    ],
+    "inbound_link_count": 15,
+    "rel_url": "datasets/Palo_Alto_EV.html"
+  },
+  {
+    "id": "Paris_Belib_EV",
+    "name": "Paris Belib Public EV Charging Network",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "paris-belib",
+      "open-data"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Paris_Belib_EV.html"
+  },
+  {
+    "id": "Parts_Dataset",
+    "name": "Parts Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "parts_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Parts_Dataset.html"
+  },
+  {
+    "id": "Pecan_Street",
+    "name": "Pecan Street Dataport",
+    "category": "",
+    "tags": [
+      "dataset",
+      "residential-charging",
+      "smart-meter",
+      "USA",
+      "pecan-street"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "datasets/Pecan_Street.html"
+  },
+  {
+    "id": "Penn_Treebank",
+    "name": "Penn Treebank",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "penn_treebank"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/Penn_Treebank.html"
+  },
+  {
+    "id": "Perth_EV",
+    "name": "Perth & Kinross EV Charging Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "perth",
+      "open-data"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "datasets/Perth_EV.html"
+  },
+  {
+    "id": "PhysioNet_2012_Healthcare",
+    "name": "PhysioNet 2012 Healthcare",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "physionet_2012_healthcare"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/PhysioNet_2012_Healthcare.html"
+  },
+  {
+    "id": "PIQA",
+    "name": "PIQA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "piqa"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/PIQA.html"
+  },
+  {
+    "id": "PJM_Energy_Market_Dataset",
+    "name": "PJM Energy Market Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "pjm_energy_market_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/PJM_Energy_Market_Dataset.html"
+  },
+  {
+    "id": "PSM",
+    "name": "PSM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "psm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/PSM.html"
+  },
+  {
+    "id": "Qingpu_State_Grid_EV_Stations",
+    "name": "Qingpu State Grid EV Stations",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "qingpu_state_grid_ev_stations"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Qingpu_State_Grid_EV_Stations.html"
+  },
+  {
+    "id": "Real_World_EV_DC_Charging",
+    "name": "Real-World EV Direct Current (DC) Fast Charging Profiles",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "dc-fast-charging",
+      "nature-2025"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/Real_World_EV_DC_Charging.html"
+  },
+  {
+    "id": "REFIT",
+    "name": "REFIT Smart-Meter Household Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/REFIT.html"
+  },
+  {
+    "id": "rllab_2D_Navigation",
+    "name": "rllab 2D Navigation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "rllab_2d_navigation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/rllab_2D_Navigation.html"
+  },
+  {
+    "id": "RULER_NIAH",
+    "name": "RULER NIAH",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ruler_niah"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/RULER_NIAH.html"
+  },
+  {
+    "id": "Shanghai_EV_Arrival_Data",
+    "name": "Shanghai EV Arrival Data",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "shanghai_ev_arrival_data"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Shanghai_EV_Arrival_Data.html"
+  },
+  {
+    "id": "Shanghai_Qingpu_Statistics_Bureau",
+    "name": "Shanghai Qingpu Statistics Bureau",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "shanghai_qingpu_statistics_bureau"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Shanghai_Qingpu_Statistics_Bureau.html"
+  },
+  {
+    "id": "Shenzhen_ST_EVCDP",
+    "name": "Shenzhen ST-EVCDP Charging Pile Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "datasets/Shenzhen_ST_EVCDP.html"
+  },
+  {
+    "id": "Simulated_PHEV_Charging_Data",
+    "name": "Simulated PHEV Charging Data",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "simulated_phev_charging_data"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Simulated_PHEV_Charging_Data.html"
+  },
+  {
+    "id": "Singapore_Energy_Market_Dataset",
+    "name": "Singapore Energy Market Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "singapore_energy_market_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Singapore_Energy_Market_Dataset.html"
+  },
+  {
+    "id": "Singapore_Grid",
+    "name": "Singapore Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "singapore_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Singapore_Grid.html"
+  },
+  {
+    "id": "SMAP",
+    "name": "SMAP",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "smap"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/SMAP.html"
+  },
+  {
+    "id": "SmoothEMS_Met_GridShield_ASR_Utrecht_Dataset",
+    "name": "SmoothEMS Met GridShield ASR Utrecht Dataset",
+    "category": "Alias (duplicate of Utrecht_SmoothEMS)",
+    "tags": [
+      "dataset",
+      "duplicate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/SmoothEMS_Met_GridShield_ASR_Utrecht_Dataset.html"
+  },
+  {
+    "id": "Solar_Dataset",
+    "name": "Solar Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "solar_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Solar_Dataset.html"
+  },
+  {
+    "id": "Southern_Germany_Dataset",
+    "name": "Southern Germany Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "southern_germany_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Southern_Germany_Dataset.html"
+  },
+  {
+    "id": "Special_Functions_Dataset",
+    "name": "Special Functions Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "special_functions_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Special_Functions_Dataset.html"
+  },
+  {
+    "id": "Submetering_Triplets",
+    "name": "Submetering Triplets",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "submetering_triplets"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Submetering_Triplets.html"
+  },
+  {
+    "id": "Suzhou_EVPL_Dataset",
+    "name": "Suzhou EVPL Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "suzhou_evpl_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Suzhou_EVPL_Dataset.html"
+  },
+  {
+    "id": "SWaT",
+    "name": "SWaT",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "swat"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/SWaT.html"
+  },
+  {
+    "id": "Synthetic_AR_Noise",
+    "name": "Synthetic AR Noise",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "synthetic_ar_noise"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Synthetic_AR_Noise.html"
+  },
+  {
+    "id": "Synthetic_Cross_Site_EVCS_Dataset",
+    "name": "Synthetic Cross Site EVCS Dataset",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "synthetic_cross_site_evcs_dataset"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Synthetic_Cross_Site_EVCS_Dataset.html"
+  },
+  {
+    "id": "Synthetic_Irregular_Time_Series",
+    "name": "Synthetic Irregular Time Series",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "synthetic_irregular_time_series"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Synthetic_Irregular_Time_Series.html"
+  },
+  {
+    "id": "Synthetic_Long_Time_Lag_Benchmarks",
+    "name": "Synthetic Long Time Lag Benchmarks",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "synthetic_long_time_lag_benchmarks"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Synthetic_Long_Time_Lag_Benchmarks.html"
+  },
+  {
+    "id": "Synthetic_Sinusoidal",
+    "name": "Synthetic Sinusoidal",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "synthetic_sinusoidal"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Synthetic_Sinusoidal.html"
+  },
+  {
+    "id": "Synthetic_VAE_Objective",
+    "name": "Synthetic VAE Objective",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "synthetic_vae_objective"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Synthetic_VAE_Objective.html"
+  },
+  {
+    "id": "Taiwan_Power_System",
+    "name": "Taiwan Power System",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "taiwan_power_system"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Taiwan_Power_System.html"
+  },
+  {
+    "id": "Taos_Vanilla_Benchmark",
+    "name": "Tao's Vanilla Benchmark",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "tao's_vanilla_benchmark"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Taos_Vanilla_Benchmark.html"
+  },
+  {
+    "id": "text8",
+    "name": "text8",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "text8"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/text8.html"
+  },
+  {
+    "id": "Tourism",
+    "name": "Tourism Forecasting Dataset",
+    "category": "",
+    "tags": [],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Tourism.html"
+  },
+  {
+    "id": "Toy_Synthetic_Functions",
+    "name": "Toy Synthetic Functions",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "toy_synthetic_functions"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Toy_Synthetic_Functions.html"
+  },
+  {
+    "id": "Traffic",
+    "name": "Traffic Time-Series Dataset",
+    "category": "",
+    "tags": [],
+    "inbound_link_count": 21,
+    "rel_url": "datasets/Traffic.html"
+  },
+  {
+    "id": "UC_Davis_PH_EV_Center_Data",
+    "name": "UC Davis PH EV Center Data",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "uc_davis_ph_ev_center_data"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/UC_Davis_PH_EV_Center_Data.html"
+  },
+  {
+    "id": "UCI_Air_Quality",
+    "name": "UCI Air Quality",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "uci_air_quality"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/UCI_Air_Quality.html"
+  },
+  {
+    "id": "UCI_EEG",
+    "name": "UCI EEG",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "uci_eeg"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/UCI_EEG.html"
+  },
+  {
+    "id": "UEA_Archive",
+    "name": "UEA Archive",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "uea_archive"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/UEA_Archive.html"
+  },
+  {
+    "id": "UK_National_Grid",
+    "name": "UK National Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "uk_national_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/UK_National_Grid.html"
+  },
+  {
+    "id": "UK_National_Travel_Survey",
+    "name": "UK National Travel Survey",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "uk_national_travel_survey"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/UK_National_Travel_Survey.html"
+  },
+  {
+    "id": "UrbanEV_Dataset",
+    "name": "UrbanEV Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging",
+      "shenzhen",
+      "urban-benchmark",
+      "traffic-zones"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "datasets/UrbanEV_Dataset.html"
+  },
+  {
+    "id": "US_City_Daily_Load_COVID",
+    "name": "US City Daily Load COVID",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "us_city_daily_load_covid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/US_City_Daily_Load_COVID.html"
+  },
+  {
+    "id": "US_Utility_Feeder_Residential_Load",
+    "name": "US Utility Feeder Residential Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "us_utility_feeder_residential_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/US_Utility_Feeder_Residential_Load.html"
+  },
+  {
+    "id": "Utility_Load_Data_1990s",
+    "name": "Utility Load Data 1990s",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "utility_load_data_1990s"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Utility_Load_Data_1990s.html"
+  },
+  {
+    "id": "Utrecht_SmoothEMS",
+    "name": "Utrecht SmoothEMS Office Parking Lot EV Charging Data",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ev-charging"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/Utrecht_SmoothEMS.html"
+  },
+  {
+    "id": "Victoria_Australia_Grid",
+    "name": "Victoria Australia Grid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "victoria_australia_grid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Victoria_Australia_Grid.html"
+  },
+  {
+    "id": "Weather",
+    "name": "Weather Time-Series Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ltsf-benchmark"
+    ],
+    "inbound_link_count": 22,
+    "rel_url": "datasets/Weather.html"
+  },
+  {
+    "id": "Weather_Dataset",
+    "name": "Weather Dataset",
+    "category": "Alias (duplicate of Weather)",
+    "tags": [
+      "dataset",
+      "duplicate"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "datasets/Weather_Dataset.html"
+  },
+  {
+    "id": "Wiki_Pageviews",
+    "name": "Wiki Pageviews",
+    "category": "Alias (duplicate of Wikipedia)",
+    "tags": [
+      "dataset",
+      "duplicate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Wiki_Pageviews.html"
+  },
+  {
+    "id": "Wikipedia",
+    "name": "Wikipedia Web Traffic Dataset",
+    "category": "",
+    "tags": [
+      "dataset",
+      "ltsf-benchmark"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "datasets/Wikipedia.html"
+  },
+  {
+    "id": "Wikipedia_Pageviews",
+    "name": "Wikipedia Pageviews",
+    "category": "Alias (duplicate of Wikipedia)",
+    "tags": [
+      "dataset",
+      "duplicate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Wikipedia_Pageviews.html"
+  },
+  {
+    "id": "Wikitext-103",
+    "name": "Wikitext 103",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "wikitext-103"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/Wikitext-103.html"
+  },
+  {
+    "id": "WinoGrande",
+    "name": "WinoGrande",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "winogrande"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/WinoGrande.html"
+  },
+  {
+    "id": "WMT_2014_EN-DE",
+    "name": "WMT 2014 EN DE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "wmt_2014_en-de"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/WMT_2014_EN-DE.html"
+  },
+  {
+    "id": "WMT_2014_EN-FR",
+    "name": "WMT 2014 EN FR",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "dataset",
+      "wmt_2014_en-fr"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "datasets/WMT_2014_EN-FR.html"
+  }
+]

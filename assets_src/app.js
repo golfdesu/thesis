@@ -173,12 +173,41 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-        const matches = indexData.filter(item =>
-          item.title.toLowerCase().includes(q) ||
-          (item.year && item.year.toString().includes(q)) ||
-          (item.cat_name && item.cat_name.toLowerCase().includes(q)) ||
-          (item.body && item.body.toLowerCase().includes(q))
-        ).slice(0, 10);
+        // Weighted multi-token scoring: title hits dominate body noise,
+        // exact-year queries get a strong boost, AND semantics across terms.
+        const terms = q.split(/\s+/).filter(Boolean);
+        function scoreItem(item) {
+          const tl = (item.title || "").toLowerCase();
+          const bl = (item.body || "").toLowerCase();
+          const cl = (item.cat_name || "").toLowerCase();
+          const ys = String(item.year || "");
+          let total = 0;
+          for (const t of terms) {
+            let s = 0;
+            if (t.length === 4 && /^\d{4}$/.test(t)) {
+              if (ys === t) s += 50;
+              if (tl.includes(t)) s += 3;
+            } else {
+              const p = tl.indexOf(t);
+              if (p >= 0) {
+                s += 30;
+                if (p === 0 || /\W/.test(tl[p - 1])) s += 10;
+                if (!/\W/.test(tl[p + t.length] || " ")) s += 4;
+              }
+              if (cl.includes(t)) s += 6;
+            }
+            if (bl.includes(t)) s += 3;
+            if (s === 0) return 0;
+            total += s;
+          }
+          return total;
+        }
+        const matches = indexData
+          .map(item => ({ item, sc: scoreItem(item) }))
+          .filter(m => m.sc > 0)
+          .sort((a, b) => b.sc - a.sc)
+          .slice(0, 10)
+          .map(m => m.item);
 
         renderSearchResults(matches, rootPrefix);
       }, 120);

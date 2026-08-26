@@ -1,0 +1,5065 @@
+[
+  {
+    "id": "1746_Node_Distribution_System",
+    "name": "1746 Node Distribution System",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "1746_node_distribution_system"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/1746_Node_Distribution_System.html"
+  },
+  {
+    "id": "30_Min_Slot_Aggregation",
+    "name": "30 Min Slot Aggregation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "30_min_slot_aggregation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/30_Min_Slot_Aggregation.html"
+  },
+  {
+    "id": "AACE",
+    "name": "AACE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "aace"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/AACE.html"
+  },
+  {
+    "id": "Acceleration_Ratios",
+    "name": "Acceleration Ratios",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "acceleration_ratios"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Acceleration_Ratios.html"
+  },
+  {
+    "id": "ACN-Sim",
+    "name": "ACN Sim",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "acn-sim"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ACN-Sim.html"
+  },
+  {
+    "id": "Adaline",
+    "name": "Adaline",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "adaline"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Adaline.html"
+  },
+  {
+    "id": "Adam",
+    "name": "Adam Optimizer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "adam"
+    ],
+    "inbound_link_count": 16,
+    "rel_url": "models/Adam.html"
+  },
+  {
+    "id": "Adding_Problem",
+    "name": "Adding Problem",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "adding_problem"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Adding_Problem.html"
+  },
+  {
+    "id": "Admittance_Matrix",
+    "name": "Admittance Matrix",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "admittance_matrix"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Admittance_Matrix.html"
+  },
+  {
+    "id": "AIW",
+    "name": "AIW",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "aiw"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/AIW.html"
+  },
+  {
+    "id": "ANFIS",
+    "name": "ANFIS",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "anfis"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ANFIS.html"
+  },
+  {
+    "id": "ANN",
+    "name": "Artificial Neural Network (ANN)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ann"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "models/ANN.html"
+  },
+  {
+    "id": "APNE",
+    "name": "APNE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "apne"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/APNE.html"
+  },
+  {
+    "id": "ARIMA",
+    "name": "AutoRegressive Integrated Moving Average (ARIMA)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "arima"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "models/ARIMA.html"
+  },
+  {
+    "id": "Arithmetic_Intensity",
+    "name": "Arithmetic Intensity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "arithmetic_intensity"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Arithmetic_Intensity.html"
+  },
+  {
+    "id": "AS_CQR",
+    "name": "AS-CQR (Adaptive Sequential Conformalized Quantile Regression)",
+    "category": "Statistical Learning / Adaptive Conformal Uncertainty Quantification",
+    "tags": [
+      "model",
+      "conformal-prediction",
+      "quantile-regression",
+      "uncertainty-quantification",
+      "distribution-shift"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "models/AS_CQR.html"
+  },
+  {
+    "id": "AST-GAT",
+    "name": "AST GAT",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ast-gat"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/AST-GAT.html"
+  },
+  {
+    "id": "AttLSTM",
+    "name": "AttLSTM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "attlstm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/AttLSTM.html"
+  },
+  {
+    "id": "Autoformer",
+    "name": "Autoformer",
+    "category": "Deep Learning / Decomposition Transformer with Auto-Correlation",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "decomposition",
+      "long-term-forecasting"
+    ],
+    "inbound_link_count": 16,
+    "rel_url": "models/Autoformer.html"
+  },
+  {
+    "id": "Autonomous_Island_System_Crete",
+    "name": "Autonomous Island System Crete",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "autonomous_island_system_crete"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Autonomous_Island_System_Crete.html"
+  },
+  {
+    "id": "Average_Return",
+    "name": "Average Return",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "average_return"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Average_Return.html"
+  },
+  {
+    "id": "B-Spline_Basis_Functions",
+    "name": "B Spline Basis Functions",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "b-spline_basis_functions"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/B-Spline_Basis_Functions.html"
+  },
+  {
+    "id": "beta-VAE",
+    "name": "beta VAE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "beta-vae"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/beta-VAE.html"
+  },
+  {
+    "id": "Bi-Mamba+",
+    "name": "Bi Mamba+",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bi-mamba+"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Bi-Mamba+.html"
+  },
+  {
+    "id": "BiLSTM",
+    "name": "Bidirectional LSTM (BiLSTM)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bilstm"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "models/BiLSTM.html"
+  },
+  {
+    "id": "Bits_Per_Character",
+    "name": "Bits Per Character",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bits_per_character"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Bits_Per_Character.html"
+  },
+  {
+    "id": "BJ-RNN",
+    "name": "BJ RNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bj-rnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/BJ-RNN.html"
+  },
+  {
+    "id": "BPNN",
+    "name": "BPNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bpnn"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/BPNN.html"
+  },
+  {
+    "id": "Brownian_Motion",
+    "name": "Brownian Motion",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "brownian_motion"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Brownian_Motion.html"
+  },
+  {
+    "id": "BWO",
+    "name": "BWO",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bwo"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/BWO.html"
+  },
+  {
+    "id": "ByteNet",
+    "name": "ByteNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "bytenet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ByteNet.html"
+  },
+  {
+    "id": "CAT_Former",
+    "name": "Context-Aware Temporal Transformer (CAT-Former)",
+    "category": "Deep Learning / Context-Aware Attention Architecture",
+    "tags": [
+      "model",
+      "cat-former",
+      "context-aware",
+      "spatial-temporal",
+      "self-attention"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/CAT_Former.html"
+  },
+  {
+    "id": "CatBoost",
+    "name": "CatBoost",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "catboost"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CatBoost.html"
+  },
+  {
+    "id": "Causal_Dilated_Convolution",
+    "name": "Causal Dilated Convolution",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "causal_dilated_convolution"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Causal_Dilated_Convolution.html"
+  },
+  {
+    "id": "CF-RNN",
+    "name": "CF RNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cf-rnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CF-RNN.html"
+  },
+  {
+    "id": "Channel_Independence",
+    "name": "Channel Independence",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "channel_independence"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Channel_Independence.html"
+  },
+  {
+    "id": "ChatEV",
+    "name": "ChatEV",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "chatev"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ChatEV.html"
+  },
+  {
+    "id": "Chebyshev_Graph_Convolution",
+    "name": "Chebyshev Graph Convolution",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "chebyshev_graph_convolution"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Chebyshev_Graph_Convolution.html"
+  },
+  {
+    "id": "Chronos-Bolt",
+    "name": "Chronos Bolt",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "chronos-bolt"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Chronos-Bolt.html"
+  },
+  {
+    "id": "Chronos",
+    "name": "Chronos",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "chronos"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/Chronos.html"
+  },
+  {
+    "id": "CKA_Similarity",
+    "name": "CKA Similarity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cka_similarity"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CKA_Similarity.html"
+  },
+  {
+    "id": "CLC",
+    "name": "CLC",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "clc"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CLC.html"
+  },
+  {
+    "id": "Clearsky_GHI_DNI_DHI",
+    "name": "Clearsky GHI DNI DHI",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "clearsky_ghi_dni_dhi"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Clearsky_GHI_DNI_DHI.html"
+  },
+  {
+    "id": "CNN-LSTM-AM",
+    "name": "CNN LSTM AM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cnn-lstm-am"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CNN-LSTM-AM.html"
+  },
+  {
+    "id": "CNN",
+    "name": "Convolutional Neural Network (CNN)",
+    "category": "Deep Learning / Feature Extraction",
+    "tags": [
+      "model",
+      "cnn",
+      "deep-learning",
+      "spatial-features"
+    ],
+    "inbound_link_count": 9,
+    "rel_url": "models/CNN.html"
+  },
+  {
+    "id": "CNN_Dense",
+    "name": "CNN Dense",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cnn_dense"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CNN_Dense.html"
+  },
+  {
+    "id": "CNN_LSTM",
+    "name": "CNN LSTM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cnn_lstm"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/CNN_LSTM.html"
+  },
+  {
+    "id": "CNN_LSTM_Attention",
+    "name": "CNN-LSTM-Attention",
+    "category": "Deep Learning / Hybrid Convolutional-Recurrent Attention Architecture",
+    "tags": [
+      "model",
+      "cnn-lstm-attention",
+      "fast-charging",
+      "single-head-attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CNN_LSTM_Attention.html"
+  },
+  {
+    "id": "CNN_LSTM_Transformer",
+    "name": "CNN-LSTM-Transformer",
+    "category": "Deep Learning / Hybrid Convolutional-Recurrent Self-Attention Architecture",
+    "tags": [
+      "model",
+      "cnn-lstm-transformer",
+      "fast-charging",
+      "multi-head-attention",
+      "multi-step-forecasting"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CNN_LSTM_Transformer.html"
+  },
+  {
+    "id": "CNN_LSTM_Transformer_Combined_Model",
+    "name": "CNN LSTM Transformer Combined Model",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cnn_lstm_transformer_combined_model"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CNN_LSTM_Transformer_Combined_Model.html"
+  },
+  {
+    "id": "Conditional_Mask",
+    "name": "Conditional Mask",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "conditional_mask"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Conditional_Mask.html"
+  },
+  {
+    "id": "Convergence_Iterations",
+    "name": "Convergence Iterations",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "convergence_iterations"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Convergence_Iterations.html"
+  },
+  {
+    "id": "Convolutional_Self_Attention",
+    "name": "Convolutional Self Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "convolutional_self_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Convolutional_Self_Attention.html"
+  },
+  {
+    "id": "ConvS2S",
+    "name": "ConvS2S",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "convs2s"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ConvS2S.html"
+  },
+  {
+    "id": "Copy_Memory",
+    "name": "Copy Memory",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "copy_memory"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Copy_Memory.html"
+  },
+  {
+    "id": "COROP_Regions",
+    "name": "COROP Regions",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "corop_regions"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/COROP_Regions.html"
+  },
+  {
+    "id": "Covariance_Function",
+    "name": "Covariance Function",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "covariance_function"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Covariance_Function.html"
+  },
+  {
+    "id": "Covariates",
+    "name": "Covariates",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "covariates"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Covariates.html"
+  },
+  {
+    "id": "CPE",
+    "name": "CPE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cpe"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CPE.html"
+  },
+  {
+    "id": "Cross_Dimension_Dependency",
+    "name": "Cross Dimension Dependency",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cross_dimension_dependency"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Cross_Dimension_Dependency.html"
+  },
+  {
+    "id": "Cross_Time_Dependency",
+    "name": "Cross Time Dependency",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "cross_time_dependency"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Cross_Time_Dependency.html"
+  },
+  {
+    "id": "Crossformer",
+    "name": "Crossformer",
+    "category": "Deep Learning / Cross-Dimension Dependency Transformer",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "multivariate-forecasting"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/Crossformer.html"
+  },
+  {
+    "id": "CrossGNN",
+    "name": "CrossGNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "crossgnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CrossGNN.html"
+  },
+  {
+    "id": "CSDI",
+    "name": "CSDI",
+    "category": "Deep Learning / Conditional Score-Based Diffusion (Imputation + Forecasting)",
+    "tags": [
+      "model",
+      "deep-learning",
+      "diffusion",
+      "probabilistic-forecasting",
+      "imputation"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/CSDI.html"
+  },
+  {
+    "id": "CTPS_IEEE33_7Node_TN",
+    "name": "CTPS IEEE33 7Node TN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ctps_ieee33_7node_tn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CTPS_IEEE33_7Node_TN.html"
+  },
+  {
+    "id": "CTPS_IEEE69_12Node_TN",
+    "name": "CTPS IEEE69 12Node TN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ctps_ieee69_12node_tn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/CTPS_IEEE69_12Node_TN.html"
+  },
+  {
+    "id": "DAIN",
+    "name": "DAIN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dain"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DAIN.html"
+  },
+  {
+    "id": "DCRNN",
+    "name": "DCRNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dcrnn"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/DCRNN.html"
+  },
+  {
+    "id": "DCT-EV",
+    "name": "DCT EV",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dct-ev"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DCT-EV.html"
+  },
+  {
+    "id": "DDI",
+    "name": "DDI",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ddi"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DDI.html"
+  },
+  {
+    "id": "DDPM",
+    "name": "Denoising Diffusion Probabilistic Model (DDPM)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ddpm"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "models/DDPM.html"
+  },
+  {
+    "id": "Decode_Latency",
+    "name": "Decode Latency",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "decode_latency"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Decode_Latency.html"
+  },
+  {
+    "id": "Deep_Gaussian_Process",
+    "name": "Deep Gaussian Process (DGP)",
+    "category": "Machine Learning / Bayesian Nonparametrics",
+    "tags": [
+      "model",
+      "deep-gaussian-process",
+      "dgp",
+      "bayesian",
+      "uncertainty-quantification"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Deep_Gaussian_Process.html"
+  },
+  {
+    "id": "DeepAR",
+    "name": "DeepAR",
+    "category": "Deep Learning / Autoregressive Probabilistic RNN (Global Model)",
+    "tags": [
+      "model",
+      "deep-learning",
+      "rnn",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 11,
+    "rel_url": "models/DeepAR.html"
+  },
+  {
+    "id": "DeepBoost",
+    "name": "DeepBoost",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "deepboost"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DeepBoost.html"
+  },
+  {
+    "id": "DeepSigRNet",
+    "name": "DeepSigRNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "deepsigrnet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DeepSigRNet.html"
+  },
+  {
+    "id": "DeepState",
+    "name": "DeepState",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "deepstate"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DeepState.html"
+  },
+  {
+    "id": "DeepVAR",
+    "name": "DeepVAR",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "deepvar"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DeepVAR.html"
+  },
+  {
+    "id": "DER_Adoption",
+    "name": "DER Adoption",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "der_adoption"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DER_Adoption.html"
+  },
+  {
+    "id": "DGI",
+    "name": "DGI",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dgi"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DGI.html"
+  },
+  {
+    "id": "DHI",
+    "name": "DHI",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dhi"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DHI.html"
+  },
+  {
+    "id": "DiffPLF",
+    "name": "DiffPLF",
+    "category": "Deep Learning / Conditional Diffusion for Probabilistic EV Load Forecasting",
+    "tags": [
+      "model",
+      "deep-learning",
+      "diffusion",
+      "probabilistic-forecasting",
+      "ev-load-forecasting"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/DiffPLF.html"
+  },
+  {
+    "id": "DiffSTG",
+    "name": "DiffSTG (UGnet)",
+    "category": "Deep Learning / Denoising Diffusion Probabilistic Model on Spatio-Temporal Graphs",
+    "tags": [
+      "model",
+      "deep-learning",
+      "diffusion",
+      "probabilistic-forecasting",
+      "spatial-temporal",
+      "gnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DiffSTG.html"
+  },
+  {
+    "id": "Dilated_Convolution",
+    "name": "Dilated Convolution",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dilated_convolution"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Dilated_Convolution.html"
+  },
+  {
+    "id": "Dilation_Factor",
+    "name": "Dilation Factor",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dilation_factor"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Dilation_Factor.html"
+  },
+  {
+    "id": "DilRNN",
+    "name": "DilRNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dilrnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DilRNN.html"
+  },
+  {
+    "id": "Direct_Forecasting_Strategy",
+    "name": "Direct Forecasting Strategy",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "direct_forecasting_strategy"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Direct_Forecasting_Strategy.html"
+  },
+  {
+    "id": "Distribution_Shift_Normalization",
+    "name": "Distribution Shift Normalization",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "distribution_shift_normalization"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Distribution_Shift_Normalization.html"
+  },
+  {
+    "id": "DL",
+    "name": "DL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DL.html"
+  },
+  {
+    "id": "DLinear",
+    "name": "DLinear",
+    "category": "Deep Learning / One-Layer Linear Long-Term Forecaster (LTSF-Linear)",
+    "tags": [
+      "model",
+      "linear-model",
+      "long-term-forecasting",
+      "decomposition"
+    ],
+    "inbound_link_count": 13,
+    "rel_url": "models/DLinear.html"
+  },
+  {
+    "id": "DNI",
+    "name": "DNI",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dni"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DNI.html"
+  },
+  {
+    "id": "DP-RNN",
+    "name": "DP RNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dp-rnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DP-RNN.html"
+  },
+  {
+    "id": "Dropout_Noise",
+    "name": "Dropout Noise",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dropout_noise"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Dropout_Noise.html"
+  },
+  {
+    "id": "DSRS",
+    "name": "DSRS",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dsrs"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DSRS.html"
+  },
+  {
+    "id": "DTA",
+    "name": "DTA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dta"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/DTA.html"
+  },
+  {
+    "id": "Dynamic_Covariates",
+    "name": "Dynamic Covariates",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "dynamic_covariates"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Dynamic_Covariates.html"
+  },
+  {
+    "id": "EdgeConv",
+    "name": "EdgeConv",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "edgeconv"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EdgeConv.html"
+  },
+  {
+    "id": "EEE",
+    "name": "EEE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "eee"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EEE.html"
+  },
+  {
+    "id": "EGAT",
+    "name": "EGAT",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "egat"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EGAT.html"
+  },
+  {
+    "id": "Embedded_Generation_Capacity",
+    "name": "Embedded Generation Capacity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "embedded_generation_capacity"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Embedded_Generation_Capacity.html"
+  },
+  {
+    "id": "Empirical_Copula",
+    "name": "Empirical Copula",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "empirical_copula"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Empirical_Copula.html"
+  },
+  {
+    "id": "EnbPI",
+    "name": "EnbPI (Ensemble batch Prediction Intervals)",
+    "category": "Statistical Learning / Conformal Prediction for Time Series",
+    "tags": [
+      "model",
+      "conformal-prediction",
+      "ensemble-learning",
+      "uncertainty-quantification"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/EnbPI.html"
+  },
+  {
+    "id": "Encoder_Decoder",
+    "name": "Encoder Decoder",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "encoder_decoder"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Encoder_Decoder.html"
+  },
+  {
+    "id": "Energy_Consumption",
+    "name": "Energy Consumption",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "energy-consumption"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Energy_Consumption.html"
+  },
+  {
+    "id": "Energy_Requirement",
+    "name": "Energy Requirement",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "energy_requirement"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Energy_Requirement.html"
+  },
+  {
+    "id": "EnergyMamba",
+    "name": "GE-Mamba (EnergyMamba)",
+    "category": "Deep Learning / Graph-Enhanced Selective State-Space Model",
+    "tags": [
+      "model",
+      "mamba",
+      "ssm",
+      "gcn",
+      "spatiotemporal",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/EnergyMamba.html"
+  },
+  {
+    "id": "Ensemble_Stacking",
+    "name": "Ensemble Stacking Learning",
+    "category": "Machine Learning / Ensemble Methods",
+    "tags": [
+      "model",
+      "ensemble",
+      "stacking",
+      "meta-learning"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/Ensemble_Stacking.html"
+  },
+  {
+    "id": "ESM",
+    "name": "ESM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "esm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ESM.html"
+  },
+  {
+    "id": "ETS",
+    "name": "ETS",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ets"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ETS.html"
+  },
+  {
+    "id": "EURNN",
+    "name": "EURNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "eurnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EURNN.html"
+  },
+  {
+    "id": "EV-STLLM",
+    "name": "EV STLLM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ev-stllm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EV-STLLM.html"
+  },
+  {
+    "id": "EV_Aggregator",
+    "name": "EV Aggregator",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ev_aggregator"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EV_Aggregator.html"
+  },
+  {
+    "id": "EV_Number",
+    "name": "EV Number",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ev_number"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EV_Number.html"
+  },
+  {
+    "id": "EVformer",
+    "name": "EVformer",
+    "category": "Deep Learning / Spatio-Temporal Decoupled Transformer for Citywide EV Charging Load Forecasting",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "spatial-temporal",
+      "ev-load-forecasting"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/EVformer.html"
+  },
+  {
+    "id": "EVSFD",
+    "name": "EV Scheduling Feasible Domain (EVSFD)",
+    "category": "Optimization / Feasible Space Modeling",
+    "tags": [
+      "model",
+      "evsfd",
+      "feasible-domain",
+      "schedulable-capacity"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/EVSFD.html"
+  },
+  {
+    "id": "Factor_Model",
+    "name": "Factor Model",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "factor_model"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Factor_Model.html"
+  },
+  {
+    "id": "Federated_Mutual_Learning",
+    "name": "Federated Mutual Learning",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "federated_mutual_learning"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Federated_Mutual_Learning.html"
+  },
+  {
+    "id": "FEDformer",
+    "name": "FEDformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fedformer"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/FEDformer.html"
+  },
+  {
+    "id": "FEDM",
+    "name": "Feature-Enhanced Deep Learning Method (FEDM)",
+    "category": "Deep Learning / Probabilistic Feature-Selection Architecture",
+    "tags": [
+      "model",
+      "fedm",
+      "feature-selection",
+      "grn",
+      "glu",
+      "quantile-loss"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/FEDM.html"
+  },
+  {
+    "id": "Feed_Forward_Temporal_MLP",
+    "name": "Feed Forward Temporal MLP",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "feed_forward_temporal_mlp"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Feed_Forward_Temporal_MLP.html"
+  },
+  {
+    "id": "FFT_Periodicity_Detection",
+    "name": "FFT Periodicity Detection",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fft_periodicity_detection"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/FFT_Periodicity_Detection.html"
+  },
+  {
+    "id": "FIG",
+    "name": "FIG",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fig"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/FIG.html"
+  },
+  {
+    "id": "FineWeb-Edu",
+    "name": "FineWeb Edu",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fineweb-edu"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/FineWeb-Edu.html"
+  },
+  {
+    "id": "FlashAttention",
+    "name": "FlashAttention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "flashattention"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/FlashAttention.html"
+  },
+  {
+    "id": "Flowformer",
+    "name": "Flowformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "flowformer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Flowformer.html"
+  },
+  {
+    "id": "FourierGNN",
+    "name": "FourierGNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fouriergnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/FourierGNN.html"
+  },
+  {
+    "id": "FPSeq2Q",
+    "name": "FPSeq2Q",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fpseq2q"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/FPSeq2Q.html"
+  },
+  {
+    "id": "Fuzzy_Logic",
+    "name": "Fuzzy Logic",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fuzzy_logic"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Fuzzy_Logic.html"
+  },
+  {
+    "id": "Fuzzy_Neural_Network",
+    "name": "Fuzzy Neural Network",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "fuzzy_neural_network"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Fuzzy_Neural_Network.html"
+  },
+  {
+    "id": "GAM",
+    "name": "GAM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gam"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GAM.html"
+  },
+  {
+    "id": "GAT",
+    "name": "Graph Attention Network (GAT)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gat"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/GAT.html"
+  },
+  {
+    "id": "Gated_DeltaNet",
+    "name": "Gated DeltaNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gated_deltanet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Gated_DeltaNet.html"
+  },
+  {
+    "id": "Gated_Fusion",
+    "name": "Gated Fusion",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gated_fusion"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Gated_Fusion.html"
+  },
+  {
+    "id": "Gaussian_Process",
+    "name": "Gaussian Process",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gaussian-process"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Gaussian_Process.html"
+  },
+  {
+    "id": "Gaussian_Process_Regression",
+    "name": "Gaussian Process Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gaussian_process_regression"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Gaussian_Process_Regression.html"
+  },
+  {
+    "id": "GBRT",
+    "name": "GBRT",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gbrt"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GBRT.html"
+  },
+  {
+    "id": "GCN-GRU",
+    "name": "GCN GRU",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gcn-gru"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GCN-GRU.html"
+  },
+  {
+    "id": "GCN",
+    "name": "Graph Convolutional Network (GCN)",
+    "category": "Deep Learning / Graph Neural Networks",
+    "tags": [
+      "model",
+      "gcn",
+      "graph-neural-network",
+      "spatial-features"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "models/GCN.html"
+  },
+  {
+    "id": "Generative_Decoder",
+    "name": "Generative Decoder",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "generative_decoder"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Generative_Decoder.html"
+  },
+  {
+    "id": "GGNN",
+    "name": "GGNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ggnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GGNN.html"
+  },
+  {
+    "id": "GHI",
+    "name": "GHI",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ghi"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GHI.html"
+  },
+  {
+    "id": "GLU",
+    "name": "GLU",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "glu"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GLU.html"
+  },
+  {
+    "id": "GMM",
+    "name": "GMM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gmm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GMM.html"
+  },
+  {
+    "id": "GNN",
+    "name": "GNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GNN.html"
+  },
+  {
+    "id": "GPT-2",
+    "name": "GPT 2",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "gpt-2"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GPT-2.html"
+  },
+  {
+    "id": "GRACE",
+    "name": "GRACE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "grace"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/GRACE.html"
+  },
+  {
+    "id": "Graph_Attention_Networks",
+    "name": "Graph Attention Networks",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "graph_attention_networks"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Graph_Attention_Networks.html"
+  },
+  {
+    "id": "Graph_WaveNet",
+    "name": "Graph WaveNet",
+    "category": "Deep Learning / Adaptive-Adjacency Spatial-Temporal GNN (GCN + Gated Dilated TCN)",
+    "tags": [
+      "model",
+      "deep-learning",
+      "gnn",
+      "spatial-temporal",
+      "tcn"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/Graph_WaveNet.html"
+  },
+  {
+    "id": "GRN",
+    "name": "Gated Residual Network (GRN)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "grn"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/GRN.html"
+  },
+  {
+    "id": "GRU",
+    "name": "Gated Recurrent Unit (GRU)",
+    "category": "Deep Learning / Recurrent Neural Network",
+    "tags": [
+      "model",
+      "deep-learning",
+      "rnn",
+      "gru"
+    ],
+    "inbound_link_count": 14,
+    "rel_url": "models/GRU.html"
+  },
+  {
+    "id": "Hardware_Performance_Counters",
+    "name": "Hardware Performance Counters",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hardware_performance_counters"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Hardware_Performance_Counters.html"
+  },
+  {
+    "id": "Hessian_Vector_Products",
+    "name": "Hessian Vector Products",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hessian_vector_products"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Hessian_Vector_Products.html"
+  },
+  {
+    "id": "Hidden_Confounders",
+    "name": "Hidden Confounders",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hidden_confounders"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Hidden_Confounders.html"
+  },
+  {
+    "id": "Hierarchical_Encoder_Decoder",
+    "name": "Hierarchical Encoder Decoder",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hierarchical_encoder_decoder"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Hierarchical_Encoder_Decoder.html"
+  },
+  {
+    "id": "High_Frequency_Components",
+    "name": "High Frequency Components",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "high_frequency_components"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/High_Frequency_Components.html"
+  },
+  {
+    "id": "HiPPO",
+    "name": "HiPPO",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hippo"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/HiPPO.html"
+  },
+  {
+    "id": "Historical_Average",
+    "name": "Historical Average",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "historical_average"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Historical_Average.html"
+  },
+  {
+    "id": "Historical_Zonal_Price",
+    "name": "Historical Zonal Price",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "historical_zonal_price"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Historical_Zonal_Price.html"
+  },
+  {
+    "id": "Holt_Exponential_Smoothing",
+    "name": "Holt Exponential Smoothing",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "holt_exponential_smoothing"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Holt_Exponential_Smoothing.html"
+  },
+  {
+    "id": "HPCP",
+    "name": "HPCP",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hpcp"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/HPCP.html"
+  },
+  {
+    "id": "Hybrid_Transformer",
+    "name": "Hybrid Transformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hybrid_transformer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Hybrid_Transformer.html"
+  },
+  {
+    "id": "HyKANet",
+    "name": "HyKANet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "hykanet"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/HyKANet.html"
+  },
+  {
+    "id": "ICEEMDAN",
+    "name": "Improved CEEMDAN (ICEEMDAN)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "iceemdan"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/ICEEMDAN.html"
+  },
+  {
+    "id": "IEEE_118_Node_Distribution_System",
+    "name": "IEEE 118 Node Distribution System",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ieee_118_node_distribution_system"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/IEEE_118_Node_Distribution_System.html"
+  },
+  {
+    "id": "IEEE_33_Node_Distribution_System",
+    "name": "IEEE 33 Node Distribution System",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ieee_33_node_distribution_system"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/IEEE_33_Node_Distribution_System.html"
+  },
+  {
+    "id": "Inception_2D_CNN",
+    "name": "Inception 2D CNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "inception_2d_cnn"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Inception_2D_CNN.html"
+  },
+  {
+    "id": "Inference_Latency",
+    "name": "Inference Latency",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "inference_latency"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Inference_Latency.html"
+  },
+  {
+    "id": "Informer",
+    "name": "Informer",
+    "category": "Deep Learning / Efficient Transformer for Long Sequence Time-Series Forecasting",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "long-term-forecasting"
+    ],
+    "inbound_link_count": 28,
+    "rel_url": "models/Informer.html"
+  },
+  {
+    "id": "INLA_Latent_Gaussian_Model",
+    "name": "INLA Latent Gaussian Model (LGM)",
+    "category": "Statistical Learning / Approximate Bayesian Spatio-Temporal Modelling",
+    "tags": [
+      "model",
+      "bayesian",
+      "inla",
+      "spatio-temporal",
+      "gmrf"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/INLA_Latent_Gaussian_Model.html"
+  },
+  {
+    "id": "Interperiod_Variation",
+    "name": "Interperiod Variation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "interperiod_variation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Interperiod_Variation.html"
+  },
+  {
+    "id": "Interpretable_Multi_Head_Attention",
+    "name": "Interpretable Multi Head Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "interpretable_multi_head_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Interpretable_Multi_Head_Attention.html"
+  },
+  {
+    "id": "Intraperiod_Variation",
+    "name": "Intraperiod Variation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "intraperiod_variation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Intraperiod_Variation.html"
+  },
+  {
+    "id": "iTransformer",
+    "name": "iTransformer",
+    "category": "Deep Learning / Inverted Transformer (Variate-Token Attention)",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "multivariate-forecasting",
+      "long-term-forecasting"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "models/iTransformer.html"
+  },
+  {
+    "id": "JointPGM",
+    "name": "JointPGM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "jointpgm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/JointPGM.html"
+  },
+  {
+    "id": "K-Shot_N-Way_Classification",
+    "name": "K Shot N Way Classification",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "k-shot_n-way_classification"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/K-Shot_N-Way_Classification.html"
+  },
+  {
+    "id": "K_Shot_Support_Set",
+    "name": "K Shot Support Set",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "k_shot_support_set"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/K_Shot_Support_Set.html"
+  },
+  {
+    "id": "Kalman_Filter",
+    "name": "Kalman Filter",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kalman_filter"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/Kalman_Filter.html"
+  },
+  {
+    "id": "KAN",
+    "name": "KAN (Kolmogorov-Arnold Network)",
+    "category": "Deep Learning / Learnable Spline-Edge Function Approximator",
+    "tags": [
+      "model",
+      "deep-learning",
+      "kan",
+      "interpretable-ml",
+      "function-approximation"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/KAN.html"
+  },
+  {
+    "id": "Kernel_Density_Estimation",
+    "name": "Kernel Density Estimation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kernel_density_estimation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Kernel_Density_Estimation.html"
+  },
+  {
+    "id": "Kernel_Events",
+    "name": "Kernel Events",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kernel_events"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Kernel_Events.html"
+  },
+  {
+    "id": "KMeans_Clustering",
+    "name": "KMeans Clustering",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kmeans_clustering"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/KMeans_Clustering.html"
+  },
+  {
+    "id": "Kohonen_SOM",
+    "name": "Kohonen SOM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kohonen_som"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Kohonen_SOM.html"
+  },
+  {
+    "id": "Kolmogorov_Smirnov_Test",
+    "name": "Kolmogorov Smirnov Test",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kolmogorov_smirnov_test"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Kolmogorov_Smirnov_Test.html"
+  },
+  {
+    "id": "kWhDelivered",
+    "name": "kWhDelivered",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "kwhdelivered"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/kWhDelivered.html"
+  },
+  {
+    "id": "LagLlama",
+    "name": "LagLlama",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lagllama"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/LagLlama.html"
+  },
+  {
+    "id": "LAN",
+    "name": "LAN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lan"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LAN.html"
+  },
+  {
+    "id": "Lasso",
+    "name": "Lasso",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lasso"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Lasso.html"
+  },
+  {
+    "id": "LDformer",
+    "name": "LDformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ldformer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LDformer.html"
+  },
+  {
+    "id": "Learnable_Edge_Activations",
+    "name": "Learnable Edge Activations",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "learnable_edge_activations"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Learnable_Edge_Activations.html"
+  },
+  {
+    "id": "Learned_Basis",
+    "name": "Learned Basis",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "learned_basis"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Learned_Basis.html"
+  },
+  {
+    "id": "LGBM",
+    "name": "LGBM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lgbm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LGBM.html"
+  },
+  {
+    "id": "LightGBM",
+    "name": "LightGBM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lightgbm"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/LightGBM.html"
+  },
+  {
+    "id": "Linear_Dynamical_Systems",
+    "name": "Linear Dynamical Systems",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "linear_dynamical_systems"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Linear_Dynamical_Systems.html"
+  },
+  {
+    "id": "Linear_Regression",
+    "name": "Linear Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "linear_regression"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/Linear_Regression.html"
+  },
+  {
+    "id": "LipSCDE",
+    "name": "LipSCDE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lipscde"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LipSCDE.html"
+  },
+  {
+    "id": "Lipschitz_RNN",
+    "name": "Lipschitz RNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lipschitz_rnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Lipschitz_RNN.html"
+  },
+  {
+    "id": "LogSparse_Transformer",
+    "name": "LogSparse Transformer",
+    "category": "Deep Learning / Convolutional Log-Sparse Attention Transformer",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/LogSparse_Transformer.html"
+  },
+  {
+    "id": "LogTrans",
+    "name": "LogSparse Transformer (LogTrans)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "logtrans"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/LogTrans.html"
+  },
+  {
+    "id": "Low_Frequency_Components",
+    "name": "Low Frequency Components",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "low_frequency_components"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Low_Frequency_Components.html"
+  },
+  {
+    "id": "LSTM-Informer",
+    "name": "LSTM Informer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lstm-informer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LSTM-Informer.html"
+  },
+  {
+    "id": "LSTM",
+    "name": "Long Short-Term Memory (LSTM)",
+    "category": "Deep Learning / Recurrent Neural Network",
+    "tags": [
+      "model",
+      "deep-learning",
+      "rnn"
+    ],
+    "inbound_link_count": 58,
+    "rel_url": "models/LSTM.html"
+  },
+  {
+    "id": "LSTM_B",
+    "name": "LSTM B",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lstm_b"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LSTM_B.html"
+  },
+  {
+    "id": "LSTM_C",
+    "name": "LSTM C",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lstm_c"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LSTM_C.html"
+  },
+  {
+    "id": "LSTM_Transformer",
+    "name": "LSTM-Transformer Hybrid",
+    "category": "Deep Learning / Hybrid Recurrent-Attention Architecture",
+    "tags": [
+      "model",
+      "lstm-transformer",
+      "hybrid-model",
+      "self-attention"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/LSTM_Transformer.html"
+  },
+  {
+    "id": "LSTM_W",
+    "name": "LSTM W",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lstm_w"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LSTM_W.html"
+  },
+  {
+    "id": "LSTMa",
+    "name": "LSTMa",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lstma"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/LSTMa.html"
+  },
+  {
+    "id": "LSTNet",
+    "name": "LSTNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lstnet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LSTNet.html"
+  },
+  {
+    "id": "LTLM",
+    "name": "LTLM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ltlm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LTLM.html"
+  },
+  {
+    "id": "LVD",
+    "name": "LVD",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "lvd"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/LVD.html"
+  },
+  {
+    "id": "Lyapunov_Optimization",
+    "name": "Lyapunov Optimization & Virtual Queueing",
+    "category": "Real-Time Control & Optimization",
+    "tags": [
+      "model",
+      "lyapunov-optimization",
+      "virtual-queues",
+      "stochastic-control"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/Lyapunov_Optimization.html"
+  },
+  {
+    "id": "M42_Motorway_Traffic_Flow",
+    "name": "M42 Motorway Traffic Flow",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "m42_motorway_traffic_flow"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/M42_Motorway_Traffic_Flow.html"
+  },
+  {
+    "id": "Mamba-3",
+    "name": "Mamba-3",
+    "category": "State Space Model / Sequence Modeling",
+    "tags": [
+      "model",
+      "mamba-3"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/Mamba-3.html"
+  },
+  {
+    "id": "Mamba_SSM",
+    "name": "Mamba (Selective State-Space Family)",
+    "category": "Deep Learning / Selective State-Space Sequence Models (SSM)",
+    "tags": [
+      "model",
+      "deep-learning",
+      "state-space-models",
+      "sequence-modeling"
+    ],
+    "inbound_link_count": 14,
+    "rel_url": "models/Mamba_SSM.html"
+  },
+  {
+    "id": "MambaMixer",
+    "name": "MambaMixer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mambamixer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MambaMixer.html"
+  },
+  {
+    "id": "MambaTab",
+    "name": "MambaTab",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mambatab"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MambaTab.html"
+  },
+  {
+    "id": "MAML-Informer",
+    "name": "MAML-Informer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "maml-informer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MAML-Informer.html"
+  },
+  {
+    "id": "MAML",
+    "name": "Model-Agnostic Meta-Learning (MAML)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "maml"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "models/MAML.html"
+  },
+  {
+    "id": "MANN",
+    "name": "MANN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mann"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MANN.html"
+  },
+  {
+    "id": "Mask_Attention_Graph_Transformer",
+    "name": "Mask Attention Graph Transformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mask_attention_graph_transformer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Mask_Attention_Graph_Transformer.html"
+  },
+  {
+    "id": "Masked_Autoencoder",
+    "name": "Masked Autoencoder",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "masked_autoencoder"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Masked_Autoencoder.html"
+  },
+  {
+    "id": "Matern_Kernel",
+    "name": "Matern Kernel",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "matern_kernel"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Matern_Kernel.html"
+  },
+  {
+    "id": "Mean_Function",
+    "name": "Mean Function",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mean_function"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Mean_Function.html"
+  },
+  {
+    "id": "Mean_Scaling",
+    "name": "Mean Scaling",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mean_scaling"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Mean_Scaling.html"
+  },
+  {
+    "id": "Meta_Learning",
+    "name": "Meta Learning",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "meta-learning"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Meta_Learning.html"
+  },
+  {
+    "id": "Meta_PIGACN",
+    "name": "Meta PIGACN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "meta_pigacn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Meta_PIGACN.html"
+  },
+  {
+    "id": "MetaProbformer",
+    "name": "MetaProbformer (Reptile + Probformer)",
+    "category": "Machine Learning / Meta-Learning & Transformers",
+    "tags": [
+      "model",
+      "meta-learning",
+      "reptile",
+      "informer",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/MetaProbformer.html"
+  },
+  {
+    "id": "MFT",
+    "name": "Multi-scale Fusion Transformer (MFT)",
+    "category": "Deep Learning / Multi-Scale Cross-Attention Transformer",
+    "tags": [
+      "model",
+      "mft",
+      "scale-masking",
+      "cross-attention",
+      "long-horizon-forecasting"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MFT.html"
+  },
+  {
+    "id": "Microarchitecture_Events",
+    "name": "Microarchitecture Events",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "microarchitecture_events"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Microarchitecture_Events.html"
+  },
+  {
+    "id": "MIK-TST",
+    "name": "MIK TST",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mik-tst"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MIK-TST.html"
+  },
+  {
+    "id": "Min_Max_Scaling",
+    "name": "Min Max Scaling",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "min_max_scaling"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Min_Max_Scaling.html"
+  },
+  {
+    "id": "MiniImageNet",
+    "name": "MiniImageNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "miniimagenet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MiniImageNet.html"
+  },
+  {
+    "id": "Minkowski_Sum",
+    "name": "Minkowski Sum",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "minkowski_sum"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Minkowski_Sum.html"
+  },
+  {
+    "id": "ML",
+    "name": "ML",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ml"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ML.html"
+  },
+  {
+    "id": "MLP-Mixer",
+    "name": "MLP Mixer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mlp-mixer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MLP-Mixer.html"
+  },
+  {
+    "id": "MLP",
+    "name": "Multi-Layer Perceptron (MLP)",
+    "category": "baseline-model",
+    "tags": [
+      "model",
+      "mlp",
+      "baseline",
+      "feedforward",
+      "neural-network"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "models/MLP.html"
+  },
+  {
+    "id": "Moirai",
+    "name": "Moirai",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "moirai"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Moirai.html"
+  },
+  {
+    "id": "Moving_Average_Decomposition",
+    "name": "Moving Average Decomposition",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "moving_average_decomposition"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Moving_Average_Decomposition.html"
+  },
+  {
+    "id": "MPC",
+    "name": "MPC",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mpc"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/MPC.html"
+  },
+  {
+    "id": "MQ-RNN",
+    "name": "MQ RNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mq-rnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MQ-RNN.html"
+  },
+  {
+    "id": "MQ_TCN",
+    "name": "Multi-Quantile Temporal Convolutional Network (MQ-TCN)",
+    "category": "Deep Learning / Quantile Regression TCN",
+    "tags": [
+      "model",
+      "mq-tcn",
+      "tcn",
+      "quantile-regression",
+      "transfer-learning"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MQ_TCN.html"
+  },
+  {
+    "id": "MS_MPC",
+    "name": "Multiscenario Stochastic MPC (MS-MPC)",
+    "category": "Control & Optimization / Model Predictive Control",
+    "tags": [
+      "model",
+      "ms-mpc",
+      "stochastic-mpc",
+      "microgrid-ems",
+      "scenario-reduction"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/MS_MPC.html"
+  },
+  {
+    "id": "MSM",
+    "name": "MSM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "msm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MSM.html"
+  },
+  {
+    "id": "MSSTGAN",
+    "name": "Multi-Scale Spatial-Temporal Graph Attention Network (MSSTGAN)",
+    "category": "Deep Learning / Spatio-Temporal Graph Neural Network",
+    "tags": [
+      "model",
+      "msstgan",
+      "graph-attention",
+      "pyramid-split-attention",
+      "spatio-temporal"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MSSTGAN.html"
+  },
+  {
+    "id": "MTGNN",
+    "name": "MTGNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mtgnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MTGNN.html"
+  },
+  {
+    "id": "Multi_Dimensional_DTW",
+    "name": "Multi Dimensional DTW",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multi_dimensional_dtw"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Multi_Dimensional_DTW.html"
+  },
+  {
+    "id": "Multi_Head_Attention",
+    "name": "Multi-Head Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multi-head-attention"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "models/Multi_Head_Attention.html"
+  },
+  {
+    "id": "Multi_Horizon",
+    "name": "Multi Horizon",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multi_horizon"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Multi_Horizon.html"
+  },
+  {
+    "id": "Multi_Horizon_Forecast",
+    "name": "Multi Horizon Forecast",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multi_horizon_forecast"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Multi_Horizon_Forecast.html"
+  },
+  {
+    "id": "Multi_Periodicity",
+    "name": "Multi Periodicity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multi_periodicity"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Multi_Periodicity.html"
+  },
+  {
+    "id": "Multi_Scale_Representations",
+    "name": "Multi Scale Representations",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multi_scale_representations"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Multi_Scale_Representations.html"
+  },
+  {
+    "id": "Multiplication_Problem",
+    "name": "Multiplication Problem",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multiplication_problem"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Multiplication_Problem.html"
+  },
+  {
+    "id": "Multivariate_Hawkes_Process",
+    "name": "Multivariate Hawkes Process",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multivariate_hawkes_process"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Multivariate_Hawkes_Process.html"
+  },
+  {
+    "id": "Multivariate_Time_Series",
+    "name": "Multivariate Time Series",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "multivariate_time_series"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/Multivariate_Time_Series.html"
+  },
+  {
+    "id": "MVGCRL",
+    "name": "MVGCRL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mvgcrl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MVGCRL.html"
+  },
+  {
+    "id": "MVGRL",
+    "name": "MVGRL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "mvgrl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/MVGRL.html"
+  },
+  {
+    "id": "NBEATS-G",
+    "name": "NBEATS G",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nbeats-g"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/NBEATS-G.html"
+  },
+  {
+    "id": "NBEATS-I",
+    "name": "NBEATS I",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nbeats-i"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/NBEATS-I.html"
+  },
+  {
+    "id": "NBEATS",
+    "name": "N-BEATS",
+    "category": "Deep Learning / Residual Basis-Expansion MLP Ensemble",
+    "tags": [
+      "model",
+      "deep-learning",
+      "mlp"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "models/NBEATS.html"
+  },
+  {
+    "id": "Neural_CDE",
+    "name": "Neural CDE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "neural_cde"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Neural_CDE.html"
+  },
+  {
+    "id": "Neural_SDE",
+    "name": "Neural SDE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "neural_sde"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Neural_SDE.html"
+  },
+  {
+    "id": "NHiTS",
+    "name": "N-HiTS",
+    "category": "Deep Learning / Hierarchical Interpolation Multi-Rate MLP",
+    "tags": [
+      "model",
+      "deep-learning",
+      "mlp"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/NHiTS.html"
+  },
+  {
+    "id": "NILM",
+    "name": "NILM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nilm"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/NILM.html"
+  },
+  {
+    "id": "NLinear",
+    "name": "NLinear",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nlinear"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/NLinear.html"
+  },
+  {
+    "id": "NMPIL",
+    "name": "NMPIL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nmpil"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/NMPIL.html"
+  },
+  {
+    "id": "Node_Voltage",
+    "name": "Node Voltage",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "node_voltage"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Node_Voltage.html"
+  },
+  {
+    "id": "Node_Voltage_Magnitude",
+    "name": "Node Voltage Magnitude",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "node_voltage_magnitude"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Node_Voltage_Magnitude.html"
+  },
+  {
+    "id": "NSGA-II",
+    "name": "NSGA II",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nsga-ii"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/NSGA-II.html"
+  },
+  {
+    "id": "Number_of_Active_Sessions",
+    "name": "Number of Active Sessions",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "number_of_active_sessions"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Number_of_Active_Sessions.html"
+  },
+  {
+    "id": "NWP_Belgium",
+    "name": "NWP Belgium",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "nwp_belgium"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/NWP_Belgium.html"
+  },
+  {
+    "id": "Observation_Mask",
+    "name": "Observation Mask",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "observation_mask"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Observation_Mask.html"
+  },
+  {
+    "id": "Operating_Cost",
+    "name": "Operating Cost",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "operating_cost"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Operating_Cost.html"
+  },
+  {
+    "id": "Optimality_Gap",
+    "name": "Optimality Gap",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "optimality_gap"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Optimality_Gap.html"
+  },
+  {
+    "id": "PAG",
+    "name": "PAG (Physics-Informed Attention Graph)",
+    "category": "Deep Learning / Physics-Informed Graph Learning",
+    "tags": [
+      "model",
+      "pag",
+      "physics-informed",
+      "gat",
+      "tpa-lstm",
+      "price-elasticity"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/PAG.html"
+  },
+  {
+    "id": "PatchTST",
+    "name": "PatchTST",
+    "category": "Deep Learning / Patched Channel-Independent Transformer",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "long-term-forecasting",
+      "self-supervised"
+    ],
+    "inbound_link_count": 16,
+    "rel_url": "models/PatchTST.html"
+  },
+  {
+    "id": "PC-M3",
+    "name": "PC-M3",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pc-m3"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/PC-M3.html"
+  },
+  {
+    "id": "PCA",
+    "name": "PCA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pca"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PCA.html"
+  },
+  {
+    "id": "Periodic_Kernel",
+    "name": "Periodic Kernel",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "periodic_kernel"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Periodic_Kernel.html"
+  },
+  {
+    "id": "Persistence_Model",
+    "name": "Persistence (Naive) Baseline",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "persistence_model"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/Persistence_Model.html"
+  },
+  {
+    "id": "PF-HoLo",
+    "name": "PF HoLo",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pf-holo"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PF-HoLo.html"
+  },
+  {
+    "id": "PFGA",
+    "name": "PFGA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pfga"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PFGA.html"
+  },
+  {
+    "id": "PICCN",
+    "name": "PICCN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "piccn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PICCN.html"
+  },
+  {
+    "id": "PICNN",
+    "name": "Partial Input Convex Neural Network (PICNN)",
+    "category": "Deep Learning / Convex Learning Architecture",
+    "tags": [
+      "model",
+      "picnn",
+      "convex-learning",
+      "quantile-crossing",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/PICNN.html"
+  },
+  {
+    "id": "PIGACN",
+    "name": "PIGACN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pigacn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PIGACN.html"
+  },
+  {
+    "id": "Pilot_Signal",
+    "name": "Pilot Signal",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pilot_signal"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Pilot_Signal.html"
+  },
+  {
+    "id": "PIML",
+    "name": "PIML",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "piml"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PIML.html"
+  },
+  {
+    "id": "PJM_Day_Ahead_Tariff",
+    "name": "PJM Day Ahead Tariff",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pjm_day_ahead_tariff"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PJM_Day_Ahead_Tariff.html"
+  },
+  {
+    "id": "PLQR",
+    "name": "PLQR",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "plqr"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PLQR.html"
+  },
+  {
+    "id": "PM2.5_Concentration",
+    "name": "PM2.5 Concentration",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pm2.5_concentration"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PM2.5_Concentration.html"
+  },
+  {
+    "id": "PowerMamba",
+    "name": "PowerMamba",
+    "category": "Deep Learning / Dual-Path Selective State-Space Model for Power Systems",
+    "tags": [
+      "model",
+      "mamba",
+      "ssm",
+      "power-systems",
+      "multivariate-forecasting"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "models/PowerMamba.html"
+  },
+  {
+    "id": "Precipitable_Water",
+    "name": "Precipitable Water",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "precipitable_water"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Precipitable_Water.html"
+  },
+  {
+    "id": "Pricing_Mechanism",
+    "name": "Pricing Mechanism",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pricing_mechanism"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Pricing_Mechanism.html"
+  },
+  {
+    "id": "ProbSparse_Attention",
+    "name": "ProbSparse Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "probsparse_attention"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/ProbSparse_Attention.html"
+  },
+  {
+    "id": "Projection_Pursuit_Regression",
+    "name": "Projection Pursuit Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "projection_pursuit_regression"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Projection_Pursuit_Regression.html"
+  },
+  {
+    "id": "Prophet-LSTM",
+    "name": "Prophet LSTM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "prophet-lstm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Prophet-LSTM.html"
+  },
+  {
+    "id": "Prophet",
+    "name": "Prophet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "prophet"
+    ],
+    "inbound_link_count": 9,
+    "rel_url": "models/Prophet.html"
+  },
+  {
+    "id": "PSS",
+    "name": "PSS",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pss"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/PSS.html"
+  },
+  {
+    "id": "Pyraformer",
+    "name": "Pyraformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pyraformer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Pyraformer.html"
+  },
+  {
+    "id": "Pyramid_Split_Attention",
+    "name": "Pyramid Split Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "pyramid-split-attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Pyramid_Split_Attention.html"
+  },
+  {
+    "id": "Q_Learning",
+    "name": "Q-Learning Reinforcement Learning",
+    "category": "Machine Learning / Reinforcement Learning",
+    "tags": [
+      "model",
+      "reinforcement-learning",
+      "q-learning",
+      "model-free"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Q_Learning.html"
+  },
+  {
+    "id": "QLoRA",
+    "name": "QLoRA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "qlora"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/QLoRA.html"
+  },
+  {
+    "id": "QR_LSTM_Attention",
+    "name": "Quantile Regression LSTM-Attention (QR-LSTM-Attention)",
+    "category": "Deep Learning / Quantile Regression Recurrent Architecture",
+    "tags": [
+      "model",
+      "qr-lstm-attention",
+      "quantile-regression",
+      "lstm-attention",
+      "crps"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/QR_LSTM_Attention.html"
+  },
+  {
+    "id": "QRA",
+    "name": "QRA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "qra"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/QRA.html"
+  },
+  {
+    "id": "QRF",
+    "name": "QRF",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "qrf"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/QRF.html"
+  },
+  {
+    "id": "QRNN",
+    "name": "QRNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "qrnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/QRNN.html"
+  },
+  {
+    "id": "Quantile_Regression",
+    "name": "Quantile Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "quantile-regression"
+    ],
+    "inbound_link_count": 9,
+    "rel_url": "models/Quantile_Regression.html"
+  },
+  {
+    "id": "Queuing_Model",
+    "name": "Queuing Model",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "queuing_model"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/Queuing_Model.html"
+  },
+  {
+    "id": "Random_Forest",
+    "name": "Random Forest",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "random_forest"
+    ],
+    "inbound_link_count": 7,
+    "rel_url": "models/Random_Forest.html"
+  },
+  {
+    "id": "Rao-1",
+    "name": "Rao 1",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rao-1"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Rao-1.html"
+  },
+  {
+    "id": "Rational_Quadratic_Kernel",
+    "name": "Rational Quadratic Kernel",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rational_quadratic_kernel"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Rational_Quadratic_Kernel.html"
+  },
+  {
+    "id": "Raw_Sequence_Input",
+    "name": "Raw Sequence Input",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "raw_sequence_input"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Raw_Sequence_Input.html"
+  },
+  {
+    "id": "Recency_Effect_Regression",
+    "name": "Recency Effect Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "recency_effect_regression"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Recency_Effect_Regression.html"
+  },
+  {
+    "id": "Recent_Access_Pattern",
+    "name": "Recent Access Pattern",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "recent_access_pattern"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Recent_Access_Pattern.html"
+  },
+  {
+    "id": "Recurrent_Cascade_Correlation",
+    "name": "Recurrent Cascade Correlation",
+    "category": "Neural Network / Constructive Learning Architecture",
+    "tags": [
+      "model",
+      "architecture",
+      "recurrent-neural-network"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Recurrent_Cascade_Correlation.html"
+  },
+  {
+    "id": "Reformer",
+    "name": "Reformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "reformer"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/Reformer.html"
+  },
+  {
+    "id": "Region_ID_One_Hot",
+    "name": "Region ID One Hot",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "region_id_one_hot"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Region_ID_One_Hot.html"
+  },
+  {
+    "id": "Regional_Functional_Type",
+    "name": "Regional Functional Type",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "regional_functional_type"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Regional_Functional_Type.html"
+  },
+  {
+    "id": "REINFORCE",
+    "name": "REINFORCE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "reinforce"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/REINFORCE.html"
+  },
+  {
+    "id": "ReliefF",
+    "name": "ReliefF",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "relieff"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ReliefF.html"
+  },
+  {
+    "id": "Reptile",
+    "name": "Reptile",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "reptile"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "models/Reptile.html"
+  },
+  {
+    "id": "Residual_Component",
+    "name": "Residual Component",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "residual_component"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Residual_Component.html"
+  },
+  {
+    "id": "ResLSTM",
+    "name": "ResLSTM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "reslstm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ResLSTM.html"
+  },
+  {
+    "id": "ResMMoT_Informer",
+    "name": "ResMMoT-Informer",
+    "category": "Deep Learning / Sparse MoE Multiscale Architecture",
+    "tags": [
+      "model",
+      "resmmot-informer",
+      "moe",
+      "multiscale-tcn",
+      "informer"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ResMMoT_Informer.html"
+  },
+  {
+    "id": "ResNet",
+    "name": "Residual Network (ResNet)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "resnet"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/ResNet.html"
+  },
+  {
+    "id": "RESTNet",
+    "name": "RESTNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "restnet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/RESTNet.html"
+  },
+  {
+    "id": "ResTrans",
+    "name": "Multi-Branch ResNet-Transformer (ResTrans)",
+    "category": "Deep Learning / Spatial-Temporal Architecture",
+    "tags": [
+      "model",
+      "restrans",
+      "resnet",
+      "transformer",
+      "spatial-temporal"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ResTrans.html"
+  },
+  {
+    "id": "RevIN",
+    "name": "RevIN",
+    "category": "Deep Learning / Reversible Instance Normalization (Normalization Technique)",
+    "tags": [
+      "model",
+      "normalization",
+      "distribution-shift",
+      "plug-in-technique"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "models/RevIN.html"
+  },
+  {
+    "id": "Ridge_Regression",
+    "name": "Ridge Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ridge_regression"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Ridge_Regression.html"
+  },
+  {
+    "id": "RLinear",
+    "name": "RLinear",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rlinear"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/RLinear.html"
+  },
+  {
+    "id": "RMSN",
+    "name": "RMSN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rmsn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/RMSN.html"
+  },
+  {
+    "id": "RNN",
+    "name": "Recurrent Neural Network (RNN)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rnn"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "models/RNN.html"
+  },
+  {
+    "id": "Rolling_Energy_Aggregates",
+    "name": "Rolling Energy Aggregates",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rolling_energy_aggregates"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Rolling_Energy_Aggregates.html"
+  },
+  {
+    "id": "Router_Attention",
+    "name": "Router Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "router_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Router_Attention.html"
+  },
+  {
+    "id": "Routing_Mamba",
+    "name": "Routing Mamba",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "routing_mamba"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Routing_Mamba.html"
+  },
+  {
+    "id": "RTRL",
+    "name": "RTRL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "rtrl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/RTRL.html"
+  },
+  {
+    "id": "S4",
+    "name": "Structured State Space Model (S4)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "s4"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/S4.html"
+  },
+  {
+    "id": "S_Mamba",
+    "name": "S-Mamba",
+    "category": "Deep Learning / Minimalist Selective State-Space Forecaster",
+    "tags": [
+      "model",
+      "mamba",
+      "ssm",
+      "multivariate-forecasting",
+      "benchmark"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/S_Mamba.html"
+  },
+  {
+    "id": "SAE",
+    "name": "SAE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sae"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SAE.html"
+  },
+  {
+    "id": "SAGE_Semantic_Aware_Graph_Encoder",
+    "name": "SAGE Semantic Aware Graph Encoder",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sage_semantic_aware_graph_encoder"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SAGE_Semantic_Aware_Graph_Encoder.html"
+  },
+  {
+    "id": "SAIDI_Outages",
+    "name": "SAIDI Outages",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "saidi_outages"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SAIDI_Outages.html"
+  },
+  {
+    "id": "SARIMA",
+    "name": "Seasonal ARIMA (SARIMA)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sarima"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/SARIMA.html"
+  },
+  {
+    "id": "SARIMAX",
+    "name": "SARIMAX",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sarimax"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SARIMAX.html"
+  },
+  {
+    "id": "Scale_Factor",
+    "name": "Scale Factor",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "scale_factor"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Scale_Factor.html"
+  },
+  {
+    "id": "Scale_Mask",
+    "name": "Scale Mask",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "scale_mask"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Scale_Mask.html"
+  },
+  {
+    "id": "SCINet",
+    "name": "SCINet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "scinet"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/SCINet.html"
+  },
+  {
+    "id": "Self-Attention_Distilling",
+    "name": "Self Attention Distilling",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "self-attention_distilling"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Self-Attention_Distilling.html"
+  },
+  {
+    "id": "SENet",
+    "name": "SENet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "senet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SENet.html"
+  },
+  {
+    "id": "Sensor_Time_Series",
+    "name": "Sensor Time Series",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sensor_time_series"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Sensor_Time_Series.html"
+  },
+  {
+    "id": "Seq2Seq",
+    "name": "Seq2Seq",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "seq2seq"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Seq2Seq.html"
+  },
+  {
+    "id": "SeqDec",
+    "name": "SeqDec",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "seqdec"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SeqDec.html"
+  },
+  {
+    "id": "Series_Decomposition_Block",
+    "name": "Series Decomposition Block",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "series_decomposition_block"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Series_Decomposition_Block.html"
+  },
+  {
+    "id": "Series_Representations",
+    "name": "Series Representations",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "series_representations"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Series_Representations.html"
+  },
+  {
+    "id": "Session-Level_Statistics",
+    "name": "Session Level Statistics",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "session-level_statistics"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Session-Level_Statistics.html"
+  },
+  {
+    "id": "Set_Transformer_Induced_Attention",
+    "name": "Set Transformer Induced Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "set_transformer_induced_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Set_Transformer_Induced_Attention.html"
+  },
+  {
+    "id": "ShapeDTW",
+    "name": "ShapeDTW",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "shapedtw"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ShapeDTW.html"
+  },
+  {
+    "id": "Silu_Basis_Function",
+    "name": "Silu Basis Function",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "silu_basis_function"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Silu_Basis_Function.html"
+  },
+  {
+    "id": "Similarity_Graph",
+    "name": "Similarity Graph",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "similarity_graph"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Similarity_Graph.html"
+  },
+  {
+    "id": "Sinusoid_Regression",
+    "name": "Sinusoid Regression",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sinusoid_regression"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Sinusoid_Regression.html"
+  },
+  {
+    "id": "SMAN",
+    "name": "SMAN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sman"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SMAN.html"
+  },
+  {
+    "id": "SMD",
+    "name": "SMD",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "smd"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SMD.html"
+  },
+  {
+    "id": "SOH",
+    "name": "SOH",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "soh"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/SOH.html"
+  },
+  {
+    "id": "Solar_Alabama",
+    "name": "Solar Alabama",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "solar_alabama"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Solar_Alabama.html"
+  },
+  {
+    "id": "Solar_Potential_Sunroof",
+    "name": "Solar Potential Sunroof",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "solar_potential_sunroof"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Solar_Potential_Sunroof.html"
+  },
+  {
+    "id": "Solar_Zenith_Angle",
+    "name": "Solar Zenith Angle",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "solar_zenith_angle"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Solar_Zenith_Angle.html"
+  },
+  {
+    "id": "Sparse_GP",
+    "name": "Sparse GP",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sparse_gp"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Sparse_GP.html"
+  },
+  {
+    "id": "Sparse_Mixture_of_Experts",
+    "name": "Sparse Mixture of Experts",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sparse_mixture_of_experts"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Sparse_Mixture_of_Experts.html"
+  },
+  {
+    "id": "Spatial_Attention",
+    "name": "Spatial Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "spatial_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Spatial_Attention.html"
+  },
+  {
+    "id": "Spatial_Dropout",
+    "name": "Spatial Dropout",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "spatial_dropout"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Spatial_Dropout.html"
+  },
+  {
+    "id": "Spatial_Spillover",
+    "name": "Spatial Spillover",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "spatial_spillover"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Spatial_Spillover.html"
+  },
+  {
+    "id": "Squared_Exponential_Kernel",
+    "name": "Squared Exponential Kernel",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "squared_exponential_kernel"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Squared_Exponential_Kernel.html"
+  },
+  {
+    "id": "ST-EVCDP",
+    "name": "ST-EVCDP",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "st-evcdp"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ST-EVCDP.html"
+  },
+  {
+    "id": "ST-GAT",
+    "name": "ST GAT",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "st-gat"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/ST-GAT.html"
+  },
+  {
+    "id": "Stacked_AutoEncoder",
+    "name": "Stacked AutoEncoder",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stacked_autoencoder"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Stacked_AutoEncoder.html"
+  },
+  {
+    "id": "Static_Attributes",
+    "name": "Static Attributes",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "static_attributes"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Static_Attributes.html"
+  },
+  {
+    "id": "Station_Latitude_Longitude",
+    "name": "Station Latitude Longitude",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "station_latitude_longitude"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Station_Latitude_Longitude.html"
+  },
+  {
+    "id": "Stationary_Transformer",
+    "name": "Stationary Transformer",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stationary_transformer"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Stationary_Transformer.html"
+  },
+  {
+    "id": "STFGNN",
+    "name": "STFGNN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stfgnn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/STFGNN.html"
+  },
+  {
+    "id": "STGCN",
+    "name": "STGCN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stgcn"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/STGCN.html"
+  },
+  {
+    "id": "STL",
+    "name": "STL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/STL.html"
+  },
+  {
+    "id": "STL_Hybrid",
+    "name": "STL Hybrid",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stl_hybrid"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/STL_Hybrid.html"
+  },
+  {
+    "id": "STMGCN",
+    "name": "STMGCN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stmgcn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/STMGCN.html"
+  },
+  {
+    "id": "Stochastic_MPC",
+    "name": "Stochastic Model Predictive Control (Stochastic MPC)",
+    "category": "Control / Scenario-Based Receding-Horizon Optimization",
+    "tags": [
+      "model",
+      "mpc",
+      "stochastic-control",
+      "energy-management"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Stochastic_MPC.html"
+  },
+  {
+    "id": "STSGCN",
+    "name": "STSGCN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "stsgcn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/STSGCN.html"
+  },
+  {
+    "id": "Sundial",
+    "name": "Sundial",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "sundial"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Sundial.html"
+  },
+  {
+    "id": "SVM",
+    "name": "SVM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "svm"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/SVM.html"
+  },
+  {
+    "id": "SVR",
+    "name": "Support Vector Regression (SVR)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "svr"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "models/SVR.html"
+  },
+  {
+    "id": "T-GCN",
+    "name": "Temporal Graph Convolutional Network (T-GCN)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "t-gcn"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/T-GCN.html"
+  },
+  {
+    "id": "TAA",
+    "name": "TAA",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "taa"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TAA.html"
+  },
+  {
+    "id": "TACT_Causal_Temporal_Alignment",
+    "name": "TACT Causal Temporal Alignment",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "tact_causal_temporal_alignment"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TACT_Causal_Temporal_Alignment.html"
+  },
+  {
+    "id": "Task_Distribution",
+    "name": "Task Distribution",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "task_distribution"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Task_Distribution.html"
+  },
+  {
+    "id": "TCN",
+    "name": "TCN",
+    "category": "Deep Learning / Temporal Convolutional Network",
+    "tags": [
+      "model",
+      "deep-learning",
+      "cnn"
+    ],
+    "inbound_link_count": 9,
+    "rel_url": "models/TCN.html"
+  },
+  {
+    "id": "TD3",
+    "name": "TD3",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "td3"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TD3.html"
+  },
+  {
+    "id": "Temporal_2D_Variations",
+    "name": "Temporal 2D Variations",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "temporal_2d_variations"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Temporal_2D_Variations.html"
+  },
+  {
+    "id": "Temporal_Attention",
+    "name": "Temporal Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "temporal_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Temporal_Attention.html"
+  },
+  {
+    "id": "Temporal_Fusion_Transformer",
+    "name": "Temporal Fusion Transformer (TFT)",
+    "category": "Deep Learning / Interpretable Multi-Horizon Attention Architecture",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "probabilistic-forecasting",
+      "interpretability"
+    ],
+    "inbound_link_count": 14,
+    "rel_url": "models/Temporal_Fusion_Transformer.html"
+  },
+  {
+    "id": "Temporal_Order_Problem",
+    "name": "Temporal Order Problem",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "temporal_order_problem"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Temporal_Order_Problem.html"
+  },
+  {
+    "id": "Text_Tokens",
+    "name": "Text Tokens",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "text_tokens"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Text_Tokens.html"
+  },
+  {
+    "id": "TiDE",
+    "name": "TiDE",
+    "category": "Deep Learning / Dense MLP Encoder-Decoder Forecaster",
+    "tags": [
+      "model",
+      "deep-learning",
+      "mlp"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "models/TiDE.html"
+  },
+  {
+    "id": "Time-MoE",
+    "name": "Time MoE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "time-moe"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Time-MoE.html"
+  },
+  {
+    "id": "Time_Aware_Attention",
+    "name": "Time Aware Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "time_aware_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Time_Aware_Attention.html"
+  },
+  {
+    "id": "Time_Based_Covariates",
+    "name": "Time Based Covariates",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "time_based_covariates"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Time_Based_Covariates.html"
+  },
+  {
+    "id": "Time_of_Day",
+    "name": "Time of Day",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "time_of_day"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Time_of_Day.html"
+  },
+  {
+    "id": "Time_of_Year",
+    "name": "Time of Year",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "time_of_year"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Time_of_Year.html"
+  },
+  {
+    "id": "TimeGrad",
+    "name": "TimeGrad",
+    "category": "Deep Learning / Autoregressive Conditional Diffusion Forecaster",
+    "tags": [
+      "model",
+      "deep-learning",
+      "diffusion",
+      "probabilistic-forecasting"
+    ],
+    "inbound_link_count": 9,
+    "rel_url": "models/TimeGrad.html"
+  },
+  {
+    "id": "TimesFM",
+    "name": "TimesFM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "timesfm"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/TimesFM.html"
+  },
+  {
+    "id": "TimesFM_2.0",
+    "name": "TimesFM 2.0",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "timesfm_2.0"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TimesFM_2.0.html"
+  },
+  {
+    "id": "TimesNet",
+    "name": "TimesNet",
+    "category": "Deep Learning / Temporal 2D-Variation Modeling (General Time Series Backbone)",
+    "tags": [
+      "model",
+      "deep-learning",
+      "cnn",
+      "fft",
+      "general-time-series"
+    ],
+    "inbound_link_count": 8,
+    "rel_url": "models/TimesNet.html"
+  },
+  {
+    "id": "Top-K_Spatial_Attention",
+    "name": "Top K Spatial Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "top-k_spatial_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Top-K_Spatial_Attention.html"
+  },
+  {
+    "id": "Top_K_Gating_Routing",
+    "name": "Top K Gating Routing",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "top_k_gating_routing"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Top_K_Gating_Routing.html"
+  },
+  {
+    "id": "Total_Cost",
+    "name": "Total Cost",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "total_cost"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Total_Cost.html"
+  },
+  {
+    "id": "TPA-LSTM",
+    "name": "TPA LSTM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "tpa-lstm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TPA-LSTM.html"
+  },
+  {
+    "id": "Traffic_Density",
+    "name": "Traffic Density",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "traffic_density"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Traffic_Density.html"
+  },
+  {
+    "id": "Traffic_Zone_Adjacency",
+    "name": "Traffic Zone Adjacency",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "traffic_zone_adjacency"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Traffic_Zone_Adjacency.html"
+  },
+  {
+    "id": "Transform_Attention",
+    "name": "Transform Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "transform_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Transform_Attention.html"
+  },
+  {
+    "id": "Transformer",
+    "name": "Transformer",
+    "category": "Deep Learning / Self-Attention Mechanism",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "attention"
+    ],
+    "inbound_link_count": 32,
+    "rel_url": "models/Transformer.html"
+  },
+  {
+    "id": "Transformer_BiLSTM",
+    "name": "Transformer-BiLSTM Hybrid",
+    "category": "Deep Learning / Hybrid Attention-Recurrent Architecture",
+    "tags": [
+      "model",
+      "transformer-bilstm",
+      "bi-lstm",
+      "self-attention",
+      "price-forecasting"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Transformer_BiLSTM.html"
+  },
+  {
+    "id": "Treatments",
+    "name": "Treatments",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "treatments"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Treatments.html"
+  },
+  {
+    "id": "TriCast",
+    "name": "TriCast",
+    "category": "Deep Learning / Tri-Modal Causal Spatio-Temporal-Economic Graph Network",
+    "tags": [
+      "model",
+      "deep-learning",
+      "graph-neural-network",
+      "spatio-temporal",
+      "causal"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TriCast.html"
+  },
+  {
+    "id": "TRMF",
+    "name": "TRMF",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "trmf"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TRMF.html"
+  },
+  {
+    "id": "TRPO",
+    "name": "TRPO",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "trpo"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TRPO.html"
+  },
+  {
+    "id": "TSD",
+    "name": "TSD",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "tsd"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/TSD.html"
+  },
+  {
+    "id": "Two_Stage_Attention",
+    "name": "Two Stage Attention",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "two_stage_attention"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Two_Stage_Attention.html"
+  },
+  {
+    "id": "UGnet",
+    "name": "UGnet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "ugnet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/UGnet.html"
+  },
+  {
+    "id": "Uniform_Input_Representation",
+    "name": "Uniform Input Representation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "uniform_input_representation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Uniform_Input_Representation.html"
+  },
+  {
+    "id": "Unit_Cost_USD_per_kWh",
+    "name": "Unit Cost USD per kWh",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "unit_cost_usd_per_kwh"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Unit_Cost_USD_per_kWh.html"
+  },
+  {
+    "id": "USDT",
+    "name": "USDT",
+    "category": "Deep Learning / Uncertainty-Scale Dual-Direction Probabilistic Transformer",
+    "tags": [
+      "model",
+      "deep-learning",
+      "transformer",
+      "probabilistic-forecasting",
+      "long-term-forecasting"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/USDT.html"
+  },
+  {
+    "id": "V2AFedEGAT-LSTM",
+    "name": "V2AFedEGAT LSTM",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "v2afedegat-lstm"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/V2AFedEGAT-LSTM.html"
+  },
+  {
+    "id": "V2G-SVE",
+    "name": "V2G SVE",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "v2g-sve"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/V2G-SVE.html"
+  },
+  {
+    "id": "V2G",
+    "name": "V2G",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "v2g"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "models/V2G.html"
+  },
+  {
+    "id": "VAE_DGP",
+    "name": "VAE DGP",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "vae_dgp"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/VAE_DGP.html"
+  },
+  {
+    "id": "VAR",
+    "name": "VAR",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "var"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/VAR.html"
+  },
+  {
+    "id": "Variate_Tokens",
+    "name": "Variate Tokens",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "variate_tokens"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Variate_Tokens.html"
+  },
+  {
+    "id": "VFL",
+    "name": "VFL",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "vfl"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/VFL.html"
+  },
+  {
+    "id": "VGGNet",
+    "name": "VGGNet",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "vggnet"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/VGGNet.html"
+  },
+  {
+    "id": "VMD",
+    "name": "Variational Mode Decomposition (VMD)",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "vmd"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "models/VMD.html"
+  },
+  {
+    "id": "VMD_Prophet_LSTM",
+    "name": "VMD-Prophet-LSTM",
+    "category": "Hybrid Decomposition / VMD + Prophet + LSTM Combined Model",
+    "tags": [
+      "model",
+      "hybrid-model",
+      "decomposition",
+      "vmd",
+      "ev-load-forecasting"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/VMD_Prophet_LSTM.html"
+  },
+  {
+    "id": "Volatility",
+    "name": "Volatility",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "volatility"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Volatility.html"
+  },
+  {
+    "id": "Voltage_Phase_Angle",
+    "name": "Voltage Phase Angle",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "voltage_phase_angle"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Voltage_Phase_Angle.html"
+  },
+  {
+    "id": "VSN",
+    "name": "VSN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "vsn"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/VSN.html"
+  },
+  {
+    "id": "Wavelet_Decomposition",
+    "name": "Wavelet Decomposition",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "wavelet_decomposition"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Wavelet_Decomposition.html"
+  },
+  {
+    "id": "Wavelet_Neural_Network",
+    "name": "Wavelet Neural Network",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "wavelet_neural_network"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Wavelet_Neural_Network.html"
+  },
+  {
+    "id": "Weather_Conditions",
+    "name": "Weather Conditions",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "weather_conditions"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "models/Weather_Conditions.html"
+  },
+  {
+    "id": "Weight_Interpolation",
+    "name": "Weight Interpolation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "weight_interpolation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Weight_Interpolation.html"
+  },
+  {
+    "id": "Weight_Normalization",
+    "name": "Weight Normalization",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "weight_normalization"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/Weight_Normalization.html"
+  },
+  {
+    "id": "WITRAN",
+    "name": "WITRAN",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "witran"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/WITRAN.html"
+  },
+  {
+    "id": "WT",
+    "name": "WT",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "model",
+      "wt"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "models/WT.html"
+  },
+  {
+    "id": "XGBoost",
+    "name": "Extreme Gradient Boosting (XGBoost)",
+    "category": "Machine Learning / Gradient Boosted Decision Trees",
+    "tags": [
+      "model",
+      "xgboost",
+      "machine-learning",
+      "decision-trees"
+    ],
+    "inbound_link_count": 16,
+    "rel_url": "models/XGBoost.html"
+  }
+]

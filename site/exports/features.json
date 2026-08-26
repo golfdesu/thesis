@@ -1,0 +1,1645 @@
+[
+  {
+    "id": "Access_Duration",
+    "name": "Access Duration",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "access_duration"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Access_Duration.html"
+  },
+  {
+    "id": "Active_Power",
+    "name": "Active Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "active_power"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Active_Power.html"
+  },
+  {
+    "id": "Age_Feature",
+    "name": "Age Feature",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "age_feature"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Age_Feature.html"
+  },
+  {
+    "id": "Aggregate_EV_Fleet_Model",
+    "name": "Aggregate EV Fleet Model",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "aggregate_ev_fleet_model"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Aggregate_EV_Fleet_Model.html"
+  },
+  {
+    "id": "Air_Pressure",
+    "name": "Air Pressure",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "air_pressure"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Air_Pressure.html"
+  },
+  {
+    "id": "All_Electric_Range",
+    "name": "All Electric Range",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "all_electric_range"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/All_Electric_Range.html"
+  },
+  {
+    "id": "Arrival_Departure_Time",
+    "name": "EV Arrival & Departure Times",
+    "category": "behavioral-feature",
+    "tags": [
+      "feature",
+      "behavioral",
+      "session",
+      "arrival",
+      "departure"
+    ],
+    "inbound_link_count": 15,
+    "rel_url": "features/Arrival_Departure_Time.html"
+  },
+  {
+    "id": "Bag_of_Words_Features",
+    "name": "Bag of Words Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "bag_of_words_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Bag_of_Words_Features.html"
+  },
+  {
+    "id": "Base_Electrical_Load",
+    "name": "Base Electrical Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "base_electrical_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Base_Electrical_Load.html"
+  },
+  {
+    "id": "Baseload",
+    "name": "Baseload",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "baseload"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Baseload.html"
+  },
+  {
+    "id": "Battery_Capacity",
+    "name": "Battery Capacity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "battery_capacity"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "features/Battery_Capacity.html"
+  },
+  {
+    "id": "Byte_Pair_Encoding",
+    "name": "Byte Pair Encoding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "byte_pair_encoding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Byte_Pair_Encoding.html"
+  },
+  {
+    "id": "Calendar_Features",
+    "name": "Calendar Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "calendar_features"
+    ],
+    "inbound_link_count": 37,
+    "rel_url": "features/Calendar_Features.html"
+  },
+  {
+    "id": "Changepoint_Kernel",
+    "name": "Changepoint Kernel",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "changepoint_kernel"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Changepoint_Kernel.html"
+  },
+  {
+    "id": "Charging_Duration",
+    "name": "Charging Duration",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_duration"
+    ],
+    "inbound_link_count": 6,
+    "rel_url": "features/Charging_Duration.html"
+  },
+  {
+    "id": "Charging_Efficiency_Metrics",
+    "name": "Charging Efficiency Metrics",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_efficiency_metrics"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Efficiency_Metrics.html"
+  },
+  {
+    "id": "Charging_Event_Records",
+    "name": "Charging Event Records",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_event_records"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Event_Records.html"
+  },
+  {
+    "id": "Charging_Fee_Statistics",
+    "name": "Charging Fee Statistics",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_fee_statistics"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Fee_Statistics.html"
+  },
+  {
+    "id": "Charging_Habit_Probability",
+    "name": "Charging Habit Probability",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_habit_probability"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Habit_Probability.html"
+  },
+  {
+    "id": "Charging_Pile_Density",
+    "name": "Charging Pile Density",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_pile_density"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Pile_Density.html"
+  },
+  {
+    "id": "Charging_Power",
+    "name": "Charging Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_power"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "features/Charging_Power.html"
+  },
+  {
+    "id": "Charging_Price",
+    "name": "Charging Price",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_price"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Price.html"
+  },
+  {
+    "id": "Charging_Session_Logs",
+    "name": "Charging Session Logs",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_session_logs"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Session_Logs.html"
+  },
+  {
+    "id": "Charging_Start_Time",
+    "name": "Charging Start Time",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_start_time"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Start_Time.html"
+  },
+  {
+    "id": "Charging_Volume",
+    "name": "Charging Volume",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "charging_volume"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Charging_Volume.html"
+  },
+  {
+    "id": "Climate_Features",
+    "name": "Climate Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "climate_features"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Climate_Features.html"
+  },
+  {
+    "id": "Cloud_Cover",
+    "name": "Cloud Cover",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "cloud_cover"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Cloud_Cover.html"
+  },
+  {
+    "id": "Cloud_Type",
+    "name": "Cloud Type",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "cloud_type"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Cloud_Type.html"
+  },
+  {
+    "id": "Computation_Time",
+    "name": "Computation Time",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "computation_time"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Computation_Time.html"
+  },
+  {
+    "id": "Connector_Power_Rating",
+    "name": "Connector Power Rating",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "connector_power_rating"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Connector_Power_Rating.html"
+  },
+  {
+    "id": "Connector_Type",
+    "name": "Connector Type",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "connector_type"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Connector_Type.html"
+  },
+  {
+    "id": "Contextual_Features",
+    "name": "Contextual Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "contextual_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Contextual_Features.html"
+  },
+  {
+    "id": "Cyclical_Day_Number_Features",
+    "name": "Cyclical Day Number Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "cyclical_day_number_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Cyclical_Day_Number_Features.html"
+  },
+  {
+    "id": "Cyclical_Encodings",
+    "name": "Cyclical Trigonometric Encodings (Sin/Cos)",
+    "category": "Feature Engineering / Time Encoding",
+    "tags": [
+      "feature",
+      "cyclical-encoding",
+      "sine-cosine",
+      "time-series"
+    ],
+    "inbound_link_count": 15,
+    "rel_url": "features/Cyclical_Encodings.html"
+  },
+  {
+    "id": "Cyclical_Quarter_Hour_Features",
+    "name": "Cyclical Quarter Hour Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "cyclical_quarter_hour_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Cyclical_Quarter_Hour_Features.html"
+  },
+  {
+    "id": "Daily_Driven_Miles",
+    "name": "Daily Driven Miles",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "daily_driven_miles"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Daily_Driven_Miles.html"
+  },
+  {
+    "id": "Daily_Mileage",
+    "name": "Daily Mileage",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "daily_mileage"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Daily_Mileage.html"
+  },
+  {
+    "id": "Daily_Weekly_Cycles",
+    "name": "Daily Weekly Cycles",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "daily_weekly_cycles"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Daily_Weekly_Cycles.html"
+  },
+  {
+    "id": "Depth_of_Discharge",
+    "name": "Depth of Discharge",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "depth_of_discharge"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Depth_of_Discharge.html"
+  },
+  {
+    "id": "Dew_Point",
+    "name": "Dew Point",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "dew_point"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "features/Dew_Point.html"
+  },
+  {
+    "id": "Diffusion_Step_Embedding",
+    "name": "Diffusion Step Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "diffusion_step_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Diffusion_Step_Embedding.html"
+  },
+  {
+    "id": "Driver_Behavior",
+    "name": "Driver Behavior",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "driver_behavior"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Driver_Behavior.html"
+  },
+  {
+    "id": "Driver_Style",
+    "name": "Driver Style",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "driver_style"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Driver_Style.html"
+  },
+  {
+    "id": "Driving_Condition_Clusters",
+    "name": "Driving Condition Clusters",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "driving_condition_clusters"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Driving_Condition_Clusters.html"
+  },
+  {
+    "id": "Driving_Cycle",
+    "name": "Driving Cycle",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "driving_cycle"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Driving_Cycle.html"
+  },
+  {
+    "id": "DSW_Embedding",
+    "name": "DSW Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "dsw_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/DSW_Embedding.html"
+  },
+  {
+    "id": "Economic_Indicators",
+    "name": "Economic Indicators",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "economic_indicators"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Economic_Indicators.html"
+  },
+  {
+    "id": "Education_Level",
+    "name": "Education Level",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "education_level"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Education_Level.html"
+  },
+  {
+    "id": "Electricity_Load",
+    "name": "Electricity Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "electricity_load"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Electricity_Load.html"
+  },
+  {
+    "id": "Electricity_Tariff",
+    "name": "Electricity Tariff & Time-of-Use (TOU) Pricing",
+    "category": "economic-feature",
+    "tags": [
+      "feature",
+      "pricing",
+      "TOU",
+      "electricity-tariff",
+      "demand-response"
+    ],
+    "inbound_link_count": 23,
+    "rel_url": "features/Electricity_Tariff.html"
+  },
+  {
+    "id": "Electricity_Usage",
+    "name": "Electricity Usage",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "electricity_usage"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Electricity_Usage.html"
+  },
+  {
+    "id": "Entity_Embeddings",
+    "name": "Entity Embeddings",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "entity_embeddings"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Entity_Embeddings.html"
+  },
+  {
+    "id": "Estimated_Battery_Capacity",
+    "name": "Estimated Battery Capacity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "estimated_battery_capacity"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Estimated_Battery_Capacity.html"
+  },
+  {
+    "id": "EV charging load forecasting",
+    "name": "EV charging load forecasting",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev-charging-load-forecasting"
+    ],
+    "inbound_link_count": 0,
+    "rel_url": "features/EV charging load forecasting.html"
+  },
+  {
+    "id": "EV charging load",
+    "name": "EV charging load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev-charging-load"
+    ],
+    "inbound_link_count": 0,
+    "rel_url": "features/EV charging load.html"
+  },
+  {
+    "id": "EV_Access_Time",
+    "name": "EV Access Time",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev_access_time"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/EV_Access_Time.html"
+  },
+  {
+    "id": "EV_Charging_Demand",
+    "name": "EV Charging Demand",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev_charging_demand"
+    ],
+    "inbound_link_count": 13,
+    "rel_url": "features/EV_Charging_Demand.html"
+  },
+  {
+    "id": "EV_Charging_Label",
+    "name": "EV Charging Label",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev_charging_label"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/EV_Charging_Label.html"
+  },
+  {
+    "id": "EV_Charging_Station",
+    "name": "EV Charging Station",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev_charging_station"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/EV_Charging_Station.html"
+  },
+  {
+    "id": "EV_Charging_Station_Load",
+    "name": "EV Charging Station Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "ev_charging_station_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/EV_Charging_Station_Load.html"
+  },
+  {
+    "id": "Feature_Embedding",
+    "name": "Feature Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "feature_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Feature_Embedding.html"
+  },
+  {
+    "id": "Fleet_Size",
+    "name": "Fleet Size",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "fleet_size"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Fleet_Size.html"
+  },
+  {
+    "id": "Fourier_Seasonality_Basis",
+    "name": "Fourier Seasonality Basis",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "fourier_seasonality_basis"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Fourier_Seasonality_Basis.html"
+  },
+  {
+    "id": "GB_Regional_Netload",
+    "name": "GB Regional Netload",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "gb_regional_netload"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/GB_Regional_Netload.html"
+  },
+  {
+    "id": "Global_Solar_Radiation",
+    "name": "Global Solar Radiation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "global_solar_radiation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Global_Solar_Radiation.html"
+  },
+  {
+    "id": "Grid_Demand",
+    "name": "Grid Demand",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "grid_demand"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Grid_Demand.html"
+  },
+  {
+    "id": "Historical_EV_Charging_Energy",
+    "name": "Historical EV Charging Energy",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "historical_ev_charging_energy"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Historical_EV_Charging_Energy.html"
+  },
+  {
+    "id": "Historical_Load",
+    "name": "Historical Charging Load",
+    "category": "temporal-feature",
+    "tags": [
+      "feature",
+      "time-series",
+      "load",
+      "historical"
+    ],
+    "inbound_link_count": 62,
+    "rel_url": "features/Historical_Load.html"
+  },
+  {
+    "id": "Holiday_Flag",
+    "name": "Holiday Flag",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "holiday_flag"
+    ],
+    "inbound_link_count": 13,
+    "rel_url": "features/Holiday_Flag.html"
+  },
+  {
+    "id": "Hourly_Aggregated_Load",
+    "name": "Hourly Aggregated Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "hourly_aggregated_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Hourly_Aggregated_Load.html"
+  },
+  {
+    "id": "Hourly_Demand_Variation",
+    "name": "Hourly Demand Variation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "hourly_demand_variation"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Hourly_Demand_Variation.html"
+  },
+  {
+    "id": "Humidity",
+    "name": "Humidity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "humidity"
+    ],
+    "inbound_link_count": 14,
+    "rel_url": "features/Humidity.html"
+  },
+  {
+    "id": "Item_Embedding",
+    "name": "Item Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "item_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Item_Embedding.html"
+  },
+  {
+    "id": "Known_Future_Inputs",
+    "name": "Known Future Inputs",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "known_future_inputs"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Known_Future_Inputs.html"
+  },
+  {
+    "id": "Lag_Features",
+    "name": "Lag Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "lag_features"
+    ],
+    "inbound_link_count": 7,
+    "rel_url": "features/Lag_Features.html"
+  },
+  {
+    "id": "Last_Observed_Power_Anchor",
+    "name": "Last Observed Power Anchor",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "last_observed_power_anchor"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Last_Observed_Power_Anchor.html"
+  },
+  {
+    "id": "Laxity_Slack_Time",
+    "name": "Laxity Slack Time",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "laxity_slack_time"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Laxity_Slack_Time.html"
+  },
+  {
+    "id": "Line_Active_Power",
+    "name": "Line Active Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "line_active_power"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Line_Active_Power.html"
+  },
+  {
+    "id": "Line_Power_Flow",
+    "name": "Line Power Flow",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "line_power_flow"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Line_Power_Flow.html"
+  },
+  {
+    "id": "Line_Reactive_Power",
+    "name": "Line Reactive Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "line_reactive_power"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Line_Reactive_Power.html"
+  },
+  {
+    "id": "Lookback_Window",
+    "name": "Lookback Window",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "lookback_window"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "features/Lookback_Window.html"
+  },
+  {
+    "id": "Maximum_Charging_Delay",
+    "name": "Maximum Charging Delay",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "maximum_charging_delay"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Maximum_Charging_Delay.html"
+  },
+  {
+    "id": "Median_Household_Income",
+    "name": "Median Household Income",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "median_household_income"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Median_Household_Income.html"
+  },
+  {
+    "id": "Moving_Average_Trend",
+    "name": "Moving Average Trend",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "moving_average_trend"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Moving_Average_Trend.html"
+  },
+  {
+    "id": "Noise_Level_Embedding",
+    "name": "Noise Level Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "noise_level_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Noise_Level_Embedding.html"
+  },
+  {
+    "id": "Nonlinear_Temperature_Functions",
+    "name": "Nonlinear Temperature Functions",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "nonlinear_temperature_functions"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Nonlinear_Temperature_Functions.html"
+  },
+  {
+    "id": "Oil_Temperature",
+    "name": "Oil Temperature",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "oil_temperature"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Oil_Temperature.html"
+  },
+  {
+    "id": "Past_Observed_Inputs",
+    "name": "Past Observed Inputs",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "past_observed_inputs"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Past_Observed_Inputs.html"
+  },
+  {
+    "id": "Patched_Embeddings",
+    "name": "Patched Embeddings",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "patched_embeddings"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Patched_Embeddings.html"
+  },
+  {
+    "id": "POI_Functional_Entropy",
+    "name": "POI Functional Entropy",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "poi_functional_entropy"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/POI_Functional_Entropy.html"
+  },
+  {
+    "id": "Polynomial_Trend_Basis",
+    "name": "Polynomial Trend Basis",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "polynomial_trend_basis"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Polynomial_Trend_Basis.html"
+  },
+  {
+    "id": "Positional_Embedding",
+    "name": "Positional Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "positional_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Positional_Embedding.html"
+  },
+  {
+    "id": "Positional_Encoding",
+    "name": "Positional Encoding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "positional_encoding"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "features/Positional_Encoding.html"
+  },
+  {
+    "id": "Power_Injection",
+    "name": "Power Injection",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "power_injection"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Power_Injection.html"
+  },
+  {
+    "id": "Power_Load_Features",
+    "name": "Power Load Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "power_load_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Power_Load_Features.html"
+  },
+  {
+    "id": "Precipitation",
+    "name": "Precipitation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "precipitation"
+    ],
+    "inbound_link_count": 5,
+    "rel_url": "features/Precipitation.html"
+  },
+  {
+    "id": "Pressure",
+    "name": "Pressure",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "pressure"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Pressure.html"
+  },
+  {
+    "id": "Price_Elasticity_Modulator",
+    "name": "Price Elasticity Modulator",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "price_elasticity_modulator"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Price_Elasticity_Modulator.html"
+  },
+  {
+    "id": "Price_Elasticity_of_Demand",
+    "name": "Price Elasticity of Demand",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "price_elasticity_of_demand"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Price_Elasticity_of_Demand.html"
+  },
+  {
+    "id": "PV",
+    "name": "PV",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "pv"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/PV.html"
+  },
+  {
+    "id": "Rainfall",
+    "name": "Rainfall",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "rainfall"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Rainfall.html"
+  },
+  {
+    "id": "Rainfall_Intensity",
+    "name": "Rainfall Intensity",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "rainfall_intensity"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Rainfall_Intensity.html"
+  },
+  {
+    "id": "Range_Anxiety",
+    "name": "Range Anxiety",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "range_anxiety"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Range_Anxiety.html"
+  },
+  {
+    "id": "Reactive_Power",
+    "name": "Reactive Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "reactive_power"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Reactive_Power.html"
+  },
+  {
+    "id": "Rolling_Mean_Features",
+    "name": "Rolling Mean Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "rolling_mean_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Rolling_Mean_Features.html"
+  },
+  {
+    "id": "Sea_Level_Pressure",
+    "name": "Sea Level Pressure",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "sea_level_pressure"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Sea_Level_Pressure.html"
+  },
+  {
+    "id": "Seasonal_Component",
+    "name": "Seasonal Component",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "seasonal_component"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Seasonal_Component.html"
+  },
+  {
+    "id": "Seasonal_Trends",
+    "name": "Seasonal Trends",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "seasonal_trends"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Seasonal_Trends.html"
+  },
+  {
+    "id": "SeasonalAverage",
+    "name": "SeasonalAverage",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "seasonalaverage"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/SeasonalAverage.html"
+  },
+  {
+    "id": "Seasonality",
+    "name": "Seasonality",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "seasonality"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Seasonality.html"
+  },
+  {
+    "id": "Segment_Embeddings",
+    "name": "Segment Embeddings",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "segment_embeddings"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Segment_Embeddings.html"
+  },
+  {
+    "id": "Series_ID_Embedding",
+    "name": "Series ID Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "series_id_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Series_ID_Embedding.html"
+  },
+  {
+    "id": "Sinusoidal_Positional_Encoding",
+    "name": "Sinusoidal Positional Encoding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "sinusoidal_positional_encoding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Sinusoidal_Positional_Encoding.html"
+  },
+  {
+    "id": "Smart_Meter_Load",
+    "name": "Smart Meter Load",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "smart_meter_load"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Smart_Meter_Load.html"
+  },
+  {
+    "id": "Snowfall",
+    "name": "Snowfall",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "snowfall"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Snowfall.html"
+  },
+  {
+    "id": "Social_Indicators",
+    "name": "Social Indicators",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "social_indicators"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Social_Indicators.html"
+  },
+  {
+    "id": "Solar_Energy",
+    "name": "Solar Energy / Irradiance",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "solar_energy"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "features/Solar_Energy.html"
+  },
+  {
+    "id": "Solar_Power",
+    "name": "Solar Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "solar_power"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Solar_Power.html"
+  },
+  {
+    "id": "Solar_Radiation",
+    "name": "Solar Radiation",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "solar_radiation"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Solar_Radiation.html"
+  },
+  {
+    "id": "Spatio_Temporal_Embedding",
+    "name": "Spatio Temporal Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "spatio_temporal_embedding"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Spatio_Temporal_Embedding.html"
+  },
+  {
+    "id": "Spatio_Temporal_Frequency_Embeddings",
+    "name": "Spatio Temporal Frequency Embeddings",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "spatio_temporal_frequency_embeddings"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Spatio_Temporal_Frequency_Embeddings.html"
+  },
+  {
+    "id": "State_of_Charge",
+    "name": "State of Charge (SOC)",
+    "category": "vehicle-feature",
+    "tags": [
+      "feature",
+      "SOC",
+      "battery",
+      "vehicle-level"
+    ],
+    "inbound_link_count": 14,
+    "rel_url": "features/State_of_Charge.html"
+  },
+  {
+    "id": "Static_Covariates",
+    "name": "Static Covariates",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "static_covariates"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Static_Covariates.html"
+  },
+  {
+    "id": "Station_ID_One_Hot",
+    "name": "Station ID One Hot",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "station_id_one_hot"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Station_ID_One_Hot.html"
+  },
+  {
+    "id": "Station_Occupancy",
+    "name": "Station Occupancy",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "station_occupancy"
+    ],
+    "inbound_link_count": 4,
+    "rel_url": "features/Station_Occupancy.html"
+  },
+  {
+    "id": "StationID_Embedding",
+    "name": "StationID Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "stationid_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/StationID_Embedding.html"
+  },
+  {
+    "id": "Super_User_Features",
+    "name": "Super User Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "super_user_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Super_User_Features.html"
+  },
+  {
+    "id": "Temperature",
+    "name": "Temperature",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "temperature"
+    ],
+    "inbound_link_count": 25,
+    "rel_url": "features/Temperature.html"
+  },
+  {
+    "id": "Temperature_Forecast",
+    "name": "Temperature Forecast",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "temperature_forecast"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Temperature_Forecast.html"
+  },
+  {
+    "id": "Temporal_Embedding",
+    "name": "Temporal Embedding",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "temporal_embedding"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Temporal_Embedding.html"
+  },
+  {
+    "id": "Temporal_Order_Features",
+    "name": "Temporal Order Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "temporal_order_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Temporal_Order_Features.html"
+  },
+  {
+    "id": "Time_Derived_Features",
+    "name": "Time Derived Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "time_derived_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Time_Derived_Features.html"
+  },
+  {
+    "id": "Timestamp",
+    "name": "Timestamp",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "timestamp"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Timestamp.html"
+  },
+  {
+    "id": "Token_Embeddings",
+    "name": "Token Embeddings",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "token_embeddings"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Token_Embeddings.html"
+  },
+  {
+    "id": "Traffic_Speed",
+    "name": "Traffic Speed",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "traffic_speed"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Traffic_Speed.html"
+  },
+  {
+    "id": "Training_Epochs",
+    "name": "Training Epochs",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "training_epochs"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Training_Epochs.html"
+  },
+  {
+    "id": "Trend_Component",
+    "name": "Trend Component",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "trend_component"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Trend_Component.html"
+  },
+  {
+    "id": "Trend_Residual_Decomposition",
+    "name": "Trend Residual Decomposition",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "trend_residual_decomposition"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Trend_Residual_Decomposition.html"
+  },
+  {
+    "id": "Trend_Seasonal_Decomposition",
+    "name": "Trend Seasonal Decomposition",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "trend_seasonal_decomposition"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Trend_Seasonal_Decomposition.html"
+  },
+  {
+    "id": "Vehicle_Speed_Features",
+    "name": "Vehicle Speed Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "vehicle_speed_features"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Vehicle_Speed_Features.html"
+  },
+  {
+    "id": "Visibility",
+    "name": "Visibility",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "visibility"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Visibility.html"
+  },
+  {
+    "id": "Wall_Clock_Time",
+    "name": "Wall Clock Time",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "wall_clock_time"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Wall_Clock_Time.html"
+  },
+  {
+    "id": "Weather_Features",
+    "name": "Weather Features",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "weather_features"
+    ],
+    "inbound_link_count": 3,
+    "rel_url": "features/Weather_Features.html"
+  },
+  {
+    "id": "Weather_Forecast",
+    "name": "Weather Forecast",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "weather_forecast"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Weather_Forecast.html"
+  },
+  {
+    "id": "Weather_Traffic",
+    "name": "Weather & Traffic Conditions",
+    "category": "external-contextual-feature",
+    "tags": [
+      "feature",
+      "weather",
+      "traffic",
+      "contextual",
+      "external"
+    ],
+    "inbound_link_count": 12,
+    "rel_url": "features/Weather_Traffic.html"
+  },
+  {
+    "id": "Wind_Direction",
+    "name": "Wind Direction",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "wind_direction"
+    ],
+    "inbound_link_count": 1,
+    "rel_url": "features/Wind_Direction.html"
+  },
+  {
+    "id": "Wind_Power",
+    "name": "Wind Power",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "wind_power"
+    ],
+    "inbound_link_count": 2,
+    "rel_url": "features/Wind_Power.html"
+  },
+  {
+    "id": "Wind_Speed",
+    "name": "Wind Speed",
+    "category": "Stub (auto-generated)",
+    "tags": [
+      "feature",
+      "wind_speed"
+    ],
+    "inbound_link_count": 7,
+    "rel_url": "features/Wind_Speed.html"
+  }
+]

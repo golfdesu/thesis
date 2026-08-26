@@ -2331,7 +2331,7 @@
     "body": "# \ud83d\udc0d Mamba / SSM Family\n\n## Overview\nThe Mamba family comprises **selective state-space models** \u2014 sub-quadratic sequence models with constant memory and linear compute that compete with Transformers while decoding far faster. The continuous SSM $\\dot{h}(t) = A(t)h(t) + B(t)x(t),\\ y(t) = C(t)^\\top h("
   },
   {
-    "title": "MAML Informer",
+    "title": "MAML-Informer",
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/MAML-Informer.html",
@@ -3402,7 +3402,7 @@
     "body": "# Squared Exponential Kernel\n\nSquared Exponential Kernel \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure"
   },
   {
-    "title": "ST EVCDP",
+    "title": "ST-EVCDP",
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/ST-EVCDP.html",
@@ -4239,7 +4239,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/ETT.html",
-    "body": "Multivariate transformer-temperature benchmark released with the Informer paper (Zhou et al. 2021).\n\n| Variant | Stations | Steps | Resolution |\n|---|---|---|---|\n| ETTh1/h2 | 2 | 17,420 each | hourly |\n| ETTm1/m2 | same 2 stations | 69,680 | 15-min |\n\nEach row carries 7 channels: oil temperature (t"
+    "body": "# Electricity Transformer Temperature Dataset\n\nMultivariate transformer-temperature benchmark.\n\n- **Reference**: [https://github.com/zhouhaoyi/ETDataset](https://github.com/zhouhaoyi/ETDataset)"
   },
   {
     "title": "EV Intelligent Port Logistics Dataset",
@@ -4253,7 +4253,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Exchange.html",
-    "body": "Daily exchange rates of **8 currencies against USD** (Australia, UK, Canada, Switzerland, China, Japan, New Zealand, Singapore), 1990-2016 \u2014 6,071 daily observations.\n\nReleased with LSTNet (Lai et al. 2018) as part of the multivariate time-series benchmark suite; widely used in LTSF papers ([[Inform"
+    "body": "# Exchange Rate Dataset\n\nMultivariate exchange-rate benchmark series.\n\n- **Reference**: [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)"
   },
   {
     "title": "Favorita Retail",
@@ -4484,14 +4484,14 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/M4.html",
-    "body": "The **M4 competition** dataset (Makridakis, Spiliotis & Assimakopoulos, *IJF* 2020): **100,000 real series** across six sampling frequencies (hourly 414, daily 9,743, weekly 3,599, monthly 48,000, quarterly 24,000, yearly 23,000) from finance, demography, tourism, economics and industry.\n\nProtocol: "
+    "body": "# M4 Competition Dataset\n\nLarge multi-frequency competition series used by N-BEATS and N-HiTS.\n\n- **Reference**: [https://github.com/M4Competition/M4-methods/tree/master/Dataset](https://github.com/M4Competition/M4-methods/tree/master/Dataset)"
   },
   {
     "title": "M5 Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/M5_Dataset.html",
-    "body": "The **M5 competition** dataset (Makridakis et al. 2022, *IJF*): Walmart **unit sales of 3,049 products across 10 stores** in 3 US states (CA, TX, WI), 2011-2016, with calendar/promo/price covariates - hierarchical bottom-up levels (item/store/state) totalling ~42,840 aggregated series.\n\nTwo parallel"
+    "body": "# M5 Dataset\n\nM5 Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base t"
   },
   {
     "title": "Market Alipay",
@@ -6794,7 +6794,7 @@
     "year": "",
     "cat_name": "Hyperparameters & Optimization",
     "rel_url": "hyperparameters/Optuna_TPE.html",
-    "body": "# \u2699\ufe0f Optuna TPE (Tree-structured Parzen Estimator)\n\n## Overview\nOptuna is an open-source hyperparameter optimization framework that employs Tree-structured Parzen Estimators (TPE), a Bayesian optimization approach based on kernel density estimators. It efficiently searches continuous, discrete, and "
+    "body": "# \u2699\ufe0f Optuna TPE (Tree-structured Parzen Estimator)\n\n## Overview\nOptuna is an open-source hyperparameter optimization framework that employs Tree-structured Parzen Estimators (TPE), a [[Bayesian_Optimization]] approach based on kernel density estimators. It efficiently searches continuous, discrete, "
   },
   {
     "title": "Particle Swarm Optimization",

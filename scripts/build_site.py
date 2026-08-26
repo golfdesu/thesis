@@ -38,11 +38,18 @@ CATEGORY_ICONS = {
 }
 
 
+def _mkdir_idempotent(path):
+    # Idempotent-safe: tolerate existing dir; fail with a clear message if a
+    # same-named non-directory (file/junction/symlink to nowhere) blocks us.
+    if path.exists() and not path.is_dir():
+        raise NotADirectoryError(f"Cannot create directory, path exists as a file: {path}")
+    path.mkdir(parents=True, exist_ok=True)
+
 def ensure_dirs():
-    SITE_DIR.mkdir(parents=True, exist_ok=True)
+    _mkdir_idempotent(SITE_DIR)
     for cat in CATEGORIES.keys():
-        (SITE_DIR / cat).mkdir(parents=True, exist_ok=True)
-    (SITE_DIR / "assets").mkdir(parents=True, exist_ok=True)
+        _mkdir_idempotent(SITE_DIR / cat)
+    _mkdir_idempotent(SITE_DIR / "assets")
 
 def parse_frontmatter(content):
     if content.startswith("---"):
@@ -56,6 +63,10 @@ def parse_frontmatter(content):
                 pass
     return {}, content.strip()
 
+def _coerce_str(value):
+    # YAML quirks: unquoted titles/names can parse as int, float, date, bool.
+    return value if isinstance(value, str) else str(value)
+
 def extract_title_and_meta(file_path, meta, body):
     file_stem = file_path.stem
     title = meta.get("title") or meta.get("name") or meta.get("dataset")
@@ -66,6 +77,9 @@ def extract_title_and_meta(file_path, meta, body):
             title = match.group(1).strip()
         else:
             title = file_stem.replace("_", " ")
+    if not isinstance(title, str):
+        # YAML quirk: unquoted scalar can parse as int/float/date/bool
+        title = str(title)
     # Strip leading emojis or special icon characters (e.g. 📁, 🧠, 📊, etc.)
     title = re.sub(r"^[^\w\s\(\)\[\]\-\:\,\.\']+", "", title, flags=re.UNICODE).strip()
     # Resolve wiki-links so [[target|alias]] / [[target]] never leak into titles
@@ -95,8 +109,12 @@ def build_lookup_index():
         if not cat_dir.exists():
             continue
         for f in cat_dir.glob("*.md"):
+            try:
+                content = f.read_text(encoding="utf-8")
+            except Exception as e:
+                print(f"WARNING: skipping unreadable wiki file {f}: {type(e).__name__}: {e}")
+                continue
             rel_url = f"{cat}/{f.stem}.html"
-            content = f.read_text(encoding="utf-8")
             meta, body = parse_frontmatter(content)
             title = extract_title_and_meta(f, meta, body)
             
@@ -138,8 +156,12 @@ def build_lookup_index():
     for filename, display_title in root_files:
         f = OBSIDIAN_DIR / filename
         if f.exists():
+            try:
+                content = f.read_text(encoding="utf-8")
+            except Exception as e:
+                print(f"WARNING: skipping unreadable root file {f}: {type(e).__name__}: {e}")
+                continue
             rel_url = f"guides/{f.stem}.html"
-            content = f.read_text(encoding="utf-8")
             meta, body = parse_frontmatter(content)
             item = {
                 "stem": f.stem,
@@ -872,6 +894,12 @@ def generate_dashboard_index(all_pages, lookup, all_pages_map):
 """
     (SITE_DIR / "index.html").write_text(dashboard_html, encoding="utf-8")
 
+def _json_default(obj):
+    # YAML dates / other non-JSON-native meta values -> deterministic string
+    if hasattr(obj, "isoformat"):
+        return obj.isoformat()
+    return str(obj)
+
 def main():
     print("Building HTML Knowledge Base...")
     ensure_dirs()
@@ -892,17 +920,32 @@ def main():
             "rel_url": p["rel_url"],
             "body": p["body"][:300]
         })
-    (SITE_DIR / "assets" / "search-index.json").write_text(json.dumps(search_data, indent=2), encoding="utf-8")
+    (SITE_DIR / "assets" / "search-index.json").write_text(json.dumps(search_data, indent=2, default=_json_default), encoding="utf-8")
     # Embedded variant for file:// (offline) usage — fetch() fails on file:// in Chrome
-    js_payload = "window.SEARCH_INDEX = " + json.dumps(search_data, ensure_ascii=False) + ";"
+    js_payload = "window.SEARCH_INDEX = " + json.dumps(search_data, ensure_ascii=False, default=_json_default) + ";"
     (SITE_DIR / "assets" / "search-index.js").write_text(js_payload, encoding="utf-8")
 
-    # Build individual HTML pages
+    # Build individual HTML pages — one bad page must not abort the whole build
+    failed_pages = []
     for p in all_pages:
-        generate_page_html(p, all_pages, lookup, all_pages_map)
+        try:
+            generate_page_html(p, all_pages, lookup, all_pages_map)
+        except Exception as e:
+            rel_url = p.get("rel_url", "<unknown>")
+            failed_pages.append(rel_url)
+            print(f"WARNING: failed to generate {rel_url}: {type(e).__name__}: {e}")
 
-    # Build Dashboard Index
-    generate_dashboard_index(all_pages, lookup, all_pages_map)
+    # Build Dashboard Index (guarded too: it depends only on page metadata,
+    # but a single corrupt title/year would otherwise abort the entire build)
+    try:
+        generate_dashboard_index(all_pages, lookup, all_pages_map)
+    except Exception as e:
+        raise RuntimeError(f"Dashboard index generation failed: {type(e).__name__}: {e}") from e
+
+    if failed_pages:
+        print(f"WARNING: {len(failed_pages)} page(s) skipped due to errors:")
+        for url in failed_pages:
+            print(f"  - {url}")
 
     print(f"Build complete! Generated {len(all_pages)} pages in {SITE_DIR}")
 
