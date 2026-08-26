@@ -1806,13 +1806,6 @@
     "body": "# \ud83e\udde0 Graph Convolutional Network (GCN)\n\n## Overview\nGCN is a neural network architecture designed for non-Euclidean graph-structured data. It aggregates neighbor node features using a normalized graph Laplacian and adjacency matrix ($A$).\n\n## Key Mathematical Equations\n- **1st-Order Chebyshev Graph C"
   },
   {
-    "title": "GEFCom2014",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/GEFCom2014.html",
-    "body": "# GEFCom2014\n\nGEFCom2014 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
-  },
-  {
     "title": "Generative Decoder",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -2681,11 +2674,11 @@
     "body": "# NBEATS I\n\nNBEATS I \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and th"
   },
   {
-    "title": "NBEATS",
+    "title": "N-BEATS",
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/NBEATS.html",
-    "body": "## Literature Usage\n- [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]]: A deep stack of fully connected residual blocks produces backcasts and forecasts through learned basis expansions; an interpretable trend/seasonality configuration is also evaluated.\n- 2021 \u2014 [[2021_Wu_Autoformer_D"
+    "body": "# N-BEATS\n\n## Literature Usage\n- [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]]: A deep stack of fully connected residual blocks produces backcasts and forecasts through learned basis expansions; an interpretable trend/seasonality configuration is also evaluated.\n- 2021 \u2014 [[2021_Wu_A"
   },
   {
     "title": "Neural CDE",
@@ -2702,11 +2695,11 @@
     "body": "# Neural SDE\n\nNeural SDE \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
   },
   {
-    "title": "NHiTS",
+    "title": "N-HiTS",
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/NHiTS.html",
-    "body": "## Literature Usage\n- [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]: Multi-rate input sampling and hierarchical interpolation let different stacks specialize in different temporal frequencies and assemble forecasts sequentially.\n- 2024 \u2014 [[2024_Das_TiDE_Long_Term_Forecasting]] : N-HiTS inc"
+    "body": "# N-HiTS\n\n## Literature Usage\n- [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]: Multi-rate input sampling and hierarchical interpolation let different stacks specialize in different temporal frequencies and assemble forecasts sequentially.\n- 2024 \u2014 [[2024_Das_TiDE_Long_Term_Forecasting]] : "
   },
   {
     "title": "NILM",
@@ -2763,13 +2756,6 @@
     "cat_name": "Models & Architectures",
     "rel_url": "models/NWP_Belgium.html",
     "body": "# NWP Belgium\n\nNWP Belgium \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, "
-  },
-  {
-    "title": "NYC Taxi",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/NYC_Taxi.html",
-    "body": "# NYC Taxi\n\nNYC Taxi \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and th"
   },
   {
     "title": "Observation Mask",
@@ -3108,6 +3094,13 @@
     "body": "# Recent Access Pattern\n\nRecent Access Pattern \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexi"
   },
   {
+    "title": "Recurrent Cascade Correlation",
+    "year": "",
+    "cat_name": "Models & Architectures",
+    "rel_url": "models/Recurrent_Cascade_Correlation.html",
+    "body": "# Recurrent Cascade Correlation\n\n> [!warning] Misfiled concept\n> This note lives in `wiki/metrics/` but **Cascade-Correlation / Recurrent Cascade-Correlation (Fahlman & Lebiere, 1990; recurrent variant by Girardi & Fahlman) is a neural-network *architecture* and constructive learning algorithm**, no"
+  },
+  {
     "title": "Reformer",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -3409,13 +3402,6 @@
     "body": "# Similarity Graph\n\nSimilarity Graph \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity charact"
   },
   {
-    "title": "Sine Wave Regression",
-    "year": "",
-    "cat_name": "Models & Architectures",
-    "rel_url": "models/Sine_Wave_Regression.html",
-    "body": "# Sine Wave Regression\n\nSine Wave Regression \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity"
-  },
-  {
     "title": "Sinusoid Regression",
     "year": "",
     "cat_name": "Models & Architectures",
@@ -3658,7 +3644,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/TCN.html",
-    "body": "## Literature Usage\n- [[2018_Bai_Empirical_TCN_Sequence_Modeling]]: Causal dilated 1-D convolutions with residual blocks, normalization and dropout provide a simple TCN with a large receptive field.\n- [[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]]: Canonical WaveNet-style **gated TCN** ($h = g("
+    "body": "# TCN\n\n## Literature Usage\n- [[2018_Bai_Empirical_TCN_Sequence_Modeling]]: Causal dilated 1-D convolutions with residual blocks, normalization and dropout provide a simple TCN with a large receptive field.\n- [[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]]: Canonical WaveNet-style **gated TCN** ("
   },
   {
     "title": "TD3",
@@ -3714,7 +3700,7 @@
     "year": "",
     "cat_name": "Models & Architectures",
     "rel_url": "models/TiDE.html",
-    "body": "## Literature Usage\n- [[2024_Das_TiDE_Long_Term_Forecasting]]: Dense residual MLP encoder-decoder blocks encode historical series and covariates, then decode the horizon using future covariates with linear scaling in context and horizon length.\n- 2024 \u2014 [[2024_Liu_iTransformer_Inverted_Transformers_"
+    "body": "# TiDE\n\n## Literature Usage\n- [[2024_Das_TiDE_Long_Term_Forecasting]]: Dense residual MLP encoder-decoder blocks encode historical series and covariates, then decode the horizon using future covariates with linear scaling in context and horizon length.\n- 2024 \u2014 [[2024_Liu_iTransformer_Inverted_Trans"
   },
   {
     "title": "Time MoE",
@@ -4365,7 +4351,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/EV_Intelligent_Port_Logistics_Dataset.html",
-    "body": "# EV Intelligent Port Logistics Dataset\n\nEV Intelligent Port Logistics Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage"
+    "body": "# EV Intelligent Port Logistics Dataset \u2192 [[Dallas_Port_EV]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Dallas_Port_EV]]**.\n\nReason: Same source and same referencing paper ([[2025_Alghamdi_REST_Network_Port_EV]]) as the ca"
   },
   {
     "title": "Exchange Rate Dataset",
@@ -4429,6 +4415,13 @@
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/GBT_32960_Telemetry_Dataset.html",
     "body": "# GBT 32960 Telemetry Dataset\n\nGBT 32960 Telemetry Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecastin"
+  },
+  {
+    "title": "GEFCom2014",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/GEFCom2014.html",
+    "body": "# GEFCom2014\n\nGEFCom2014 \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, an"
   },
   {
     "title": "Google Mobility Index",
@@ -4505,7 +4498,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/ILI.html",
-    "body": "# Influenza-like Illness Dataset\n\nWeekly influenza surveillance benchmark series.\n\n- **Reference**: [https://github.com/zhouhaoyi/ETDataset](https://github.com/zhouhaoyi/ETDataset)"
+    "body": "# Influenza-like Illness Dataset\n\nLong-horizon forecasting benchmark derived from the **US CDC ILINet** (Influenza-like Illness Surveillance Network): weekly percentage of outpatient visits for influenza-like illness, national + regional levels. The benchmark slice covers roughly weekly observations"
   },
   {
     "title": "Indianapolis DER Adoption Dataset",
@@ -4711,6 +4704,13 @@
     "body": "# NW Europe DCFC Dataset\n\nNW Europe DCFC Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies "
   },
   {
+    "title": "NYC Taxi",
+    "year": "",
+    "cat_name": "Datasets & Benchmarks",
+    "rel_url": "datasets/NYC_Taxi.html",
+    "body": "# NYC Taxi\n\nNYC Taxi \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nWithin this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and th"
+  },
+  {
     "title": "NYISO Zonal Load Data",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
@@ -4862,7 +4862,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/SmoothEMS_Met_GridShield_ASR_Utrecht_Dataset.html",
-    "body": "# SmoothEMS Met GridShield ASR Utrecht Dataset\n\nSmoothEMS Met GridShield ASR Utrecht Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geogr"
+    "body": "# SmoothEMS Met GridShield ASR Utrecht Dataset \u2192 [[Utrecht_SmoothEMS]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Utrecht_SmoothEMS]]**.\n\nReason: Same source and same referencing paper ([[2025_Matrone_QR_LSTM_Attention_EV_"
   },
   {
     "title": "Solar Dataset",
@@ -4981,7 +4981,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Traffic.html",
-    "body": "# Traffic Time-Series Dataset\n\nMultivariate road-occupancy series used in forecasting benchmarks.\n\n- **Reference**: [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)"
+    "body": "# Traffic Time-Series Dataset\n\nMultivariate road-occupancy series used in forecasting benchmarks.\n\nTwo distinct benchmarks share this name:\n- **PEM-SF Traffic** (this repo; used by DeepAR/TimeGrad): San Francisco Bay Area freeway occupancy from California PeMS, 963 sensors, 15-minute resolution.\n- *"
   },
   {
     "title": "UCI EEG",
@@ -5051,7 +5051,7 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Utrecht_SmoothEMS.html",
-    "body": "# Utrecht SmoothEMS Office Parking Lot EV Charging Data\n\n## \ud83d\udcca Overview\nEV charging demand measured at the **ASR office parking lot in Utrecht, Netherlands**, collected within the **SmoothEMS Met GridShield** project. 15-minute discretization; station/session counts not disclosed in the paper. Used w"
+    "body": "# Utrecht SmoothEMS Office Parking Lot EV Charging Data\n\n## \ud83d\udcca Overview\nEV charging demand measured at the **ASR office parking lot in Utrecht, Netherlands**, collected within the **SmoothEMS Met GridShield** project. 15-minute discretization; the underlying 4TU release covers ~300 charging points (A"
   },
   {
     "title": "Victoria Australia Grid",
@@ -5065,35 +5065,35 @@
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Weather.html",
-    "body": "# Weather Time-Series Dataset\n\nMultivariate weather benchmark for covariate-aware forecasting.\n\n- **Reference**: [https://github.com/zhouhaoyi/ETDataset](https://github.com/zhouhaoyi/ETDataset)"
+    "body": "# Weather Time-Series Dataset\n\nStandard long-horizon forecasting benchmark: **21 meteorological measurements** (temperature, humidity, pressure, wind speed/direction, etc.) recorded every **10 minutes** at the Max Planck Biogeochemistry Institute weather station in Jena, Germany (the 2020 annual sli"
   },
   {
     "title": "Weather Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Weather_Dataset.html",
-    "body": "# Weather Dataset\n\nWeather Dataset \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowle"
+    "body": "# Weather Dataset \u2192 [[Weather]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Weather]]**.\n\nReason: Referencing papers ([[2024_Das_TiDE_Long_Term_Forecasting]], [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_"
   },
   {
     "title": "Wikipedia Web Traffic Dataset",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Wikipedia.html",
-    "body": "# Wikipedia Web Traffic Dataset\n\nLarge-scale web-traffic series used for long-horizon forecasting.\n\n- **Reference**: [https://github.com/Nixtla/neuralforecast](https://github.com/Nixtla/neuralforecast)"
+    "body": "# Wikipedia Web Traffic Dataset\n\nLarge-scale web-traffic series used for long-horizon forecasting: daily page views for ~145,000 Wikipedia articles from the Kaggle *Web Traffic Time Series Forecasting* competition, starting 1 July 2015 (original run through Sep 2017; extended versions reach mid-2022"
   },
   {
     "title": "Wikipedia Pageviews",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Wikipedia_Pageviews.html",
-    "body": "# Wikipedia Pageviews\n\nWikipedia Pageviews \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in thi"
+    "body": "# Wikipedia Pageviews \u2192 [[Wikipedia]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Wikipedia]]**.\n\nReason: Almost certainly the Kaggle Wikipedia web-traffic source described in [[Wikipedia]] (cf. [[2021_Rasul_TimeGrad_Diffus"
   },
   {
     "title": "Wiki Pageviews",
     "year": "",
     "cat_name": "Datasets & Benchmarks",
     "rel_url": "datasets/Wiki_Pageviews.html",
-    "body": "# Wiki Pageviews\n\nWiki Pageviews \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledg"
+    "body": "# Wiki Pageviews \u2192 [[Wikipedia]]\n\nThis page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Wikipedia]]**.\n\nReason: Likely the same Wikipedia web-traffic source described in [[Wikipedia]]; verify that [[2021_Tashiro_CSDI_Conditional_Diffu"
   },
   {
     "title": "WMT 2014 EN DE",
@@ -6213,14 +6213,14 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Absolute_Error.html",
-    "body": "# Absolute Error\n\nAbsolute Error \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge b"
+    "body": "# Absolute Error\n\n## Definition\n\n**Absolute error** is the per-sample distance between a forecast and its observation:\n\n$$\\text{AE}_i = |\\hat{y}_i - y_i|$$\n\nIt is the elementary quantity aggregated by [[MAE]] (mean), [[NMAE]]/[[ND]] (normalized), and summed in the [[Pinball_Loss]] branches. Reported"
   },
   {
     "title": "Absolute Error kW",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Absolute_Error_kW.html",
-    "body": "# Absolute Error kW\n\nAbsolute Error kW \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowl"
+    "body": "# Absolute Error kW\n\nPer-sample [[Absolute_Error]] expressed in kilowatts \u2014 i.e. the same quantity $|\\hat{y} - y|$ when the target is charging power/load in kW. Kept as a separate note because papers report it as a distinct named quantity with kW units.\n\n## Referenced in this knowledge base\n\n[[2014_"
   },
   {
     "title": "Accuracy",
@@ -6230,11 +6230,11 @@
     "body": "## Definition\n$$\\mathrm{Accuracy} = \\frac{\\text{correct predictions}}{\\text{total predictions}}$$\n\nFraction of correct predictions, used for classification tasks (e.g. classification-related components in meta-learning papers such as [[MAML]] and [[Reptile]]).\n\n| Property | Value |\n|----------|-----"
   },
   {
-    "title": "ACE",
+    "title": "ACE (Average Coverage Error)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/ACE.html",
-    "body": "# ACE\n\nACE \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked"
+    "body": "# ACE (Average Coverage Error)\n\n## Definition\n\n**ACE** measures how far the empirical coverage of prediction intervals deviates from the nominal confidence level (PINC, Prediction Interval Nominal Coverage):\n\n$$\\text{ACE} = \\text{PICP} - \\text{PINC}$$\n\nwhere [[PICP]] is the fraction of observations "
   },
   {
     "title": "ACF Deviation",
@@ -6272,11 +6272,11 @@
     "body": "# Average Precision\n\nAverage Precision \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowl"
   },
   {
-    "title": "BLEU",
+    "title": "BLEU (Bilingual Evaluation Understudy)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/BLEU.html",
-    "body": "# BLEU\n\nBLEU \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers link"
+    "body": "# BLEU\n\n## Definition\n\n**BLEU** scores generated text by the brevity-penalized geometric mean of modified n-gram precisions (typically n = 1\u20264, uniform weights $w_n = 1/4$):\n\n$$\\text{BLEU} = \\underbrace{\\min\\!\\left(1,\\ e^{\\,1 - r/c}\\right)}_{\\text{brevity penalty}} \\cdot \\exp\\left(\\sum_{n=1}^{N} w_n"
   },
   {
     "title": "Classification Error",
@@ -6360,7 +6360,7 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Hausdorff_Distance.html",
-    "body": "# Hausdorff Distance\n\nHausdorff Distance \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this kno"
+    "body": "# Hausdorff Distance\n\n## Definition\n\n**Hausdorff distance** measures the worst-case mismatch between two point sets $A, B$ in a metric space:\n\n$$d_H(A, B) = \\max\\Big\\{ \\sup_{a \\in A} \\inf_{b \\in B} \\|a-b\\|,\\; \\sup_{b \\in B} \\inf_{a \\in A} \\|a-b\\| \\Big\\}$$\n\nThe two inner terms ($h(A,B)$, directed dis"
   },
   {
     "title": "Interval Score",
@@ -6447,11 +6447,11 @@
     "body": "## Definition\n$$\\mathrm{MSE} = \\frac{1}{n}\\sum_{i=1}^{n}(y_i - \\hat{y}_i)^2$$\n\nMean of squared errors. Units are the square of the target's units; the square root ([[RMSE]]) is usually reported instead.\n\n| Property | Value |\n|----------|-------|\n| Unit | Squared target units |\n| Lower is better | Ye"
   },
   {
-    "title": "MSPE",
+    "title": "MSPE (Mean Squared Percentage Error)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/MSPE.html",
-    "body": "# MSPE\n\nMean Squared Percentage Error; percentage-based analogue of MSE, related to [[MAPE]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*\n\nMSPE shares weaknesses with [[MAPE]]: undefined for zero actuals and asymmetric between over- and under-forecasts. Compare with [[MSE]] for scale-se"
+    "body": "# MSPE (Mean Squared Percentage Error)\n\n## Definition\n\n**MSPE** is the mean of squared relative (percentage) errors:\n\n$$\\text{MSPE} = \\frac{1}{n}\\sum_{i=1}^{n}\\left(\\frac{y_i - \\hat{y}_i}{y_i}\\right)^{2}$$\n\nIt is the percentage-based analogue of [[MSE]]; its square root (RMSPE) is expressed in perce"
   },
   {
     "title": "Multivariate Correlation Map",
@@ -6461,11 +6461,11 @@
     "body": "# Multivariate Correlation Map\n\nMultivariate Correlation Map \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation"
   },
   {
-    "title": "ND",
+    "title": "ND (Normalized Deviation)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/ND.html",
-    "body": "# ND\n\nND \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked b"
+    "body": "# ND (Normalized Deviation)\n\n## Definition\n\n**ND** is the sum of absolute errors normalized by the sum of absolute actual values (standard in GluonTS / DeepAR-style evaluations):\n\n$$\\text{ND} = \\frac{\\sum_{i=1}^{N} |y_i - \\hat{y}_i|}{\\sum_{i=1}^{N} |y_i|}$$\n\nIt equals [[MAE]] normalized by the mean "
   },
   {
     "title": "NLL",
@@ -6475,11 +6475,11 @@
     "body": "# NLL\n\nNegative Log-Likelihood: proper scoring rule evaluating the full predictive density; lower is better.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
   },
   {
-    "title": "NMAE",
+    "title": "NMAE (Normalized Mean Absolute Error)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/NMAE.html",
-    "body": "# NMAE\n\nNormalized Mean Absolute Error: [[MAE]] divided by a normalizing constant (mean load or capacity), making forecasts comparable across stations.\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
+    "body": "# NMAE (Normalized Mean Absolute Error)\n\n## Definition\n\n**NMAE** divides the [[MAE]] by a problem-dependent normalizing constant, most commonly the mean observed load:\n\n$$\\text{NMAE} = \\frac{\\frac{1}{N}\\sum_{i=1}^{N} |y_i - \\hat{y}_i|}{\\bar{y}} \\quad\\text{(mean-load variant)}$$\n\nOther conventions no"
   },
   {
     "title": "NPIW",
@@ -6496,11 +6496,11 @@
     "body": "# \ud83d\udcd0 Normalized RMSE (NRMSE)\n\n## Definition\n\n**NRMSE** scales [[RMSE]] by the range of observed values, making error magnitudes comparable across charging stations/sites with different load levels:\n\n$$\\text{NRMSE} = \\frac{\\sqrt{\\frac{1}{n}\\sum_{t=1}^{n}(\\hat{y}_t - y_t)^2}}{y_{\\max} - y_{\\min}}, \\qqu"
   },
   {
-    "title": "OWA",
+    "title": "OWA (Overall Weighted Average)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/OWA.html",
-    "body": "# OWA\n\nOWA \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked"
+    "body": "# OWA (Overall Weighted Average)\n\n## Definition\n\n**OWA**, introduced for the M4 forecasting competition, aggregates accuracy relative to the seasonal naive benchmark:\n\n$$\\text{OWA} = \\frac{1}{2}\\left(\\frac{\\text{MASE}}{\\text{MASE}_{\\text{naive}}} + \\frac{\\text{sMAPE}}{\\text{sMAPE}_{\\text{naive}}}\\ri"
   },
   {
     "title": "Pearson Correlation",
@@ -6514,14 +6514,14 @@
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Pearson_Correlation_Coefficient.html",
-    "body": "# Pearson Correlation Coefficient\n\nPearson Correlation Coefficient \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other eval"
+    "body": "# Pearson Correlation Coefficient\n\n## Definition\n\nThe **Pearson correlation coefficient** measures the linear relationship between forecast $\\hat{y}$ and observation $y$:\n\n$$\\rho = \\frac{\\sum_{i=1}^{n}(y_i - \\bar{y})(\\hat{y}_i - \\bar{\\hat{y}})}{\\sqrt{\\sum_{i=1}^{n}(y_i - \\bar{y})^2}\\,\\sqrt{\\sum_{i=1"
   },
   {
     "title": "Perplexity",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Perplexity.html",
-    "body": "# Perplexity\n\nPerplexity \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The"
+    "body": "# Perplexity\n\n## Definition\n\n**Perplexity** is the exponentiated average negative log-likelihood per token \u2014 the standard intrinsic metric for language models:\n\n$$\\text{PPL} = \\exp\\left(-\\frac{1}{N}\\sum_{i=1}^{N} \\log p(x_i \\mid x_{<i})\\right)$$\n\nEquivalently, the inverse geometric mean probability "
   },
   {
     "title": "Prediction Interval Coverage Probability (PICP)",
@@ -6580,13 +6580,6 @@
     "body": "# Recall\n\nFraction of actual positives that are detected; pairs with [[Precision]].\n\n## Referenced in this knowledge base\n\n*(none recorded)*"
   },
   {
-    "title": "Recurrent Cascade Correlation",
-    "year": "",
-    "cat_name": "Evaluation Metrics",
-    "rel_url": "metrics/Recurrent_Cascade_Correlation.html",
-    "body": "# Recurrent Cascade Correlation\n\nRecurrent Cascade Correlation \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluati"
-  },
-  {
     "title": "Relative Accuracy",
     "year": "",
     "cat_name": "Evaluation Metrics",
@@ -6622,11 +6615,11 @@
     "body": "# Score Matching\n\nScore Matching \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge b"
   },
   {
-    "title": "Signal to Noise Ratio",
+    "title": "Signal to Noise Ratio (SNR)",
     "year": "",
     "cat_name": "Evaluation Metrics",
     "rel_url": "metrics/Signal_to_Noise_Ratio.html",
-    "body": "# Signal to Noise Ratio\n\nSignal to Noise Ratio \u2014 concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.\n\nThe metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in th"
+    "body": "# Signal to Noise Ratio\n\n## Definition\n\n**SNR** compares the power of a meaningful signal to the power of background noise:\n\n$$\\text{SNR}_{\\text{dB}} = 10 \\log_{10}\\!\\left(\\frac{P_{\\text{signal}}}{P_{\\text{noise}}}\\right) = 20 \\log_{10}\\!\\left(\\frac{A_{\\text{signal}}}{A_{\\text{noise}}}\\right)$$\n\nwhe"
   },
   {
     "title": "sMAPE",
@@ -7063,13 +7056,6 @@
     "body": "# References \u2014 [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]\n\n> **28 references** extracted from this paper.\n\n---\n\n1. E. Taherzadeh, S. Javadi, and M. Dabbaghjamanesh, \u201cNew optimal power management strategy for series plug-in hybrid electric vehicles,\u201d Int. J. Auto. Technol., vol. 19, no. 6, pp. 10"
   },
   {
-    "title": "References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]",
-    "year": "",
-    "cat_name": "References & Citations",
-    "rel_url": "references/2021_Huang_Lyapunov_EV_Scheduling_refs.html",
-    "body": "# References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]\n\n> **25 references** extracted from this paper.\n\n---\n\n1. \u201cGlobal EV Outlook 2025,\u201d International Energy Agency, Tech. Rep., 2025.\n2. Y. Li and A. Jenn, \u201cImpact of electric vehicle charging demand on power distribution grid congestion,\u201d Proceedings"
-  },
-  {
     "title": "References \u2014 [[2021_VanKriekinge_Day_Ahead_EV_Demand]]",
     "year": "",
     "cat_name": "References & Citations",
@@ -7343,13 +7329,6 @@
     "body": "# References \u2014 [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]]\n\n> **26 references** extracted from this paper.\n\n---\n\n1. International Energy Agency, Global EV Outlook 2023. Technical report, IEA, Paris, 2023.\n2. T. Gnann, S. Funke, N. Jakobsson, P. Pl\u00f6tz, F. Sprei, and A. Bennehag, \"Fast charging "
   },
   {
-    "title": "References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]",
-    "year": "",
-    "cat_name": "References & Citations",
-    "rel_url": "references/2026_Chen_PC_M3_Mamba_EV_Clusters_refs.html",
-    "body": "# References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. 1. Yip, A.; Hoehne, C.; Jadun, P.; Ledna, C.; Hale, E.; Muratori, M. Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States; Technical Repo"
-  },
-  {
     "title": "References \u2014 [[2026_Hao_Mamba_KAN_HyKANet_EV]]",
     "year": "",
     "cat_name": "References & Citations",
@@ -7362,6 +7341,13 @@
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark_refs.html",
     "body": "# References \u2014 [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]]\n\n> **22 key references** extracted from this paper.\n\n---\n\n1. T. Hong and S. Fan, \"Probabilistic electric load forecasting: A tutorial review,\" International Journal of Forecasting, vol. 32, no. 3 (2016), pp. 914\u2013938.\n2. A. J. Wood, B. "
+  },
+  {
+    "title": "References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]",
+    "year": "",
+    "cat_name": "References & Citations",
+    "rel_url": "references/2026_Huang_Lyapunov_EV_Scheduling_refs.html",
+    "body": "# References \u2014 [[2026_Huang_Lyapunov_EV_Scheduling]]\n\n> **25 references** extracted from this paper.\n\n---\n\n1. \u201cGlobal EV Outlook 2025,\u201d International Energy Agency, Tech. Rep., 2025.\n2. Y. Li and A. Jenn, \u201cImpact of electric vehicle charging demand on power distribution grid congestion,\u201d Proceedings"
   },
   {
     "title": "References \u2014 [[2026_Lahoti_Mamba_3_Sequence_Modeling]]",
@@ -7383,6 +7369,13 @@
     "cat_name": "References & Citations",
     "rel_url": "references/2026_Romia_CNN_LSTM_Attention_Fast_Charging_refs.html",
     "body": "# References \u2014 [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]]\n\n> **53 references** extracted from this paper.\n\n---\n\n1. A. Romia and Q. Huang, \u201cA hybrid CNN-LSTM-Attention deep learning model for forecasting time-series electric vehicles fast charging loads at public stations,\u201d in 2024 IEEE Industry"
+  },
+  {
+    "title": "References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]",
+    "year": "",
+    "cat_name": "References & Citations",
+    "rel_url": "references/2026_Tang_PC_M3_Mamba_EV_Clusters_refs.html",
+    "body": "# References \u2014 [[2026_Tang_PC_M3_Mamba_EV_Clusters]]\n\n> **38 references** extracted from this paper.\n\n---\n\n1. 1. Yip, A.; Hoehne, C.; Jadun, P.; Ledna, C.; Hale, E.; Muratori, M. Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States; Technical Repo"
   },
   {
     "title": "References \u2014 [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]]",

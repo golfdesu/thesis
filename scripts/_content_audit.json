@@ -22,16 +22,17 @@
   "title_stem_mismatch": [],
   "counts": {
     "dataset": 144,
-    "": 87,
+    "": 83,
+    "model": 463,
     "feature": 152,
     "github": 3,
     "guide": 13,
     "none": 4,
     "hyperparameter": 33,
-    "metric": 57,
-    "model": 460,
+    "metric": 56,
     "feedforward-neural-network": 1,
+    "model-architecture": 1,
     "paper": 118
   },
-  "total": 1072
+  "total": 1071
 }
