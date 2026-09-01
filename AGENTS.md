@@ -83,7 +83,7 @@ Follow this order for every ingestion. Do not skip steps.
    - Extract ALL key equations verbatim from the text → LaTeX ($$...$$), naming each equation.
    - Datasets: name, location, size (#sessions/#stations), resolution, **every URL/DOI/GitHub link found**.
    - Performance: real numbers vs baselines — **never invent values**; if a table is unreadable, state "not extractable".
-   - Complete BibTeX + citation-graph wikilinks to foundation papers in the vault.
+   - Complete BibTeX + citation-graph wikilinks to foundation papers **ONLY IF** they are already ingested in the vault. Do not wrap external references in `[[ ]]` (e.g., `[[Bahdanau2016]]`) if the PDF is not in our `raw_sources/`, as it creates ghost stub files. Use plain text for external refs.
 8. Verify metadata (year, DOI, author names) against the PDF text itself — past notes have had wrong years/DOIs.
 
 ### Step 3 — Propagate to concept pages (mandatory!)
