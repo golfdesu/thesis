@@ -1,12 +1,12 @@
 # 📋 One-File Paper Digest — All Papers (for AI Gap Analysis)
 
-> **Purpose**: single-file, self-contained digest of ALL 130 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
+> **Purpose**: single-file, self-contained digest of ALL 118 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
 > **Entry format**: `### filename` → Title — venue, year → metadata line (Models / Horizon / Metrics / Data / Features) → **What they did** (objective & contribution) → **Method core** → **Key results** (numbers) → **Gaps/Limitations**.
 > **Ordering**: newest first. Wikilinks were flattened to plain text; equations omitted; full details/equations/BibTeX live in the linked per-paper note. GENERATED FILE — do not hand-edit; fix source notes and rerun `gen_paper_digest.py`.
 
 ## 🗂️ Corpus Snapshot
-- Total papers: **130**
-- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (27) · 2025 (24) · 2026 (23) · ???? (12)
+- Total papers: **118**
+- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (27) · 2025 (24) · 2026 (23)
 - Most-cited model concepts: LSTM (47), Transformer (34), Informer (18), DeepAR (16), PatchTST (16), ARIMA (13), RNN (12), MLP (12), GRU (11), SVR (11), TimesFM (11), XGBoost (10)
 
 ## 🔎 Quick-Scan Table
@@ -130,18 +130,6 @@
 | 2013_Gaussian_Processes_Time_Series | 2013 | Philosophical Transactions of the … | Gaussian_Process, … | Short_Term_Forecasting | 4 |
 | 2001_Neural_Networks_STLF_Review | 2001 | IEEE Transactions on Power Systems, … | MLP, ANN … | Day_Ahead_Forecasting | 4 |
 | 1997_Long_Short_Term_Memory | 1997 | Neural Computation, 9(8), 1735-1780 | LSTM, RNN … | Long_Term_Forecasting | 5 |
-| 2014_A_Method_for_Stochastic_Optimization | ???? |  |  |  | 0 |
-| 2014_Adam_Stochastic_Optimization | ???? |  |  |  | 0 |
-| 2019_EV_Charging_Load_Forecasting_Comparative_DL | ???? |  |  |  | 0 |
-| 2019_STLF_EVCS_Deep_Learning | ???? |  |  |  | 0 |
-| 2021_APLF_Adaptive_Probabilistic_Load | ???? |  |  |  | 0 |
-| 2021_Day_Ahead_Forecast_EV_Demand_DNN | ???? |  |  |  | 0 |
-| 2021_Ensemble_Hierarchical_Probabilistic_EV_Load | ???? |  |  |  | 0 |
-| 2021_Kalman_COVID_France | ???? |  |  |  | 0 |
-| 2021_Regional_Netload | ???? |  |  |  | 0 |
-| 2022_State_Space_PostCOVID | ???? |  |  |  | 0 |
-| 2023_Prediction_EV_Charging_Demand_Transformer | ???? |  |  |  | 0 |
-| 2024_Physics_Informed_Attention_Graph_Regional_EV_Demand | ???? |  |  |  | 0 |
 
 ---
 ## 📄 Entries
@@ -3136,63 +3124,3 @@ Hochreiter et al. · Neural Computation, 9(8), 1735-1780 · 1997
   - Gradient-based methods (incl. LSTM) cannot precisely count discrete time steps (99 vs. 100 steps); needs auxiliary counting mechanisms; simple decays/counting differences (3 vs. 11) are fine.
   - Experiments are purely artificial small-scale tasks; authors explicitly propose applying LSTM to **real-world data: time-series prediction, music composition, speech processing** — the gap later filled by load/EV-demand forecasting models.
   - No forget gate, peephole connections, or bidirectionality (added by later work).
-
-### 2014_A_Method_for_Stochastic_Optimization
-**2014_A_Method_for_Stochastic_Optimization**  
-????
-
-
-### 2014_Adam_Stochastic_Optimization
-**2014_Adam_Stochastic_Optimization**  
-????
-
-
-### 2019_EV_Charging_Load_Forecasting_Comparative_DL
-**2019_EV_Charging_Load_Forecasting_Comparative_DL**  
-????
-
-
-### 2019_STLF_EVCS_Deep_Learning
-**2019_STLF_EVCS_Deep_Learning**  
-????
-
-
-### 2021_APLF_Adaptive_Probabilistic_Load
-**2021_APLF_Adaptive_Probabilistic_Load**  
-????
-
-
-### 2021_Day_Ahead_Forecast_EV_Demand_DNN
-**2021_Day_Ahead_Forecast_EV_Demand_DNN**  
-????
-
-
-### 2021_Ensemble_Hierarchical_Probabilistic_EV_Load
-**2021_Ensemble_Hierarchical_Probabilistic_EV_Load**  
-????
-
-
-### 2021_Kalman_COVID_France
-**2021_Kalman_COVID_France**  
-????
-
-
-### 2021_Regional_Netload
-**2021_Regional_Netload**  
-????
-
-
-### 2022_State_Space_PostCOVID
-**2022_State_Space_PostCOVID**  
-????
-
-
-### 2023_Prediction_EV_Charging_Demand_Transformer
-**2023_Prediction_EV_Charging_Demand_Transformer**  
-????
-
-
-### 2024_Physics_Informed_Attention_Graph_Regional_EV_Demand
-**2024_Physics_Informed_Attention_Graph_Regional_EV_Demand**  
-????
-
