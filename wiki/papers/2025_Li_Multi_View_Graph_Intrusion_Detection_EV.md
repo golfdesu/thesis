@@ -8,7 +8,7 @@ doi_url: "https://doi.org/10.1016/j.apenergy.2025.125439"
 models_used: ["[[MVGCRL]]", "[[Mask_Attention_Graph_Transformer]]", "[[GNN]]", "[[GCN]]", "[[GAT]]", "[[EdgeConv]]", "[[CNN]]", "[[LSTM]]", "[[DGI]]", "[[GRACE]]", "[[MVGRL]]"]
 datasets_used: ["[[CICEVSE2024]]"]
 features_used: ["[[Hardware_Performance_Counters]]", "[[Kernel_Events]]", "[[Microarchitecture_Events]]"]
-forecasting_horizon: "[[Spatial_Temporal]]"
+forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
 metrics: ["[[Precision]]", "[[Recall]]", "[[F1_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -88,3 +88,6 @@ tags: [paper, ev-load-forecasting, ml]
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] — Transformer/attention backbone [29]
 - Related vault papers: [[2024_Qu_Physics_Informed_GAT_EV_Load]] (spatio-temporal GAT for EV charging demand prediction [2]), [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]], [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]] (cross-feature dependency modeling)
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV_refs]]

@@ -5,10 +5,10 @@ authors: [Juncheng Zhu, Zhile Yang, Yuanjun Guo, Jiankang Zhang, Huikun Yang]
 year: 2019
 journal_conference: "Applied Sciences 2019, 9(9), 1723 (MDPI)"
 doi_url: "https://doi.org/10.3390/app9091723"
-models_used: ["[[DNN]]", "[[RNN]]", "[[LSTM]]", "[[GRU]]"]
+models_used: ["[[ANN]]", "[[RNN]]", "[[LSTM]]", "[[GRU]]"]
 datasets_used: ["[[Liuyue_Charging_Station_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Charging_Time]]", "[[Electricity_Tariff|Real-Time Electricity Price (TOU)]]", "[[Holiday_Flag|One-Hot Encoded Holiday Marks]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Historical_Load]]", "[[Charging_Duration]]", "[[Electricity_Tariff|Real-Time Electricity Price (TOU)]]", "[[Holiday_Flag|One-Hot Encoded Holiday Marks]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[NRMSE]]", "[[NMAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: Short-Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches
 
 ## 🎯 Main Objective & Contribution
-- Applies and compares four deep learning models — [[DNN]], [[RNN]], [[LSTM]], [[GRU]] — for **hourly-based short-term (1 hour to 1 day/week ahead) EV charging station load forecasting** on real-world Shenzhen charging station data.
+- Applies and compares four deep learning models — [[ANN]], [[RNN]], [[LSTM]], [[GRU]] — for **hourly-based short-term (1 hour to 1 day/week ahead) EV charging station load forecasting** on real-world Shenzhen charging station data.
 - Incorporates multi-dimensional contextual inputs beyond historical load: charging time sequence, real-time peak/valley electricity price, one-hot encoded holiday marks.
 - Key finding: the **single-hidden-layer [[GRU]] achieves the best accuracy** (Test-NRMSE 2.89%, Test-NMAE 0.77%) with fewer parameters than LSTM; adding hidden layers degrades accuracy and training speed.
 - Companion minute-level study: [[2019_Zhu_EV_Load_Forecasting]].
@@ -100,5 +100,8 @@ $$\text{NRMSE} = \frac{\sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}-x)^2}}{x_{\max}-x
 ## 🔗 Key References & Citation Graph
 - Companion minute-level study: [[2019_Zhu_EV_Load_Forecasting]] (Energies 12(14):2692)
 - Foundation: [[1997_Hochreiter_Long_Short_Term_Memory|Hochreiter & Schmidhuber, LSTM (1997)]]
-- Method sources cited: GRU (Cho et al., arXiv:1409.1259), [[2014_Adam_Adam_Stochastic_Optimization|Adam (Kingma & Ba, arXiv:1412.6980)]], Adagrad (Duchi et al., 2011), Adadelta (Zeiler, 2012), RMSProp (Tieleman & Hinton, 2012)
+- Method sources cited: GRU (Cho et al., arXiv:1409.1259), [[2014_Kingma_Adam_Stochastic_Optimization|Adam (Kingma & Ba, arXiv:1412.6980)]], Adagrad (Duchi et al., 2011), Adadelta (Zeiler, 2012), RMSProp (Tieleman & Hinton, 2012)
 - Metric definitions from Willmott et al., J. Geophys. Res. Oceans (1985)
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2019_Zhu_ApplSci_EV_Load_Forecasting_refs]]

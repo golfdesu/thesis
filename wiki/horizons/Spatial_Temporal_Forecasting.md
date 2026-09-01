@@ -1,4 +1,5 @@
 ---
+title: Spatial-Temporal Network Forecasting
 concept: Spatial-Temporal Network Forecasting
 category: forecasting-horizon
 time_range: "Multi-station, multi-step"
@@ -73,6 +74,9 @@ Without explicit reconciliation, independently generated station-level forecasts
 - [[MAE]], [[RMSE]], [[MAPE]] per station and aggregate
 - [[V2G_SVE]] for downstream control quality
 - Energy Score (multivariate probabilistic)
+
+## Literature Usage
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Evaluated on mixed horizons via fev-bench/GIFT-Eval/Chronos Bench II (H dictated by benchmark tasks); 2-stage training extends max output patches and context 2048->8192 to support long-horizon and high-frequency seasonalities without heuristics; energy case hourly day-ahead (EPF-DE) and retail weekly quarter (Rossmann) illustrate short vs longer horizons.
 
 ## Related Pages
 

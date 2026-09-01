@@ -48,7 +48,7 @@
 - แก้ปัญหาตรงจุดกับ Probabilistic Gaps P-1 ถึง P-5 ที่พบใน Literature
 - มีประโยชน์ต่อ grid operation, peak shaving และ V2G scheduling
 - Contribution ทรงพลัง ครอบคลุมทั้ง Architecture, Loss Function และ Statistical Calibration
-- Corpus support อัปเดต (2026-08-23, 103 papers): PICNN ([[2025_Zheng_Coherent_Hierarchical_EV_Load]]) กับ conformal prediction ([[2024_Zhou_Conformal_Prediction_DER]]) มีใน corpus แล้ว — **แต่ข้อกล่าวอ้าง "probabilistic Transformer / conformalized Transformer สำหรับ EV" ไม่ novel อีกต่อไป** เพราะ [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] (TFT + post-hoc CQR conformal, static calibration, quantile head เชิงเส้น) และ [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] (USDT: Gaussian heads + CRPS, Informer/Probformer backbone) ทำส่วนย่อยไปแล้ว สิ่งที่ยัง novel คือคอมโบเต็ม **Mamba/cross-attention backbone + PICNN monotonic head + adaptive conformal recalibration** ซึ่งไม่มี paper ใดทำ (ตาม [[research_gaps]] P-1, P-3)
+- Corpus support อัปเดต (2026-08-26, 118 papers): PICNN ([[2025_Zheng_Coherent_Hierarchical_EV_Load]]) กับ conformal prediction ([[2024_Zhou_Conformal_Prediction_DER]]) มีใน corpus แล้ว — **แต่ข้อกล่าวอ้าง "probabilistic Transformer / conformalized Transformer สำหรับ EV" ไม่ novel อีกต่อไป** เพราะ [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] (TFT + post-hoc CQR conformal, static calibration, quantile head เชิงเส้น) และ [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] (USDT: Gaussian heads + CRPS, Informer/Probformer backbone) ทำส่วนย่อยไปแล้ว สิ่งที่ยัง novel คือคอมโบเต็ม **Mamba/cross-attention backbone + PICNN monotonic head + adaptive conformal recalibration** ซึ่งไม่มี paper ใดทำ (ตาม [[research_gaps]] P-1, P-3)
 
 **ความเสี่ยง**
 
@@ -158,7 +158,7 @@
 
 ใช้ Mamba เป็น efficient temporal encoder และ Transformer cross-attention สำหรับ global context หรือ exogenous fusion
 
-ควรเริ่มจากการเป็น baseline/ablation ก่อน ไม่ควรตั้ง novelty จากคำว่า "Mamba + Transformer" เพียงอย่างเดียว เพราะแนวคิด hybrid เริ่มมีงานในหลายสาขาแล้ว — corpus ปัจจุบัน (103 papers, อัปเดต 2026-08-23) ยืนยันข้อนี้: [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Chen_PC_M3_Mamba_EV_Clusters]], [[2026_Lahoti_Mamba_3_Sequence_Modeling]] รวมถึง foundation Mamba papers ([[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) เป็น Mamba line ที่ ingest แล้ว (ทั้งหมด point-forecast) — novelty ที่ยังยืนยันได้คือคอมโบเต็ม **Mamba backbone + cross-attention + conformalized PICNN head** ตาม [[research_gaps]] (Gap 6, T-7, P-1–P-5) ซึ่งไม่มี paper ใดใน corpus ทำ
+ควรเริ่มจากการเป็น baseline/ablation ก่อน ไม่ควรตั้ง novelty จากคำว่า "Mamba + Transformer" เพียงอย่างเดียว เพราะแนวคิด hybrid เริ่มมีงานในหลายสาขาแล้ว — corpus ปัจจุบัน (118 papers, อัปเดต 2026-08-26) ยืนยันข้อนี้: [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Tang_PC_M3_Mamba_EV_Clusters]], [[2026_Lahoti_Mamba_3_Sequence_Modeling]] รวมถึง foundation Mamba papers ([[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) เป็น Mamba line ที่ ingest แล้ว (ทั้งหมด point-forecast) — novelty ที่ยังยืนยันได้คือคอมโบเต็ม **Mamba backbone + cross-attention + conformalized PICNN head** ตาม [[research_gaps]] (Gap 6, T-7, P-1–P-5) ซึ่งไม่มี paper ใดใน corpus ทำ
 
 ## กลุ่ม C: ไอเดียเชื่อมกับ spatial และ operational use
 
@@ -248,7 +248,7 @@ pre-train จากสถานีที่มีข้อมูลมาก แ
 ## ข้อควรตรวจสอบก่อนสรุป novelty
 
 - ควรตรวจ paper ล่าสุดและ preprint เพิ่มก่อนกล่าวว่าแนวคิดใด "ไม่เคยมีใครทำ"
-- ~~จำนวน paper ในเอกสารสรุปกับจำนวนไฟล์ใน `raw_sources` ยังไม่สอดคล้องกัน~~ **แก้ไขแล้ว (2026-08-23):** re-ingestion ครบ **103 papers** ใน `wiki/papers/` ตรงกับ [[index]] และ [[research_gaps]] ทุกไฟล์ verified
+- ~~จำนวน paper ในเอกสารสรุปกับจำนวนไฟล์ใน `raw_sources` ยังไม่สอดคล้องกัน~~ **แก้ไขแล้ว (2026-08-26):** corpus ครบ **118 papers** ใน `wiki/papers/` ตรงกับ [[index]] และ [[research_gaps]] ทุกไฟล์ verified
 - `dataset_extraction_report.md` มีบางรายการที่ title และ dataset ดูไม่ตรงกัน ควรตรวจ metadata จาก paper ต้นฉบับ
 - หมายเหตุ metadata: VMD-Prophet-LSTM (Cheng) เป็นปี **2023** และเป็น hybrid แบบ *centralized* — ไม่ใช่ federated learning; Lyapunov paper อ้างอิงเป็น arXiv:2604.16873 (2026)
 - ผล benchmark ปัจจุบันใช้ implementation แบบ Encoder-only ซึ่งแตกต่างจาก architecture ดั้งเดิมของบาง paper จึงควรเรียกว่า controlled reimplementation ไม่ใช่ reproduction เต็มรูปแบบ

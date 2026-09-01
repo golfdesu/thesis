@@ -6,9 +6,9 @@ year: 2024
 journal_conference: "IEEE Transactions on Intelligent Transportation Systems, vol. 25, no. 10, pp. 14284-14297"
 doi_url: "https://doi.org/10.1109/TITS.2024.3401850"
 models_used: ["[[PAG]]", "[[PIML]]", "[[GAT]]", "[[TPA-LSTM]]", "[[LSTM]]", "FourierGNN", "AST-GAT", "DCRNN", "STGCN", "HSTGCN", "GCN-LSTM", "[[GCN]]", "FCNN", "[[VAR]]", "Lasso", "KNN"]
-datasets_used: ["[[Shenzhen_EV_Charging_Dataset]]"]
-features_used: ["[[Pile_Occupancy_Demand]]", "[[Charging_Price]]", "[[Price_Elasticity_of_Demand]]", "[[Spatial_Spillover]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[Shenzhen_ST_EVCDP]]"]
+features_used: ["[[Station_Occupancy]]", "[[Charging_Price]]", "[[Price_Elasticity_of_Demand]]", "[[Spatial_Spillover]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAPE]]", "RAE", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,8 +16,8 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: A Physics-Informed and Attention-Based Graph Learning Approach for Regional EV Charging Demand Prediction
 
 ## 🎯 Main Objective & Contribution
-- Solves **price misinterpretation** in data-driven [[EV_Load_Forecasting]]: models trained on partially observed data learn "higher price → higher demand" because peak-price hours coincide with peak demand, which is fatal for pricing-policy decision support.
-- Proposes **PAG**: (a) a **graph embedding module** ([[GAT]] + temporal CNN), (b) a **multivariate decoder module** ([[TPA-LSTM]]) with revised hop-wise/sequence-wise attention, and (c) a **model pre-training module** based on **Physics-Informed Meta-Learning (PIML)** that generates synthetic tuning samples from economic laws (price elasticity of demand) and pre-trains via [[FOMAML]].
+- Solves **price misinterpretation** in data-driven [[EV_Charging_Demand]]: models trained on partially observed data learn "higher price → higher demand" because peak-price hours coincide with peak demand, which is fatal for pricing-policy decision support.
+- Proposes **PAG**: (a) a **graph embedding module** ([[GAT]] + temporal CNN), (b) a **multivariate decoder module** ([[TPA-LSTM]]) with revised hop-wise/sequence-wise attention, and (c) a **model pre-training module** based on **Physics-Informed Meta-Learning (PIML)** that generates synthetic tuning samples from economic laws (price elasticity of demand) and pre-trains via [[MAML]].
 - Contributions: model-free PIML pre-training step; attention-based spatiotemporal network avoiding conv/recurrent inflexibility; SOTA accuracy on 18,061 Shenzhen charging piles with correct price-elasticity interpretation; demonstration that 1-hop spatial spillover offsets >90% of local demand loss after a 30% price increase.
 
 ## 🧠 Methodology & Model Architecture
@@ -53,7 +53,7 @@ Tuning samples generated from laws: normally distributed price impulses $\Delta 
 $$\Delta y_i = \mathcal{F}(\Delta p_i) = -1.48\left(\Delta p_i / p_i\right)y_i$$
 Spillover to each of $N$ neighbors (**Eq. 9, neighbor spillover sample**):
 $$\Delta y_j = -\frac{1}{N}\Delta y_i$$
-[[FOMAML]] objective over $S$ tuning-sample buffers (**Eq. 10, FOMAML objective**):
+[[MAML]] objective over $S$ tuning-sample buffers (**Eq. 10, FOMAML objective**):
 $$\min L(\phi) = \sum_{s=1}^{S} l^s(\theta^s)$$
 Gradient chain rule (**Eq. 11**) and first-order approximation dropping the second-derivative term (**Eqs. 12-13, FOMAML gradient approximation**):
 $$\nabla_\phi L(\phi) = \sum_{s=1}^S \frac{\partial l^s}{\partial \theta^s}\frac{\partial \theta^s}{\partial \phi}, \qquad \frac{\partial \theta^s}{\partial \phi} = \frac{1 - \varepsilon\nabla_\phi l(\phi)\,\partial\phi/\partial\phi}{\partial\phi\,\partial\phi} \approx 1 \;\Rightarrow\; \nabla_\phi L(\phi) \approx \sum_{s=1}^{S}\frac{\partial l^s}{\partial\theta^s} = \sum_{s=1}^S \nabla_\theta l^s(\theta^s)$$
@@ -65,7 +65,7 @@ Buffers split into Support (Day 1-12) and Query (Day 13-24) sets; proportion of 
 Window $w = 12$ intervals (60 min retrospective); GAT heads/layers $K=4$, $M=2$; $\beta=0.5$; MSE loss; [[Adam]], batch 512, lr 0.001, weight decay $10^{-5}$; 200 pre-training epochs + 1000 fine-tuning epochs with early stopping (100 epochs patience).
 
 ## 📊 Dataset & Input Features
-- **[[Shenzhen_EV_Charging_Dataset]]**: real-time pile availability from a public mobile app; **18,061 public charging piles in Shenzhen, China**, period **19 June – 18 July 2022 (30 days)**; aggregated to pile occupancy (demand) and charging price per zone; updated every **5 minutes**; organized over **247 traffic zones** (6th Residential Travel Survey of Shenzhen) → graph with **247 nodes, 1006 edges**; **8640 timestamps** total, train/val/test = 6:2:2 chronological (Days 1-18 / 19-24 / 25-30). 57 zones use time-of-day pricing; the rest fixed pricing. No smoothing/denoising applied.
+- **[[Shenzhen_ST_EVCDP]]**: real-time pile availability from a public mobile app; **18,061 public charging piles in Shenzhen, China**, period **19 June – 18 July 2022 (30 days)**; aggregated to pile occupancy (demand) and charging price per zone; updated every **5 minutes**; organized over **247 traffic zones** (6th Residential Travel Survey of Shenzhen) → graph with **247 nodes, 1006 edges**; **8640 timestamps** total, train/val/test = 6:2:2 chronological (Days 1-18 / 19-24 / 25-30). 57 zones use time-of-day pricing; the rest fixed pricing. No smoothing/denoising applied.
 - Features: pile occupancy demand (target), charging price (time-based or fixed), price-impulse-derived physics knowledge.
 - **Code & data (GitHub)**: https://github.com/IntelligentSystemsLab/ST-EVCDP (stated: "the datasets and code used in this paper are shared in Github").
 - Hardware: NVIDIA Quadro RTX 4000 GPU, Intel i9-10900K, 64 GB RAM.
@@ -126,3 +126,6 @@ Averages over 247 zones across 15/30/45/60-min horizons:
 - Wang et al., Transp. Res. C 2023 — HSTGCN baseline [24]
 - Kipf & Welling, ICLR 2016 — [[GCN]] [45]
 - He et al., CVPR 2016 — residual learning (momentum residual basis) [33]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2024_Qu_Physics_Informed_GAT_EV_Load_refs]]

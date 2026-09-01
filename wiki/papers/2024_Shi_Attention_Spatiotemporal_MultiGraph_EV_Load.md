@@ -5,10 +5,10 @@ authors: [Jinkai Shi, Weige Zhang, Yan Bao, David Wenzhong Gao, Zhihao Wang]
 year: 2024
 journal_conference: "IEEE Transactions on Smart Grid, Vol. 15, No. 3, pp. 3016-3029"
 doi_url: "https://doi.org/10.1109/TSG.2023.3321116"
-models_used: ["[[STMGCN]]", "[[TCN]]", "[[GCN]]", "[[Chebyshev_Graph_Convolution]]", "[[Graph_WaveNet]]", "[[STGCN]]", "[[T-GCN]]", "[[LSTM]]", "[[GRU]]", "[[CNN-LSTM]]", "[[ARIMA]]"]
-datasets_used: ["[[Beijing_Fast_Charging_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Wind_Speed]]", "[[Humidity]]", "[[Electricity_Price]]", "[[Distance_Graph]]", "[[Similarity_Graph]]"]
-forecasting_horizon: "[[Short_Term]]"
+models_used: ["[[STMGCN]]", "[[TCN]]", "[[GCN]]", "[[Chebyshev_Graph_Convolution]]", "[[Graph_WaveNet]]", "[[STGCN]]", "[[T-GCN]]", "[[LSTM]]", "[[GRU]]", "[[CNN_LSTM]]", "[[ARIMA]]"]
+datasets_used: ["[[Beijing_Fast_Charging]]"]
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Wind_Speed]]", "[[Humidity]]", "[[Electricity_Tariff]]", "[[Distance_Graph]]", "[[Similarity_Graph]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "[[MAPE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -49,7 +49,7 @@ $$W'_d, W'_s = \sigma_d(W_d, W_s), \qquad Y_f^{r-1} = W'_d \odot H_{hd}^{r-1} + 
 Framework: input layer → stacked ST-blocks (gated TCN → temporal/spatial attention → dual-graph Chebyshev GCN) with skip + residual connections → output layer (concatenation, two linear convolutions + ReLU). Trained with [[Adam]], lr 0.0001, batch 32, 200 epochs; 4-layer TCN kernel/dilation {2,1},{2,2},{2,4},{2,8}; Chebyshev degree K=3; RTX 3060 Ti, PyTorch.
 
 ## 📊 Dataset & Input Features
-- **[[Beijing_Fast_Charging_Dataset]]**: real-world charging load from **10 fast DC charging stations in Beijing, China**, Jan 25 2022 – Apr 30 2022; charging power recorded every **15 min** (96 points/day/station); nearest inter-station distance 4.69 km. Split: last 63 days train / following 18 days validation / remainder test; data cleaned and normalized; missing values/outliers filled by linear interpolation.
+- **[[Beijing_Fast_Charging]]**: real-world charging load from **10 fast DC charging stations in Beijing, China**, Jan 25 2022 – Apr 30 2022; charging power recorded every **15 min** (96 points/day/station); nearest inter-station distance 4.69 km. Split: last 63 days train / following 18 days validation / remainder test; data cleaned and normalized; missing values/outliers filled by linear interpolation.
 - Input features selected via maximal information coefficient (MIC, threshold 0.3; **Eq. 19–20 – Mutual information & MIC**): historical charging power, temperature, wind speed, humidity, electricity price (MIC(load, price)=0.92, MIC(load, time)=0.84).
 - Output: charging power of each station at next time step.
 - Data availability: no public URL/DOI given in the paper; dataset described only as "charging load dataset from Beijing, China" (Section IV-A).

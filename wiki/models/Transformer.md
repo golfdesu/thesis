@@ -42,7 +42,7 @@ The Transformer architecture, introduced by Vaswani et al. (2017) in [[2017_Atte
 - 2025 — [[2025_Hussain_CAT_Former_Short_Term_EV]] : context-aware Temporal Transformer (CAT-Former) reduces 1-h-ahead MSE up to 11.82% vs Hybrid Transformer (Park 1: 0.4610 vs 0.5155).
 - 2025 — [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] : hybrid LSTM-Transformer cuts 30-day-ahead Caltech MAE to 32.416 vs standalone Transformer 39.183 (−17.27%).
 - 2025 — [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]] : Transformer-BiLSTM hybrid gains −16.98% MAE vs standalone Transformer on NYISO day-ahead prices ($2.7818 vs $3.3511 per MWh).
-- 2025 — [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : standalone Transformer underperforms badly (test MAE 4.8141 kWh, R² −0.007 vs XGBoost 2.6697), motivating boosting-based hybrids.
+- 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : standalone Transformer underperforms badly (test MAE 4.8141 kWh, R² −0.007 vs XGBoost 2.6697), motivating boosting-based hybrids.
 - 2026 — [[2026_Lahoti_Mamba_3_Sequence_Modeling]] : Mamba-3 language-modeling benchmark — 1.5B MIMO downstream accuracy 57.6 vs Transformer 55.4; validation ppl 10.24 vs 10.51.
 - 2026 — [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]] : Multi-scale Fusion Transformer averages a 10.79% metric gain over vanilla Transformer; at K=96 h MSE 1.89 vs 2.51 (−35.78%).
 - 2026 — [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] : vanilla Transformer collapses at long horizons (48-h R² 0.39); CNN-LSTM-Attention cuts 1-h-ahead MAE 17.45% and RMSE 13.83% vs GRU.
@@ -51,3 +51,8 @@ The Transformer architecture, introduced by Vaswani et al. (2017) in [[2017_Atte
 - 2026 — [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] : vanilla Transformer baseline cut by USDT (EVnetNL RMSE 12.264 vs 8.781; Perth RMSE 23.967 vs 13.837).
 - 2026 — [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] : decoupled spatio-temporal Transformer (channel-first global-aggregation temporal attention + semantic Top-K spatial attention) best on ALL MAE/RMSE/MAPE at 15/30/45 min on Shenzhen ST-EVCDP (RMSE 3.06/4.98/6.45 ×10⁻² vs best baseline PAG).
 - 2026 — [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] : Transformers dominate short-term regional/city forecasts across Palo Alto/Boulder/Dundee/Perth (MAE 10–15% below ARIMA/XGBoost) and long-term Boulder (city MAE 2.63@5d), but collapse on sparse daily Dundee data (city MAE ≈ 93 vs GRU ≈ 21–24).
+
+## Literature Usage
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Vanilla Transformer baseline on Monash (GM 0.9384) and ETT; TimesFM significantly outperforms (0.6846 / 0.36 avg MAE).
+- [[2026_Khwaja_Toto_2_Scaling_Era]] — Toto 2.0 is a decoder-only patched Transformer with alternating time/variate attention (Toto 1.0 backbone); CPM + quantile head + NorMuon + u-muP scaling recipe.
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **Transformer** heritage: Chronos-2 is encoder-only T5 (Raffel et al. 2020) with RoPE (Su et al. 2024); alternates time attention (temporal) and group attention (cross-series at same patch).

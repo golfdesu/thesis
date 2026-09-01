@@ -16,7 +16,7 @@ LSTM-Transformer combines an initial **LSTM layer** to extract fine-grained sequ
 
 ## Key Mathematical Equations
 - **LSTM Feature Mapping**:
-  $$h_t = o_t \cdot \tanh(C_{t-1} f_t + i_t \tilde{C}_t)$$
+  $$C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t, \qquad h_t = o_t \odot \tanh(C_t)$$
 - **Transformer Encoder Multi-Head Attention**:
   $$\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \dots, \text{head}_h) W^O$$
   Where $Q = \mathbf{H}_{\text{LSTM}} W^Q, K = \mathbf{H}_{\text{LSTM}} W^K, V = \mathbf{H}_{\text{LSTM}} W^V$.

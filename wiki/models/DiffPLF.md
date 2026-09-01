@@ -25,9 +25,12 @@ Denoising network: LSTM perturbation encoder + LSTM condition encoder + cross-at
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: past 5 days of aggregate demand (15-min Palo Alto data), weather forecasts, calendar vector, EV count.
-- **Forecasting Horizon**: [[Day_Ahead]] (24 h; also retraining-free 12/6/4/1 h).
+- **Forecasting Horizon**: [[Day_Ahead_Forecasting]] (24 h; also retraining-free 12/6/4/1 h).
 - **Strengths**: −39.58% MAE and −49.87% CRPS vs quantile regression (MAE 7.161 vs 11.852); controllable generation varying input EV count (robust to ±5–10% errors); sharp reliable intervals at all horizons.
 - **Weaknesses**: needs a separate fine-tuning stage for accuracy (end-to-end model left as future work); sensitive to diffusion steps T (worse at T=100/250/300); univariate/station-level scope.
 
 ## Literature Usage
 - [[2024_Li_DiffPLF_Conditional_Diffusion_EV]] — Original paper: conditional diffusion + cross-attention + QDM fine-tuning on Palo Alto charging data; ablations show covariates contribute ~10%, cross-attention beats latent addition fusion.
+
+## Datasets Used
+- [[DiffPLF_Dataset]] — California city public EV charging station usage data (Kaggle), used for the benchmark experiments in this paper's setting.

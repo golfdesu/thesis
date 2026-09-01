@@ -7,8 +7,8 @@ journal_conference: "2025 IEEE DELCON - International Conference on Recent Smart
 doi_url: "https://doi.org/10.1109/DELCON68055.2025.11400364"
 models_used: ["[[LTLM]]", "[[LSTM]]"]
 datasets_used: ["[[LA_Charging_Station_Dataset]]"]
-features_used: ["[[Historical_EV_Charging_Load]]", "[[Daily_Weekly_Cycles]]", "[[Seasonal_Trends]]"]
-forecasting_horizon: "[[Long_Term]]"
+features_used: ["[[Historical_Load]]", "[[Daily_Weekly_Cycles]]", "[[Seasonal_Trends]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: []
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -65,3 +65,6 @@ tags: [paper, ev-load-forecasting, ml]
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM foundation [34]
 - Related vault papers on long/multi-month EV horizon forecasting: [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] (120/240-day ACN forecasts), [[2024_Ali_MQ_TCN_Transfer_Learning_EV]], [[2015_Raza_Review_AI_Load_Demand]] (STLF/MTLF/LTLF taxonomy context)
 - Hybrid spatial-temporal deep learning precedent cited [17]: related to [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Weqar_LTLM_LSTM_EV_Load_refs]]

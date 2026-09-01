@@ -1,13 +1,14 @@
 ---
-type: github
+type: ""
 name: Time Series Foundation Models Repositories
 category: Deep Learning Core & Foundation Architecture Codebases
 tags:
   - github
   - foundation-models
-  - transformers
+  - transformer
   - mamba
   - state-space-models
+status:
 ---
 
 # 🐙 Time Series Foundation Models Repositories
@@ -138,3 +139,53 @@ This note indexes foundational open-source repositories for time-series Transfor
 - **What you can reuse**:
   - *Code*: KAN layers with learnable B-spline edge activations, grid-extension refinement, sparsification/pruning/symbolification pipeline for interpretable small models (e.g., KAN decoders as in [[2026_Hao_Mamba_KAN_HyKANet_EV]]).
   - *Pretrained*: none; toy/Feynman/knot-theory experiment notebooks included.
+
+### 20. PowerMamba (Dual-Path SSM for Power Systems) + ERCOT GridSet toolbox — *added in [2026-08-23] ingestion pass*
+- **Repository URL**: `https://github.com/alimenati/PowerMamba`
+- **Cited Paper**: [[2024_Menati_PowerMamba_Power_Systems_SSM]]
+- **What you can reuse**:
+  - *Code*: dual-path standard/inverse Mamba blocks + series decomposition + external-forecast token module; full benchmarking toolbox (baselines via thuml Time-Series-Library) reproducing the GridSet experiments.
+  - *Data*: **[[ERCOT_GridSet]]** — 5-year hourly ERCOT 2019–2023 (43,824 h), 22 core channels / extended 262-channel version with external day-ahead load & renewable forecasts.
+
+### 21. grid-forecast-benchmark (SSM vs Transformer vs RNN on US EIA-930 grids) — *added in [2026-08-23] ingestion pass*
+- **Repository URL**: `https://github.com/gramm-ai/grid-forecast-benchmark`
+- **Cited Paper**: [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]]
+- **What you can reuse**:
+  - *Code*: architecture-matched implementations of S-Mamba/[[PowerMamba]]/PatchTST/iTransformer/LSTM with shared preprocessing, weather-fusion layers, and capacity-controlled tiers; checkpoints included.
+  - *Data*: EIA-930 hourly demand pipelines for six/seven US ISOs plus Open-Meteo weather-covariate alignment.
+
+
+### 22. TimesFM (Decoder-Only Patched Time-Series Foundation Model) — *added [2026-09-01]*
+- **Repository URL**: `https://github.com/google-research/timesfm` *(official Google Research TimesFM; released post-publication — verify tag matches arXiv:2310.10688)*
+- **Cited Paper**: [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]]
+- **What you can reuse**:
+  - *Code*: decoder-only patched Transformer (p=32, h=128), causal attention, RevIN-standard normalization, synthetic-data generation (ARMA/seasonal/trend/step); training/inference scripts for variable context/horizon.
+  - *Pretrained*: 17M / 70M / 200M checkpoints (monotonic scaling on Monash); finetuning by tuning only Input/Output Residual Blocks on 10% ETT already beats GPT4TS and full-data baselines (ETTh1 0.426 vs 0.525 MAE).
+  - *Data*: pretraining mix recipe (80% real / 20% synthetic, equal granularity weights) and Table 1 composition (Google Trends + Wiki Pageviews + M4/Electricity/Traffic/Weather/Favorita/LibCity).
+
+
+### 23. Toto 2.0 (Decoder-Only Patched TSFM with Scaling Recipe) — *added [2026-09-01]*
+- **Repository URL**: `https://www.github.com/DataDog/toto` *(official Datadog Toto 2.0)*
+- **Cited Paper**: [[2026_Khwaja_Toto_2_Scaling_Era]]
+- **What you can reuse**:
+  - *Code*: decoder-only patched Transformer with alternating time/variate attention, CPM training (cmax 16/pmax 0.4) + single-pass/block decoding, 9-quantile head (pinball Eq.2-3), robust causal scaler (arcsinh Eq.6), residual MLP projections, NorMuon optimizer.
+  - *Pretrained*: **5 checkpoints 4M/22M/313M/1B/2.5B** (Apache 2.0, HF: https://huggingface.co/collections/Datadog/toto-20) — monotonic scaling on BOOM/GIFT-Eval/TIME; Finn: GIFT-Eval Pretrain + Chronos corpus mix.
+  - *Data*: base pretraining uses **zero public data** (Datadog observability 42.5% + TempoPFN synthetic 57.5%); context 4096, patch 32, 32 variates/sample.
+
+### 24. dd_unit_scaling (Distributed u-µP Training Library) — *added [2026-09-01]*
+- **Repository URL**: `https://www.github.com/DataDog/toto` / `dd_unit_scaling` package *(distributed u-µP wrapper, Apache 2.0)*
+- **Cited Paper**: [[2026_Khwaja_Toto_2_Scaling_Era]] (Section 4.4)
+- **What you can reuse**:
+  - *Code*: u-µP metadata handling for torch.compile + FSDP2 (DTensor) + DP/TP (global batch scaling, loss*world_size), KV-cache-compatible attention (unit-scaling disabled, alpha_res 0.75); first µP application to time series.
+  - *Pretrained*: n/a (training library).
+
+### 25. Chronos-2 (Universal TSFM with Group Attention — ICL for Multivariate/Covariates) — *added [2026-09-01]*
+- **Repository URL**: `https://github.com/amazon-science/chronos-forecasting` *(official Amazon Science)*
+- **Cited Paper**: [[2025_Ansari_Chronos_2_Univariate_to_Universal]]
+- **What you can reuse**:
+  - *Code*: encoder-only T5 + RoPE with alternating time/group attention (O(V)), 21-quantile direct multi-patch head, sinh-asinh robust scaling Eq.1-5, patching with REG/attention-sink, multivariatizers (contemporaneous + sequential) for synthetic multivariate/covariate pretraining, 2048->8192 ctx post-training, group-ID + future-input W inference for arbitrary tasks.
+  - *Pretrained*: **120M base (28M small)** — SOTA on fev-bench (W 90.7% / S 47.3% SQL, 300 series/s on A10G), GIFT-Eval (WQL 81.9/51.4, MASE 83.8/30.2), Chronos Bench II (WQL 79.8/46.6, MASE 81.5/26.5); synthetic-only near-parity on 2/3 benchmarks.
+  - *Data*: Table 6 mix (select Chronos + GIFT-Eval corpora + TSI/TCM/AR/ETS/KernelSynth) + entirely synthetic multivariate/covariate data via multivariatizers; benchmarks fev-bench 100 (32 uni / 26 multi / 42 cov), GIFT-Eval 97/55, Chronos Bench II 27.
+
+---
+Master index: [[github_repositories_index]]

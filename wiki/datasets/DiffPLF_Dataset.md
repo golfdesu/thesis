@@ -2,6 +2,8 @@
 type: dataset
 name: DiffPLF California City EV Charging Dataset
 location: California Cities, USA
+resolution: Session-level records aggregated to hourly per-station load in the DiffPLF benchmark
+access: open
 data_type: Multi-station EV charging station usage records
 url: "https://www.kaggle.com/datasets/venkatsairo4899/ev-charging-station-usage-of-california-city"
 code_url: "https://github.com/LSY-Cython/DiffPLF"

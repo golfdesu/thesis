@@ -6,9 +6,9 @@ year: 2026
 journal_conference: "Journal of Energy Storage"
 doi_url: "https://doi.org/10.1016/j.est.2026.122141"
 models_used: ["[[SGD]]", "[[Random_Forest]]", "[[Lasso]]", "[[LSTM]]", "[[MLP]]", "[[GRU]]"]
-datasets_used: ["[[Perth_EV_Charging_Dataset]]", "[[Dundee_EV_Charging_Dataset]]", "[[Hong_Kong_EV_Charging_Dataset]]", "[[Palo_Alto_EV_Charging_Dataset]]", "[[Boulder_EV_Charging_Dataset]]"]
-features_used: ["[[Historical_Charging_Demand]]", "[[Sliding_Window_Lags]]", "[[Hourly_Charging_Events]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[Perth_EV]]", "[[Dundee_EV]]", "[[Hong_Kong_EV_Charging_Dataset]]", "[[Palo_Alto_EV]]", "[[Boulder_Colorado]]"]
+features_used: ["[[Historical_Load]]", "[[Lag_Features]]", "[[EV_Charging_Demand]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -70,14 +70,14 @@ Cities grouped into Group-High/Medium/Low by mean daily events/station via k-mea
 
 ## 📊 Dataset & Input Features
 - **12 public charging-session datasets (>30 days each), aggregated to hourly charging-event counts; 720 records per station over 30 days:**
-	1. Perth, UK — 6 stations, 2019/7/1–30, 29.4 events/day/station ([[Perth_EV_Charging_Dataset]])
+	1. Perth, UK — 6 stations, 2019/7/1–30, 29.4 events/day/station ([[Perth_EV]])
 	2. Hong Kong, China — 10 stations, 2022/5/17–6/15, 27.6 ([[Hong_Kong_EV_Charging_Dataset]])
-	3. Dundee, UK — 27 stations, 2018/7/1–30, 25.5 ([[Dundee_EV_Charging_Dataset]])
-	4. Palo Alto, USA — 7 stations, 2020/11/1–30, 17.9 ([[Palo_Alto_EV_Charging_Dataset]])
+	3. Dundee, UK — 27 stations, 2018/7/1–30, 25.5 ([[Dundee_EV]])
+	4. Palo Alto, USA — 7 stations, 2020/11/1–30, 17.9 ([[Palo_Alto_EV]])
 	5. Crieff, UK — 2 stations, 13.3; 6. Aberfeldy — 2, 13.2; 7. Pitlochry — 3, 10.8; 8. Kinross — 8, 8.4; 9. Auchterarder — 1, 6.5; 10. Blairgowrie — 1, 6.5; 11. Dunkeld — 1, 5.8 (all 2019/7/1–30)
-	12. Boulder, USA — 19 stations, 2021/8/1–30, 5.5 ([[Boulder_EV_Charging_Dataset]])
+	12. Boulder, USA — 19 stations, 2021/8/1–30, 5.5 ([[Boulder_Colorado]])
 - Session fields: charger ID, start time, end time → transformed into hourly demand count series.
-- **Input features:** only the past 12 h of hourly charging demand ([[Historical_Charging_Demand]]) via sliding window — no exogenous weather/spatial/calendar covariates.
+- **Input features:** only the past 12 h of hourly charging demand ([[Historical_Load]]) via sliding window — no exogenous weather/spatial/calendar covariates.
 - **Data availability statement:** "Data will be made available on request." No direct download URLs given in the paper.
 
 ## 📈 Performance & Results

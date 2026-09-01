@@ -8,7 +8,7 @@ doi_url: "https://doi.org/10.1109/ICCECT60629.2024.10546219"
 models_used: ["[[MLP]]", "[[XGBoost]]", "[[SVR]]", "[[Random_Forest]]"]
 datasets_used: ["[[Qingpu_State_Grid_EV_Stations]]", "[[Shanghai_Qingpu_Statistics_Bureau]]"]
 features_used: ["[[Historical_Load]]", "[[Weather_Traffic]]", "[[Economic_Indicators]]", "[[Social_Indicators]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

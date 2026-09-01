@@ -4,6 +4,7 @@ name: "Fujian Province EV Charging Station Data"
 location: "Fujian Province, China"
 resolution: "15 minutes"
 access: "private"
+data_type: "Single-station EV charging load, 15-min sampling (Jan-Apr 2022)"
 tags: [dataset, ev-charging]
 ---
 

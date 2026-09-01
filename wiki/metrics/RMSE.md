@@ -1,4 +1,6 @@
 ---
+title: Root Mean Squared Error (RMSE)
+type: metric
 metric: Root Mean Squared Error (RMSE)
 category: point-forecast-metric
 formula: "sqrt(mean((y_pred - y_true)^2))"
@@ -62,7 +64,7 @@ Where:
 | 2024 — [[2024_Qu_Physics_Informed_GAT_EV_Load]] | −5.29% vs SOTA spatiotemporal | PAG ablation: removing TPA degrades RMSE by 50.84%. |
 | 2024 — [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] | STMGCN **78.831 kW** | Best overall test RMSE; noAG (TCN-only) worst at 90.681. |
 | 2025 — [[2025_Alghamdi_REST_Network_Port_EV]] | **9.8 kW** headline | RESTNet ensemble vs SVR/RF/CNN/VGGNet/DeepSigRNet. |
-| 2025 — [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] | Hybrid 3: 3.9825 kWh | Persistence 6.70; Transformer unstable (R² ≈ 0). |
+| 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] | Hybrid 3: 3.9825 kWh | Persistence 6.70; Transformer unstable (R² ≈ 0). |
 | 2025 — [[2025_Zheng_Coherent_Hierarchical_EV_Load]] | Reported with MAE/MASE | Coherent hierarchical probabilistic evaluation on ACN. |
 | 2026 — [[2026_Hao_Mamba_KAN_HyKANet_EV]] | Avg 4.67 (×10²), up to −14.8% vs PAG | Per-horizon: 2.81 (15 min) → 6.12 (60 min). |
 | 2026 — [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] | STL-Hybrid **0.797** | >90% RMSE reduction vs strongest benchmark Informer (8.734). |

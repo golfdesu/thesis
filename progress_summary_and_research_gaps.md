@@ -1,7 +1,7 @@
 # 📝 Thesis Progress Summary: Model Benchmarks, Architectural Analysis & Research Gaps
 
 > **Topic:** Improving Baseline Time-Series Transformer for EV Charging Station Load Forecasting  
-> **Last Updated:** 2026-08-23 (refreshed after ingestion of papers 81–103; corpus now 103 papers)  
+> **Last Updated:** 2026-08-26 (corpus count refreshed against `wiki/papers/`: now **118 papers**)  
 > **Status:** Initial Benchmark Evaluation & Gap Analysis Complete; corpus refreshed
 
 ---
@@ -83,7 +83,7 @@ In the current project notebooks, all 5 models are standardized using an **Encod
 
 ## 3. 🔬 Key Research Gaps of Standard Transformers in Time-Series
 
-Based on literature review across all **103 EV load forecasting papers** now ingested in `wiki/papers/`, 6 primary research gaps have been identified in standard Transformer architectures:
+Based on literature review across all **118 EV load forecasting papers** now ingested in `wiki/papers/`, 6 primary research gaps have been identified in standard Transformer architectures:
 
 1. **Non-Stationarity & Distribution Shift:**
    - Standard Transformers assume stable temporal distributions. EV load profiles exhibit heavy non-stationarity due to weather, day-of-week, and seasonal shifts.
@@ -109,7 +109,7 @@ Based on literature review across all **103 EV load forecasting papers** now ing
    - *Gap P-4 (Multimodal Diffusion Latency):* Generative Diffusion (DiffPLF) models multimodality but is too slow for sub-second real-time control.
    - *Gap P-5 (Non-linear Hierarchical Reconciliation):* Quantiles are non-additive ($q_\alpha(A+B) \neq q_\alpha(A) + q_\alpha(B)$), breaking spatial grid reconciliation.
 
-### Corpus Coverage Update (2026-08-23 refresh, 103 papers)
+### Corpus Coverage Update (refreshed 2026-08-26, 118 papers)
 
 The refreshed corpus ([[research_gaps]]) partially addresses several of the gaps above — none are fully closed:
 
@@ -117,11 +117,12 @@ The refreshed corpus ([[research_gaps]]) partially addresses several of the gaps
 - **Gap 3 (peak underestimation / probabilistic coherence):** Partially addressed by PICNN convex quantile learning ([[2025_Zheng_Coherent_Hierarchical_EV_Load]], P-1/P-5), hierarchical conformal prediction for DERs ([[2024_Zhou_Conformal_Prediction_DER]], P-3), and diffusion-based multimodality ([[2024_Li_DiffPLF_Conditional_Diffusion_EV]], P-4). The monotonicity-vs-tail-sharpness trade-off and covariate-aware conformal recalibration remain open. *New:* [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] does online BOA quantile recalibration (net load, non-EV) — adjacent to P-3 but no covariate conditioning; [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] brings *static* CQR conformal calibration to EV load via TFT — P-3's adaptive-recalibration core stays open.
 - **Gap 4 (multi-scale attention):** MFT ([[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]) and MSSTGAN ([[2025_Tian_MSSTGAN_City_EV_Load]]) bring multi-scale fusion, but no controlled tokenization benchmark exists for EV load. This is now reinforced by [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]]: in a reproducible 4-city benchmark, **Transformers win only short-term horizons while GRU/LSTM win mid/long-term** — exactly the horizon-dependent behavior a controlled tokenization/multi-scale study must explain.
 - **Gap 5 (spatial-temporal):** *New line:* EVformer ([[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]]) introduces decoupled temporal/spatial modules with dynamic Top-K spatial attention, and TriCast ([[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]]) models causal price elasticity explicitly — both point-forecast only, leaving spatial-temporal + calibrated uncertainty open (P-5).
-- **Gap 6 (computational limits):** The post-Transformer line is now ingested: Mamba-3 ([[2026_Lahoti_Mamba_3_Sequence_Modeling]]), HyKANet ([[2026_Hao_Mamba_KAN_HyKANet_EV]]), PC-M3 ([[2026_Chen_PC_M3_Mamba_EV_Clusters]]), plus foundational Mamba papers (TimeMachine [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], Bi-Mamba+ [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) and the foundation-model benchmark ([[2025_Meyer_Benchmark_Foundation_Models]]) / EV-STLLM ([[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]]). No EV paper combines these backbones with probabilistic heads — see Gap T-7 in [[research_gaps]]. *Caveat updated below.*
+- **Gap 6 (computational limits):** The post-Transformer line is now ingested: Mamba-3 ([[2026_Lahoti_Mamba_3_Sequence_Modeling]]), HyKANet ([[2026_Hao_Mamba_KAN_HyKANet_EV]]), PC-M3 ([[2026_Tang_PC_M3_Mamba_EV_Clusters]]), plus foundational Mamba papers (TimeMachine [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], Bi-Mamba+ [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) and the foundation-model benchmark ([[2025_Meyer_Benchmark_Foundation_Models]]) / EV-STLLM ([[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]]). No EV paper combines these backbones with probabilistic heads — see Gap T-7 in [[research_gaps]]. *Caveat updated below.*
 - **Low-data/transfer (Gap 3 primary):** Now crowded for standard stations: MixerInformer two-stage transfer for new stations ([[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]]), MAML-Informer probabilistic few-shot ([[2026_Singh_MetaLearning_Informer_Probabilistic_EV]]), and the 12-city transferability benchmark ([[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] — linear SGD ≥ DL, performance plateaus after ~3 days of data). DC fast-charging + calibrated probabilistic low-data adaptation remains unexplored.
+- **Batch 4 (papers 104–108, web-discovered 2026-08-23):** [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] (GE-Mamba + AS-CQR adaptive conformal, KDD '26), [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] (SSM vs Transformer vs LSTM across six US ISOs), [[2024_Menati_PowerMamba_Power_Systems_SSM]] (+ open ERCOT GridSet), [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] (open ChargePlace Scotland 2022–2025 + Bayesian LGM-INLA), [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] (EnbPI conformal forecasts → stochastic MPC, CDC 2025). Impact: **P-3 narrowed** (online conformal recalibration now exists at aggregate level; EnbPI price-coverage collapse to 0.22 = empirical motivation), **T-7 closed at grid level / still open at EV-station probabilistic level**, and a modern open station-level benchmark ([[ChargePlace_Scotland]]) is available beyond stale Palo Alto-era data.
 
-> [!IMPORTANT] Flagship novelty re-validation (papers 81–103)
-> The nearest new competitors are: **USDT** ([[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]]) = probabilistic Transformer with Gaussian heads but Informer/Probformer backbone, no Mamba, no cross-attention exogenous fusion, no coverage guarantees; **MoghadamDost TFT+CQR** = Transformer + post-hoc static conformal calibration but LSTM-attention backbone, non-monotonic plain quantile head; **MAML-Informer** = probabilistic few-shot Informer but no conformal layer or convexity constraint. **No 2025–2026 paper combines a Mamba/SSM backbone with cross-attention exogenous fusion AND a conformalized PICNN head.** The full combination remains unexplored; component-level claims ("first probabilistic EV Transformer", "first conformalized EV Transformer", "first dynamic-graph EV Transformer") are no longer claimable.
+> [!IMPORTANT] Flagship novelty re-validation (papers 81–108)
+> The nearest new competitors are: **USDT** ([[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]]) = probabilistic Transformer with Gaussian heads but Informer/Probformer backbone, no Mamba, no cross-attention exogenous fusion, no coverage guarantees; **MoghadamDost TFT+CQR** = Transformer + post-hoc static conformal calibration but LSTM-attention backbone, non-monotonic plain quantile head; **MAML-Informer** = probabilistic few-shot Informer but no conformal layer or convexity constraint; and **EnergyMamba** ([[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]], KDD '26) = Mamba + GCN spatial context + adaptive conformal (AS-CQR) — but at *regional aggregate* granularity, univariate (no cross-attention exogenous fusion), non-EV, with no PICNN monotonicity. **No paper combines a Mamba/SSM backbone with cross-attention exogenous fusion AND a conformalized PICNN head at EV-charging-station level.** The full composition remains unexplored — novelty claims must be stated at this composition granularity, since every component pairing alone is now taken.
 
 6. **Computational & Inductive Bias Limits:**
    - Standard temporal attention on long lag sequences has $O(N^2)$ complexity and struggles with tabular lag features compared to GBDTs (XGBoost).
@@ -137,7 +138,7 @@ To fulfill the thesis goal of **overhauling the baseline Transformer to outperfo
    - **Input Module:** Integrate **RevIN** (Reversible Instance Normalization) + **Pearson/GRN Feature Selection Gate**.
    - **Encoder Core:** Combine **Series Decomposition** (Trend + Seasonality) with **Multi-Scale Temporal Patching**.
    - **Output Module:** Implement an **Asymmetric Peak-Weighted Loss Function** to minimize Peak Zone WAPE below 20%.
-   - **Flagship novelty direction (re-verified 2026-08-23 against [[research_gaps]] Gaps 6, T-4, T-7 and P-1..P-5, all 103 papers):** a **Mamba backbone** ($O(N)$ selective SSM) + **cross-attention exogenous fusion** + **conformalized PICNN quantile head** — no paper in the 103-paper corpus combines these three components. Nearest neighbors (USDT, MoghadamDost TFT+CQR, MAML-Informer) each lack at least two of the three. Details in [[proposed_architectures]].
+   - **Flagship novelty direction (re-verified 2026-08-26 against [[research_gaps]] Gaps 6, T-4, T-7 and P-1..P-5, all 118 papers):** a **Mamba backbone** ($O(N)$ selective SSM) + **cross-attention exogenous fusion** + **conformalized PICNN quantile head** — no paper in the 118-paper corpus combines these three components. Nearest neighbors (USDT, MoghadamDost TFT+CQR, MAML-Informer) each lack at least two of the three. Details in [[proposed_architectures]].
 
 2. **Academic Verification:**
    - Evaluate the Enhanced Baseline against both the unified codebase benchmarks and official benchmark libraries (`NeuralForecast` / `PyTorch Forecasting`) for complete academic rigor.

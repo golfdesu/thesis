@@ -6,9 +6,9 @@ year: 2023
 journal_conference: "ACM conference proceedings (© 2023 ACM); arXiv:2301.13629 (v4, Mar 2024)"
 doi_url: "https://doi.org/10.48550/arXiv.2301.13629"
 models_used: ["[[DiffSTG]]", "[[UGnet]]"]
-datasets_used: ["[[PEMS08]]", "[[AIR-BJ]]", "[[AIR-GZ]]"]
-features_used: ["[[Traffic_Flow]]", "[[PM2.5_Concentration]]", "[[Graph_Adjacency_Matrix]]", "[[Noise_Level_Embedding]]"]
-forecasting_horizon: "[[Spatial_Temporal]]"
+datasets_used: ["[[Traffic]]", "[[AIR-BJ]]", "[[AIR-GZ]]"]
+features_used: ["[[Traffic]]", "[[PM2.5_Concentration]]", "[[Adjacency_Matrix]]", "[[Noise_Level_Embedding]]"]
+forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
 metrics: ["[[CRPS]]", "[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

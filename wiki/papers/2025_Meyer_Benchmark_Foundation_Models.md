@@ -5,10 +5,10 @@ authors: [Marcel Meyer, David Zapata Gonzalez, Sascha Kaltenpoth, Oliver Müller
 year: 2025
 journal_conference: "IEEE Access"
 doi_url: "https://doi.org/10.1109/ACCESS.2025.3648056"
-models_used: ["[[Chronos]]", "[[Chronos-Bolt]]", "[[TimesFM]]", "[[TimesFM_2.0]]", "[[LagLlama]]", "[[Moirai]]", "[[Time-MoE]]", "[[Sundial]]", "[[PatchTST]]", "[[VanillaTransformer]]", "[[iTransformer]]", "[[Temporal_Fusion_Transformer]]", "[[SeasonalAverage]]"]
-datasets_used: ["[[Lower_Saxony_Dataset]]", "[[Southern_Germany_Dataset]]", "[[IDEAL_Dataset]]", "[[REFIT_Dataset]]"]
+models_used: ["[[Chronos]]", "[[Chronos-Bolt]]", "[[TimesFM]]", "[[TimesFM_2.0]]", "[[LagLlama]]", "[[Moirai]]", "[[Time-MoE]]", "[[Sundial]]", "[[PatchTST]]", "[[Transformer]]", "[[iTransformer]]", "[[Temporal_Fusion_Transformer]]", "[[SeasonalAverage]]"]
+datasets_used: ["[[Lower_Saxony_Dataset]]", "[[Southern_Germany_Dataset]]", "[[IDEAL_Dataset]]", "[[REFIT]]"]
 features_used: ["[[Household_Electricity_Consumption]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]", "[[APNE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - **Research question**: "Can zero-shot TSFMs match the capabilities of state-of-the-art trained-from-scratch Transformers in forecasting household electricity load?"
-- **Contribution**: First multi-dataset, time-series-cross-validation benchmark of zero-shot Time Series Foundation Models ([[Chronos]], [[Chronos-Bolt]], [[TimesFM]], [[TimesFM_2.0]], [[LagLlama]], [[Moirai]], [[Time-MoE]], [[Sundial]]) against trained-from-scratch (TFS) Transformers ([[PatchTST]], [[VanillaTransformer]], [[iTransformer]], [[Temporal_Fusion_Transformer]]) on univariate household STLF.
+- **Contribution**: First multi-dataset, time-series-cross-validation benchmark of zero-shot Time Series Foundation Models ([[Chronos]], [[Chronos-Bolt]], [[TimesFM]], [[TimesFM_2.0]], [[LagLlama]], [[Moirai]], [[Time-MoE]], [[Sundial]]) against trained-from-scratch (TFS) Transformers ([[PatchTST]], [[Transformer]], [[iTransformer]], [[Temporal_Fusion_Transformer]]) on univariate household STLF.
 - **Key methodological contributions**:
   - Contamination-aware dataset selection: excludes datasets present in TSFM pre-training corpora (Electricity Dataset, Ausgrid Solar Home, London Smart Meters, Portuguese Household); rejects BuildingsBench and TimeGPT-1 due to undisclosed training data → leakage risk.
   - Leakage-safe global train-test split: a single split date per dataset chosen via percentile logic over household max dates (0.25th percentile of max dates; 0.8th percentile of possible time points), preventing cross-household leakage of global patterns (e.g., Covid-19).
@@ -42,7 +42,7 @@ where $\hat{y}_{h,i}$ / $y_{h,i}$ = prediction/actual for household $h$, predict
 | [[IDEAL_Dataset]] | Edinburgh area, UK | 254 | 10/08/2016–01/07/2018 | 0.3713 | 0.2220 | 0.4395 |
 | [[Lower_Saxony_Dataset]] | near Hameln, DE | 34 | 02/05/2018–31/12/2020 | 0.3417 | 0.2337 | 0.3411 |
 | [[Southern_Germany_Dataset]] | Konstanz, DE | 6 | 15/04/2015–06/09/2017 | 0.4035 | 0.2900 | 2.6643 |
-| [[REFIT_Dataset]] | Loughborough area, UK | 20 | 17/09/2013–10/07/2015 | 0.5151 | 0.3279 | 0.5197 |
+| [[REFIT]] | Loughborough area, UK | 20 | 17/09/2013–10/07/2015 | 0.5151 | 0.3279 | 0.5197 |
 
 - Southern Germany test set: 16,959 observations; post-July-2017 constant values dropped. Lower Saxony: active power all phases; district-heating pump meters excluded; 4 PV households removed (ambiguous net metering). One Konstanz house has an EV (filtered out by taking grid-total import). IDEAL included but Moirai/Sundial/Time-MoE excluded there (pre-training contamination).
 - **Dataset URLs / DOIs** (from references):
@@ -106,3 +106,6 @@ where $\hat{y}_{h,i}$ / $y_{h,i}$ = prediction/actual for household $h$, predict
 - [[2021_Lim_TFT_Temporal_Fusion_Transformers]] — LSTM+attention TFS baseline [38]
 - [[2021_Rasul_TimeGrad_Diffusion_Forecasting]] — same first author as [[LagLlama]]
 - Related vault papers: [[2025_Han_Vertical_Federated_EGAT_LSTM]] and [[2025_Zhu_Personalized_Federated_Learning]] (household-level load forecasting), [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]] (LLM-based EV forecasting)
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Meyer_Benchmark_Foundation_Models_refs]]

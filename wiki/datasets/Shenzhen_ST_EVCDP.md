@@ -5,6 +5,8 @@ location: "Shenzhen, China"
 resolution: "5 minutes"
 access: "open"
 tags: [dataset, ev-charging]
+license: "MIT License (IntelligentSystemsLab/ST-EVCDP GitHub)"
+commercial_use: allowed
 ---
 
 # Shenzhen ST-EVCDP Charging Pile Dataset

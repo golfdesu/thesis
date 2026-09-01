@@ -26,7 +26,7 @@ Shared weights across the $k$ tensors keep model size invariant to $k$; Inceptio
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: multivariate series with multi-periodicity (e.g., daily + weekly electricity cycles).
-- **Forecasting Horizon**: both short-term (M4) and [[Long_Term]] ($T \in \{96,...,720\}$).
+- **Forecasting Horizon**: both short-term (M4) and [[Long_Term_Forecasting]] ($T \in \{96,...,720\}$).
 - **Strengths**: SOTA in >80% of forecasting cases (Electricity avg MSE 0.192); best imputation (ETTm1 avg MSE 0.027); anomaly F1 86.34%; unified pre-training potential demonstrated.
 - **Weaknesses**: point forecasts only; sensitive to top-k frequency count in low-level tasks; no explicit cross-variate dependency mechanism.
 
@@ -34,3 +34,4 @@ Shared weights across the $k$ tensors keep model size invariant to $k$; Inceptio
 - [[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]] — Original paper: FFT periodicity → 2D variation modeling; beats DLinear/FEDformer/Informer across forecasting/imputation/classification/anomaly benchmarks.
 - [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — Follow-up showing linear models fail classification/imputation while TimesNet still beats them at forecasting.
 - [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Benchmark protocol and baseline provider; iTransformer surpasses TimesNet on ECL/Traffic/Solar via variate-token attention.
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — TimesNet baseline referenced via ETT long-horizon comparisons (similar to FEDFormer/Autoformer group).

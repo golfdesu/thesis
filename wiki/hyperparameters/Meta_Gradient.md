@@ -1,0 +1,19 @@
+---
+type: hyperparameter
+name: "Meta Gradient"
+category: Stub (auto-generated)
+status: needs-review
+tags:
+  - hyperparameter
+  - meta_gradient
+---
+
+# Meta Gradient
+
+Meta Gradient — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+This optimization-related concept appears in training setups across the knowledge base. The links below show which papers describe the corresponding tuning choices.
+
+## Referenced in this knowledge base
+
+[[2017_Finn_MAML_Model_Agnostic_Meta_Learning]]

@@ -6,9 +6,9 @@ year: 2025
 journal_conference: "arXiv preprint (submitted to Elsevier), arXiv:2505.06657 [eess.SY]"
 doi_url: "https://doi.org/10.48550/arXiv.2505.06657"
 models_used: ["[[MIK-TST]]", "[[MLP-Mixer]]", "[[Informer]]", "[[KAN]]"]
-datasets_used: ["[[Boulder_EV_Charging_Dataset]]"]
-features_used: ["[[Historical_Charging_Power]]", "[[Timestamp_Calendar_Features]]", "[[Charging_Session_Logs]]", "[[Day_of_Week_Flag]]"]
-forecasting_horizon: "[[Long_Term]]"
+datasets_used: ["[[Boulder_Colorado]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Charging_Session_Logs]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -75,7 +75,7 @@ $$L_{target} = \frac{1}{M}\sum_{i=1}^{M}\left(y_i - y'(\theta)\right)^2$$
 Implementation: PyTorch, embedding size 256 (Normal/Xavier init), Adam LR 1e-4, weight decay 0, MLP structure [256, 2048, 256], max 10 iterations. Baselines run with original paper settings.
 
 ## 📊 Dataset & Input Features
-- **[[Boulder_EV_Charging_Dataset]]** — City of Boulder Open Data, Boulder, Colorado, USA: historical records from **26 EV charging stations** (charging times, power consumption, user behavior patterns, station-level indicators).
+- **[[Boulder_Colorado]]** — City of Boulder Open Data, Boulder, Colorado, USA: historical records from **26 EV charging stations** (charging times, power consumption, user behavior patterns, station-level indicators).
   - URL: https://open-data.bouldercolorado.gov/datasets/95992b3938be4622b07f0b05eba95d4c_0/explore
   - Transfer setting: stations indexed 0–20 (by chronological order of first recorded activity) = **source domain** (full history for pre-training); stations 21–25 = **target domain**, fine-tuned only on small early data (prior to 2023), evaluated on future loads — simulating newly deployed stations.
 - **Input features**: historical charging power, timestamps/calendar indicators (e.g., day-of-week flags), charging session logs, other station-level indicators; z-score style standardization applied.

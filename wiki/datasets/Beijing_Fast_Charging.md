@@ -4,6 +4,7 @@ name: "Beijing Fast Charging Station Dataset"
 location: "Beijing, China"
 resolution: "15 minutes"
 access: "private"
+data_type: "DC fast-charging load power (kW), 10 stations, 15-min series"
 tags: [dataset, ev-charging]
 ---
 

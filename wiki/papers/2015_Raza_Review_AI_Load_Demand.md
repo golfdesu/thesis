@@ -5,12 +5,13 @@ authors: [Muhammad Qamar Raza, Abbas Khosravi]
 year: 2015
 journal_conference: "Renewable and Sustainable Energy Reviews, vol. 50, pp. 1352-1372"
 doi_url: "https://doi.org/10.1016/j.rser.2015.04.065"
-models_used: ["[[ANN]]", "[[MLP]]", "[[Backpropagation_ANN]]", "[[Fuzzy_Logic]]", "[[ANFIS]]", "[[SVM]]", "[[SVR]]", "[[Wavelet_Neural_Network|WNN]]", "[[Artificial_Immune_System|AIS]]", "[[Genetic_Algorithm|GA]]", "[[Particle_Swarm_Optimization|PSO]]", "[[Ant_Colony_Optimization|ACO]]"]
+models_used: ["[[ANN]]", "[[MLP]]", "[[Fuzzy_Logic]]", "[[ANFIS]]", "[[SVM]]", "[[SVR]]", "[[Wavelet_Neural_Network|WNN]]", "[[Artificial_Immune_System|AIS]]", "[[Genetic_Algorithm|GA]]", "[[Particle_Swarm_Optimization|PSO]]", "[[Ant_Colony_Optimization|ACO]]"]
 datasets_used: ["[[ISO_New_England_Grid]]", "[[California_Grid]]", "[[New_York_Grid]]", "[[Singapore_Grid]]", "[[ELIA_Belgian_Grid]]", "[[Ontario_Grid]]", "[[Victoria_Australia_Grid]]", "[[UK_National_Grid]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Dew_Point]]", "[[Dry_Bulb_Temperature]]", "[[Relative_Humidity]]", "[[Hour_Of_Day]]", "[[Day_Of_Week]]", "[[Working_Day_Flag]]", "[[Electricity_Price]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Dew_Point]]", "[[Humidity]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Electricity_Tariff]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAPE]]", "[[RMSE]]", "[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
+status: needs-review
 ---
 
 # Summary: A Review on AI-Based Load Demand Forecasting Techniques for Smart Grid and Buildings
@@ -98,3 +99,6 @@ Representative quantitative findings compiled across ~60 surveyed studies:
 - Foundational ANN survey lineage: [[2001_Hippert_Neural_Networks_STLF_Review]]
 - Successor probabilistic/combinatorial methods: [[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]]
 - Modern deep successors replacing shallow ANNs: [[1997_Hochreiter_Long_Short_Term_Memory]], [[2018_Bai_Empirical_TCN_Sequence_Modeling]], [[2017_Attention_Is_All_You_Need]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2015_Raza_Review_AI_Load_Demand_refs]]

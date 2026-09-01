@@ -6,10 +6,10 @@ year: 2019
 journal_conference: "NeurIPS 2019 (33rd Conference on Neural Information Processing Systems, Vancouver)"
 doi_url: "https://arxiv.org/abs/1907.00235"
 models_used: ["[[LogSparse_Transformer]]", "[[Convolutional_Self_Attention]]", "[[Transformer]]", "[[DeepAR]]", "[[DeepState]]", "[[TRMF]]", "[[ARIMA]]", "[[ETS]]"]
-datasets_used: ["[[Electricity_ECL|electricity-f / electricity-c]]", "[[Traffic|traffic-f / traffic-c]]", "[[Solar_Energy|solar]]", "[[Wind]]", "[[M4_Hourly]]", "[[Synthetic_Sinusoidal]]"]
+datasets_used: ["[[Electricity_ECL|electricity-f / electricity-c]]", "[[Traffic|traffic-f / traffic-c]]", "[[Solar_Energy|solar]]", "[[Wind_Speed]]", "[[M4]]", "[[Synthetic_Sinusoidal]]"]
 features_used: ["[[Historical_Load]]", "[[Time_Based_Covariates]]", "[[Positional_Embedding]]", "[[Series_ID_Embedding]]", "[[Age_Feature]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Quantile_Loss|R0.5/R0.9 quantile loss]]", "[[NLL|Negative Log-Likelihood]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[Pinball_Loss|R0.5/R0.9 quantile loss]]", "[[NLL|Negative Log-Likelihood]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -98,6 +98,6 @@ $$R_\rho(x, \hat{x}) = \frac{2\sum_{i,t} D_\rho(x_t^{(i)}, \hat{x}_t^{(i)})}{\su
 
 ## 🔗 Key References & Citation Graph
 - Foundation architecture: [[2017_Attention_Is_All_You_Need]] (Vaswani et al., NeurIPS 2017)
-- Probabilistic baselines: [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]] (Flunkert et al.), DeepState (Rangapuram et al., NeurIPS 2018)
+- Probabilistic baselines: [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] (Flunkert et al.), DeepState (Rangapuram et al., NeurIPS 2018)
 - Downstream efficient Transformers in vault: [[2021_Zhou_Informer_Beyond_Efficient_Transformer]], [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]]
-- Other cited anchors: WaveNet (van den Oord et al., 2016 — causal convolutions), Sparse Transformers (Child et al., arXiv:1904.10509), TRMF (Yu et al., NeurIPS 2016), [[2014_Adam_Adam_Stochastic_Optimization]]
+- Other cited anchors: WaveNet (van den Oord et al., 2016 — causal convolutions), Sparse Transformers (Child et al., arXiv:1904.10509), TRMF (Yu et al., NeurIPS 2016), [[2014_Kingma_Adam_Stochastic_Optimization]]

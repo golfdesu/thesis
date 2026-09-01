@@ -5,10 +5,10 @@ authors: [Xiaozhou Xiong, Lanzhihao Zhou]
 year: 2023
 journal_conference: "2023 2nd Asia Power and Electrical Technology Conference (APET), IEEE"
 doi_url: "https://doi.org/10.1109/APET59977.2023.10489548"
-models_used: ["[[CNN_LSTM_Transformer_Combined_Model]]", "[[CNN]]", "[[LSTM]]", "[[Transformer_Encoder]]"]
-datasets_used: ["[[Boulder_EV_Charging_Stations_Dataset]]"]
+models_used: ["[[CNN_LSTM_Transformer_Combined_Model]]", "[[CNN]]", "[[LSTM]]", "[[Transformer]]"]
+datasets_used: ["[[Boulder_Colorado]]"]
 features_used: ["[[Historical_Load]]", "[[Charging_Event_Records]]", "[[Timestamp]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -93,7 +93,7 @@ Table I — test-set performance (last 3 days, Dec 28–30, 2020):
 - No comparison against classical ML baselines (SVR, PSO-SVM) or recent hybrid models; no statistical significance testing.
 - Hyperparameters (kernel size, LSTM units, number of encoder layers) not systematically tuned or justified; training details (optimizer, epochs, loss function) not reported in extracted text.
 - Single-step-ahead prediction only (96-point daily profile implied); no multi-horizon evaluation.
-- Research gap: ensemble/hybrid approaches with richer feature sets and probabilistic uncertainty quantification remain open — connects to [[2020_Huang_Ensemble_EV_Load]] and [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]].
+- Research gap: ensemble/hybrid approaches with richer feature sets and probabilistic uncertainty quantification remain open — connects to [[2020_Huang_Ensemble_EV_Load]] and [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]].
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -110,9 +110,9 @@ Table I — test-set performance (last 3 days, Dec 28–30, 2020):
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[2019_Zhu_EV_Load_Forecasting]] — reference [4]: Zhu et al., "Electric Vehicle Charging Load Forecasting: A Comparative Study of Deep Learning Approaches," Energies, vol. 12, p. 2692, 2019; found LSTM superior to RNN/GRU/Bi-LSTM — direct motivation for this paper's LSTM backbone.
+- [[2019_Zhu_EV_Load_Forecasting]] — reference [4]: Zhu et al., "Electric Vehicle Charging Load Forecasting: A Comparative Study of Deep Learning Approaches," Energies, vol. 12, p. 2692, 2019; found LSTM superior to RNN/GRU/BiLSTM — direct motivation for this paper's LSTM backbone.
 - Aduama et al. [5], "Multi-Feature Data Fusion-Based Load Forecasting of Electric Vehicle Charging Stations Using a Deep Learning Model," Energies, vol. 16, p. 1309, 2023 — LSTM with historical weather features; addresses this paper's missing-exogenous-features gap.
 - Sun et al. [1] (SVR-based station forecasting, IEEE APPEEC 2016); Liao et al. [2] (PSO-SVM, ICITBS 2019); Ahmad et al. [3] (ANN modular STLF, Energies 2019) — traditional ML baselines discussed in related work.
 - Feng et al. [6] (grey theory + neural network, Energy Reports 2021) — earlier hybrid/traditional+deep combination approach.
 - Hochreiter & Schmidhuber [7] (LSTM, 1997); Vaswani et al. [9] ("Attention Is All You Need," NeurIPS 2017) — foundational components.
-- Related vault lines: [[2020_Huang_Ensemble_EV_Load]] and [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] — same problem setting (EV charging station STLF via combined/hybrid deep models), useful for comparative discussion of combination strategies.
+- Related vault lines: [[2020_Huang_Ensemble_EV_Load]] and [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] — same problem setting (EV charging station STLF via combined/hybrid deep models), useful for comparative discussion of combination strategies.

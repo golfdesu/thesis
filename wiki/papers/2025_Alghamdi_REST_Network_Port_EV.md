@@ -6,10 +6,10 @@ year: 2025
 journal_conference: "IEEE Access"
 doi_url: "https://doi.org/10.1109/ACCESS.2025.3589292"
 models_used: ["[[RESTNet]]", "[[ResNet]]", "[[SENet]]", "[[Transformer]]", "[[DeepSigRNet]]", "[[CNN]]", "[[VGGNet]]", "[[SVR]]", "[[Random_Forest]]"]
-datasets_used: ["[[EV_Intelligent_Port_Logistics_Dataset]]", "[[Kaggle_Dallas_Port]]"]
-features_used: ["[[Historical_Charging_Load]]", "[[Charging_Duration]]", "[[Battery_Capacity]]", "[[Grid_Demand]]", "[[Fleet_Size]]", "[[Charger_Power_Rating]]", "[[Electricity_Price]]", "[[Weather]]", "[[Calendar_Features]]", "[[Hourly_Demand_Variation]]", "[[Cyclic_Temporal_Indicator]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAPE]]", "[[RMSE]]", "[[MAE]]", "[[R2]]", "[[EEE]]", "[[LVD]]", "[[CPE]]", "[[TAA]]"]
+datasets_used: ["[[EV_Intelligent_Port_Logistics_Dataset]]", "[[Dallas_Port_EV]]"]
+features_used: ["[[Historical_Load]]", "[[Charging_Duration]]", "[[Battery_Capacity]]", "[[Grid_Demand]]", "[[Fleet_Size]]", "[[Connector_Power_Rating]]", "[[Electricity_Tariff]]", "[[Weather]]", "[[Calendar_Features]]", "[[Hourly_Demand_Variation]]", "[[Cyclical_Encodings]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAPE]]", "[[RMSE]]", "[[MAE]]", "[[R_squared]]", "[[EEE]]", "[[LVD]]", "[[CPE]]", "[[TAA]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -90,4 +90,7 @@ tags: [paper, ev-load-forecasting, ml]
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] — Transformer/self-attention backbone
 - [[2018_Bai_Empirical_TCN_Sequence_Modeling]] — convolutional sequence-modeling context
-- Related vault papers: [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]], [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]], [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]], [[2020_Huang_Ensemble_EV_Load]], [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]
+- Related vault papers: [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]], [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]], [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]], [[2020_Huang_Ensemble_EV_Load]], [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Alghamdi_REST_Network_Port_EV_refs]]

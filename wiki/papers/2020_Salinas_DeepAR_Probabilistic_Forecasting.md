@@ -1,15 +1,15 @@
 ---
 type: paper
 title: "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks"
-authors: [David Salinas, Valentin Flunkert, Jan Gasthaus]
+authors: [David Salinas, Valentin Flunkert, Jan Gasthaus, Tim Januschowski]
 year: 2020
 journal_conference: "International Journal of Forecasting, 36(3), 1181-1191"
 doi_url: "https://doi.org/10.1016/j.ijforecast.2019.11.003"
 models_used: ["[[DeepAR]]", "[[LSTM]]"]
-datasets_used: ["[[Parts_Dataset]]", "[[Electricity_Dataset]]", "[[Traffic_Dataset]]", "[[Amazon_EC_Dataset]]", "[[Amazon_EC_Sub_Dataset]]"]
-features_used: ["[[Age_Feature]]", "[[Time_Covariates]]", "[[Item_Embedding]]", "[[Scale_Factor]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Quantile_Loss]]", "[[ND]]", "[[RMSE]]"]
+datasets_used: ["[[Parts_Dataset]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[Amazon_EC_Dataset]]"]
+features_used: ["[[Age_Feature]]", "[[Calendar_Features]]", "[[Item_Embedding]]", "[[Scale_Factor]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[Pinball_Loss]]", "[[ND]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -99,3 +99,6 @@ optimized directly via stochastic gradient descent ([[Adam]] optimizer, early st
 - Seeger et al. (2016), Bayesian intermittent demand forecasting (ISSM baseline) — provides parts/ec/ec-sub datasets
 - Yu et al. (2016), Temporal regularized matrix factorization (MatFact baseline) — source of electricity/traffic datasets
 - Snyder, Ord & Beaumont (2012) — negative-binomial AR baseline; Bengio et al. (2015) scheduled sampling; Graves (2013) & Sutskever et al. (2014) seq2seq RNN foundations
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2020_Salinas_DeepAR_Probabilistic_Forecasting_refs]]

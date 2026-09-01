@@ -7,9 +7,9 @@ journal_conference: "Frontiers in Energy Research, Vol. 11, Article 1297849"
 doi_url: "https://doi.org/10.3389/fenrg.2023.1297849"
 models_used: ["[[VMD]]", "[[Prophet]]", "[[LSTM]]", "[[Prophet-LSTM]]"]
 datasets_used: ["[[Fujian_Province_EV_Charging_Station_Data]]"]
-features_used: ["[[Historical_Load]]", "[[Intrinsic_Mode_Functions]]", "[[Zero_Crossing_Rate]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAE]]", "[[R-squared]]"]
+features_used: ["[[Historical_Load]]", "[[VMD]]", "[[Zero_Crossing_Rate]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -109,8 +109,11 @@ Architecture: **96-dimensional input layer, 1-dimensional output, 2 LSTM layers,
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[1997_Long_Short_Term_Memory]] — foundational [[LSTM]] gating architecture used for high-frequency IMF forecasting.
-- [[2014_Adam_A_Method_for_Stochastic_Optimization]] — optimizer used to train the [[LSTM]] network.
+- [[1997_Hochreiter_Long_Short_Term_Memory]] — foundational [[LSTM]] gating architecture used for high-frequency IMF forecasting.
+- [[2014_Kingma_Adam_Stochastic_Optimization]] — optimizer used to train the [[LSTM]] network.
 - Dragomiretskiy & Zosso (2014), *Variational Mode Decomposition*, IEEE Trans. Signal Process. — source of [[VMD]], doi:10.1109/tsp.2013.2288675.
 - Taylor & Letham (2018), *Forecasting at Scale* — source of [[Prophet]], doi:10.1080/00031305.2017.1380080.
 - Cai et al. (2022) VMD+GRU-TCN hybrid, doi:10.3390/app12136647; Yu et al. (2022) GRU+ARIMA frequency-split scheme — direct baselines inspiring the high/low-frequency division strategy.
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2023_Cheng_VMD_Prophet_LSTM_refs]]

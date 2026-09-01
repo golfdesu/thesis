@@ -5,11 +5,11 @@ authors: [Arpana Singh, Uma Nangia, M. Rizwan]
 year: 2026
 journal_conference: "Applied Soft Computing"
 doi_url: "https://doi.org/10.1016/j.asoc.2026.115869"
-models_used: ["[[MAML-Informer]]", "[[Informer]]", "[[MAML]]", "[[Transformer]]", "[[LSTM]]", "[[SVR]]", "[[Reptile]]", "[[LSTM-Informer]]", "[[LSTM-Transformer]]"]
-datasets_used: ["[[ACN_Dataset]]", "[[Boulder_EV_Charging_Dataset]]", "[[Palo_Alto_EV_Charging_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Weather_Features]]", "[[Calendar_Encoding]]", "[[Token_Embeddings]]", "[[ProbSparse_Attention]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[CRPS]]", "[[PICP]]", "[[MPIW]]", "[[Pinball_Loss]]", "[[Winkler_Score]]", "[[Quantile_Loss]]"]
+models_used: ["[[MAML-Informer]]", "[[Informer]]", "[[MAML]]", "[[Transformer]]", "[[LSTM]]", "[[SVR]]", "[[Reptile]]", "[[LSTM-Informer]]", "[[LSTM_Transformer]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[Boulder_Colorado]]", "[[Palo_Alto_EV]]"]
+features_used: ["[[Historical_Load]]", "[[Weather_Features]]", "[[Calendar_Features]]", "[[Token_Embeddings]]", "[[ProbSparse_Attention]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[CRPS]]", "[[PICP]]", "[[MPIW]]", "[[Pinball_Loss]]", "[[Winkler_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -18,7 +18,7 @@ tags: [paper, ev-load-forecasting, ml]
 > Arpana Singh, Uma Nangia, M. Rizwan — Department of Electrical Engineering, Delhi Technological University, Delhi 110042, India. Applied Soft Computing 202 (2026) 115869. Received 11 Nov 2025; revised 27 Apr 2026; accepted 29 Jun 2026; online 30 Jun 2026. DOI: https://doi.org/10.1016/j.asoc.2026.115869
 
 ## 🎯 Main Objective & Contribution
-Propose **[[MAML-Informer]]**: a [[Model Agnostic Meta-Learning]] ([[MAML]])-enhanced [[Informer]] for **multi-horizon point + probabilistic** EV charging load forecasting under sparse, heterogeneous, non-stationary data (e.g., newly commissioned stations). Each charging station is treated as a meta-learning task; the model first learns common charging-demand patterns across station clusters, then adapts quickly with few gradient steps.
+Propose **[[MAML-Informer]]**: a [[MAML]] ([[MAML]])-enhanced [[Informer]] for **multi-horizon point + probabilistic** EV charging load forecasting under sparse, heterogeneous, non-stationary data (e.g., newly commissioned stations). Each charging station is treated as a meta-learning task; the model first learns common charging-demand patterns across station clusters, then adapts quickly with few gradient steps.
 Contributions:
 1. MAML-Informer framework handling data-scarce, spatially heterogeneous stations with cross-station generalization + meta-adaptivity (Table 1 positions it as the only surveyed 2024–2026 method combining probabilistic forecasting ✓, cross-station generalization ✓, meta-learning adaptability ✓).
 2. Unified quantile-driven pipeline producing deterministic and probabilistic outputs evaluated via RMSE/MAE/quantile-RMSE/PICP/CRPS.
@@ -69,9 +69,9 @@ Three public real-world EV charging datasets (Sec. 4, Table 3), all min–max no
 | Raw records cited in text | 2939 events | 148,136 records | 259,415 records |
 
 Sources & access (as stated in paper):
-- **[[ACN_Dataset]]** — Adaptive Charging Network data portal, ACN website ("available on the ACN website's data portal"): https://ev.caltech.edu/dataset (ACN-Data portal)
-- **[[Boulder_EV_Charging_Dataset]]** — City of Boulder Open Data platform (public-station charging; timestamps, kWh, charging times, GHG-savings metrics)
-- **[[Palo_Alto_EV_Charging_Dataset]]** — open data repository, referenced via [42] Amara-Ouali et al., "A review of electric vehicle load open data and models," Energies 14(8) 2021:2233, https://doi.org/10.3390/en14082233
+- **[[Caltech_ACN]]** — Adaptive Charging Network data portal, ACN website ("available on the ACN website's data portal"): https://ev.caltech.edu/dataset (ACN-Data portal)
+- **[[Boulder_Colorado]]** — City of Boulder Open Data platform (public-station charging; timestamps, kWh, charging times, GHG-savings metrics)
+- **[[Palo_Alto_EV]]** — open data repository, referenced via [42] Amara-Ouali et al., "A review of electric vehicle load open data and models," Energies 14(8) 2021:2233, https://doi.org/10.3390/en14082233
 Paper-level **Data availability statement: "Data will be made available on request."**
 
 Features: historical charging-load sequences (96-step lookback @15-min), auxiliary variables — meteorological data and temporal indices; embedding module (token embedding + Conv1D + dropout).
@@ -137,4 +137,4 @@ Vault papers this work builds directly on:
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — probabilistic deep forecasting context (ref. [20])
 - [[2021_Lim_TFT_Temporal_Fusion_Transformers]] — TFT probabilistic multi-horizon baseline family (ref. [6])
 - Related vault EV probabilistic/meta-learning work: [[2023_Huang_MetaProbformer_EV_Load]], [[2025_Matrone_QR_LSTM_Attention_EV_Load]] (QR+LSTM probabilistic EV forecasting, ref. [34]), [[2024_Li_DiffPLF_Conditional_Diffusion_EV]], [[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]], [[2024_Ali_MQ_TCN_Transfer_Learning_EV]]
-- Dataset-overlapping vault papers: [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] ([[ACN_Dataset]]), [[2020_Huang_Ensemble_EV_Load]] & [[2024_Helmy_Autoformer_EV_Charging]] ([[Boulder_EV_Charging_Dataset]]), [[2024_Bampos_EV_Load_Forecasting_DAM]] ([[Palo_Alto_EV_Charging_Dataset]])
+- Dataset-overlapping vault papers: [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] ([[Caltech_ACN]]), [[2020_Huang_Ensemble_EV_Load]] & [[2024_Helmy_Autoformer_EV_Charging]] ([[Boulder_Colorado]]), [[2024_Bampos_EV_Load_Forecasting_DAM]] ([[Palo_Alto_EV]])

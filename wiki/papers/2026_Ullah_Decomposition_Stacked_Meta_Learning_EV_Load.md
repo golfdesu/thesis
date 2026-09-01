@@ -6,10 +6,10 @@ year: 2026
 journal_conference: "IEEE Transactions on Smart Grid"
 doi_url: "https://doi.org/10.1109/TSG.2026.3677496"
 models_used: ["[[STL_Hybrid]]", "[[STL]]", "[[Ridge_Regression]]", "[[XGBoost]]", "[[Random_Forest]]", "[[Gradient_Boosting_Regressor]]", "[[Prophet]]", "[[CatBoost]]", "[[Informer]]", "[[CNN-LSTM-AM]]", "[[DeepBoost]]"]
-datasets_used: ["[[ACN_Data]]", "[[Perth_ChargePlace_Scotland]]", "[[Palo_Alto_EV_Usage]]", "[[Paris_Belib]]"]
-features_used: ["[[Historical_Load]]", "[[Lag_Features]]", "[[Time_Aware_Features]]", "[[Trend_Component]]", "[[Seasonal_Component]]", "[[Residual_Component]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]", "[[R2]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[ChargePlace_Scotland]]", "[[Palo_Alto_EV]]", "[[Paris_Belib_EV]]"]
+features_used: ["[[Historical_Load]]", "[[Lag_Features]]", "[[Calendar_Features]]", "[[Trend_Component]]", "[[Seasonal_Component]]", "[[Residual_Component]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -54,10 +54,10 @@ tags: [paper, ev-load-forecasting, ml]
 
 | Dataset | Period | Samples | Sampling | Train/Test | Mean±Std (kWh), CV |
 |---|---|---|---|---|---|
-| [[ACN_Data]] (Caltech ACN-Portal) | 2015–2021 | 56,949 | 1 h | 45,559/11,390 | 5.844±7.645, CV 1.308 |
-| [[Perth_ChargePlace_Scotland]] | 2016–2021 | 63,936 | 1 h | 51,149/12,787 | 3.048±7.599, CV 2.493 |
-| [[Palo_Alto_EV_Usage]] | 2011–2020 | 259,352 | 1 h | 207,482/51,870 | 4.071±4.181, CV 1.027 |
-| [[Paris_Belib]] | 2015–2021 | 5,780 | 1 h | 4,624/1,156 | 0.213±0.470, CV 2.202 |
+| [[Caltech_ACN]] (Caltech ACN-Portal) | 2015–2021 | 56,949 | 1 h | 45,559/11,390 | 5.844±7.645, CV 1.308 |
+| [[ChargePlace_Scotland]] | 2016–2021 | 63,936 | 1 h | 51,149/12,787 | 3.048±7.599, CV 2.493 |
+| [[Palo_Alto_EV]] | 2011–2020 | 259,352 | 1 h | 207,482/51,870 | 4.071±4.181, CV 1.027 |
+| [[Paris_Belib_EV]] | 2015–2021 | 5,780 | 1 h | 4,624/1,156 | 0.213±0.470, CV 2.202 |
 
 - Preprocessing: data cleaning (remove incomplete/corrupt records), noise reduction/outlier filtering, normalization. Features: load-intrinsic lag-based and time-aware features feeding both base learners and the meta-learner; no exogenous variables.
 - **Dataset URLs** (from references):
@@ -95,4 +95,4 @@ tags: [paper, ev-load-forecasting, ml]
 ## 🔗 Key References & Citation Graph
 - [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] — Informer baseline
 - [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — interpretable decomposition-style forecasting lineage
-- Related vault papers: [[2025_Zheng_BWO_ICEEMDAN_iTransformer]], [[2023_Cheng_VMD_Prophet_LSTM]], [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]], [[2019_Zhu_EV_Load_Forecasting]], [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]]
+- Related vault papers: [[2025_Zheng_BWO_ICEEMDAN_iTransformer]], [[2023_Cheng_VMD_Prophet_LSTM]], [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]], [[2019_Zhu_EV_Load_Forecasting]], [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]]

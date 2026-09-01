@@ -1,4 +1,6 @@
 ---
+title: Winkler Score
+type: metric
 metric: Winkler Score
 category: probabilistic-forecast-metric
 formula: "W = δ + (2/α)(L−y)·1{y<L} + (2/α)(y−U)·1{y>U}"

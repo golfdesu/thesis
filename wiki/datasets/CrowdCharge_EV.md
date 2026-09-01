@@ -2,6 +2,7 @@
 type: dataset
 name: CrowdCharge / UK Power Networks EV Trial Dataset
 location: United Kingdom
+status: needs-review
 data_type: Residential & commercial EV trial charging profiles
 url: "https://www.crowdcharge.com/"
 tags:

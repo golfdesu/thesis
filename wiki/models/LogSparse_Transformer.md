@@ -25,7 +25,7 @@ Decoder-only autoregressive mode with Gaussian likelihood head + softplus positi
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: historical values + time-based covariates (year/month/day-of-week/hour/minute/age/series-ID).
-- **Forecasting Horizon**: [[Short_Term]] to medium-term (1-day to 30-day evaluations).
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] to medium-term (1-day to 30-day evaluations).
 - **Strengths**: fine-grained forecasting under GPU memory budgets; beats DeepAR/DeepState/TRMF on electricity/traffic quantile losses (traffic-c 7d R0.5 0.139 vs DeepAR 0.179).
 - **Weaknesses**: with identical input lengths full attention still mostly wins (except strong-long-dependency traffic-f); training unstable with vanilla Adam on 15-min data (BERTAdam workaround).
 

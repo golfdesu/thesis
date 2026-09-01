@@ -10,6 +10,11 @@ last_updated: 2026-08-02
 url: "https://platform.elaad.io/analyses/ElaadNL_opendata.php"
 website: "https://www.elaad.nl"
 tags: [dataset, public-charging, netherlands, hierarchical, elaadnl]
+name: "ElaadNL Dataset"
+access: "open data dashboard / research request"
+license: "Free to use and share per ElaadNL Open Data Dashboard statement; no formal license document"
+commercial_use: allowed
+data_type: "Public EV charging sessions (kWh, max power, connector type) + derived 15-min station load"
 ---
 
 # 📁 ElaadNL Dataset
@@ -30,7 +35,7 @@ The **ElaadNL dataset** is a large-scale public EV charging dataset from the **N
 | Charging Points | 3,000+ public AC charging points |
 | Charger Type | Public Level 2 AC (3.7 kW and 11 kW) |
 | Temporal Resolution | Session-level + 15-minute aggregated time series |
-| Data Period | 2012–present |
+| Data Period | 2013–present |
 | Network Topology | Hierarchical (city → district → charging point) |
 | Access | Research partnership / request-based |
 
@@ -64,7 +69,7 @@ The **ElaadNL dataset** is a large-scale public EV charging dataset from the **N
 |-------|----------|
 | [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] | Hierarchical probabilistic forecasting across the ElaadNL network (EVnetNL open data) |
 | [[2023_Huang_MetaProbformer_EV_Load]] | One of four meta-learning benchmark stations (with Palo Alto, Boulder, Perth) |
-| [[2026_Chen_PC_M3_Mamba_EV_Clusters]] | Charging-behavior priors for physics-constrained Mamba cluster EM |
+| [[2026_Tang_PC_M3_Mamba_EV_Clusters]] | Charging-behavior priors for physics-constrained Mamba cluster EM |
 | [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] | EVnetNL open data as primary USDT benchmark (12 months, 8760 hourly points): RMSE 8.781 vs Informer 9.866; zero-shot transfer source |
 
 > [!WARNING] Corrected 2026-08-23: [[2025_Matrone_QR_LSTM_Attention_EV_Load]] was previously listed here in error — it uses the [[Utrecht_SmoothEMS]] office parking-lot data, not ElaadNL.

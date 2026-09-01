@@ -19,6 +19,10 @@ Grid Search evaluates model performance across an exhaustive Cartesian product o
 - **Neural Networks**: Hidden dimensions $\{32, 64, 128, 256\}$, dropout rate $\{0.1, 0.2, 0.5\}$.
 
 ## Papers Utilizing Grid / Random Search
-- [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] - Used grid search to tune XGBoost max depth, learning rate, and BiLSTM hidden units.
+- [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] - Used grid search to tune XGBoost max depth, learning rate, and BiLSTM hidden units.
 - [[2021_VanKriekinge_Day_Ahead_EV_Demand]] - Grid search over temporal feature encodings, sequence length, and hidden layer counts.
 - [[2019_Zhu_ApplSci_EV_Load_Forecasting]] - Tuned GRU/LSTM layer depths and look-back window sizes.
+
+## Related Tuning Approaches
+- Automated alternatives: [[Bayesian_Optimization]], [[Optuna_TPE]].
+- No-search baseline relying on expert defaults: [[Manual_Empirical_Tuning]].

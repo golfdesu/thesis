@@ -1,0 +1,23 @@
+---
+type: dataset
+name: "COVID19 US City Load"
+category: Stub (auto-generated)
+status: needs-review
+tags:
+  - dataset
+  - covid19_us_city_load
+location:
+resolution: "daily/hourly"
+access: "open/research"
+data_type: "City electricity load during COVID-19 used in post-COVID forecasting studies (Cao 2022 lineage)"
+---
+
+# COVID19 US City Load
+
+COVID19 US City Load — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
+
+## Referenced in this knowledge base
+
+[[2022_Cao_Robust_Deep_Gaussian_Process_Load]]

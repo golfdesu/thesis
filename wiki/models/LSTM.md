@@ -24,7 +24,7 @@ LSTM is a specialized Recurrent Neural Network (RNN) architecture capable of lea
 - [[2018_Bai_Empirical_TCN_Sequence_Modeling]] — Empirical evaluation finding generic TCNs beat canonical LSTM across sequence benchmarks (Seq. MNIST 99.0 vs 87.2 accuracy; Copy Memory loss 3.5e-5 vs 0.0204).
 - [[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]] — Bidirectional LSTM (BLSTM) generates multivariate probabilistic day-ahead forecasts/scenarios; ranking BLSTM < unidirectional LSTM < MLP < RF/SVR < ARIMA, with copula scenarios adding ~€4–10k retailer profit.
 - [[2019_Zhu_ApplSci_EV_Load_Forecasting]] — LSTM compared against DNN/RNN/GRU for hourly EV station load; best LSTM Test-NRMSE 3.36% vs GRU 2.89%.
-- [[2019_Zhu_EV_Load_Forecasting]] — Minute-level comparative study: LSTM best of six models at all look-back steps, cutting error by over 30% vs counterparts (e.g. 1-step MAE 0.4782 vs Bi-LSTM 1.3096).
+- [[2019_Zhu_EV_Load_Forecasting]] — Minute-level comparative study: LSTM best of six models at all look-back steps, cutting error by over 30% vs counterparts (e.g. 1-step MAE 0.4782 vs BiLSTM 1.3096).
 - [[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]] — Motivated by avoiding RNN-style iterative propagation: gated dilated causal TCNs replace the recurrent decoder entirely and beat FC-LSTM on METR-LA at every horizon (60-min MAE 3.53 vs 4.37) with no gradient-explosion issues; one-shot multi-step output also eliminates train/test inconsistency of seq2seq recurrence.
 - [[2020_Huang_Ensemble_EV_Load]] — LSTM used as base learner in LR-weighted ensemble; ensemble RMSE 3.83 vs standalone LSTM 3.89.
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — DeepAR trains a global autoregressive multi-layer LSTM with flexible likelihoods; ~15% accuracy improvement over SoTA probabilistic baselines.
@@ -45,7 +45,7 @@ LSTM is a specialized Recurrent Neural Network (RNN) architecture capable of lea
 - [[2024_Qu_Physics_Informed_GAT_EV_Load]] — TPA-LSTM attention-augmented recurrent decoding inside PAG; standalone LSTM baseline RMSE 0.0670 vs PAG 0.0548 on Shenzhen regional demand.
 - [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] — LSTM among 10 baselines for Beijing fast-charging load; STMGCN reduces MAE ~2–20 kW below all baselines including LSTM.
 - [[2024_Zhou_Conformal_Prediction_DER]] — RNN/LSTM listed among point-prediction models for DER adoption; Multivariate Hawkes + hierarchical conformal prediction gives valid circuit/substation coverage.
-- [[2025_Bao_ResMMoT_Informer_Time_Series]] — Bi-LSTM and CNN-LSTM baselines for long-term financial series; ResMMoT-Informer improves ~30–40% (Bi-LSTM 20-step MAE 8.88 vs 4.72).
+- [[2025_Bao_ResMMoT_Informer_Time_Series]] — BiLSTM and CNN-LSTM baselines for long-term financial series; ResMMoT-Informer improves ~30–40% (BiLSTM 20-step MAE 8.88 vs 4.72).
 - [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]] — LSTM baseline for Shenzhen charging-volume forecasting; few-shot Data-2 RMSE 47.92 vs LSTM 98.82 (−51.5%).
 - [[2025_Han_Vertical_Federated_EGAT_LSTM]] — Core component: V2AFedEGAT-LSTM vertically federated EGAT-LSTM predictor reaching R² = 0.973 (IEEE 33-bus/7-node), ~4% better than alternatives.
 - [[2025_Hussain_CAT_Former_Short_Term_EV]] — Weakest baseline in CAT-Former study (e.g. Street 1 1-h MSE 3.40 vs CAT-Former 1.41), confirming context-aware attention over plain recurrence.
@@ -66,3 +66,4 @@ LSTM is a specialized Recurrent Neural Network (RNN) architecture capable of lea
 - 2026 — [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] — LSTM baseline far behind USDT (EVnetNL RMSE 13.448 vs 8.781; Perth RMSE 19.202 vs 13.837).
 - 2026 — [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] — GRU/LSTM consistently beat Transformers at mid-term (2–8 h) and long-term (1–5 d) horizons across Palo Alto/Boulder/Dundee/Perth (in some mid-term city cases >50% MAE reduction vs ARIMA); Perth LSTM best at every short-term level (station MAE 0.43–0.46).
 - 2024 — [[2024_Qu_Forwardformer_Day_Ahead_Load]] — Attention-augmented LSTMa baseline beats Informer/LogTrans in most day-ahead cases but needs tens of times longer computation; on high-frequency AEL New York data LSTM-family degrades sharply while Forwardformer stays stable.
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] — Worst across all 30 grid×horizon evaluations in the modern controlled US benchmark (avg 6.83% MAPE / 9.13 MSE%, 0/30 wins; smallest weather gain −0.36 pp) — recurrence trails SSMs/Transformers under identical protocols and matched capacity (~2.6M params).

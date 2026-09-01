@@ -1,4 +1,6 @@
 ---
+title: Normalized RMSE (NRMSE)
+type: metric
 metric: Normalized RMSE (NRMSE)
 category: point-forecast-metric
 formula: "NRMSE = RMSE / (y_max − y_min)"
@@ -24,6 +26,7 @@ Lower is better. The range-normalization makes it sensitive to outliers in $y_{\
 | 2019 — [[2019_Zhu_ApplSci_EV_Load_Forecasting]] | Primary metric: single-hidden-layer GRU achieved Test-NRMSE **2.89%**, Test-NMAE 0.77% — adding hidden layers degraded both accuracy and training speed. |
 | 2024 — [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] | NRMSE used to define the Accuracy Rate AR = (1 − NRMSE) × 100%, alongside Qualified Rate (QR) and SMAPE/R². |
 | 2024 — [[2024_Bampos_EV_Load_Forecasting_DAM]] | nRMSE variant reported for day-ahead-market EV load benchmarks across four public datasets. |
+| 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] | Mean-normalized RMSE (reported as "MSE %") across 30 grid×window rows: PatchTST **7.53**, S-Mamba 7.58, PowerMamba 7.62, iTransformer 7.95, LSTM 9.13 macro-average. |
 
 ## Related Pages
 

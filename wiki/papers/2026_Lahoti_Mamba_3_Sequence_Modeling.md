@@ -3,9 +3,9 @@ type: paper
 title: "Mamba-3: Improved Sequence Modeling using State Space Principles"
 authors: [Aakash Lahoti, Kevin Y. Li, Berlin Chen, Caitlin Wang, Aviv Bick, J. Zico Kolter, Tri Dao, Albert Gu]
 year: 2026
-journal_conference: "arXiv preprint (arXiv:2603.15569); CMU / Princeton / Together AI / Cartesia AI"
+journal_conference: "ICLR 2026; arXiv:2603.15569 (CMU / Princeton / Together AI / Cartesia AI)"
 doi_url: "https://arxiv.org/abs/2603.15569"
-models_used: ["[[Mamba-3]]", "[[Mamba-2]]", "[[Mamba]]", "[[Gated_DeltaNet]]", "[[Transformer]]", "[[S4]]"]
+models_used: ["[[Mamba-3]]", "[[Mamba_SSM]]", "[[Gated_DeltaNet]]", "[[Transformer]]", "[[S4]]"]
 datasets_used: ["[[FineWeb-Edu]]", "[[LAMBADA]]", "[[HellaSwag]]", "[[PIQA]]", "[[ARC]]", "[[WinoGrande]]", "[[OpenBookQA]]", "[[RULER_NIAH]]"]
 features_used: ["[[Text_Tokens]]"]
 forecasting_horizon: ""
@@ -73,10 +73,13 @@ Trained via chunked SSD algorithm with MIMO chunk size $C_{\text{MIMO}} \leftarr
 
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] (Vaswani et al., NeurIPS 2017) — Transformer baseline lineage [53]
-- [[Mamba]] selective SSMs (Gu & Dao, arXiv:2312.00752) [18]; [[Mamba-2]] / Structured State Space Duality (Dao & Gu, ICML 2024) [11]; [[S4]] (Gu et al., ICLR 2022) [19]; S5 [44]; LRU [37]
+- [[Mamba_SSM]] selective SSMs (Gu & Dao, arXiv:2312.00752) [18]; [[Mamba_SSM]] / Structured State Space Duality (Dao & Gu, ICML 2024) [11]; [[S4]] (Gu et al., ICLR 2022) [19]; S5 [44]; LRU [37]
 - [[Gated_DeltaNet]] (Yang, Kautz & Hatamizadeh, arXiv:2412.06464) [60]; Gated Linear Attention [61]; DeltaNet parallelization [62]
 - RoPE/RoFormer (Su et al., arXiv:2104.09864) [46] — basis of the data-dependent "RoPE trick"
 - State tracking theory: Grazzi et al. negative eigenvalues [17]; Merrill, Petty & Sabharwal "Illusion of State" [32]; Sarrof et al. formal-language capacity [42]; Block-Biased Mamba universal approximation (Yu & Erichson) [63]
 - Linear attention (Katharopoulos et al.) [26]; fast weight programmers (Schlag et al.) [43]; RetNet [49]; test-time training/regression line [48,50,55]
 - Hybrid Mamba LM studies (Waleffe et al.) [54]; Nemotron-H [35]; Kimi Linear [27]; Qwen3 [58]
-- Applied in EV domain by [[2026_Chen_PC_M3_Mamba_EV_Clusters]] ([[PC-M3]]) and cited by [[2026_Hao_Mamba_KAN_HyKANet_EV]]
+- Applied in EV domain by [[2026_Tang_PC_M3_Mamba_EV_Clusters]] ([[PC-M3]]) and cited by [[2026_Hao_Mamba_KAN_HyKANet_EV]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2026_Lahoti_Mamba_3_Sequence_Modeling_refs]]

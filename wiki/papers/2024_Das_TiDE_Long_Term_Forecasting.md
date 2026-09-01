@@ -6,9 +6,9 @@ year: 2024
 journal_conference: "arXiv:2304.08424v5 [stat.ML] (Google Research / Google Cloud / UC San Diego)"
 doi_url: "https://arxiv.org/abs/2304.08424"
 models_used: ["[[TiDE]]", "[[DLinear]]", "[[PatchTST]]", "[[NHiTS]]", "[[DeepAR]]", "[[S4]]", "FEDformer", "[[Autoformer]]", "[[Informer]]", "Pyraformer", "LogTrans", "[[LSTM]]"]
-datasets_used: ["[[Electricity_Dataset]]", "[[Traffic_Dataset]]", "[[Weather_Dataset]]", "[[ETTh1]]", "[[ETTh2]]", "[[ETTm1]]", "[[ETTm2]]", "[[M5_Dataset]]", "Synthetic LDS Dataset"]
+datasets_used: ["[[Electricity_ECL]]", "[[Traffic]]", "[[Weather_Dataset]]", "[[ETT]]", "[[M5_Dataset]]", "Synthetic LDS Dataset"]
 features_used: ["[[Lookback_Window]]", "[[Dynamic_Covariates]]", "[[Static_Attributes]]", "[[Time_Derived_Features]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "WRMSSE"]
 tags: [paper, ev-load-forecasting, ml]
 ---

@@ -3,12 +3,12 @@ type: paper
 title: "Estimating Treatment Effects in Continuous Time with Hidden Confounders"
 authors: [Defu Cao, James Enouen, Yan Liu]
 year: 2023
-journal_conference: "arXiv:2302.09446 (cs.LG); formatted for ICML (PMLR 162), University of Southern California"
+journal_conference: "arXiv preprint arXiv:2302.09446 (cs.LG), University of Southern California"
 doi_url: "https://doi.org/10.48550/arXiv.2302.09446"
 models_used: ["[[LipSCDE]]", "[[Neural_SDE]]", "[[Neural_CDE]]", "[[Lipschitz_RNN]]", "[[LSTM]]", "[[MSM]]", "[[RMSN]]", "[[TSD]]", "[[DTA]]", "[[SeqDec]]"]
 datasets_used: ["[[MIMIC-III]]", "[[COVID-19_German_Districts]]", "[[Synthetic_Irregular_Time_Series]]"]
 features_used: ["[[Covariates]]", "[[Treatments]]", "[[Hidden_Confounders]]", "[[High_Frequency_Components]]", "[[Low_Frequency_Components]]", "[[Brownian_Motion]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

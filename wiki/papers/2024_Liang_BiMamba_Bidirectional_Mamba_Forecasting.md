@@ -5,10 +5,10 @@ authors: [Aobo Liang, Xingguo Jiang, Yan Sun, Xiaohou Shi, Ke Li]
 year: 2024
 journal_conference: "arXiv preprint (arXiv:2404.15772v3, cs.LG, 27 Jun 2024); BUPT & China Telecom Research Institute"
 doi_url: "https://doi.org/10.48550/arXiv.2404.15772"
-models_used: ["[[Bi-Mamba+]]", "[[Mamba]]"]
-datasets_used: ["[[Weather_Dataset]]", "[[Traffic_Dataset]]", "[[Electricity_Dataset]]", "[[Solar_Dataset]]", "[[ETTh1]]", "[[ETTh2]]", "[[ETTm1]]", "[[ETTm2]]"]
+models_used: ["[[Bi-Mamba+]]", "[[Mamba_SSM]]"]
+datasets_used: ["[[Weather_Dataset]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[Solar_Dataset]]", "[[ETT]]"]
 features_used: ["[[Historical_Load]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -81,7 +81,7 @@ Eight real-world LTSF benchmark datasets:
 - Evaluated only on generic LTSF benchmarks; future work targets more diverse/complex scenarios such as network flow forecasting — EV charging load is an untested application domain.
 - No probabilistic/uncertainty quantification of forecasts.
 
-**Relevance to EV charging load forecasting:** As a foundational method paper in the Mamba line, its bidirectional selective-SSM encoder, forget-gate history preservation, and Spearman-based automatic channel-strategy selection transfer directly to multi-station EV charging series modeling in [[2026_Lahoti_Mamba_3_Sequence_Modeling]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], and [[2026_Chen_PC_M3_Mamba_EV_Clusters]]; its Electricity (321-client hourly) and Traffic (862-sensor hourly) benchmarks closely proxy aggregate EV charging demand dynamics.
+**Relevance to EV charging load forecasting:** As a foundational method paper in the Mamba line, its bidirectional selective-SSM encoder, forget-gate history preservation, and Spearman-based automatic channel-strategy selection transfer directly to multi-station EV charging series modeling in [[2026_Lahoti_Mamba_3_Sequence_Modeling]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], and [[2026_Tang_PC_M3_Mamba_EV_Clusters]]; its Electricity (321-client hourly) and Traffic (862-sensor hourly) benchmarks closely proxy aggregate EV charging demand dynamics.
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -95,11 +95,11 @@ Eight real-world LTSF benchmark datasets:
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[Mamba]] — Gu & Dao 2023 (arXiv:2312.00752): base selective SSM extended by the Mamba+ block.
+- [[Mamba_SSM]] — Gu & Dao 2023 (arXiv:2312.00752): base selective SSM extended by the Mamba+ block.
 - [[S4]] — Gu et al. 2021: structured SSM with HiPPO-initialized A matrix.
 - [[HiPPO]] — Gu et al. 2020: recurrent memory with optimal polynomial projections.
-- [[TimeMachine]] — [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]] (arXiv:2403.09898): quadruple-Mamba multi-scale model; Bi-Mamba+ critiques its heuristic channel-strategy choice and adopts its hyperparameter conventions (d_conv=2, expand=1).
-- [[S-Mamba]] — Wang et al. 2024 (arXiv:2403.11144): MLP embeddings + Mamba for inter-series dependencies; key SSM baseline.
+- [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]] — TimeMachine (arXiv:2403.09898): quadruple-Mamba multi-scale model; Bi-Mamba+ critiques its heuristic channel-strategy choice and adopts its hyperparameter conventions (d_conv=2, expand=1).
+- [[S_Mamba]] — Wang et al. 2024 (arXiv:2403.11144): MLP embeddings + Mamba for inter-series dependencies; key SSM baseline.
 - [[MambaMixer]] — Behrouz et al. 2024 (arXiv:2403.19888): dual token/channel selection; alternative bidirectional design.
 - Baselines: [[iTransformer]], [[PatchTST]], [[Crossformer]], [[Autoformer]], [[DLinear]], [[TimesNet]], [[WITRAN]] (NeurIPS 2024), [[CrossGNN]] (NeurIPS 2024).
 - [[RevIN]] — Kim et al., ICLR 2022: reversible instance normalization.

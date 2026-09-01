@@ -5,11 +5,11 @@ authors: [Mohammad Wazed Ali, Asif bin Mustafa, Md. Aukerul Moin Shuvo, Bernhard
 year: 2024
 journal_conference: "arXiv preprint arXiv:2409.11862 (Sep 2024)"
 doi_url: "https://doi.org/10.48550/arXiv.2409.11862"
-models_used: ["[[MQ_TCN]]", "[[TCN]]", "[[Inductive_Transfer_Learning]]", "[[Quantile_Regression]]", "[[XGBoost]]", "[[DeepAR]]"]
-datasets_used: ["[[ACN_Data]]", "[[NREL_Workplace_Charging]]"]
-features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Sine_Cosine_Time_Encoding]]", "[[StationID_Embedding]]", "[[DTW_Similarity]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[PICP]]", "[[Pinball_Loss]]", "[[Winkler_Score]]", "[[Normalized_Deviation]]"]
+models_used: ["[[MQ_TCN]]", "[[TCN]]", "[[Meta_Learning]]", "[[Quantile_Regression]]", "[[XGBoost]]", "[[DeepAR]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[NREL_Workplace_Charging]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Cyclical_Encodings]]", "[[StationID_Embedding]]", "[[Adjacency_Matrix]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[PICP]]", "[[Pinball_Loss]]", "[[Winkler_Score]]", "[[ND]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - Prior EV charging-site load models are use-case/location specific, need large data + compute, give point forecasts without uncertainty, and ignore high-cardinality categorical features.
-- Proposes **[[MQ_TCN]]** (Multi-Quantile [[TCN]]) with **[[Inductive_Transfer_Learning]]** to transfer day-ahead forecasting knowledge among geographically separated charging sites under extreme data scarcity and low compute.
+- Proposes **[[MQ_TCN]]** (Multi-Quantile [[TCN]]) with **[[Meta_Learning]]** to transfer day-ahead forecasting knowledge among geographically separated charging sites under extreme data scarcity and low compute.
 - Key results: PICP 93.62% at JPL (**+28.93% over XGBoost**, day-ahead); with TL from JPL, **PICP 96.88% at NREL using only 2 weeks of data** (+18.23% vs XGBoost trained on 6 months); Office-1 91.04% (4 h-ahead) / 87.30% (day-ahead) with only 1 month of data; up to **72% reduction in learnable parameters** at negligible accuracy cost (~3.4% PICP).
 - First (per authors) combination of multi-step quantile regression DL + inductive TL across separated EV sites; site selection for transfer guided by **Dynamic Time Warping (DTW)** similarity.
 
@@ -38,7 +38,7 @@ $$WS = \begin{cases}\gamma, & L\le y \le U\\ \gamma + 2(L-y)/\alpha, & y<L\\ \ga
 - Protocol: last 10% test set; blocked time-series cross-validation on remaining 90% (80/20 train/val folds); hyperparameters via Tree-structured Parzen Estimator (Bayesian optimization); retrain best config on 90%.
 
 ## 📊 Dataset & Input Features
-- **[[ACN_Data]]** (Lee, Li & Low, ACM e-Energy '19 — open EV charging dataset): Caltech — 54 stations, 31,424 sessions, ~40 months, 13 features; JPL — 50 stations, 33,638 sessions, ~35 months, 13 features; Office-1 (small office workplace) — 8 stations, 1,683 sessions, ~30 months, 13 features.
+- **[[Caltech_ACN]]** (Lee, Li & Low, ACM e-Energy '19 — open EV charging dataset): Caltech — 54 stations, 31,424 sessions, ~40 months, 13 features; JPL — 50 stations, 33,638 sessions, ~35 months, 13 features; Office-1 (small office workplace) — 8 stations, 1,683 sessions, ~30 months, 13 features.
 - **[[NREL_Workplace_Charging]]** (Neuman, Meintz & Jun, 2021 — workplace charging behavior collection): 141 stations, 40,979 sessions, ~59 months, 16 features.
 - Hourly aggregation; anomalies removed with Facebook Prophet + domain knowledge; missing values handled; Min-Max scaling of numerical features; sine-cosine transforms of cyclic temporal features; StationID high-cardinality category compressed from 186→30 values by encoder-based dimensionality reduction; one-hot for 2–5 categories, embedding layers for 5–10; COVID period excluded (data curated until March 2020).
 - Data availability URLs: no explicit repository URL stated in the paper; datasets identified via refs [21] (NREL workplace charging data) and [22] (ACN-Data, e-Energy '19).
@@ -78,3 +78,6 @@ Target domains (inductive TL from JPL):
 - [[2023_Koohfar_Transformer_EV_Demand]] — cited transformer-based e-mobility demand forecasting
 - [[2023_Huang_MetaProbformer_EV_Load]] — related probabilistic/meta-learning EV charging forecasts (MBQFN context)
 - [[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]] — quantile-regression probabilistic load forecasting lineage
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2024_Ali_MQ_TCN_Transfer_Learning_EV_refs]]

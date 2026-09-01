@@ -5,6 +5,8 @@ location: "United Kingdom (20 households, Loughborough area)"
 resolution: "1 minute (resampled from 6–8 s raw)"
 access: "open"
 tags: [dataset, ev-charging]
+license: "CC BY 4.0 (Loughborough Univ. doi:10.17028/rd.lboro.2070091 + Strathclyde doi:10.15129/9ab14b0e)"
+commercial_use: allowed
 ---
 
 # REFIT Smart-Meter Household Dataset

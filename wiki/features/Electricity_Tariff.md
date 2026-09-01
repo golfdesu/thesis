@@ -1,4 +1,7 @@
 ---
+title: Electricity Tariff & Time-of-Use (TOU) Pricing
+type: feature
+name: "Electricity Tariff & Time-of-Use (TOU) Pricing"
 feature: Electricity Tariff & Time-of-Use (TOU) Pricing
 category: economic-feature
 data_type: continuous ($/kWh) or categorical (peak/off-peak/shoulder)
@@ -47,7 +50,7 @@ $$\frac{\partial D}{\partial P} < 0 \quad \text{(demand decreases as price incre
 
 - 2015 — [[2015_Raza_Review_AI_Load_Demand]] : Review lists electricity price among standard exogenous inputs for AI load forecasting.
 - 2019 — [[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]] : Market prices jointly forecast with load/wind/solar via probabilistic BLSTMs for scheduling.
-- 2021 — [[2021_Huang_Lyapunov_EV_Scheduling]] : CAISO real-time prices drive Lyapunov-based online EV charging scheduling cost.
+- 2026 — [[2026_Huang_Lyapunov_EV_Scheduling]] : CAISO real-time prices drive Lyapunov-based online EV charging scheduling cost.
 - 2024 — [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] : TOU electricity price reweighted by Pearson correlation prior in FEDM feature-enhanced network.
 - 2024 — [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] : Charging price included in multigraph node features for Beijing fast-charging stations.
 - 2024 — [[2024_Zhou_Conformal_Prediction_DER]] : Price signals among feeder-level covariates for conformal DER adoption forecasting.
@@ -59,6 +62,7 @@ $$\frac{\partial D}{\partial P} < 0 \quad \text{(demand decreases as price incre
 - 2026 — [[2026_Hao_Mamba_KAN_HyKANet_EV]] : External encoding includes price/weather; removing it degrades MAPE by +35.7% relative.
 - 2026 — [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] : Electricity price elevated to a core modeling modality in TriCast's PEM module (random-walk-smoothed, behavior-modulated price with elasticity gating) on UrbanEV Shenzhen; only 57/247 zones have dynamic pricing.
 - 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : TOU price tops Pearson/MIC factor screening (r = 0.7259, MIC = 0.5946) as a CNN-GRU input at a Chinese mall station; users shift charging into off-peak windows (peak 1.1526 / flat 0.6703 / off-peak 0.2805 Yuan/kWh).
+- 2026 — [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] : Free→paid tariff introduction at 12 Scottish local authorities caused sharp lasting session drops (−66% AC / −47% rapid) with an early-2023 structural break cleanly absorbed by the RW2 latent trend — a natural experiment in price elasticity (AC more price-sensitive than Rapid).
 
 ## Feature Engineering
 

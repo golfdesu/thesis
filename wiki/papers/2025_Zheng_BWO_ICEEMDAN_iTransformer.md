@@ -7,9 +7,9 @@ journal_conference: "Algorithms (MDPI), vol. 18, no. 5, art. 243"
 doi_url: "https://doi.org/10.3390/a18050243"
 models_used: ["[[iTransformer]]", "[[ICEEMDAN]]", "[[BWO]]"]
 datasets_used: ["[[Singapore_Energy_Market_Dataset]]"]
-features_used: ["[[Electricity_Load]]", "[[Electricity_Price]]", "[[Temperature]]", "[[Relative_Humidity]]", "[[Lagged_Load]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[R2]]", "[[MAE]]", "[[RMSE]]"]
+features_used: ["[[Electricity_Load]]", "[[Electricity_Tariff]]", "[[Temperature]]", "[[Humidity]]", "[[Historical_Load]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[R_squared]]", "[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -117,4 +117,7 @@ $$Attention(Q,K,V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
 - [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — era context for efficient TS forecasting baselines (FreTS/LightTS lineage)
 - [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — patched-channel baseline (ref. [31])
 - [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] — long-sequence transformer family context (FEDformer ref. [26])
-- Related vault papers on hybrid/decomposition EV forecasting: [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]], [[2023_Cheng_VMD_Prophet_LSTM]], [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]
+- Related vault papers on hybrid/decomposition EV forecasting: [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]], [[2023_Cheng_VMD_Prophet_LSTM]], [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Zheng_BWO_ICEEMDAN_iTransformer_refs]]

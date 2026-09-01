@@ -8,7 +8,7 @@ doi_url: "https://doi.org/10.48550/arXiv.2404.19756"
 models_used: ["[[KAN]]", "[[MLP]]", "[[LAN]]"]
 datasets_used: ["[[Toy_Synthetic_Functions]]", "[[Special_Functions_Dataset]]", "[[Feynman_Dataset]]", "[[Knot_Theory_Dataset]]", "[[Anderson_Localization_Synthetic_Data]]"]
 features_used: ["[[B-Spline_Basis_Functions]]", "[[Learnable_Edge_Activations]]", "[[Silu_Basis_Function]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MSE]]", "[[L2_Error]]", "[[H1_Error]]", "[[Accuracy]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

@@ -37,7 +37,7 @@ $$\text{MAE} = \frac{1}{N} \sum_{i=1}^N |\hat{y}_i - y_i|$$
 - 2025 — [[2025_Alghamdi_REST_Network_Port_EV]] : RESTNet weighted ensemble beat SVR/RF/CNN/VGGNet/DeepSigRNet on MAE (headline RMSE 9.8 kW, MAPE 6.5%).
 - 2025 — [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]] : Customized loss = MAE + λ·FFT frequency-domain term; Data 1 3-step volume MAE 19.49 (40.81% better than ChatEV); critical-day few-shot MAE 8.49.
 - 2025 — [[2025_Hussain_CAT_Former_Short_Term_EV]] : CAT-Former Park 1 MSE 0.4610 / MAE 0.6789 (−5.75% MAE vs Hybrid Transformer).
-- 2025 — [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Stacking Hybrid 3 test MAE 2.6870 kWh; removing meta-learner degrades MAE to 3.5071 (+30.5%, p < 0.001).
+- 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Stacking Hybrid 3 test MAE 2.6870 kWh; removing meta-learner degrades MAE to 3.5071 (+30.5%, p < 0.001).
 - 2025 — [[2025_Tian_MSSTGAN_City_EV_Load]] : MSSTGAN Palo Alto MAE 0.0332 vs ST-GAT 0.0697; best MAPE on all four city datasets.
 - 2025 — [[2025_Zheng_BWO_ICEEMDAN_iTransformer]] : BWO-tuned ICEEMDAN + iTransformer pipeline on Singapore market data evaluated with MAE/RMSE.
 - 2025 — [[2025_Zheng_Coherent_Hierarchical_EV_Load]] : PICNN + DCL coherent reconciliation achieved best MAE at nearly all stations in hierarchical ACN evaluation.
@@ -53,3 +53,6 @@ $$\text{MAE} = \frac{1}{N} \sum_{i=1}^N |\hat{y}_i - y_i|$$
 - 2026 — [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] : EVformer best MAE at all horizons on Shenzhen ST-EVCDP — 1.78/3.05/3.93 (×10⁻²) at 15/30/45 min; also trains with pure MAE loss for outlier robustness.
 - 2026 — [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] : MAE-only benchmark protocol (MAPE rejected as unstable near zero loads, R² rejected as uninterpretable) across 5 models × 4 cities × 3 spatial scales × 3 horizon regimes.
 - Canonical TS benchmarks also rely heavily on MAE/MSE families: [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] (channel-independent patching), [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] (linear models rival Transformers in long-term MAE benchmarks), [[2025_Meyer_Benchmark_Foundation_Models]] (zero-shot foundation-model comparison).
+
+## Literature Usage
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Primary metric (Eq. 6): MAE = 1/H ||y - hat y||_1; scaled by naive baseline (GM) on Monash/Darts.

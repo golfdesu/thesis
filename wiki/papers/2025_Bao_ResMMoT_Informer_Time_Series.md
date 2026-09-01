@@ -7,9 +7,9 @@ journal_conference: "IEEE Transactions on Neural Networks and Learning Systems, 
 doi_url: "https://doi.org/10.1109/TNNLS.2025.3584369"
 models_used: ["[[ResMMoT_Informer]]", "[[Sparse_Mixture_of_Experts]]", "[[TCN]]", "[[Informer]]", "[[LSTM]]"]
 datasets_used: ["[[NASDAQ100_Stock_Price_Dataset]]", "[[Cryptocurrency_Dataset]]", "[[Forex_Dataset]]"]
-features_used: ["[[DWT_db4_Wavelet_Denoised_Prices]]", "[[Multiscale_Dilated_TCN_Kernels]]", "[[Top_K_Gating_Routing]]", "[[Positional_Encoding]]", "[[Temporal_Feature_Encoding]]"]
-forecasting_horizon: "[[Long_Term]]"
-metrics: ["[[MAE]]", "[[RMSE]]", "[[R2_Score]]"]
+features_used: ["[[Wavelet_Decomposition]]", "[[TCN]]", "[[Top_K_Gating_Routing]]", "[[Positional_Encoding]]", "[[Cyclical_Encodings]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[RMSE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -45,7 +45,7 @@ tags: [paper, ev-load-forecasting, ml]
     $$ RMSE = \sqrt{\frac{1}{n}\sum_{i=1}^n (y_i-\hat{y}_i)^2}, \quad MAE = \frac{1}{n}\sum_{i=1}^n |y_i-\hat{y}_i|, \quad R^2 = 1-\frac{\sum_{i=1}^n(y_i-\hat{y}_i)^2}{\sum_{i=1}^n(y_i-\bar{y})^2} $$
 
 ## 📊 Dataset & Input Features
-- **Dataset**: [[NASDAQ100 Stock Price Data]] from Kaggle (ref. [33]): daily stock prices of **102 largest non-financial companies by market capitalization** on Nasdaq; accessed Sep. 14, 2024.
+- **Dataset**: [[NASDAQ100_Stock_Price_Dataset]] from Kaggle (ref. [33]): daily stock prices of **102 largest non-financial companies by market capitalization** on Nasdaq; accessed Sep. 14, 2024.
   - URL: https://www.kaggle.com/datasets/kalilurrahman/nasdaq100-stock-price-data
 - **Cross-market validation datasets** (Appendix H): cryptocurrency and foreign exchange datasets (details in supplementary material available via https://doi.org/10.1109/TNNLS.2025.3584369).
 - **Features**: historical price series (closing prices); WNR db4-denoised variant fed alongside raw series as augmentation; min–max scaled to [0,1]; sliding-window inputs with lookback = 3× prediction horizon (steps ahead: 1, 5, 10, 20). Qualitative evaluation on VRTX, MSFT, CTAS, INTC across four industries.
@@ -61,7 +61,7 @@ tags: [paper, ev-load-forecasting, ml]
   | N-HiTS | 3.0462 / 4.5331 / 0.9660 | 6.5983 / 8.6225 / 0.9563 |
   | Informer | 3.9495 / 5.0960 / 0.9645 | 6.7540 / 8.9097 / 0.9548 |
   | TCN | 4.0512 / 5.2644 / 0.9637 | 8.0328 / 9.6716 / 0.9507 |
-  | Bi-LSTM | 4.2586 / 6.0302 / 0.9639 | 8.8778 / 12.2709 / 0.9399 |
+  | BiLSTM | 4.2586 / 6.0302 / 0.9639 | 8.8778 / 12.2709 / 0.9399 |
   | CNN-LSTM | 5.2141 / 6.9520 / 0.9615 | 8.5757 / 12.0488 / 0.9411 |
   - Best at all horizons (1, 5, 10, 20 steps); R² > 96% everywhere; ~30–40% average improvement in RMSE/MAE/R² vs other models.
 - **Ablation (Table II)**: TCN < Informer < TCN-Informer < ResMMoT-Informer; replacing plain TCN with ResMMoT improves accuracy further; WNR preprocessing positively impacts accuracy. Top-K routing ablation: **K = 2 gives the best accuracy/compute trade-off (highest energy efficiency)**.
@@ -97,3 +97,6 @@ tags: [paper, ev-load-forecasting, ml]
 - He et al., Deep Residual Learning (ResNet), CVPR 2016 — residual structure (ref. [21])
 - Jacobs et al., Adaptive Mixtures of Local Experts, Neural Comput. 1991 — original MoE (ref. [30]); Fedus et al., Sparse expert models review (ref. [38])
 - Kaggle NASDAQ100 dataset — https://www.kaggle.com/datasets/kalilurrahman/nasdaq100-stock-price-data (ref. [33])
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Bao_ResMMoT_Informer_Time_Series_refs]]

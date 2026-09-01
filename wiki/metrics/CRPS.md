@@ -1,10 +1,12 @@
 ---
+title: Continuous Ranked Probability Score (CRPS)
+type: metric
 metric: Continuous Ranked Probability Score (CRPS)
 category: probabilistic-forecast-metric
 formula: "CRPS(F, y) = ∫ (F(z) − 1{z ≥ y})² dz"
 unit: Same as target variable (kW or kWh)
 last_updated: 2026-08-23
-tags: [metric, CRPS, probabilistic-forecast, distributional]
+tags: [metric, crps, probabilistic-forecast, distributional]
 ---
 
 # 📐 Continuous Ranked Probability Score (CRPS)
@@ -43,9 +45,13 @@ Lower is better; a perfect deterministic forecast gives CRPS = 0. For quantile-b
 > [!TIP]
 > When only a few quantiles are available, prefer reporting [[Pinball_Loss]] per level plus [[PICP]]; CRPS is the preferred headline metric when samples or a dense quantile grid are available.
 
+## Literature Usage
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — CRPS-adjacent probabilistic evaluation underlies SQL/WQL quantile losses (Eq.4, 21 quantiles 0.01-0.99); Chronos-2 21-quantile head improves tail coverage vs 9-level baselines.
+
 ## Related Pages
 
 - [[MAE]]
 - [[Pinball_Loss]]
 - [[PICP]]
 - [[Winkler_Score]]
+- [[2026_Khwaja_Toto_2_Scaling_Era]] — Primary metric on BOOM/GIFT-Eval/TIME: Toto 2.5B CRPS 0.349 (BOOM), 0.476 (GIFT-Eval FM-only), 0.532 (TIME); CRPS ranks 3.88 (BOOM), 20.3 (GIFT), 3.43 (TIME); FnF ensemble 0.463. Quantile head (9 levels, pinball Eq.2-3) → CRPS via integration.

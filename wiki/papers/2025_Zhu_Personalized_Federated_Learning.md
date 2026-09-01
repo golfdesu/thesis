@@ -5,18 +5,18 @@ authors: [Shibo Zhu, Xiaodan Shi, Huan Zhao, Yuntian Chen, Haoran Zhang, Xuan So
 year: 2025
 journal_conference: "Applied Energy"
 doi_url: "https://doi.org/10.1016/j.apenergy.2025.125419"
-models_used: ["[[PF-HoLo]]", "[[LSTM]]", "[[Encoder_Decoder]]", "[[FedAvg]]", "[[FedSGD]]", "[[Federated_Mutual_Learning]]"]
+models_used: ["[[PF-HoLo]]", "[[LSTM]]", "[[Encoder_Decoder]]", "[[FedAvg]]", "[[Federated_Mutual_Learning]]"]
 datasets_used: ["[[REFIT]]"]
 features_used: ["[[Appliance_Level_Load]]", "[[Historical_Load]]", "[[Last_Observed_Power_Anchor]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MSE]]", "[[MAE]]", "[[R2]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MSE]]", "[[MAE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
 # Summary: Personalized Federated Learning for Household Electricity Load Prediction with Imbalanced Historical Data
 
 ## 🎯 Main Objective & Contribution
-- Household consumption accounts for 30–40% of global electricity; accurate [[Short_Term]] appliance-level prediction supports Smart Home Energy Management Systems (SHEMS), but faces four challenges:
+- Household consumption accounts for 30–40% of global electricity; accurate [[Short_Term_Forecasting]] appliance-level prediction supports Smart Home Energy Management Systems (SHEMS), but faces four challenges:
   1. **Non-IID user behavior** — the IID assumption of classical FL breaks at household level.
   2. **Imbalanced residential data** — households differ in appliances and in data volume (different smart-meter installation dates).
   3. **Randomness/sparsity** of appliance usage — high proportion of zero values for short-duration appliances (kettles, microwaves).
@@ -85,4 +85,7 @@ tags: [paper, ev-load-forecasting, ml]
 - [[2017_Attention_Is_All_You_Need]] — encoder–decoder paradigm lineage ([43] Cho et al. RNN encoder–decoder)
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM backbone
 - [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]] — personalization context
-- Related vault papers: [[2023_Cheng_VMD_Prophet_LSTM]] ([[2023_Cheng_VMD_Prophet_LSTM]]), [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2024_Ke_Divide_Conquer_Transformer_EV]] (smart-meter load settings)
+- Related vault papers: [[2023_Cheng_VMD_Prophet_LSTM]], [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2024_Ke_Divide_Conquer_Transformer_EV]] (smart-meter load settings)
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Zhu_Personalized_Federated_Learning_refs]]

@@ -1,0 +1,23 @@
+---
+type: dataset
+name: "Wikitext 103"
+category: Stub (auto-generated)
+status: metadata-verified-2026-08
+tags:
+  - dataset
+  - wikitext-103
+location:
+resolution: "word tokens"
+access: "open (Salesforce)"
+data_type: "~103M words from verified Wikipedia articles"
+---
+
+# Wikitext 103
+
+Wikitext 103 — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+Within this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or load forecasting papers that apply it. Use the links below to jump to the papers and benchmark results that use it.
+
+## Referenced in this knowledge base
+
+[[2018_Bai_Empirical_TCN_Sequence_Modeling]]

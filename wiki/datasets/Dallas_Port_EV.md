@@ -4,6 +4,8 @@ name: "Dallas Port EV Logistics Charging Dataset"
 location: "Dallas, Texas, USA (artificial port logistics fleet)"
 resolution: "1 hour"
 access: "open"
+data_type: "Hourly EV port-fleet charging load (kW) with fleet/infrastructure/weather/economic covariates"
+status: needs-review # Kaggle DOI https://doi.org/10.34740/KAGGLE/DSV/9490653 returns 404 (checked 2026-08-26)
 tags: [dataset, ev-charging]
 ---
 

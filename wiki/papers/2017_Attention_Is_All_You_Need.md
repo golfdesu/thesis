@@ -5,10 +5,10 @@ authors: [Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jone
 year: 2017
 journal_conference: "Advances in Neural Information Processing Systems 30 (NIPS 2017), Long Beach, CA"
 doi_url: "https://arxiv.org/abs/1706.03762"
-models_used: ["[[Transformer]]", "[[Scaled_Dot_Product_Attention]]", "[[Multi_Head_Attention]]", "[[ByteNet]]", "[[ConvS2S]]"]
+models_used: ["[[Transformer]]", "[[Multi_Head_Attention]]", "[[ByteNet]]", "[[ConvS2S]]"]
 datasets_used: ["[[WMT_2014_EN-DE]]", "[[WMT_2014_EN-FR]]", "[[Penn_Treebank|WSJ_Penn_Treebank]]", "[[BerkleyParser_Corpus]]"]
 features_used: ["[[Token_Embeddings]]", "[[Sinusoidal_Positional_Encoding]]", "[[Byte_Pair_Encoding]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[BLEU]]", "[[Perplexity]]", "[[F1_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -82,3 +82,6 @@ $$\text{lrate} = d_{model}^{-0.5} \cdot \min(step\_num^{-0.5},\ step\_num \cdot 
 - Optimizer used: [[2014_Kingma_Adam_Stochastic_Optimization]]
 - Convolutional alternative evaluated against: [[2018_Bai_Empirical_TCN_Sequence_Modeling]]
 - Direct EV/load-forecasting descendants in vault: [[2021_Zhou_Informer_Beyond_Efficient_Transformer]], [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]], [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]], [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2017_Attention_Is_All_You_Need_refs]]

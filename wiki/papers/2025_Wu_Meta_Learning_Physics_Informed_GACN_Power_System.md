@@ -6,9 +6,9 @@ year: 2025
 journal_conference: "IEEE Transactions on Network Science and Engineering, Vol. 12, No. 2, pp. 1186-1198"
 doi_url: "https://doi.org/10.1109/TNSE.2025.3525625"
 models_used: ["[[Meta_PIGACN|Meta-PIGACN]]", "[[PIGACN|Physics-Informed Graph Attention Convolutional Network (PIGACN)]]", "[[GCN]]", "[[Multi_Head_Attention]]", "[[MAML|Meta-Learning (MAML-style)]]"]
-datasets_used: ["[[IEEE_33_Node_Distribution_System]]", "[[IEEE_118_Node_Distribution_System]]", "[[1746_Node_Distribution_System]]", "[[GEFCom2012_RES_Data|2012 Global Energy Forecasting Competition RES data]]"]
+datasets_used: ["[[IEEE_33_Node_Distribution_System]]", "[[IEEE_118_Node_Distribution_System]]", "[[1746_Node_Distribution_System]]", "[[GEFCom2014|2012 Global Energy Forecasting Competition RES data]]"]
 features_used: ["[[Power_Injection]]", "[[Line_Power_Flow]]", "[[Admittance_Matrix]]", "[[Node_Voltage_Magnitude]]", "[[Voltage_Phase_Angle]]", "[[Grid_Topology]]"]
-forecasting_horizon: "[[Short_Term|Real-Time Distribution System State Estimation (DSSE)]]"
+forecasting_horizon: "[[Short_Term_Forecasting|Real-Time Distribution System State Estimation (DSSE)]]"
 metrics: ["[[MAE]]", "[[MAPE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: Meta-Learning Enhanced Physics-Informed Graph Attention Convolutional Network for Distribution Power System State Estimation
 
 ## 🎯 Main Objective & Contribution
-- **Problem**: [[Distribution System State Estimation]] (DSSE) is challenged by frequent topology changes (reconfiguration/line switching), volatile renewable ([[WT]]/[[PV]]) power injections, and limited historical data covering all topologies.
+- **Problem**: [[Distribution_System_State_Estimation]] (DSSE) is challenged by frequent topology changes (reconfiguration/line switching), volatile renewable ([[WT]]/[[PV]]) power injections, and limited historical data covering all topologies.
 - **Contribution — Meta-PIGACN**, three innovations:
   1. **Physics-informed edge weighting**: the nodal admittance matrix $Y$ is embedded into the graph attention operation as a masking matrix derived from the Gauss–Newton iteration, controlling neighbor aggregation via physical laws (Kirchhoff's Current Law).
   2. **Graph attention convolution**: multi-head attention replaces a fixed adjacency matrix, automatically weighting neighbor importance to capture graph-structured features across varying topologies.

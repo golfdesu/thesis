@@ -9,13 +9,18 @@ resolution: Session-level
 last_updated: 2026-08-02
 url: "https://open-data.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0/explore"
 tags: [dataset, public-charging, level-2, USA]
+name: "Boulder Colorado EV Dataset"
+access: "open (City of Boulder Open Data portal)"
+license: "City of Boulder Open Data portal (open government data)"
+commercial_use: allowed
+data_type: "Session-level public Level 2 AC EV charging transactions (start/end timestamps, kWh)"
 ---
 
 # 📁 Boulder Colorado EV Dataset
 
 ## 🔗 Access Links & Repositories
 - **City of Boulder Open Data Portal**: [https://open-data.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0/explore](https://open-data.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0/explore)
-- **Direct dataset link (verified 2026-08-23)**: [https://bouldercolorado.gov/open-data/electric-vehicle-charging-stations](https://bouldercolorado.gov/open-data/electric-vehicle-charging-stations)
+- **Direct dataset link (verified 2026-08-26; old /open-data/electric-vehicle-charging-stations page is 404)**: [https://open-data.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0/explore](https://open-data.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0/explore)
 - **Direct ArcGIS view**: [https://opendata.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0](https://opendata.bouldercolorado.gov/datasets/39288b03f8d54b39848a2df9f1c5fca2_0)
 - **Data Dictionary (CSV)**: [https://webappsprod.bouldercolorado.gov/opendata/ev_datadictionary.csv](https://webappsprod.bouldercolorado.gov/opendata/ev_datadictionary.csv)
 
@@ -30,7 +35,7 @@ A public EV charging session dataset from **City of Boulder, Colorado** open dat
 | Total Sessions | 20,562 |
 | Location | Boulder, Colorado, USA |
 | Charger Type | Level 2 AC (public) |
-| Data Period | 2018–2021 |
+| Data Period | 2018–2021 (vault snapshot; portal has since extended coverage) |
 | Temporal Resolution | Session-level (start time, end time, energy delivered) |
 | Access | Open data (City of Boulder portal) |
 

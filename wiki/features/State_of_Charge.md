@@ -1,4 +1,7 @@
 ---
+title: State of Charge (SOC)
+type: feature
+name: "State of Charge (SOC)"
 feature: State of Charge (SOC)
 category: vehicle-feature
 data_type: continuous (0–100%) or (0–1 normalized)
@@ -50,7 +53,7 @@ $$\text{SOC}_{t+1} = \text{SOC}_t + \frac{\int I \, dt}{C}$$
 
 - 2021 — [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] : SOC, battery capacity, depth-of-discharge and daily driven miles parameterize the RL charging model.
 - 2025 — [[2025_Li_DC_Charging_Profiles_TFT]] : Starting SOC is a key TFT input for DC fast-charging session profile prediction (NW Europe DCFC + ERA5 data).
-- 2026 — [[2026_Chen_PC_M3_Mamba_EV_Clusters]] : SOC at arrival/departure defines per-EV energy requirement and flexibility polytopes in PC-M3 fleet clustering.
+- 2026 — [[2026_Tang_PC_M3_Mamba_EV_Clusters]] : SOC at arrival/departure defines per-EV energy requirement and flexibility polytopes in PC-M3 fleet clustering.
 
 ## Practical Challenges
 

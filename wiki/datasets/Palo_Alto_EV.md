@@ -14,6 +14,9 @@ tags:
   - palo-alto
   - open-data
   - public-ev-charging
+status: needs-review # legacy data.cityofpaloalto.org dataview URL dead; portal moved to data.paloalto.gov (checked 2026-08-26)
+license: "City of Palo Alto Open Data portal (open government data)"
+commercial_use: allowed
 ---
 
 # 📁 City of Palo Alto EV Charging Station Usage Dataset
@@ -44,3 +47,4 @@ The **Palo Alto EV Dataset** is a widely used benchmark dataset provided by the 
 - `[[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]]` - Wang et al. (2026): Palo Alto one of 12 cities in the six-model ML/DL transferability benchmark (7 stations, 17.9 events/day/station).
 - `[[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]]` - Zhang et al. (2026): USDT probabilistic dual-direction transformer on ~5 months / 3114 hourly points (PALO).
 - `[[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]]` - Kyriakopoulos & Theodoridis (2026): Palo Alto one of four cities (47 stations, 259,415 sessions, Jul 2011–Dec 2020); Transformer best at region/city short- and mid-term (city MAE 12.84→12.77), XGBoost best at station level.
+- `[[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]]` - Bouaachra et al. (2026): names Palo Alto a **stale legacy benchmark** (2020-era) that fails to reflect the scale and behavioral diversity of modern charging networks; proposes [[ChargePlace_Scotland]] (Oct 2022–Apr 2025) as the modern open replacement.

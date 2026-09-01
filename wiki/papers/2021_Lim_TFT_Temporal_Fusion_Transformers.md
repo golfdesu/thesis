@@ -5,18 +5,18 @@ authors: [Bryan Lim, Sercan Ö. Arık, Nicolas Loeff, Tomas Pfister]
 year: 2021
 journal_conference: "International Journal of Forecasting, Vol. 37, No. 4, pp. 1374-1389"
 doi_url: "https://doi.org/10.1016/j.ijforecast.2021.03.012"
-models_used: ["[[TFT|Temporal Fusion Transformer]]", "[[GRN|Gated Residual Network]]", "[[VSN|Variable Selection Network]]", "[[LSTM]]", "[[Interpretable_Multi_Head_Attention]]", "[[Quantile_Regression]]"]
+models_used: ["[[Temporal_Fusion_Transformer|Temporal Fusion Transformer]]", "[[GRN|Gated Residual Network]]", "[[VSN|Variable Selection Network]]", "[[LSTM]]", "[[Interpretable_Multi_Head_Attention]]", "[[Quantile_Regression]]"]
 datasets_used: ["[[Electricity_ECL|UCI Electricity Load Diagrams (ECL)]]", "[[Traffic|UCI PEM-SF Traffic]]", "[[Favorita_Retail|Favorita Grocery Sales]]", "[[Oxford_Man_Realized_Library|OMI Realized Volatility]]"]
 features_used: ["[[Static_Covariates]]", "[[Past_Observed_Inputs]]", "[[Known_Future_Inputs]]", "[[Calendar_Features]]", "[[Entity_Embeddings]]"]
 forecasting_horizon: "[[Multi_Horizon]]"
-metrics: ["[[P50_Loss]]", "[[P90_Loss]]", "[[Quantile_Loss|q-Risk]]"]
+metrics: ["[[Pinball_Loss]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
 # Summary: Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting
 
 ## 🎯 Main Objective & Contribution
-- Proposes the **[[TFT|Temporal Fusion Transformer]]**: an attention-based architecture for **multi-horizon forecasting** that natively handles heterogeneous inputs — [[Static_Covariates]], [[Past_Observed_Inputs]], and [[Known_Future_Inputs]] — which autoregressive models (DeepAR, DSSM, ConvTrans) and prior direct methods (MQRNN, Seq2Seq) mishandle or treat as black boxes.
+- Proposes the **[[Temporal_Fusion_Transformer|Temporal Fusion Transformer]]**: an attention-based architecture for **multi-horizon forecasting** that natively handles heterogeneous inputs — [[Static_Covariates]], [[Past_Observed_Inputs]], and [[Known_Future_Inputs]] — which autoregressive models (DeepAR, DSSM, ConvTrans) and prior direct methods (MQRNN, Seq2Seq) mishandle or treat as black boxes.
 - Five architectural novelties: (1) gating mechanisms for adaptive depth, (2) instance-wise variable selection networks, (3) static covariate encoders producing context vectors, (4) LSTM sequence-to-sequence local processing + interpretable multi-head self-attention decoder, (5) quantile outputs for prediction intervals.
 - Three interpretability use cases demonstrated on whole datasets: global variable importance, persistent temporal patterns (seasonality/lags from raw data), and regime/event identification (S&P 500 2008 crisis detected via attention-distance metric).
 

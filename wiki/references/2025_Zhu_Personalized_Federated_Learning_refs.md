@@ -39,7 +39,7 @@
 33. Dai Shuang, Meng Fanlin, Wang Qian, Chen Xizhong. Federatednilm: A dis- tributed and privacy-preserving framework for non-intrusive load monitoring based on federated deep learning. In: 2023 international joint conference on neural networks. IJCNN, IEEE; 2023, p. 01–8.
 34. Beckel Christian, Sadamori Leyna, Staake Thorsten, Santini Silvia. Revealing household characteristics from smart meter data. Energy 2014;78:397–410.
 35. Khan Noman, Haq Ijaz Ul, Khan Samee Ullah, Rho Seungmin, Lee Mi Young, Baik Sung Wook. DB-Net: A novel dilated CNN based multi-step forecasting model for power consumption in integrated local energy systems. Int J Electr Power Energy Syst 2021;133:107023.
-36. Taïk Afaf, Cherkaoui Soumaya. Electrical load forecasting using edge computing and federated learning. In: ICC 2020 - 2020 IEEE international conference on communications. ICC, 2020, p. 1–6. http://dx.doi.org/10.1109/ICC40277.2020. 9148937.
+36. Taïk Afaf, Cherkaoui Soumaya. Electrical load forecasting using edge computing and federated learning. In: ICC 2020 - 2020 IEEE international conference on communications. ICC, 2020, p. 1–6. http://dx.doi.org/10.1109/ICC40277.2020.9148937.
 37. Mansour Yishay, Mohri Mehryar, Ro Jae, Suresh Ananda Theertha. Three approaches for personalization with applications to federated learning. 2020, arXiv preprint arXiv:2002.10619.
 38. Wang Yi, Gao Ning, Hug Gabriela. Personalized federated learning for individual consumer load forecasting. CSEE J Power Energy Syst 2022.
 39. Qu Xiaodong, Guan Chengcheng, Xie Gang, Tian Zhiyi, Sood Keshav, Sun Chaoli, Cui Lei. Personalized federated learning for heterogeneous residential load forecasting. Big Data Min Anal 2023;6(4):421–32.

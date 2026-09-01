@@ -7,8 +7,8 @@ journal_conference: "IEEE Transactions on Smart Grid, vol. 15, no. 5, pp. 4917-4
 doi_url: "https://doi.org/10.1109/TSG.2024.3392910"
 models_used: ["[[V2G-SVE]]", "[[Aggregate_EV_Fleet_Model]]", "MLP", "MLR", "Simple Average (SA)", "1-same-day persistence"]
 datasets_used: ["[[ASU_Campus_Metabolism_Dataset]]", "[[Ausgrid_Zone_Substation_Dataset]]"]
-features_used: ["[[Base_Electrical_Load]]", "[[EV_Arrival_Departure_Times]]", "[[SOC_At_Arrival_Departure]]", "[[Battery_Capacity]]", "[[Calendar_Information]]", "[[Historical_Load]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+features_used: ["[[Base_Electrical_Load]]", "[[Arrival_Departure_Time]]", "[[State_of_Charge]]", "[[Battery_Capacity]]", "[[Calendar_Features]]", "[[Historical_Load]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[V2G-SVE]]", "SPDR", "[[MAPE]]", "[[RMSE]]", "[[MAE]]", "[[Pearson_Correlation_Coefficient]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: A Reliable Evaluation Metric for Electrical Load Forecasts in V2G Scheduling Considering Statistical Features of EV Charging
 
 ## 🎯 Main Objective & Contribution
-- Shows that prevailing **forecast quality metrics** ([[MAPE]], [[RMSE]], [[MAE]]) fail to predict how a forecast will perform when fed into downstream **[[V2G_Scheduling]]** optimization — the relation between forecast *quality* and forecast *value* is not monotonic.
+- Shows that prevailing **forecast quality metrics** ([[MAPE]], [[RMSE]], [[MAE]]) fail to predict how a forecast will perform when fed into downstream **[[V2G]]** optimization — the relation between forecast *quality* and forecast *value* is not monotonic.
 - Proposes **V2G-SVE (V2G Scheduling Value Error)**: a value-oriented metric scoring a forecast by the relative degradation rate of load-variance-minimization scheduling performance caused by using it instead of actual load.
 - Builds an **aggregate model of the EV fleet** parameterized by statistical features of EV charging so V2G-SVE computes in constant time (~0.20 s) regardless of fleet size, avoiding the curse of dimensionality of per-EV quadratic programming.
 - Derives and experimentally verifies **three key findings** linking forecast errors to V2G scheduling degradation, with guidance for future forecasting loss design.
@@ -114,3 +114,6 @@ $$y_t = 0.0002N^3 + 0.0228N^2 - 0.6102N + 2.5844$$
 - Stratigakos et al. 2022 — prescriptive trees for integrated forecasting and optimization [43]
 - Zhao, Wan & Song 2022 — cost-oriented prediction intervals bridging forecasting and decision [44]
 - Sortomme et al., IEEE Trans. Smart Grid 2011 — coordinated charging to minimize distribution losses [21]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2024_Zhong_V2G_SVE_Evaluation_Metric_refs]]

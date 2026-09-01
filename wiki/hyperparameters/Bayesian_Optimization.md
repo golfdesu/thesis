@@ -14,7 +14,7 @@ tags:
 Bayesian Optimization constructs a probabilistic surrogate model (typically a Gaussian Process) to approximate the objective function (e.g., validation loss/RMSE) and uses an acquisition function (such as Expected Improvement or Upper Confidence Bound) to balance exploration and exploitation.
 
 ## Key Advantages
-- **Sample Efficiency**: Significantly reduces the number of expensive training iterations compared to Grid Search.
+- **Sample Efficiency**: Significantly reduces the number of expensive training iterations compared to [[Grid_Search]].
 - **Continuous & Discrete Search**: Effective for continuous hyperparameters like learning rate, weight decay, and kernel bandwidths.
 
 ## Papers Utilizing Bayesian Optimization

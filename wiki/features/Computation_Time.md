@@ -1,0 +1,24 @@
+---
+type: feature
+name: "Computation Time"
+category: Stub (auto-generated)
+status: needs-review
+tags:
+  - feature
+  - computation_time
+aliases:
+  - Computational_Time
+  - Computational Time
+---
+
+# Computation Time
+
+Computation Time — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+As an input feature it appears in the feature lists of forecasting papers collected here. The links below point to the studies and model pages where this feature is described or ablated.
+
+## Referenced in this knowledge base
+
+[[2025_Yang_Stochastic_MPC_Microgrid_EV]]
+
+[[2026_Huang_Lyapunov_EV_Scheduling]]

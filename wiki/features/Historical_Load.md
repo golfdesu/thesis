@@ -1,4 +1,7 @@
 ---
+title: Historical Charging Load
+type: feature
+name: "Historical Charging Load"
 feature: Historical Charging Load
 category: temporal-feature
 data_type: continuous time series (kW or kWh)
@@ -76,6 +79,7 @@ EV charging load exhibits:
 - 2026 — [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] : Strictly univariate setting — only past 12 h of hourly demand counts via sliding window; still enough for near-optimal accuracy after ~72 h of training data.
 - 2024 — [[2024_Huo_Data_Driven_EVCS_Demand_Forecasting]] : Purely autoregressive 24-hour hourly window $H_t = \{h_{t-1}, \ldots, h_{t-24}\}$ suffices for Rao-1-tuned ANN one-step station forecasting (JPL RMSE 6.93 kW, R² 0.974) — no exogenous variables.
 - 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : Lagged-load screening via Pearson autocorrelation — same-time lags of past 2 h and past 18 days both correlate >0.6; input vector concatenates the last 24 moments with discontinuous lags t−48/t−72/t−168 plus current exogenous data.
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] : Grid-level hourly historical load (L=240 h lookback) is the sole autoregressive input in a five-architecture US benchmark — load-only rankings (PatchTST first) reverse entirely once weather covariates join, so architecture choice should follow input availability.
 
 ## Related Pages
 
@@ -84,3 +88,8 @@ EV charging load exhibits:
 - [[State_of_Charge]]
 - [[Electricity_Tariff]]
 - [[Weather_Traffic]]
+
+## Literature Usage
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Pure univariate input only; no covariates during pretraining (Eq. 1); date-feature extension Eq. 8 discussed as future work.
+- [[2026_Khwaja_Toto_2_Scaling_Era]] — Pure univariate input y_{1:L} + missingness mask b_{1:N}; 32 variates/sample in training; no exogenous covariates (weather/tariff/SoC all future work).
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Past target values Y_{1:T} as core input (V, U) together with optional covariates; univariate mode ignores covariates and still beats Toto-1.0 on multivariate subset.

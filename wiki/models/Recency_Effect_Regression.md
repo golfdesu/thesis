@@ -1,0 +1,19 @@
+---
+type: model
+name: "Recency Effect Regression"
+category: Stub (auto-generated)
+status: needs-review
+tags:
+  - model
+  - recency_effect_regression
+---
+
+# Recency Effect Regression
+
+Recency Effect Regression — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+Within this knowledge base the model page collects its architectural family, typical input/output structure, complexity characteristics, and the EV or load forecasting papers that apply it. Use the links below to jump to the papers and benchmark results that use it.
+
+## Referenced in this knowledge base
+
+[[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]]

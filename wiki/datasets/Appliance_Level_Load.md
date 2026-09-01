@@ -1,0 +1,23 @@
+---
+type: dataset
+name: "Appliance Level Load"
+category: Stub (auto-generated)
+status: needs-review
+tags:
+  - dataset
+  - appliance_level_load
+resolution:
+access: "open (REDD/UK-DALE/HES lineages)"
+data_type: "Appliance-disaggregated plug-load measurements (NILM lineage)"
+location: "varies (REDD/UK-DALE/HES lineages)"
+---
+
+# Appliance Level Load
+
+Appliance Level Load — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
+
+## Referenced in this knowledge base
+
+[[2025_Zhu_Personalized_Federated_Learning]]

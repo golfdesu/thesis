@@ -5,11 +5,11 @@ authors: [Xingshuai Huang, Di Wu, Benoit Boulet]
 year: 2023
 journal_conference: "IEEE Transactions on Intelligent Transportation Systems, 24(10), 10445-10455"
 doi_url: "https://doi.org/10.1109/TITS.2023.3276947"
-models_used: ["[[MetaProbformer]]", "[[Probformer]]", "[[Reptile]]", "[[Informer]]", "[[Transformer]]", "[[LSTM]]", "[[DeepAR]]", "[[Prophet]]", "[[ARIMA]]", "[[FPSeq2Q]]"]
-datasets_used: ["[[Palo_Alto_EV|D_Palo (City of Palo Alto EV charging usage)]]", "[[Boulder_CO_EV|D_Boulder]]", "[[ElaadNL_EV|D_NL]]", "[[Perth_UK_EV|D_Perth (Perth & Kinross)]]"]
-features_used: ["[[Historical_Load|Univariate hourly average charging load (kW)]]", "[[Time_Covariates|Time-dependent covariates (month of year, etc.)]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[MAE]]", "[[MSE]]", "[[RMSE]]", "[[CRPS]]", "[[Quantile_Loss|Normalized ρ-quantile loss Qρ]]"]
+models_used: ["[[MetaProbformer]]", "[[Reptile]]", "[[Informer]]", "[[Transformer]]", "[[LSTM]]", "[[DeepAR]]", "[[Prophet]]", "[[ARIMA]]", "[[FPSeq2Q]]"]
+datasets_used: ["[[Palo_Alto_EV|D_Palo (City of Palo Alto EV charging usage)]]", "[[Boulder_Colorado|D_Boulder]]", "[[ElaadNL|D_NL]]", "[[Perth_EV|D_Perth (Perth & Kinross)]]"]
+features_used: ["[[Historical_Load|Univariate hourly average charging load (kW)]]", "[[Calendar_Features|Time-dependent covariates (month of year, etc.)]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[MAE]]", "[[MSE]]", "[[RMSE]]", "[[CRPS]]", "[[Pinball_Loss|Normalized ρ-quantile loss Qρ]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - First Transformer-based method for **probabilistic charging load forecasting of EV charging stations**, and first to address **newly built stations with scarce historical data** via meta-learning.
-- Proposes **[[Probformer]]** — an adaptation of [[Informer]] that outputs a **Gaussian predictive distribution** instead of point forecasts — and **[[MetaProbformer]]**, combining it with the [[Reptile]] meta-learning algorithm to learn a well-generalized initialization adaptable to unseen stations in few gradient steps.
+- Proposes **[[MetaProbformer]]** — an adaptation of [[Informer]] that outputs a **Gaussian predictive distribution** instead of point forecasts — and **[[MetaProbformer]]**, combining it with the [[Reptile]] meta-learning algorithm to learn a well-generalized initialization adaptable to unseen stations in few gradient steps.
 - Contributions: (I) Probformer architecture (Informer → probabilistic); (II) Reptile-based meta-learning framework for scarce-data charging stations; (III) experiments covering point + probabilistic forecasting, short-term (1 h) + long-term (24/48/168 h), and homogeneous vs heterogeneous tasks.
 
 ## 🧠 Methodology & Model Architecture
@@ -86,8 +86,11 @@ Point forecasting (MAE/MSE/RMSE, mean ± std over 5 random seeds; Tables III–I
 - [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]
 - [[2018_Nichol_Reptile_First_Order_Meta_Learning]]
 - [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]]
-- [[2020_DeepAR_Probabilistic_Forecasting_with_Autoregressive_Recurrent_Networks]]
-- [[1997_Long_Short_Term_Memory]]
-- [[2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations]]
-- [[2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations]]
+- [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
+- [[1997_Hochreiter_Long_Short_Term_Memory]]
+- [[2020_Huang_Ensemble_EV_Load]]
+- [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]
 - [[2021_Rasul_TimeGrad_Diffusion_Forecasting]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2023_Huang_MetaProbformer_EV_Load_refs]]

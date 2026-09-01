@@ -12,6 +12,8 @@ tags:
   - dundee
   - open-data
   - uk-ev
+license: "Dundee City Council open data (UK local authority open data portal)"
+commercial_use: allowed
 ---
 
 # 📁 Dundee City Council Public EV Charging Dataset
@@ -28,3 +30,4 @@ Open dataset provided by Dundee City Council (Scotland, UK) covering extensive p
 - [[2025_Tian_MSSTGAN_City_EV_Load]] — Evaluated MS-STGAN on Dundee alongside Palo Alto, Boulder, and Perth.
 - [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] — Dundee one of 12 cities in the ML/DL transferability benchmark (27 stations, 25.5 events/day/station).
 - [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] — One of four cities (67 stations, 52,752 sessions, Jan 2017–Dec 2018); Transformer dominates short-term region/city (city MAE 14.52→13.22) but collapses on sparse daily long-term data (city MAE ≈ 93) where GRU wins (21.48@5d).
+- [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] — Sibling Scottish dataset: the nationwide [[ChargePlace_Scotland]] corpus (Oct 2022–Apr 2025) covers the 2022–2025 era Dundee's council portal predates, including Dundee City's stable pre-tariff charging behavior used as the EDA contrast case.

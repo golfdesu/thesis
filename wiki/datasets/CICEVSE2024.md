@@ -4,6 +4,7 @@ name: "CICEVSE2024 EV Charging Station Security Dataset"
 location: "Testbed EV charging station (Level 2 EVSE, lab testbed)"
 resolution: "5 s (HPC/kernel event sampling)"
 access: "on-request"
+data_type: "HPC/kernel-performance-counter event logs + network/host telemetry with 18-class attack labels"
 tags: [dataset, ev-charging]
 ---
 

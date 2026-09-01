@@ -1781,3 +1781,78 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
 | Shi PI evaluation (2024) | US feeder smart meter + synthetic EV | no URL |
 | DeVilmarest adaptive net-load (2024) | GB 14 GSP half-hourly; US 7-city COVID | zenodo DOIs 10.5281/zenodo.7849665 / .5031704 |
 | Qu Forwardformer (2024) | CEL-NW/SE China; AEL New York State | no URLs printed |
+
+
+## [2026-08-23] Batch 4 Web-Ingest | New Dataset & Repo URLs (papers 104-108)
+
+| Paper | Datasets / Resources | Links |
+|-------|----------------------|-------|
+| Yu EnergyMamba (KDD '26) | NYISO load data | https://www.nyiso.com/load-data |
+| Yu EnergyMamba (KDD '26) | CAISO today's outlook | https://www.caiso.com/TodaysOutlook |
+| Yu EnergyMamba (KDD '26) | Florida census block group smart-meter data | NDA-restricted, not public |
+| Yu EnergyMamba (KDD '26) | Official code | https://github.com/UFOdestiny/EnergyMamba |
+| Hong & Lee US-grid benchmark (2026) | EIA-930 hourly system load, six ISOs (CAISO/ISO-NE/MISO/PJM/ERCOT/NYISO) | https://www.eia.gov/electricity/gridmonitor/ |
+| Hong & Lee US-grid benchmark (2026) | Open-Meteo weather archive | https://open-meteo.com |
+| Hong & Lee US-grid benchmark (2026) | Benchmark code + checkpoints | https://github.com/gramm-ai/grid-forecast-benchmark |
+| Menati PowerMamba (2024) | ERCOT GridSet (5-year hourly, 22 core / 262 extended channels) + toolbox | https://github.com/alimenati/PowerMamba |
+| Bouaachra INLA Scotland (2026) | ChargePlace Scotland open-access repository (Transport Scotland); Oct 2022 - Apr 2025; Glasgow subset 96 CPIDs / 104,041 sessions | chargeplace.org.uk open data portal (exact Zenodo/Git mirror URLs pending from arXiv HTML source) |
+| Fernandez-Zapico MPC hub (CDC 2025) | Hub simulation code | https://github.com/diegofz/ChargingEnergyHubs_MPC |
+| Fernandez-Zapico MPC hub (CDC 2025) | ENTSO-E Transparency Platform (NL prices/CO2) | https://transparency.entsoe.eu/ |
+| Fernandez-Zapico MPC hub (CDC 2025) | EV session source: Gholizadeh & Musilek, Data in Brief 2024 | see paper references |
+| Fernandez-Zapico MPC hub (CDC 2025) | NREL OpenEI PVDAQ farm solar array | https://openei.org/wiki/PVDAQ/Sites/Farm_Solar_Array |
+
+### 2024_Das_TimesFM_Decoder_Only_Foundation_Model.pdf
+
+- **Title**: A Decoder-Only Foundation Model for Time-Series Forecasting (TimesFM)
+- **Identified Datasets**: Google Trends (~22k queries, ~0.5B points), Wikipedia Pageviews (~360B points, 5.6M hourly series), Synthetic (3M series, 6.1B points), M4 (all granularities, ~99k series), Electricity/ECL (321 clients, 8.4M pts), Traffic (862 sensors 15.1M + LibCity 6,159 series 34.3M), Weather 10-min (42 vars, 2.2M), Favorita Sales (111k series, 139M), LibCity; Evaluation: Monash Archive (18 datasets), Darts (8 series), ETT (ETTh1/2 + ETTm1/2)
+- **Extracted Web Links**:
+  - https://trends.google.com (Google Trends, Ch.5)
+  - https://wikimedia.org/api/rest_v1/ (Wiki Pageviews, Ch.5)
+  - https://huggingface.co/datasets/monash_tsf (Monash mirror, p.7)
+  - https://github.com/unit8/darts (Darts, p.8)
+  - https://github.com/zhouhaoyi/ETDataset (ETDataset)
+  - https://github.com/ngruver/llmtime/blob/main/experiments/run_monash.py (llmtime baseline code, p.16)
+  - https://github.com/google-research/google-research/tree/master/tide (TiDE ref)
+- **Key Dataset Text Snippets / Context**:
+  - Pretraining corpus Table 1: ~100B time-points after mixing (80% real / 20% synthetic, equal granularity-group weights); Wiki hourly 5,608,693 series / 239B pts, Wiki daily/weekly/monthly ~66M each; synthetic ARMA+seasonal+trend+step (3M x 2048).
+  - Evaluation held-out: Monash 18 datasets (australian electricity demand, bitcoin, pedestrian counts, weather, nn5 daily/weekly, tourism yearly/quarterly/monthly, cif 2016, covid deaths, fred md, traffic hourly/weekly, saugeenday, us births, hospital, solar weekly), Darts 8 series, ETT 4 datasets x 2 horizons (96/192, last-window due to llmtime cost).
+
+---
+### 2026_Khwaja_Toto_2_Scaling_Era.pdf — Toto 2.0: Time Series Forecasting Enters the Scaling Era
+
+**Datasets extracted:**
+- **BOOM** — Datadog observability benchmark (CPU/memory/latency/error rates; context 2048; CRPS rank/CRPS/MASE) — Cohen et al. 2025
+- **GIFT-Eval** — 97 tasks from 23 base datasets (energy/retail/weather/finance; context 4096; Pretrain: https://huggingface.co/datasets/Salesforce/GiftEvalPretrain — 45% of FT mix; train splits: https://huggingface.co/datasets/Salesforce/GiftEval — 15% of FT mix)
+- **TIME Benchmark** — 98 tasks from 50 fresh datasets (Qiao et al. 2026, arXiv:2602.12147; avoids legacy ETTh1/Electricity/Traffic/Weather)
+- **Datadog Internal Observability** — 2.14T points (42.5% of large mix; 10s 20% / 60s 7.5% / 5+m 15%; private, no customer data)
+- **TempoPFN Synthetic** — 2.90T points (57.5% of large mix; Moroshan et al. 2025, PFN framework Muller et al. 2022) — hand-crafted prior with nonstationary trends/changepoints/long-range deps
+
+**URLs / Access:**
+- Code: https://www.github.com/DataDog/toto
+- Weights (Apache 2.0): https://huggingface.co/collections/Datadog/toto-20
+- Library dd_unit_scaling: distributed u-muP (torch.compile/FSDP2/DP-TP) — Apache 2.0
+- GIFT-Eval: https://huggingface.co/datasets/Salesforce/GiftEval
+- GIFT-Eval Pretrain: https://huggingface.co/datasets/Salesforce/GiftEvalPretrain
+---
+## [2025-09-01] 2025_Ansari_Chronos_2_Univariate_to_Universal — Chronos-2: From Univariate to Universal Forecasting (Ansari et al. 2025, arXiv:2510.15821v1)
+
+**Datasets extracted (3 benchmarks + pretraining corpora, Table 6, Section 4-5):**
+
+| # | Dataset | Location / Access / URLs | Extracted fields |
+|---|---|---|---|
+| 1 | fev-bench | https://github.com/amazon-science/chronos-forecasting ; Shchur et al. 2025 — 100 tasks (32 univariate / 26 multivariate / 42 covariate-informed, past-only + known) | 100 tasks, SQL metric, 0% leakage, 0 failures for Chronos-2 |
+| 2 | GIFT-Eval | https://huggingface.co/datasets/Salesforce/GiftEval (Aksu et al. 2024) | 97 tasks / 55 datasets, high-frequency + long horizons, WQL/MASE |
+| 3 | Chronos Benchmark II | Ansari et al. 2024 (TMLR) — 27 tasks, short histories <300 steps avg | WQL/MASE |
+| 4 | GIFT-Eval Pretrain corpus | https://huggingface.co/datasets/Salesforce/GiftEvalPretrain | Real-univariate pretraining mix, test portions excluded |
+| 5 | Chronos Corpus | Ansari et al. 2024 — select Table 6 (Electricity 370, Solar 5166, Taxi 2428, Wiki 100k, USHCN 225280, Weatherbench 225280, M4 Daily 4227 etc.) | Frequencies 5min-1M, 22 datasets listed |
+| 6 | Synthetic univariates | TSI (Bahrpeyma et al. 2021), TCM (Runge et al. 2023), AR/ETS/KernelSynth | Trend/seasonality/irregularity + causal-graph autoregression |
+| 7 | Synthetic multivariate/covariate | Multivariatizers (contemporaneous + sequential) — entirely synthetic, random subset designated as known covariates | Multivariate dependencies (instantaneous + lead-lag/cointegration) |
+| 8 | Code repo | https://github.com/amazon-science/chronos-forecasting | GluonTS/AutoGluon dependencies |
+| 9 | Benchmark tools | fev-bench tooling (Shchur et al. 2025), GIFT-Eval leaderboard, Chronos Benchmark II | Evaluation with win rate / skill score |
+
+**Energy/retail case studies from fev-bench:** EPF-DE (German day-ahead energy price with load + solar/wind covariates, hourly) and Rossmann weekly store sales (promotion/holiday features) — Figs. 6-7.
+
+**Tables imported to paper note:** Table 1 (capability matrix O(V) vs O(V²)), Table 2 (groupID/W masking for 3 task types), Table 3 (fev-bench SQL), Table 4 (GIFT-Eval WQL/MASE), Table 5 (Chronos Bench II), Fig.2 (pairwise CIs), Fig.3-5 (ICL gains), Fig.8 (ablations: 28M, synthetic-only, 8192 ctx).
+
+**Dataset pages updated/created:** [[fev-bench]], [[Chronos_Benchmark_II]], [[Chronos_Corpus]], [[GIFT-Eval]], [[GIFT_Eval_Pretrain]], [[Electricity_ECL]], [[M4]], [[Solar_Dataset]], [[Traffic]], [[Weather]], [[Wiki_Pageviews]], [[Buildings_900K]].
+

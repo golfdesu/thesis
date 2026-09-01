@@ -20,7 +20,7 @@
 14. Sergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In Proceedings of the 32nd International Conference on Machine Learning, ICML 2015, Lille, France, 6-11 July 2015, pages 448–456, 2015.
 15. Iebeling Kaastra and Milton Boyd. Designing a neural network for forecasting financial and economic time series. Neurocomputing, 10(3):215–236, 1996.
 16. Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. CoRR, abs/1412.6980, 2014. URL http://arxiv.org/abs/1412.6980.
-17. Nikolaos Kourentzes. Intermittent demand forecasts with neural networks. International Jour- nal of Production Economics, 143(1):198–206, 2013. ISSN 09255273. doi: 10.1016/j.ijpe. 2013.01.009.
+17. Nikolaos Kourentzes. Intermittent demand forecasts with neural networks. International Jour- nal of Production Economics, 143(1):198–206, 2013. ISSN 09255273. doi: 10.1016/j.ijpe.2013.01.009.
 18. Paul D. Larson, David Simchi-Levi, Philip Kaminsky, and Edith Simchi-Levi. Designing and managing the supply chain: Concepts, strategies, and case studies. Journal of Business Logistics, 22(1):259–261, 2001. ISSN 2158-1592. doi: 10.1002/j.2158-1592.2001.tb00165.x. URL http://dx.doi.org/10.1002/j.2158-1592.2001.tb00165.x.
 19. Matthias W Seeger, David Salinas, and Valentin Flunkert. Bayesian intermittent demand fore- casting for large inventories. In Advances in Neural Information Processing Systems, pages 4646–4654, 2016.
 20. Ralph D Snyder, J Keith Ord, and Adrian Beaumont. Forecasting the intermittent demand for slow-moving inventories: A modelling approach. International Journal of Forecasting, 28(2): 485–496, 2012. 11

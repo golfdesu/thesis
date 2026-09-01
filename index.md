@@ -5,8 +5,9 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 ---
 
 ## 📄 Paper Summaries (`wiki/papers/`)
+- [[paper_digest]] - **One-file digest of ALL 121 papers** (contribution + method + results + gaps per paper) built for fast AI-agent reading & research-gap analysis.
 - [[github_repositories_index]] - Master Catalog of Official GitHub Repositories & Code Bases across all papers.
-- [[dataset_extraction_report]] - Comprehensive Dataset Extraction & URL Report across all 70 papers.
+- [[dataset_extraction_report]] - Comprehensive Dataset Extraction & URL Report across all 111 ingested paper PDFs.
 
 - [[2021_Rasul_TimeGrad_Diffusion_Forecasting]] - Rasul et al. (2021): Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting (ICML 2021).
 - [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]] - Tashiro et al. (2021): CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation and Forecasting (NeurIPS 2021).
@@ -27,7 +28,7 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] - Li et al. (2019): Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting.
 - [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]] - Finn et al. (2017): Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks.
 - [[2018_Nichol_Reptile_First_Order_Meta_Learning]] - Nichol et al. (2018): On First-Order Meta-Learning Algorithms.
-- [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] - Mansour et al. (2025): Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model (Nature Sci Rep).
+- [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] - Mansour et al. (2025): Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model (Nature Sci Rep).
 - [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] - Ullah et al. (2026): Decomposition and Stacked Meta-Learning for Short-Term Electric Vehicle Load Forecasting.
 - [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] - Shi et al. (2024): Load Forecasting of Electric Vehicle Charging Stations: Attention Based Spatiotemporal MultiGraph Convolutional Networks.
 - [[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]] - Wu et al. (2025): Meta-Learning Enhanced Physics-Informed Graph Attention Convolutional Network for Distribution Power System State Estimation.
@@ -44,7 +45,7 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2021_VanKriekinge_Day_Ahead_EV_Demand]] - Van Kriekinge et al. (2021): Day-Ahead 15-min EV load forecasting using Cyclical Sin/Cos Encodings & Weather Features (MAE < 1 kW).
 - [[2021_Zhang_Probabilistic_Queuing_EV_Load]] - Zhang et al. (2021): Probabilistic EV load forecasting using Wavelet-CNN Ensemble & $M/M/C/K$ Queuing Model with driver behaviors.
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] - Buzna et al. (2021): Ensemble methodology for coherent hierarchical probabilistic EV load forecasting across ElaadNL network.
-- [[2021_Huang_Lyapunov_EV_Scheduling]] - Huang et al. (2021): Forecast-Enhanced Lyapunov Optimization for real-time EV charging scheduling.
+- [[2026_Huang_Lyapunov_EV_Scheduling]] - Huang et al. (2021): Forecast-Enhanced Lyapunov Optimization for real-time EV charging scheduling.
 - [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] - Dabbaghjamanesh et al. (2021): Q-Learning Reinforcement Learning ensemble for smart, coordinated, and uncoordinated PHEV load forecasting.
 - [[2022_Zhang_GCN_TRN_EV_Availability]] - Zhang & Wang (2022): GCN-TRN Spatial-Temporal Transformer for multi-station EV availability forecasting.
 - [[2022_Cao_Robust_Deep_Gaussian_Process_Load]] - Cao et al. (2022): Doubly stochastic variational Deep Gaussian Process for probabilistic load forecasting under data scarcity.
@@ -83,7 +84,7 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] - Romia & Huang (2026): Attention-enhanced CNN-LSTM models (CNN-LSTM-Attention & CNN-LSTM-Transformer) tuned with Optuna for public DC fast charging.
 - [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]] - Liu et al. (2026): Multi-scale Fusion Transformer (MFT) combining scale-masked attention (3M) with cross-attention feature reweighting (MFM) for 96h forecasts.
 - [[2026_Hao_Mamba_KAN_HyKANet_EV]] - Hao & Ren (2026): HyKANet combining Mamba (selective SSM) and KAN (Kolmogorov-Arnold Networks) for post-transformer EV demand prediction.
-- [[2026_Chen_PC_M3_Mamba_EV_Clusters]] - Chen et al. (2026): PC-M3 Physics-Constrained Mamba-3 MIMO aggregator for real-time energy management of 10,000+ EV clusters.
+- [[2026_Tang_PC_M3_Mamba_EV_Clusters]] - Chen et al. (2026): PC-M3 Physics-Constrained Mamba-3 MIMO aggregator for real-time energy management of 10,000+ EV clusters.
 - [[2026_Lahoti_Mamba_3_Sequence_Modeling]] - Lahoti et al. (2026): Foundational Mamba-3 paper introducing complex-valued State Space Models with linear $O(N)$ scaling.
 
 ---
@@ -237,3 +238,11 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] - Shi et al. (2024): GPR day-ahead feeder forecasting with EV charging-habit probability feature and prediction interval evaluation (IEEE/LBNL).
 - [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] - de Vilmarest et al. (2024): Adaptive probabilistic electricity (net-)load forecasting via Kalman-adapted GAM + online-aggregated quantile regression (IEEE TPWRS).
 - [[2024_Qu_Forwardformer_Day_Ahead_Load]] - Qu et al. (2024): Forwardformer - efficient multi-scale forward self-attention Transformer for day-ahead load forecasting (IEEE TPWRS).
+- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] - Yu et al. (2026): EnergyMamba - graph-enhanced selective SSM in U-Net + AS-CQR adaptive conformalized quantile regression (width-normalized nonconformity + online feedback) for energy consumption prediction (KDD '26).
+- [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] - Hong & Lee (2026): Controlled benchmark of S-Mamba/PowerMamba vs PatchTST/iTransformer vs LSTM across six US ISO grids; weather covariates reverse rankings toward SSMs (arXiv).
+- [[2024_Menati_PowerMamba_Power_Systems_SSM]] - Menati et al. (2024): PowerMamba dual-path standard/inverse Mamba with series decomposition + external-forecast tokens; releases 5-year ERCOT GridSet toolbox (arXiv).
+- [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] - Bouaachra, Amara-Ouali, Goude & Lachieze-Rey (2026): Bayesian latent Gaussian model (SPDE/ICAR-RW2) fitted by INLA on a new open ChargePlace Scotland station-level dataset 2022-2025 (arXiv).
+- [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] - Fernandez-Zapico, Hofman & Salazar (2025): Scenario-based stochastic MPC of charging energy hubs using GBT + EnbPI conformal probabilistic day-ahead forecasts (CDC 2025).
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] - Das et al. (2024): A Decoder-Only Foundation Model for Time-Series Forecasting (TimesFM, Google, 200M, decoder-only patched Transformer, zero-shot) — arXiv:2310.10688v4.
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] - Ansari et al. (2025): Chronos-2: From Univariate to Universal Forecasting (Amazon, universal TSFM with group attention, O(V), 21 quantiles, synthetic multivariatizers, SOTA on fev-bench/GIFT-Eval/Chronos Bench II) — arXiv:2510.15821v1.
+- [[2026_Khwaja_Toto_2_Scaling_Era]] - Khwaja et al. (2026): Toto 2.0: Time Series Forecasting Enters the Scaling Era (Datadog, 5 sizes 4M-2.5B, CPM + quantile head + NorMuon + u-µP, SOTA on BOOM/GIFT-Eval/TIME) — arXiv:2605.20119v2.

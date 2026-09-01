@@ -5,11 +5,11 @@ authors: [Shaojie Bai, J. Zico Kolter, Vladlen Koltun]
 year: 2018
 journal_conference: "arXiv preprint arXiv:1803.01271 (presented as a generic-architecture evaluation; CMU / Intel Labs)"
 doi_url: "https://arxiv.org/abs/1803.01271"
-models_used: ["[[TCN]]", "[[LSTM]]", "[[GRU]]", "[[Vanilla_RNN]]", "[[EURNN]]", "[[TCN_GLU|TCN+Gating]]"]
-datasets_used: ["[[Adding_Problem]]", "[[Sequential_MNIST]]", "[[Permuted_MNIST]]", "[[Copy_Memory]]", "[[JSB_Chorales]]", "[[Nottingham]]", "[[Penn_Treebank]]", "[[Wikitext-103]]", "[[LAMBADA]]", "[[text8]]"]
-features_used: ["[[Raw_Sequence_Input]]", "[[Dilation_Factor]]", "[[Residual_Connections]]", "[[Weight_Normalization]]", "[[Spatial_Dropout]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Accuracy]]", "[[MSE]]", "[[Negative_Log_Likelihood|NLL]]", "[[Perplexity]]", "[[Bits_Per_Character|bpc]]"]
+models_used: ["[[TCN]]", "[[LSTM]]", "[[GRU]]", "[[RNN]]", "[[EURNN]]", "[[TCN|TCN+Gating]]"]
+datasets_used: ["[[Adding_Problem]]", "[[MNIST]]", "[[Copy_Memory]]", "[[JSB_Chorales]]", "[[Nottingham]]", "[[Penn_Treebank]]", "[[Wikitext-103]]", "[[LAMBADA]]", "[[text8]]"]
+features_used: ["[[Raw_Sequence_Input]]", "[[Dilation_Factor]]", "[[Residual_Component]]", "[[Weight_Normalization]]", "[[Spatial_Dropout]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[Accuracy]]", "[[MSE]]", "[[NLL|NLL]]", "[[Perplexity]]", "[[Bits_Per_Character|bpc]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

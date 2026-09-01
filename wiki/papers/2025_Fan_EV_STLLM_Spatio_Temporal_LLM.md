@@ -3,12 +3,13 @@ type: paper
 title: "EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion"
 authors: [Hang Fan, Yunze Chai, Chenxi Liu, Weican Liu, Zuhan Zhang, Wencai Run, Dunnan Liu]
 year: 2025
-journal_conference: "arXiv preprint (arXiv:2507.09527), preprint submitted to Elsevier"
+journal_conference: "Expert Systems with Applications, vol. 313, art. 131620 (2026); preprint arXiv:2507.09527"
+status: metadata-verified-2026-08
 doi_url: "https://doi.org/10.48550/arXiv.2507.09527"
 models_used: ["[[EV-STLLM]]", "[[GPT-2]]", "[[PFGA]]", "[[QLoRA]]", "[[VMD]]", "[[ICEEMDAN]]", "[[FIG]]", "[[ReliefF]]", "[[GCN]]", "[[LSTM]]"]
-datasets_used: ["[[UrbanEV_Dataset]]", "[[Shenzhen_EV_Charging_Dataset]]"]
-features_used: ["[[Charging_Volume]]", "[[Station_Occupancy]]", "[[Holiday_Indicator]]", "[[Adjacency_Matrix]]", "[[Spatio_Temporal_Frequency_Embeddings]]", "[[Electricity_Price]]", "[[Weather]]"]
-forecasting_horizon: "[[Short_Term]]"
+datasets_used: ["[[UrbanEV_Dataset]]", "[[Shenzhen_ST_EVCDP]]"]
+features_used: ["[[Charging_Volume]]", "[[Station_Occupancy]]", "[[Holiday_Flag]]", "[[Adjacency_Matrix]]", "[[Spatio_Temporal_Frequency_Embeddings]]", "[[Electricity_Tariff]]", "[[Weather]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -74,7 +75,7 @@ tags: [paper, ev-load-forecasting, ml]
   - Targets: charging volume and occupancy per station. Additional dynamic factors: time-varying electricity price, service price, weather conditions. Spatial attributes: coordinates, adjacency, distances; static features: pile number, station number.
   - Experiment subsets: two randomly selected zones (**Data 1** and **Data 2**), each 4,345 hourly data points, split 80%/10%/10% train/valid/test. Data 1 volume mean 198.02 kWh (std 98.78); Data 2 volume mean 528.99 (std 225.88).
   - Critical-day experiment: training to Jan 16 2023, validation Jan 17–21, test on five Chinese Spring Festival holiday days (2023-01-22–26) plus subsequent workdays.
-- **Features**: [[Historical_Charging_Volume]], [[Station_Occupancy]], binary [[Holiday_Indicator]] (holiday=1, ordinary day=0, selected via ReliefF), hour-of-day/day-of-week temporal features, high/mid/low-frequency components from VMD-ICEEMDAN, multi-scale (daily/weekly) FIG granules, station adjacency matrix from network topology.
+- **Features**: [[Historical_Load]], [[Station_Occupancy]], binary [[Holiday_Flag]] (holiday=1, ordinary day=0, selected via ReliefF), hour-of-day/day-of-week temporal features, high/mid/low-frequency components from VMD-ICEEMDAN, multi-scale (daily/weekly) FIG granules, station adjacency matrix from network topology.
 - No dedicated code/data repository URL stated in the paper beyond the UrbanEV dataset citation above.
 
 ## 📈 Performance & Results
@@ -97,16 +98,22 @@ tags: [paper, ev-load-forecasting, ml]
 @article{fan2025evstllm,
   title   = {EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion},
   author  = {Fan, Hang and Chai, Yunze and Liu, Chenxi and Liu, Weican and Zhang, Zuhan and Run, Wencai and Liu, Dunnan},
-  journal = {arXiv preprint arXiv:2507.09527},
-  year    = {2025},
-  doi     = {10.48550/arXiv.2507.09527}
+  journal = {Expert Systems with Applications},
+  volume  = {313},
+  pages   = {131620},
+  year    = {2026},
+  doi     = {10.1016/j.eswa.2025.131620},
+  note    = {Preprint: arXiv:2507.09527}
 }
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction]] — PAG baseline (ref. [27])
+- [[2024_Qu_Physics_Informed_GAT_EV_Load]] — PAG baseline (ref. [27])
 - ChatEV (Qu et al., 2024, Transp. Res. Part D, doi:10.1016/j.trd.2024.104470) — LLM-based EV demand prediction baseline (ref. [31])
 - UrbanEV open benchmark (Li et al., 2025, Scientific Data, doi:10.1038/s41597-025-04874-4) — source dataset (ref. [28])
 - ST-LLM / ST-LLM+ (Liu et al., 2024 MDM; 2025 TKDE) — spatio-temporal LLM foundation (refs. [29], [32])
 - GPT4TS / One-Fits-All (Zhou et al., NeurIPS 2023) — pretrained-LM time-series baseline (ref. [42])
 - [[2023_Cheng_VMD_Prophet_LSTM]] — related VMD+LSTM federated EV load forecasting line (ref. [25])
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM_refs]]

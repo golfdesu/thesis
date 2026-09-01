@@ -27,7 +27,7 @@ Target choice strategies: Random / Historical / Mix (+ test-pattern mask for for
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: multivariate series $\in \mathbb{R}^{K\times L}$ with observation mask $M$ and timestamps $s$ (irregular intervals allowed).
-- **Forecasting Horizon**: [[Short_Term]] (168→24 on electricity/traffic/solar benchmarks).
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] (168→24 on electricity/traffic/solar benchmarks).
 - **Strengths**: exact conditional modeling; both temporal AND feature dependencies essential (ablation: healthcare 10% MAE 0.217 vs Bi-RNN 0.272, flatten 0.383); gains already with 5–10 samples.
 - **Weaknesses**: iterative reverse diffusion (50 steps) slow for real-time EV deployment (ODE/DDIM acceleration suggested); forecasting advantage smaller than imputation advantage; historical strategy sensitive to train/test pattern mismatch.
 

@@ -4,6 +4,17 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 
 ---
 
+## [2026-08-24] maintenance | Added gen_paper_digest.py + digest rule to AGENTS.md
+- Moved the digest generator into the vault root as `gen_paper_digest.py` (vault-relative paths, auto date).
+- Updated `AGENTS.md`: Step 4 now includes mandatory regeneration of `paper_digest.md` (item 13) + new section "One-File Paper Digest" defining purpose, generation rule, and no-hand-edit policy.
+
+## [2026-08-24] synthesis | paper_digest.md (one-file AI digest)
+- Generated `paper_digest.md` at vault root: a single-file digest of ALL 108 papers in `wiki/papers/`.
+- Purpose: let an AI agent read ONE file and immediately know what every paper did, for fast research-gap identification.
+- Each entry keeps: title / venue / year / DOI, models-horizon-metrics-data-features line, full contribution bullets ("What they did"), method-core line, key numeric results, and the complete limitations/gaps section.
+- Wikilinks flattened to plain text; equations and BibTeX omitted (remain in the linked per-paper notes). Ordered newest-first with a quick-scan table + corpus snapshot at top.
+- Source of truth unchanged: `wiki/papers/*.md`; regenerate by re-running the digest script if many new papers are ingested.
+
 ## [2026-08-10] maintenance | Created wiki/github/
 - Created dedicated `wiki/github/` folder with repository notes (`EV_Load_Forecasting_Repos.md`, `Probabilistic_Time_Series_Repos.md`, `Time_Series_Foundation_Models_Repos.md`).
 - Linked repository URLs and cross-referenced with paper summaries across the vault.
@@ -409,3 +420,89 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Refreshed research_gaps.md, progress_summary_and_research_gaps.md, proposed_architectures.md, transformer_research_ideas.md against the full 103-paper corpus.
 - Novelty re-validation: flagship combo (Mamba + cross-attention exogenous fusion + conformalized PICNN head) remains unexplored; refuted sub-claims recorded (USDT = first probabilistic EV Transformer; MoghadamDost = first conformalized EV Transformer; EVformer = dynamic-graph pure Transformer).
 - Exported thesis_references.bib with all 103 BibTeX entries.
+
+
+## [2026-08-23] ingest | Batch 4: 5 Gap-Targeted Papers (web-discovered)
+
+- Downloaded PDFs to raw_sources/ (arXiv / KDD '26 / CDC) and extracted full texts to scratch/txt/:
+  - 2026_Yu_EnergyMamba_Graph_Mamba_ASCQR (KDD '26): GE-Mamba (GCN-conditioned bidirectional selective SSM in U-Net) + AS-CQR adaptive conformalized quantile regression (width-normalized nonconformity + online feedback); Florida CBG / NYISO / CAISO energy datasets.
+  - 2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark (arXiv 2602.21415): S-Mamba & PowerMamba vs PatchTST & iTransformer vs LSTM across six US ISO grids, 24-168 h; weather-covariate ranking reversal confirmed architecture-driven (parameter-controlled).
+  - 2024_Menati_PowerMamba_Power_Systems_SSM (arXiv 2412.06112): dual-path standard/inverse Mamba with trend-seasonal decomposition + external-forecast token module; releases ERCOT GridSet (5-year hourly).
+  - 2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand (arXiv 2604.19841): Bayesian latent Gaussian model (SPDE-RW2 / ICAR-RW2) via INLA on new open ChargePlace Scotland station-level dataset (Oct 2022 - Apr 2025; Glasgow subset 96 CPIDs, 104,041 sessions); dominance vs per-station XGBoost/Poisson GLM on MAE at 70-77% of stations.
+  - 2025_FernandezZapico_Stochastic_MPC_Conformal_Hub (CDC 2025): GBT point forecasts wrapped by EnbPI conformal intervals feeding scenario-based stochastic MPC of a charging energy hub (280-day closed loop).
+- Created full-schema wiki/papers/ notes (verbatim equations, BibTeX, citation-graph links); created new concept pages ([[EnergyMamba]], [[AS_CQR]], [[EnbPI]], [[S_Mamba]], [[PowerMamba]], [[INLA_Latent_Gaussian_Model]] plus datasets/metrics) and propagated Literature-Usage bullets across wiki/.
+- Corpus now **108 papers**. BibTeX appended to thesis_references.bib.
+- Gap impact:
+  - P-3 narrowed but OPEN: AS-CQR already does online width-normalized conformal recalibration under shift - but aggregate regional load, non-EV, scalar (non-covariate-conditioned) update; EnbPI hub experiment shows price-interval coverage collapse (CPI 0.60 overall, 0.22 in Autumn gas-crisis) = direct empirical evidence for adaptive recalibration need.
+  - T-7 three-way benchmark CLOSED for grid-level hourly load (Hong & Lee), still OPEN for EV station-level sub-hourly probabilistic forecasting.
+  - Flagship novelty repositioned: EnergyMamba refutes any bare "no Mamba+conformal combination" claim at aggregate granularity; surviving composition = EV-station-level loads + cross-attention exogenous fusion + monotone PICNN head + adaptive conformal guarantees. See research_gaps.md refresh.
+
+
+## [2026-08-23] synthesis | NEW Methodology & System-Level Gaps (M-1..M-5)
+- Added cross-cutting gap section to research_gaps.md, derived from Batch-4 refresh + full-corpus synthesis; no new PDFs ingested:
+  - M-1 Benchmark aging / temporal validity drift (rolling-origin accuracy-vs-data-age curves across Palo Alto/Boulder/ElaadNL/ChargePlace Scotland).
+  - M-2 Leakage audit + unified probabilistic benchmark protocol (CRPS/PICP/Winkler + peak-zone WAPE, fixed rolling origins).
+  - M-3 Continual season-adaptive station models with jointly-guaranteed calibration (backbone updates + online quantile recalibration without forgetting rare regimes).
+  - M-4 Adversarial/poisoning robustness of probabilistic EV forecasts (interval distortion under manipulated history; attack-aware recalibration).
+  - M-5 Task-oriented calibration targets (calibration level x sharpness -> cost/CO2 per downstream operation).
+- Priority matrix added; positioning notes: M-2 = thesis-defensibility infrastructure, M-1 = standalone analysis chapter.
+
+
+## [2026-08-23] synthesis | Point-Forecast Track positioning added
+- Added dedicated section to research_gaps.md recording that the thesis core remains DL point forecasting:
+  - PF-1 peak-zone accuracy via asymmetric/peak-weighted loss (own benchmark: Peak-Zone WAPE 24-37%).
+  - PF-2 multi-horizon Transformer (answer Kyriakopoulos: Transformers currently win short-term only).
+  - PF-3 tokenization & exogenous-fusion mechanism benchmark for EV (T-2/T-3 sharpened).
+  - PF-4 DC fast-charging point forecasting (remaining sliver of primary Gap 3).
+  - M-1/M-2 reused as model-agnostic methodology infrastructure.
+- Thesis formula recorded: RevIN + series decomposition + multi-scale patching + asymmetric peak-loss, evaluated under M-2 protocol with horizon-split reporting; probabilistic head demoted to optional extension axis (not identity change).
+
+## [2026-08-26] audit | Synthesis consistency audit (guides + root synthesis docs)
+- Verified vault state: 118 paper notes in wiki/papers/ vs 108 PDFs in raw_sources/ (10 web-discovered notes beyond last logged batch: 2021_Alvarez_APLF, 2021_Browell_Fasiolo, 2021_Obst_Vilmarest_Goude, 2022_Vilmarest_Goude_State_Space_PostCOVID, Bahdanau2016_LSTMa, Beltagy2020_Longformer, Berrisch_Ziel_CRPS_Learning, Gaillard2016_GEFCOM2014, Wintenberger2017_BOA, Zaffran2022_Adaptive_Conformal).
+- Fixed 19 dead wikilinks across index.md / research_gaps.md / progress_summary_and_research_gaps.md / proposed_architectures.md / transformer_research_ideas.md: renamed-note targets updated (Lyapunov 2021->2026_Huang, Mansour 2025->2026, PC-M3 Chen->Tang, Vaswani link variant, Koohfar/Feng/Ke/Shi/Helmy/Meyer/CAT-Former/Khan/Matrone/Alghamdi/Hussain legacy names, Mamba-3 -> Lahoti).
+- Refreshed stale corpus counts 103/108/70 -> 118 papers (108 PDFs) in index.md, research_gaps.md, progress_summary_and_research_gaps.md, proposed_architectures.md, transformer_research_ideas.md with 2026-08-26 date stamps.
+- Regenerated paper_digest.py output (paper_digest.md): now covers all 118 papers.
+- All 14 wiki/guides/*.md stubs checked: every wiki-link resolves; no count claims inside guides.
+
+## [2026-08-31] system | Agent Customizations & Modular Skills Initialization (.agents/skills/)
+- **Infrastructure Created:**
+  - Initialized workspace customizations root: `.agents/skills/`
+  - Created 4 modular agent skills adhering to Antigravity Progressive Disclosure schema:
+    1. `.agents/skills/ingest-paper/SKILL.md` (End-to-end PDF extraction and knowledge graph propagation)
+    2. `.agents/skills/extract-datasets/SKILL.md` (Deep scanning for datasets, DOIs, and GitHub links)
+    3. `.agents/skills/thesis-query/SKILL.md` (Answering questions via paper_digest.md and maintaining wikilinks)
+    4. `.agents/skills/refresh-synthesis/SKILL.md` (Running gen_paper_digest.py and updating gap metrics)
+- **Pages Updated:**
+  - [[AGENTS.md]] (Added Agent Skills Architecture section mapping workflows to runbooks)
+- **Status:** All agent skills operational and compliant with the schema instructions.
+
+## [2026-09-01] ingest | 2024_Das_TimesFM_Decoder_Only_Foundation_Model
+- Source: raw_sources/New/2310.10688v4.pdf (arXiv:2310.10688v4, Das et al., Google, April 2024) -> copied to raw_sources/2024_Das_TimesFM_Decoder_Only_Foundation_Model.pdf and scratch/txt/2310.10688v4.txt (+ canonical txt).
+- Created wiki/papers/2024_Das_TimesFM_Decoder_Only_Foundation_Model.md (full schema: 8 equations Eq.1-8, Table 1 corpus, Table 2/3/4/5 results, A.1 limitations, BibTeX, citation graph).
+- Created wiki/references/2024_Das_TimesFM_Decoder_Only_Foundation_Model_refs.md (44 refs).
+- Propagated: wiki/models/TimesFM.md (rewritten from stub, Overview + Literature Usage + Related Models), LLMTime.md (new), PatchTST/NBEATS/DeepAR/Transformer/Informer/Autoformer/FEDFormer/TimesNet/DLinear/ARIMA/ETS/CatBoost/TiDE + stubs WaveNet/TBATS/Theta/TimeGPT-1; wiki/metrics/msMAPE.md (new) + MAE/MSE/MAPE; wiki/features/Historical_Load.md; wiki/horizons/Long_Term/Short_Term/Day_Ahead; wiki/datasets/Google_Trends (new), Monash_Archive (new), Darts (new), LibCity (new) + Electricity_ECL/Wikipedia_Pageviews/ETC updates; wiki/github/Time_Series_Foundation_Models_Repos.md + github_repositories_index.md (TimesFM repo entry).
+- Updated raw_sources/paper_index.md (#81), index.md (119 papers / 109 PDFs, added paper line), thesis_references.bib (+1, now 109), dataset_extraction_report.md (appended TimesFM breakdown).
+- Regenerated paper_digest.md (119 papers, 369 KB, 2026-09-01).
+- Duplicate check: no prior PDF with same name; content-uniq vs 2024_Das_TiDE (different paper, same first author) and vs Meyer benchmark (only referencing TimesFM).
+## [2026-09-01] ingest | 2026_Khwaja_Toto_2_Scaling_Era
+- Source: raw_sources/New/2605.20119v2.pdf (arXiv:2605.20119v2, Khwaja et al., Datadog AI Research + CMU, June 2026) -> copied to raw_sources/2026_Khwaja_Toto_2_Scaling_Era.pdf and scratch/txt/2605.20119v2.txt (+ canonical 2026_Khwaja_Toto_2_Scaling_Era.txt; 68705 chars, 19 pages, fitz extraction).
+- Created wiki/papers/2026_Khwaja_Toto_2_Scaling_Era.md (full schema: 8 equations Eq.1-8 (CPM Eq.1, pinball Eq.2, quantile head Eq.3, pinball gradient Eq.4, NorMuon Eq.5, arcsinh scaler Eq.6, u-muP Eq.7, OWA Eq.8), Tables 1/Figs 5-10 results, BibTeX, citation graph).
+- Created wiki/references/2026_Khwaja_Toto_2_Scaling_Era_refs.md (62 refs) and wiki/models/Toto.md (full: overview + CPM/quantile/NorMuon/u-muP + Literature Usage + Related Models).
+- Propagated: wiki/models/Toto.md (new) + PatchTST/Transformer/Moirai/Chronos/Chronos-Bolt/Sundial/Time-MoE/TimesFM/TimesFM_2.0 (updated) + FlowState/Xihe/Timer/TiRex/Granite/TTM/xLSTM/Muon/NorMuon/Migas/Reverso (new stubs); wiki/datasets/BOOM (new), GIFT-Eval (new), TIME_Benchmark (new), Datadog_Observability (new), TempoPFN_Synthetic (new), GIFT_Eval_Pretrain (new); wiki/metrics/CRPS/MASE/Pinball_Loss/OWA (updated); wiki/features/Historical_Load.md (updated); wiki/horizons/Long_Term/Short_Term/Day_Ahead (updated); wiki/hyperparameters/Optuna_TPE (updated) + u-muP/Unit_Scaling/WSD_Schedule (new); wiki/github/Time_Series_Foundation_Models_Repos.md + github_repositories_index.md (Toto 2.0 + dd_unit_scaling entries).
+- Updated raw_sources/paper_index.md (#82), index.md (120 papers / 110 PDFs, added paper line), thesis_references.bib (+1, now 110), dataset_extraction_report.md (appended 5 datasets + 6 URLs).
+- Regenerated paper_digest.md (120 papers, 374 KB, 2026-09-01).
+- Duplicate check: no prior wiki/papers/*Toto* or wiki/models/*Toto*; 2604.19841v1 duplicate of existing 2026_Bouaachra_INLA skipped; content-uniq vs TimesFM and other TSFMs in corpus.
+## [2026-09-01] ingest | 2025_Ansari_Chronos_2_Univariate_to_Universal
+- Source: raw_sources/New/2510.15821v1.pdf (arXiv:2510.15821v1, Ansari et al., Amazon Web Services, Oct 2025, 31 pages) -> copied to raw_sources/2025_Ansari_Chronos_2_Univariate_to_Universal.pdf and scratch/txt/2510.15821v1.txt (+ canonical 2025_Ansari_Chronos_2_Univariate_to_Universal.txt; 115264 chars, fitz extraction).
+- Created wiki/papers/2025_Ansari_Chronos_2_Univariate_to_Universal.md (full schema: 5 equations Eq.1-5 (robust sinh-asinh scaling Eq.1-2, patch embedding Eq.3, quantile regression Eq.4, denormalization Eq.5), Tables 1-6/Figs 1-8 results, BibTeX, citation graph).
+- Created wiki/references/2025_Ansari_Chronos_2_Univariate_to_Universal_refs.md (~70 refs dump, pp.15-19).
+- Created wiki/models/Chronos-2.md (new, universal group-attention overview); updated wiki/models/Chronos.md, Chronos-Bolt.md, TimesFM.md, TiRex.md, Toto.md, COSMIC (new), Moirai.md, Sundial.md, TabPFN-TS (new), AutoARIMA/ETS/Theta (new), PatchTST/TFT/DeepAR/N-BEATS/Transformer/Covariates.
+- Created wiki/datasets/fev-bench.md (100 tasks), Chronos_Benchmark_II.md (27 tasks), Chronos_Corpus.md; updated GIFT-Eval.md, GIFT_Eval_Pretrain.md, Electricity_ECL.md, M4.md, Solar_Dataset.md, Traffic.md, Weather.md, Wiki_Pageviews.md, Buildings_900K.md (new).
+- Created wiki/metrics/SQL.md, WQL.md, Win_Rate.md, Skill_Score.md; updated CRPS.md, MASE.md, Pinball_Loss.md.
+- Created wiki/features/Known_Covariates.md, Past_Only_Covariates.md, Categorical_Covariates.md, Categorical_Features.md; updated Historical_Load.md, Known_Future_Inputs.md.
+- Updated wiki/horizons/Long_Term_Forecasting.md, Short_Term_Forecasting.md, Day_Ahead_Forecasting.md, Spatial_Temporal_Forecasting.md.
+- Updated wiki/github/Time_Series_Foundation_Models_Repos.md (#25 Chronos-2, https://github.com/amazon-science/chronos-forecasting, 120M base / 28M small) and wiki/references/github_repositories_index.md.
+- Updated raw_sources/paper_index.md (#83), index.md (121 papers / 111 PDFs, added paper line), thesis_references.bib (+1, now 111, ansari2025chronos2), dataset_extraction_report.md (appended 9 datasets/URLs, benchmarks + Table 6 + multivariatizers).
+- Regenerated paper_digest.md (121 papers, 388 KB, 2026-09-01) via python gen_paper_digest.py.
+- Duplicate check: no prior wiki/papers/*Chronos-2* or *2025_Ansari*; no raw_sources/*Chronos*; raw_sources/New/2510.15821v1.pdf content-uniq vs Chronos/Bolt/Chronos Benchmark II; 2510.15821v1 is the canonical Chronos-2 tech report.
+

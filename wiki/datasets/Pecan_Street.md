@@ -9,6 +9,10 @@ resolution: "1-minute and 15-minute"
 last_updated: 2026-08-02
 url: "https://www.pecanstreet.org/dataport/"
 tags: [dataset, residential-charging, smart-meter, USA, pecan-street]
+name: "Pecan Street Dataport"
+access: "academic/paid license via Dataport registration"
+license: "Proprietary Dataport Data License Agreement (academic free tier / paid commercial); no resale, no sub-license"
+commercial_use: prohibited
 ---
 
 # 📁 Pecan Street Dataport
@@ -26,8 +30,9 @@ The **Pecan Street Dataport** is a large-scale residential energy dataset from *
 |-----------|-------|
 | Location | Austin, Texas, USA (primary); New York, California (secondary) |
 | Participants | ~1,000 homes (Austin), smaller cohorts in other cities |
+| Homes with EVs | ~160 EV-equipped homes with 12+ years of charging records |
 | Charger Type | Residential Level 1 (1.4 kW) and Level 2 (6.6 kW) |
-| Temporal Resolution | 1-minute and 15-minute intervals |
+| Temporal Resolution | 1-minute and 15-minute intervals; circuit-level data up to 1-second for a subset |
 | Data Period | 2012–present (ongoing collection) |
 | Features | Smart meter, EV charging, solar PV, appliance-level |
 | Access | Academic license via Pecan Street website |
@@ -43,7 +48,7 @@ The **Pecan Street Dataport** is a large-scale residential energy dataset from *
 
 ## Unique Advantages
 
-- **High temporal resolution**: 1-minute granularity enables short-term forecasting research.
+- **High temporal resolution**: 1-minute granularity (up to 1-second circuit-level for a subset) enables short-term forecasting research.
 - **Long time series**: Multi-year records allow seasonal and annual trend analysis.
 - **Multi-energy context**: EV load in context of solar, HVAC, and household demand.
 - **Socioeconomic diversity**: Homes across different income levels and building types.

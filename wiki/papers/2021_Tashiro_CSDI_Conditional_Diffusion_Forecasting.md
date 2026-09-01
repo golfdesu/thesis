@@ -5,11 +5,11 @@ authors: [Yusuke Tashiro, Jiaming Song, Yang Song, Stefano Ermon]
 year: 2021
 journal_conference: "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)"
 doi_url: "https://arxiv.org/abs/2107.03502"
-models_used: ["[[CSDI]]", "[[Conditional_Diffusion_Model|Conditional Score-based Diffusion Model]]", "[[DDPM]]", "[[DiffWave]]", "[[Transformer]]", "[[TimeGrad]]"]
-datasets_used: ["[[PhysioNet_2012_Healthcare]]", "[[Beijing_PM25_Air_Quality]]", "[[Solar_Alabama]]", "[[Electricity_ECL]]", "[[Traffic_PEMS-SF]]", "[[Taxi_NYC]]", "[[Wiki_Pageviews]]"]
-features_used: ["[[Observation_Mask]]", "[[Conditional_Mask]]", "[[Timestamps]]", "[[Temporal_Embedding]]", "[[Feature_Embedding]]", "[[Diffusion_Step_Embedding]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[CRPS]]", "[[CRPS_Sum]]", "[[MAE]]", "[[RMSE]]", "[[MSE]]", "[[NLL]]"]
+models_used: ["[[CSDI]]", "[[DDPM|Conditional Score-based Diffusion Model]]", "[[Transformer]]", "[[TimeGrad]]"]
+datasets_used: ["[[PhysioNet_2012_Healthcare]]", "[[Beijing_PM25_Air_Quality]]", "[[Solar_Alabama]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[NYC_Taxi]]", "[[Wiki_Pageviews]]"]
+features_used: ["[[Observation_Mask]]", "[[Conditional_Mask]]", "[[Timestamp]]", "[[Temporal_Embedding]]", "[[Feature_Embedding]]", "[[Diffusion_Step_Embedding]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[CRPS]]", "[[MAE]]", "[[RMSE]]", "[[MSE]]", "[[NLL]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - **Core problem**: Probabilistic imputation of missing values in multivariate time series. Prior score-based approaches (Song et al. SDE; repainting-style methods) *approximate* the conditional reverse process by noising the observations, which destroys useful information in $x^{co}_0$ and does not correspond to the exact conditional distribution. Autoregressive/RNN imputation methods (BRITS, GLIMA) struggle with complex missing patterns.
-- **Primary contribution**: **CSDI** — a conditional score-based [[DDPM]] trained *directly* on the conditional distribution $q(x^{ta}_0 \mid x^{co}_0)$ via a self-supervised masked-training scheme (inspired by masked language modeling / BERT), with a 2D (temporal + feature) Transformer denoiser based on [[DiffWave]].
+- **Primary contribution**: **CSDI** — a conditional score-based [[DDPM]] trained *directly* on the conditional distribution $q(x^{ta}_0 \mid x^{co}_0)$ via a self-supervised masked-training scheme (inspired by masked language modeling / BERT), with a 2D (temporal + feature) Transformer denoiser based on [[DDPM]].
 - Results: CRPS improved **40–65%** over existing probabilistic imputation baselines; deterministic MAE improved **5–20%** over SOTA deterministic methods; also competitive at interpolation and probabilistic forecasting.
 
 ## 🧠 Methodology & Model Architecture
@@ -47,8 +47,8 @@ where $\tilde{x}^{ta}_t = \sqrt{\alpha_t}\tilde{x}^{ta}_0 + (1-\alpha_t)\tilde{\
 - **Forecasting datasets** (GluonTS preprocessed, Table 6: features K / total steps / history $L_1$ / predict $L_2$):
   - [[Solar_Alabama]]: hourly solar power, 137 stations, Alabama, 10392 steps, 168→24
   - [[Electricity_ECL]]: hourly consumption of 370 customers, 5833 steps, 168→24
-  - [[Traffic_PEMS-SF]]: hourly occupancy of 963 SF freeway lanes, 7009 steps, 168→24
-  - [[Taxi_NYC]]: half-hourly taxi traffic at 1214 NYC locations, Jan 2015 train / Jan 2016 test, 1488 steps, 48→24
+  - [[Traffic]]: hourly occupancy of 963 SF freeway lanes, 7009 steps, 168→24
+  - [[NYC_Taxi]]: half-hourly taxi traffic at 1214 NYC locations, Jan 2015 train / Jan 2016 test, 1488 steps, 48→24
   - [[Wiki_Pageviews]]: daily views of 2000 Wikipedia pages, 792 steps, 90→30
 - Features: observation mask, conditional mask, timestamps, categorical feature embeddings, diffusion-step embedding.
 - **Links / data availability**:

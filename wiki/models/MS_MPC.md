@@ -19,7 +19,7 @@ MS-MPC handles uncertainties in renewable generation and EV arrival/departure by
 - **Upper Layer Multi-Scenario Objective**:
   $$\min \sum_{j=1}^{N_S} \rho_j \sum_{t=k}^{k+N_u-1} J_T^j(t)$$
 - **Lower Layer Individual EV Allocation**:
-  $$\min \left| \sum_{i=1}^{n_{\text{EVs}}} p_{\text{EV}}^i(t) - p_{\text{agg,upper}}^{\ref}(t) \right|$$
+  $$\min \left| \sum_{i=1}^{n_{\text{EVs}}} p_{\text{EV}}^i(t) - p_{\text{agg,upper}}^{*}(t) \right|$$
 
 ## Literature References
 - [[2025_Yang_Stochastic_MPC_Microgrid_EV]] - Proposed two-layer MS-MPC for V2G microgrid energy management.

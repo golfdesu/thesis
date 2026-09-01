@@ -5,10 +5,10 @@ authors: [Xingshuai Huang, Di Wu, Benoit Boulet]
 year: 2020
 journal_conference: "2020 IEEE Electric Power and Energy Conference (EPEC)"
 doi_url: "https://doi.org/10.1109/EPEC48502.2020.9319916"
-models_used: ["[[Ensemble_Learning]]", "[[ANN]]", "[[RNN]]", "[[LSTM]]", "[[Linear_Regression]]"]
-datasets_used: ["[[Boulder_EV_Charging_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Transaction_Start_Time]]", "[[Charging_Time]]", "[[Energy_Consumption]]", "[[Hourly_Aggregated_Load]]"]
-forecasting_horizon: "[[Short_Term]]"
+models_used: ["[[Ensemble_Stacking]]", "[[ANN]]", "[[RNN]]", "[[LSTM]]", "[[Linear_Regression]]"]
+datasets_used: ["[[Boulder_Colorado]]"]
+features_used: ["[[Historical_Load]]", "[[Arrival_Departure_Time]]", "[[Charging_Duration]]", "[[Energy_Consumption]]", "[[Hourly_Aggregated_Load]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -41,7 +41,7 @@ $$\text{MSE} = \frac{1}{N}\sum_{i=1}^{N}(y_i^p - y_i)^2 \tag{8}$$
 - Optimizers: [[Adam]] for ANN and LSTM; RMSProp for RNN. Look-back timestep = 24 hours (also tested at 12).
 
 ## 📊 Dataset & Input Features
-- **[[Boulder_EV_Charging_Dataset]]**: real-world EV charging load data of all city-owned EV charging stations in Boulder, Colorado, from **1 January 2018 to 31 July 2020**, containing an overview of **20,562 random transactions**.
+- **[[Boulder_Colorado]]**: real-world EV charging load data of all city-owned EV charging stations in Boulder, Colorado, from **1 January 2018 to 31 July 2020**, containing an overview of **20,562 random transactions**.
 - Data availability / source link (ref. [24]): https://bouldercolorado.gov/open-data/electric-vehicle-charging-stations
 - Fields used: transaction start time, charging time, energy consumption. Preprocessing: convert transactions → real-time charging power using charging time, aggregate into **1-hour average charging load** windows; defective data replaced by the average charging load at the same hour of the day before and after.
 - Split: **70% training / 30% test**. Input look-back window: previous 24 hours (or 12) → predict current hourly load.
@@ -83,3 +83,6 @@ $$\text{MSE} = \frac{1}{N}\sum_{i=1}^{N}(y_i^p - y_i)^2 \tag{8}$$
 - [[2019_Zhu_EV_Load_Forecasting]] — Zhu et al., comparative deep learning study for EV charging stations (refs. [17], [18])
 - [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] — Q-learning-based EV charging load forecasting (ref. [19])
 - Sutskever et al. (2014) — sequence-to-sequence learning (ref. [12])
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2020_Huang_Ensemble_EV_Load_refs]]

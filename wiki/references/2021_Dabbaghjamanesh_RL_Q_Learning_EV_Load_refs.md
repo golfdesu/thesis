@@ -20,7 +20,7 @@
 14. M. A. Ortega-Vazquez, F. Bouffard, and V. Silva, “Electric vehicle aggre- gator/system operator coordination for charging scheduling and services procurement,” IEEE Trans. Power Systems, vol. 28, no. 2, pp. 1806–1815, May 2013.
 15. Q. Dai, T. Cai, S. Duan, and F. Zhao, “Stochastic modeling and forecasting of load demand for electric bus battery-swap station,” IEEE Trans. Power Deliv., vol. 29, no. 4, pp. 1909–1917, Aug. 2014.
 16. M. C. Kisacikoglu, F. Erden, and N. Erdogan, “Distributed control of PEV charging based on energy demand forecast,” IEEE Trans. Ind. Inform., vol. 14, no. 1, pp. 332–341, Jan. 2018.
-17. C. Gmez-Quiles et al., “A novel ensemble method for electric vehicle power consumption forecasting: Application to the Spanish system,” IEEE Access, vol. 7, no. 4, pp. 120840–120856, Sep. 2019, doi: 10.1109/AC- CESS.2019.2936478.
+17. C. Gmez-Quiles et al., “A novel ensemble method for electric vehicle power consumption forecasting: Application to the Spanish system,” IEEE Access, vol. 7, no. 4, pp. 120840–120856, Sep. 2019, doi: 10.1109/ACCESS.2019.2936478.
 18. E. S. Xydas, C. E. Marmaras, L. M. Cipcigan, A. S. Hassan, and N. Jenkins, “Electric vehicle load forecasting using data mining methods,” in Proc. IET Hybrid Electric Veh. Conf. (HEVC 2013), Nov 2013, pp. 1–6.
 19. J. Mackenzie, J. F. Roddick, and R. Zito, “An evaluation of HTM and LSTM for short-term arterial traffic flow prediction,” IEEE Trans. Intell. Transp. Systems, vol. 20, no. 5, pp. 1847–1857, May 2019.
 20. Q. Li, F. Wang, J. Wang, and W. Li, “LSTM-based SQL injection detection method for intelligent transportation system,” IEEE Trans. Veh. Technol., vol. 68, no. 5, pp. 4182–4191, May 2019.

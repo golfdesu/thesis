@@ -1,5 +1,5 @@
 ---
-type: github
+type: ""
 name: Probabilistic & Diffusion Forecasting Repositories
 category: Advanced Probabilistic Time Series Frameworks
 tags:
@@ -22,7 +22,7 @@ This note collects open-source repositories implementing probabilistic time seri
 - **Cited Paper**: [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]
 
 ### 2. TimeGrad (Autoregressive Denoising Diffusion Models)
-- **Repository URL**: `https://github.com/zalanborsos/timegrad`
+- **Repository URL**: `https://github.com/zalandoresearch/pytorch-ts` *(URL corrected [2026-08-26]; was `zalanborsos/timegrad`, which does not exist — official TimeGrad implementation is the `time_grad_estimator.py` inside Zalando Research's pytorch-ts)*
 - **Description**: ICML 2021 implementation of TimeGrad combining autoregressive RNNs with denoising diffusion probabilistic models (DDPM).
 - **Cited Paper**: [[2021_Rasul_TimeGrad_Diffusion_Forecasting]]
 
@@ -45,3 +45,11 @@ This note collects open-source repositories implementing probabilistic time seri
 - **Repository URL**: `https://github.com/kamilest/conformal-rnn`
 - **Description**: Official NeurIPS 2021 implementation of conformalized quantile regression (MQR baseline) wrapped around recurrent forecasters for valid, adaptive prediction intervals.
 - **Cited Paper**: [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]
+
+### 7. ChargingEnergyHubs_MPC (Stochastic MPC with Conformal Prediction) — *added in [2026-08-23] ingestion pass*
+- **Repository URL**: `https://github.com/diegofz/ChargingEnergyHubs_MPC`
+- **Description**: IEEE CDC 2025 code for an EV+PV+BESS charging energy hub EMS: GBT point forecasters wrapped by EnbPI conformal intervals (MAPIE) feeding scenario-based stochastic/recourse SOCP-MPC, evaluated closed-loop over 280 days.
+- **Cited Paper**: [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]
+
+---
+Master index: [[github_repositories_index]]

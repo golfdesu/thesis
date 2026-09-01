@@ -5,7 +5,7 @@
 ---
 
 1. A. Banerji, K. Sharma, and R. L. R. Singh, “Integrating renewable energy and electric vehicle systems into power grid: Benefits and challenges,” 2021 Innovations in Power and Advanced Computing Technologies (i-PACT), pp. 1–6, 2021.
-2. B. Singh, G. Majeau-Bettez, and A. H. Strømman, “Corrigendum to: Hawkins, t. r., b. singh, g. majeau-bettez, and a. h. strømman. 2012. comparative environmental life cycle assessment of conventional and electric vehicles. journal of industrial ecology doi: 10.1111/j.1530- 9290.2012.00532.x,” Journal of Industrial Ecology, vol. 17, 2013.
+2. B. Singh, G. Majeau-Bettez, and A. H. Strømman, “Corrigendum to: Hawkins, t. r., b. singh, g. majeau-bettez, and a. h. strømman. 2012. comparative environmental life cycle assessment of conventional and electric vehicles. journal of industrial ecology doi: 10.1111/j.1530-9290.2012.00532.x,” Journal of Industrial Ecology, vol. 17, 2013.
 3. International Energy Agency (IEA), “Global ev outlook 2024,” https://www.iea.org/reports/global-ev-outlook-2024, 2024, 2024-05-10. [Online]. Available: https://www.iea.org/reports/global-ev-outlook-2022
 4. K. Clement-Nyns, E. Haesen, and J. Driesen, “The impact of charging plug-in hybrid electric vehicles on a residential distribution grid,” IEEE Transactions on Power Systems, vol. 25, no. 1, pp. 371–380, 2010.
 5. M. W. Ali, “Deep adaptive knowledge-aware learning for e-mobility,” in Organic Computing - Doctoral Dissertation Colloquium 2022, S. Tom- forde and C. Krupitzer, Eds. kassel university press, 2022, p. 139–155.

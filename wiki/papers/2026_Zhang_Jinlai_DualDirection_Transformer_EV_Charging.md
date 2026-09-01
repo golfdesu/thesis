@@ -5,11 +5,11 @@ authors: [Jinlai Zhang, Liuqi Tan, Hancheng Xie, Kai Gao, Wenzheng Liu, Jie Su, 
 year: 2026
 journal_conference: "Sustainable Energy, Grids and Networks"
 doi_url: "https://doi.org/10.1016/j.segan.2026.102428"
-models_used: ["[[USDT]]", "[[SMAN]]", "[[DDI]]", "[[Informer]]", "[[Probformer]]", "[[Transformer]]", "[[DeepAR]]", "[[LSTM]]", "[[ARIMA]]", "[[Prophet]]", "[[SVR]]", "[[FEDM]]", "[[PICCN]]"]
-datasets_used: ["[[EVnetNL_ElaadNL_Dataset]]", "[[Perth_EV_Charging_Dataset]]", "[[Boulder_EV_Charging_Dataset]]", "[[Palo_Alto_EV_Charging_Dataset]]"]
-features_used: ["[[Charging_Load_Sequence]]", "[[Temporal_Feature_Encoding]]", "[[Calendar_Covariates]]"]
-forecasting_horizon: "[[Long_Term]]"
-metrics: ["[[RMSE]]", "[[MSE]]", "[[MAE]]", "[[R2_Score]]", "[[ACE]]", "[[CRPS]]"]
+models_used: ["[[USDT]]", "[[SMAN]]", "[[DDI]]", "[[Informer]]", "[[MetaProbformer]]", "[[Transformer]]", "[[DeepAR]]", "[[LSTM]]", "[[ARIMA]]", "[[Prophet]]", "[[SVR]]", "[[FEDM]]", "[[PICCN]]"]
+datasets_used: ["[[ElaadNL]]", "[[Perth_EV]]", "[[Boulder_Colorado]]", "[[Palo_Alto_EV]]"]
+features_used: ["[[Historical_Load]]", "[[Cyclical_Encodings]]", "[[Calendar_Features]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
+metrics: ["[[RMSE]]", "[[MSE]]", "[[MAE]]", "[[R_squared]]", "[[ACE]]", "[[CRPS]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -17,10 +17,10 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - **Problem:** Conventional EV charging load forecasting struggles with (i) intricate temporal dependencies and spatial characteristics and (ii) uncertainty in load fluctuations.
-- **Proposal:** **USDT — Uncertainty-Scale Dual-Direction Transformer**, a probabilistic charging-load forecasting model on an [[Informer]]/[[Probformer]] backbone with two new modules:
+- **Proposal:** **USDT — Uncertainty-Scale Dual-Direction Transformer**, a probabilistic charging-load forecasting model on an [[Informer]]/[[MetaProbformer]] backbone with two new modules:
 	- **SMAN (Scalable Multi-Scale Linear Attention Network):** captures load variation across multiple temporal/spatial scales using convolutional projections + query sparsity.
 	- **DDI (Dual-Direction Interaction module):** bidirectional attention (horizontal = cross-station patterns, vertical = within-station temporal dynamics) for local spatial relationships.
-- Probabilistic output $\mathcal{N}(\mu_t,\sigma_t^2)$ per step; **>10% improvement** in [[RMSE]] on [[EVnetNL_ElaadNL_Dataset]] vs existing methods.
+- Probabilistic output $\mathcal{N}(\mu_t,\sigma_t^2)$ per step; **>10% improvement** in [[RMSE]] on [[ElaadNL]] vs existing methods.
 
 ## 🧠 Methodology & Model Architecture
 ### Preliminaries
@@ -45,7 +45,7 @@ $$PE(pos, 2i) = \sin\!\left(\frac{pos}{10{,}000^{2i/d_{model}}}\right), \qquad P
 $$\mathcal{L} = -\sum_{t=1}^{m} \log P(y_t \mid y_{<t}, X) \tag{3.6}$$
 
 ### USDT framework
-Encoder: embeddings → SMAN → DDI → MHPSA → SAD → MHPSA. Decoder: truncated history + target sequences → MMHPSA + MHA → fully connected layer → predictive PDF → sampling. MHPSA/SAD/MMHPSA/MHA/FCL/PDF modules inherited from [[Informer]] [34] and [[Probformer]]/MetaProbformer [26].
+Encoder: embeddings → SMAN → DDI → MHPSA → SAD → MHPSA. Decoder: truncated history + target sequences → MMHPSA + MHA → fully connected layer → predictive PDF → sampling. MHPSA/SAD/MMHPSA/MHA/FCL/PDF modules inherited from [[Informer]] [34] and [[MetaProbformer]]/MetaProbformer [26].
 
 ### SMAN equations
 Convolutional Q/K/V generation embedding spatial-temporal neighborhood structure (Eq. 4.1):
@@ -70,10 +70,10 @@ Input length 96 h, label length 48, prediction length 1 (hourly steps), batch si
 
 ## 📊 Dataset & Input Features
 Four public charging-session datasets (start/end time + total energy per session), aggregated at strict hourly granularity with temporal features:
-- **[[EVnetNL_ElaadNL_Dataset]]** — Netherlands, multiple stations, 12 months, 8760 points. URL: https://platform.elaad.io/analyses/ElaadNL_opendata.php
-- **[[Perth_EV_Charging_Dataset]]** — Perth, UK, 4 months, 2953 points. URL: https://data.pkc.gov.uk/dataset/ev-charging-data
-- **[[Boulder_EV_Charging_Dataset]]** — Boulder, Colorado, USA, 31 months, 22,632 points. URL: https://open-data.bouldercolorado.gov/datasets/
-- **[[Palo_Alto_EV_Charging_Dataset]] (PALO)** — California, USA, ~5 months, 3114 points. URL: https://data.cityofpaloalto.org/dataviews/241685/ELECT-VEHIC-CHARG-STATI-USAGE/
+- **[[ElaadNL]]** — Netherlands, multiple stations, 12 months, 8760 points. URL: https://platform.elaad.io/analyses/ElaadNL_opendata.php
+- **[[Perth_EV]]** — Perth, UK, 4 months, 2953 points. URL: https://data.pkc.gov.uk/dataset/ev-charging-data
+- **[[Boulder_Colorado]]** — Boulder, Colorado, USA, 31 months, 22,632 points. URL: https://open-data.bouldercolorado.gov/datasets/
+- **[[Palo_Alto_EV]] (PALO)** — California, USA, ~5 months, 3114 points. URL: https://data.cityofpaloalto.org/dataviews/241685/ELECT-VEHIC-CHARG-STATI-USAGE/
 - **Data availability statement:** "Data will be made available upon request."
 - Split: chronological 60/20/20 train/validation/test, same global windows across stations, sliding windows within subsets only (input window 96, label window 48). Preprocessing: DatetimeIndex ordering, z-score normalization on training-split statistics only; no imputation/outlier clipping. Univariate setting: load is the sole signal, augmented with cyclical/discrete calendar time encodings as exogenous marks for encoder and decoder.
 

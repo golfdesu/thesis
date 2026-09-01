@@ -9,6 +9,10 @@ tags:
   - dataset
   - acn
   - open-source
+resolution: Session-level (connection/disconnect/done-charging timestamps; optional 1-min current & pilot-signal time series)
+access: open
+license: "Open access, no formal data license; API registration + citation requested; Caltech reserves rights (see ev.caltech.edu terms)"
+commercial_use: restricted
 ---
 
 # 📁 Caltech Adaptive Charging Network (ACN-Data)
@@ -36,9 +40,9 @@ ACN-Data is a public open-source dataset of EV charging sessions collected from 
 | [[2024_Bampos_EV_Load_Forecasting_DAM]] | Day-ahead-market load-curve forecasting benchmark |
 | [[2024_Qu_Physics_Informed_GAT_EV_Load]] | Caltech (54), JPL (50) & Office-1 (8) sites for transferable PAG demand prediction |
 | [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] | Caltech + JPL hybrid LSTM-Transformer day-ahead benchmark |
-| [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] | XGBoost-BiLSTM stacking ensemble evaluation |
+| [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] | XGBoost-BiLSTM stacking ensemble evaluation |
 | [[2025_Zheng_Coherent_Hierarchical_EV_Load]] | Coherent hierarchical probabilistic forecasting with Meteostat weather |
-| [[2026_Chen_PC_M3_Mamba_EV_Clusters]] | ACN-Data sessions + ACN-Sim for physics-constrained Mamba cluster EM |
+| [[2026_Tang_PC_M3_Mamba_EV_Clusters]] | ACN-Data sessions + ACN-Sim for physics-constrained Mamba cluster EM |
 | [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] | Attention-enhanced CNN-LSTM fast-charging load forecast |
 | [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] | STL decomposition + stacked meta-learning 4-dataset benchmark |
 | [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] | MAML-Informer per-station meta-learning: best RMSE/MAE/CRPS/PICP of all baselines |

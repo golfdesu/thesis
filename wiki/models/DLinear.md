@@ -23,7 +23,7 @@ Properties: $O(1)$ maximum signal traversing path length, only ~2TL parameters, 
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: raw look-back window ($L=336$ default), no covariates.
-- **Forecasting Horizon**: [[Long_Term]] ($T \in \{96,...,720\}$).
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] ($T \in \{96,...,720\}$).
 - **Strengths**: near-zero cost (0.04G MACs, 139.7K params, 0.4 ms vs Informer 49.3 ms); improves markedly with longer look-backs; strong baseline that many deep models still fail to beat.
 - **Weaknesses**: limited capacity — cannot capture change points; no cross-variate modeling; authors position it as a baseline, not an end model.
 
@@ -35,3 +35,4 @@ Properties: $O(1)$ maximum signal traversing path length, only ~2TL parameters, 
 - [[2024_Das_TiDE_Long_Term_Forecasting]] — Motivation for TiDE; a pure linear model is a guaranteed subclass via TiDE's global residual connection.
 - [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Linear forecaster motivating the inversion reflection; iTransformer restores Transformer dominance over RLinear/DLinear-style baselines.
 - [[2001_Hippert_Neural_Networks_STLF_Review]] — Modern echo of the review's "benchmark simple linear models" message for load forecasting.
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Baseline in ETT finetuning Table 2 (avg 0.600 ETTh1); TimesFM(FT) 0.426 dominates; DLinear efficiency discussion context [ZCZX23].

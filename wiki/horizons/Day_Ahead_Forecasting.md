@@ -1,4 +1,5 @@
 ---
+title: Day-Ahead Load Forecasting
 concept: Day-Ahead Load Forecasting
 category: forecasting-horizon
 time_range: "24–36 hours ahead"
@@ -52,12 +53,14 @@ Day-ahead EV charging load forecasting covers prediction horizons of **24 to 36 
 - 2025 — [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]] : Transformer-BiLSTM day-ahead LMP price forecasting on NYISO/PJM/MISO markets.
 - 2025 — [[2025_Matrone_QR_LSTM_Attention_EV_Load]] : QR-LSTM day-ahead quantile forecasts (q20/q50/q80) for Utrecht office parking lot.
 - 2025 — [[2025_Zheng_Coherent_Hierarchical_EV_Load]] : Coherent hierarchical day-ahead reconciliation via PICNN + DCL on ACN data.
-- 2026 — [[2026_Chen_PC_M3_Mamba_EV_Clusters]] : PC-M3 clusters fleet flexibility polytopes to support day-ahead EV scheduling co-optimization.
+- 2026 — [[2026_Tang_PC_M3_Mamba_EV_Clusters]] : PC-M3 clusters fleet flexibility polytopes to support day-ahead EV scheduling co-optimization.
 - 2026 — [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] : TFT daily-scale branch forecasts 1–7 days ahead on Palo Alto data (RMSE 0.71 kWh) with environmental covariates + conformal calibration.
 - 2026 — [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]] : Day-ahead similar-day selection framework (ShapeDTW/Multi-DTW + NSGA-II weights + XGBoost surrogate) cuts zone-level error ~4.5% on UrbanEV Shenzhen.
 - 2024 — [[2024_Qu_Forwardformer_Day_Ahead_Load]] : Forwardformer (day-as-token encoder-dual-decoder, forward sliding/dilated/global attention) emits the full next-day curve in one inference — best ACC 98.51% (China) / 96.94% (US), SOTA on weekends/holidays via holiday-weighted dual-MSE loss.
 - 2024 — [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] : Day-ahead GB half-hourly net-load (14 GSP groups) via Kalman-adapted GAM + OGD/BOA-adapted quantile regression — ≈10% RMSE reduction vs periodic retraining and >20% RPS gain on US cities during COVID.
 - 2024 — [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] : Day-ahead recursive GPR feeder forecasting with EV charging-habit probability CH(t) — MAPE restored to 9.21% and PI coverage near nominal despite integrated EV loads.
+- 2025 — [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] : GBT+EnbPI probabilistic scenarios (24 h @ 15-min load/PV; hourly prices upsampled) feed scenario-based stochastic MPC of a charging energy hub — day-ahead forecast quality valued via downstream control cost (112.76% of omniscient).
+- 2026 — [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] : Day-ahead daily session counts per charge point via Bayesian [[INLA_Latent_Gaussian_Model]] (ICAR/SPDE + RW2), beating per-station no-pooling XGBoost/GLM on MAE at 70–77% of Glasgow stations.
 
 ## Key Input Features
 
@@ -82,3 +85,8 @@ Day-ahead EV charging load forecasting covers prediction horizons of **24 to 36 
 
 - [[Short_Term_Forecasting]]
 - [[Spatial_Temporal_Forecasting]]
+
+## Literature Usage
+- 2024 — [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] : Decoder-only TimesFM zero-shot across Monash/Darts/ETT horizons 32-512 (variable context/horizon/granularity).
+- [[2026_Khwaja_Toto_2_Scaling_Era]] — Toto 2.0 zero-shot across BOOM (2048 ctx) / GIFT-Eval (4096 ctx) / TIME (per-task ctx); single-pass stable to ~768 steps, block decoding beyond; 2k-8k stability study (r=0.99 at 2k, 0.818 at 8k for 2.5B).
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Evaluated on mixed horizons via fev-bench/GIFT-Eval/Chronos Bench II (H dictated by benchmark tasks); 2-stage training extends max output patches and context 2048->8192 to support long-horizon and high-frequency seasonalities without heuristics; energy case hourly day-ahead (EPF-DE) and retail weekly quarter (Rossmann) illustrate short vs longer horizons.

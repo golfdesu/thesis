@@ -1,12 +1,13 @@
 ---
 type: dataset
 name: Real-World EV Direct Current (DC) Fast Charging Profiles
-location: Global / Multiple Public DC Fast Charging Stations
+location: United Kingdom & Germany (public DC fast charging networks)
 resolution: Session-level charging power curves (high-frequency within-session samples)
-access: open
+access: code & pretrained models open (Zenodo); charging-session data by request from authors
 data_type: Session-level DC fast charging curves & durations
 url: "https://doi.org/10.5281/zenodo.17183022"
 code_url: "https://github.com/acse-sl420/ev_charging_ml"
+status: metadata-verified-2026-08
 tags:
   - dataset
   - ev-charging
@@ -17,7 +18,7 @@ tags:
 # 📁 Real-World EV DC Fast Charging Profiles & Durations
 
 ## 📊 Overview
-A comprehensive dataset of real-world Electric Vehicle (EV) Direct Current (DC) fast charging profiles and durations analyzed in Nature Communications (2025). Used to train and evaluate Temporal Fusion Transformer (TFT) models predicting high-power DC charging power curves.
+A comprehensive dataset of 909,135 real-world EV DC fast charging sessions collected across public networks in the UK and Germany, analyzed in Nature Communications (2025). Used to train and evaluate Temporal Fusion Transformer (TFT) models predicting high-power DC charging power curves.
 
 ## 🔗 Access Links
 - **Zenodo Repositories**: [Zenodo 17183022](https://doi.org/10.5281/zenodo.17183022) | [Zenodo 17183746](https://doi.org/10.5281/zenodo.17183746)

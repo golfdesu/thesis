@@ -7,8 +7,8 @@ journal_conference: "Pattern Recognition Letters, Vol. 206, pp. 8–14 (Elsevier
 doi_url: "https://doi.org/10.1016/j.patrec.2026.04.028"
 models_used: ["[[TriCast]]", "[[SAGE_Semantic_Aware_Graph_Encoder]]", "[[TACT_Causal_Temporal_Alignment]]", "[[Price_Elasticity_Modulator]]", "[[Causal_Dilated_Convolution]]", "[[Set_Transformer_Induced_Attention]]"]
 datasets_used: ["[[UrbanEV_Dataset]]"]
-features_used: ["[[Charging_Occupancy]]", "[[Electricity_Price]]", "[[Traffic_Zone_Adjacency]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[Station_Occupancy]]", "[[Electricity_Tariff]]", "[[Traffic_Zone_Adjacency]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]", "[[RAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

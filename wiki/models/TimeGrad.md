@@ -25,7 +25,7 @@ $$E_{x^0_t,\epsilon,n}\left[\|\epsilon-\epsilon_\theta(\sqrt{\bar{\alpha}_n}x^0_
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: multivariate history + time covariates + frequency-specific lag features; context size = prediction length.
-- **Forecasting Horizon**: [[Short_Term]] (24–30 steps).
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] (24–30 steps).
 - **Strengths**: SOTA CRPSsum on Traffic/Electricity/Taxi/Wikipedia (~21% lower than Transformer-MAF); calibrated intervals across entities of vastly different scale; flexible non-parametric emissions.
 - **Weaknesses**: inference latency — N=100 diffusion steps × S=100 trajectories per autoregressive timestep; RNN conditioning limits very long sequences; no spatial inductive bias between stations.
 

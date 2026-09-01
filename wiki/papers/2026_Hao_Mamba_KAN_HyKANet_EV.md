@@ -5,10 +5,10 @@ authors: [Meilin Hao, Qianqian Ren]
 year: 2026
 journal_conference: "ICASSP 2026 (IEEE International Conference on Acoustics, Speech and Signal Processing), pp. 1276-1280"
 doi_url: "https://doi.org/10.1109/ICASSP55912.2026.11461366"
-models_used: ["[[HyKANet]]", "[[Mamba]]", "[[Mamba-2]]", "[[KAN]]", "[[PAG]]", "[[FourierGNN]]", "[[AST-GAT]]", "[[DCRNN]]", "[[STGCN]]"]
-datasets_used: ["[[Real_world_EV_charging_dataset]]"]
-features_used: ["[[Historical_Demand]]", "[[Weather]]", "[[Calendar_Features]]", "[[Electricity_Price]]", "[[Dynamic_Adjacency_Matrix]]"]
-forecasting_horizon: "[[Short_Term]]"
+models_used: ["[[HyKANet]]", "[[Mamba_SSM]]", "[[KAN]]", "[[PAG]]", "[[FourierGNN]]", "[[AST-GAT]]", "[[DCRNN]]", "[[STGCN]]"]
+datasets_used: ["[[Real_World_EV_DC_Charging]]"]
+features_used: ["[[Historical_Load]]", "[[Weather]]", "[[Calendar_Features]]", "[[Electricity_Tariff]]", "[[Adjacency_Matrix]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]", "[[RAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -71,9 +71,12 @@ $$ \hat{Y} = \text{KAN}(\hat{H}) \in \mathbb{R}^{Q \times N \times C} \tag{9} $$
 
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] lineage — Transformer spatiotemporal forecasting [9]
-- [[Mamba]] selective state spaces (Gu & Dao, arXiv:2312.00752) [10]; [[Mamba-2]] 2D state spaces (Gu et al., 2024) [11]
+- [[Mamba_SSM]] selective state spaces (Gu & Dao, arXiv:2312.00752) [10]; [[Mamba_SSM]] 2D state spaces (Gu et al., 2024) [11]
 - [[KAN]] Kolmogorov-Arnold Networks (Liu et al., 2025) [12]
 - [[PAG]] physics-informed attention-based graph learning for regional EV demand (Qu et al., IEEE T-ITS 2024) [8]
 - AST-GAT attribute-augmented spatiotemporal GCN [21]; [[FourierGNN]] [22]; DCRNN [20]; STGCN [18]; Graph WaveNet [19]; GMAN [17]; GCN (Kipf & Welling) [15]; GAT [16]
 - LSTM occupancy prediction (Ma & Faye, Energy 2022) [14]; multivariate LSTM demand forecasting (Sanami et al.) [4]
 - Heterogeneous spatio-temporal GCN for EV charging demand (Wang et al., TR-C 2023) [6]; adaptive ST graph recurrent network (Wang et al., Applied Energy 2025) [7]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2026_Hao_Mamba_KAN_HyKANet_EV_refs]]

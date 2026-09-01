@@ -5,10 +5,11 @@ authors: [Hui He, Qi Zhang, Kun Yi, Xiaojun Xue, Shoujin Wang, Liang Hu, Longbin
 year: 2024
 journal_conference: "arXiv preprint (IEEE journal template, Journal of LaTeX Class Files style); arXiv:2407.13194"
 doi_url: "https://doi.org/10.48550/arXiv.2407.13194"
+status: needs-review # efficiency-table numbers (Exchange row) internally inconsistent; rest verified
 models_used: ["[[JointPGM]]"]
-datasets_used: ["[[Exchange_Dataset]]", "[[ETTh1]]", "[[ETTm2]]", "[[ElectricityLoadDiagrams]]", "[[METR-LA]]", "[[ILI_Dataset]]"]
+datasets_used: ["[[Exchange]]", "[[ETT]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[ILI]]"]
 features_used: ["[[Multivariate_Time_Series]]", "[[Temporal_Order_Features]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -85,7 +86,7 @@ $$\mathcal{L} = L_a + L_b + L_c$$
 Implementation: PyTorch, NVIDIA RTX 4090 24GB; latent dim $d = 128$, propagation depth $K=2$, $\tau = 0.5$, Adam optimizer lr 1e-3, batch size 128; z-score normalization; train/val/test split 7:1:2; each experiment run 3 times with different seeds.
 
 ## 📊 Dataset & Input Features
-Six highly non-stationary benchmarks (non-stationarity quantified by Augmented Dick-Fuller (ADF) test statistic — larger = more severe distribution shift):
+Six highly non-stationary benchmarks (non-stationarity quantified by Augmented Dickey-Fuller (ADF) test statistic — larger = more severe distribution shift):
 
 | Dataset | Variables | Interval | Time Steps | ADF Statistic |
 |---|---|---|---|---|
@@ -122,7 +123,8 @@ Metrics: MAE and MSE (lower better). Lookback 96 (ILI: 24).
 
 **Ablation (Table IV, H=192; ILI H=48, MAE/MSE)**: w/o DI 0.293→0.299/0.155→0.162 (Exchange); w/o OF (timestamp instead of order features) worse; w/o ISE(A) Exchange 0.426/0.331, w/o ISE(F) 0.492/0.458 (large degradation); w/o IL and w/o TG each degrade slightly. Full JointPGM Exchange 0.293/0.155, ETTh1 0.484/0.491, Electricity 0.279/0.187, ILI 1.340/3.640.
 
-**Efficiency**: On Exchange (8 vars) vs. Koopa: **77.6% training-time reduction**, memory footprint 94.9% of Koopa (JointPGM 2.5GB/39.4s vs. Koopa 5.9GB/21.6s... memory 2.5GB). On ETTm2 vs. Koopa: 58.9% training-time reduction, 97.8% memory footprint (JointPGM 2.3GB/14.2s vs. Koopa 2.3GB/34.5s). On Electricity (321 vars): speed comparable to PatchTST with lower memory (JointPGM 3.9GB/39.4s vs. PatchTST 16.2GB/41.5s, Crossformer 16.7GB/101.2s).
+**Efficiency**: On Exchange (8 vars) vs. Koopa: **77.6% training-time reduction**, memory footprint 94.9% of Koopa (JointPGM 2.5GB/39.4s vs. Koopa 5.9GB/21.6s). On ETTm2 vs. Koopa: 58.9% training-time reduction, 97.8% memory footprint (JointPGM 2.3GB/14.2s vs. Koopa 2.3GB/34.5s). On Electricity (321 vars): speed comparable to PatchTST with lower memory (JointPGM 3.9GB/39.4s vs. PatchTST 16.2GB/41.5s, Crossformer 16.7GB/101.2s).
+> ⚠️ Numeric caveat: on Exchange the quoted wall-clock seconds (JointPGM 39.4 s vs. Koopa 21.6 s) contradict the claimed 77.6% training-*time* reduction — likely the 39.4 s figure belongs to another row/model (the same 39.4 s appears under Electricity). Verify against the paper's efficiency table before quoting.
 
 Hyperparameter sensitivity: moderate α optimal (<0.6 fluctuates wildly); propagation depth K≈2 optimal (over-smoothing beyond); longer lookback (up to 720) consistently improves JointPGM unlike Transformer baselines.
 
@@ -131,7 +133,7 @@ Hyperparameter sensitivity: moderate α optimal (<0.6 fluctuates wildly); propag
 - Slightly inferior MAE vs. MSE-only-trained baselines due to dual reconstruction+prediction MSE losses (bias of objective function).
 - Sensitive to trade-off parameter α (violent fluctuation when α < 0.6); requires tuning.
 - Multi-hop propagation suffers over-smoothing for larger depth K.
-- Evaluated only on generic non-stationary benchmarks (exchange, transformers, traffic, electricity, ILI) — no direct evaluation on EV charging station load, though electricity consumption planning is listed among motivating applications.
+- Evaluated only on generic non-stationary benchmarks (Exchange, ETT, Electricity, METR-LA, ILI) — no direct evaluation on EV charging station load, though electricity consumption planning is listed among motivating applications.
 - Research gap for thesis: probabilistic/fine-grained transitional-shift decomposition could be applied to non-stationary EV charging loads where intra-station dynamics and inter-station spatial correlation both shift.
 
 ## 📚 BibTeX & Citation Reference
@@ -154,4 +156,4 @@ Hyperparameter sensitivity: moderate α optimal (<0.6 fluctuates wildly); propag
 - iTransformer [50] (ICLR 2024), Crossformer [49] (ICLR 2023), PatchTST [14] (ICLR 2023), Autoformer [13] (NeurIPS 2021), FEDformer [15] (ICML 2022), DLinear [44] (AAAI 2023), WaveForM [19] (AAAI 2023) — general forecasting baselines.
 - Graph WaveNet [16]/MTGNN [18] (Wu et al.) — source of mix-hop propagation idea simplified into multi-hop propagation.
 - Fourier feature literature [54] Tancik et al. (NeurIPS 2020), [55] Woo et al. (ICML 2023) — basis for the TFE design.
-- Related vault lines: [[2019_Zhu_EV_Load_Forecasting]], [[2020_Huang_Ensemble_EV_Load]], [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] — application-domain counterparts whose EV load series exhibit exactly the kind of non-stationarity/transitional shift this method targets.
+- Related vault lines: [[2019_Zhu_EV_Load_Forecasting]], [[2020_Huang_Ensemble_EV_Load]], [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] — application-domain counterparts whose EV load series exhibit exactly the kind of non-stationarity/transitional shift this method targets.

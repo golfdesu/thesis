@@ -6,9 +6,9 @@ year: 2021
 journal_conference: "AAAI 2021 (Best Paper Award)"
 doi_url: "https://arxiv.org/abs/2012.07436"
 models_used: ["[[Informer]]", "[[ProbSparse_Attention|ProbSparse Self-Attention]]", "[[Self-Attention_Distilling]]", "[[Generative_Decoder|Generative Style Decoder]]", "[[LogTrans]]", "[[Reformer]]", "[[LSTMa]]", "[[LSTnet]]", "[[DeepAR]]"]
-datasets_used: ["[[ETT]]", "[[Electricity_ECL]]", "[[Weather_NOAA]]"]
-features_used: ["[[Oil_Temperature|Oil Temperature (target)]]", "[[Power_Load_Features|6 Power Load Features]]", "[[Wet_Bulb|Wet Bulb (target)]]", "[[Climate_Features|11 Climate Features]]", "[[Uniform_Input_Representation|Global/Local Timestamp Embeddings]]", "[[ProbSparse_Queries]]"]
-forecasting_horizon: "[[Long_Term]]"
+datasets_used: ["[[ETT]]", "[[Electricity_ECL]]", "[[Weather]]"]
+features_used: ["[[Oil_Temperature|Oil Temperature (target)]]", "[[Power_Load_Features|6 Power Load Features]]", "[[Temperature|Wet Bulb (target)]]", "[[Climate_Features|11 Climate Features]]", "[[Uniform_Input_Representation|Global/Local Timestamp Embeddings]]", "[[ProbSparse_Attention]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
 
 ## 🎯 Main Objective & Contribution
-- **Core problem**: Long sequence time-series forecasting ([[LSTF]]) — vanilla [[Transformer]] has three LSTF limitations: (1) quadratic $O(L^2)$ self-attention time/memory per layer; (2) memory bottleneck $O(J \cdot L^2)$ when stacking $J$ layers for long inputs; (3) speed plunge of step-by-step dynamic decoding for long outputs.
+- **Core problem**: Long sequence time-series forecasting ([[Long_Term_Forecasting]]) — vanilla [[Transformer]] has three LSTF limitations: (1) quadratic $O(L^2)$ self-attention time/memory per layer; (2) memory bottleneck $O(J \cdot L^2)$ when stacking $J$ layers for long inputs; (3) speed plunge of step-by-step dynamic decoding for long outputs.
 - **Primary contribution**: **[[Informer]]** with three distinctive characteristics:
   - **[[ProbSparse_Attention|ProbSparse self-attention]]**: $O(L\log L)$ time and memory via KL-divergence-based query sparsity measurement selecting only Top-$u$ dominant queries.
   - **Self-attention distilling**: halves cascading layer input via conv + max-pooling, total space complexity $O((2-\epsilon)L\log L)$.
@@ -50,9 +50,9 @@ $$X_{feed}^t[i]=\alpha u_i^t + PE(L_x\times(t-1)+i,\cdot)+\sum_p [SE(L_x\times(t
 
 ## 📊 Dataset & Input Features
 Four datasets (2 collected real-world + 2 public benchmarks):
-- **[[ETT]]** (Electricity Transformer Temperature, authors' own release): 2-year data from two separated counties in China; hourly [[ETTh1]], [[ETTh2]] and 15-min-level [[ETTm1]]; each point = target "oil temperature" + 6 power load features; train/val/test = 12/4/4 months — https://github.com/zhouhaoyi/ETDataset
+- **[[ETT]]** (Electricity Transformer Temperature, authors' own release): 2-year data from two separated counties in China; hourly [[ETT|ETTh1]], [[ETT|ETTh2]] and 15-min-level [[ETT|ETTm]]; each point = target "oil temperature" + 6 power load features; train/val/test = 12/4/4 months — https://github.com/zhouhaoyi/ETDataset
 - **[[Electricity_ECL]]** (Electricity Consuming Load): electricity consumption (Kwh) of 321 clients; converted to hourly consumption of 2 years due to missing data; 'MT 320' as target; train/val/test = 15/3/4 months — https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
-- **[[Weather_NOAA]]**: local climatological data for ~1600 U.S. locations, 2010–2013, hourly; target "wet bulb" + 11 climate features; train/val/test = 28/10/10 months — https://www.ncei.noaa.gov/data/local-climatological-data/
+- **[[Weather]]**: local climatological data for ~1600 U.S. locations, 2010–2013, hourly; target "wet bulb" + 11 climate features; train/val/test = 28/10/10 months — https://www.ncei.noaa.gov/data/local-climatological-data/
 - Prediction windows prolonged progressively: {1d, 2d, 7d, 14d, 30d, 40d} in {ETTh, ECL, Weather}, {6h, 12h, 24h, 72h, 168h} in ETTm; rolling evaluation with stride = 1; inputs zero-mean normalized.
 - Code: https://github.com/zhouhaoyi/Informer2020
 

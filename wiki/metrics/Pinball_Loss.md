@@ -1,4 +1,6 @@
 ---
+title: Pinball Loss (Quantile Loss)
+type: metric
 metric: Pinball Loss (Quantile Loss)
 category: probabilistic-forecast-metric
 formula: "L_τ(y, ŷ) = τ·max(0, y−ŷ) + (1−τ)·max(0, ŷ−y)"
@@ -42,8 +44,12 @@ It is asymmetric: under-prediction of a high quantile is penalized more heavily 
 | 2024 — [[2024_DeVilmarest_Adaptive_Probabilistic_Netload]] | Quantile regressions adapted online by OGD directly on the pinball loss with step size auto-selected via Bernstein Online Aggregation; adaptive QR cuts US-city RPS >20% during COVID and beats the best single expert on GB net-load. |
 | Quantile-loss variants (same family) | [[2019_Li_LogSparse_Enhancing_Locality_Transformer]], [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]] (P50/P90), [[2023_Huang_MetaProbformer_EV_Load]], [[2025_Li_DC_Charging_Profiles_TFT]], [[2025_Zheng_Coherent_Hierarchical_EV_Load]] (MLP baseline trained on summed pinball over α ∈ {0.05,…,0.95}). |
 
+## Literature Usage
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **Pinball/quantile loss** Eq.4 sum_q q*max(z-zq,0)+(1-q)*max(zq-z,0) over 21 quantiles (extension of standard 9-level); trained multi-patch direct, 21 levels include 0.01/0.99 extremes.
+
 ## Related Pages
 
 - [[CRPS]]
 - [[Winkler_Score]]
 - [[PICP]]
+- [[2026_Khwaja_Toto_2_Scaling_Era]] — Training loss: rho_tau=(y-qhat)(tau-1[y<qhat]) (Eq.2), L_quantile=1/|T| sum rho_tau (Eq.3), T={0.1..0.9}; sign-valued gradient Eq.4 motivates NorMuon; quantiles sorted at inference.

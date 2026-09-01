@@ -8,7 +8,7 @@ doi_url: "https://doi.org/10.1109/ICPEA63589.2024.10784728"
 models_used: ["[[CNN]]", "[[GRU]]", "[[LSTM]]", "[[MLP]]"]
 datasets_used: ["[[Jining_Mall_EV_Charging_Station]]"]
 features_used: ["[[Historical_Load]]", "[[Electricity_Tariff]]", "[[Weather_Traffic]]", "[[Cyclical_Encodings]]"]
-forecasting_horizon: "[[Short_Term]]"
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---

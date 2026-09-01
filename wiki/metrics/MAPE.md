@@ -1,4 +1,6 @@
 ---
+title: Mean Absolute Percentage Error (MAPE)
+type: metric
 metric: Mean Absolute Percentage Error (MAPE)
 category: point-forecast-metric
 formula: "mean(|y_pred - y_true| / |y_true|) * 100%"
@@ -75,6 +77,7 @@ $$\text{NMAE} = \frac{\sum_{t=1}^{n} |\hat{y}_t - y_t|}{\sum_{t=1}^{n} |y_t|}$$
 | 2026 — [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] | MAPE | TriCast avg MAPE 15.41 (×10² units), −9.8% vs best prior at 15-min horizon over 16 baselines on UrbanEV. |
 | 2026 — [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] | MAPE | SGD/RF traditional ML best on relative error across 12 cities; applicability generally beats transferability on MAPE. |
 | 2024 — [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]] | MAPE | EV-containing feeder MAPE 21.36% → **9.21%** from the single charging-habit feature CH(t) — back to near the EV-free level (9.07%). |
+| 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] | MAPE | Primary benchmark metric across six ISOs × W∈{24–168} h: PatchTST avg **5.59%** (15/30 wins), PowerMamba/S-Mamba 5.72/5.80%, iTransformer 6.14%, LSTM 6.83%; weather cuts iTransformer by −1.62 pp. |
 
 ## Relationship to Other Metrics
 
@@ -89,3 +92,6 @@ $$\text{MAE} = \bar{y} \times \text{MAPE} \quad \text{(approximately, when error
 - [[MAE]]
 - [[RMSE]]
 - [[V2G_SVE]]
+
+## Literature Usage
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — msMAPE variant (Eq. 7) reported as Monash official metric; related to MAPE family.

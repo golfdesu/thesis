@@ -13,7 +13,7 @@ tags:
 # 🧠 Context-Aware Temporal Transformer (CAT-Former)
 
 ## Overview
-CAT-Former fuses **Temporal Features** ($h, dw, dt, dm, sd$) with **Contextual Features** ($S_{\text{lat}}, S_{\text{long}}, W_{\text{temp}}, W_{\text{percip}}, W_{\text{wind}}$) into a unified positional-encoded Transformer self-attention block for short-term EV load forecasting.
+CAT-Former fuses **Temporal Features** ($h, dw, dt, dm, sd$) with **Contextual Features** ($S_{\text{lat}}, S_{\text{long}}, W_{\text{temp}}, W_{\text{precip}}, W_{\text{wind}}$) into a unified positional-encoded Transformer self-attention block for short-term EV load forecasting.
 
 ## Key Mathematical Equations
 - **Input Vector Fusion**:

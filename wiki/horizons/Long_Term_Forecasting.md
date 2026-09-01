@@ -1,4 +1,5 @@
 ---
+title: Long-Term Load Forecasting
 concept: Long-Term Load Forecasting
 category: forecasting-horizon
 time_range: "Days – months ahead"
@@ -60,6 +61,7 @@ Long-term load forecasting covers prediction horizons from **several days to mon
 - 2024 — [[2024_He_Robust_MTS_Transitional_Shift]] : JointPGM probabilistic graphical model targets the LTSF setting (H ∈ {96,192,336,720}) under intra-/inter-series transitional shift — avg −15.3% MAE / −37.9% MSE vs nine baselines (Exchange H=96 MSE 0.076 vs iTransformer 0.086) and −9.3% MSE vs Koopa, with 77.6% training-time reduction; directly addresses the distribution-shift challenge that plagues multi-month EV horizons.
 - 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : CNN-GRU multi-horizon forecasting out to **168 h** — lowest MAE/RMSE at all of 4/24/72/168 h with small degradation (RMSE 46.42→71.50), showing stable long-window accuracy on TOU/weather-conditioned mall-station load.
 - 2024 — [[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]] : Monthly mid-term LASSO-BPNN across four Qingpu (Shanghai) station types from only ~13 monthly points — best test MAPE 8.64% (Residential) vs LASSO-SVR/XGBoost/RF, with tree baselines overfitting.
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] : 24–168 h architecture benchmark across six US ISOs (L=240 h, identical protocols): PatchTST best load-only (5.59% MAPE), SSMs second and weather-favored, LSTM last; signed-error tails widen monotonically with horizon (CAISO W=168: −22.4/+51.2 pp).
 
 ## Key Input Features
 
@@ -77,3 +79,8 @@ Long-term load forecasting covers prediction horizons from **several days to mon
 
 - [[Day_Ahead_Forecasting]]
 - [[Short_Term_Forecasting]]
+
+## Literature Usage
+- 2024 — [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] : Decoder-only TimesFM zero-shot across Monash/Darts/ETT horizons 32-512 (variable context/horizon/granularity).
+- [[2026_Khwaja_Toto_2_Scaling_Era]] — Toto 2.0 zero-shot across BOOM (2048 ctx) / GIFT-Eval (4096 ctx) / TIME (per-task ctx); single-pass stable to ~768 steps, block decoding beyond; 2k-8k stability study (r=0.99 at 2k, 0.818 at 8k for 2.5B).
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Evaluated on mixed horizons via fev-bench/GIFT-Eval/Chronos Bench II (H dictated by benchmark tasks); 2-stage training extends max output patches and context 2048->8192 to support long-horizon and high-frequency seasonalities without heuristics; energy case hourly day-ahead (EPF-DE) and retail weekly quarter (Rossmann) illustrate short vs longer horizons.

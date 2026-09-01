@@ -5,11 +5,11 @@ authors: [Kamilė Stankevičiūtė, Ahmed M. Alaa, Mihaela van der Schaar]
 year: 2021
 journal_conference: "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)"
 doi_url: "https://proceedings.neurips.cc/paper/2021/file/9232fe81225bcaef853ae32870a2b0fe-Paper.pdf"
-models_used: ["[[CF-RNN]]", "[[Conformal_Prediction]]", "[[Inductive_Conformal_Prediction|ICP]]", "[[LSTM]]", "[[BJ-RNN]]", "[[MQ-RNN]]", "[[DP-RNN]]"]
+models_used: ["[[CF-RNN]]", "[[Conformal_Prediction]]", "[[LSTM]]", "[[BJ-RNN]]", "[[MQ-RNN]]", "[[DP-RNN]]", "[[Conformal_Prediction|ICP]]"]
 datasets_used: ["[[MIMIC-III]]", "[[UCI_EEG]]", "[[COVID19_UK_Dataset]]", "[[Synthetic_AR_Noise]]"]
-features_used: ["[[Nonconformity_Score]]", "[[Calibration_Set]]", "[[Multi_Horizon_Forecast]]", "[[Direct_Forecasting_Strategy]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Joint_Coverage]]", "[[Prediction_Interval_Width]]"]
+features_used: ["[[Conformal_Prediction]]", "[[Multi_Horizon_Forecast]]", "[[Direct_Forecasting_Strategy]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[Joint_Coverage]]", "[[MPIW]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

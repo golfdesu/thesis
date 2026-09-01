@@ -5,10 +5,10 @@ authors: [Md Atik Ahamed, Qiang Cheng]
 year: 2024
 journal_conference: "arXiv preprint (arXiv:2403.09898v2, cs.LG, 22 Aug 2024), University of Kentucky"
 doi_url: "https://doi.org/10.48550/arXiv.2403.09898"
-models_used: ["[[TimeMachine]]", "[[Mamba]]"]
-datasets_used: ["[[Weather_Dataset]]", "[[Traffic_Dataset]]", "[[Electricity_Dataset]]", "[[ETTh1]]", "[[ETTh2]]", "[[ETTm1]]", "[[ETTm2]]"]
+models_used: ["[[Mamba_SSM]]"]
+datasets_used: ["[[Weather_Dataset]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[ETT]]"]
 features_used: ["[[Historical_Load]]"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -60,7 +60,7 @@ Seven standard LTSF benchmarks (no external URLs given in paper; code/baselines 
 - Selected TimeMachine results (MSE/MAE):
 	- Electricity: T=96 → 0.142/0.236 (iTransformer 0.148/0.240); T=720 → 0.207/0.298 (iTransformer 0.225/0.317).
 	- Traffic: essentially tied with iTransformer (e.g., T=96: 0.397/0.268 both; T=720: 0.467/0.300 both).
-	- Weather: T=96 → 0.164/0.208 (second to Crossformer's 0.158/0.230 MSE-wise best 0.164 vs iTransformer 0.174/0.214); ranks second on Weather at small T.
+	- Weather: T=96 → 0.164/0.208 (Crossformer has lower MSE 0.158 but much higher MAE 0.230; iTransformer 0.174/0.214); ranks second on Weather at small T.
 	- ETTh1: T=96 → 0.364/0.387 vs iTransformer 0.386/0.405; T=720 → 0.458/0.453 vs 0.503/0.491.
 	- ETTh2: T=96 → 0.275/0.334 vs iTransformer 0.297/0.349; T=720 → 0.411/0.433 vs 0.427/0.445.
 	- ETTm1: T=96 → 0.317/0.355 vs PatchTST 0.329/0.367; T=720 → 0.445/0.436.
@@ -75,7 +75,7 @@ Seven standard LTSF benchmarks (no external URLs given in paper; code/baselines 
 - Future work: extending TimeMachine to self-supervised learning settings.
 - Only supervised LTSF on generic benchmarks; no domain-specific evaluation (e.g., EV charging) or probabilistic forecasts.
 
-**Relevance to EV charging load forecasting:** This is a foundational method paper in the Mamba line — it established multi-scale quadruple-Mamba architectures and unified channel-mixing/channel-independence handling for long-horizon forecasting, directly informing the SSM-based EV forecasting designs in [[2026_Lahoti_Mamba_3_Sequence_Modeling]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], and [[2026_Chen_PC_M3_Mamba_EV_Clusters]]; its Electricity/Traffic benchmarks are close proxies for station-level EV charging demand series.
+**Relevance to EV charging load forecasting:** This is a foundational method paper in the Mamba line — it established multi-scale quadruple-Mamba architectures and unified channel-mixing/channel-independence handling for long-horizon forecasting, directly informing the SSM-based EV forecasting designs in [[2026_Lahoti_Mamba_3_Sequence_Modeling]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], and [[2026_Tang_PC_M3_Mamba_EV_Clusters]]; its Electricity/Traffic benchmarks are close proxies for station-level EV charging demand series.
 
 ## 📚 BibTeX & Citation Reference
 ```bibtex
@@ -89,9 +89,9 @@ Seven standard LTSF benchmarks (no external URLs given in paper; code/baselines 
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[Mamba]] — Gu & Dao 2023 (arXiv:2312.00752): selective scan SSM, core inference engine of TimeMachine.
+- [[Mamba_SSM]] — Gu & Dao 2023 (arXiv:2312.00752): selective scan SSM, core inference engine of TimeMachine.
 - [[S4]] — Gu et al.: structured state spaces; not compared since TiDE already outperformed it.
-- [[PatchTST]] (ICLR 2023), [[iTransformer]] (ICLR 2024), [[DLinear]] (AAAI 2023), [[TiDE]] (TMLR 2023), [[Autoformer]] (NeurIPS 2021), [[Informer]] (AAAI 2021), [[Crossformer]] (ICLR 2022), [[FEDformer]] (ICML 2022), [[TimesNet]] (ICLR 2022), [[SCINet]] (NeurIPS 2022), [[Stationary/Non-stationary Transformers]] (NeurIPS 2022), [[RLinear]] — main baselines.
+- [[PatchTST]] (ICLR 2023), [[iTransformer]] (ICLR 2024), [[DLinear]] (AAAI 2023), [[TiDE]] (TMLR 2023), [[Autoformer]] (NeurIPS 2021), [[Informer]] (AAAI 2021), [[Crossformer]] (ICLR 2022), [[FEDformer]] (ICML 2022), [[TimesNet]] (ICLR 2022), [[SCINet]] (NeurIPS 2022), [[Stationary_Transformer|Stationary / Non-stationary Transformers]] (NeurIPS 2022), [[RLinear]] — main baselines.
 - [[RevIN]] — Kim et al., ICLR 2022: reversible instance normalization used for normalization.
 - [[MambaTab]] — Ahamed & Cheng 2024 (arXiv:2401.08867): same authors' prior tabular Mamba work.
 - Cited-by relation: [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]] critiques and builds upon TimeMachine's channel strategy selection.

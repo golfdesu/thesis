@@ -26,7 +26,7 @@ Prediction head: MLP over temporally pooled features, trained with MSE loss $\ma
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: zone-level charging occupancy + electricity prices + traffic-zone adjacency graph ([[UrbanEV_Dataset]] Shenzhen, 247 nodes / 1006 edges).
-- **Forecasting Horizon**: [[Short_Term]] — 3–12 steps (15–60 min ahead) from a 12-step (1 h) input.
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] — 3–12 steps (15–60 min ahead) from a 12-step (1 h) input.
 - **Strengths**: avg RMSE 4.71 ×10⁻² and MAPE 15.41 across horizons, −9.8% MAPE vs best prior at 15 min among 16 baselines; robust to inference-time noise; ablation shows SAGE induced attention most critical.
 - **Weaknesses**: deterministic point forecasts only (no probabilistic output); single-city/30-day validation; elasticity learning constrained by sparse dynamic-price coverage (57/247 zones); occupancy used as demand proxy.
 

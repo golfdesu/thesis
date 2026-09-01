@@ -7,9 +7,9 @@ journal_conference: "Processes"
 doi_url: "https://doi.org/10.3390/pr13020468"
 models_used: ["[[V2AFedEGAT-LSTM]]", "[[EGAT]]", "[[LSTM]]", "[[GGNN]]", "[[GAT]]", "[[Time_Aware_Attention]]"]
 datasets_used: ["[[CTPS_IEEE33_7Node_TN]]", "[[CTPS_IEEE69_12Node_TN]]", "[[NYISO]]"]
-features_used: ["[[Node_Voltage]]", "[[Active_Power]]", "[[Reactive_Power]]", "[[Line_Active_Power]]", "[[Line_Reactive_Power]]", "[[Traffic_Flow]]", "[[Congestion_Rate]]", "[[Electricity_Price]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[R2]]", "[[MAE]]", "[[MAPE]]", "[[MSE]]"]
+features_used: ["[[Node_Voltage]]", "[[Active_Power]]", "[[Reactive_Power]]", "[[Line_Active_Power]]", "[[Line_Reactive_Power]]", "[[Traffic]]", "[[Congestion_Rate]]", "[[Electricity_Tariff]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[R_squared]]", "[[MAE]]", "[[MAPE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -73,3 +73,6 @@ tags: [paper, ev-load-forecasting, ml]
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] — attention mechanism foundation [16]
 - Related vault papers: [[2025_Hussain_CAT_Former_Short_Term_EV]], [[2023_Koohfar_Transformer_EV_Demand]] (DL comparison for EV demand [17]), [[2025_Zhu_Personalized_Federated_Learning]], [[2023_Cheng_VMD_Prophet_LSTM]], [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]], [[2019_Zhu_EV_Load_Forecasting]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Han_Vertical_Federated_EGAT_LSTM_refs]]

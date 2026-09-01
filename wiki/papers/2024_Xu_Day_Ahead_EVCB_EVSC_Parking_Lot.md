@@ -5,10 +5,10 @@ authors: [Maosheng Xu, Shan Gao, Junyi Zheng, Xueliang Huang, Chuanshen Wu]
 year: 2024
 journal_conference: "Energy, vol. 309, 133090"
 doi_url: "https://doi.org/10.1016/j.energy.2024.133090"
-models_used: ["[[ADMM-NN]]", "[[K-Means++]]", "[[EVSFD]]", "[[Monte_Carlo_Sampling]]"]
+models_used: ["[[ADMM-NN]]", "[[KMeans_Clustering]]", "[[EVSFD]]", "[[Monte_Carlo_Sampling]]"]
 datasets_used: ["[[Suzhou_EVPL_Dataset]]", "[[PJM_Day_Ahead_Tariff]]", "[[NMMV_Platform_Data]]"]
-features_used: ["[[EV_Access_Time]]", "[[Access_Duration]]", "[[Arrival_SoC]]", "[[Target_Departure_SoC]]", "[[Day_of_Week]]", "[[Holiday_Flag]]", "[[Weather_Conditions]]", "[[Average_Temperature]]", "[[Recent_Access_Pattern]]"]
-forecasting_horizon: "[[Day_Ahead]]"
+features_used: ["[[EV_Access_Time]]", "[[Access_Duration]]", "[[State_of_Charge]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Weather_Conditions]]", "[[Temperature]]", "[[Recent_Access_Pattern]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["Forecast Accuracy", "Charging Cost Reduction"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - Enables **Electric Vehicle Parking Lots (EVPLs)** to participate in day-ahead energy and ancillary services markets via [[V2G]] by forecasting **EV Charging Behavior (EVCB)** day-ahead and computing **EV Schedulable Capacity (EVSC)** from those forecasts.
-- Three contributions: (1) a **day-ahead Time-of-Use (TOU) EVCB forecasting method** combining an [[ADMM-NN]] for hourly EV access numbers with TOU [[K-Means++]] clustering of historical EVCB into typical behavior sets (376 clusters), minimizing idealized assumptions; (2) classification of EVCB types + construction of the **EV Scheduling Feasible Domain (EVSFD)** under physical constraints; (3) an EVSC calculation method based on the day-ahead planning curve within the EVSFD.
+- Three contributions: (1) a **day-ahead Time-of-Use (TOU) EVCB forecasting method** combining an [[ADMM-NN]] for hourly EV access numbers with TOU [[KMeans_Clustering]] clustering of historical EVCB into typical behavior sets (376 clusters), minimizing idealized assumptions; (2) classification of EVCB types + construction of the **EV Scheduling Feasible Domain (EVSFD)** under physical constraints; (3) an EVSC calculation method based on the day-ahead planning curve within the EVSFD.
 - Contrasts with model-driven Monte Carlo/PDF approaches (require assumptions on EV counts/targets/durations — infeasible when daily EVPL access varies with climate/date/user willingness) and data-driven load-profile methods (only forecast disorderly charging profiles, unusable for V2G scheduling).
 
 ## 🧠 Methodology & Model Architecture
@@ -98,10 +98,13 @@ $$SC_n=\{p^{sc}_{n,t},\ t\in[t^a_n,t^d_n)\}, \qquad EVSC=\left\{\sum_{n=1}^{N}p^
 - Zhang, Hu, Xu & Song, IEEE Trans. Power Syst. 2017 — aggregate PEV model for achievable V2G capacity [30] (also used by [[2024_Zhong_V2G_SVE_Evaluation_Metric]])
 - Taylor et al., ICML 2016 — gradient-free ADMM neural network training [33]
 - Wang, Yu, Chen & Zhao, KDD 2019 — ADMM for deep learning with global convergence [35]
-- Arthur & Vassilvitskii, SODA 2007 — [[K-Means++]] careful seeding [37]
+- Arthur & Vassilvitskii, SODA 2007 — [[KMeans_Clustering]] careful seeding [37]
 - Han, Han & Sezaki, IEEE Trans. Smart Grid 2011 — V2G frequency-regulation capacity estimation [27]
 - Yao, Wong & Schober, IEEE Trans. Smart Grid 2018 — aggregate PEV capacity for day-ahead frequency regulation [10]
 - Cui, Hu & Luo, IEEE TIA 2020 — day-ahead charging + frequency reserve scheduling under regulation-signal uncertainty [9]
 - Mao et al., J. Mod. Power Syst. Clean Energy 2019 — big-data-based schedulable capacity forecasting [31]
 - Zhang, Chan et al., IEEE Trans. Cybernetics 2020 — deep-learning probabilistic EV charging load forecasting with queuing model [25] ([[2021_Zhang_Probabilistic_Queuing_EV_Load]])
 - Nespoli, Ogliari & Leva, IEEE Access 2023 — user-behavior-clustering EV charging forecast [22]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot_refs]]

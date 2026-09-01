@@ -1,4 +1,14 @@
+---
+type: model
+name: N-HiTS
+category: Deep Learning / Hierarchical Interpolation Multi-Rate MLP
+tags:
+  - model
+  - deep-learning
+  - mlp
+---
 
+# N-HiTS
 
 ## Literature Usage
 - [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]: Multi-rate input sampling and hierarchical interpolation let different stacks specialize in different temporal frequencies and assemble forecasts sequentially.

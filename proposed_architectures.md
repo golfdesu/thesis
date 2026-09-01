@@ -1,6 +1,6 @@
 # 🚀 Proposed Architectural Innovations for EV Charging Load Forecasting
 
-This document outlines three high-impact architectural proposals to overcome the limitations of current Transformer-based models for EV charging load forecasting. These proposals are synthesized from the gap analysis of all 103 ingested research papers (see [[research_gaps]] and [[index]]).
+This document outlines three high-impact architectural proposals to overcome the limitations of current Transformer-based models for EV charging load forecasting. These proposals are synthesized from the gap analysis of all 118 ingested research papers (see [[research_gaps]] and [[index]]).
 
 ---
 
@@ -47,14 +47,14 @@ To achieve publication in a Top-Tier Q1 Journal, the most promising approach is 
 **The Ultimate Architecture (The "Winning" Formula):**
 > **Mamba Backbone** (for fast historical encoding $O(N)$) + **Cross-Attention Layer** (for weather/price fusion) + **PICNN / Conformalized Quantile Head** (for coherent probabilistic output solving Gaps P-1 to P-5)
 
-> [!NOTE] **Global Novelty Verified (re-checked 2026-08-23 against all 103 local papers, incl. papers 81–103)**
-> - The full re-ingestion (103 papers in `wiki/papers/`, all verified) still confirms **0 overlap** between the Mamba backbone and the PICNN/Conformalized Quantile frameworks: [[2026_Lahoti_Mamba_3_Sequence_Modeling]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Chen_PC_M3_Mamba_EV_Clusters]], plus the foundational TimeMachine ([[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]]) and Bi-Mamba+ ([[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) lines are all **point-forecast** Mamba/SSM models with no probabilistic heads, while [[2025_Zheng_Coherent_Hierarchical_EV_Load]] (PICNN) and [[2024_Zhou_Conformal_Prediction_DER]] (hierarchical conformal) use no Mamba/SSM backbones.
+> [!NOTE] **Global Novelty Verified (re-checked 2026-08-26 against all 118 local papers)**
+> - The full re-ingestion (118 papers in `wiki/papers/`) still confirms **0 overlap** between the Mamba backbone and the PICNN/Conformalized Quantile frameworks: [[2026_Lahoti_Mamba_3_Sequence_Modeling]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Tang_PC_M3_Mamba_EV_Clusters]], plus the foundational TimeMachine ([[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]]) and Bi-Mamba+ ([[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) lines are all **point-forecast** Mamba/SSM models with no probabilistic heads, while [[2025_Zheng_Coherent_Hierarchical_EV_Load]] (PICNN) and [[2024_Zhou_Conformal_Prediction_DER]] (hierarchical conformal) use no Mamba/SSM backbones.
 > - **New nearest neighbors from papers 81–103 (each narrows the claim but misses ≥2 of the 3 components):**
 >   - [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] — Transformer + quantile head + **post-hoc CQR conformal calibration** for EV load. Backbone is TFT (LSTM-attention), calibration is a *single static validation split* (no adaptivity under shift → Gap P-3 open), quantile head is a plain linear layer (**no PICNN monotonicity** → Gap P-1 open). No Mamba, no cross-attention exogenous fusion.
 >   - [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] (USDT) — native probabilistic Transformer (per-step Gaussian + CRPS) on Informer/Probformer backbone. No Mamba, no coverage guarantees, covariates limited to calendar/station IDs.
 >   - [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] (MAML-Informer) — probabilistic few-shot per-station forecasting with PICP/CRPS/Winkler. Plain quantile heads: no conformal layer, no convexity constraint, no Mamba.
 > - Caveat refined: the corpus now contains **Mamba + attention hybrids** (HyKANet's dynamic adjacency module; MFT's scale-masked cross-attention in [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]) — so *Mamba + cross-attention alone* is no longer claimable as novel. Likewise "first probabilistic/conformalized/dynamic-graph EV Transformer" claims are now refuted by USDT / MoghadamDost / EVformer ([[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]]) respectively.
-> - **What remains unexplored (precisely):** the full combination — **Mamba backbone + cross-attention exogenous fusion + conformalized PICNN head** — i.e., an $O(N)$ SSM encoder fused with external drivers via attention, producing *monotonic* quantiles with *distribution-free* coverage that *adaptively recalibrates* under non-stationarity. No paper in the 103-paper corpus implements or ablates this combination; it remains the thesis's defensible novelty per Gaps 6 / T-7 / P-1..P-5 in [[research_gaps]].
+> - **What remains unexplored (precisely):** the full combination — **Mamba backbone + cross-attention exogenous fusion + conformalized PICNN head** — i.e., an $O(N)$ SSM encoder fused with external drivers via attention, producing *monotonic* quantiles with *distribution-free* coverage that *adaptively recalibrates* under non-stationarity. No paper in the 118-paper corpus implements or ablates this combination; it remains the thesis's defensible novelty per Gaps 6 / T-7 / P-1..P-5 in [[research_gaps]].
 
 ---
 
@@ -91,7 +91,7 @@ The re-ingestion confirmed three active architectural frontiers in the corpus. T
 - **Relation to flagship:** This is an ablation of the winning formula's output head — same Mamba + cross-attention trunk.
 
 ### Proposal 9: Physics-Constrained Mamba Comparator (PC-M3 baseline)
-- **Corpus basis:** [[2026_Chen_PC_M3_Mamba_EV_Clusters]] runs physics-constrained Mamba in MIMO mode over 10,000+ EV clusters in real time; [[2025_Meyer_Benchmark_Foundation_Models]] shows foundation models (Chronos, TimesFM) competitive only below ~4 weeks of history.
+- **Corpus basis:** [[2026_Tang_PC_M3_Mamba_EV_Clusters]] runs physics-constrained Mamba in MIMO mode over 10,000+ EV clusters in real time; [[2025_Meyer_Benchmark_Foundation_Models]] shows foundation models (Chronos, TimesFM) competitive only below ~4 weeks of history.
 - **Proposal:** Benchmark the flagship model against (a) PC-M3-style physics-constrained Mamba and (b) zero-shot foundation models under the controlled EV benchmark of Proposal 5 — directly serving Gap T-7's missing Transformer-vs-Mamba-vs-hybrid comparison ([[research_gaps]]).
 
 ### Proposal 10: Horizon-Aware Benchmark with Classical Comparators (Kyriakopoulos extension)

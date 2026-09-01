@@ -1,4 +1,7 @@
 ---
+title: EV Arrival & Departure Times
+type: feature
+name: "EV Arrival & Departure Times"
 feature: EV Arrival & Departure Times
 category: behavioral-feature
 data_type: timestamp / probabilistic distribution
@@ -36,10 +39,10 @@ tags: [feature, behavioral, session, arrival, departure]
 ## Citing Literature
 
 - 2020 — [[2020_Huang_Ensemble_EV_Load]] : Transaction start time used as session-level feature for Boulder ensemble forecasting.
-- 2021 — [[2021_Huang_Lyapunov_EV_Scheduling]] : Parking time and required charging energy define delay-tolerant scheduling slack (Shanghai arrival data).
-- 2025 — [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Arrival/departure timestamps + charging duration log among top engineered features for stacking ensemble.
+- 2026 — [[2026_Huang_Lyapunov_EV_Scheduling]] : Parking time and required charging energy define delay-tolerant scheduling slack (Shanghai arrival data).
+- 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Arrival/departure timestamps + charging duration log among top engineered features for stacking ensemble.
 - 2025 — [[2025_Yang_Stochastic_MPC_Microgrid_EV]] : Stochastic EV arrival/departure times sampled (Latin Hypercube) for scenario-based MPC microgrid dispatch.
-- 2026 — [[2026_Chen_PC_M3_Mamba_EV_Clusters]] : Per-EV arrival/departure times + SOC define flexibility clusters in PC-M3 fleet model.
+- 2026 — [[2026_Tang_PC_M3_Mamba_EV_Clusters]] : Per-EV arrival/departure times + SOC define flexibility clusters in PC-M3 fleet model.
 
 ## Stochastic Modeling
 

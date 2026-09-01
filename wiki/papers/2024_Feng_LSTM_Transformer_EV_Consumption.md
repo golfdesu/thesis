@@ -5,10 +5,10 @@ authors: [Zhanyu Feng, Jian Zhang, Han Jiang, Xuejian Yao, Yu Qian, Haiyan Zhang
 year: 2024
 journal_conference: "SSRN Preprint 4747046 (not peer reviewed)"
 doi_url: "https://ssrn.com/abstract=4747046"
-models_used: ["[[LSTM_Transformer]]", "[[LSTM]]", "[[Transformer]]", "[[KMeans_Clustering]]", "[[MLR]]"]
+models_used: ["[[LSTM_Transformer]]", "[[LSTM]]", "[[Transformer]]", "[[KMeans_Clustering]]", "[[Linear_Regression]]"]
 datasets_used: ["[[GBT_32960_Telemetry_Dataset]]"]
-features_used: ["[[Battery_SOC]]", "[[Vehicle_Speed_Features]]", "[[Acceleration_Ratios]]", "[[Wind_Speed]]", "[[Sensible_Temperature]]", "[[Visibility]]", "[[Driver_Style]]", "[[Driving_Condition_Clusters]]", "[[Cruise_Time_Ratio]]"]
-forecasting_horizon: "[[Short_Term]]"
+features_used: ["[[State_of_Charge]]", "[[Vehicle_Speed_Features]]", "[[Acceleration_Ratios]]", "[[Wind_Speed]]", "[[Temperature]]", "[[Visibility]]", "[[Driver_Style]]", "[[Driving_Condition_Clusters]]", "[[Cruise_Time_Ratio]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAPE]]", "[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -16,7 +16,7 @@ tags: [paper, ev-load-forecasting, ml]
 # Summary: Energy Consumption Prediction Strategy for Electric Vehicle Based on LSTM-Transformer Framework
 
 ## 🎯 Main Objective & Contribution
-- Mitigate driver **range anxiety** via accurate real-time EV battery [[Battery_SOC]] / energy consumption prediction, integrating vehicle, environmental, **driver style**, and **driving condition** factors.
+- Mitigate driver **range anxiety** via accurate real-time EV battery [[State_of_Charge]] / energy consumption prediction, integrating vehicle, environmental, **driver style**, and **driving condition** factors.
 - Contributions:
   1. **[[LSTM_Transformer]] hybrid framework** — LSTM layer extracts short-term temporal dependencies; Transformer encoder layers capture long-range dependencies; linear output head.
   2. Comprehensive energy-consumption factor framework (18 features) with special emphasis on individual driving styles and driving-condition recognition via [[KMeans_Clustering]].
@@ -65,7 +65,7 @@ Cumulative stage-wise roll-up of 400-s segment predictions over the trip.
 - Features: 15 vehicle factors ($x_1$–$x_{15}$), 3 environmental factors ($x_{16}$–$x_{18}$), plus per-driver model specialization and k-means driving-condition labels.
 
 ## 📈 Performance & Results
-- **400-s window test set (10 drivers)**: [[LSTM_Transformer]] avg **MAPE = 4.63%**, MAE ≈ 0.027, RMSE ≈ 0.036; standalone [[LSTM]] MAPE = 10.69% (+6.06%); [[MLR]] MAPE = 21.87%. Per-driver best/worst: B3 MAPE 3.0%, A5 5.9%.
+- **400-s window test set (10 drivers)**: [[LSTM_Transformer]] avg **MAPE = 4.63%**, MAE ≈ 0.027, RMSE ≈ 0.036; standalone [[LSTM]] MAPE = 10.69% (+6.06%); [[Linear_Regression]] MAPE = 21.87%. Per-driver best/worst: B3 MAPE 3.0%, A5 5.9%.
 - **Window sensitivity**: MAPE = 13.9% (200 s), **4.6–4.63% (400 s, best)**, ~5.1% (600 s), 8.3% (1000 s) — too-short windows lose motion context at 0.05 Hz sampling; too-long windows dilute fine-grained detail.
 - **Ablation**: removing driver-style personalization raised MAPE by up to **18.47%**; removing driving-condition features raised it by **15.27%**; ignoring both increased MAPE by 12.4%/17.0%/16.5%/14.0% at 200/400/600/1000 s.
 - **Long-distance (250 km-class trip, SOC 90→40%)**: cumulative strategy achieves avg **MAPE = 6.7%** across drivers (best B3 5.1%, worst A5 7.7%).
@@ -92,4 +92,7 @@ Cumulative stage-wise roll-up of 400-s segment predictions over the trip.
 - Related vault concepts: [[2017_Attention_Is_All_You_Need]] — self-attention/positional encoding basis of the Transformer stage ([44]).
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM gating foundation ([62], [66]).
 - [[2024_Bampos_EV_Load_Forecasting_DAM]] — complementary EV load (vs energy consumption) forecasting benchmark.
-- Vault concepts: [[LSTM_Transformer]], [[Battery_SOC]], [[Range_Anxiety]], [[Driving_Cycle]], [[KMeans_Clustering]]
+- Vault concepts: [[LSTM_Transformer]], [[State_of_Charge]], [[Range_Anxiety]], [[Driving_Cycle]], [[KMeans_Clustering]]
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2024_Feng_LSTM_Transformer_EV_Consumption_refs]]

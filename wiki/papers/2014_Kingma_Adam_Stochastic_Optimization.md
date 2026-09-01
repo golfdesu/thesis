@@ -5,11 +5,11 @@ authors: [Diederik P. Kingma, Jimmy Lei Ba]
 year: 2014
 journal_conference: "ICLR 2015 (arXiv:1412.6980)"
 doi_url: "https://arxiv.org/abs/1412.6980"
-models_used: ["[[Adam]]", "[[AdaMax]]", "[[SGD]]", "[[AdaGrad]]", "[[RMSProp]]", "[[AdaDelta]]", "[[SFO_Optimizer]]"]
+models_used: ["[[Adam]]", "[[SGD]]", "[[AdaGrad]]", "[[RMSProp]]", "[[SFO_Optimizer]]"]
 datasets_used: ["[[MNIST]]", "[[CIFAR-10]]", "[[IMDB_Movie_Reviews]]", "[[Synthetic_VAE_Objective]]"]
-features_used: ["[[First_Moment_Estimate]]", "[[Second_Raw_Moment_Estimate]]", "[[Bias_Correction_Terms]]", "[[Signal_to_Noise_Ratio]]", "[[Dropout_Noise]]", "[[Bag_of_Words_Features]]"]
-forecasting_horizon: "[[Short_Term]]"
-metrics: ["[[Training_Cost_Negative_Log_Likelihood]]", "[[Regret_Bound]]", "[[Convergence_Iterations]]", "[[Wall_Clock_Time]]"]
+features_used: ["[[Adam]]", "[[Signal_to_Noise_Ratio]]", "[[Dropout_Noise]]", "[[Bag_of_Words_Features]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
+metrics: ["[[NLL]]", "[[Regret_Bound]]", "[[Convergence_Iterations]]", "[[Wall_Clock_Time]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -101,3 +101,6 @@ $$u_t = \max(\beta_2\cdot u_{t-1}, |g_t|), \qquad \theta_t = \theta_{t-1} - \lef
   - [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] and [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — Transformer/LTSF models optimized with Adam
   - [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] — efficient Transformers trained using Adam-family optimizers
   - [[2024_Das_TiDE_Long_Term_Forecasting]] — encoder-decoder MLP forecaster relying on Adam-style training
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2014_Kingma_Adam_Stochastic_Optimization_refs]]

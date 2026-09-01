@@ -26,7 +26,7 @@ Special treatment of **power-law scale heterogeneity**: item-dependent rescaling
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: target history + covariates (age feature, time features, item embedding), all known over the horizon.
-- **Forecasting Horizon**: [[Short_Term]] (encoder/decoder e.g. 168/24 hourly).
+- **Forecasting Horizon**: [[Short_Term_Forecasting]] (encoder/decoder e.g. 168/24 hourly).
 - **Strengths**: minimal feature engineering; calibrated marginal distributions; forecasts for cold-start series; Monte Carlo samples give all sub-range quantiles.
 - **Weaknesses**: teacher-forcing exposure bias; heuristic scale factor; autoregressive decoding slow for long horizons; degrades on long-dependency synthetic tasks beyond ~96 steps.
 
@@ -44,3 +44,5 @@ Special treatment of **power-law scale heterogeneity**: item-dependent rescaling
 - [[2024_Das_TiDE_Long_Term_Forecasting]] — M5 comparison baseline (WRMSSE 0.789 ≈20% worse than TiDE with covariates).
 - [[2025_Zheng_Coherent_Hierarchical_EV_Load]] — Hierarchical reconciliation benchmark: total MAE 2.15 (PICNN) vs DeepAR 9.67 on coherent EV load forecasting.
 - 2026 — [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] — DeepAR weakest baseline in USDT study (EVnetNL RMSE 29.675 / MAE 25.822; Perth RMSE 24.170), far behind even vanilla Transformer and Informer.
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Supervised baseline on Monash; TimesFM beats DeepAR (0.6846 vs 0.8104 GM).
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **PatchTST / TFT / DeepAR / N-BEATS** cited as global deep-learning predecessors; patching heritage (Nie et al. 2023) underpins Chronos-2 patching+embedding Eq.3 with REG token and time-index/mask meta features.

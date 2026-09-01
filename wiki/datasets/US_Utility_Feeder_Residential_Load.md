@@ -1,0 +1,23 @@
+---
+type: dataset
+name: "US Utility Feeder Residential Load"
+category: Stub (auto-generated)
+status: needs-review
+tags:
+  - dataset
+  - us_utility_feeder_residential_load
+location:
+resolution: "hourly/15-min"
+access: "research"
+data_type: "Paired feeder and residential load collections"
+---
+
+# US Utility Feeder Residential Load
+
+US Utility Feeder Residential Load — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
+
+## Referenced in this knowledge base
+
+[[2024_Shi_Naihao_Prediction_Interval_EV_Loads]]

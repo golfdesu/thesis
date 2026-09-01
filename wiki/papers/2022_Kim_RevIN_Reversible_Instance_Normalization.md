@@ -5,10 +5,10 @@ authors: [Taesung Kim, Jinhee Kim, Yunwon Tae, Cheonbok Park, Jang-Ho Choi, Jaeg
 year: 2022
 journal_conference: "ICLR 2022"
 doi_url: "https://openreview.net/forum?id=cGDAkQo1C0p"
-models_used: ["[[RevIN]]", "[[Informer]]", "[[N-BEATS]]", "[[SCINet]]"]
-datasets_used: ["[[ETT_Dataset]]", "[[ECL_Dataset]]", "[[UCI_Air_Quality]]", "[[Nasdaq_CNNpred]]", "[[M4_Competition]]"]
+models_used: ["[[RevIN]]", "[[Informer]]", "[[NBEATS]]", "[[SCINet]]"]
+datasets_used: ["[[ETT]]", "[[Electricity_ECL]]", "[[UCI_Air_Quality]]", "[[Nasdaq_CNNpred]]", "[[M4]]"]
 features_used: ["[[Historical_Load|Multivariate historical series (power load, oil temperature)]]", "Instance mean μ and standard deviation σ per input window", "Learnable affine parameters γ, β"]
-forecasting_horizon: "[[Long_Term]]"
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "DTW", "TDI"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -43,14 +43,14 @@ Input length $T_x$ and prediction length $T_y$ may differ since normalization is
 **Feature divergence analysis (A.10)** via symmetric KL divergence between train/test features:
 $$D(f_k^{train} \| f_k^{test}) = KL(f_k^{train}\|f_k^{test}) + KL(f_k^{test}\|f_k^{train}), \quad KL(f_k^A\|f_k^B) = \log\frac{\sigma_k^B}{\sigma_k^A} + \frac{\sigma_A^2 + (\mu_k^A-\mu_k^B)^2}{2(\sigma_k^B)^2} - \frac{1}{2}$$
 
-Baselines used with/without RevIN: [[Informer]], [[N-BEATS]], [[SCINet]]. Lightweight: only $2K$ extra parameters vs. ≥$3K^2$ for [[DAIN]]. Ablations show the affine transform helps consistently; RevIN in intermediate layers also works (e.g., MSE@960 ETTh2: LSTNet* 5.627, ES-RNN* 1.338, RevIN inter. 0.523, RevIN i/o 0.471).
+Baselines used with/without RevIN: [[Informer]], [[NBEATS]], [[SCINet]]. Lightweight: only $2K$ extra parameters vs. ≥$3K^2$ for [[DAIN]]. Ablations show the affine transform helps consistently; RevIN in intermediate layers also works (e.g., MSE@960 ETTh2: LSTNet* 5.627, ES-RNN* 1.338, RevIN inter. 0.523, RevIN i/o 0.471).
 
 ## 📊 Dataset & Input Features
-- **[[ETT_Dataset]]** (Electricity Transformer Temperature): 7 features (power load + oil temperature), two regions in China, 2 years; ETTh1/ETTh2 hourly, ETTm1 every 15 min. Split 12/4/4 months train/val/test. URL: https://github.com/zhouhaoyi/ETDataset
-- **[[ECL_Dataset]]** (Electricity Consuming Load): kWh consumption of 321 clients, hourly, each client = one variable; split 15/3/4 months. URL: https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
+- **[[ETT]]** (Electricity Transformer Temperature): 7 features (power load + oil temperature), two regions in China, 2 years; ETTh1/ETTh2 hourly, ETTm1 every 15 min. Split 12/4/4 months train/val/test. URL: https://github.com/zhouhaoyi/ETDataset
+- **[[Electricity_ECL]]** (Electricity Consuming Load): kWh consumption of 321 clients, hourly, each client = one variable; split 15/3/4 months. URL: https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
 - **[[UCI_Air_Quality]]**: hourly averaged responses from 5 metal oxide chemical sensors in Italy; 13 variables, length 9537. URL: https://archive.ics.uci.edu/ml/datasets/Air+Quality
 - **[[Nasdaq_CNNpred]]**: 82 variables (world indices, US company prices, treasury rates), daily, 1984 samples each. URL: https://archive.ics.uci.edu/ml/datasets/CNNpred%3A+CNN-based+stock+market+prediction+using+a+diverse+set+of+variables
-- **[[M4_Competition]]**: ~100,000 series across hourly/daily/weekly/monthly/quarterly/yearly frequencies. URL: https://mofc.unic.ac.cy/m4/
+- **[[M4]]**: ~100,000 series across hourly/daily/weekly/monthly/quarterly/yearly frequencies. URL: https://mofc.unic.ac.cy/m4/
 - Inputs are the raw multivariate historical series only; no exogenous features. Prediction lengths: 1d–40d (hourly sets); 6h–14d (ETTm1). Metrics computed on z-score normalized data. Baseline code: https://github.com/zhouhaoyi/Informer2020 , https://github.com/cure-lab/SCINet . No explicit data availability statement beyond these public URLs.
 
 ## 📈 Performance & Results

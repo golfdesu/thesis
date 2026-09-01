@@ -5,11 +5,11 @@ authors: [Kai Qu, Gangquan Si, Zihan Shan, Qianyue Wang, Xiaoliang Liu, Chen Yan
 year: 2024
 journal_conference: "IEEE Transactions on Power Systems, Vol. 39, No. 1, pp. 1421-1433, January 2024"
 doi_url: "https://doi.org/10.1109/TPWRS.2023.3266369"
-models_used: ["[[Forwardformer]]", "[[Transformer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Informer]]", "[[LogTrans]]", "[[LSTMa]]", "[[Prophet]]", "[[SARIMA]]"]
+models_used: ["[[Transformer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Informer]]", "[[LogTrans]]", "[[LSTMa]]", "[[Prophet]]", "[[SARIMA]]"]
 datasets_used: ["[[CEL_NW_China_Electric_Load]]", "[[CEL_SE_China_Electric_Load]]", "[[AEL_CNYS_America_Electric_Load]]", "[[AEL_NNYS_America_Electric_Load]]", "[[AEL_WNYS_America_Electric_Load]]"]
-features_used: ["[[Historical_Load_Lag]]", "[[Calendar_Timestamps]]", "[[Holiday_Flag]]", "[[Temperature_Max_Min]]", "[[Relative_Humidity]]", "[[Rainfall]]", "[[Pressure]]", "[[Wet_Bulb_Temperature]]"]
-forecasting_horizon: "[[Day_Ahead]]"
-metrics: ["[[MSE]]", "[[MAE]]", "[[ACC]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Temperature]]", "[[Humidity]]", "[[Rainfall]]", "[[Pressure]]"]
+forecasting_horizon: "[[Day_Ahead_Forecasting]]"
+metrics: ["[[MSE]]", "[[MAE]]", "[[Accuracy]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -39,7 +39,7 @@ $$X_{\text{feed}}[i] = VE(P_i) + \sum_{j=1}^{NTE}\big[TE(P_i)\big]_j + \sum_{k=1
 
 $$\text{FFN}(x) = \text{ReLU}(w_1 x + b_1)\, w_2 + b_2 \tag{3}$$
 
-Each sublayer wrapped with residual connection, layer norm, dropout ($p=0.1$):
+Each sublayer wrapped with residual connection, LayerNorm, dropout ($p=0.1$):
 
 $$y = \text{Dropout}\big(\text{LayerNorm}(x + \text{Sublayer}(x))\big) \tag{4}$$
 
@@ -113,9 +113,9 @@ Key results:
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[Vaswani2017_Attention_Is_All_You_Need]] [7] — base Transformer architecture.
+- [[2017_Attention_Is_All_You_Need]] [7] — base Transformer architecture.
 - [[Beltagy2020_Longformer]] [26] — source of sliding-window/dilated/global attention patterns reused by MSFSA.
-- [[Wu2021_Autoformer]] [27], [[Zhou2022_FEDformer]] [28], [[Zhou2021_Informer]] [29], [[Li2019_LogTrans]] [37] — Transformer baselines compared experimentally.
-- [[Taylor2018_Prophet]] [12] and [[Bahdanau2016_LSTMa_Attention]] [6] — classical/deep baselines.
+- [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]] [27], [[FEDformer]] [28], [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] [29], [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] [37] — Transformer baselines compared experimentally.
+- [[Prophet]] [12] and [[Bahdanau2016_LSTMa_Attention]] [6] — classical/deep baselines.
 - [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] — related line of attention-based (Temporal Fusion Transformer) day-ahead EV/load forecasting with environmental covariates; complementary since Forwardformer is point-only whereas TFT work adds conformal uncertainty.
-- [[Day_Ahead]] — the target horizon; one inference produces the full next-day profile.
+- [[Day_Ahead_Forecasting]] — the target horizon; one inference produces the full next-day profile.

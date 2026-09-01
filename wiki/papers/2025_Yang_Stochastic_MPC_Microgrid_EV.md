@@ -5,10 +5,10 @@ authors: [Weilin Yang, Haojie Fang, Dezhi Xu, Bin Jiang, Peng Shi]
 year: 2025
 journal_conference: "IEEE Transactions on Transportation Electrification, Vol. 11, No. 1, pp. 3137-3145"
 doi_url: "https://doi.org/10.1109/TTE.2024.3435426"
-models_used: ["[[MS_MPC]]", "[[Model_Predictive_Control]]", "[[Latin_Hypercube_Sampling]]", "[[Scenario_Reduction]]"]
-datasets_used: ["[[Elia_Belgian_Grid_Data]]", "[[National_Household_Travel_Survey]]"]
-features_used: ["[[EV_Arrival_Departure_Time]]", "[[Initial_SOC]]", "[[Wind_Power]]", "[[Solar_Power]]", "[[Electricity_Price]]", "[[Baseload]]"]
-forecasting_horizon: "[[Short_Term]]"
+models_used: ["[[MS_MPC]]", "[[MPC]]", "[[Latin_Hypercube_Sampling]]", "[[Scenario_Reduction]]"]
+datasets_used: ["[[ELIA_Belgian_Grid]]", "[[NHTS_2009]]"]
+features_used: ["[[Arrival_Departure_Time]]", "[[State_of_Charge]]", "[[Wind_Power]]", "[[Solar_Power]]", "[[Electricity_Tariff]]", "[[Baseload]]"]
+forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[Operating_Cost]]", "[[Unbalance_Deviation]]", "[[Computation_Time]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - Addresses uncertainties of EVs (arrival/departure times, initial SOC) in V2G microgrid energy management (EMS) coordinating wind turbines (WT), PV, battery energy storage (BES), an EV aggregator, and the main grid.
-- Proposes a **two-layer stochastic [[Model_Predictive_Control|MPC]] framework**:
+- Proposes a **two-layer stochastic [[MPC|MPC]] framework**:
   - **Upper layer**: [[MS_MPC]] (multiscenario MPC) with [[Latin_Hypercube_Sampling|LHS]] scenario sampling over EV count + arrival SOC uncertainties, minimizing total operating cost while mitigating prediction error.
   - **Scenario reduction**: a **two-stage simultaneous backward reduction** compresses thousands of sampled scenarios for computational tractability (vs. monolithic single-state EV models or brute-force scenario sets).
   - **Lower layer**: EV aggregator allocation model distributing charging/discharging power to individual EVs (including discharging/V2G, absent from prior two-layer works).
@@ -80,8 +80,11 @@ $$\min_{p^i_{\text{EV}}(t)} f(t) = \left|\sum_{i=1}^{n_{\text{EVs}}(t)} p^i_{\te
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[2021_Huang_Lyapunov_EV_Scheduling]] — related online/real-time EV scheduling optimization in the vault
+- [[2026_Huang_Lyapunov_EV_Scheduling]] — related online/real-time EV scheduling optimization in the vault
 - [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]] — probabilistic modeling of aggregate EV charging demand underlying aggregation approaches
 - [[2021_Zhang_Probabilistic_Queuing_EV_Load]] — probabilistic EV load characterization feeding scheduling decisions
 - [[2024_Zhong_V2G_SVE_Evaluation_Metric]] — vault note on evaluating load forecasts specifically in V2G scheduling contexts
-- [[2026_PC_M3_Mamba_EV_Clusters]] — related physics-constrained real-time energy management of EV clusters
+- [[PC-M3]] — related physics-constrained real-time energy management of EV clusters
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Yang_Stochastic_MPC_Microgrid_EV_refs]]

@@ -14,7 +14,7 @@
 8. [8] A. A. Ariyo, A. O. Adewumi, and C. K. Ayo, “Stock price prediction using the ARIMA model,” in Proc. UKSim-AMSS 16th Int. Conf. Comput. Model. Simulat., 2014, pp. 106–112.
 9. [9] M. Kumar and M. Thenmozhi, “Forecasting stock index returns using ARIMA-SVM, ARIMA-ANN, and ARIMA-random forest hybrid models,” Int. J. Banking, Accounting Finance, vol. 5, no. 3, pp. 284–308, 2014.
 10. [10] J. Zou, Y. Han, and S.-S. So, “Overview of artificial neural networks,” Artif. Neural Netw., Methods Appl., vol. 2009, pp. 14–22, Jan. 2009.
-11. [11] S. Suthaharan and S. Suthaharan, “Support vector machine,” in Machine Learning Models and Algorithms for Big Data Classification: Thinking With Examples for Eﬀective Learning. Boston, MA, USA: Springer, 2016, pp. 207–235. [Online]. Available: https://doi.org/10.1007/978-1- 4899-7641-3 9
+11. [11] S. Suthaharan and S. Suthaharan, “Support vector machine,” in Machine Learning Models and Algorithms for Big Data Classification: Thinking With Examples for Eﬀective Learning. Boston, MA, USA: Springer, 2016, pp. 207–235. [Online]. Available: https://doi.org/10.1007/978-1-4899-7641-3 9
 12. [12] S. J. Rigatti, “Random forest,” J. Insurance Med., vol. 47, no. 1, pp. 31–39, Jan. 2017.
 13. [13] L. R. Medsker and L. Jain, “Recurrent neural networks,” Design Appl., vol. 5, nos. 64–67, p. 2, Jun. 2001.
 14. [14] A. Graves and A. Graves, “Long short-term memory,” in Supervised Sequence Labelling With Recurrent Neural Networks. Berlin, Germany: Springer, 2012, pp. 37–45.

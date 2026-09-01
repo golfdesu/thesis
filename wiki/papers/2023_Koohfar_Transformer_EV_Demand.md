@@ -6,9 +6,9 @@ year: 2023
 journal_conference: "Sustainability 2023, 15(3), 2105"
 doi_url: "https://doi.org/10.3390/su15032105"
 models_used: ["[[Transformer]]", "[[LSTM]]", "[[RNN]]", "[[ARIMA]]", "[[SARIMA]]"]
-datasets_used: ["[[Boulder_EV_Dataset]]", "[[NOAA_Weather_Data]]"]
-features_used: ["[[Historical_Load]]", "[[Calendar_Features|Binary_Weekend_Indicator]]", "[[Temperature_Max_Min]]", "[[Snowfall]]", "[[Precipitation]]"]
-forecasting_horizon: "[[Long_Term]]"
+datasets_used: ["[[Boulder_Colorado]]", "[[Weather]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features|Binary_Weekend_Indicator]]", "[[Temperature]]", "[[Snowfall]]", "[[Precipitation]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -43,7 +43,7 @@ $$x_N = \frac{x_t - x_{\min}}{x_{\max} - x_{\min}} \tag{18}$$
 $$RMSE = \sqrt{\frac{1}{N}\sum_{i=1}^{n}\left(\hat{y}_i - y_i\right)^2}, \qquad MAE = \frac{1}{N}\sum_{i=1}^{n}\left|\hat{y}_i - y_i\right| \tag{19–20}$$
 
 ## 📊 Dataset & Input Features
-- **[[Boulder_EV_Dataset]]**: real-world charging records from **25 public EV charging stations** in Boulder, Colorado (Type 2 connectors, 22 kW), 1 January 2018 – 28 December 2021 (~4 years). Raw sessions: **29,780 individual charging events** (0.001–85.2 kW/event); aggregated to **1,425 daily records** (0.74–531.6 kW/day) after removing missing/negative values. Daily resolution (no sub-daily data).
+- **[[Boulder_Colorado]]**: real-world charging records from **25 public EV charging stations** in Boulder, Colorado (Type 2 connectors, 22 kW), 1 January 2018 – 28 December 2021 (~4 years). Raw sessions: **29,780 individual charging events** (0.001–85.2 kW/event); aggregated to **1,425 daily records** (0.74–531.6 kW/day) after removing missing/negative values. Daily resolution (no sub-daily data).
 - **Weather data** (Boulder, CO, from National Weather Service): max/min temperature (°F), snowfall (mm/day), precipitation (mm/day).
 - Calendar feature: binary weekend indicator (0/1).
 - Exploratory analysis: dry season (Sep–Mar) shows higher load distribution than rainy season; weekday median/peak load exceeds weekend (public-station workday charging behavior); COVID-19 lockdown caused an abrupt demand drop mid-2020; series is non-stationary with clear seasonality.
@@ -91,3 +91,6 @@ RMSE / MSE by horizon (Table 4):
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM gate formulation baseline
 - [[2019_Zhu_ApplSci_EV_Load_Forecasting]] / [[2019_Zhu_EV_Load_Forecasting]] — comparative deep-learning study of EV charging load forecasting (ref [6])
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] — SARIMA vs RF/GBRT comparison up to 28 days ahead (ref [9])
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2023_Koohfar_Transformer_EV_Demand_refs]]

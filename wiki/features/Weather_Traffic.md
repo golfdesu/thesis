@@ -1,4 +1,7 @@
 ---
+title: Weather & Traffic Conditions
+type: feature
+name: "Weather & Traffic Conditions"
 feature: Weather & Traffic Conditions
 category: external-contextual-feature
 data_type: continuous (temperature °C, precipitation mm, wind speed m/s) + categorical (traffic density)
@@ -53,13 +56,14 @@ tags: [feature, weather, traffic, contextual, external]
 - 2023 — [[2023_Koohfar_Transformer_EV_Demand]] : NOAA-derived temperature max/min, snowfall and precipitation as Transformer exogenous features.
 - 2023 — [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]] : Full NSRDB meteorological suite (GHI/DNI/DHI, wind, pressure, solar zenith) in multi-branch ResTrans.
 - 2024 — [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] : Temperature/humidity/wind-speed node features in attention multigraph network (Beijing).
-- 2025 — [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Adding synthetic temperature/humidity and retraining only the meta-learner improved cross-site MAE from 4.16 → **2.94 kWh** (29.3%).
+- 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Adding synthetic temperature/humidity and retraining only the meta-learner improved cross-site MAE from 4.16 → **2.94 kWh** (29.3%).
 - 2025 — [[2025_Han_Vertical_Federated_EGAT_LSTM]] : Traffic flow as vertically-held private feature fused with grid-side data via federated EGAT-LSTM.
 - 2026 — [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] : Temperature/humidity/wind speed + NREL SAM irradiance features for DC fast-charging forecasting.
 - 2026 — [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] : Open-Meteo temperature/rainfall/solar radiation as TFT known future inputs; VSN flags them as comparatively low-importance vs temporal features on Palo Alto data.
 - 2026 — [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]] : 6-D weather state vectors (temperature, station/sea-level pressure, humidity, rainfall intensity, dew point) aligned across days via Multi-DTW for similar-day matching.
 - 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : Temperature retained after Pearson/MIC screening (Pearson 0.4738, MIC 0.5698) while rain/wind rejected (MIC < 0.22) — screened meteorological factors spliced into CNN-GRU inputs.
 - 2024 — [[2024_Qu_Forwardformer_Day_Ahead_Load]] : Weather information embeddings (max/min temperature + pressure/humidity on CEL; wet-bulb temperature on AEL) injected in Decoder-2 to correct the predicted day's load across five China/US datasets.
+- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] : Grid-level hourly weather-covariate reversal finding — thermal-lag-aligned temperature/humidity/wind/GHI/cloud features invert the load-only model ranking (iTransformer gains 3× more MAPE than PatchTST; SSMs win 5/7 grids); caveat: reanalysis weather, not operational NWP forecasts.
 
 ## Feature Engineering Approaches
 

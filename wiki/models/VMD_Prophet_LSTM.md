@@ -27,7 +27,7 @@ Reported average absolute-error reductions: **7.57% vs ARIMA**, **8.73% vs LSTM*
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: univariate historical charging-power series (15-min resolution, 96 steps/week); no exogenous covariates.
-- **Forecasting Horizon**: [[Short_Term]].
+- **Forecasting Horizon**: [[Short_Term_Forecasting]].
 - **Strengths**: component-aware modeling — VMD even rescues volatile sequences that collapse raw Prophet (R² 0.49→part of a 0.84 combined fit); simple, interpretable pipeline on modest hardware (GTX 1050Ti).
 - **Weaknesses**: fixed zero-crossing threshold heuristic; empirical k-selection; single-station case study; point forecast only — motivates quantile/distributional and federated extensions.
 

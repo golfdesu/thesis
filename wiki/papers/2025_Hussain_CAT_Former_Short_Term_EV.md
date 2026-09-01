@@ -5,10 +5,10 @@ authors: [Adil Hussain, Qing-Chang Lu, Sanam Shahla Rizvi, Shixin Wang, Se Jin K
 year: 2025
 journal_conference: "Scientific Reports, Vol. 15, Article 36652"
 doi_url: "https://doi.org/10.1038/s41598-025-20557-x"
-models_used: ["[[CAT_Former|CAT-Former (Context-Aware Temporal Transformer)]]", "[[Transformer]]", "[[Multi_Head_Attention]]", "[[LSTM]]", "[[BiLSTM]]", "[[CNN-LSTM]]", "[[CNN-BiLSTM]]", "[[Hybrid_Transformer|Hybrid Transformer (LSTM Encoder-Decoder)]]"]
-datasets_used: ["[[Boulder_City_EV_Charging_Dataset]]", "[[Boulder_Weather_Data]]"]
-features_used: ["[[Temporal_Features]] $X_{temporal,t} = [h, dw, dt, dm, sd]$", "[[Contextual_Features]] $X_{context,t} = [C_{location}, C_{weather}]$", "[[Positional_Encoding]] $P_t$"]
-forecasting_horizon: "[[Short_Term|1-Hour Ahead and 1-Day Ahead]]"
+models_used: ["[[CAT_Former|CAT-Former (Context-Aware Temporal Transformer)]]", "[[Transformer]]", "[[Multi_Head_Attention]]", "[[LSTM]]", "[[BiLSTM]]", "[[CNN_LSTM]]", "[[Hybrid_Transformer|Hybrid Transformer (LSTM Encoder-Decoder)]]"]
+datasets_used: ["[[Boulder_Colorado]]", "[[Weather]]"]
+features_used: ["[[Calendar_Features]] $X_{temporal,t} = [h, dw, dt, dm, sd]$", "[[Contextual_Features]] $X_{context,t} = [C_{location}, C_{weather}]$", "[[Positional_Encoding]] $P_t$"]
+forecasting_horizon: "[[Short_Term_Forecasting|1-Hour Ahead and 1-Day Ahead]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -18,7 +18,7 @@ tags: [paper, ev-load-forecasting, ml]
 ## 🎯 Main Objective & Contribution
 - Most existing EV charging demand forecasts target a single or city-aggregated charging station; charging behavior actually **differs across locations** within a city (time-of-day dependent trends).
 - Proposes **[[CAT_Former]]**, a Context-Aware Temporal Transformer that fuses **Temporal features** (calendar/session-based) and **Contextual features** (station coordinates + weather) inside a multi-head self-attention encoder-decoder for **1-hour and 1-day ahead** demand forecasts at multiple stations simultaneously.
-- Evaluated on public Boulder City, Colorado data at the three busiest sites (**Park 1 / Carpenter Park 1, Rec 1 / N Boulder Rec 1, Street 1 / Baseline St 1**), against [[LSTM]], [[BiLSTM]], [[CNN-LSTM]], [[CNN-BiLSTM]], simple Transformer, and a Hybrid Transformer with LSTM encoder-decoder.
+- Evaluated on public Boulder City, Colorado data at the three busiest sites (**Park 1 / Carpenter Park 1, Rec 1 / N Boulder Rec 1, Street 1 / Baseline St 1**), against [[LSTM]], [[BiLSTM]], [[CNN_LSTM]], [[BiLSTM]], simple Transformer, and a Hybrid Transformer with LSTM encoder-decoder.
 
 ## 🧠 Methodology & Model Architecture
 ### Feature Construction
@@ -45,11 +45,11 @@ Training optimized by MSE loss (**Eq. 15**: $\text{MSE} = \frac{1}{n}\sum_{i=1}^
 - Baselines: 3-layer LSTM (100→50→25 units + Dense 64→1); 3-layer BiLSTM (128/128/64); CNN-LSTM (Conv1D 64+128 → LSTM 50/30); CNN-BiLSTM (Conv1D 64/128 → BiLSTM 50/30); simple Transformer (MultiHeadAttention + GlobalAveragePooling1D); Hybrid Transformer (LSTM encoder-decoder + multi-head attention).
 
 ## 📊 Dataset & Input Features
-- **[[Boulder_City_EV_Charging_Dataset]]**: public dataset of **26 EV charging stations in Boulder City, Colorado**, spanning **January 2018 – November 2023**; one row per charging session (Station Name, Address, City, State/Province, Start/End Date Time, Total Duration, Charging Time, Energy kWh, GHG Savings kg, Gasoline Savings gallons, Port Type, ObjectID).
+- **[[Boulder_Colorado]]**: public dataset of **26 EV charging stations in Boulder City, Colorado**, spanning **January 2018 – November 2023**; one row per charging session (Station Name, Address, City, State/Province, Start/End Date Time, Total Duration, Charging Time, Energy kWh, GHG Savings kg, Gasoline Savings gallons, Port Type, ObjectID).
   - **Data availability (verbatim)**: "The datasets generated and/or analyzed during the current study are available in the Electric Vehicle Charging Station Data repository, https://opendata.bouldercolorado.gov/datasets/95992b3938be4622b07f0b05eba95d4c_0/explore."
   - Split: train **Jan 2018 – Jun 2023**, test **Jul – Nov 2023** (fixed date split, seasonality not preserved).
 - Three top sites by session count: Carpenter **Park 1**, N Boulder **Rec 1**, Baseline **Street 1**.
-- **[[Boulder_Weather_Data]]**: hourly temperature, wind speed, precipitation (no missing values), synchronized to hourly charging sessions via datetime.
+- **[[Weather]]**: hourly temperature, wind speed, precipitation (no missing values), synchronized to hourly charging sessions via datetime.
 - Temporal analysis: summer peaks (May–Oct), weekday > weekend demand, peak hours 7 AM–6 PM (sessions peak 1–2 PM; energy peaks 2–3 PM).
 - Open Access CC BY-NC-ND 4.0; funding acknowledged from NRF Korea RS-2023-00244091 and MOTIE RS-2024-00507228 (though Funding section states no external funding for the research itself).
 
@@ -96,7 +96,10 @@ Park 1 actual 58.294 kWh → CAT-Former 59.208 (closest among most models); Rec 
 
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] — source of the multi-head self-attention encoder-decoder backbone (Eqs. 9–13).
-- [[1997_Long_Short_Term_Memory]] — LSTM/BiLSTM baselines used for comparison.
-- Koohfar, Woldemariam & Kumar (2023), *Prediction of electric vehicles' charging demand: A Transformer-based deep learning approach* (Sustainability 15(3):2105) — direct predecessor using Boulder data but daily aggregation only; see [[2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach]], ref [28].
-- Zhu et al. (2019), *Short-Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches* (Appl. Sci.) — see [[2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches]], ref [24].
+- [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM/BiLSTM baselines used for comparison.
+- Koohfar, Woldemariam & Kumar (2023), *Prediction of electric vehicles' charging demand: A Transformer-based deep learning approach* (Sustainability 15(3):2105) — direct predecessor using Boulder data but daily aggregation only; see [[2023_Koohfar_Transformer_EV_Demand]], ref [28].
+- Zhu et al. (2019), *Short-Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches* (Appl. Sci.) — see [[2019_Zhu_ApplSci_EV_Load_Forecasting]], ref [24].
 - Zhang et al. (2022), *Hybrid STLF based on empirical wavelet transform and BiLSTM*, doi:10.35833/MPCE.2021.000276, ref [35]; Zhang et al. (2024), *Privacy-preserving federated learning for AMI*, IEEE TCSS, ref [36].
+
+## Extracted Reference Dump
+Full extracted bibliography for this paper: [[2025_Hussain_CAT_Former_Short_Term_EV_refs]]

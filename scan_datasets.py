@@ -9,18 +9,26 @@ terms = re.compile(r'(?i)(dataset|data set|data availability|data source|downloa
 def scan(p):
     try:
         if p.suffix.lower()=='.pdf':
-            doc = fitz.open(p)
-            text = '\n'.join(page.get_text() for page in doc)
-            doc.close()
+            txt_path = root / 'scratch' / 'txt' / (p.stem + '.txt')
+            if txt_path.exists():
+                text = txt_path.read_text(encoding='utf-8', errors='ignore')
+            else:
+                doc = fitz.open(p)
+                text = '\n'.join(page.get_text() for page in doc)
+                doc.close()
+                txt_path.parent.mkdir(parents=True, exist_ok=True)
+                txt_path.write_text(text, encoding='utf-8')
         else:
             text = p.read_text(encoding='utf-8', errors='ignore')
         urls = sorted(set(u.rstrip('.,;:') for u in url_re.findall(text)))
         hits = []
+        seen = set()
         for m in terms.finditer(text):
             a = max(0, m.start()-220)
             b = min(len(text), m.end()+420)
             snippet = re.sub(r'\s+', ' ', text[a:b]).strip()
-            if snippet not in hits:
+            if snippet not in seen:
+                seen.add(snippet)
                 hits.append(snippet)
         if urls or hits:
             return {'file': str(p).replace('\\', '/'), 'urls': urls, 'hits': hits[:80]}

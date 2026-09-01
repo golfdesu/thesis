@@ -5,10 +5,10 @@ authors: [Ailing Zeng, Muxi Chen, Lei Zhang, Qiang Xu]
 year: 2023
 journal_conference: "AAAI 2023"
 doi_url: "https://arxiv.org/abs/2205.13504"
-models_used: ["[[LTSF_Linear]]", "[[DLinear]]", "[[NLinear]]", "[[Informer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Pyraformer]]", "[[LogTrans]]"]
-datasets_used: ["[[ETTh1]]", "[[ETTh2]]", "[[ETTm1]]", "[[ETTm2]]", "[[Traffic_PEMS]]", "[[Electricity_ECL]]", "[[Exchange_Rate]]", "[[Weather]]", "[[ILI]]"]
-features_used: ["[[Trend_Seasonal_Decomposition]]", "[[Moving_Average_Trend]]", "[[Look_Back_Window]]", "[[Distribution_Shift_Normalization]]"]
-forecasting_horizon: "[[Long_Term]]"
+models_used: ["[[DLinear]]", "[[NLinear]]", "[[Informer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Pyraformer]]", "[[LogTrans]]"]
+datasets_used: ["[[ETT]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[Exchange]]", "[[Weather]]", "[[ILI]]"]
+features_used: ["[[Trend_Seasonal_Decomposition]]", "[[Moving_Average_Trend]]", "[[Lookback_Window]]", "[[Distribution_Shift_Normalization]]"]
+forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -17,7 +17,7 @@ tags: [paper, ev-load-forecasting, ml]
 
 ## 🎯 Main Objective & Contribution
 - First work to systematically **challenge Transformer-based LTSF solutions**: self-attention is permutation-invariant and "anti-order", causing temporal information loss that positional/timestamp embeddings cannot fully repair — fatal for time series where order is the crucial signal.
-- Introduces **[[LTSF-Linear]]**: embarrassingly simple one-layer (at most two) direct-multi-step (DMS) linear models — Vanilla Linear, [[NLinear]], [[DLinear]] — that beat FEDformer/Autoformer/Informer/Pyraformer/LogTrans on all nine benchmarks, often by **20%–50%**.
+- Introduces **[[DLinear]]**: embarrassingly simple one-layer (at most two) direct-multi-step (DMS) linear models — Vanilla Linear, [[NLinear]], [[DLinear]] — that beat FEDformer/Autoformer/Informer/Pyraformer/LogTrans on all nine benchmarks, often by **20%–50%**.
 - Diagnostic studies show existing LTSF-Transformers cannot exploit longer look-back windows, barely preserve temporal order under input shuffling, and offer no practical efficiency advantage.
 
 ## 🧠 Methodology & Model Architecture

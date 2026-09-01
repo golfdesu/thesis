@@ -1,9 +1,9 @@
 ---
-model: Multi-Layer Perceptron (MLP)
-type: feedforward-neural-network
+name: "Multi-Layer Perceptron (MLP)"
+type: model
 category: baseline-model
 last_updated: 2026-08-02
-tags: [model, MLP, baseline, feedforward, neural-network]
+tags: [model, mlp, baseline, feedforward, neural-network]
 ---
 
 # 🧠 Multi-Layer Perceptron (MLP)

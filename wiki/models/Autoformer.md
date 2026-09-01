@@ -25,7 +25,7 @@ $$\text{Auto-Correlation}(Q,K,V) = \sum_{i=1}^{k} \text{Roll}(V, \tau_i)\ \hat{R
 
 ## Typical Usage in EV Load Forecasting
 - **Input**: past window (length $I=96$ standard) of strongly periodic station-level/aggregated charging series.
-- **Forecasting Horizon**: [[Long_Term]] ($O \in \{96,192,336,720\}$; EV studies use 30/60/90-day horizons).
+- **Forecasting Horizon**: [[Long_Term_Forecasting]] ($O \in \{96,192,336,720\}$; EV studies use 30/60/90-day horizons).
 - **Strengths**: discovers interpretable periods (24h/168h cycles); flat error growth across horizons; learned lags recover human-interpretable seasonality.
 - **Weaknesses**: hyper-parameter $c$ trades performance vs efficiency; degrades on weak-periodicity data; high MAPE persists in sparse-feature EV settings.
 
@@ -39,3 +39,4 @@ $$\text{Auto-Correlation}(Q,K,V) = \sum_{i=1}^{k} \text{Roll}(V, \tau_i)\ \hat{R
 - [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]] — Baseline; Autoformer wins small ILI (decomposition priors help with limited data) but loses elsewhere.
 - [[2024_Das_TiDE_Long_Term_Forecasting]] — Benchmark protocol and baseline provider; sub-quadratic attention family far behind MLP encoders.
 - [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Source of ECL/Traffic/Weather/Exchange benchmarks; component-adaptation baseline.
+- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Long-horizon baseline on ETT (avg MAE 0.53); TimesFM 0.36 significantly better.
