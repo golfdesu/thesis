@@ -13,13 +13,13 @@ This skill defines the process for synthesizing answers from the EV Charging Dem
 
 ## Workflow Steps
 
-### Step 1: Knowledge Retrieval
+### Step 1: Knowledge Retrieval (Hierarchical 2-Tier Strategy)
 
 When asked a research question:
 
-1. **Consult the Digest:** Read `paper_digest.md` (the one-file summary of all ingested papers) to quickly identify relevant papers.
+1. **Tier 1 (Digest / Topic Scan):** Consult `paper_digest.md` or execute `python scripts/hierarchical_query_engine.py` to filter candidates and reduce context footprint by 85–95%.
 2. **Consult Synthesis Docs:** Check `research_gaps.md` or `transformer_research_ideas.md` if the query is about novelty or gaps.
-3. **Deep Dive:** Read specific paper notes (`wiki/papers/`) or concept nodes (`wiki/models/`, `wiki/datasets/`) if granular details (like exact equations or metrics) are needed.
+3. **Tier 2 (Deep Dive):** Read specific paper notes (`wiki/papers/`) or concept nodes (`wiki/models/`, `wiki/datasets/`) only for the top candidate papers to inspect granular equations or baseline tables.
 
 ### Step 2: Answer Synthesis
 

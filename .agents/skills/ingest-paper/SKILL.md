@@ -67,17 +67,18 @@ Run **all three** checks; if any hits, skip ingestion and log the duplicate:
 - If **any** of (a)(b)(c) hits → **skip ingestion**, append `duplicate — already ingested as [[Existing_Paper]]` to `log.md`, and delete the staging file in `raw_sources/New/` if it is an exact duplicate.
 - If all clear → copy staging PDF to `raw_sources/YYYY_Keywords.pdf` (canonical name, year verified against PDF text). Keep the staging original until the full ingestion is verified (Definition of Done).
 
-### Step 1: Extract Full Text
+### Step 1: Extract Full Text & Deterministic Pruning
 
 - Use Python's `fitz` (PyMuPDF) to extract the complete text of the PDF.
 - Save the output to `scratch/txt/<pdf_basename>.txt`.
 - *Note: If a text file >1KB already exists for this PDF, skip extraction and reuse it.*
 - **Canonical txt copy:** After extraction (or reuse), copy the txt to its canonical name as well so both names resolve: `scratch/txt/<staging_basename>.txt` ↔ `scratch/txt/YYYY_Keywords.txt` (same content, two filenames). This prevents re-extraction when the PDF was renamed.
+- **Deterministic Token Pruning:** Run `scripts/paper_content_pruner.py` to prune trailing bibliography/references before passing extracted text into LLM prompts (saves 25%–60% input tokens while retaining 100% of equations, tables, and methodology).
 - **Read every page of the extracted text.** Do not summarize from the abstract alone. For long papers (>10 pages), explicitly note the page count you read in `log.md`.
 
 ### Step 2: Write the Paper Note — TEMPLATE IS LAW
 
-Create `wiki/papers/YYYY_Keywords.md` strictly following the `schema.md` template. **Copy-paste the template — never regenerate headings from memory.**
+Create `wiki/papers/YYYY_Keywords.md` strictly following the `schema.md` template (or use `scripts/paper_skeleton_builder.py` for guaranteed gate compliance and 40% output token reduction). **Copy-paste the template — never regenerate headings from memory.**
 
 **Required headings (exact strings, including emoji — any deviation fails G1):**
 

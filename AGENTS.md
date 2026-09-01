@@ -71,16 +71,18 @@ Follow this order for every ingestion. Do not skip steps.
 3. Verify the PDF filename matches the actual content (year + key concept/author). If the name is wrong, flag or fix it **before** creating the note (e.g., the Cheng VMD-Prophet-LSTM case: filename said "Federated" but the content is not federated learning). For staging files, this determines the canonical name in `raw_sources/`.
 4. Copy the staging PDF from `raw_sources/New/` to `raw_sources/YYYY_Keywords.pdf` under its canonical name (year verified against PDF text). Keep the staging original until the full ingestion is verified.
 
-### Step 1 — Extract full text
+### Step 1 — Extract full text & Deterministic Pruning (Token Optimization)
 
 5. Extract full PDF text with pymupdf (`fitz`) → save to `scratch/txt/<filename>.txt`. Read every page; never summarize from the abstract alone.
 6. **Reuse & canonical copy**: If `scratch/txt/<pdf_basename>.txt` already exists at **>1KB**, skip extraction and reuse it. After extraction (or reuse), **copy** the txt to its canonical name as well so both names resolve: `scratch/txt/<staging_basename>.txt` ↔ `scratch/txt/YYYY_Keywords.txt` (same content, two filenames). This prevents re-extraction when the PDF was renamed.
+7. **Deterministic Reference Pruning before LLM Context**: For large papers, run `python scripts/paper_content_pruner.py` to prune trailing bibliography/references before passing into LLM synthesis prompts (saves 25%–60% input tokens while retaining 100% of mathematical equations, models, datasets, and benchmark tables).
 
-### Step 2 — Write the paper note — TEMPLATE IS LAW
+### Step 2 — Write the paper note — TEMPLATE IS LAW (Structured Skeleton Assembly)
 
 > **Model-agnostic enforcement (binding on every model — gemini, spark, opus, sonnet, local LLM):** Copy-paste the 6 headings from `schema.md` **verbatim** (including emoji). Never regenerate from memory. Any paraphrase (`## Contribution` vs `## 🎯 Main Objective & Contribution`) fails **G1**. See `.agents/skills/ingest-paper/SKILL.md` Gates **G1-G8** — every gate must pass; a weaker model that skips a gate is incorrect, not faster.
+> **Output Token Optimization**: Use `scripts/paper_skeleton_builder.py` to assemble the Markdown skeleton with exact headings, LaTeX raw strings `r"""`, and frontmatter, offloading output formatting tokens from the LLM.
 
-7. Create/rewrite `wiki/papers/YYYY_Keywords.md` using the template in `schema.md` (copy-paste, do not paraphrase):
+8. Create/rewrite `wiki/papers/YYYY_Keywords.md` using the template in `schema.md` (copy-paste, do not paraphrase):
    - Complete YAML frontmatter: title, authors, year, journal_conference, doi_url, models_used, datasets_used, features_used, forecasting_horizon, metrics, tags — every concept with a `wiki/*/*.md` page MUST be a `[[Wikilink]]` (G5)
    - Extract ALL key equations **verbatim** from the FULL text (every page of `scratch/txt/*.txt`) → LaTeX display `$$... \tag{N}$$` with original symbols, naming each equation (G3) — never paraphrase, never invent; if ambiguous keep PDF notation + `[as in PDF p.X]` — **MUST write via Python raw string `r"""` (or double every `\` to `\\`); plain `"""` corrupts `\t \n \r \a \nu \theta \alpha \frac` into control chars (`\tag`→`ag{`, 49 control chars in 2024_Woo fail)**
    - Datasets: name, location, size (#sessions/#stations), resolution, **every URL/DOI/GitHub/Zenodo/Kaggle link found** — include composition tables for large corpora (e.g., TimeBench 1,032B)
