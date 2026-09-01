@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Comprehensive Synthesis of Literature Taxonomy & Research Gaps for Thesis.
 
-Synthesizes all 130 papers in wiki/papers/ (531 extracted limitations/gaps).
+Synthesizes all papers in wiki/papers/ (dynamic count, currently 118).
 Organized into 8 structured pillars with exact Wikilinks, mathematical descriptions, and open frontier challenges.
 """
 
@@ -22,7 +22,7 @@ def build_synthesis():
     L = []
     L.append("# 🔬 Master Synthesis: Literature Taxonomy & Research Gaps for Thesis")
     L.append("")
-    L.append(f"This document represents the complete, exhaustive synthesis of core findings, mathematical formulations, limitations, and open research gaps extracted across **ALL {total_papers} research papers** (130 notes in `wiki/papers/`, totaling **{total_gaps} extracted gap items**) in your Obsidian Second Brain.")
+    L.append(f"This document represents the complete, exhaustive synthesis of core findings, mathematical formulations, limitations, and open research gaps extracted across **ALL {total_papers} research papers** ({total_papers} notes in `wiki/papers/`, totaling **{total_gaps} extracted gap items**) in your Obsidian Second Brain.")
     L.append("")
     L.append(f"> [!IMPORTANT]")
     L.append(f"> **Vault Coverage:** 100% Comprehensive ({total_papers} Papers) | **Last Updated:** {today} | **Extraction Source:** `wiki/papers/*.md` via Automated Full-Text Analysis")
@@ -31,7 +31,7 @@ def build_synthesis():
     L.append("")
 
     # Taxonomy Tree
-    L.append("## 🏛️ Comprehensive Literature Taxonomy (130 Papers)")
+    L.append(f"## 🏛️ Comprehensive Literature Taxonomy ({total_papers} Papers)")
     L.append("")
     L.append("```mermaid")
     L.append("graph TD")
@@ -111,7 +111,7 @@ def build_synthesis():
     # Section 2: Complete Per-Paper Gap Registry
     L.append("---")
     L.append("")
-    L.append("## 📂 Comprehensive Per-Paper Limitations & Gap Registry (All 130 Papers)")
+    L.append(f"## 📂 Comprehensive Per-Paper Limitations & Gap Registry (All {total_papers} Papers)")
     L.append("")
     L.append("| # | Paper Note | Yr | Primary Architecture | Extracted Limitations & Research Gaps |")
     L.append("|---|---|---|---|---|")
