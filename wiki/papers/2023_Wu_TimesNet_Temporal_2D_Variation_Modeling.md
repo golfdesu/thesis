@@ -5,8 +5,8 @@ authors: [Haixu Wu, Tengge Hu, Yong Liu, Hang Zhou, Jianmin Wang, Mingsheng Long
 year: 2023
 journal_conference: "ICLR 2023"
 doi_url: "https://arxiv.org/abs/2210.02186"
-models_used: ["[[TimesNet]]", "[[Inception_2D_CNN]]", "[[FFT_Periodicity_Detection]]"]
-datasets_used: ["[[ETT]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[Weather]]", "[[Exchange]]", "[[ILI]]", "[[M4]]", "[[UEA_Archive]]", "[[SMD]]", "[[MSL]]", "[[SMAP]]", "[[SWaT]]", "[[PSM]]"]
+models_used: ["[[TimesNet]]", "[[TimesNet]]", "[[Inception_2D_CNN]]", "[[FFT_Periodicity_Detection]]"]
+datasets_used: ["[[ETT]]", "[[ETT]]", "[[ETT]]", "[[ETT]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[Weather]]", "[[Exchange]]", "[[ILI]]", "[[M4]]", "[[UEA_Archive]]", "[[SMD]]", "[[MSL]]", "[[SMAP]]", "[[SWaT]]", "[[PSM]]"]
 features_used: ["[[Multi_Periodicity]]", "[[Intraperiod_Variation]]", "[[Interperiod_Variation]]", "[[Temporal_2D_Variations]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "[[SMAPE]]", "[[MASE]]", "[[OWA]]", "[[F1_Score]]"]

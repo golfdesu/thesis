@@ -2,14 +2,10 @@
 type: dataset
 name: "California Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - california_grid
-location:
-resolution: "5-min / hourly"
-access: "open (caiso.com OASIS)"
-data_type: "System + zonal load, prices, renewables"
 ---
 
 # California Grid

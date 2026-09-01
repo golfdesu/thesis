@@ -79,6 +79,3 @@ $$\hat{\alpha} \leq \left[1 - \frac{1-\alpha}{1 - ((\log n)^2 W/2n)^{1/3} - (W/2
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — contrast: probabilistic DL forecasting vs distribution-free conformal approach.
 - [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]] — vault concept of hierarchical forecasting structure (coherent aggregation theme).
 - Related vault concepts: [[Multivariate_Hawkes_Process]], [[Conformal_Prediction]], [[DER_Adoption]], [[Grid_Topology]], [[PICP]]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Zhou_Conformal_Prediction_DER_refs]]

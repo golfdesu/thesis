@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - nottingham
-location:
-resolution: "session level"
-access: "open (city council portal)"
-data_type: "Public EV charging sessions in Nottingham"
 ---
 
 # Nottingham

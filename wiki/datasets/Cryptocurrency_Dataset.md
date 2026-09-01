@@ -2,14 +2,10 @@
 type: dataset
 name: "Cryptocurrency Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - cryptocurrency_dataset
-location:
-resolution: "hourly/minutely depending on source"
-access: "open"
-data_type: "Cryptocurrency price/volume panels used in deep-forecasting comparisons"
 ---
 
 # Cryptocurrency Dataset

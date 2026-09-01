@@ -2,14 +2,10 @@
 type: dataset
 name: "Forex Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - forex_dataset
-location:
-resolution: "hourly/daily depending on source"
-access: "varies"
-data_type: "Foreign-exchange rate panels used in volatility/rate forecasting studies"
 ---
 
 # Forex Dataset

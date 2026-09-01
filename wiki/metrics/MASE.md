@@ -15,7 +15,6 @@ $$\mathrm{MASE} = \frac{\mathrm{MAE}}{\mathrm{MAE}_{\text{naive}}}$$
 
 ## Usage in EV / Load Forecasting
 Used in benchmark studies (N-BEATS lineage, TimesNet) for scale-comparable comparison.
-- [[2026_Khwaja_Toto_2_Scaling_Era]] — Co-primary metric: BOOM MASE 0.581 (2.5B), GIFT-Eval MASE 0.696 (2.5B), MASE ranks 13.5 (FnF) / 14.7 (2.5B-FT) / 21.0 (2.5B zero-shot). Used in OWA Eq.8 as MASE/MASE_sNaive.
 
 ## Literature Usage
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **MASE** point metric on GIFT-Eval W 83.8 S 30.2 and Chronos Bench II W 81.5 S 26.5 for Chronos-2 (Tables 4b/5b); fev-bench MASE gains in Appendix Fig.9-11.

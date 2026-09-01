@@ -2,14 +2,10 @@
 type: dataset
 name: "UK National Travel Survey"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - uk_national_travel_survey
-location:
-resolution: "annual survey"
-access: "open (gov.uk DfT)"
-data_type: "Household/personal travel diaries; source of EV-charging behaviour covariates"
 ---
 
 # UK National Travel Survey
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Zhang_Probabilistic_Queuing_EV_Load]]
+[[2021_Zhang_Probabilistic_Queuing_EV_Load]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]

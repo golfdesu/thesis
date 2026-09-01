@@ -1,6 +1,6 @@
 ---
 type: model
-name: "ST-EVCDP"
+name: "ST EVCDP"
 category: Stub (auto-generated)
 status: needs-review
 tags:

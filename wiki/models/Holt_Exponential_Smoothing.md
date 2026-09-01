@@ -14,4 +14,4 @@ Double exponential smoothing with level and trend components; classical baseline
 
 ## Referenced in this knowledge base
 
-[[2024_Bampos_EV_Load_Forecasting_DAM]]
+*(none recorded)*

@@ -17,6 +17,3 @@ As an input feature it appears in the feature lists of forecasting papers collec
 ## Referenced in this knowledge base
 
 [[2021_Zhou_Informer_Beyond_Efficient_Transformer]]
-
-## See also
-- [[Temperature]] — the dominant single climate variable; climate feature sets typically include it alongside humidity, wind, and radiation.

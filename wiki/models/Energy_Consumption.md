@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - model
-  - energy-consumption
+  - energy_consumption
 ---
 
 # Energy Consumption

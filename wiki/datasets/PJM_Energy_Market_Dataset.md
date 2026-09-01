@@ -2,14 +2,10 @@
 type: dataset
 name: "PJM Energy Market Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - pjm_energy_market_dataset
-location:
-resolution: "hourly"
-access: "open (pjm dataminer)"
-data_type: "Zonal load, LMP prices, ancillaries"
 ---
 
 # PJM Energy Market Dataset

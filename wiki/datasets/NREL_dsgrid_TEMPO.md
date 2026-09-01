@@ -2,16 +2,10 @@
 type: dataset
 name: "NREL dsgrid TEMPO"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - nrel_dsgrid_tempo
-location: "USA (national), NREL"
-resolution: "hourly scenarios"
-access: "open (NREL dsgrid / TEMPO releases)"
-license: "US DOE/NREL - US Government work, public domain (NREL data disclaimer)"
-commercial_use: allowed
-data_type: "National electrification scenario load projections (incl. 2030 EV stress profiles)"
 ---
 
 # NREL dsgrid TEMPO

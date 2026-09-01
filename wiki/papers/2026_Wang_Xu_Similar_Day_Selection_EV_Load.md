@@ -5,9 +5,9 @@ authors: [Xu Wang, Zihan Wang, Fei Ma, Rongjian Dai, Xiaoteng Zhou]
 year: 2026
 journal_conference: "Applied Energy"
 doi_url: "https://doi.org/10.1016/j.apenergy.2026.127731"
-models_used: ["[[XGBoost]]", "[[NSGA-II]]", "[[Random_Forest]]", "[[SVR]]", "[[LSTM]]", "[[LightGBM]]", "[[ShapeDTW]]", "[[Multi_Dimensional_DTW]]"]
+models_used: ["[[XGBoost]]", "[[NSGA-II]]", "[[Random_Forest]]", "[[SVR]]", "[[LSTM]]", "[[LightGBM]]", "[[ShapeDTW]]", "[[Multi_Dimensional_DTW]]", "[[Adjacency_Matrix]]"]
 datasets_used: ["[[UrbanEV_Dataset]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Air_Pressure]]", "[[Sea_Level_Pressure]]", "[[Humidity]]", "[[Rainfall_Intensity]]", "[[Dew_Point]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[POI_Functional_Entropy]]"]
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Air_Pressure]]", "[[Sea_Level_Pressure]]", "[[Humidity]]", "[[Rainfall_Intensity]]", "[[Dew_Point]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Holiday_Flag]]", "[[POI_Functional_Entropy]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[Precision]]", "[[Recall]]", "[[F1_Score]]", "[[AUC]]"]
 tags: [paper, ev-load-forecasting, ml]

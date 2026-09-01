@@ -1,32 +1,18 @@
 ---
 type: metric
-name: "ND (Normalized Deviation)"
-category: point-forecast-metric
-formula: "ND = Σ|y − ŷ| / Σ|y|"
-unit: Dimensionless
-last_updated: 2026-08-26
+name: "ND"
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - metric
   - nd
-  - normalized-deviation
-  - point-forecast
 ---
 
-# ND (Normalized Deviation)
+# ND
 
-## Definition
+ND — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-**ND** is the sum of absolute errors normalized by the sum of absolute actual values (standard in GluonTS / DeepAR-style evaluations):
-
-$$\text{ND} = \frac{\sum_{i=1}^{N} |y_i - \hat{y}_i|}{\sum_{i=1}^{N} |y_i|}$$
-
-It equals [[MAE]] normalized by the mean absolute level of the series; ND = 0 is a perfect forecast. Closely related to [[NMAE]] (which may use a different normalizer such as capacity or range).
-
-| Property | Description |
-|----------|-------------|
-| **Unit** | Dimensionless (%) |
-| **Lower is better** | ✅ Yes |
-| **Scale-free** | ✅ Comparable across stations with different load levels |
+The metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked below report results using this metric.
 
 ## Referenced in this knowledge base
 

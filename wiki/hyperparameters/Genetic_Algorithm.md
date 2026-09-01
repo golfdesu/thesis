@@ -17,6 +17,3 @@ This optimization-related concept appears in training setups across the knowledg
 ## Referenced in this knowledge base
 
 [[2015_Raza_Review_AI_Load_Demand]]
-
-## Related
-Part of the [[Heuristic_Optimization]] (metaheuristic) family of nature-inspired search methods.

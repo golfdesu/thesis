@@ -1,30 +1,18 @@
 ---
 type: metric
 name: "Perplexity"
-category: language-model-metric
-formula: "PPL = exp(−(1/N) Σ log p(x_i | context))"
-unit: Dimensionless (effective vocabulary branching factor)
-last_updated: 2026-08-26
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - metric
   - perplexity
-  - language-modeling
 ---
 
 # Perplexity
 
-## Definition
+Perplexity — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-**Perplexity** is the exponentiated average negative log-likelihood per token — the standard intrinsic metric for language models:
-
-$$\text{PPL} = \exp\left(-\frac{1}{N}\sum_{i=1}^{N} \log p(x_i \mid x_{<i})\right)$$
-
-Equivalently, the inverse geometric mean probability assigned to each token. PPL equals $\exp(\mathrm{NLL}/N)$ when [[NLL]] is the total natural-log loss; lower is better. A model with perplexity $k$ is roughly as uncertain as choosing uniformly among $k$ options at each step.
-
-| Property | Description |
-|----------|-------------|
-| **Lower is better** | ✅ Yes |
-| **Depends on tokenizer/vocabulary** | ⚠️ Only comparable across models using identical tokenization and data |
+The metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked below report results using this metric.
 
 ## Referenced in this knowledge base
 

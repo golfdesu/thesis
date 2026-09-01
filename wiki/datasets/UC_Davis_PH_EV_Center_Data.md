@@ -2,14 +2,10 @@
 type: dataset
 name: "UC Davis PH EV Center Data"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - uc_davis_ph_ev_center_data
-location:
-resolution: "event/session level"
-access: "open/research"
-data_type: "Controlled-field EV charging event data"
 ---
 
 # UC Davis PH EV Center Data
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]
+[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]], [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]

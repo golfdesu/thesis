@@ -80,11 +80,8 @@ $$\min_{p^i_{\text{EV}}(t)} f(t) = \left|\sum_{i=1}^{n_{\text{EVs}}(t)} p^i_{\te
 ```
 
 ## 🔗 Key References & Citation Graph
-- [[2026_Huang_Lyapunov_EV_Scheduling]] — related online/real-time EV scheduling optimization in the vault
+- [[2021_Huang_Lyapunov_EV_Scheduling]] — related online/real-time EV scheduling optimization in the vault
 - [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]] — probabilistic modeling of aggregate EV charging demand underlying aggregation approaches
 - [[2021_Zhang_Probabilistic_Queuing_EV_Load]] — probabilistic EV load characterization feeding scheduling decisions
 - [[2024_Zhong_V2G_SVE_Evaluation_Metric]] — vault note on evaluating load forecasts specifically in V2G scheduling contexts
 - [[PC-M3]] — related physics-constrained real-time energy management of EV clusters
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2025_Yang_Stochastic_MPC_Microgrid_EV_refs]]

@@ -14,5 +14,4 @@ Vehicle-to-Grid: bidirectional charging letting EV fleets provide storage servic
 
 ## Referenced in this knowledge base
 
-[[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]
-[[2024_Zhong_V2G_SVE_Evaluation_Metric]]
+*(none recorded)*

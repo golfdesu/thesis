@@ -2,14 +2,10 @@
 type: dataset
 name: "NSRDB"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - nsrdb
-location:
-resolution: "30-min / hourly, 4-km grid"
-access: "open (nsrdb.nrel.gov)"
-data_type: "Multi-decade satellite-derived solar irradiance (GHI/DNI/DHI) and meteorology"
 ---
 
 # NSRDB
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]
+[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]], [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]

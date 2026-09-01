@@ -2,14 +2,10 @@
 type: dataset
 name: "Singapore Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - singapore_grid
-location:
-resolution: "half-hourly"
-access: "open (emcsg.com)"
-data_type: "Uniform Singapore energy price and demand (USEP)"
 ---
 
 # Singapore Grid

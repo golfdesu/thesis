@@ -2,14 +2,10 @@
 type: dataset
 name: "UK National Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - uk_national_grid
-location:
-resolution: "half-hourly"
-access: "open (nationalgrideso.com)"
-data_type: "GB system demand, generation mix, frequency data"
 ---
 
 # UK National Grid

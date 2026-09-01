@@ -2,14 +2,10 @@
 type: dataset
 name: "rllab 2D Navigation"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - rllab_2d_navigation
-location:
-resolution: "simulation steps"
-access: "open (rllab)"
-data_type: "2D point-mass navigation tasks; few-shot RL benchmark"
 ---
 
 # rllab 2D Navigation

@@ -1,19 +1,18 @@
 ---
 type: metric
 name: "Absolute Error kW"
-category: point-forecast-metric
-formula: "AE_kW = |ŷ − y|  (expressed in kilowatts)"
-unit: kW
-last_updated: 2026-08-26
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - metric
   - absolute_error_kw
-  - point-forecast
 ---
 
 # Absolute Error kW
 
-Per-sample [[Absolute_Error]] expressed in kilowatts — i.e. the same quantity $|\hat{y} - y|$ when the target is charging power/load in kW. Kept as a separate note because papers report it as a distinct named quantity with kW units.
+Absolute Error kW — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+The metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked below report results using this metric.
 
 ## Referenced in this knowledge base
 

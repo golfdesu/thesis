@@ -2,14 +2,10 @@
 type: dataset
 name: "ISO New England Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - iso_new_england_grid
-location:
-resolution: "hourly (zonal)"
-access: "open (iso-ne.com)"
-data_type: "Zonal load, prices, fuel mix; source region of GEFCom competitions"
 ---
 
 # ISO New England Grid

@@ -4,10 +4,10 @@ title: "Neural Networks for Short-Term Load Forecasting: A Review and Evaluation
 authors: [Henrique Steinherz Hippert, Carlos Eduardo Pedreira, Reinaldo Castro Souza]
 year: 2001
 journal_conference: "IEEE Transactions on Power Systems, 16(1), 44-55"
-doi_url: "https://doi.org/10.1109/59.910780"
+doi_url: "https://doi.org/10.1109/59.912452"
 models_used: ["[[MLP]]", "[[ANN]]", "[[ARIMA]]", "[[Linear_Regression]]", "[[Kohonen_SOM]]", "[[RNN]]", "[[Fuzzy_Neural_Network]]", "[[Projection_Pursuit_Regression]]", "[[Adaline]]"]
 datasets_used: ["[[Utility_Load_Data_1990s]]", "[[Taiwan_Power_System]]", "[[Greek_Power_System]]", "[[Autonomous_Island_System_Crete]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Features]]", "[[Nonlinear_Temperature_Functions]]", "[[Weather_Forecast]]"]
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Nonlinear_Temperature_Functions]]", "[[Weather_Forecast]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAPE]]", "[[RMSE]]", "[[MSPE]]", "[[MAE]]", "[[Standard_Deviation_Errors]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -36,7 +36,7 @@ trained by minimizing the quadratic loss (backpropagation / steepest descent on 
 - All 40 reviewed systems were tested on **real utility data** (no public benchmarks): e.g., Taiwan power system [39], [40], Greek power system [6], autonomous (Crete-like) island system [52], small US utilities; sample sizes typically **a few years of hourly data** (≈365 profile-vectors/year).
 - Input features across reviewed papers: past-day/past-two-day hourly loads ($L$), dry-bulb temperature ($T$, often as nonlinear $f(T)$ pieces), relative humidity ($H$), wind speed, calendar/day-type dummies, month/season indicators, holiday flags, forecasted vs. observed temperature (most simulations used observed weather → optimistic errors).
 - Sampling resolution: hourly loads (one paper [56] did minute-by-minute very-short-term forecasts of next half-hour).
-- Data availability: none — proprietary utility SCADA/EMS archives; no URLs/DOIs for data in any reviewed paper. Paper itself: `https://doi.org/10.1109/59.910780`, IEEE Xplore S 0885-8950(01)02306-9.
+- Data availability: none — proprietary utility SCADA/EMS archives; no URLs/DOIs for data in any reviewed paper. Paper itself: `https://doi.org/10.1109/59.912452`, IEEE Xplore S 0885-8950(01)02306-9.
 
 ## 📈 Performance & Results
 - This is a review paper: it reports no new forecasts but audits reported results.
@@ -46,7 +46,7 @@ trained by minimizing the quadratic loss (backpropagation / steepest descent on 
 - Conclusion: results are "not convincing" taken individually — yet widespread practical success suggests large NN forecasters may work despite overparameterization, which is not yet theoretically understood.
 
 ## 💡 Limitations & Identified Research Gaps
-- No adequate ratio between #training points and #weights has been established ("how many parameters are too many" remains open).
+- No adequate rate between #training points and #weights has been established ("how many parameters are too many" remains open).
 - Comparisons to other NNs/fuzzy engines deemed invalid baselines; ARMAX/regression fitting effort discouraged fair benchmarking — a persistent evaluation gap.
 - Treating a day as a 24-dim vector starves training sets; multi-model and iterative approaches underexplored; chaotic behavior of iterated MLP outputs noted ([19], [20]).
 - Weather-forecast uncertainty ignored in simulations (real deployment errors will be larger) — cf. [27], [75].
@@ -62,7 +62,7 @@ trained by minimizing the quadratic loss (backpropagation / steepest descent on 
   number  = {1},
   pages   = {44--55},
   year    = {2001},
-  doi     = {10.1109/59.910780}
+  doi     = {10.1109/59.912452}
 }
 ```
 
@@ -78,6 +78,3 @@ trained by minimizing the quadratic loss (backpropagation / steepest descent on 
   - [[2015_Raza_Review_AI_Load_Demand]] — later AI-in-load-forecasting review continuing this line
   - [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — modern echo of the "benchmark simple linear models" message
   - [[2019_Zhu_EV_Load_Forecasting]] — deep-learning STLF inheriting these evaluation debates
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2001_Hippert_Neural_Networks_STLF_Review_refs]]

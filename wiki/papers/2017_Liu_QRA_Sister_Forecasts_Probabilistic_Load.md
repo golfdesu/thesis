@@ -7,7 +7,7 @@ journal_conference: "IEEE Transactions on Smart Grid, vol. 8, no. 2, pp. 730-737
 doi_url: "https://doi.org/10.1109/TSG.2015.2437877"
 models_used: ["[[QRA]]", "[[Quantile_Regression]]", "[[Recency_Effect_Regression]]", "[[Taos_Vanilla_Benchmark]]"]
 datasets_used: ["[[GEFCom2014]]"]
-features_used: ["[[Sister_Point_Forecasts]]", "[[Temperature]]", "[[Calendar_Features]]"]
+features_used: ["[[Sister_Point_Forecasts]]", "[[Temperature]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Temperature]]", "[[Temperature]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[Pinball_Loss]]", "[[Winkler_Score]]", "[[MAE]]"]
 tags: [paper, ev-load-forecasting, ml]

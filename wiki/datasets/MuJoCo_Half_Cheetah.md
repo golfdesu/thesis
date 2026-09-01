@@ -2,14 +2,10 @@
 type: dataset
 name: "MuJoCo Half Cheetah"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - mujoco_half_cheetah
-location:
-resolution: "simulation steps"
-access: "open (MuJoCo gym env)"
-data_type: "Planar cheetah locomotion task; few-shot RL benchmark in MAML/Reptile evaluations"
 ---
 
 # MuJoCo Half Cheetah

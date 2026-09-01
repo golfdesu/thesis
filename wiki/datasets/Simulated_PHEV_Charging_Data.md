@@ -2,14 +2,10 @@
 type: dataset
 name: "Simulated PHEV Charging Data"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - simulated_phev_charging_data
-location:
-resolution: "scenario-dependent"
-access: "synthetic"
-data_type: "Queueing/Monte-Carlo generated PHEV charging scenarios in the Alizadeh lineage"
 ---
 
 # Simulated PHEV Charging Data

@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - covid19_dashboard
-location:
-resolution: "daily"
-access: "open"
-data_type: "Aggregated case/death dashboards used as exogenous COVID-era context"
 ---
 
 # COVID19 Dashboard

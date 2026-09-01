@@ -2,14 +2,10 @@
 type: dataset
 name: "CIFAR 10"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - cifar-10
-location:
-resolution: "32x32 RGB"
-access: "open (https://www.cs.toronto.edu/~kriz/cifar.html)"
-data_type: "60,000 images, 10 classes (Krizhevsky 2009)"
 ---
 
 # CIFAR 10

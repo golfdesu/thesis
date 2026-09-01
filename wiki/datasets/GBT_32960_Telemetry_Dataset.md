@@ -2,14 +2,10 @@
 type: dataset
 name: "GBT 32960 Telemetry Dataset"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - gbt_32960_telemetry_dataset
-location:
-resolution: "typically 10-30 s telemetry"
-access: "restricted/industry"
-data_type: "Real-world EV fleet telemetry (SOC, speed, position) reported under China's GB/T 32960 standard"
 ---
 
 # GBT 32960 Telemetry Dataset

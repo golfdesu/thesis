@@ -2,20 +2,18 @@
 type: dataset
 name: "Hong Kong EV Charging Dataset"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - hong_kong_ev_charging_dataset
-location:
-resolution: "session level"
-access: "operator/research"
-data_type: "Public EV charging sessions in Hong Kong"
 ---
 
 # Hong Kong EV Charging Dataset
 
-No canonical public session-level Hong Kong EV charging dataset could be confirmed (checked 2026-08). Public sources on data.gov.hk are infrastructure registries only — CLP Power's "Electric Vehicle Charging Stations" list and HK Electric's charging-station layer — not session logs. The reference below presumably uses operator/research session data; verify against [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] before citing specifics.
+Hong Kong EV Charging Dataset — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
 
 ## Referenced in this knowledge base
 
-[[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]]
+[[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]], [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]]

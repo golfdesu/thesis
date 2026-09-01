@@ -13,6 +13,3 @@ Frequency Enhanced Decomposed Transformer; combines seasonal-trend decomposition
 
 ## Role in EV / Load Forecasting
 Long-term forecasting benchmark model compared alongside [[Informer]], [[Autoformer]], and [[PatchTST]].
-
-## Literature Usage
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Long-horizon baseline on ETT (avg MAE 0.53); TimesFM 0.36 significantly better.

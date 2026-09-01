@@ -14,6 +14,6 @@ Open-source lag-feature-based foundation model for univariate probabilistic fore
 
 ## Referenced in this knowledge base
 
-[[2025_Meyer_Benchmark_Foundation_Models]]
+*(none recorded)*
 
 LagLlama builds its input representation purely from lagged values of the target series, making it a lightweight open-source alternative to [[Chronos]], [[TimesFM]], and [[Moirai]] for zero-shot probabilistic forecasting.

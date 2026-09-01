@@ -2,20 +2,18 @@
 type: dataset
 name: "LA Charging Station Dataset"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - la_charging_station_dataset
-location:
-resolution: "session level"
-access: "open/research"
-data_type: "Public EV charging sessions in Los Angeles"
 ---
 
 # LA Charging Station Dataset
 
-LA Charging Station Dataset — likely the City of Los Angeles public EV charging station usage data (LA open data portal), used for EV charging-demand forecasting in e.g. Yi et al. (2022) alongside Utah data; also referenced by [[2025_Weqar_LTLM_LSTM_EV_Load]]. Exact portal URL and session counts unverified as of 2026-08 — recover from the referencing paper before citing.
+LA Charging Station Dataset — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
+
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
 
 ## Referenced in this knowledge base
 
-[[2025_Weqar_LTLM_LSTM_EV_Load]]
+[[2025_Weqar_LTLM_LSTM_EV_Load]], [[2025_Weqar_LTLM_LSTM_EV_Load]]

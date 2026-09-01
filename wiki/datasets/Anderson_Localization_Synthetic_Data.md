@@ -2,14 +2,10 @@
 type: dataset
 name: "Anderson Localization Synthetic Data"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - anderson_localization_synthetic_data
-location:
-resolution: "regular grid"
-access: "synthetic"
-data_type: "Wave-function propagation through disordered potentials (Anderson localisation); synthetic long-range-dependence benchmark popularised by S4-era papers"
 ---
 
 # Anderson Localization Synthetic Data

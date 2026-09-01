@@ -2,14 +2,10 @@
 type: dataset
 name: "Embedded Reber Grammar"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - embedded_reber_grammar
-location:
-resolution: "symbol sequences"
-access: "synthetic"
-data_type: "Classic synthetic grammar-learning task (Reber 1967) probing state tracking/memory"
 ---
 
 # Embedded Reber Grammar

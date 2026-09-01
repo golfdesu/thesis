@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - appliance_level_load
-resolution:
-access: "open (REDD/UK-DALE/HES lineages)"
-data_type: "Appliance-disaggregated plug-load measurements (NILM lineage)"
-location: "varies (REDD/UK-DALE/HES lineages)"
 ---
 
 # Appliance Level Load

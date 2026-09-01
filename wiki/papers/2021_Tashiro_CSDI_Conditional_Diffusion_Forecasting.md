@@ -5,11 +5,11 @@ authors: [Yusuke Tashiro, Jiaming Song, Yang Song, Stefano Ermon]
 year: 2021
 journal_conference: "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)"
 doi_url: "https://arxiv.org/abs/2107.03502"
-models_used: ["[[CSDI]]", "[[DDPM|Conditional Score-based Diffusion Model]]", "[[Transformer]]", "[[TimeGrad]]"]
+models_used: ["[[CSDI]]", "[[DDPM|Conditional Score-based Diffusion Model]]", "[[DDPM]]", "[[DDPM]]", "[[Transformer]]", "[[TimeGrad]]"]
 datasets_used: ["[[PhysioNet_2012_Healthcare]]", "[[Beijing_PM25_Air_Quality]]", "[[Solar_Alabama]]", "[[Electricity_ECL]]", "[[Traffic]]", "[[NYC_Taxi]]", "[[Wiki_Pageviews]]"]
-features_used: ["[[Observation_Mask]]", "[[Conditional_Mask]]", "[[Timestamp]]", "[[Temporal_Embedding]]", "[[Feature_Embedding]]", "[[Diffusion_Step_Embedding]]"]
+features_used: ["[[Observation_Mask]]", "[[Conditional_Mask]]", "[[Timestamps]]", "[[Temporal_Embedding]]", "[[Feature_Embedding]]", "[[Diffusion_Step_Embedding]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
-metrics: ["[[CRPS]]", "[[MAE]]", "[[RMSE]]", "[[MSE]]", "[[NLL]]"]
+metrics: ["[[CRPS]]", "[[CRPS]]", "[[MAE]]", "[[RMSE]]", "[[MSE]]", "[[NLL]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

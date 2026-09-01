@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - feynman_dataset
-access:
-data_type: "Time series derived from Feynman-Kac-type stochastic PDE solutions; provenance varies across citing papers"
-location: "n/a (synthetic PDE)"
-resolution: "regular grid"
 ---
 
 # Feynman Dataset

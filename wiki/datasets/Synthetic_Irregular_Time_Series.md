@@ -2,14 +2,10 @@
 type: dataset
 name: "Synthetic Irregular Time Series"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - synthetic_irregular_time_series
-location:
-resolution: "irregular sampling"
-access: "synthetic"
-data_type: "Irregularly-sampled ODE-driven trajectories used to evaluate neural CDE / interpolation methods"
 ---
 
 # Synthetic Irregular Time Series

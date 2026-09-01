@@ -14,5 +14,4 @@ Physical/network structure of the distribution grid; constrains feasible chargin
 
 ## Referenced in this knowledge base
 
-[[2024_Zhou_Conformal_Prediction_DER]]
-[[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]]
+*(none recorded)*

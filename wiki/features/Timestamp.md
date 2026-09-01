@@ -6,9 +6,6 @@ status: needs-review
 tags:
   - feature
   - timestamp
-aliases:
-  - Timestamps
-  - Timestamps
 ---
 
 # Timestamp
@@ -20,5 +17,3 @@ As an input feature it appears in the feature lists of forecasting papers collec
 ## Referenced in this knowledge base
 
 [[2023_Xiong_Combined_Deep_Learning_EV_Station_STLF]]
-
-[[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]

@@ -2,14 +2,10 @@
 type: dataset
 name: "HD 189733 Photometry"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - hd_189733_photometry
-location:
-resolution: "irregular photometric samples"
-access: "open (NASA MAST archive)"
-data_type: "Exoplanet transit light-curve photometry; real-world irregularly-sampled regression benchmark used by Neural CDE"
 ---
 
 # HD 189733 Photometry

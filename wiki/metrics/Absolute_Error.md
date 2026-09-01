@@ -1,25 +1,18 @@
 ---
 type: metric
 name: "Absolute Error"
-category: point-forecast-metric
-formula: "AE = |ŷ − y|"
-unit: Same as target variable (kW or kWh)
-last_updated: 2026-08-26
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - metric
   - absolute_error
-  - point-forecast
 ---
 
 # Absolute Error
 
-## Definition
+Absolute Error — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-**Absolute error** is the per-sample distance between a forecast and its observation:
-
-$$\text{AE}_i = |\hat{y}_i - y_i|$$
-
-It is the elementary quantity aggregated by [[MAE]] (mean), [[NMAE]]/[[ND]] (normalized), and summed in the [[Pinball_Loss]] branches. Reported per-sample or as a time series when the distribution of errors matters more than their average.
+The metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked below report results using this metric.
 
 ## Referenced in this knowledge base
 

@@ -2,15 +2,10 @@
 type: dataset
 name: "CEL SE China Electric Load"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - cel_se_china_electric_load
-location:
-resolution: "hourly"
-access: "research release"
-data_type: "Regional Chinese electric-load panel"
-source_note: "citing vault paper defines NW/SE split"
 ---
 
 # CEL SE China Electric Load

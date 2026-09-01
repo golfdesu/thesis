@@ -1,20 +1,20 @@
 ---
 type: dataset
 name: "Wiki Pageviews"
-category: Alias (duplicate of [[Wikipedia]])
+category: Stub (auto-generated)
 status: needs-review
 tags:
   - dataset
-  - duplicate
+  - wiki_pageviews
 ---
 
-# Wiki Pageviews → [[Wikipedia]]
+# Wiki Pageviews
 
-This page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Wikipedia]]**.
+Wiki Pageviews — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-Reason: Likely the same Wikipedia web-traffic source described in [[Wikipedia]]; verify that [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]] uses the identical Kaggle pageview series before deleting this page.
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
 
-Update experimental details, access links, and citations there.
+## Referenced in this knowledge base
 
-## Literature Usage
+[[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]], [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Wiki pageviews 100k series (Table 6) in Chronos-2 real-univariate mix.

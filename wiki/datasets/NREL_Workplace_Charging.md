@@ -2,16 +2,10 @@
 type: dataset
 name: "NREL Workplace Charging"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - nrel_workplace_charging
-location: "US workplaces (NREL studies)"
-resolution: "session level"
-access: "open/research"
-license: "US DOE/NREL - US Government work, public domain (NREL data disclaimer)"
-commercial_use: allowed
-data_type: "Workplace charging session behaviour data from NREL evaluations"
 ---
 
 # NREL Workplace Charging

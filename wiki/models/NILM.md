@@ -14,5 +14,4 @@ Non-Intrusive Load Monitoring: disaggregating aggregate meter readings into appl
 
 ## Referenced in this knowledge base
 
-[[2024_Ke_Divide_Conquer_Transformer_EV]]
-[[2025_Zhu_Personalized_Federated_Learning]]
+*(none recorded)*

@@ -14,4 +14,4 @@ Edge-augmented Graph Attention Network used in federated EV load studies.
 
 ## Referenced in this knowledge base
 
-[[2025_Han_Vertical_Federated_EGAT_LSTM]]
+*(none recorded)*

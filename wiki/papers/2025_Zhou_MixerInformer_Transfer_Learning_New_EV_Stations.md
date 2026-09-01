@@ -7,7 +7,7 @@ journal_conference: "arXiv preprint (submitted to Elsevier), arXiv:2505.06657 [e
 doi_url: "https://doi.org/10.48550/arXiv.2505.06657"
 models_used: ["[[MIK-TST]]", "[[MLP-Mixer]]", "[[Informer]]", "[[KAN]]"]
 datasets_used: ["[[Boulder_Colorado]]"]
-features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Charging_Session_Logs]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Charging_Session_Logs]]", "[[Calendar_Features]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]

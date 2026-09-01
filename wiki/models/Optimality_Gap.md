@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Huang_Lyapunov_EV_Scheduling]]
+[[2021_Huang_Lyapunov_EV_Scheduling]]

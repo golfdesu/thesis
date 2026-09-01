@@ -1,16 +1,19 @@
 ---
 type: dataset
 name: "Weather Dataset"
-category: Alias (duplicate of [[Weather]])
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - dataset
-  - duplicate
+  - weather_dataset
 ---
 
-# Weather Dataset → [[Weather]]
+# Weather Dataset
 
-This page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Weather]]**.
+Weather Dataset — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-Reason: Referencing papers ([[2024_Das_TiDE_Long_Term_Forecasting]], [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]) all benchmark on the standard LTSF Weather set described in [[Weather]].
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
 
-Update experimental details, access links, and citations there.
+## Referenced in this knowledge base
+
+[[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_Das_TiDE_Long_Term_Forecasting]], [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]

@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - market_price
-access:
-data_type: "Commodity/market price series; exact instrument depends on citing paper"
-location: "varies"
-resolution: "varies"
 ---
 
 # Market Price

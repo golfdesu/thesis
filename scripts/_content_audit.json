@@ -1,0 +1,34 @@
+{
+  "yaml_errors": [],
+  "missing_fields": [],
+  "year_mismatch": [],
+  "bad_doi": [
+    "papers/2024_Feng_LSTM_Transformer_EV_Consumption.md: https://ssrn.com/abstract=4747046"
+  ],
+  "authors_issue": [],
+  "mojibake": {
+    "references/2015_Raza_Review_AI_Load_Demand_refs.md": [
+      {
+        "token": "ÞÞ",
+        "ctx": "¼ 1 N X N i ¼ 1 ðOT i ðtÞ\u0003OiðtÞÞ2 ð7Þ where \u0003 OT i ðtÞ¼target "
+      },
+      {
+        "token": "Þþ",
+        "ctx": "; p ð Þjk new ð Þ ¼ wjk old ð ÞþΔwjk ð19Þ Each output unit and"
+      }
+    ]
+  },
+  "empty_bodies": [],
+  "title_stem_mismatch": [],
+  "counts": {
+    "dataset": 160,
+    "": 71,
+    "model": 449,
+    "feature": 148,
+    "guide": 14,
+    "hyperparameter": 36,
+    "metric": 66,
+    "paper": 118
+  },
+  "total": 1062
+}

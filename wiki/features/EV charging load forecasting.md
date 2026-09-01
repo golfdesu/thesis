@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - feature
-  - ev-charging-load-forecasting
+  - ev charging load forecasting
 ---
 
 # EV charging load forecasting

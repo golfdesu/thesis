@@ -7,7 +7,7 @@ journal_conference: "Computers and Electrical Engineering, Vol. 135, Art. 111201
 doi_url: "https://doi.org/10.1016/j.compeleceng.2026.111201"
 models_used: ["[[Temporal_Fusion_Transformer]]", "[[Conformal_Prediction]]", "[[Quantile_Regression]]"]
 datasets_used: ["[[Palo_Alto_EV]]", "[[Weather]]"]
-features_used: ["[[Temperature]]", "[[Precipitation]]", "[[Solar_Radiation]]", "[[Calendar_Features]]", "[[Cyclical_Encodings]]", "[[Historical_Load]]", "[[Rolling_Energy_Aggregates]]", "[[Session-Level_Statistics]]", "[[Charging_Efficiency_Metrics]]", "[[Charging_Fee_Statistics]]"]
+features_used: ["[[Temperature]]", "[[Precipitation]]", "[[Solar_Radiation]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Cyclical_Encodings]]", "[[Historical_Load]]", "[[Rolling_Energy_Aggregates]]", "[[Session-Level_Statistics]]", "[[Charging_Efficiency_Metrics]]", "[[Charging_Fee_Statistics]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[MAPE]]", "[[SMAPE]]", "[[R_squared]]", "[[Pinball_Loss]]", "[[PICP]]", "[[MPIW]]", "[[NPIW]]"]
 tags: [paper, ev-load-forecasting, ml]

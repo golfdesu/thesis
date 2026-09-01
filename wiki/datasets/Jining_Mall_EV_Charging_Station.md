@@ -2,14 +2,10 @@
 type: dataset
 name: "Jining Mall EV Charging Station"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - jining_mall_ev_charging_station
-location:
-resolution: "session level"
-access: "operator/research"
-data_type: "Commercial-complex EV charging sessions"
 ---
 
 # Jining Mall EV Charging Station

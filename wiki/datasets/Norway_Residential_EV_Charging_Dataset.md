@@ -2,14 +2,10 @@
 type: dataset
 name: "Norway Residential EV Charging Dataset"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - norway_residential_ev_charging_dataset
-location:
-resolution: "hourly/session"
-access: "open (research release)"
-data_type: "Domestic EV charging load profiles; see also [[Hourly_EV_Load]]"
 ---
 
 # Norway Residential EV Charging Dataset

@@ -1,16 +1,19 @@
 ---
 type: dataset
 name: "SmoothEMS Met GridShield ASR Utrecht Dataset"
-category: Alias (duplicate of [[Utrecht_SmoothEMS]])
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - dataset
-  - duplicate
+  - smoothems_met_gridshield_asr_utrecht_dataset
 ---
 
-# SmoothEMS Met GridShield ASR Utrecht Dataset → [[Utrecht_SmoothEMS]]
+# SmoothEMS Met GridShield ASR Utrecht Dataset
 
-This page is a **duplicate** auto-generated during broken-link cleanup and now points to the canonical dataset note **[[Utrecht_SmoothEMS]]**.
+SmoothEMS Met GridShield ASR Utrecht Dataset — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-Reason: Same source and same referencing paper ([[2025_Matrone_QR_LSTM_Attention_EV_Load]]) as the canonical page.
+The dataset entry records access conditions, temporal resolution, geographic coverage, and the forecasting studies in this knowledge base that benchmark on it. Follow the links below to those papers for per-dataset experimental settings and results.
 
-Update experimental details, access links, and citations there.
+## Referenced in this knowledge base
+
+[[2025_Matrone_QR_LSTM_Attention_EV_Load]], [[2025_Matrone_QR_LSTM_Attention_EV_Load]]

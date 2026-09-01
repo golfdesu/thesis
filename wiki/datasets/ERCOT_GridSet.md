@@ -4,7 +4,7 @@ name: ERCOT GridSet
 location: Electric Reliability Council of Texas (ERCOT), USA
 resolution: Hourly, 5-year span (2019–2023)
 access: open (released with PowerMamba toolbox)
-data_type: "Multivariate power-system time series: 22 core channels; extended 262-channel version with external forecasts"
+data_type: Multivariate power-system time series: 22 core channels; extended 262-channel version with external forecasts
 urls:
   - https://github.com/alimenati/PowerMamba
 tags:

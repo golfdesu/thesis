@@ -1,5 +1,5 @@
 ---
-type: hyperparameter
+type: 
 name: "Stochastic Gradient Descent (SGD)"
 category: Stub (auto-generated)
 status: needs-review

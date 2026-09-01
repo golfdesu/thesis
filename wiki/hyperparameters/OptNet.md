@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+[[2026_Chen_PC_M3_Mamba_EV_Clusters]]

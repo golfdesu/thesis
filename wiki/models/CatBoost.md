@@ -17,6 +17,3 @@ Within this knowledge base the model page collects its architectural family, typ
 ## Referenced in this knowledge base
 
 [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]
-
-## Literature Usage
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Tree baseline on Monash (GM 0.7044, close second); TimesFM 0.6846 slightly better.

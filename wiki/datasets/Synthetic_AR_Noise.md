@@ -2,14 +2,10 @@
 type: dataset
 name: "Synthetic AR Noise"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - synthetic_ar_noise
-location:
-resolution: "regular grid"
-access: "synthetic"
-data_type: "Autoregressive process with additive noise; sanity benchmark in probabilistic TS papers"
 ---
 
 # Synthetic AR Noise
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]
+[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]], [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]

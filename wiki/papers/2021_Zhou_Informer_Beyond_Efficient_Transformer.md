@@ -50,7 +50,7 @@ $$X_{feed}^t[i]=\alpha u_i^t + PE(L_x\times(t-1)+i,\cdot)+\sum_p [SE(L_x\times(t
 
 ## 📊 Dataset & Input Features
 Four datasets (2 collected real-world + 2 public benchmarks):
-- **[[ETT]]** (Electricity Transformer Temperature, authors' own release): 2-year data from two separated counties in China; hourly [[ETT|ETTh1]], [[ETT|ETTh2]] and 15-min-level [[ETT|ETTm]]; each point = target "oil temperature" + 6 power load features; train/val/test = 12/4/4 months — https://github.com/zhouhaoyi/ETDataset
+- **[[ETT]]** (Electricity Transformer Temperature, authors' own release): 2-year data from two separated counties in China; hourly [[ETT]], [[ETT]] and 15-min-level [[ETT]]; each point = target "oil temperature" + 6 power load features; train/val/test = 12/4/4 months — https://github.com/zhouhaoyi/ETDataset
 - **[[Electricity_ECL]]** (Electricity Consuming Load): electricity consumption (Kwh) of 321 clients; converted to hourly consumption of 2 years due to missing data; 'MT 320' as target; train/val/test = 15/3/4 months — https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
 - **[[Weather]]**: local climatological data for ~1600 U.S. locations, 2010–2013, hourly; target "wet bulb" + 11 climate features; train/val/test = 28/10/10 months — https://www.ncei.noaa.gov/data/local-climatological-data/
 - Prediction windows prolonged progressively: {1d, 2d, 7d, 14d, 30d, 40d} in {ETTh, ECL, Weather}, {6h, 12h, 24h, 72h, 168h} in ETTm; rolling evaluation with stride = 1; inputs zero-mean normalized.

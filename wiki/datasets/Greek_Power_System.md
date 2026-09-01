@@ -2,14 +2,10 @@
 type: dataset
 name: "Greek Power System"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - greek_power_system
-location:
-resolution: "hourly"
-access: "open (admie.gr)"
-data_type: "System load and energy mix"
 ---
 
 # Greek Power System

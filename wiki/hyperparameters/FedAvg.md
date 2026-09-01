@@ -1,5 +1,5 @@
 ---
-type: hyperparameter
+type: 
 name: "Federated Averaging (FedAvg)"
 category: Stub (auto-generated)
 status: needs-review

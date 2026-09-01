@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - covid19_uk_dataset
-location:
-resolution: "daily/regional"
-access: "open"
-data_type: "UK COVID-19 case/mobility panels used in demand-forecasting studies during lockdowns"
 ---
 
 # COVID19 UK Dataset

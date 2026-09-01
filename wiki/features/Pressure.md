@@ -14,5 +14,4 @@ Barometric pressure covariate (station or sea-level); minor weather input used i
 
 ## Referenced in this knowledge base
 
-[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]
-[[2024_Qu_Forwardformer_Day_Ahead_Load]]
+*(none recorded)*

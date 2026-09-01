@@ -9,7 +9,7 @@ models_used: ["[[MAML-Informer]]", "[[Informer]]", "[[MAML]]", "[[Transformer]]"
 datasets_used: ["[[Caltech_ACN]]", "[[Boulder_Colorado]]", "[[Palo_Alto_EV]]"]
 features_used: ["[[Historical_Load]]", "[[Weather_Features]]", "[[Calendar_Features]]", "[[Token_Embeddings]]", "[[ProbSparse_Attention]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
-metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[CRPS]]", "[[PICP]]", "[[MPIW]]", "[[Pinball_Loss]]", "[[Winkler_Score]]"]
+metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]", "[[CRPS]]", "[[PICP]]", "[[MPIW]]", "[[Pinball_Loss]]", "[[Winkler_Score]]", "[[Pinball_Loss]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

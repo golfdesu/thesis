@@ -14,5 +14,4 @@ Multi-resolution signal decomposition; preprocessing for denoising and component
 
 ## Referenced in this knowledge base
 
-[[2021_Zhang_Probabilistic_Queuing_EV_Load]]
-[[2025_Bao_ResMMoT_Informer_Time_Series]]
+*(none recorded)*

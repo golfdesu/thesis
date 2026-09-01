@@ -110,6 +110,3 @@ tags: [paper, ev-load-forecasting, mamba, ssm, conformal-prediction, probabilist
 - Cites **PatchTST** (Zeng et al., ICLR 2023) as a Transformer baseline → [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]]; RMSNorm from Zhang & Sennrich 2019 [ref 57].
 - Same-group predecessor systems cited: TrustEnergy (AAAI '26, meta-learning + conformal) and UQGNN (SIGSPATIAL '25) — the direct accuracy/calibration competitors it outperforms.
 - Does **not** cite Attention Is All You Need or the Mamba-3 line — no wikilink drawn to them from this note.
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR_refs]]

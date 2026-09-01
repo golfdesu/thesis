@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - greenflux
-location:
-resolution: "15-min/session"
-access: "research"
-data_type: "Smart-charging session/telemetry data from GreenFlux-managed public charge points (Amsterdam)"
 ---
 
 # Greenflux

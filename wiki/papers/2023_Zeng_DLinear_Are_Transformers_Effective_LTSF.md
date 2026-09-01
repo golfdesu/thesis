@@ -5,8 +5,8 @@ authors: [Ailing Zeng, Muxi Chen, Lei Zhang, Qiang Xu]
 year: 2023
 journal_conference: "AAAI 2023"
 doi_url: "https://arxiv.org/abs/2205.13504"
-models_used: ["[[DLinear]]", "[[NLinear]]", "[[Informer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Pyraformer]]", "[[LogTrans]]"]
-datasets_used: ["[[ETT]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[Exchange]]", "[[Weather]]", "[[ILI]]"]
+models_used: ["[[DLinear]]", "[[DLinear]]", "[[NLinear]]", "[[Informer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Pyraformer]]", "[[LogTrans]]"]
+datasets_used: ["[[ETT]]", "[[ETT]]", "[[ETT]]", "[[ETT]]", "[[Traffic]]", "[[Electricity_ECL]]", "[[Exchange]]", "[[Weather]]", "[[ILI]]"]
 features_used: ["[[Trend_Seasonal_Decomposition]]", "[[Moving_Average_Trend]]", "[[Lookback_Window]]", "[[Distribution_Shift_Normalization]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]

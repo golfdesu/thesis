@@ -7,7 +7,7 @@ journal_conference: "Electronics (MDPI), vol. 15, art. 2380"
 doi_url: "https://doi.org/10.3390/electronics15112380"
 models_used: ["[[PC-M3]]", "[[Mamba-3]]", "[[Routing_Mamba]]", "[[PowerMamba]]", "[[Informer]]", "[[Mamba_SSM]]", "[[TD3]]", "[[MPC]]"]
 datasets_used: ["[[Caltech_ACN]]", "[[ACN-Sim]]", "[[ElaadNL]]", "[[NREL_dsgrid_TEMPO]]", "[[NHTS_2009]]"]
-features_used: ["[[State_of_Charge]]", "[[Charging_Power]]", "[[Arrival_Departure_Time]]", "[[Energy_Requirement]]", "[[Battery_Capacity]]", "[[Pilot_Signal]]"]
+features_used: ["[[State_of_Charge]]", "[[Charging_Power]]", "[[Arrival_Departure_Time]]", "[[Arrival_Departure_Time]]", "[[Energy_Requirement]]", "[[Battery_Capacity]]", "[[Pilot_Signal]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[RMSE]]", "[[Hausdorff_Distance]]", "[[Polytope_Feasibility]]", "[[Inference_Latency]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -91,6 +91,3 @@ $$ \mathcal{L}_{\text{env}} = \begin{cases} \mathcal{L}^{\text{exact}}_{\text{en
 - Aggregate flexibility geometry: Nazir & Hiskens inner-box CDC 2018 [5]; Zhao et al. zonotope IEEE TPWRS 2017 [6]; Müller et al. IEEE TSG 2019 [3]; Barot & Taylor 2017 [4]
 - [[Caltech_ACN]] (Lee et al., ACM e-Energy 2019) [2]; [[ACN-Sim]] (Lee et al., IEEE TSG 2021) [12]
 - PINN soft-constraint contrast: Raissi et al. 2019 [37]; Cuomo et al. 2022 [38]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Tang_PC_M3_Mamba_EV_Clusters_refs]]

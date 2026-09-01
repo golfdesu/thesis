@@ -6,7 +6,7 @@ year: 2025
 journal_conference: "Scientific Reports (Nature Portfolio), vol. 15, art. 36639"
 doi_url: "https://doi.org/10.1038/s41598-025-20421-y"
 models_used: ["[[LSTM]]", "[[Transformer]]", "[[LSTM_Transformer|Hybrid LSTM-Transformer]]"]
-datasets_used: ["[[Caltech_ACN]]"]
+datasets_used: ["[[Caltech_ACN]]", "[[Caltech_ACN]]", "[[Caltech_ACN]]"]
 features_used: ["[[Historical_EV_Charging_Energy]]", "[[Lookback_Window]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]"]
@@ -96,6 +96,3 @@ Relative gains: 30 d — MAE −24.91%, MSE −23.17% (vs LSTM) / −9.82% (vs T
 - [[2021_Zhang_Probabilistic_Queuing_EV_Load]] — queuing-based probabilistic framework [18]
 - [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] — RL-based EVCS load forecasting [42]
 - Related vault papers: [[2024_Feng_LSTM_Transformer_EV_Consumption]], [[2025_Hussain_CAT_Former_Short_Term_EV]]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2025_Hussain_Hybrid_LSTM_Transformer_Demand_refs]]

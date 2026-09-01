@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - covid19_us_city_load
-location:
-resolution: "daily/hourly"
-access: "open/research"
-data_type: "City electricity load during COVID-19 used in post-COVID forecasting studies (Cao 2022 lineage)"
 ---
 
 # COVID19 US City Load

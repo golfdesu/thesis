@@ -6,7 +6,7 @@ year: 2023
 journal_conference: "ICLR 2023"
 doi_url: "https://arxiv.org/abs/2301.03982"
 models_used: ["[[Crossformer]]", "[[DSW_Embedding]]", "[[Two_Stage_Attention]]", "[[Hierarchical_Encoder_Decoder]]", "[[Router_Attention]]"]
-datasets_used: ["[[ETT]]", "[[Weather]]", "[[Electricity_ECL]]", "[[ILI]]", "[[Traffic]]"]
+datasets_used: ["[[ETT]]", "[[ETT]]", "[[Weather]]", "[[Electricity_ECL]]", "[[ILI]]", "[[Traffic]]"]
 features_used: ["[[Multivariate_Time_Series]]", "[[Cross_Time_Dependency]]", "[[Cross_Dimension_Dependency]]", "[[Segment_Embeddings]]", "[[Multi_Scale_Representations]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]"]

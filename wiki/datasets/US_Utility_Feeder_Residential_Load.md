@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - us_utility_feeder_residential_load
-location:
-resolution: "hourly/15-min"
-access: "research"
-data_type: "Paired feeder and residential load collections"
 ---
 
 # US Utility Feeder Residential Load

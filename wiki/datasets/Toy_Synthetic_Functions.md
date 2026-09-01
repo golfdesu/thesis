@@ -2,14 +2,10 @@
 type: dataset
 name: "Toy Synthetic Functions"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - toy_synthetic_functions
-location:
-resolution: "function samples"
-access: "synthetic"
-data_type: "Small toy function regression suite (sine waves, sinc, polynomials) used to smoke-test sequence models"
 ---
 
 # Toy Synthetic Functions

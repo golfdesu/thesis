@@ -2,14 +2,10 @@
 type: dataset
 name: "Synthetic Cross Site EVCS Dataset"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - synthetic_cross_site_evcs_dataset
-location:
-resolution: "5-min/hourly"
-access: "synthetic"
-data_type: "Generated multi-site charging-demand scenarios for transfer/meta-learning evaluation"
 ---
 
 # Synthetic Cross Site EVCS Dataset
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]]
+[[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]]

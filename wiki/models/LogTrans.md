@@ -9,7 +9,7 @@ tags:
 ---
 
 ## Overview
-Transformer with logarithmic sparse attention reducing attention-memory complexity to $O(L(\log L)^2)$ for long sequences (see [[LogSparse_Transformer]]).
+Transformer with logarithmic sparse attention reducing complexity to O(L log L) for long sequences.
 
 ## Key References
 - [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]

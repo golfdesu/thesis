@@ -13,6 +13,3 @@ Ambient temperature, the dominant exogenous weather driver of electricity demand
 
 ## Usage in EV / Load Forecasting
 Standard input feature in weather-aware forecasting models; often paired with [[Humidity]].
-
-## See also
-- [[Climate_Features]] — grouped weather/climate covariate sets that include temperature.

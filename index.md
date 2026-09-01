@@ -246,3 +246,8 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] - Das et al. (2024): A Decoder-Only Foundation Model for Time-Series Forecasting (TimesFM, Google, 200M, decoder-only patched Transformer, zero-shot) — arXiv:2310.10688v4.
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] - Ansari et al. (2025): Chronos-2: From Univariate to Universal Forecasting (Amazon, universal TSFM with group attention, O(V), 21 quantiles, synthetic multivariatizers, SOTA on fev-bench/GIFT-Eval/Chronos Bench II) — arXiv:2510.15821v1.
 - [[2026_Khwaja_Toto_2_Scaling_Era]] - Khwaja et al. (2026): Toto 2.0: Time Series Forecasting Enters the Scaling Era (Datadog, 5 sizes 4M-2.5B, CPM + quantile head + NorMuon + u-µP, SOTA on BOOM/GIFT-Eval/TIME) — arXiv:2605.20119v2.
+- [[paper_digest]] - **One-file digest of ALL 108 papers** (contribution + method + results + gaps per paper) built for fast AI-agent reading & research-gap analysis.
+- [[dataset_extraction_report]] - Comprehensive Dataset Extraction & URL Report across all 70 papers.
+- [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] - Mansour et al. (2025): Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model (Nature Sci Rep).
+- [[2021_Huang_Lyapunov_EV_Scheduling]] - Huang et al. (2021): Forecast-Enhanced Lyapunov Optimization for real-time EV charging scheduling.
+- [[2026_Chen_PC_M3_Mamba_EV_Clusters]] - Chen et al. (2026): PC-M3 Physics-Constrained Mamba-3 MIMO aggregator for real-time energy management of 10,000+ EV clusters.

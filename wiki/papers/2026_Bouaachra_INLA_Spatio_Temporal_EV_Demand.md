@@ -84,6 +84,3 @@ Prior on log-precision: $\theta_t = \log \tau_t \sim \text{Log-Gamma}(a=1,\ b=5\
 - Cites TCN-LSTM EV charging load forecasting (Tian et al. 2025, ref [10]) — related vault concept [[TCN]].
 - Future-work anchor: Hu et al. 2026 "XGBoost meets INLA" two-stage spatio-temporal wildfires (ref [26]) — blueprint for the proposed EV hybrid.
 - Vault context (not cited by paper, but related): replaces [[Palo_Alto_EV]] as benchmark lineage; Scottish sibling open datasets [[Dundee_EV]] and [[Perth_EV]]; tariff-effect discussion connects to [[Electricity_Tariff]].
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand_refs]]

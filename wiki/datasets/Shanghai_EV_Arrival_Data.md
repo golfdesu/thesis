@@ -2,14 +2,10 @@
 type: dataset
 name: "Shanghai EV Arrival Data"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - shanghai_ev_arrival_data
-location:
-resolution: "session/event level"
-access: "research (per citing paper)"
-data_type: "Real EV arrival sequences used as the 100-EV case-study input"
 ---
 
 # Shanghai EV Arrival Data
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2026_Huang_Lyapunov_EV_Scheduling]]
+[[2021_Huang_Lyapunov_EV_Scheduling]], [[2021_Huang_Lyapunov_EV_Scheduling]], [[2021_Huang_Lyapunov_EV_Scheduling]]

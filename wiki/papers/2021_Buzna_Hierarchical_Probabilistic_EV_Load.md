@@ -7,7 +7,7 @@ journal_conference: "Applied Energy, 283, 116337"
 doi_url: "https://doi.org/10.1016/j.apenergy.2020.116337"
 models_used: ["[[GBRT]]", "[[QRF]]", "[[QRNN]]", "[[PLQR]]", "[[PCA]]"]
 datasets_used: ["[[ElaadNL]]", "[[Weather]]", "[[COROP_Regions]]"]
-features_used: ["[[Historical_Load]]", "[[Weather_Forecast]]", "[[Super_User_Features]]", "[[Calendar_Features]]", "[[PCA]]"]
+features_used: ["[[Historical_Load]]", "[[Weather_Forecast_Features]]", "[[Super_User_Features]]", "[[Calendar_Features]]", "[[PCA]]", "[[Historical_Load]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[Pinball_Loss]]", "[[AACE]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -98,6 +98,3 @@ Metrics: averaged **PS** (kWh, negatively oriented; Eq. 20) and **AACE%** reliab
 - [[2019_Zhu_EV_Load_Forecasting]] — comparative deep learning study cited as motivation that PEVLF is underexplored
 - [[2021_VanKriekinge_Day_Ahead_EV_Demand]] — related day-ahead EV demand deep learning forecasting
 - Koenker & Bassett (1978) regression quantiles; Meinshausen (2006) QRF; Cannon (2018) monotone QRNN; Friedman (2002) stochastic gradient boosting; Hastie et al. (2015) lasso; Gneiting & Raftery (2007) strictly proper scoring rules; Hong et al. (2019) GEFCom2017 hierarchical probabilistic load forecasting; Wang et al. (2019) combining probabilistic load forecasts
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2021_Buzna_Hierarchical_Probabilistic_EV_Load_refs]]

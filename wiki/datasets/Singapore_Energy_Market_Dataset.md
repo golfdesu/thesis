@@ -2,14 +2,10 @@
 type: dataset
 name: "Singapore Energy Market Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - singapore_energy_market_dataset
-location:
-resolution: "half-hourly"
-access: "open (emcsg.com)"
-data_type: "Uniform Singapore Energy Price and demand"
 ---
 
 # Singapore Energy Market Dataset
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Zheng_BWO_ICEEMDAN_iTransformer]]
+[[2025_Zheng_BWO_ICEEMDAN_iTransformer]], [[2025_Zheng_BWO_ICEEMDAN_iTransformer]]

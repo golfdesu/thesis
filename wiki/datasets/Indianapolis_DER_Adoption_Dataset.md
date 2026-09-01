@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - indianapolis_der_adoption_dataset
-location:
-resolution: "monthly/annual"
-access: "research"
-data_type: "DER adoption records used in adoption-forecasting studies"
 ---
 
 # Indianapolis DER Adoption Dataset

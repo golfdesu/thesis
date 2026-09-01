@@ -2,14 +2,10 @@
 type: dataset
 name: "Google Mobility Index"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - google_mobility_index
-location:
-resolution: "daily"
-access: "open (archive; discontinued 2022-10)"
-data_type: "Visits-duration percent-change vs 5-week 2020 baseline by category"
 ---
 
 # Google Mobility Index

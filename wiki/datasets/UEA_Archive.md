@@ -2,14 +2,10 @@
 type: dataset
 name: "UEA Archive"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - uea_archive
-location:
-resolution: "varies per dataset"
-access: "open (timeseriesclassification.com)"
-data_type: "UEA & UCR Time Series Classification Archive: 128 labelled TSC datasets (Bagnall et al. 2018)"
 ---
 
 # UEA Archive

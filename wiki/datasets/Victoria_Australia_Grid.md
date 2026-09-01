@@ -2,14 +2,10 @@
 type: dataset
 name: "Victoria Australia Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - victoria_australia_grid
-location:
-resolution: "30-min"
-access: "open (aemo.com.au)"
-data_type: "Aggregate demand and price for Victoria region"
 ---
 
 # Victoria Australia Grid

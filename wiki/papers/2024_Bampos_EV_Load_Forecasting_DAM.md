@@ -98,6 +98,3 @@ Yearly nMAE (%) / nRMSE (%) / R² (baseline = Persistence$_{wo,sc}$):
 - [[2018_Bai_Empirical_TCN_Sequence_Modeling]] — [[TCN]] basis ([44]).
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] — prior hierarchical probabilistic EV forecasting benchmark ([33]).
 - Related vault concepts: [[Day_Ahead_Forecasting]], [[EV_Aggregator]], [[XGBoost]], [[MLP]], [[TCN]], [[SARIMA]], [[Persistence_Model]], [[Palo_Alto_EV]], [[Caltech_ACN]]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Bampos_EV_Load_Forecasting_DAM_refs]]

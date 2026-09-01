@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - submetering_triplets
-resolution:
-access: "research"
-data_type: "Paired main-meter/appliance submetering triplets used in NILM evaluation"
-location: "varies"
 ---
 
 # Submetering Triplets

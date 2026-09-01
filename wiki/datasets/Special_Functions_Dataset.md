@@ -2,14 +2,10 @@
 type: dataset
 name: "Special Functions Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - special_functions_dataset
-location:
-resolution: "function samples"
-access: "synthetic"
-data_type: "Values of mathematical special functions used as regression targets in model sanity checks"
 ---
 
 # Special Functions Dataset

@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - model
-  - pyramid-split-attention
+  - pyramid_split_attention
 ---
 
 # Pyramid Split Attention

@@ -6,7 +6,7 @@ year: 2024
 journal_conference: "ICLR 2024 (Spotlight)"
 doi_url: "https://doi.org/10.48550/arXiv.2310.06625"
 models_used: ["[[iTransformer]]", "[[Transformer]]", "[[Informer]]", "[[Reformer]]", "[[Flowformer]]", "[[FlashAttention]]", "[[PatchTST]]", "[[Crossformer]]", "[[DLinear]]", "[[TimesNet]]", "[[TiDE]]", "[[SCINet]]", "[[FEDformer]]", "[[Stationary_Transformer]]"]
-datasets_used: ["[[Electricity_ECL]]", "[[ETT]]", "[[Exchange]]", "[[Traffic]]", "[[Weather]]", "[[Solar_Energy]]", "[[Market_Alipay]]"]
+datasets_used: ["[[Electricity_ECL]]", "[[ETT]]", "[[Exchange]]", "[[Traffic]]", "[[Weather]]", "[[Solar_Energy]]", "[[Traffic]]", "[[Market_Alipay]]"]
 features_used: ["[[Variate_Tokens]]", "[[Series_Representations]]", "[[Multivariate_Correlation_Map]]", "[[Transformer]]", "[[Feed_Forward_Temporal_MLP]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "[[CKA_Similarity]]"]

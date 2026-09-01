@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - model
-  - quantile-regression
+  - quantile_regression
 ---
 
 ## Overview

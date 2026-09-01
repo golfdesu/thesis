@@ -579,3 +579,35 @@ The corpus grew from 80 → **103** papers. Key new lines and their gap impact:
 - **TiDE** ([[2024_Das_TiDE_Long_Term_Forecasting]]) provides a fast covariate-aware dense encoder-decoder without self-attention.
 
 These models strengthen the controlled benchmark required by Gap T-7 and the proposed peak-aware probabilistic study: compare recurrent, convolutional, dense residual, hierarchical multi-scale, Transformer and Mamba backbones under the same EV dataset and evaluation protocol. Their original studies are mostly point-forecast benchmarks, leaving probabilistic heads, peak calibration and downstream V2G value as open extensions.
+This document synthesizes the core findings, mathematical methods, and open research gaps identified across all **108 PDF research papers** ingested into your Obsidian Second Brain.
+> Last updated: 2026-08-23 | Covers all 108 papers | Refreshed after ingestion of papers 81–103 (see [Refresh Section](#-refresh-papers-81103-spatial-temporal-transfer-benchmarks--probabilistic-lines)) and gap-targeted web-discovered papers 104–108 (see [Batch 4 Refresh](#-batch-4-refresh-papers-104108-web-discovered-gap-targeted-added-2026-08-23)) | **NEW: cross-cutting Methodology & System-level Gaps M-1..M-5 added**
+   - **PC-M3 ([[2026_Chen_PC_M3_Mamba_EV_Clusters]])**: Physics-Constrained Mamba MIMO aggregator for 10,000+ EV clusters in real-time energy management.
+| 2026 | Mamba SSM, KAN, Physics-Constrained | [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Chen_PC_M3_Mamba_EV_Clusters]] |
+- **Proposed Focus**: Adopt V2G-SVE evaluation ([[2024_Zhong_V2G_SVE_Evaluation_Metric]]) and Forecast-Enhanced Lyapunov Optimization ([[2021_Huang_Lyapunov_EV_Scheduling]]) or MS-MPC ([[2025_Yang_Stochastic_MPC_Microgrid_EV]]).
+- **New angle**: PC-M3 ([[2026_Chen_PC_M3_Mamba_EV_Clusters]]) demonstrates real-time feasibility for 10,000+ EV clusters — combining value-oriented training with Mamba-based real-time control is unexplored.
+- **Current state**: HyKANet ([[2026_Hao_Mamba_KAN_HyKANet_EV]]) and PC-M3 ([[2026_Chen_PC_M3_Mamba_EV_Clusters]]) are early applications — not yet benchmarked against full probabilistic forecasting suites.
+| [[2017_Vaswani_Attention_Is_All_You_Need]] | Original Transformer | Multi-head self-attention | O(N²) complexity; cannot handle very long sequences efficiently |
+| [[2023_Li_Transformer_EV_Charging_Demand]] | Vanilla Transformer | First use for EV demand | Day-level aggregation only; no hourly resolution |
+| [[2024_Ke_Divide_Conquer_Transformer_Smart_Meter]] | DCT-EV | CNN embedding + self-attention | Home charging only; no multi-household aggregation |
+| [[2024_Feng_LSTM_Transformer_Energy_Consumption]] | LSTM + Transformer | Long+short term fusion | Single-vehicle focus; geographic generalization not validated |
+| [[2024_Li_Attention_MultiGraph_EV_Load]] | AST-MGCN (Multi-Graph + Attention) | Multi-graph spatial attention | Assumes location correlation exists (fails for distant stations) |
+| [[2025_Ramzan_LSTM_Transformer_Charging_Stations]] | LSTM-Transformer Hybrid | Complementary fusion | High computational cost; not suitable for real-time/edge |
+| [[2025_Hussain_CAT_Former_EV_STCS]] | CAT-Former | Context-aware temporal Transformer | Aggregated evaluation; ignores inter-station spatial correlation |
+- [[2025_Ramzan_LSTM_Transformer_Charging_Stations]]: *"The complexity of the model makes it more demanding and the training time can be longer which can be restrictive in the usage of real-time applications in other environments that are resource-limited."*
+- LSTM preprocessing to compress sequences → used in [[2025_Ramzan_LSTM_Transformer_Charging_Stations]]
+- [[2024_Feng_LSTM_Transformer_Energy_Consumption]]: *"However, applying the Transformer model to time series forecasting directly may not be appropriate."*
+- [[2023_Li_Transformer_EV_Charging_Demand]]: *"Transformer provided the best long-term prediction performance… Even while the model's performance for short-term prediction is slightly behind that of LSTM."*
+- [[2025_Hussain_CAT_Former_EV_STCS]]: *"They aggregated the demand data by day to predict for 7, 30, and 90 days ahead; the data aggregation reduced the training data size for the proposed Transformer model and also disabled its capacity to forecast for shorter time steps (e.g., 1h)."*
+- **CAT-Former** ([[2025_Hussain_CAT_Former_EV_STCS]]): Context-aware temporal encoding with session-level features
+- [[2024_On_Autoformer_EV_Charging]]: Autoformer evaluated only with MAE/RMSE/MAPE — no uncertainty quantification.
+- [[2023_Li_Transformer_EV_Charging_Demand]]: Compared against ARIMA/LSTM using RMSE alone.
+- [[2025_Matrone_Probabilistic_LSTM_Attention]]: Uses LSTM+attention with quantile regression — suggests the gap exists even in attention-based work.
+- [[2024_Li_Attention_MultiGraph_EV_Load]]: *"The model without graph over-reliance on time series features fails to provide an accurate forecast."* + *"The major limitation is that the proposed model is based on the supposition of the existence of location correlations in historical temporal load series, which cannot be captured completely when the charging stations are relatively far away."*
+- [[2025_Li_Enhanced_Transformer_BiLSTM_Energy_Price]]: *"Explainability techniques such as LIME (Local Interpretable Model-agnostic Explanations) and SHAP (SHapley Additive exPlanations) will be integrated to make the proposed model more transparent"* — listed as **future work only**.
+- [[2025_Benchmarking_Foundation_Models_EV]]: *"Whether massive pre-training of Transformers on very large collections of generic time series can actually represent household load patterns in real-world scenarios is an empirical question."*
+- [[2025_Benchmarking_Foundation_Models_EV]]: *"Foundation models perform comparably to TFS Transformer models… while certain conditions favor TFS Transformer."*
+| [[2025_Benchmarking_Foundation_Models_EV]] | Zero-shot foundation models vs. TFS Transformer | Gap T-7, Gap 3 |
+| [[2026_Mamba_3_Sequence_Modeling]] | O(N) complex-valued SSM | Gap T-1, Gap 6 |
+| [[2026_Chen_PC_M3_Mamba_EV_Clusters]] | Physics-constrained Mamba MIMO | Gap T-1, Gap 4 |
+| [[2025_REST_Ensemble_Deep_Learning_Port_EV]] | ResNet+SENet+Transformer ensemble | Gap T-7 |
+### Open POINT-forecast gaps (none closed by any of the 108 papers)

@@ -14,5 +14,4 @@ Time-varying inputs observable only up to forecast time in the [[Temporal_Fusion
 
 ## Referenced in this knowledge base
 
-[[2021_Lim_TFT_Temporal_Fusion_Transformers]]
-[[Temporal_Fusion_Transformer]]
+*(none recorded)*

@@ -6,9 +6,6 @@ status: needs-review
 tags:
   - feature
   - computation_time
-aliases:
-  - Computational_Time
-  - Computational Time
 ---
 
 # Computation Time
@@ -20,5 +17,3 @@ As an input feature it appears in the feature lists of forecasting papers collec
 ## Referenced in this knowledge base
 
 [[2025_Yang_Stochastic_MPC_Microgrid_EV]]
-
-[[2026_Huang_Lyapunov_EV_Scheduling]]

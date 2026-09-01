@@ -5,9 +5,9 @@ authors: [Kai Qu, Gangquan Si, Zihan Shan, Qianyue Wang, Xiaoliang Liu, Chen Yan
 year: 2024
 journal_conference: "IEEE Transactions on Power Systems, Vol. 39, No. 1, pp. 1421-1433, January 2024"
 doi_url: "https://doi.org/10.1109/TPWRS.2023.3266369"
-models_used: ["[[Transformer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Informer]]", "[[LogTrans]]", "[[LSTMa]]", "[[Prophet]]", "[[SARIMA]]"]
+models_used: ["[[2024_Qu_Forwardformer_Day_Ahead_Load]]", "[[Transformer]]", "[[Autoformer]]", "[[FEDformer]]", "[[Informer]]", "[[LogTrans]]", "[[LSTMa]]", "[[Prophet]]", "[[SARIMA]]"]
 datasets_used: ["[[CEL_NW_China_Electric_Load]]", "[[CEL_SE_China_Electric_Load]]", "[[AEL_CNYS_America_Electric_Load]]", "[[AEL_NNYS_America_Electric_Load]]", "[[AEL_WNYS_America_Electric_Load]]"]
-features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Temperature]]", "[[Humidity]]", "[[Rainfall]]", "[[Pressure]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Temperature]]", "[[Humidity]]", "[[Rainfall]]", "[[Pressure]]", "[[Temperature]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MSE]]", "[[MAE]]", "[[Accuracy]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -39,7 +39,7 @@ $$X_{\text{feed}}[i] = VE(P_i) + \sum_{j=1}^{NTE}\big[TE(P_i)\big]_j + \sum_{k=1
 
 $$\text{FFN}(x) = \text{ReLU}(w_1 x + b_1)\, w_2 + b_2 \tag{3}$$
 
-Each sublayer wrapped with residual connection, LayerNorm, dropout ($p=0.1$):
+Each sublayer wrapped with residual connection, layer norm, dropout ($p=0.1$):
 
 $$y = \text{Dropout}\big(\text{LayerNorm}(x + \text{Sublayer}(x))\big) \tag{4}$$
 

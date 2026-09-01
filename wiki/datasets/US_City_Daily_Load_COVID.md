@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - us_city_daily_load_covid
-location:
-resolution: "daily"
-access: "open/research"
-data_type: "Daily city-level US electricity load spanning COVID-19 (DeVilmarest et al. 2024 lineage)"
 ---
 
 # US City Daily Load COVID

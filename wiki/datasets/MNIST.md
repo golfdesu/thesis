@@ -2,16 +2,10 @@
 type: dataset
 name: "MNIST"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - mnist
-location: "n/a (image classification)"
-resolution: "28x28 grayscale pixels"
-access: "open (http://yann.lecun.com/exdb/mnist/)"
-license: "No explicit license from LeCun/Cortes/Burges; widely redistributed; some derivatives assert CC BY-SA 3.0"
-commercial_use: restricted
-data_type: "70,000 handwritten digits, 10 classes; Permuted-MNIST and Sequential-MNIST are standard continual-learning variants"
 ---
 
 # MNIST

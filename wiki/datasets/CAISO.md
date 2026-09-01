@@ -12,8 +12,6 @@ tags:
   - power-systems
   - load-forecasting
   - open-data
-license: "CAISO OASIS public market data (CalISO terms of use; attribution, no implied endorsement)"
-commercial_use: allowed
 ---
 
 # 📁 CAISO Load Data

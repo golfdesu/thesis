@@ -6,9 +6,9 @@ year: 2018
 journal_conference: "arXiv preprint (OpenAI), arXiv:1803.02999"
 doi_url: "https://arxiv.org/abs/1803.02999"
 models_used: ["[[Reptile]]", "[[MAML]]", "[[Reptile|FOMAML]]"]
-datasets_used: ["[[Omniglot]]", "[[MiniImageNet]]", "[[Sinusoid_Regression]]"]
+datasets_used: ["[[Omniglot]]", "[[MiniImageNet]]", "[[Sine_Wave_Regression]]"]
 features_used: ["[[Task_Sampling]]", "[[K-Shot_N-Way_Classification]]", "[[Transduction|Transductive_Batch_Normalization]]", "[[Weight_Interpolation]]"]
-forecasting_horizon: "[[Short_Term_Forecasting]]"
+forecasting_horizon: "[[MAML]]"
 metrics: ["[[Accuracy]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
@@ -96,7 +96,7 @@ MLP $1\to64\to64\to1$, 10 sampled points, 32 gradient steps; joint training coll
 
 ## 🔗 Key References & Citation Graph
 - Extends/directly compares against [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]] (MAML/FOMAML, sine-wave regression setup, Mini-ImageNet/Omniglot protocols)
-- Uses [[2014_Kingma_Adam_Stochastic_Optimization|Adam]] (Kingma & Ba, ICLR 2015) in the inner loop
+- Uses [[2014_Adam_Adam_Stochastic_Optimization|Adam]] (Kingma & Ba, ICLR 2015) in the inner loop
 - Builds on Matching Networks (Vinyals et al., NeurIPS 2016 — MiniImageNet) and Omniglot (Lake et al., CogSci 2011)
 - Related: Learning to learn by gradient descent by gradient descent (Andrychowicz et al., NeurIPS 2016); fast weights/slow weights (Hinton & Plaut, 1987); SimuParallelSGD (Zinkevich et al., NIPS 2010); Batch Normalization (Ioffe & Szegedy, 2015)
 - Vault context for EV forecasting: [[2017_Attention_Is_All_You_Need]]

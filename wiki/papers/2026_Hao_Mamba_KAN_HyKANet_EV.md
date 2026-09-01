@@ -5,9 +5,9 @@ authors: [Meilin Hao, Qianqian Ren]
 year: 2026
 journal_conference: "ICASSP 2026 (IEEE International Conference on Acoustics, Speech and Signal Processing), pp. 1276-1280"
 doi_url: "https://doi.org/10.1109/ICASSP55912.2026.11461366"
-models_used: ["[[HyKANet]]", "[[Mamba_SSM]]", "[[KAN]]", "[[PAG]]", "[[FourierGNN]]", "[[AST-GAT]]", "[[DCRNN]]", "[[STGCN]]"]
+models_used: ["[[HyKANet]]", "[[Mamba_SSM]]", "[[Mamba_SSM]]", "[[KAN]]", "[[PAG]]", "[[FourierGNN]]", "[[AST-GAT]]", "[[DCRNN]]", "[[STGCN]]"]
 datasets_used: ["[[Real_World_EV_DC_Charging]]"]
-features_used: ["[[Historical_Load]]", "[[Weather]]", "[[Calendar_Features]]", "[[Electricity_Tariff]]", "[[Adjacency_Matrix]]"]
+features_used: ["[[Historical_Demand]]", "[[Weather]]", "[[Calendar_Features]]", "[[Electricity_Tariff]]", "[[Adjacency_Matrix]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]", "[[RAE]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -77,6 +77,3 @@ $$ \hat{Y} = \text{KAN}(\hat{H}) \in \mathbb{R}^{Q \times N \times C} \tag{9} $$
 - AST-GAT attribute-augmented spatiotemporal GCN [21]; [[FourierGNN]] [22]; DCRNN [20]; STGCN [18]; Graph WaveNet [19]; GMAN [17]; GCN (Kipf & Welling) [15]; GAT [16]
 - LSTM occupancy prediction (Ma & Faye, Energy 2022) [14]; multivariate LSTM demand forecasting (Sanami et al.) [4]
 - Heterogeneous spatio-temporal GCN for EV charging demand (Wang et al., TR-C 2023) [6]; adaptive ST graph recurrent network (Wang et al., Applied Energy 2025) [7]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Hao_Mamba_KAN_HyKANet_EV_refs]]

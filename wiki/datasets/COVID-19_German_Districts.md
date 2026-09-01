@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - covid-19_german_districts
-location:
-resolution: "daily"
-access: "open (Robert Koch Institute)"
-data_type: "District-level COVID-19 incidence panels"
 ---
 
 # COVID 19 German Districts

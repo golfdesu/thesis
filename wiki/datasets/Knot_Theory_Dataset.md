@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - knot_theory_dataset
-access:
-data_type: "Tabular knot-invariant dataset for ML classification of knots; provenance varies"
-location: "n/a (mathematical tabular)"
-resolution: "static tables"
 ---
 
 # Knot Theory Dataset

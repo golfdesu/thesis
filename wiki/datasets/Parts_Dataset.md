@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - parts_dataset
-location:
-resolution: "monthly"
-access: "research license"
-data_type: "Intermittent spare-parts demand series (monthly, aftermarket/industrial) used in probabilistic forecasting comparisons (DeepAR-lineage RCF/CRPS evaluation)"
 ---
 
 # Parts Dataset

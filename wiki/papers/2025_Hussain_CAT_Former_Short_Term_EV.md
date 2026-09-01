@@ -5,7 +5,7 @@ authors: [Adil Hussain, Qing-Chang Lu, Sanam Shahla Rizvi, Shixin Wang, Se Jin K
 year: 2025
 journal_conference: "Scientific Reports, Vol. 15, Article 36652"
 doi_url: "https://doi.org/10.1038/s41598-025-20557-x"
-models_used: ["[[CAT_Former|CAT-Former (Context-Aware Temporal Transformer)]]", "[[Transformer]]", "[[Multi_Head_Attention]]", "[[LSTM]]", "[[BiLSTM]]", "[[CNN_LSTM]]", "[[Hybrid_Transformer|Hybrid Transformer (LSTM Encoder-Decoder)]]"]
+models_used: ["[[CAT_Former|CAT-Former (Context-Aware Temporal Transformer)]]", "[[Transformer]]", "[[Multi_Head_Attention]]", "[[LSTM]]", "[[BiLSTM]]", "[[CNN_LSTM]]", "[[BiLSTM]]", "[[Hybrid_Transformer|Hybrid Transformer (LSTM Encoder-Decoder)]]"]
 datasets_used: ["[[Boulder_Colorado]]", "[[Weather]]"]
 features_used: ["[[Calendar_Features]] $X_{temporal,t} = [h, dw, dt, dm, sd]$", "[[Contextual_Features]] $X_{context,t} = [C_{location}, C_{weather}]$", "[[Positional_Encoding]] $P_t$"]
 forecasting_horizon: "[[Short_Term_Forecasting|1-Hour Ahead and 1-Day Ahead]]"
@@ -97,9 +97,6 @@ Park 1 actual 58.294 kWh → CAT-Former 59.208 (closest among most models); Rec 
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] — source of the multi-head self-attention encoder-decoder backbone (Eqs. 9–13).
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM/BiLSTM baselines used for comparison.
-- Koohfar, Woldemariam & Kumar (2023), *Prediction of electric vehicles' charging demand: A Transformer-based deep learning approach* (Sustainability 15(3):2105) — direct predecessor using Boulder data but daily aggregation only; see [[2023_Koohfar_Transformer_EV_Demand]], ref [28].
-- Zhu et al. (2019), *Short-Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches* (Appl. Sci.) — see [[2019_Zhu_ApplSci_EV_Load_Forecasting]], ref [24].
+- Koohfar, Woldemariam & Kumar (2023), *Prediction of electric vehicles' charging demand: A Transformer-based deep learning approach* (Sustainability 15(3):2105) — direct predecessor using Boulder data but daily aggregation only; see [[2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach]], ref [28].
+- Zhu et al. (2019), *Short-Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches* (Appl. Sci.) — see [[2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches]], ref [24].
 - Zhang et al. (2022), *Hybrid STLF based on empirical wavelet transform and BiLSTM*, doi:10.35833/MPCE.2021.000276, ref [35]; Zhang et al. (2024), *Privacy-preserving federated learning for AMI*, IEEE TCSS, ref [36].
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2025_Hussain_CAT_Former_Short_Term_EV_refs]]

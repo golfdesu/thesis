@@ -9,7 +9,7 @@ models_used: ["[[TimeGrad]]", "[[DDPM|Denoising Diffusion Probabilistic Model]]"
 datasets_used: ["[[Exchange]]", "[[Solar_Energy|Solar]]", "[[Electricity_ECL|Electricity (UCI Load Diagrams)]]", "[[Traffic|PEM-SF Traffic]]", "[[NYC_Taxi]]", "[[Wikipedia_Pageviews]]"]
 features_used: ["[[Multivariate_Time_Series]]", "[[Historical_Load]]", "[[Calendar_Features]]", "[[Lag_Features]]", "[[Mean_Scaling]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
-metrics: ["[[CRPS]]"]
+metrics: ["[[CRPS]]", "[[CRPS]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

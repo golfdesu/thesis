@@ -14,5 +14,4 @@ Centroid-based partitional clustering; groups stations or load shapes before per
 
 ## Referenced in this knowledge base
 
-[[2024_Feng_LSTM_Transformer_EV_Consumption]]
-[[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]
+*(none recorded)*

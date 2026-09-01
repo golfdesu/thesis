@@ -2,15 +2,10 @@
 type: dataset
 name: "Tao's Vanilla Benchmark"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - tao's_vanilla_benchmark
-location:
-resolution: "varies"
-access: "open"
-data_type: "Tao Hong's 'vanilla' benchmark: simple multiple-linear-regression baseline for load forecasting"
-source_note: "Taos Vanilla Benchmark; cited by GEFCOM/post-COVID notes"
 ---
 
 # Tao's Vanilla Benchmark

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_Huang_Lyapunov_EV_Scheduling]]
+[[2021_Huang_Lyapunov_EV_Scheduling]]

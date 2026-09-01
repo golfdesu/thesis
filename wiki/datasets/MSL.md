@@ -2,14 +2,10 @@
 type: dataset
 name: "MSL"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - msl
-location:
-resolution: "telemetry channel sequences"
-access: "open (NASA research release)"
-data_type: "MSL telemetry channels with anomaly labels (Hundman et al. 2018)"
 ---
 
 # MSL

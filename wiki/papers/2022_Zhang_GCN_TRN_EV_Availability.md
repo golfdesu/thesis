@@ -5,11 +5,11 @@ authors: [Ruihan Zhang, Virgia Wang]
 year: 2022
 journal_conference: "2022 5th International Conference on Computer Science and Software Engineering (CSSE 2022), Guilin, China, pp. 527-533"
 doi_url: "https://doi.org/10.1145/3569966.3570101"
-models_used: ["[[GCN|GCN-TRN]]", "[[Transformer]]", "[[GRU]]", "[[GCN-GRU]]", "[[SVR]]", "[[Historical_Average|HA]]"]
+models_used: ["[[GCN|GCN-TRN]]", "[[GCN]]", "[[Transformer]]", "[[GRU]]", "[[GCN-GRU]]", "[[SVR]]", "[[Historical_Average|HA]]"]
 datasets_used: ["[[Dundee_EV]]"]
-features_used: ["[[Adjacency_Matrix|Spatial Adjacency Matrix A_ij (true path distances)]]", "[[Station_Occupancy|Availability p_n]]", "[[Station_Latitude_Longitude|Latitude/Longitude]]", "[[30_Min_Slot_Aggregation|30-min Occupancy Slots]]"]
+features_used: ["[[Adjacency_Matrix|Spatial Adjacency Matrix A_ij (true path distances)]]", "[[Station_Occupancy|Availability p_n]]", "[[Station_Occupancy]]", "[[Station_Latitude_Longitude|Latitude/Longitude]]", "[[30_Min_Slot_Aggregation|30-min Occupancy Slots]]"]
 forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
-metrics: ["[[Accuracy]]", "[[RMSE]]", "[[MAE]]", "[[R_squared|R² Score]]"]
+metrics: ["[[Accuracy]]", "[[RMSE]]", "[[MAE]]", "[[R_squared|R² Score]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -90,6 +90,3 @@ Baselines: [[Historical_Average|HA]], [[SVR]], [[GRU]], [[GCN-GRU]], vanilla [[T
 ## 🔗 Key References & Citation Graph
 - Vault papers: [[2017_Attention_Is_All_You_Need]] (Transformer base architecture, ref [15]), [[DCRNN|Deep Spatio-Temporal Residual Networks]] (ref [3], citywide crowd flows)
 - Cited-in-text foundations: Kipf & Welling GCN (arXiv:1609.02907, ref [14] — source of Eqs. 2–5), T-GCN traffic prediction (Zhao et al. 2019, ref [11]), GMAN graph multi-attention network (Zheng et al. 2020, ref [12]), Spatial-Temporal Transformer Networks (Xu et al. 2020, ref [13]), AST-GCN (Zhu et al. 2021, ref [9]), UK EV charging behavior statistical analysis (Quirós-Tortós et al. 2015, ref [2]), ACN-Data open EV charging dataset (Lee et al. 2019, ref [7]), EV CS availability deep learning (Luo et al. ITSC 2021, ref [16] — source of Eq. 8)
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2022_Zhang_GCN_TRN_EV_Availability_refs]]

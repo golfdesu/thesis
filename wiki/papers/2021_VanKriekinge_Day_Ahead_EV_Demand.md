@@ -7,7 +7,7 @@ journal_conference: "World Electric Vehicle Journal, 12(4), 178"
 doi_url: "https://doi.org/10.3390/wevj12040178"
 models_used: ["[[LSTM]]", "[[LSTM_B]]", "[[LSTM_C]]", "[[LSTM_W]]", "[[RNN]]"]
 datasets_used: ["[[Hospital_Semi_Public_Charging_Site_Dataset]]"]
-features_used: ["[[EV_Charging_Demand]]", "[[Cyclical_Quarter_Hour_Features]]", "[[Cyclical_Day_Number_Features]]", "[[Holiday_Flag]]", "[[Temperature]]", "[[Rainfall]]"]
+features_used: ["[[EV_Charging_Demand]]", "[[EV_Charging_Demand]]", "[[Cyclical_Quarter_Hour_Features]]", "[[Cyclical_Day_Number_Features]]", "[[Holiday_Flag]]", "[[Holiday_Flag]]", "[[Temperature]]", "[[Daily_Rainfall]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MSE]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -114,6 +114,3 @@ Test-subset results:
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] — hierarchical probabilistic approach cited in literature review (+9.5% accuracy gain)
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — vanishing-gradient problem context (ref. [28], Hochreiter 1998)
 - [[2014_Kingma_Adam_Stochastic_Optimization]] — Adam optimizer used in LSTM-C/LSTM-W
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2021_VanKriekinge_Day_Ahead_EV_Demand_refs]]

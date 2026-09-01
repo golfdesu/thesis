@@ -3,9 +3,9 @@ type: paper
 title: "PowerMamba: A Deep State Space Model and Comprehensive Benchmark for Time Series Prediction in Electric Power Systems"
 authors: [Ali Menati, Fatemeh Doudi, Dileep Kalathil, Le Xie]
 year: 2024
-journal_conference: "IEEE Transactions on Power Systems (2025), doi:10.1109/TPWRS.2025.3647539; preprint arXiv:2412.06112"
+journal_conference: "arXiv preprint (arXiv:2412.06112), v2 updated 20 Dec 2025"
 doi_url: "https://arxiv.org/abs/2412.06112"
-models_used: ["[[PowerMamba]]", "[[Mamba_SSM]]", "[[RevIN]]", "[[iTransformer]]", "[[PatchTST]]", "[[DLinear]]", "[[Autoformer]]", "[[TimesNet]]"]
+models_used: ["[[PowerMamba]]", "[[Mamba_SSM]]", "[[RevIN]]", "[[iTransformer]]", "[[PatchTST]]", "[[DLinear]]", "[[Autoformer]]", "[[TimesNet]]", "[[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]]"]
 datasets_used: ["[[ERCOT_GridSet]]"]
 features_used: ["[[Historical_Load]]", "zonal electricity price", "ancillary service price", "renewable generation (wind/solar)", "ERCOT external forecasts (day-ahead load + renewables)"]
 forecasting_horizon: ["[[Short_Term_Forecasting]]", "[[Long_Term_Forecasting]]"]
@@ -79,6 +79,3 @@ $$ x_c = [x_e;\ x_m;\ x_{im};\ x_m \oplus x_{im}], \qquad y = \text{Linear}_W(x_
 - Linear/lightweight: [[DLinear]] & NLinear [32], TiDE [31]
 - [[RevIN]] reversible instance normalisation [45]; ADAM optimiser [47]
 - Related datasets contrasted: ERCOT/MISO multi-scale set (Zheng et al.) [38], Buildings-900k [39], Lago et al. day-ahead price benchmark [8]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Menati_PowerMamba_Power_Systems_SSM_refs]]

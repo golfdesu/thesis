@@ -16,4 +16,4 @@ This research note synthesizes concepts that span multiple papers in the knowled
 
 ## Referenced in this knowledge base
 
-[[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+[[2026_Chen_PC_M3_Mamba_EV_Clusters]]

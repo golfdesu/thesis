@@ -1,27 +1,19 @@
 ---
 type: paper
-title: "CRPS Learning"
-authors: [Jonathan Berrisch, Florian Ziel]
-year: 2023
-journal_conference: "arXiv preprint (Quantitative Finance lineage)"
-doi_url: "https://arxiv.org/abs/2302.03511"
+name: "Berrisch Ziel CRPS Learning"
+category: Stub (auto-generated)
 status: needs-review
 tags:
   - paper
+  - berrisch_ziel_crps_learning
 ---
-## 🎯 Main Objective & Contribution
-- Proposes **CRPS learning**: perform online gradient-descent-style learning directly in **CRPS (Continuous Ranked Probability Score) space**, building an adaptive **ensemble of distributional forecasts** (base learners' full predictive distributions) whose combination minimises CRPS rather than pinball losses per quantile.
-- Motivation: existing distributional ensembles either aggregate quantiles separately or assume exchangeability; CRPS learning yields one coherent predictive distribution and provable/observed robustness on non-stationary series.
 
-## 🧠 Methodology & Model Architecture
-- Base learners produce candidate predictive distributions; an online algorithm updates mixture weights by stochastic (mini-batch) gradient steps on the empirical CRPS risk, with expert-aggregation-style guarantees inherited from online learning under dynamic environments.
-- Evaluated against quantile-regression averaging (e.g., QRA) and related distributional aggregation methods.
+# Berrisch Ziel CRPS Learning
 
-## 📈 Performance & Results
-- On electricity-price/load forecasting case studies (including German market data typical of Ziel's line of work), CRPS learning matches or beats QRA-type benchmarks on CRPS and related scores while adapting faster after distribution shifts.
+Berrisch Ziel CRPS Learning — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-## 💡 Limitations & Identified Research Gaps
-- Requires differentiable CRPS approximation choices; base-learner quality still dominates. Connections to conformal and distribution-free calibration (cf. [[Conformal_Prediction]], [[Zaffran2022_Adaptive_Conformal]]) remain open.
+In this knowledge base the paper is indexed with its metadata (authors, year, venue), extracted contributions, models and datasets used, and BibTeX-style reference data. Open the page and expand each section for the structured summary.
 
-## 📚 BibTeX & Citation Reference
-- J. Berrisch, F. Ziel, "CRPS learning," 2023 (arXiv preprint; see also their ProfKriging/QRA line of work). R package `crpslearning`. Status: metadata partially verified — confirm journal version.
+## Referenced in this knowledge base
+
+[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]

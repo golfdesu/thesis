@@ -2,14 +2,10 @@
 type: dataset
 name: "Synthetic Sinusoidal"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - synthetic_sinusoidal
-location:
-resolution: "function samples"
-access: "synthetic"
-data_type: "Random-amplitude/phase sine-wave regression; canonical MAML/FOMAML few-shot task"
 ---
 
 # Synthetic Sinusoidal

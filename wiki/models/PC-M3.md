@@ -12,4 +12,4 @@ tags:
 Power-clustering Mamba variant for probabilistic forecasting across EV charging clusters.
 
 ## Key References
-- [[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+- [[2026_Chen_PC_M3_Mamba_EV_Clusters]]

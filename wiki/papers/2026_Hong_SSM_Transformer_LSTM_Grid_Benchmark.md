@@ -116,6 +116,3 @@ Grid split: PatchTST leads CAISO/MISO/ERCOT (regular diurnal shapes fit patch bo
 - [[Mamba_SSM]] — base selective state space mechanism underlying both SSMs.
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM baseline lineage.
 - Context: [[2025_Meyer_Benchmark_Foundation_Models]] — this paper deliberately excludes zero-shot foundation models, complementing that line.
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark_refs]]

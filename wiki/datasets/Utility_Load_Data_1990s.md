@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - utility_load_data_1990s
-resolution:
-access: "historical/public"
-data_type: "1990s investor-owned utility load series retained as legacy forecasting benchmarks"
-location: "USA utilities (legacy)"
 ---
 
 # Utility Load Data 1990s

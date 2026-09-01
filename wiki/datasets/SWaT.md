@@ -2,14 +2,10 @@
 type: dataset
 name: "SWaT"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - swat
-location:
-resolution: "1-second raw / 10-second or minute variants"
-access: "restricted (iTrust request)"
-data_type: "Secure Water Treatment testbed: 51 sensors/actuators, 11 days normal+attacked; anomaly-detection benchmark"
 ---
 
 # SWaT

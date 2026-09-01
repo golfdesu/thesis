@@ -2,14 +2,10 @@
 type: dataset
 name: "Liuyue Charging Station Dataset"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - liuyue_charging_station_dataset
-location:
-resolution: "session level"
-access: "operator/research"
-data_type: "Charging station operational records"
 ---
 
 # Liuyue Charging Station Dataset
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2019_Zhu_ApplSci_EV_Load_Forecasting]]
+[[2019_Zhu_ApplSci_EV_Load_Forecasting]], [[2019_Zhu_ApplSci_EV_Load_Forecasting]]

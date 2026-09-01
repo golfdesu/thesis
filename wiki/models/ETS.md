@@ -17,6 +17,3 @@ Within this knowledge base the model page collects its architectural family, typ
 ## Referenced in this knowledge base
 
 [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]
-
-## Literature Usage
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Exponential Smoothing baseline on Monash (GM 0.9337); TimesFM 0.6846 significantly better.

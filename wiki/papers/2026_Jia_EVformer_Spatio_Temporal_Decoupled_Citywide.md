@@ -7,7 +7,7 @@ journal_conference: "World Electric Vehicle Journal (MDPI), Vol. 17"
 doi_url: "https://doi.org/10.3390/wevj17020071"
 models_used: ["[[EVformer]]", "[[Multi_Head_Attention]]", "[[Gated_Fusion]]", "[[Top-K_Spatial_Attention]]", "[[STGCN]]", "[[DCRNN]]", "[[MTGNN]]", "[[Graph_WaveNet]]", "[[Graph_Attention_Networks|GAT]]", "[[AST-GAT]]", "[[PAG]]"]
 datasets_used: ["[[ST-EVCDP]]"]
-features_used: ["[[EV_Charging_Demand]]", "[[Charging_Duration]]", "[[Pile_Utilization_Rate]]", "[[Pricing_Mechanism]] (fixed/dynamic)", "[[Regional_Functional_Type]] (residential/commercial/industrial)", "[[Charging_Pile_Density]]", "[[Temperature]]", "[[Time_of_Day]]", "[[Spatio_Temporal_Embedding]]"]
+features_used: ["[[Charging_Demand]]", "[[Charging_Duration]]", "[[Pile_Utilization_Rate]]", "[[Pricing_Mechanism]] (fixed/dynamic)", "[[Regional_Functional_Type]] (residential/commercial/industrial)", "[[Charging_Pile_Density]]", "[[Temperature]]", "[[Time_of_Day]]", "[[Spatio_Temporal_Embedding]]"]
 forecasting_horizon: "[[Spatial_Temporal_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]

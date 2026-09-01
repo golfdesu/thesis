@@ -7,7 +7,7 @@ journal_conference: "IEEE Transactions on Industry Applications, vol. 61, no. 1,
 doi_url: "https://doi.org/10.1109/TIA.2023.3344544"
 models_used: ["[[LSTM]]", "[[PICNN]]", "[[DCL]]", "[[DeepAR]]", "[[DeepVAR]]", "[[MLP]]"]
 datasets_used: ["[[Caltech_ACN]]"]
-features_used: ["[[EV_Charging_Demand]]", "[[Temperature]]", "[[Dew_Point]]", "[[Precipitation]]", "[[Calendar_Features]]", "[[Holiday_Flag]]"]
+features_used: ["[[EV_Charging_Demand]]", "[[Temperature]]", "[[Dew_Point]]", "[[Precipitation]]", "[[Calendar_Features]]", "[[Holiday_Indicator]]", "[[Calendar_Features]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[MASE]]", "[[Pinball_Loss]]", "[[Winkler_Score]]", "[[Energy_Score]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -97,6 +97,3 @@ $$L_{ES} = \mathbb{E}_{w_1,w_2\in\Omega}\left(-\frac{1}{2}\|w_1-w_2\|_2^\beta + 
 - [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] — RL-based EVCS load forecasting [20]
 - [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — related deep multi-horizon architecture lineage
 - Related vault papers: [[2023_Huang_MetaProbformer_EV_Load]], [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Li_DiffPLF_Conditional_Diffusion_EV]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2025_Zheng_Coherent_Hierarchical_EV_Load_refs]]

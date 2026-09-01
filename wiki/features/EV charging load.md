@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - feature
-  - ev-charging-load
+  - ev charging load
 ---
 
 # EV charging load

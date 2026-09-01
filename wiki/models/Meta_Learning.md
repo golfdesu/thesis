@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - model
-  - meta-learning
+  - meta_learning
 ---
 
 # Meta Learning
@@ -17,6 +17,3 @@ Within this knowledge base the model page collects its architectural family, typ
 ## Referenced in this knowledge base
 
 [[2024_Ali_MQ_TCN_Transfer_Learning_EV]], [[2024_Ali_MQ_TCN_Transfer_Learning_EV]]
-
-## Related
-Hyperparameter adaptation via meta-learning: [[Meta_Learning_Hyperparameters]].

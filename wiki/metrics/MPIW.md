@@ -1,6 +1,4 @@
 ---
-title: Mean Prediction Interval Width (MPIW)
-type: metric
 metric: Mean Prediction Interval Width (MPIW)
 category: probabilistic-forecast-metric
 formula: "MPIW = (1/N) Σ (u_i − l_i)"

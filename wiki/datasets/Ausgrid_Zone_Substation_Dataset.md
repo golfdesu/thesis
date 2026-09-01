@@ -2,14 +2,10 @@
 type: dataset
 name: "Ausgrid Zone Substation Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - ausgrid_zone_substation_dataset
-location:
-resolution: "half-hourly"
-access: "open (Ausgrid Solar Home Electricity Data)"
-data_type: "~300 customers' half-hourly consumption + rooftop PV, 2010-2013"
 ---
 
 # Ausgrid Zone Substation Dataset

@@ -2,14 +2,10 @@
 type: dataset
 name: "PSM"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - psm
-location:
-resolution: "1-minute"
-access: "open (research release)"
-data_type: "Pooled Server Metrics: 25 server features, anomaly labels (Su et al. 2019)"
 ---
 
 # PSM

@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - berkleyparser_corpus
-access:
-data_type: "NLP constituency-parsing corpus produced with the Berkeley Parser; used as a token-sequence benchmark in some sequence-modeling evaluations"
-location: "n/a (NLP parsing)"
-resolution: "sentence/token level"
 ---
 
 # BerkleyParser Corpus

@@ -2,14 +2,10 @@
 type: dataset
 name: "UCI EEG"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - uci_eeg
-location:
-resolution: "milliseconds"
-access: "open (UCI Machine Learning Repository)"
-data_type: "EEG recordings (eye-state / motor-imagery variants) from UCI archive"
 ---
 
 # UCI EEG
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]
+[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]], [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]

@@ -1,6 +1,6 @@
 ---
 type: model
-name: "MAML-Informer"
+name: "MAML Informer"
 category: Stub (auto-generated)
 status: needs-review
 tags:

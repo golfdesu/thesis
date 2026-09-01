@@ -110,6 +110,3 @@ Charging load: strong Pearson/Kendall/Spearman correlation with TF (all coeffici
 - Related vault concepts: [[Queuing_Model]], [[Prediction_Intervals]], [[Traffic]], [[GMM]], [[PICP]]
 - Comparable baselines in vault: [[2017_Attention_Is_All_You_Need]] (attention alternatives to CNN ensembles)
 - Follow-up direction: probabilistic EV load forecasting feeding [[Short_Term_Forecasting]] dispatch decisions.
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2021_Zhang_Probabilistic_Queuing_EV_Load_refs]]

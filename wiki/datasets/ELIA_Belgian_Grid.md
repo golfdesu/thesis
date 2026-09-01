@@ -2,14 +2,10 @@
 type: dataset
 name: "ELIA Belgian Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - elia_belgian_grid
-location:
-resolution: "15-min"
-access: "open (elia.be opendata)"
-data_type: "System load, wind/solar generation, imbalance data"
 ---
 
 # ELIA Belgian Grid

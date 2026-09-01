@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - guide
-  - demand-response
+  - demand_response
 ---
 
 # Demand Response

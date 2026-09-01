@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - model
-  - multi-head-attention
+  - multi_head_attention
 ---
 
 ## Overview

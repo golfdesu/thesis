@@ -2,14 +2,10 @@
 type: dataset
 name: "SMAP"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - smap
-location:
-resolution: "telemetry channel sequences"
-access: "open (NASA research release)"
-data_type: "SMAP telemetry channels with anomaly labels (Hundman et al. 2018)"
 ---
 
 # SMAP

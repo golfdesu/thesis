@@ -6,8 +6,8 @@ year: 2019
 journal_conference: "Energies 2019, 12(14), 2692 (MDPI)"
 doi_url: "https://doi.org/10.3390/en12142692"
 models_used: ["[[ANN]]", "[[RNN]]", "[[LSTM]]", "[[BiLSTM]]", "[[GRU]]", "[[Stacked_AutoEncoder|SAEs]]"]
-datasets_used: ["[[Shenzhen_ST_EVCDP]]"]
-features_used: ["[[Historical_Load]]", "[[Seasonality|Rainy/Dry_Season_Indicator]]", "[[Holiday_Flag]]", "[[Lookback_Window]]"]
+datasets_used: ["[[Shenzhen_ST_EVCDP]]", "[[Shenzhen_ST_EVCDP]]"]
+features_used: ["[[Historical_Load]]", "[[Historical_Load]]", "[[Seasonality|Rainy/Dry_Season_Indicator]]", "[[Holiday_Flag]]", "[[Lookback_Window]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[R_squared|R² Score]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -42,7 +42,7 @@ $$y_{dt} = \frac{y_{dt-1} + y_{dt+1}}{2} \tag{14}$$
 - **Evaluation metrics**: RMSE (Eq. 15), MAPE (Eq. 16 — excluded because actual load is often $0$ during non-charging periods → division by zero), MAE (Eq. 17):
 $$\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2},\quad \text{MAE} = \frac{1}{N}\sum_{i=1}^{n}|\hat{y}_i - y_i|,\quad R^2 = 1 - \frac{\sum_{i=1}^{n}(\hat{y}_i - y_i)^2}{\sum_{i=1}^{n}(\bar{y}_i - y_i)^2} \tag{15–18}$$
 - **Framework**: pre-processing (per-minute load aggregation over all piles) → normalization → sliding-window time-step input (look-back $T_{\text{step}}$; dense layer maps LSTM block output to single value) → BPTT training → inverse normalization. Implemented in Keras/TensorFlow on i7-3.0 GHz, 64 GB RAM, GTX-1080Ti GPU.
-- **Hyperparameters**: ANN = 1 hidden layer; RNN/GRU/BiLSTM/LSTM = 2 hidden layers; SAEs = 4 hidden layers; all hidden layers 16 nodes; learning rate 0.001 (RMSprop optimizer); epochs 30; batch size 512; dropout 0.3; MAE as loss function.
+- **Hyperparameters**: ANN = 1 hidden layer; RNN/GRU/Bi-LSTM/LSTM = 2 hidden layers; SAEs = 4 hidden layers; all hidden layers 16 nodes; learning rate 0.001 (RMSprop optimizer); epochs 30; batch size 512; dropout 0.3; MAE as loss function.
 
 ## 📊 Dataset & Input Features
 - **[[Shenzhen_ST_EVCDP]] (Case 1)**: large-scale PEV charging station in Shenzhen with rooftop PV panels and battery energy storage; 64 bus parking spaces, 12 car charging spaces, **24 charging piles**. Original records contain charging start time, end time, total charging amount; raw data span 31 Mar 2017 – 17 Jul 2018; one full year used: 1 Jul 2017 – 30 Jun 2018 (built from data of 3 Jun 2017 – 1 Jul 2018 since night charging spans two days). Resampled to **1-minute intervals → 525,600 rows**.
@@ -54,7 +54,7 @@ $$\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2},\quad \text{
 ## 📈 Performance & Results
 - **Case 1 — charging station (Table 2)**:
 
-| T-Step | Metric | ANN | RNN | GRU | SAEs | BiLSTM | **LSTM** |
+| T-Step | Metric | ANN | RNN | GRU | SAEs | Bi-LSTM | **LSTM** |
 | :---: | :--- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 1 | MAE | 2.3582 | 3.2397 | 1.9116 | 1.0886 | 1.3096 | **0.4782** |
 | 1 | RMSE | 4.3078 | 3.7915 | 2.4333 | 1.5689 | 1.5996 | **0.9546** |
@@ -67,8 +67,8 @@ $$\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2},\quad \text{
 | 15 | R² | 0.8168 | 0.8941 | 0.9756 | 0.9292 | 0.9916 | **0.9950** |
 
 - Final training losses (epoch 30): LSTM 0.0068/0.0065/0.0064 for 1/5/15 steps; validation loss 0.0031/0.0043/0.0034 — minimum among all six models at every setting.
-- **Efficiency**: BiLSTM needed **58 s/epoch** at 15 time steps vs. **8 s/epoch** for LSTM.
-- Sequence insight: RMSE of RNN/GRU/BiLSTM/LSTM decreases going 1→5 steps (sequence models prefer longer inputs); only LSTM and BiLSTM keep improving 5→15 steps.
+- **Efficiency**: Bi-LSTM needed **58 s/epoch** at 15 time steps vs. **8 s/epoch** for LSTM.
+- Sequence insight: RMSE of RNN/GRU/Bi-LSTM/LSTM decreases going 1→5 steps (sequence models prefer longer inputs); only LSTM and Bi-LSTM keep improving 5→15 steps.
 - **Case 2 — aggregator (Table 3)**: LSTM again best everywhere — MAE 0.3096/0.4699/0.2864 and RMSE 0.5095/0.6219/0.4418 for 1/5/15 steps (best R² = 0.9828 at 15 steps); ANN flat at MAE ≈ 0.88–0.91 across all steps.
 - Load-pattern findings: sharp load rise at 23:00 (electric buses/taxis recharge during lowest tariff after being uncommitted), decline at 03:00, rise at 08:00; higher working-day than holiday loads.
 
@@ -98,7 +98,4 @@ $$\text{RMSE} = \sqrt{\frac{1}{N}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2},\quad \text{
 - Companion hourly-level predecessor: [[2019_Zhu_ApplSci_EV_Load_Forecasting]] (Appl. Sci. 9, 1723)
 - Foundation: [[1997_Hochreiter_Long_Short_Term_Memory|Hochreiter & Schmidhuber, LSTM (1997)]]
 - Related vault papers: [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
-- Cited methodological anchors: GRU (Cho et al., 2014), Stacked denoising autoencoders (Vincent et al., JMLR 2010), BiLSTM (Graves & Schmidhuber, 2005), RMSprop (Tieleman & Hinton, 2012), BPTT (Werbos, 1990), Dropout (Hinton et al., 2012)
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2019_Zhu_EV_Load_Forecasting_refs]]
+- Cited methodological anchors: GRU (Cho et al., 2014), Stacked denoising autoencoders (Vincent et al., JMLR 2010), Bi-LSTM (Graves & Schmidhuber, 2005), RMSprop (Tieleman & Hinton, 2012), BPTT (Werbos, 1990), Dropout (Hinton et al., 2012)

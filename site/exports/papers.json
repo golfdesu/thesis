@@ -1,0 +1,3744 @@
+[
+  {
+    "id": "1997_Hochreiter_Long_Short_Term_Memory",
+    "title": "Long Short-Term Memory",
+    "authors": [
+      "Sepp Hochreiter",
+      "Jürgen Schmidhuber"
+    ],
+    "year": 1997,
+    "venue": "Neural Computation, 9(8), 1735-1780",
+    "doi": "10.1162/neco.1997.9.8.1735",
+    "models_used": [
+      "LSTM",
+      "RNN",
+      "BPTT",
+      "RTRL",
+      "Recurrent_Cascade_Correlation"
+    ],
+    "datasets_used": [
+      "Embedded_Reber_Grammar",
+      "Synthetic_Long_Time_Lag_Benchmarks",
+      "Adding_Problem",
+      "Multiplication_Problem",
+      "Temporal_Order_Problem"
+    ],
+    "metrics": [
+      "Classification_Error",
+      "MSE",
+      "Absolute_Error"
+    ],
+    "rel_url": "papers/1997_Hochreiter_Long_Short_Term_Memory.html"
+  },
+  {
+    "id": "2001_Hippert_Neural_Networks_STLF_Review",
+    "title": "Neural Networks for Short-Term Load Forecasting: A Review and Evaluation",
+    "authors": [
+      "Henrique Steinherz Hippert",
+      "Carlos Eduardo Pedreira",
+      "Reinaldo Castro Souza"
+    ],
+    "year": 2001,
+    "venue": "IEEE Transactions on Power Systems, 16(1), 44-55",
+    "doi": "10.1109/59.910780",
+    "models_used": [
+      "MLP",
+      "ANN",
+      "ARIMA",
+      "Linear_Regression",
+      "Kohonen_SOM",
+      "RNN",
+      "Fuzzy_Neural_Network",
+      "Projection_Pursuit_Regression",
+      "Adaline"
+    ],
+    "datasets_used": [
+      "Utility_Load_Data_1990s",
+      "Taiwan_Power_System",
+      "Greek_Power_System",
+      "Autonomous_Island_System_Crete"
+    ],
+    "metrics": [
+      "MAPE",
+      "RMSE",
+      "MSPE",
+      "MAE",
+      "Standard_Deviation_Errors"
+    ],
+    "rel_url": "papers/2001_Hippert_Neural_Networks_STLF_Review.html"
+  },
+  {
+    "id": "2013_Roberts_Gaussian_Processes_Time_Series",
+    "title": "Gaussian processes for time-series modelling",
+    "authors": [
+      "Stephen Roberts",
+      "Michael Osborne",
+      "Mark Ebden",
+      "Steven Reece",
+      "Niall Gibson",
+      "Suzanne Aigrain"
+    ],
+    "year": 2013,
+    "venue": "Philosophical Transactions of the Royal Society A, 371, 20110550",
+    "doi": "10.1098/rsta.2011.0550",
+    "models_used": [
+      "Gaussian_Process",
+      "Bayesian_Nonparametric_Regression",
+      "Kalman_Filter",
+      "Bayesian_Quadrature",
+      "Markov_Chain_Monte_Carlo"
+    ],
+    "datasets_used": [
+      "Bramblemet_Sensor_Network",
+      "Nile_River_Water_Levels",
+      "Dow_Jones_1972_1975",
+      "HD_189733_Photometry"
+    ],
+    "metrics": [
+      "RMSE",
+      "NRMSE",
+      "Log_Marginal_Likelihood"
+    ],
+    "rel_url": "papers/2013_Roberts_Gaussian_Processes_Time_Series.html"
+  },
+  {
+    "id": "2014_Alizadeh_Scalable_Stochastic_EV_Demand",
+    "title": "A Scalable Stochastic Model for the Electricity Demand of Electric and Plug-In Hybrid Vehicles",
+    "authors": [
+      "Mahnoosh Alizadeh",
+      "Anna Scaglione",
+      "Jamie Davies",
+      "Kenneth S. Kurani"
+    ],
+    "year": 2014,
+    "venue": "IEEE Transactions on Smart Grid, 5(2), 848-860",
+    "doi": "10.1109/TSG.2013.2275988",
+    "models_used": [
+      "Queuing_Model",
+      "Factor_Model",
+      "ARIMA",
+      "Kalman_Filter",
+      "EM_Algorithm",
+      "Persistence_Model"
+    ],
+    "datasets_used": [
+      "UC_Davis_PH_EV_Center_Data",
+      "NHTS_2009"
+    ],
+    "metrics": [
+      "MAE",
+      "Absolute_Error_kW",
+      "Kolmogorov_Smirnov_Test",
+      "Log_Likelihood"
+    ],
+    "rel_url": "papers/2014_Alizadeh_Scalable_Stochastic_EV_Demand.html"
+  },
+  {
+    "id": "2014_Kingma_Adam_Stochastic_Optimization",
+    "title": "Adam: A Method for Stochastic Optimization",
+    "authors": [
+      "Diederik P. Kingma",
+      "Jimmy Lei Ba"
+    ],
+    "year": 2014,
+    "venue": "ICLR 2015 (arXiv:1412.6980)",
+    "doi": "https://arxiv.org/abs/1412.6980",
+    "models_used": [
+      "Adam",
+      "SGD",
+      "AdaGrad",
+      "RMSProp",
+      "SFO_Optimizer"
+    ],
+    "datasets_used": [
+      "MNIST",
+      "CIFAR-10",
+      "IMDB_Movie_Reviews",
+      "Synthetic_VAE_Objective"
+    ],
+    "metrics": [
+      "NLL",
+      "Regret_Bound",
+      "Convergence_Iterations",
+      "Wall_Clock_Time"
+    ],
+    "rel_url": "papers/2014_Kingma_Adam_Stochastic_Optimization.html"
+  },
+  {
+    "id": "2015_Raza_Review_AI_Load_Demand",
+    "title": "A review on artificial intelligence based load demand forecasting techniques for smart grid and buildings",
+    "authors": [
+      "Muhammad Qamar Raza",
+      "Abbas Khosravi"
+    ],
+    "year": 2015,
+    "venue": "Renewable and Sustainable Energy Reviews, vol. 50, pp. 1352-1372",
+    "doi": "10.1016/j.rser.2015.04.065",
+    "models_used": [
+      "ANN",
+      "MLP",
+      "Fuzzy_Logic",
+      "ANFIS",
+      "SVM",
+      "SVR",
+      "WNN",
+      "AIS",
+      "GA",
+      "PSO",
+      "ACO"
+    ],
+    "datasets_used": [
+      "ISO_New_England_Grid",
+      "California_Grid",
+      "New_York_Grid",
+      "Singapore_Grid",
+      "ELIA_Belgian_Grid",
+      "Ontario_Grid",
+      "Victoria_Australia_Grid",
+      "UK_National_Grid"
+    ],
+    "metrics": [
+      "MAPE",
+      "RMSE",
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2015_Raza_Review_AI_Load_Demand.html"
+  },
+  {
+    "id": "2017_Attention_Is_All_You_Need",
+    "title": "Attention Is All You Need",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Łukasz Kaiser",
+      "Illia Polosukhin"
+    ],
+    "year": 2017,
+    "venue": "Advances in Neural Information Processing Systems 30 (NIPS 2017), Long Beach, CA",
+    "doi": "https://arxiv.org/abs/1706.03762",
+    "models_used": [
+      "Transformer",
+      "Multi_Head_Attention",
+      "ByteNet",
+      "ConvS2S"
+    ],
+    "datasets_used": [
+      "WMT_2014_EN-DE",
+      "WMT_2014_EN-FR",
+      "WSJ_Penn_Treebank",
+      "BerkleyParser_Corpus"
+    ],
+    "metrics": [
+      "BLEU",
+      "Perplexity",
+      "F1_Score"
+    ],
+    "rel_url": "papers/2017_Attention_Is_All_You_Need.html"
+  },
+  {
+    "id": "2017_Finn_MAML_Model_Agnostic_Meta_Learning",
+    "title": "Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks",
+    "authors": [
+      "Chelsea Finn",
+      "Pieter Abbeel",
+      "Sergey Levine"
+    ],
+    "year": 2017,
+    "venue": "Proceedings of the 34th International Conference on Machine Learning (ICML 2017), Sydney, PMLR 70",
+    "doi": "https://arxiv.org/abs/1703.03400",
+    "models_used": [
+      "MAML",
+      "FOMAML",
+      "MLP",
+      "CNN",
+      "TRPO",
+      "REINFORCE"
+    ],
+    "datasets_used": [
+      "Sinusoid_Regression",
+      "Omniglot",
+      "miniImageNet",
+      "rllab_2D_Navigation",
+      "MuJoCo_Half_Cheetah",
+      "MuJoCo_Ant"
+    ],
+    "metrics": [
+      "Accuracy",
+      "MSE",
+      "Average_Return"
+    ],
+    "rel_url": "papers/2017_Finn_MAML_Model_Agnostic_Meta_Learning.html"
+  },
+  {
+    "id": "2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load",
+    "title": "Probabilistic Load Forecasting via Quantile Regression Averaging on Sister Forecasts",
+    "authors": [
+      "Bidong Liu",
+      "Jakub Nowotarski",
+      "Tao Hong",
+      "Rafał Weron"
+    ],
+    "year": 2017,
+    "venue": "IEEE Transactions on Smart Grid, vol. 8, no. 2, pp. 730-737",
+    "doi": "10.1109/TSG.2015.2437877",
+    "models_used": [
+      "QRA",
+      "Quantile_Regression",
+      "Recency_Effect_Regression",
+      "Taos_Vanilla_Benchmark"
+    ],
+    "datasets_used": [
+      "GEFCom2014"
+    ],
+    "metrics": [
+      "Pinball_Loss",
+      "Winkler_Score",
+      "MAE"
+    ],
+    "rel_url": "papers/2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load.html"
+  },
+  {
+    "id": "2018_Bai_Empirical_TCN_Sequence_Modeling",
+    "title": "An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling",
+    "authors": [
+      "Shaojie Bai",
+      "J. Zico Kolter",
+      "Vladlen Koltun"
+    ],
+    "year": 2018,
+    "venue": "arXiv preprint arXiv:1803.01271 (presented as a generic-architecture evaluation; CMU / Intel Labs)",
+    "doi": "https://arxiv.org/abs/1803.01271",
+    "models_used": [
+      "TCN",
+      "LSTM",
+      "GRU",
+      "RNN",
+      "EURNN",
+      "TCN+Gating"
+    ],
+    "datasets_used": [
+      "Adding_Problem",
+      "MNIST",
+      "Copy_Memory",
+      "JSB_Chorales",
+      "Nottingham",
+      "Penn_Treebank",
+      "Wikitext-103",
+      "LAMBADA",
+      "text8"
+    ],
+    "metrics": [
+      "Accuracy",
+      "MSE",
+      "NLL",
+      "Perplexity",
+      "bpc"
+    ],
+    "rel_url": "papers/2018_Bai_Empirical_TCN_Sequence_Modeling.html"
+  },
+  {
+    "id": "2018_Nichol_Reptile_First_Order_Meta_Learning",
+    "title": "On First-Order Meta-Learning Algorithms",
+    "authors": [
+      "Alex Nichol",
+      "Joshua Achiam",
+      "John Schulman"
+    ],
+    "year": 2018,
+    "venue": "arXiv preprint (OpenAI), arXiv:1803.02999",
+    "doi": "https://arxiv.org/abs/1803.02999",
+    "models_used": [
+      "Reptile",
+      "MAML",
+      "FOMAML"
+    ],
+    "datasets_used": [
+      "Omniglot",
+      "MiniImageNet",
+      "Sinusoid_Regression"
+    ],
+    "metrics": [
+      "Accuracy"
+    ],
+    "rel_url": "papers/2018_Nichol_Reptile_First_Order_Meta_Learning.html"
+  },
+  {
+    "id": "2019_Li_LogSparse_Enhancing_Locality_Transformer",
+    "title": "Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting",
+    "authors": [
+      "Shiyang Li",
+      "Xiaoyong Jin",
+      "Yao Xuan",
+      "Xiyou Zhou",
+      "Wenhu Chen",
+      "Yu-Xiang Wang",
+      "Xifeng Yan"
+    ],
+    "year": 2019,
+    "venue": "NeurIPS 2019 (33rd Conference on Neural Information Processing Systems, Vancouver)",
+    "doi": "https://arxiv.org/abs/1907.00235",
+    "models_used": [
+      "LogSparse_Transformer",
+      "Convolutional_Self_Attention",
+      "Transformer",
+      "DeepAR",
+      "DeepState",
+      "TRMF",
+      "ARIMA",
+      "ETS"
+    ],
+    "datasets_used": [
+      "electricity-f / electricity-c",
+      "traffic-f / traffic-c",
+      "solar",
+      "Wind_Speed",
+      "M4",
+      "Synthetic_Sinusoidal"
+    ],
+    "metrics": [
+      "R0.5/R0.9 quantile loss",
+      "Negative Log-Likelihood"
+    ],
+    "rel_url": "papers/2019_Li_LogSparse_Enhancing_Locality_Transformer.html"
+  },
+  {
+    "id": "2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets",
+    "title": "Deep Learning-Based Multivariate Probabilistic Forecasting for Short-Term Scheduling in Power Markets",
+    "authors": [
+      "Jean-François Toubeau",
+      "Jérémie Bottieau",
+      "François Vallée",
+      "Zacharie De Grève"
+    ],
+    "year": 2019,
+    "venue": "IEEE Transactions on Power Systems, Vol. 34, No. 2 (March 2019), pp. 1203-1215",
+    "doi": "10.1109/TPWRS.2018.2870041",
+    "models_used": [
+      "Bidirectional LSTM (BLSTM)",
+      "LSTM",
+      "MLP",
+      "ARIMA",
+      "SVR",
+      "RF",
+      "Empirical_Copula"
+    ],
+    "datasets_used": [
+      "ELIA_Belgian_Grid",
+      "NWP_Belgium"
+    ],
+    "metrics": [
+      "RMSE",
+      "Quantile (Pinball) Loss",
+      "Autocorrelation Function Deviation",
+      "Pearson_Correlation",
+      "Spearman_Correlation"
+    ],
+    "rel_url": "papers/2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets.html"
+  },
+  {
+    "id": "2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling",
+    "title": "Graph WaveNet for Deep Spatial-Temporal Graph Modeling",
+    "authors": [
+      "Zonghan Wu",
+      "Shirui Pan",
+      "Guodong Long",
+      "Jing Jiang",
+      "Chengqi Zhang"
+    ],
+    "year": 2019,
+    "venue": "IJCAI 2019 (28th International Joint Conference on Artificial Intelligence), pp. 1907-1913",
+    "doi": "10.48550/arXiv.1906.00121",
+    "models_used": [
+      "Graph_WaveNet"
+    ],
+    "datasets_used": [
+      "Traffic"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling.html"
+  },
+  {
+    "id": "2019_Zhu_ApplSci_EV_Load_Forecasting",
+    "title": "Short-Term Load Forecasting for Electric Vehicle Charging Stations Based on Deep Learning Approaches",
+    "authors": [
+      "Juncheng Zhu",
+      "Zhile Yang",
+      "Yuanjun Guo",
+      "Jiankang Zhang",
+      "Huikun Yang"
+    ],
+    "year": 2019,
+    "venue": "Applied Sciences 2019, 9(9), 1723 (MDPI)",
+    "doi": "10.3390/app9091723",
+    "models_used": [
+      "ANN",
+      "RNN",
+      "LSTM",
+      "GRU"
+    ],
+    "datasets_used": [
+      "Liuyue_Charging_Station_Dataset"
+    ],
+    "metrics": [
+      "NRMSE",
+      "NMAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2019_Zhu_ApplSci_EV_Load_Forecasting.html"
+  },
+  {
+    "id": "2019_Zhu_EV_Load_Forecasting",
+    "title": "Electric Vehicle Charging Load Forecasting: A Comparative Study of Deep Learning Approaches",
+    "authors": [
+      "Juncheng Zhu",
+      "Zhile Yang",
+      "Monjur Mourshed",
+      "Yuanjun Guo",
+      "Yimin Zhou",
+      "Yan Chang",
+      "Yanjie Wei",
+      "Shengzhong Feng"
+    ],
+    "year": 2019,
+    "venue": "Energies 2019, 12(14), 2692 (MDPI)",
+    "doi": "10.3390/en12142692",
+    "models_used": [
+      "ANN",
+      "RNN",
+      "LSTM",
+      "BiLSTM",
+      "GRU",
+      "SAEs"
+    ],
+    "datasets_used": [
+      "Shenzhen_ST_EVCDP"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "R² Score"
+    ],
+    "rel_url": "papers/2019_Zhu_EV_Load_Forecasting.html"
+  },
+  {
+    "id": "2020_Huang_Ensemble_EV_Load",
+    "title": "Ensemble Learning for Charging Load Forecasting of Electric Vehicle Charging Stations",
+    "authors": [
+      "Xingshuai Huang",
+      "Di Wu",
+      "Benoit Boulet"
+    ],
+    "year": 2020,
+    "venue": "2020 IEEE Electric Power and Energy Conference (EPEC)",
+    "doi": "10.1109/EPEC48502.2020.9319916",
+    "models_used": [
+      "Ensemble_Stacking",
+      "ANN",
+      "RNN",
+      "LSTM",
+      "Linear_Regression"
+    ],
+    "datasets_used": [
+      "Boulder_Colorado"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2020_Huang_Ensemble_EV_Load.html"
+  },
+  {
+    "id": "2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting",
+    "title": "N-BEATS: Neural Basis Expansion Analysis for Interpretable Time Series Forecasting",
+    "authors": [
+      "Boris N. Oreshkin",
+      "Dmitri Carpov",
+      "Nicolas Chapados",
+      "Yoshua Bengio"
+    ],
+    "year": 2020,
+    "venue": "ICLR 2020",
+    "doi": "https://arxiv.org/abs/1905.10437",
+    "models_used": [
+      "NBEATS",
+      "NBEATS-G",
+      "NBEATS-I"
+    ],
+    "datasets_used": [
+      "M4",
+      "M3",
+      "Tourism",
+      "Electricity_ECL",
+      "Traffic"
+    ],
+    "metrics": [
+      "sMAPE",
+      "MAPE",
+      "MASE",
+      "OWA",
+      "ND"
+    ],
+    "rel_url": "papers/2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting.html"
+  },
+  {
+    "id": "2020_Salinas_DeepAR_Probabilistic_Forecasting",
+    "title": "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks",
+    "authors": [
+      "David Salinas",
+      "Valentin Flunkert",
+      "Jan Gasthaus",
+      "Tim Januschowski"
+    ],
+    "year": 2020,
+    "venue": "International Journal of Forecasting, 36(3), 1181-1191",
+    "doi": "10.1016/j.ijforecast.2019.11.003",
+    "models_used": [
+      "DeepAR",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Parts_Dataset",
+      "Electricity_ECL",
+      "Traffic",
+      "Amazon_EC_Dataset"
+    ],
+    "metrics": [
+      "Pinball_Loss",
+      "ND",
+      "RMSE"
+    ],
+    "rel_url": "papers/2020_Salinas_DeepAR_Probabilistic_Forecasting.html"
+  },
+  {
+    "id": "2021_Alvarez_APLF_Adaptive_Probabilistic_Load",
+    "title": "Probabilistic Load Forecasting Based on Adaptive Online Learning",
+    "authors": [
+      "Verónica Álvarez",
+      "Santiago Mazuelas",
+      "José A. Lozano"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Power Systems 36(4):3668-3680",
+    "doi": "https://arxiv.org/abs/2011.14721",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/2021_Alvarez_APLF_Adaptive_Probabilistic_Load.html"
+  },
+  {
+    "id": "2021_Browell_Fasiolo_Regional_Netload",
+    "title": "Probabilistic Forecasting of Regional Net-Load With Conditional Extremes and Gridded NWP",
+    "authors": [
+      "Jethro Browell",
+      "Matteo Fasiolo"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Smart Grid 12(6):5011-5019",
+    "doi": "10.1109/TSG.2021.3107159",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/2021_Browell_Fasiolo_Regional_Netload.html"
+  },
+  {
+    "id": "2021_Buzna_Hierarchical_Probabilistic_EV_Load",
+    "title": "An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations",
+    "authors": [
+      "Lubos Buzna",
+      "Pasquale De Falco",
+      "Gabriella Ferruzzi",
+      "Shahab Khormali",
+      "Daniela Proto",
+      "Nazir Refa",
+      "Milan Straka",
+      "Gijs van der Poel"
+    ],
+    "year": 2021,
+    "venue": "Applied Energy, 283, 116337",
+    "doi": "10.1016/j.apenergy.2020.116337",
+    "models_used": [
+      "GBRT",
+      "QRF",
+      "QRNN",
+      "PLQR",
+      "PCA"
+    ],
+    "datasets_used": [
+      "ElaadNL",
+      "Weather",
+      "COROP_Regions"
+    ],
+    "metrics": [
+      "Pinball_Loss",
+      "AACE"
+    ],
+    "rel_url": "papers/2021_Buzna_Hierarchical_Probabilistic_EV_Load.html"
+  },
+  {
+    "id": "2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load",
+    "title": "Reinforcement Learning-Based Load Forecasting of Electric Vehicle Charging Station Using Q-Learning Technique",
+    "authors": [
+      "Morteza Dabbaghjamanesh",
+      "Amirhossein Moeini",
+      "Abdollah Kavousi-Fard"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Industrial Informatics, Vol. 17, No. 6, pp. 4229-4237",
+    "doi": "10.1109/TII.2020.2990397",
+    "models_used": [
+      "Q-Learning (off-policy RL)",
+      "ANN",
+      "RNN"
+    ],
+    "datasets_used": [
+      "MATLAB-simulated PHEV charging scenarios (uncoordinated / coordinated / smart)"
+    ],
+    "metrics": [
+      "MSE",
+      "Training_Epochs"
+    ],
+    "rel_url": "papers/2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load.html"
+  },
+  {
+    "id": "2021_Lim_TFT_Temporal_Fusion_Transformers",
+    "title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
+    "authors": [
+      "Bryan Lim",
+      "Sercan Ö. Arık",
+      "Nicolas Loeff",
+      "Tomas Pfister"
+    ],
+    "year": 2021,
+    "venue": "International Journal of Forecasting, Vol. 37, No. 4, pp. 1374-1389",
+    "doi": "10.1016/j.ijforecast.2021.03.012",
+    "models_used": [
+      "Temporal Fusion Transformer",
+      "Gated Residual Network",
+      "Variable Selection Network",
+      "LSTM",
+      "Interpretable_Multi_Head_Attention",
+      "Quantile_Regression"
+    ],
+    "datasets_used": [
+      "UCI Electricity Load Diagrams (ECL)",
+      "UCI PEM-SF Traffic",
+      "Favorita Grocery Sales",
+      "OMI Realized Volatility"
+    ],
+    "metrics": [
+      "Pinball_Loss"
+    ],
+    "rel_url": "papers/2021_Lim_TFT_Temporal_Fusion_Transformers.html"
+  },
+  {
+    "id": "2021_Obst_Vilmarest_Goude_Kalman_COVID_France",
+    "title": "Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France",
+    "authors": [
+      "Dustin Obst",
+      "Jacob Vilmarest",
+      "Yannig Goude"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Power Systems 36(6):5359-5370",
+    "doi": "https://arxiv.org/abs/2101.05845",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/2021_Obst_Vilmarest_Goude_Kalman_COVID_France.html"
+  },
+  {
+    "id": "2021_Rasul_TimeGrad_Diffusion_Forecasting",
+    "title": "Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting",
+    "authors": [
+      "Kashif Rasul",
+      "Calvin Seward",
+      "Ingmar Schuster",
+      "Roland Vollgraf"
+    ],
+    "year": 2021,
+    "venue": "ICML 2021 (International Conference on Machine Learning), Zalando Research",
+    "doi": "https://arxiv.org/abs/2101.12072",
+    "models_used": [
+      "TimeGrad",
+      "Denoising Diffusion Probabilistic Model",
+      "2-layer LSTM RNN",
+      "Conditional Dilated ConvNet (εθ)",
+      "Score_Matching"
+    ],
+    "datasets_used": [
+      "Exchange",
+      "Solar",
+      "Electricity (UCI Load Diagrams)",
+      "PEM-SF Traffic",
+      "NYC_Taxi",
+      "Wikipedia_Pageviews"
+    ],
+    "metrics": [
+      "CRPS"
+    ],
+    "rel_url": "papers/2021_Rasul_TimeGrad_Diffusion_Forecasting.html"
+  },
+  {
+    "id": "2021_Stankeviciute_Conformal_Time_Series_Forecasting",
+    "title": "Conformal Time-Series Forecasting",
+    "authors": [
+      "Kamilė Stankevičiūtė",
+      "Ahmed M. Alaa",
+      "Mihaela van der Schaar"
+    ],
+    "year": 2021,
+    "venue": "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)",
+    "doi": "https://proceedings.neurips.cc/paper/2021/file/9232fe81225bcaef853ae32870a2b0fe-Paper.pdf",
+    "models_used": [
+      "CF-RNN",
+      "Conformal_Prediction",
+      "LSTM",
+      "BJ-RNN",
+      "MQ-RNN",
+      "DP-RNN",
+      "ICP"
+    ],
+    "datasets_used": [
+      "MIMIC-III",
+      "UCI_EEG",
+      "COVID19_UK_Dataset",
+      "Synthetic_AR_Noise"
+    ],
+    "metrics": [
+      "Joint_Coverage",
+      "MPIW"
+    ],
+    "rel_url": "papers/2021_Stankeviciute_Conformal_Time_Series_Forecasting.html"
+  },
+  {
+    "id": "2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting",
+    "title": "CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation",
+    "authors": [
+      "Yusuke Tashiro",
+      "Jiaming Song",
+      "Yang Song",
+      "Stefano Ermon"
+    ],
+    "year": 2021,
+    "venue": "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)",
+    "doi": "https://arxiv.org/abs/2107.03502",
+    "models_used": [
+      "CSDI",
+      "Conditional Score-based Diffusion Model",
+      "Transformer",
+      "TimeGrad"
+    ],
+    "datasets_used": [
+      "PhysioNet_2012_Healthcare",
+      "Beijing_PM25_Air_Quality",
+      "Solar_Alabama",
+      "Electricity_ECL",
+      "Traffic",
+      "NYC_Taxi",
+      "Wiki_Pageviews"
+    ],
+    "metrics": [
+      "CRPS",
+      "MAE",
+      "RMSE",
+      "MSE",
+      "NLL"
+    ],
+    "rel_url": "papers/2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting.html"
+  },
+  {
+    "id": "2021_VanKriekinge_Day_Ahead_EV_Demand",
+    "title": "Day-Ahead Forecast of Electric Vehicle Charging Demand with Deep Neural Networks",
+    "authors": [
+      "Gilles Van Kriekinge",
+      "Cedric De Cauwer",
+      "Nikolaos Sapountzoglou",
+      "Thierry Coosemans",
+      "Maarten Messagie"
+    ],
+    "year": 2021,
+    "venue": "World Electric Vehicle Journal, 12(4), 178",
+    "doi": "10.3390/wevj12040178",
+    "models_used": [
+      "LSTM",
+      "LSTM_B",
+      "LSTM_C",
+      "LSTM_W",
+      "RNN"
+    ],
+    "datasets_used": [
+      "Hospital_Semi_Public_Charging_Site_Dataset"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2021_VanKriekinge_Day_Ahead_EV_Demand.html"
+  },
+  {
+    "id": "2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation",
+    "title": "Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting",
+    "authors": [
+      "Haixu Wu",
+      "Jiehui Xu",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ],
+    "year": 2021,
+    "venue": "NeurIPS 2021 (35th Conference on Neural Information Processing Systems)",
+    "doi": "https://arxiv.org/abs/2106.13008",
+    "models_used": [
+      "Autoformer",
+      "Auto-Correlation Mechanism",
+      "Series_Decomposition_Block",
+      "Informer",
+      "LogTrans",
+      "Reformer",
+      "LSTNet",
+      "DeepAR",
+      "NBEATS",
+      "Prophet"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Electricity_ECL",
+      "Exchange",
+      "Traffic",
+      "Weather",
+      "ILI",
+      "COVID19_Dashboard"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation.html"
+  },
+  {
+    "id": "2021_Zhang_Probabilistic_Queuing_EV_Load",
+    "title": "Deep-Learning-Based Probabilistic Forecasting of Electric Vehicle Charging Load With a Novel Queuing Model",
+    "authors": [
+      "Xian Zhang",
+      "Ka Wing Chan",
+      "Hairong Li",
+      "Huaizhi Wang",
+      "Jing Qiu",
+      "Guibin Wang"
+    ],
+    "year": 2021,
+    "venue": "IEEE Transactions on Cybernetics, Vol. 51, No. 6, pp. 3157-3170",
+    "doi": "10.1109/TCYB.2020.2975134",
+    "models_used": [
+      "CNN",
+      "Discrete Wavelet Transform (WT)",
+      "Gaussian Mixture Model",
+      "M/M/C/K Markov Queuing Model",
+      "CNN Ensemble PIs",
+      "BPNN",
+      "SVM",
+      "Stacked Autoencoder (SAE)"
+    ],
+    "datasets_used": [
+      "M42_Motorway_Traffic_Flow",
+      "UK_National_Travel_Survey",
+      "2009 US National Household Travel Survey"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE",
+      "PICP",
+      "ACE",
+      "IS",
+      "PL"
+    ],
+    "rel_url": "papers/2021_Zhang_Probabilistic_Queuing_EV_Load.html"
+  },
+  {
+    "id": "2021_Zhou_Informer_Beyond_Efficient_Transformer",
+    "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+    "authors": [
+      "Haoyi Zhou",
+      "Shanghang Zhang",
+      "Jieqi Peng",
+      "Shuai Zhang",
+      "Jianxin Li",
+      "Hui Xiong",
+      "Wancai Zhang"
+    ],
+    "year": 2021,
+    "venue": "AAAI 2021 (Best Paper Award)",
+    "doi": "https://arxiv.org/abs/2012.07436",
+    "models_used": [
+      "Informer",
+      "ProbSparse Self-Attention",
+      "Self-Attention_Distilling",
+      "Generative Style Decoder",
+      "LogTrans",
+      "Reformer",
+      "LSTMa",
+      "LSTnet",
+      "DeepAR"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Electricity_ECL",
+      "Weather"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2021_Zhou_Informer_Beyond_Efficient_Transformer.html"
+  },
+  {
+    "id": "2022_Cao_Robust_Deep_Gaussian_Process_Load",
+    "title": "Robust Deep Gaussian Process-Based Probabilistic Electrical Load Forecasting Against Anomalous Events",
+    "authors": [
+      "Di Cao",
+      "Junbo Zhao",
+      "Weihao Hu",
+      "Yingchen Zhang",
+      "Qishu Liao",
+      "Zhe Chen",
+      "Frede Blaabjerg"
+    ],
+    "year": 2022,
+    "venue": "IEEE Transactions on Industrial Informatics, 18(2), 1142-1153",
+    "doi": "10.1109/TII.2021.3081531",
+    "models_used": [
+      "Deep_Gaussian_Process",
+      "Sparse_GP",
+      "VAE_DGP",
+      "SVR",
+      "BPNN"
+    ],
+    "datasets_used": [
+      "COVID19_US_City_Load",
+      "Weather",
+      "Google/Apple Mobility Data"
+    ],
+    "metrics": [
+      "MAPE",
+      "Pinball_Loss"
+    ],
+    "rel_url": "papers/2022_Cao_Robust_Deep_Gaussian_Process_Load.html"
+  },
+  {
+    "id": "2022_Kim_RevIN_Reversible_Instance_Normalization",
+    "title": "Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift",
+    "authors": [
+      "Taesung Kim",
+      "Jinhee Kim",
+      "Yunwon Tae",
+      "Cheonbok Park",
+      "Jang-Ho Choi",
+      "Jaegul Choo"
+    ],
+    "year": 2022,
+    "venue": "ICLR 2022",
+    "doi": "https://openreview.net/forum?id=cGDAkQo1C0p",
+    "models_used": [
+      "RevIN",
+      "Informer",
+      "NBEATS",
+      "SCINet"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Electricity_ECL",
+      "UCI_Air_Quality",
+      "Nasdaq_CNNpred",
+      "M4"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "DTW",
+      "TDI"
+    ],
+    "rel_url": "papers/2022_Kim_RevIN_Reversible_Instance_Normalization.html"
+  },
+  {
+    "id": "2022_Vilmarest_Goude_State_Space_PostCOVID",
+    "title": "State-Space Models for Online Post-COVID Electricity Load Forecasting Competition",
+    "authors": [
+      "Joseph de Vilmarest",
+      "Yannig Goude"
+    ],
+    "year": 2022,
+    "venue": "IEEE Open Access Journal of Power and Energy (doi:10.17023/yaz3-xp85); preprint arXiv:2110.00334",
+    "doi": "https://arxiv.org/abs/2110.00334",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/2022_Vilmarest_Goude_State_Space_PostCOVID.html"
+  },
+  {
+    "id": "2022_Zhang_GCN_TRN_EV_Availability",
+    "title": "GCN-TRN: Efficient Transformer based Electric Vehicle Charging Demand Forecasting System",
+    "authors": [
+      "Ruihan Zhang",
+      "Virgia Wang"
+    ],
+    "year": 2022,
+    "venue": "2022 5th International Conference on Computer Science and Software Engineering (CSSE 2022), Guilin, China, pp. 527-533",
+    "doi": "10.1145/3569966.3570101",
+    "models_used": [
+      "GCN-TRN",
+      "Transformer",
+      "GRU",
+      "GCN-GRU",
+      "SVR",
+      "HA"
+    ],
+    "datasets_used": [
+      "Dundee_EV"
+    ],
+    "metrics": [
+      "Accuracy",
+      "RMSE",
+      "MAE",
+      "R² Score"
+    ],
+    "rel_url": "papers/2022_Zhang_GCN_TRN_EV_Availability.html"
+  },
+  {
+    "id": "2023_Cao_Treatment_Effects_Continuous_Time_Hidden_Confounders",
+    "title": "Estimating Treatment Effects in Continuous Time with Hidden Confounders",
+    "authors": [
+      "Defu Cao",
+      "James Enouen",
+      "Yan Liu"
+    ],
+    "year": 2023,
+    "venue": "arXiv preprint arXiv:2302.09446 (cs.LG), University of Southern California",
+    "doi": "10.48550/arXiv.2302.09446",
+    "models_used": [
+      "LipSCDE",
+      "Neural_SDE",
+      "Neural_CDE",
+      "Lipschitz_RNN",
+      "LSTM",
+      "MSM",
+      "RMSN",
+      "TSD",
+      "DTA",
+      "SeqDec"
+    ],
+    "datasets_used": [
+      "MIMIC-III",
+      "COVID-19_German_Districts",
+      "Synthetic_Irregular_Time_Series"
+    ],
+    "metrics": [
+      "RMSE"
+    ],
+    "rel_url": "papers/2023_Cao_Treatment_Effects_Continuous_Time_Hidden_Confounders.html"
+  },
+  {
+    "id": "2023_Challu_NHiTS_Neural_Hierarchical_Interpolation",
+    "title": "N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting",
+    "authors": [
+      "Cristian Challu",
+      "Kin G. Olivares",
+      "Boris N. Oreshkin",
+      "Federico Garza",
+      "Max Mergenthaler-Canseco",
+      "Artur Dubrawski"
+    ],
+    "year": 2023,
+    "venue": "AAAI 2023",
+    "doi": "https://arxiv.org/abs/2201.12886",
+    "models_used": [
+      "NHiTS",
+      "NBEATS",
+      "Autoformer",
+      "Informer",
+      "FEDformer",
+      "Reformer",
+      "LogTrans",
+      "DilRNN",
+      "DeepAR",
+      "Prophet",
+      "ARIMA"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Exchange",
+      "Electricity_ECL",
+      "Traffic",
+      "Weather",
+      "ILI"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2023_Challu_NHiTS_Neural_Hierarchical_Interpolation.html"
+  },
+  {
+    "id": "2023_Cheng_VMD_Prophet_LSTM",
+    "title": "Electric vehicle charging load prediction based on variational mode decomposition and Prophet-LSTM",
+    "authors": [
+      "Nuo Cheng",
+      "Peng Zheng",
+      "Xiaofei Ruan",
+      "Zhenshan Zhu"
+    ],
+    "year": 2023,
+    "venue": "Frontiers in Energy Research, Vol. 11, Article 1297849",
+    "doi": "10.3389/fenrg.2023.1297849",
+    "models_used": [
+      "VMD",
+      "Prophet",
+      "LSTM",
+      "Prophet-LSTM"
+    ],
+    "datasets_used": [
+      "Fujian_Province_EV_Charging_Station_Data"
+    ],
+    "metrics": [
+      "MAE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2023_Cheng_VMD_Prophet_LSTM.html"
+  },
+  {
+    "id": "2023_Huang_MetaProbformer_EV_Load",
+    "title": "MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations",
+    "authors": [
+      "Xingshuai Huang",
+      "Di Wu",
+      "Benoit Boulet"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems, 24(10), 10445-10455",
+    "doi": "10.1109/TITS.2023.3276947",
+    "models_used": [
+      "MetaProbformer",
+      "Reptile",
+      "Informer",
+      "Transformer",
+      "LSTM",
+      "DeepAR",
+      "Prophet",
+      "ARIMA",
+      "FPSeq2Q"
+    ],
+    "datasets_used": [
+      "D_Palo (City of Palo Alto EV charging usage)",
+      "D_Boulder",
+      "D_NL",
+      "D_Perth (Perth & Kinross)"
+    ],
+    "metrics": [
+      "MAE",
+      "MSE",
+      "RMSE",
+      "CRPS",
+      "Normalized ρ-quantile loss Qρ"
+    ],
+    "rel_url": "papers/2023_Huang_MetaProbformer_EV_Load.html"
+  },
+  {
+    "id": "2023_Koohfar_Transformer_EV_Demand",
+    "title": "Prediction of Electric Vehicles Charging Demand: A Transformer-Based Deep Learning Approach",
+    "authors": [
+      "Sahar Koohfar",
+      "Wubeshet Woldemariam",
+      "Amit Kumar"
+    ],
+    "year": 2023,
+    "venue": "Sustainability 2023, 15(3), 2105",
+    "doi": "10.3390/su15032105",
+    "models_used": [
+      "Transformer",
+      "LSTM",
+      "RNN",
+      "ARIMA",
+      "SARIMA"
+    ],
+    "datasets_used": [
+      "Boulder_Colorado",
+      "Weather"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2023_Koohfar_Transformer_EV_Demand.html"
+  },
+  {
+    "id": "2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words",
+    "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+    "authors": [
+      "Yuqi Nie",
+      "Nam H. Nguyen",
+      "Phanwadee Sinthong",
+      "Jayant Kalagnanam"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2023",
+    "doi": "https://arxiv.org/abs/2211.14730",
+    "models_used": [
+      "PatchTST",
+      "Transformer",
+      "RevIN",
+      "Masked_Autoencoder"
+    ],
+    "datasets_used": [
+      "Weather",
+      "Traffic",
+      "Electricity_ECL",
+      "ILI",
+      "ETT"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words.html"
+  },
+  {
+    "id": "2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion",
+    "title": "DiffSTG: Probabilistic Spatio-Temporal Graph Forecasting with Denoising Diffusion Models",
+    "authors": [
+      "Haomin Wen",
+      "Youfang Lin",
+      "Yutong Xia",
+      "Huaiyu Wan",
+      "Qingsong Wen",
+      "Roger Zimmermann",
+      "Yuxuan Liang"
+    ],
+    "year": 2023,
+    "venue": "ACM conference proceedings (© 2023 ACM); arXiv:2301.13629 (v4, Mar 2024)",
+    "doi": "10.48550/arXiv.2301.13629",
+    "models_used": [
+      "DiffSTG",
+      "UGnet"
+    ],
+    "datasets_used": [
+      "Traffic",
+      "AIR-BJ",
+      "AIR-GZ"
+    ],
+    "metrics": [
+      "CRPS",
+      "MAE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion.html"
+  },
+  {
+    "id": "2023_Wu_TimesNet_Temporal_2D_Variation_Modeling",
+    "title": "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis",
+    "authors": [
+      "Haixu Wu",
+      "Tengge Hu",
+      "Yong Liu",
+      "Hang Zhou",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2023",
+    "doi": "https://arxiv.org/abs/2210.02186",
+    "models_used": [
+      "TimesNet",
+      "Inception_2D_CNN",
+      "FFT_Periodicity_Detection"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Electricity_ECL",
+      "Traffic",
+      "Weather",
+      "Exchange",
+      "ILI",
+      "M4",
+      "UEA_Archive",
+      "SMD",
+      "MSL",
+      "SMAP",
+      "SWaT",
+      "PSM"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "SMAPE",
+      "MASE",
+      "OWA",
+      "F1_Score"
+    ],
+    "rel_url": "papers/2023_Wu_TimesNet_Temporal_2D_Variation_Modeling.html"
+  },
+  {
+    "id": "2023_Xiong_Combined_Deep_Learning_EV_Station_STLF",
+    "title": "A Method of Short-term Load Forecasting at Electric Vehicle Charging Stations through Combining Multiple Deep Learning Models",
+    "authors": [
+      "Xiaozhou Xiong",
+      "Lanzhihao Zhou"
+    ],
+    "year": 2023,
+    "venue": "2023 2nd Asia Power and Electrical Technology Conference (APET), IEEE",
+    "doi": "10.1109/APET59977.2023.10489548",
+    "models_used": [
+      "CNN_LSTM_Transformer_Combined_Model",
+      "CNN",
+      "LSTM",
+      "Transformer"
+    ],
+    "datasets_used": [
+      "Boulder_Colorado"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2023_Xiong_Combined_Deep_Learning_EV_Station_STLF.html"
+  },
+  {
+    "id": "2023_Zeng_DLinear_Are_Transformers_Effective_LTSF",
+    "title": "Are Transformers Effective for Time Series Forecasting?",
+    "authors": [
+      "Ailing Zeng",
+      "Muxi Chen",
+      "Lei Zhang",
+      "Qiang Xu"
+    ],
+    "year": 2023,
+    "venue": "AAAI 2023",
+    "doi": "https://arxiv.org/abs/2205.13504",
+    "models_used": [
+      "DLinear",
+      "NLinear",
+      "Informer",
+      "Autoformer",
+      "FEDformer",
+      "Pyraformer",
+      "LogTrans"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Traffic",
+      "Electricity_ECL",
+      "Exchange",
+      "Weather",
+      "ILI"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2023_Zeng_DLinear_Are_Transformers_Effective_LTSF.html"
+  },
+  {
+    "id": "2023_Zhang_Crossformer_Cross_Dimension_Dependency",
+    "title": "Crossformer: Transformer Utilizing Cross-Dimension Dependency for Multivariate Time Series Forecasting",
+    "authors": [
+      "Yunhao Zhang",
+      "Junchi Yan"
+    ],
+    "year": 2023,
+    "venue": "ICLR 2023",
+    "doi": "https://arxiv.org/abs/2301.03982",
+    "models_used": [
+      "Crossformer",
+      "DSW_Embedding",
+      "Two_Stage_Attention",
+      "Hierarchical_Encoder_Decoder",
+      "Router_Attention"
+    ],
+    "datasets_used": [
+      "ETT",
+      "Weather",
+      "Electricity_ECL",
+      "ILI",
+      "Traffic"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2023_Zhang_Crossformer_Cross_Dimension_Dependency.html"
+  },
+  {
+    "id": "2023_Ziyabari_Multi_Branch_ResTrans_Solar",
+    "title": "Multi-Branch ResNet-Transformer for Short-Term Spatio-Temporal Solar Irradiance Forecasting",
+    "authors": [
+      "Saeedeh Ziyabari",
+      "Zhenyu Zhao",
+      "Liang Du",
+      "Saroj K. Biswas"
+    ],
+    "year": 2023,
+    "venue": "IEEE Transactions on Industry Applications, 59(5), 5293-5303",
+    "doi": "10.1109/TIA.2023.3285202",
+    "models_used": [
+      "Multi-Branch ResNet-Transformer (ResTrans)",
+      "Transformer",
+      "ResLSTM",
+      "CNN_LSTM",
+      "AttLSTM",
+      "ResNet",
+      "LSTM",
+      "CNN"
+    ],
+    "datasets_used": [
+      "NSRDB Philadelphia, USA (18 sites, 2000-2017, 30-min, 3,784,320 observations)"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "R² score"
+    ],
+    "rel_url": "papers/2023_Ziyabari_Multi_Branch_ResTrans_Solar.html"
+  },
+  {
+    "id": "2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting",
+    "title": "TimeMachine: A Time Series is Worth 4 Mambas for Long-term Forecasting",
+    "authors": [
+      "Md Atik Ahamed",
+      "Qiang Cheng"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint (arXiv:2403.09898v2, cs.LG, 22 Aug 2024), University of Kentucky",
+    "doi": "10.48550/arXiv.2403.09898",
+    "models_used": [
+      "Mamba_SSM"
+    ],
+    "datasets_used": [
+      "Weather_Dataset",
+      "Traffic",
+      "Electricity_ECL",
+      "ETT"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting.html"
+  },
+  {
+    "id": "2024_Ali_MQ_TCN_Transfer_Learning_EV",
+    "title": "Location based Probabilistic Load Forecasting of EV Charging Sites: Deep Transfer Learning with Multi-Quantile Temporal Convolutional Network",
+    "authors": [
+      "Mohammad Wazed Ali",
+      "Asif bin Mustafa",
+      "Md. Aukerul Moin Shuvo",
+      "Bernhard Sick"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint arXiv:2409.11862 (Sep 2024)",
+    "doi": "10.48550/arXiv.2409.11862",
+    "models_used": [
+      "MQ_TCN",
+      "TCN",
+      "Meta_Learning",
+      "Quantile_Regression",
+      "XGBoost",
+      "DeepAR"
+    ],
+    "datasets_used": [
+      "Caltech_ACN",
+      "NREL_Workplace_Charging"
+    ],
+    "metrics": [
+      "PICP",
+      "Pinball_Loss",
+      "Winkler_Score",
+      "ND"
+    ],
+    "rel_url": "papers/2024_Ali_MQ_TCN_Transfer_Learning_EV.html"
+  },
+  {
+    "id": "2024_Bampos_EV_Load_Forecasting_DAM",
+    "title": "Electric vehicles load forecasting for day-ahead market participation using machine and deep learning methods",
+    "authors": [
+      "Zafeirios N. Bampos",
+      "Vasilis M. Laitsos",
+      "Konstantinos D. Afentoulis",
+      "Stylianos I. Vagropoulos",
+      "Pantelis N. Biskas"
+    ],
+    "year": 2024,
+    "venue": "Applied Energy 360 (2024) 122801",
+    "doi": "10.1016/j.apenergy.2024.122801",
+    "models_used": [
+      "XGBoost",
+      "MLP",
+      "CNN_Dense",
+      "CNN_LSTM",
+      "TCN",
+      "SARIMA",
+      "Persistence_Model",
+      "Holt_Exponential_Smoothing"
+    ],
+    "datasets_used": [
+      "Palo_Alto_EV",
+      "CrowdCharge_EV",
+      "Greenflux",
+      "Caltech_ACN"
+    ],
+    "metrics": [
+      "nMAE",
+      "nRMSE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2024_Bampos_EV_Load_Forecasting_DAM.html"
+  },
+  {
+    "id": "2024_Cao_Feature_Enhanced_Probabilistic_EV_Load",
+    "title": "Feature-enhanced deep learning method for electric vehicle charging demand probabilistic forecasting of charging station",
+    "authors": [
+      "Tingwei Cao",
+      "Yinliang Xu",
+      "Guowei Liu",
+      "Shengyu Tao",
+      "Wenjun Tang",
+      "Hongbin Sun"
+    ],
+    "year": 2024,
+    "venue": "Applied Energy 371 (2024) 123751",
+    "doi": "10.1016/j.apenergy.2024.123751",
+    "models_used": [
+      "FEDM",
+      "GRN",
+      "GLU",
+      "LSTM",
+      "Transformer",
+      "NBEATS",
+      "DeepAR",
+      "TCN",
+      "Temporal_Fusion_Transformer",
+      "LGBM",
+      "ARIMA",
+      "ESM",
+      "Persistence_Model"
+    ],
+    "datasets_used": [
+      "Shenzhen_ST_EVCDP"
+    ],
+    "metrics": [
+      "Qualified_Rate",
+      "Accuracy",
+      "Winkler_Score",
+      "AIW",
+      "Pinball_Loss",
+      "SMAPE",
+      "RMSE",
+      "R_squared",
+      "NRMSE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2024_Cao_Feature_Enhanced_Probabilistic_EV_Load.html"
+  },
+  {
+    "id": "2024_Das_TiDE_Long_Term_Forecasting",
+    "title": "Long-term Forecasting with TiDE: Time-series Dense Encoder",
+    "authors": [
+      "Abhimanyu Das",
+      "Weihao Kong",
+      "Andrew Leach",
+      "Shaan Mathur",
+      "Rajat Sen",
+      "Rose Yu"
+    ],
+    "year": 2024,
+    "venue": "arXiv:2304.08424v5 [stat.ML] (Google Research / Google Cloud / UC San Diego)",
+    "doi": "https://arxiv.org/abs/2304.08424",
+    "models_used": [
+      "TiDE",
+      "DLinear",
+      "PatchTST",
+      "NHiTS",
+      "DeepAR",
+      "S4",
+      "FEDformer",
+      "Autoformer",
+      "Informer",
+      "Pyraformer",
+      "LogTrans",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Electricity_ECL",
+      "Traffic",
+      "Weather_Dataset",
+      "ETT",
+      "M5_Dataset",
+      "Synthetic LDS Dataset"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "WRMSSE"
+    ],
+    "rel_url": "papers/2024_Das_TiDE_Long_Term_Forecasting.html"
+  },
+  {
+    "id": "2024_DeVilmarest_Adaptive_Probabilistic_Netload",
+    "title": "Adaptive Probabilistic Forecasting of Electricity (Net-)Load",
+    "authors": [
+      "Joseph de Vilmarest",
+      "Jethro Browell",
+      "Matteo Fasiolo",
+      "Yannig Goude",
+      "Olivier Wintenberger"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Power Systems, Vol. 39, No. 2, pp. 4154-4163, March 2024",
+    "doi": "10.1109/TPWRS.2023.3310280",
+    "models_used": [
+      "GAM",
+      "Kalman_Filter",
+      "Quantile_Regression",
+      "Online_Gradient_Descent",
+      "Bernstein_Online_Aggregation"
+    ],
+    "datasets_used": [
+      "GB_Regional_Netload",
+      "US_City_Daily_Load_COVID"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "nRMSE",
+      "nMAE",
+      "RPS",
+      "Pinball_Loss",
+      "CRPS"
+    ],
+    "rel_url": "papers/2024_DeVilmarest_Adaptive_Probabilistic_Netload.html"
+  },
+  {
+    "id": "2024_Feng_LSTM_Transformer_EV_Consumption",
+    "title": "Energy Consumption Prediction Strategy for Electric Vehicle Based on LSTM-Transformer Framework",
+    "authors": [
+      "Zhanyu Feng",
+      "Jian Zhang",
+      "Han Jiang",
+      "Xuejian Yao",
+      "Yu Qian",
+      "Haiyan Zhang"
+    ],
+    "year": 2024,
+    "venue": "SSRN Preprint 4747046 (not peer reviewed)",
+    "doi": "https://ssrn.com/abstract=4747046",
+    "models_used": [
+      "LSTM_Transformer",
+      "LSTM",
+      "Transformer",
+      "KMeans_Clustering",
+      "Linear_Regression"
+    ],
+    "datasets_used": [
+      "GBT_32960_Telemetry_Dataset"
+    ],
+    "metrics": [
+      "MAPE",
+      "MAE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2024_Feng_LSTM_Transformer_EV_Consumption.html"
+  },
+  {
+    "id": "2024_He_Robust_MTS_Transitional_Shift",
+    "title": "Robust Multivariate Time Series Forecasting against Intra- and Inter-Series Transitional Shift",
+    "authors": [
+      "Hui He",
+      "Qi Zhang",
+      "Kun Yi",
+      "Xiaojun Xue",
+      "Shoujin Wang",
+      "Liang Hu",
+      "Longbing Cao"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint (IEEE journal template, Journal of LaTeX Class Files style); arXiv:2407.13194",
+    "doi": "10.48550/arXiv.2407.13194",
+    "models_used": [
+      "JointPGM"
+    ],
+    "datasets_used": [
+      "Exchange",
+      "ETT",
+      "Electricity_ECL",
+      "Traffic",
+      "ILI"
+    ],
+    "metrics": [
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2024_He_Robust_MTS_Transitional_Shift.html"
+  },
+  {
+    "id": "2024_Helmy_Autoformer_EV_Charging",
+    "title": "On the Utilization of Autoformer-Based Deep Learning for Electric Vehicle Charging Load Forecasting",
+    "authors": [
+      "Maram Helmy",
+      "Eiman ElGhanam",
+      "Mohamed S. Hassan",
+      "Ahmed Osman"
+    ],
+    "year": 2024,
+    "venue": "2024 6th International Conference on Communications, Signal Processing, and their Applications (ICCSPA)",
+    "doi": "10.1109/ICCSPA61559.2024.10794251",
+    "models_used": [
+      "Autoformer",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Boulder_Colorado"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2024_Helmy_Autoformer_EV_Charging.html"
+  },
+  {
+    "id": "2024_Huo_Data_Driven_EVCS_Demand_Forecasting",
+    "title": "Data-driven Short-term Electric Vehicle Charging Station Demand Forecasting",
+    "authors": [
+      "Meiyi Huo",
+      "Songling Pang",
+      "Hao Bai",
+      "Wei Li",
+      "Min Xu",
+      "Tong Liu"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE 7th International Electrical and Energy Conference (CIEEC)",
+    "doi": "10.1109/CIEEC60922.2024.10583059",
+    "models_used": [
+      "MLP",
+      "SVR",
+      "XGBoost"
+    ],
+    "datasets_used": [
+      "Caltech_ACN"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2024_Huo_Data_Driven_EVCS_Demand_Forecasting.html"
+  },
+  {
+    "id": "2024_Ke_Divide_Conquer_Transformer_EV",
+    "title": "Divide-Conquer Transformer Learning for Predicting Electric Vehicle Charging Events Using Smart Meter Data",
+    "authors": [
+      "Fucai Ke",
+      "Hao Wang"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint (arXiv:2403.13246)",
+    "doi": "https://arxiv.org/abs/2403.13246",
+    "models_used": [
+      "DCT-EV",
+      "Transformer",
+      "Random_Forest",
+      "XGBoost",
+      "ANN",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Pecan_Street"
+    ],
+    "metrics": [
+      "F1_Score",
+      "AUC",
+      "Average_Precision",
+      "Accuracy",
+      "MSE",
+      "Precision",
+      "Recall"
+    ],
+    "rel_url": "papers/2024_Ke_Divide_Conquer_Transformer_EV.html"
+  },
+  {
+    "id": "2024_Li_DiffPLF_Conditional_Diffusion_EV",
+    "title": "DiffPLF: A Conditional Diffusion Model for Probabilistic Forecasting of EV Charging Load",
+    "authors": [
+      "Siyang Li",
+      "Hui Xiong",
+      "Yize Chen"
+    ],
+    "year": 2024,
+    "venue": "23rd Power Systems Computation Conference (PSCC 2024), Paris, France, June 4-7 2024",
+    "doi": "10.1016/j.epsr.2024.110723",
+    "models_used": [
+      "DiffPLF",
+      "DDPM",
+      "TimeGrad",
+      "CSDI",
+      "Quantile Regression",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Palo_Alto_EV",
+      "Weather"
+    ],
+    "metrics": [
+      "MAE",
+      "CRPS"
+    ],
+    "rel_url": "papers/2024_Li_DiffPLF_Conditional_Diffusion_EV.html"
+  },
+  {
+    "id": "2024_Li_TOU_Price_Meteorology_EV_Charging_Load",
+    "title": "EV Charging Load Forecasting Method Considering Time-of-Use Price and Meteorological Factors",
+    "authors": [
+      "Guangxiao Li",
+      "Yilu Yang",
+      "Chunyi Wang",
+      "Ziyu Xu",
+      "Yue Wang",
+      "Yutian Liu"
+    ],
+    "year": 2024,
+    "venue": "2024 7th International Conference on Power and Energy Applications (ICPEA)",
+    "doi": "10.1109/ICPEA63589.2024.10784728",
+    "models_used": [
+      "CNN",
+      "GRU",
+      "LSTM",
+      "MLP"
+    ],
+    "datasets_used": [
+      "Jining_Mall_EV_Charging_Station"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2024_Li_TOU_Price_Meteorology_EV_Charging_Load.html"
+  },
+  {
+    "id": "2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting",
+    "title": "Bi-Mamba+: Bidirectional Mamba for Time Series Forecasting",
+    "authors": [
+      "Aobo Liang",
+      "Xingguo Jiang",
+      "Yan Sun",
+      "Xiaohou Shi",
+      "Ke Li"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint (arXiv:2404.15772v3, cs.LG, 27 Jun 2024); BUPT & China Telecom Research Institute",
+    "doi": "10.48550/arXiv.2404.15772",
+    "models_used": [
+      "Bi-Mamba+",
+      "Mamba_SSM"
+    ],
+    "datasets_used": [
+      "Weather_Dataset",
+      "Traffic",
+      "Electricity_ECL",
+      "Solar_Dataset",
+      "ETT"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting.html"
+  },
+  {
+    "id": "2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series",
+    "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+    "authors": [
+      "Yong Liu",
+      "Tengge Hu",
+      "Haoran Zhang",
+      "Haixu Wu",
+      "Shiyu Wang",
+      "Lintao Ma",
+      "Mingsheng Long"
+    ],
+    "year": 2024,
+    "venue": "ICLR 2024 (Spotlight)",
+    "doi": "10.48550/arXiv.2310.06625",
+    "models_used": [
+      "iTransformer",
+      "Transformer",
+      "Informer",
+      "Reformer",
+      "Flowformer",
+      "FlashAttention",
+      "PatchTST",
+      "Crossformer",
+      "DLinear",
+      "TimesNet",
+      "TiDE",
+      "SCINet",
+      "FEDformer",
+      "Stationary_Transformer"
+    ],
+    "datasets_used": [
+      "Electricity_ECL",
+      "ETT",
+      "Exchange",
+      "Traffic",
+      "Weather",
+      "Solar_Energy",
+      "Market_Alipay"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "CKA_Similarity"
+    ],
+    "rel_url": "papers/2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series.html"
+  },
+  {
+    "id": "2024_Liu_KAN_Kolmogorov_Arnold_Networks",
+    "title": "KAN: Kolmogorov-Arnold Networks",
+    "authors": [
+      "Ziming Liu",
+      "Yixuan Wang",
+      "Sachin Vaidya",
+      "Fabian Ruehle",
+      "James Halverson",
+      "Marin Soljacic",
+      "Thomas Y. Hou",
+      "Max Tegmark"
+    ],
+    "year": 2024,
+    "venue": "arXiv:2404.19756 (accepted at ICLR 2025); MIT / Caltech / Northeastern / IAIFI",
+    "doi": "10.48550/arXiv.2404.19756",
+    "models_used": [
+      "KAN",
+      "MLP",
+      "LAN"
+    ],
+    "datasets_used": [
+      "Toy_Synthetic_Functions",
+      "Special_Functions_Dataset",
+      "Feynman_Dataset",
+      "Knot_Theory_Dataset",
+      "Anderson_Localization_Synthetic_Data"
+    ],
+    "metrics": [
+      "RMSE",
+      "MSE",
+      "L2_Error",
+      "H1_Error",
+      "Accuracy"
+    ],
+    "rel_url": "papers/2024_Liu_KAN_Kolmogorov_Arnold_Networks.html"
+  },
+  {
+    "id": "2024_Ma_LASSO_BPNN_Mid_Term_EV_Load",
+    "title": "Mid-Term Load Forecasting for Electric Vehicle Charging Stations Based on LASSO-BPNN",
+    "authors": [
+      "Yifan Ma",
+      "Zhiyun Yu",
+      "Zhizhuo He",
+      "Junzhe Zhao"
+    ],
+    "year": 2024,
+    "venue": "2024 IEEE 2nd International Conference on Control, Electronics and Computer Technology (ICCECT)",
+    "doi": "10.1109/ICCECT60629.2024.10546219",
+    "models_used": [
+      "MLP",
+      "XGBoost",
+      "SVR",
+      "Random_Forest"
+    ],
+    "datasets_used": [
+      "Qingpu_State_Grid_EV_Stations",
+      "Shanghai_Qingpu_Statistics_Bureau"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2024_Ma_LASSO_BPNN_Mid_Term_EV_Load.html"
+  },
+  {
+    "id": "2024_Menati_PowerMamba_Power_Systems_SSM",
+    "title": "PowerMamba: A Deep State Space Model and Comprehensive Benchmark for Time Series Prediction in Electric Power Systems",
+    "authors": [
+      "Ali Menati",
+      "Fatemeh Doudi",
+      "Dileep Kalathil",
+      "Le Xie"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Power Systems (2025), doi:10.1109/TPWRS.2025.3647539; preprint arXiv:2412.06112",
+    "doi": "https://arxiv.org/abs/2412.06112",
+    "models_used": [
+      "PowerMamba",
+      "Mamba_SSM",
+      "RevIN",
+      "iTransformer",
+      "PatchTST",
+      "DLinear",
+      "Autoformer",
+      "TimesNet"
+    ],
+    "datasets_used": [
+      "ERCOT_GridSet"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2024_Menati_PowerMamba_Power_Systems_SSM.html"
+  },
+  {
+    "id": "2024_Qu_Forwardformer_Day_Ahead_Load",
+    "title": "Forwardformer: Efficient Transformer With Multi-Scale Forward Self-Attention for Day-Ahead Load Forecasting",
+    "authors": [
+      "Kai Qu",
+      "Gangquan Si",
+      "Zihan Shan",
+      "Qianyue Wang",
+      "Xiaoliang Liu",
+      "Chen Yang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Power Systems, Vol. 39, No. 1, pp. 1421-1433, January 2024",
+    "doi": "10.1109/TPWRS.2023.3266369",
+    "models_used": [
+      "Transformer",
+      "Autoformer",
+      "FEDformer",
+      "Informer",
+      "LogTrans",
+      "LSTMa",
+      "Prophet",
+      "SARIMA"
+    ],
+    "datasets_used": [
+      "CEL_NW_China_Electric_Load",
+      "CEL_SE_China_Electric_Load",
+      "AEL_CNYS_America_Electric_Load",
+      "AEL_NNYS_America_Electric_Load",
+      "AEL_WNYS_America_Electric_Load"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "Accuracy"
+    ],
+    "rel_url": "papers/2024_Qu_Forwardformer_Day_Ahead_Load.html"
+  },
+  {
+    "id": "2024_Qu_Physics_Informed_GAT_EV_Load",
+    "title": "A Physics-Informed and Attention-Based Graph Learning Approach for Regional Electric Vehicle Charging Demand Prediction",
+    "authors": [
+      "Haohao Qu",
+      "Haoxuan Kuang",
+      "Qiuxuan Wang",
+      "Jun Li",
+      "Linlin You"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Intelligent Transportation Systems, vol. 25, no. 10, pp. 14284-14297",
+    "doi": "10.1109/TITS.2024.3401850",
+    "models_used": [
+      "PAG",
+      "PIML",
+      "GAT",
+      "TPA-LSTM",
+      "LSTM",
+      "FourierGNN",
+      "AST-GAT",
+      "DCRNN",
+      "STGCN",
+      "HSTGCN",
+      "GCN-LSTM",
+      "GCN",
+      "FCNN",
+      "VAR",
+      "Lasso",
+      "KNN"
+    ],
+    "datasets_used": [
+      "Shenzhen_ST_EVCDP"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAPE",
+      "RAE",
+      "MAE"
+    ],
+    "rel_url": "papers/2024_Qu_Physics_Informed_GAT_EV_Load.html"
+  },
+  {
+    "id": "2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load",
+    "title": "Load Forecasting of Electric Vehicle Charging Stations: Attention Based Spatiotemporal Multi-Graph Convolutional Networks",
+    "authors": [
+      "Jinkai Shi",
+      "Weige Zhang",
+      "Yan Bao",
+      "David Wenzhong Gao",
+      "Zhihao Wang"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Smart Grid, Vol. 15, No. 3, pp. 3016-3029",
+    "doi": "10.1109/TSG.2023.3321116",
+    "models_used": [
+      "STMGCN",
+      "TCN",
+      "GCN",
+      "Chebyshev_Graph_Convolution",
+      "Graph_WaveNet",
+      "STGCN",
+      "T-GCN",
+      "LSTM",
+      "GRU",
+      "CNN_LSTM",
+      "ARIMA"
+    ],
+    "datasets_used": [
+      "Beijing_Fast_Charging"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "MAPE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load.html"
+  },
+  {
+    "id": "2024_Shi_Naihao_Prediction_Interval_EV_Loads",
+    "title": "Short-term Load Forecasting Considering EV Charging Loads with Prediction Interval Evaluation",
+    "authors": [
+      "Naihao Shi",
+      "Feixiang Zhang",
+      "Zhaoyu Wang",
+      "Jason S. MacDonald",
+      "Maxime Baudette",
+      "Yashen Lin",
+      "Venkateswara Motakatla"
+    ],
+    "year": 2024,
+    "venue": "2024 56th North American Power Symposium (NAPS), IEEE",
+    "doi": "10.1109/NAPS61145.2024.10741734",
+    "models_used": [
+      "Gaussian_Process_Regression",
+      "Kernel_Density_Estimation"
+    ],
+    "datasets_used": [
+      "US_Utility_Feeder_Residential_Load",
+      "Real_World_EV_DC_Charging"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAPE",
+      "PICP",
+      "NMPIL",
+      "CLC"
+    ],
+    "rel_url": "papers/2024_Shi_Naihao_Prediction_Interval_EV_Loads.html"
+  },
+  {
+    "id": "2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot",
+    "title": "Day-ahead Electric Vehicle Charging Behavior Forecasting and Schedulable Capacity Calculation for Electric Vehicle Parking Lot",
+    "authors": [
+      "Maosheng Xu",
+      "Shan Gao",
+      "Junyi Zheng",
+      "Xueliang Huang",
+      "Chuanshen Wu"
+    ],
+    "year": 2024,
+    "venue": "Energy, vol. 309, 133090",
+    "doi": "10.1016/j.energy.2024.133090",
+    "models_used": [
+      "ADMM-NN",
+      "KMeans_Clustering",
+      "EVSFD",
+      "Monte_Carlo_Sampling"
+    ],
+    "datasets_used": [
+      "Suzhou_EVPL_Dataset",
+      "PJM_Day_Ahead_Tariff",
+      "NMMV_Platform_Data"
+    ],
+    "metrics": [
+      "Forecast Accuracy",
+      "Charging Cost Reduction"
+    ],
+    "rel_url": "papers/2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot.html"
+  },
+  {
+    "id": "2024_Zhong_V2G_SVE_Evaluation_Metric",
+    "title": "A Reliable Evaluation Metric for Electrical Load Forecasts in V2G Scheduling Considering Statistical Features of EV Charging",
+    "authors": [
+      "Jiahao Zhong",
+      "Xiang Lei",
+      "Ziyun Shao",
+      "Linni Jian"
+    ],
+    "year": 2024,
+    "venue": "IEEE Transactions on Smart Grid, vol. 15, no. 5, pp. 4917-4930",
+    "doi": "10.1109/TSG.2024.3392910",
+    "models_used": [
+      "V2G-SVE",
+      "Aggregate_EV_Fleet_Model",
+      "MLP",
+      "MLR",
+      "Simple Average (SA)",
+      "1-same-day persistence"
+    ],
+    "datasets_used": [
+      "ASU_Campus_Metabolism_Dataset",
+      "Ausgrid_Zone_Substation_Dataset"
+    ],
+    "metrics": [
+      "V2G-SVE",
+      "SPDR",
+      "MAPE",
+      "RMSE",
+      "MAE",
+      "Pearson_Correlation_Coefficient"
+    ],
+    "rel_url": "papers/2024_Zhong_V2G_SVE_Evaluation_Metric.html"
+  },
+  {
+    "id": "2024_Zhou_Conformal_Prediction_DER",
+    "title": "Hierarchical Probabilistic Conformal Prediction for Distributed Energy Resources Adoption",
+    "authors": [
+      "Wenbin Zhou",
+      "Shixiang Zhu"
+    ],
+    "year": 2024,
+    "venue": "arXiv preprint arXiv:2411.12193 (v4)",
+    "doi": "https://arxiv.org/abs/2411.12193",
+    "models_used": [
+      "HPCP",
+      "Multivariate_Hawkes_Process",
+      "Conformal_Prediction",
+      "VAR",
+      "Gaussian_Process_Regression",
+      "Quantile_Regression",
+      "RNN",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Indianapolis_DER_Adoption_Dataset"
+    ],
+    "metrics": [
+      "MAE",
+      "PICP",
+      "Interval_Size"
+    ],
+    "rel_url": "papers/2024_Zhou_Conformal_Prediction_DER.html"
+  },
+  {
+    "id": "2025_Alghamdi_REST_Network_Port_EV",
+    "title": "REST Network: An Ensemble Deep Learning Approach for EV Charging Load Forecasting in Artificial Port Supply Chains",
+    "authors": [
+      "Elham Abdullah Alghamdi",
+      "Monagi Hassan Alkinani",
+      "Abdulwahab Ali Almazroi",
+      "Mohammed Alqarni",
+      "Eman Ali Aldhahri",
+      "Nasir Ayub"
+    ],
+    "year": 2025,
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2025.3589292",
+    "models_used": [
+      "RESTNet",
+      "ResNet",
+      "SENet",
+      "Transformer",
+      "DeepSigRNet",
+      "CNN",
+      "VGGNet",
+      "SVR",
+      "Random_Forest"
+    ],
+    "datasets_used": [
+      "EV_Intelligent_Port_Logistics_Dataset",
+      "Dallas_Port_EV"
+    ],
+    "metrics": [
+      "MAPE",
+      "RMSE",
+      "MAE",
+      "R_squared",
+      "EEE",
+      "LVD",
+      "CPE",
+      "TAA"
+    ],
+    "rel_url": "papers/2025_Alghamdi_REST_Network_Port_EV.html"
+  },
+  {
+    "id": "2025_Bao_ResMMoT_Informer_Time_Series",
+    "title": "Long Short-Term Financial Time Series Forecasting Based on Residual Multiscale TCN Sparse Expert Network and Informer",
+    "authors": [
+      "Wuzhida Bao",
+      "Yuting Cao",
+      "Yin Yang",
+      "Shiping Wen"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Neural Networks and Learning Systems, vol. 36, no. 10, pp. 19200-19209",
+    "doi": "10.1109/TNNLS.2025.3584369",
+    "models_used": [
+      "ResMMoT_Informer",
+      "Sparse_Mixture_of_Experts",
+      "TCN",
+      "Informer",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "NASDAQ100_Stock_Price_Dataset",
+      "Cryptocurrency_Dataset",
+      "Forex_Dataset"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2025_Bao_ResMMoT_Informer_Time_Series.html"
+  },
+  {
+    "id": "2025_Fan_EV_STLLM_Spatio_Temporal_LLM",
+    "title": "EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion",
+    "authors": [
+      "Hang Fan",
+      "Yunze Chai",
+      "Chenxi Liu",
+      "Weican Liu",
+      "Zuhan Zhang",
+      "Wencai Run",
+      "Dunnan Liu"
+    ],
+    "year": 2025,
+    "venue": "Expert Systems with Applications, vol. 313, art. 131620 (2026); preprint arXiv:2507.09527",
+    "doi": "10.48550/arXiv.2507.09527",
+    "models_used": [
+      "EV-STLLM",
+      "GPT-2",
+      "PFGA",
+      "QLoRA",
+      "VMD",
+      "ICEEMDAN",
+      "FIG",
+      "ReliefF",
+      "GCN",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "UrbanEV_Dataset",
+      "Shenzhen_ST_EVCDP"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2025_Fan_EV_STLLM_Spatio_Temporal_LLM.html"
+  },
+  {
+    "id": "2025_FernandezZapico_Stochastic_MPC_Conformal_Hub",
+    "title": "Stochastic Model Predictive Control of Charging Energy Hubs with Conformal Prediction",
+    "authors": [
+      "Diego Fernandez-Zapico",
+      "Theo Hofman",
+      "Mauro Salazar"
+    ],
+    "year": 2025,
+    "venue": "IEEE Conference on Decision and Control (CDC 2025)",
+    "doi": "10.1109/CDC57313.2025.11311970",
+    "models_used": [
+      "XGBoost (Scikit-learn GradientBoostingRegressor, MAE loss, early stopping)",
+      "EnbPI conformal wrapper (MAPIE implementation)",
+      "Stochastic_MPC scenario-based SOCP"
+    ],
+    "datasets_used": [
+      "simulated Charging Energy Hub (simulated) w/ publicly available real EV charging demand data (Gholizadeh & Musilek, Data in Brief 2024)",
+      "NREL OpenEI/PVDAQ Farm Solar Array PV data (California)",
+      "ENTSO-E Transparency Platform NL day-ahead prices + CO2",
+      "Open-Meteo.com Weather API (NOAA HRRR historical weather forecasts)"
+    ],
+    "metrics": [
+      "normalized average daily operational cost (% vs Omniscient)",
+      "daily net CO2 emissions (%)",
+      "interval coverage CPI_alpha=0.1 (PICP-type)",
+      "normalized MAE (nMAE)"
+    ],
+    "rel_url": "papers/2025_FernandezZapico_Stochastic_MPC_Conformal_Hub.html"
+  },
+  {
+    "id": "2025_Han_Vertical_Federated_EGAT_LSTM",
+    "title": "A Vertical Federated Learning Method for Electric Vehicle Charging Station Load Prediction in Coupled Transportation and Power Distribution Systems",
+    "authors": [
+      "Qi Han",
+      "Xueping Li"
+    ],
+    "year": 2025,
+    "venue": "Processes",
+    "doi": "10.3390/pr13020468",
+    "models_used": [
+      "V2AFedEGAT-LSTM",
+      "EGAT",
+      "LSTM",
+      "GGNN",
+      "GAT",
+      "Time_Aware_Attention"
+    ],
+    "datasets_used": [
+      "CTPS_IEEE33_7Node_TN",
+      "CTPS_IEEE69_12Node_TN",
+      "NYISO"
+    ],
+    "metrics": [
+      "R_squared",
+      "MAE",
+      "MAPE",
+      "MSE"
+    ],
+    "rel_url": "papers/2025_Han_Vertical_Federated_EGAT_LSTM.html"
+  },
+  {
+    "id": "2025_Hussain_CAT_Former_Short_Term_EV",
+    "title": "Short term demand forecasting of electric vehicle charging stations using context aware temporal transformer model",
+    "authors": [
+      "Adil Hussain",
+      "Qing-Chang Lu",
+      "Sanam Shahla Rizvi",
+      "Shixin Wang",
+      "Se Jin Kwon"
+    ],
+    "year": 2025,
+    "venue": "Scientific Reports, Vol. 15, Article 36652",
+    "doi": "10.1038/s41598-025-20557-x",
+    "models_used": [
+      "CAT-Former (Context-Aware Temporal Transformer)",
+      "Transformer",
+      "Multi_Head_Attention",
+      "LSTM",
+      "BiLSTM",
+      "CNN_LSTM",
+      "Hybrid Transformer (LSTM Encoder-Decoder)"
+    ],
+    "datasets_used": [
+      "Boulder_Colorado",
+      "Weather"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2025_Hussain_CAT_Former_Short_Term_EV.html"
+  },
+  {
+    "id": "2025_Hussain_Hybrid_LSTM_Transformer_Demand",
+    "title": "Charging stations demand forecasting using LSTM based hybrid transformer model",
+    "authors": [
+      "Adil Hussain",
+      "Vishwanath Eswarakrishnan",
+      "Ayesha Aslam",
+      "Sajib Tripura"
+    ],
+    "year": 2025,
+    "venue": "Scientific Reports (Nature Portfolio), vol. 15, art. 36639",
+    "doi": "10.1038/s41598-025-20421-y",
+    "models_used": [
+      "LSTM",
+      "Transformer",
+      "Hybrid LSTM-Transformer"
+    ],
+    "datasets_used": [
+      "Caltech_ACN"
+    ],
+    "metrics": [
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2025_Hussain_Hybrid_LSTM_Transformer_Demand.html"
+  },
+  {
+    "id": "2025_Khan_Transformer_BiLSTM_Price_Forecasting",
+    "title": "Enhanced Transformer-BiLSTM Deep Learning Framework for Day-Ahead Energy Price Forecasting",
+    "authors": [
+      "Abdullah Al Ahad Khan",
+      "Md Habib Ullah",
+      "Ruchira Tabassum",
+      "Md Faisal Kabir"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Industry Applications, vol. 62, no. 2, pp. 1933-1947 (Mar/Apr 2026 issue)",
+    "doi": "10.1109/TIA.2025.3599812",
+    "models_used": [
+      "Transformer_BiLSTM",
+      "Transformer",
+      "BiLSTM",
+      "XGBoost",
+      "GRU",
+      "CNN",
+      "CNN_LSTM",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "NYISO",
+      "PJM_Energy_Market_Dataset",
+      "MISO_Market_Dataset"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE",
+      "sMAPE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2025_Khan_Transformer_BiLSTM_Price_Forecasting.html"
+  },
+  {
+    "id": "2025_Li_DC_Charging_Profiles_TFT",
+    "title": "Deep learning predicts real-world electric vehicle direct current charging profiles and durations",
+    "authors": [
+      "Siyi Li",
+      "Mingrui Zhang",
+      "Robert Doel",
+      "Benjamin Ross",
+      "Matthew D. Piggott"
+    ],
+    "year": 2025,
+    "venue": "Nature Communications 16:10921",
+    "doi": "10.1038/s41467-025-65970-y",
+    "models_used": [
+      "Temporal_Fusion_Transformer",
+      "beta-VAE",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "NW_Europe_DCFC_Dataset",
+      "Weather"
+    ],
+    "metrics": [
+      "MAE",
+      "Relative_Accuracy",
+      "Pinball_Loss",
+      "MSE"
+    ],
+    "rel_url": "papers/2025_Li_DC_Charging_Profiles_TFT.html"
+  },
+  {
+    "id": "2025_Li_Multi_View_Graph_Intrusion_Detection_EV",
+    "title": "Multi-view graph contrastive representative learning for intrusion detection in EV charging station",
+    "authors": [
+      "Yi Li",
+      "Guo Chen",
+      "Zhaoyang Dong"
+    ],
+    "year": 2025,
+    "venue": "Applied Energy",
+    "doi": "10.1016/j.apenergy.2025.125439",
+    "models_used": [
+      "MVGCRL",
+      "Mask_Attention_Graph_Transformer",
+      "GNN",
+      "GCN",
+      "GAT",
+      "EdgeConv",
+      "CNN",
+      "LSTM",
+      "DGI",
+      "GRACE",
+      "MVGRL"
+    ],
+    "datasets_used": [
+      "CICEVSE2024"
+    ],
+    "metrics": [
+      "Precision",
+      "Recall",
+      "F1_Score"
+    ],
+    "rel_url": "papers/2025_Li_Multi_View_Graph_Intrusion_Detection_EV.html"
+  },
+  {
+    "id": "2025_Matrone_QR_LSTM_Attention_EV_Load",
+    "title": "Probabilistic Forecast of EV Charging Demand using Quantile Regression and LSTM with Attention Mechanism",
+    "authors": [
+      "Silvana Matrone",
+      "Amirhossein Heydarian Ardakani",
+      "Emanuele Ogliari",
+      "Elham Shirazi",
+      "Sonia Leva"
+    ],
+    "year": 2025,
+    "venue": "ACM E-Energy '25: 16th ACM International Conference on Future and Sustainable Energy Systems (June 17-20, 2025, Rotterdam, Netherlands)",
+    "doi": "10.1145/3679240.3734687",
+    "models_used": [
+      "QR-LSTM-Attention",
+      "LSTM",
+      "Encoder-Decoder with Attention",
+      "Quantile_Regression",
+      "Persistence Benchmark"
+    ],
+    "datasets_used": [
+      "SmoothEMS_Met_GridShield_ASR_Utrecht_Dataset",
+      "Weather"
+    ],
+    "metrics": [
+      "CRPS",
+      "Pinball_Loss (q20/q50/q80)",
+      "PICP"
+    ],
+    "rel_url": "papers/2025_Matrone_QR_LSTM_Attention_EV_Load.html"
+  },
+  {
+    "id": "2025_Meyer_Benchmark_Foundation_Models",
+    "title": "Benchmarking Time Series Foundation Models for Short-Term Household Electricity Load Forecasting",
+    "authors": [
+      "Marcel Meyer",
+      "David Zapata Gonzalez",
+      "Sascha Kaltenpoth",
+      "Oliver Müller"
+    ],
+    "year": 2025,
+    "venue": "IEEE Access",
+    "doi": "10.1109/ACCESS.2025.3648056",
+    "models_used": [
+      "Chronos",
+      "Chronos-Bolt",
+      "TimesFM",
+      "TimesFM_2.0",
+      "LagLlama",
+      "Moirai",
+      "Time-MoE",
+      "Sundial",
+      "PatchTST",
+      "Transformer",
+      "iTransformer",
+      "Temporal_Fusion_Transformer",
+      "SeasonalAverage"
+    ],
+    "datasets_used": [
+      "Lower_Saxony_Dataset",
+      "Southern_Germany_Dataset",
+      "IDEAL_Dataset",
+      "REFIT"
+    ],
+    "metrics": [
+      "MAE",
+      "MSE",
+      "APNE"
+    ],
+    "rel_url": "papers/2025_Meyer_Benchmark_Foundation_Models.html"
+  },
+  {
+    "id": "2025_Tian_MSSTGAN_City_EV_Load",
+    "title": "Multi-Scale Spatial-Temporal Graph Attention Network for Charging Station Load Prediction",
+    "authors": [
+      "Ran Tian",
+      "Jinshi Wang",
+      "Zhihui Sun",
+      "Jiarui Wu",
+      "Xin Lu",
+      "Longlong Chang"
+    ],
+    "year": 2025,
+    "venue": "IEEE Access, Vol. 13, pp. 29000-29017",
+    "doi": "10.1109/ACCESS.2025.3541118",
+    "models_used": [
+      "Multi-Scale Spatial-Temporal Graph Attention Network (MSSTGAN)",
+      "Pyramid Split Attention (PSA)",
+      "Multi_Head_Attention",
+      "Gated_Fusion",
+      "Transform Attention (TA)",
+      "ST-GAT",
+      "T-GCN",
+      "STSGCN",
+      "STFGNN",
+      "Informer",
+      "LDformer"
+    ],
+    "datasets_used": [
+      "Palo_Alto_EV",
+      "Boulder_Colorado",
+      "Dundee_EV",
+      "Perth_EV"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2025_Tian_MSSTGAN_City_EV_Load.html"
+  },
+  {
+    "id": "2025_Weqar_LTLM_LSTM_EV_Load",
+    "title": "Data-Driven Long-Term Learning Model for EV Charging Load Prediction",
+    "authors": [
+      "Bushra Weqar",
+      "Ahteshamul Haque",
+      "Shabana Mehfuz",
+      "Azra Malik"
+    ],
+    "year": 2025,
+    "venue": "2025 IEEE DELCON - International Conference on Recent Smart Technologies in Engineering for Sustainable Development",
+    "doi": "10.1109/DELCON68055.2025.11400364",
+    "models_used": [
+      "LTLM",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "LA_Charging_Station_Dataset"
+    ],
+    "metrics": [],
+    "rel_url": "papers/2025_Weqar_LTLM_LSTM_EV_Load.html"
+  },
+  {
+    "id": "2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System",
+    "title": "Meta-Learning Enhanced Physics-Informed Graph Attention Convolutional Network for Distribution Power System State Estimation",
+    "authors": [
+      "Huayi Wu",
+      "Zhao Xu",
+      "Minghao Wang",
+      "Xue Lyu"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Network Science and Engineering, Vol. 12, No. 2, pp. 1186-1198",
+    "doi": "10.1109/TNSE.2025.3525625",
+    "models_used": [
+      "Meta-PIGACN",
+      "Physics-Informed Graph Attention Convolutional Network (PIGACN)",
+      "GCN",
+      "Multi_Head_Attention",
+      "Meta-Learning (MAML-style)"
+    ],
+    "datasets_used": [
+      "IEEE_33_Node_Distribution_System",
+      "IEEE_118_Node_Distribution_System",
+      "1746_Node_Distribution_System",
+      "2012 Global Energy Forecasting Competition RES data"
+    ],
+    "metrics": [
+      "MAE",
+      "MAPE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System.html"
+  },
+  {
+    "id": "2025_Yang_Stochastic_MPC_Microgrid_EV",
+    "title": "A Stochastic Model Predictive Control-Based Energy Management Approach for Microgrids With Electric Vehicles",
+    "authors": [
+      "Weilin Yang",
+      "Haojie Fang",
+      "Dezhi Xu",
+      "Bin Jiang",
+      "Peng Shi"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Transportation Electrification, Vol. 11, No. 1, pp. 3137-3145",
+    "doi": "10.1109/TTE.2024.3435426",
+    "models_used": [
+      "MS_MPC",
+      "MPC",
+      "Latin_Hypercube_Sampling",
+      "Scenario_Reduction"
+    ],
+    "datasets_used": [
+      "ELIA_Belgian_Grid",
+      "NHTS_2009"
+    ],
+    "metrics": [
+      "Operating_Cost",
+      "Unbalance_Deviation",
+      "Computation_Time"
+    ],
+    "rel_url": "papers/2025_Yang_Stochastic_MPC_Microgrid_EV.html"
+  },
+  {
+    "id": "2025_Zheng_BWO_ICEEMDAN_iTransformer",
+    "title": "BWO–ICEEMDAN–iTransformer: A Short-Term Load Forecasting Model for Power Systems with Parameter Optimization",
+    "authors": [
+      "Danqi Zheng",
+      "Jiyun Qin",
+      "Zhen Liu",
+      "Qinglei Zhang",
+      "Jianguo Duan",
+      "Ying Zhou"
+    ],
+    "year": 2025,
+    "venue": "Algorithms (MDPI), vol. 18, no. 5, art. 243",
+    "doi": "10.3390/a18050243",
+    "models_used": [
+      "iTransformer",
+      "ICEEMDAN",
+      "BWO"
+    ],
+    "datasets_used": [
+      "Singapore_Energy_Market_Dataset"
+    ],
+    "metrics": [
+      "R_squared",
+      "MAE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2025_Zheng_BWO_ICEEMDAN_iTransformer.html"
+  },
+  {
+    "id": "2025_Zheng_Coherent_Hierarchical_EV_Load",
+    "title": "Coherent Hierarchical Probabilistic Forecasting of Electric Vehicle Charging Demand",
+    "authors": [
+      "Kedi Zheng",
+      "Hanwei Xu",
+      "Zeyang Long",
+      "Yi Wang",
+      "Qixin Chen"
+    ],
+    "year": 2025,
+    "venue": "IEEE Transactions on Industry Applications, vol. 61, no. 1, pp. 1329-1340",
+    "doi": "10.1109/TIA.2023.3344544",
+    "models_used": [
+      "LSTM",
+      "PICNN",
+      "DCL",
+      "DeepAR",
+      "DeepVAR",
+      "MLP"
+    ],
+    "datasets_used": [
+      "Caltech_ACN"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MASE",
+      "Pinball_Loss",
+      "Winkler_Score",
+      "Energy_Score"
+    ],
+    "rel_url": "papers/2025_Zheng_Coherent_Hierarchical_EV_Load.html"
+  },
+  {
+    "id": "2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations",
+    "title": "Mixer-Informer-Based Two-Stage Transfer Learning for Long-Sequence Load Forecasting in Newly Constructed Electric Vehicle Charging Stations",
+    "authors": [
+      "Zhenhua Zhou",
+      "Bozhen Jiang",
+      "Qin Wang"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint (submitted to Elsevier), arXiv:2505.06657 [eess.SY]",
+    "doi": "10.48550/arXiv.2505.06657",
+    "models_used": [
+      "MIK-TST",
+      "MLP-Mixer",
+      "Informer",
+      "KAN"
+    ],
+    "datasets_used": [
+      "Boulder_Colorado"
+    ],
+    "metrics": [
+      "MAE",
+      "MSE"
+    ],
+    "rel_url": "papers/2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations.html"
+  },
+  {
+    "id": "2025_Zhu_Personalized_Federated_Learning",
+    "title": "Personalized federated learning for household electricity load prediction with imbalanced historical data",
+    "authors": [
+      "Shibo Zhu",
+      "Xiaodan Shi",
+      "Huan Zhao",
+      "Yuntian Chen",
+      "Haoran Zhang",
+      "Xuan Song",
+      "Tianhao Wu",
+      "Jinyue Yan"
+    ],
+    "year": 2025,
+    "venue": "Applied Energy",
+    "doi": "10.1016/j.apenergy.2025.125419",
+    "models_used": [
+      "PF-HoLo",
+      "LSTM",
+      "Encoder_Decoder",
+      "FedAvg",
+      "Federated_Mutual_Learning"
+    ],
+    "datasets_used": [
+      "REFIT"
+    ],
+    "metrics": [
+      "MSE",
+      "MAE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2025_Zhu_Personalized_Federated_Learning.html"
+  },
+  {
+    "id": "2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand",
+    "title": "Spatio-Temporal Modelling of Electric Vehicle Charging Demand",
+    "authors": [
+      "Kaoutar Bouaachra",
+      "Yvenn Amara-Ouali",
+      "Yannig Goude",
+      "Raphaël Lachieze-Rey"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint (arXiv:2604.19841)",
+    "doi": "https://arxiv.org/abs/2604.19841",
+    "models_used": [
+      "INLA_Latent_Gaussian_Model (proposed-new; SPDE–RW2 and ICAR–RW2 variants)",
+      "XGBoost (station-level baseline)",
+      "Poisson GLM (station-level baseline)"
+    ],
+    "datasets_used": [
+      "ChargePlace_Scotland (proposed-new, open benchmark Oct 2022 – Apr 2025)"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE",
+      "WAIC/DIC"
+    ],
+    "rel_url": "papers/2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand.html"
+  },
+  {
+    "id": "2026_Hao_Mamba_KAN_HyKANet_EV",
+    "title": "When Mamba Meets KAN: A Hybrid Learning Network for Electric Vehicle Charging Demand Prediction",
+    "authors": [
+      "Meilin Hao",
+      "Qianqian Ren"
+    ],
+    "year": 2026,
+    "venue": "ICASSP 2026 (IEEE International Conference on Acoustics, Speech and Signal Processing), pp. 1276-1280",
+    "doi": "10.1109/ICASSP55912.2026.11461366",
+    "models_used": [
+      "HyKANet",
+      "Mamba_SSM",
+      "KAN",
+      "PAG",
+      "FourierGNN",
+      "AST-GAT",
+      "DCRNN",
+      "STGCN"
+    ],
+    "datasets_used": [
+      "Real_World_EV_DC_Charging"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MAPE",
+      "RAE"
+    ],
+    "rel_url": "papers/2026_Hao_Mamba_KAN_HyKANet_EV.html"
+  },
+  {
+    "id": "2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark",
+    "title": "Benchmarking State Space Models, Transformers, and Recurrent Networks for US Grid Forecasting",
+    "authors": [
+      "Sunki Hong",
+      "Jisoo Lee"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint (arXiv:2602.21415)",
+    "doi": "https://arxiv.org/abs/2602.21415",
+    "models_used": [
+      "S_Mamba",
+      "PowerMamba",
+      "PatchTST",
+      "iTransformer",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "EIA-930 hourly system load: CAISO, ISO-NE, MISO, PJM, ERCOT, NYISO (+ SWPP for weather experiments only)"
+    ],
+    "metrics": [
+      "NRMSE (reported as normalized 'MSE %')",
+      "MAPE",
+      "MAE (nMAE for non-load tasks)",
+      "signed-error tails P0.5/P99.5"
+    ],
+    "rel_url": "papers/2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark.html"
+  },
+  {
+    "id": "2026_Huang_Lyapunov_EV_Scheduling",
+    "title": "Forecast-Enhanced Lyapunov Optimization for Real-Time EV Charging Scheduling",
+    "authors": [
+      "Shihan Huang",
+      "Yue Chen",
+      "Richard Chen",
+      "Adam Wierman"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint arXiv:2604.16873 [math.OC]",
+    "doi": "https://arxiv.org/abs/2604.16873",
+    "models_used": [
+      "Forecast-Enhanced Lyapunov Optimization",
+      "RHC",
+      "Queuing_Model",
+      "Linear_Programming"
+    ],
+    "datasets_used": [
+      "Shanghai_EV_Arrival_Data",
+      "CAISO"
+    ],
+    "metrics": [
+      "Total_Cost",
+      "Unit_Cost_USD_per_kWh",
+      "Maximum_Charging_Delay",
+      "Optimality_Gap",
+      "Computation_Time"
+    ],
+    "rel_url": "papers/2026_Huang_Lyapunov_EV_Scheduling.html"
+  },
+  {
+    "id": "2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide",
+    "title": "EVformer: A Spatio-Temporal Decoupled Transformer for Citywide EV Charging Load Forecasting",
+    "authors": [
+      "Mengxin Jia",
+      "Bo Yang"
+    ],
+    "year": 2026,
+    "venue": "World Electric Vehicle Journal (MDPI), Vol. 17",
+    "doi": "10.3390/wevj17020071",
+    "models_used": [
+      "EVformer",
+      "Multi_Head_Attention",
+      "Gated_Fusion",
+      "Top-K_Spatial_Attention",
+      "STGCN",
+      "DCRNN",
+      "MTGNN",
+      "Graph_WaveNet",
+      "GAT",
+      "AST-GAT",
+      "PAG"
+    ],
+    "datasets_used": [
+      "ST-EVCDP"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide.html"
+  },
+  {
+    "id": "2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting",
+    "title": "Electric Vehicle Charging Load Forecasting: An Experimental Comparison of Machine Learning Methods",
+    "authors": [
+      "Iason Kyriakopoulos",
+      "Yannis Theodoridis"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint arXiv:2512.17257 [cs.LG] (v2, 31 Mar 2026; dated April 1, 2026), University of Piraeus",
+    "doi": "10.48550/arXiv.2512.17257",
+    "models_used": [
+      "ARIMA",
+      "XGBoost",
+      "GRU",
+      "LSTM",
+      "Transformer"
+    ],
+    "datasets_used": [
+      "Palo_Alto_EV",
+      "Boulder_Colorado",
+      "Dundee_EV",
+      "Perth_EV"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE"
+    ],
+    "rel_url": "papers/2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting.html"
+  },
+  {
+    "id": "2026_Lahoti_Mamba_3_Sequence_Modeling",
+    "title": "Mamba-3: Improved Sequence Modeling using State Space Principles",
+    "authors": [
+      "Aakash Lahoti",
+      "Kevin Y. Li",
+      "Berlin Chen",
+      "Caitlin Wang",
+      "Aviv Bick",
+      "J. Zico Kolter",
+      "Tri Dao",
+      "Albert Gu"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026; arXiv:2603.15569 (CMU / Princeton / Together AI / Cartesia AI)",
+    "doi": "https://arxiv.org/abs/2603.15569",
+    "models_used": [
+      "Mamba-3",
+      "Mamba_SSM",
+      "Gated_DeltaNet",
+      "Transformer",
+      "S4"
+    ],
+    "datasets_used": [
+      "FineWeb-Edu",
+      "LAMBADA",
+      "HellaSwag",
+      "PIQA",
+      "ARC",
+      "WinoGrande",
+      "OpenBookQA",
+      "RULER_NIAH"
+    ],
+    "metrics": [
+      "Perplexity",
+      "Accuracy",
+      "Decode_Latency",
+      "Arithmetic_Intensity"
+    ],
+    "rel_url": "papers/2026_Lahoti_Mamba_3_Sequence_Modeling.html"
+  },
+  {
+    "id": "2026_Liu_MFT_Multi_Scale_Fusion_Transformer",
+    "title": "Multi-scale fusion transformer for EV charging station load prediction",
+    "authors": [
+      "Wanying Liu",
+      "Jian Qiao",
+      "Wenxuan Wang",
+      "Xi Zhao"
+    ],
+    "year": 2026,
+    "venue": "Scientific Reports (Nature Portfolio), vol. 16, art. 8609",
+    "doi": "10.1038/s41598-026-38562-z",
+    "models_used": [
+      "MFT",
+      "Transformer",
+      "LSTM",
+      "BiLSTM",
+      "GRU"
+    ],
+    "datasets_used": [
+      "Norway_Residential_EV_Charging_Dataset"
+    ],
+    "metrics": [
+      "MSE",
+      "RMSE",
+      "MAE"
+    ],
+    "rel_url": "papers/2026_Liu_MFT_Multi_Scale_Fusion_Transformer.html"
+  },
+  {
+    "id": "2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load",
+    "title": "Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model",
+    "authors": [
+      "Hany S. E. Mansour",
+      "Amira S. Mohamed",
+      "M. Abdel-Aziz"
+    ],
+    "year": 2026,
+    "venue": "Scientific Reports 16(1):374",
+    "doi": "10.1038/s41598-025-29739-z",
+    "models_used": [
+      "XGBoost",
+      "BiLSTM",
+      "LightGBM",
+      "Ensemble_Stacking",
+      "CNN",
+      "TCN",
+      "Transformer",
+      "SARIMAX",
+      "Prophet"
+    ],
+    "datasets_used": [
+      "Caltech_ACN",
+      "Synthetic_Cross_Site_EVCS_Dataset"
+    ],
+    "metrics": [
+      "MAE",
+      "MSE",
+      "RMSE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load.html"
+  },
+  {
+    "id": "2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load",
+    "title": "Forecasting EV charging load with a temporal fusion transformer: A multi-horizon and interpretable approach with environmental features",
+    "authors": [
+      "Danial Moghadam Dost",
+      "Mohsen Kalantar",
+      "Aref Eskandari",
+      "Mohammadjavad Peyravi"
+    ],
+    "year": 2026,
+    "venue": "Computers and Electrical Engineering, Vol. 135, Art. 111201 (Elsevier)",
+    "doi": "10.1016/j.compeleceng.2026.111201",
+    "models_used": [
+      "Temporal_Fusion_Transformer",
+      "Conformal_Prediction",
+      "Quantile_Regression"
+    ],
+    "datasets_used": [
+      "Palo_Alto_EV",
+      "Weather"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MSE",
+      "MAPE",
+      "SMAPE",
+      "R_squared",
+      "Pinball_Loss",
+      "PICP",
+      "MPIW",
+      "NPIW"
+    ],
+    "rel_url": "papers/2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load.html"
+  },
+  {
+    "id": "2026_Romia_CNN_LSTM_Attention_Fast_Charging",
+    "title": "Attention-Enhanced CNN-LSTM Models for Forecasting EV Fast-Charging Load at Public Stations",
+    "authors": [
+      "Asmaa Romia",
+      "Qiuhua Huang"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Industry Applications",
+    "doi": "10.1109/TIA.2026.3677828",
+    "models_used": [
+      "CNN_LSTM_Attention",
+      "CNN_LSTM_Transformer",
+      "GRU",
+      "RNN",
+      "Transformer",
+      "LSTM_Transformer",
+      "SARIMA",
+      "SVR",
+      "Optuna_TPE"
+    ],
+    "datasets_used": [
+      "Caltech_ACN",
+      "Weather"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2026_Romia_CNN_LSTM_Attention_Fast_Charging.html"
+  },
+  {
+    "id": "2026_Singh_MetaLearning_Informer_Probabilistic_EV",
+    "title": "Probabilistic computing forecasting approach for EV charging load forecasting using meta-learning enhanced informer",
+    "authors": [
+      "Arpana Singh",
+      "Uma Nangia",
+      "M. Rizwan"
+    ],
+    "year": 2026,
+    "venue": "Applied Soft Computing",
+    "doi": "10.1016/j.asoc.2026.115869",
+    "models_used": [
+      "MAML-Informer",
+      "Informer",
+      "MAML",
+      "Transformer",
+      "LSTM",
+      "SVR",
+      "Reptile",
+      "LSTM-Informer",
+      "LSTM_Transformer"
+    ],
+    "datasets_used": [
+      "Caltech_ACN",
+      "Boulder_Colorado",
+      "Palo_Alto_EV"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MSE",
+      "CRPS",
+      "PICP",
+      "MPIW",
+      "Pinball_Loss",
+      "Winkler_Score"
+    ],
+    "rel_url": "papers/2026_Singh_MetaLearning_Informer_Probabilistic_EV.html"
+  },
+  {
+    "id": "2026_Tang_PC_M3_Mamba_EV_Clusters",
+    "title": "A Mamba State-Space Sequence Model for AI-Driven Dynamic Aggregation and Predictive Control of Electric Vehicle Clusters in Vehicle-to-Grid Energy Management",
+    "authors": [
+      "Jinyi Tang",
+      "Xuan Zhou",
+      "Qin Yan"
+    ],
+    "year": 2026,
+    "venue": "Electronics (MDPI), vol. 15, art. 2380",
+    "doi": "10.3390/electronics15112380",
+    "models_used": [
+      "PC-M3",
+      "Mamba-3",
+      "Routing_Mamba",
+      "PowerMamba",
+      "Informer",
+      "Mamba_SSM",
+      "TD3",
+      "MPC"
+    ],
+    "datasets_used": [
+      "Caltech_ACN",
+      "ACN-Sim",
+      "ElaadNL",
+      "NREL_dsgrid_TEMPO",
+      "NHTS_2009"
+    ],
+    "metrics": [
+      "RMSE",
+      "Hausdorff_Distance",
+      "Polytope_Feasibility",
+      "Inference_Latency"
+    ],
+    "rel_url": "papers/2026_Tang_PC_M3_Mamba_EV_Clusters.html"
+  },
+  {
+    "id": "2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load",
+    "title": "Decomposition and Stacked Meta-Learning for Short-Term Electric Vehicle Load Forecasting",
+    "authors": [
+      "Syed Sajid Ullah",
+      "Gang Li",
+      "Muhammad Zunair Zamir",
+      "Abdul Malik",
+      "Saeed Mian Qaisar",
+      "Mudassar Riaz"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Smart Grid",
+    "doi": "10.1109/TSG.2026.3677496",
+    "models_used": [
+      "STL_Hybrid",
+      "STL",
+      "Ridge_Regression",
+      "XGBoost",
+      "Random_Forest",
+      "Gradient_Boosting_Regressor",
+      "Prophet",
+      "CatBoost",
+      "Informer",
+      "CNN-LSTM-AM",
+      "DeepBoost"
+    ],
+    "datasets_used": [
+      "Caltech_ACN",
+      "ChargePlace_Scotland",
+      "Palo_Alto_EV",
+      "Paris_Belib_EV"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MAPE",
+      "R_squared"
+    ],
+    "rel_url": "papers/2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load.html"
+  },
+  {
+    "id": "2026_Wang_Shengyou_ML_Geographical_Transferability_EV",
+    "title": "Machine learning approaches to short-term electric vehicle charging demand prediction: Applicability and geographical transferability",
+    "authors": [
+      "Shengyou Wang",
+      "Yilan Bu",
+      "Binru Wei",
+      "Enyuan Cao",
+      "Ruichen Ma",
+      "Chengxiang Zhuge"
+    ],
+    "year": 2026,
+    "venue": "Journal of Energy Storage",
+    "doi": "10.1016/j.est.2026.122141",
+    "models_used": [
+      "SGD",
+      "Random_Forest",
+      "Lasso",
+      "LSTM",
+      "MLP",
+      "GRU"
+    ],
+    "datasets_used": [
+      "Perth_EV",
+      "Dundee_EV",
+      "Hong_Kong_EV_Charging_Dataset",
+      "Palo_Alto_EV",
+      "Boulder_Colorado"
+    ],
+    "metrics": [
+      "MAE",
+      "MAPE"
+    ],
+    "rel_url": "papers/2026_Wang_Shengyou_ML_Geographical_Transferability_EV.html"
+  },
+  {
+    "id": "2026_Wang_Xiaoping_TriModal_Causal_EV_Demand",
+    "title": "Tri-modal causal learning for forecasting EV charging demand",
+    "authors": [
+      "Xiaoping Wang",
+      "Qianqian Ren",
+      "Hezhe Wang",
+      "Zhijuan Li"
+    ],
+    "year": 2026,
+    "venue": "Pattern Recognition Letters, Vol. 206, pp. 8–14 (Elsevier)",
+    "doi": "10.1016/j.patrec.2026.04.028",
+    "models_used": [
+      "TriCast",
+      "SAGE_Semantic_Aware_Graph_Encoder",
+      "TACT_Causal_Temporal_Alignment",
+      "Price_Elasticity_Modulator",
+      "Causal_Dilated_Convolution",
+      "Set_Transformer_Induced_Attention"
+    ],
+    "datasets_used": [
+      "UrbanEV_Dataset"
+    ],
+    "metrics": [
+      "RMSE",
+      "MAE",
+      "MAPE",
+      "RAE"
+    ],
+    "rel_url": "papers/2026_Wang_Xiaoping_TriModal_Causal_EV_Demand.html"
+  },
+  {
+    "id": "2026_Wang_Xu_Similar_Day_Selection_EV_Load",
+    "title": "A similar day selection framework with heterogeneous feature integration for electric vehicle charging load forecasting",
+    "authors": [
+      "Xu Wang",
+      "Zihan Wang",
+      "Fei Ma",
+      "Rongjian Dai",
+      "Xiaoteng Zhou"
+    ],
+    "year": 2026,
+    "venue": "Applied Energy",
+    "doi": "10.1016/j.apenergy.2026.127731",
+    "models_used": [
+      "XGBoost",
+      "NSGA-II",
+      "Random_Forest",
+      "SVR",
+      "LSTM",
+      "LightGBM",
+      "ShapeDTW",
+      "Multi_Dimensional_DTW"
+    ],
+    "datasets_used": [
+      "UrbanEV_Dataset"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "Precision",
+      "Recall",
+      "F1_Score",
+      "AUC"
+    ],
+    "rel_url": "papers/2026_Wang_Xu_Similar_Day_Selection_EV_Load.html"
+  },
+  {
+    "id": "2026_Yu_EnergyMamba_Graph_Mamba_ASCQR",
+    "title": "EnergyMamba: An Uncertainty-Aware Graph-Enhanced Selective State Space Model for Energy Consumption Prediction",
+    "authors": [
+      "Dahai Yu",
+      "Rongchao Xu",
+      "Lin Jiang",
+      "Guang Wang"
+    ],
+    "year": 2026,
+    "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '26)",
+    "doi": "10.1145/3770855.3818841",
+    "models_used": [
+      "EnergyMamba",
+      "AS_CQR",
+      "Mamba_SSM",
+      "GCN",
+      "PatchTST",
+      "Transformer",
+      "LSTM"
+    ],
+    "datasets_used": [
+      "Florida_CBG_Smart_Meter",
+      "NYISO",
+      "CAISO"
+    ],
+    "metrics": [
+      "MAE",
+      "RMSE",
+      "MPIW",
+      "Interval_Score",
+      "PICP"
+    ],
+    "rel_url": "papers/2026_Yu_EnergyMamba_Graph_Mamba_ASCQR.html"
+  },
+  {
+    "id": "2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging",
+    "title": "Dynamic charging load prediction using uncertainty-scale dual-direction transformer",
+    "authors": [
+      "Jinlai Zhang",
+      "Liuqi Tan",
+      "Hancheng Xie",
+      "Kai Gao",
+      "Wenzheng Liu",
+      "Jie Su",
+      "Wenhao Zhu",
+      "Lin Hu"
+    ],
+    "year": 2026,
+    "venue": "Sustainable Energy, Grids and Networks",
+    "doi": "10.1016/j.segan.2026.102428",
+    "models_used": [
+      "USDT",
+      "SMAN",
+      "DDI",
+      "Informer",
+      "MetaProbformer",
+      "Transformer",
+      "DeepAR",
+      "LSTM",
+      "ARIMA",
+      "Prophet",
+      "SVR",
+      "FEDM",
+      "PICCN"
+    ],
+    "datasets_used": [
+      "ElaadNL",
+      "Perth_EV",
+      "Boulder_Colorado",
+      "Palo_Alto_EV"
+    ],
+    "metrics": [
+      "RMSE",
+      "MSE",
+      "MAE",
+      "R_squared",
+      "ACE",
+      "CRPS"
+    ],
+    "rel_url": "papers/2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging.html"
+  },
+  {
+    "id": "Bahdanau2016_LSTMa_Attention",
+    "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+    "authors": [
+      "Dzmitry Bahdanau",
+      "Kyunghyun Cho",
+      "Yoshua Bengio"
+    ],
+    "year": 2016,
+    "venue": "ICLR 2015; arXiv:1409.0473 (cited as 2016 in LSTNet references)",
+    "doi": "https://arxiv.org/abs/1409.0473",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/Bahdanau2016_LSTMa_Attention.html"
+  },
+  {
+    "id": "Beltagy2020_Longformer",
+    "title": "Longformer: The Long-Document Transformer",
+    "authors": [
+      "Iz Beltagy",
+      "Matthew E. Peters",
+      "Arman Cohan"
+    ],
+    "year": 2020,
+    "venue": "arXiv preprint arXiv:2004.05150",
+    "doi": "https://arxiv.org/abs/2004.05150",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/Beltagy2020_Longformer.html"
+  },
+  {
+    "id": "Berrisch_Ziel_CRPS_Learning",
+    "title": "CRPS Learning",
+    "authors": [
+      "Jonathan Berrisch",
+      "Florian Ziel"
+    ],
+    "year": 2023,
+    "venue": "arXiv preprint (Quantitative Finance lineage)",
+    "doi": "https://arxiv.org/abs/2302.03511",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/Berrisch_Ziel_CRPS_Learning.html"
+  },
+  {
+    "id": "Gaillard2016_GEFCOM2014_Aggregation",
+    "title": "Additive Models and Robust Aggregation for GEFCom2014 Probabilistic Electric Load and Electricity Price Forecasting",
+    "authors": [
+      "Pierre Gaillard",
+      "Yannig Goude",
+      "Raphaël Nedellec"
+    ],
+    "year": 2016,
+    "venue": "International Journal of Forecasting 32(3):1038-1050",
+    "doi": "10.1016/j.ijforecast.2015.12.001",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/Gaillard2016_GEFCOM2014_Aggregation.html"
+  },
+  {
+    "id": "Wintenberger2017_BOA",
+    "title": "Optimal learning with Bernstein Online Aggregation",
+    "authors": [
+      "Olivier Wintenberger"
+    ],
+    "year": 2017,
+    "venue": "Machine Learning 106(1):119-141",
+    "doi": "10.1007/s10994-016-5592-6",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/Wintenberger2017_BOA.html"
+  },
+  {
+    "id": "Zaffran2022_Adaptive_Conformal",
+    "title": "Adaptive Conformal Predictions for Time Series",
+    "authors": [
+      "Margaux Zaffran",
+      "Olivier Féron",
+      "Yannig Goude",
+      "Julie Josse",
+      "Aymeric Dieuleveut"
+    ],
+    "year": 2022,
+    "venue": "ICML 2022; arXiv:2202.07282",
+    "doi": "https://arxiv.org/abs/2202.07282",
+    "models_used": [],
+    "datasets_used": [],
+    "metrics": [],
+    "rel_url": "papers/Zaffran2022_Adaptive_Conformal.html"
+  }
+]

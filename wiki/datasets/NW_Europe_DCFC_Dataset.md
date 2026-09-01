@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - nw_europe_dcfc_dataset
-location:
-resolution: "session level"
-access: "research"
-data_type: "DC fast-charging (DCFC) session collection across NW-European networks"
 ---
 
 # NW Europe DCFC Dataset

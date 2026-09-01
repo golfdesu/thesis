@@ -7,7 +7,7 @@ journal_conference: "2024 6th International Conference on Communications, Signal
 doi_url: "https://doi.org/10.1109/ICCSPA61559.2024.10794251"
 models_used: ["[[Autoformer]]", "[[LSTM]]"]
 datasets_used: ["[[Boulder_Colorado]]"]
-features_used: ["[[EV_Charging_Demand]]", "[[Calendar_Features]]"]
+features_used: ["[[Charging_Demand]]", "[[Calendar_Features]]", "[[Calendar_Features]]"]
 forecasting_horizon: "[[Long_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -74,6 +74,3 @@ Confidence $R(\tau)$ selects top-k period lengths $\tau_1,\dots,\tau_k$; a **Rol
 - [[2023_Koohfar_Transformer_EV_Demand]] — prior vanilla-Transformer EV demand forecasting that Autoformer improves upon
 - [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — decomposition-based forecaster contrasted with Autoformer's inner decomposition
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM benchmark model
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Helmy_Autoformer_EV_Charging_refs]]

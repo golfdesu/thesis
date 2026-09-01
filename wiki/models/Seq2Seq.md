@@ -14,4 +14,4 @@ Encoder-decoder sequence-to-sequence framework mapping an input sequence to an o
 
 ## Referenced in this knowledge base
 
-[[2025_Matrone_QR_LSTM_Attention_EV_Load]]
+*(none recorded)*

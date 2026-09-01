@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - lower_saxony_dataset
-location:
-resolution: "session level"
-access: "open (research release)"
-data_type: "Public charging sessions across Lower Saxony used in charging-demand studies"
 ---
 
 # Lower Saxony Dataset
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Meyer_Benchmark_Foundation_Models]]
+[[2025_Meyer_Benchmark_Foundation_Models]], [[2025_Meyer_Benchmark_Foundation_Models]]

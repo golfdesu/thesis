@@ -2,14 +2,10 @@
 type: dataset
 name: "Apple Mobility Index"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - apple_mobility_index
-location:
-resolution: "daily"
-access: "open (apple.com/covid19/mobility)"
-data_type: "Driving/transit/walking routing requests relative to Jan 2020 baseline, 2020-2022"
 ---
 
 # Apple Mobility Index

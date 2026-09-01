@@ -2,14 +2,10 @@
 type: dataset
 name: "Shanghai Qingpu Statistics Bureau"
 category: Stub (auto-generated)
-status: paper-linked-2026-08
+status: needs-review
 tags:
   - dataset
   - shanghai_qingpu_statistics_bureau
-location:
-resolution: "annual/monthly statistics"
-access: "government publication"
-data_type: "Official socio-economic statistics used alongside EV station data"
 ---
 
 # Shanghai Qingpu Statistics Bureau
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]]
+[[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]], [[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]]

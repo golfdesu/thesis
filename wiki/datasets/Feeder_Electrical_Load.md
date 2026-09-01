@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - feeder_electrical_load
-resolution:
-access: "utility/research"
-data_type: "Distribution-feeder head load series"
-location: "varies (utility feeders)"
 ---
 
 # Feeder Electrical Load

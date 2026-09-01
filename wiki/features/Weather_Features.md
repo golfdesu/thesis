@@ -14,6 +14,4 @@ Family of meteorological input variables ([[Temperature]], [[Humidity]], [[Wind_
 
 ## Referenced in this knowledge base
 
-[[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]]
-[[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]
-[[2026_Singh_MetaLearning_Informer_Probabilistic_EV]]
+*(none recorded)*

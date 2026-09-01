@@ -5,9 +5,9 @@ authors: [Mahnoosh Alizadeh, Anna Scaglione, Jamie Davies, Kenneth S. Kurani]
 year: 2014
 journal_conference: "IEEE Transactions on Smart Grid, 5(2), 848-860"
 doi_url: "https://doi.org/10.1109/TSG.2013.2275988"
-models_used: ["[[Queuing_Model]]", "[[Factor_Model]]", "[[ARIMA]]", "[[Kalman_Filter]]", "[[EM_Algorithm]]", "[[Persistence_Model]]"]
+models_used: ["[[Queuing_Model]]", "[[Queuing_Model]]", "[[Factor_Model]]", "[[ARIMA]]", "[[Kalman_Filter]]", "[[EM_Algorithm]]", "[[ARIMA]]", "[[Persistence_Model]]"]
 datasets_used: ["[[UC_Davis_PH_EV_Center_Data]]", "[[NHTS_2009]]"]
-features_used: ["[[EV_Arrival_Rate]]", "[[Charging_Duration]]", "[[Charging_Power]]", "[[Laxity_Slack_Time]]", "[[Daily_Mileage]]", "[[Calendar_Features]]", "[[Submetering_Triplets]]"]
+features_used: ["[[EV_Arrival_Rate]]", "[[Charging_Duration]]", "[[Charging_Power]]", "[[Laxity_Slack_Time]]", "[[EV_Arrival_Rate]]", "[[Daily_Mileage]]", "[[Calendar_Features]]", "[[Submetering_Triplets]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[Absolute_Error_kW]]", "[[Kolmogorov_Smirnov_Test]]", "[[Log_Likelihood]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -95,6 +95,3 @@ white noise uncorrelated across factors; combined into linear-Gaussian **state-s
   - [[2014_Kingma_Adam_Stochastic_Optimization]] — optimization tooling for the neural models that later replaced analytical arrival models
   - [[2021_VanKriekinge_Day_Ahead_EV_Demand]] — day-ahead EV charging demand forecasting line
   - [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]] — day-ahead charging-behavior/schedulable-capacity forecasting
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2014_Alizadeh_Scalable_Stochastic_EV_Demand_refs]]

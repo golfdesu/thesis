@@ -1,5 +1,5 @@
 ---
-type: ""
+type: github
 name: EV Charging Load Forecasting Repositories
 category: Domain-Specific Open-Source Codebases
 tags:
@@ -39,7 +39,7 @@ This note collects official GitHub repositories, open-source code implementation
 ### 5. ACN-Data & ACN-Portal (Caltech Adaptive Charging Network Framework)
 - **Repository URL**: `https://github.com/zach401/acnportal`
 - **Description**: Open-source Python toolkit for EV charging research, data collection, and algorithm evaluation developed at Caltech.
-- **Cited Paper**: [[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+- **Cited Paper**: [[2026_Chen_PC_M3_Mamba_EV_Clusters]]
 
 ### 6. Hourly EV Charging Load Dataset Repo
 - **Repository URL**: `https://github.com/shivkumarjadon6/Hourly_EV`
@@ -50,6 +50,3 @@ This note collects official GitHub repositories, open-source code implementation
 - **Repository URL**: `https://github.com/UFOdestiny/EnergyMamba`
 - **Description**: Official KDD '26 implementation of GE-Mamba (GCN-conditioned bidirectional Mamba in a U-Net) with [[AS_CQR]] uncertainty calibration; evaluated on Florida CBG smart-meter, [[NYISO]], and [[CAISO]] data.
 - **Cited Paper**: [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]]
-
----
-Master index: [[github_repositories_index]]

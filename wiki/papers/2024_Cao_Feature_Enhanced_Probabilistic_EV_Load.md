@@ -52,7 +52,7 @@ $$S_W^{(\beta)} = -\bar{W} + \frac{1}{T}\sum_{t=1}^T\left[-\frac{2}{\alpha}(\hat
 
 ## 📊 Dataset & Input Features
 - **[[Shenzhen_ST_EVCDP]]** — real EV charging demand from one of the earliest charging stations in the core area of a city in southern China ([[Shenzhen_ST_EVCDP]] region; city has ≈**930,000 EVs and 260,000 charging points** in 2023). Time range: **2022-01-01 to 2022-12-31**, resolution **15-min (96 points/day)**, no missing values/outliers. Station count: individual station case study + 2 additional same-city stations for generalization tests.
-- **Data availability**: GitHub dataset link ([[FEDQR_Dataset]]) given in ref [37]: https://github.com/Kenny4everlucky/FEDQR_dataset ; statement: *"Data will be made available on request."* Weather from historical local weather records; prices from historical station charging pricing data. Funding: China Southern Power Grid Innovation Project SZKJXM20210138.
+- **Data availability**: GitHub dataset link given in ref [37]: https://github.com/Kenny4everlucky/FEDQR_dataset ; statement: *"Data will be made available on request."* Weather from historical local weather records; prices from historical station charging pricing data. Funding: China Southern Power Grid Innovation Project SZKJXM20210138.
 - **Input features**: demand series (96 pts/day); daily average temperature; TOU electricity price split into peak (10:00–12:00, 14:00–19:00), flat (08:00–10:00, 12:00–14:00, 19:00–24:00), valley (00:00–08:00); weekday one-hot (weekend=1); weather conditions (sunny/cloudy/overcast/rainy + intermediates). Train/test ratio 8:2; training sets of 12–24 days before forecast day; output window fixed at 1 day ahead.
 - Pearson analysis: electricity price most influential (charging peaks align with valley prices); temperature/weekday/weather effects are seasonal.
 
@@ -93,6 +93,3 @@ $$S_W^{(\beta)} = -\bar{W} + \frac{1}{T}\sum_{t=1}^T\left[-\frac{2}{\alpha}(\hat
 - [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — NBEATS basis/benchmark ([26]).
 - [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] — ensemble probabilistic EV load forecasting ([20]).
 - Vault concepts: [[FEDM]], [[GRN]], [[GLU]], [[Pinball_Loss]], [[Winkler_Score]], [[Qualified_Rate]], [[Electricity_Tariff]]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load_refs]]

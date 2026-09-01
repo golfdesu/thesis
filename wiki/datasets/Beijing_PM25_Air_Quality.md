@@ -2,14 +2,10 @@
 type: dataset
 name: "Beijing PM25 Air Quality"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - beijing_pm25_air_quality
-location:
-resolution: "hourly"
-access: "open (UCI Machine Learning Repository)"
-data_type: "PM2.5 concentration with meteorology, 2010-2014 (Liang et al. 2015)"
 ---
 
 # Beijing PM25 Air Quality

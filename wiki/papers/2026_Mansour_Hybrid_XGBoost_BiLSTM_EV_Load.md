@@ -2,12 +2,12 @@
 type: paper
 title: "Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model"
 authors: [Hany S. E. Mansour, Amira S. Mohamed, M. Abdel-Aziz]
-year: 2026
-journal_conference: "Scientific Reports 16(1):374"
+year: 2025
+journal_conference: "Scientific Reports 16:374"
 doi_url: "https://doi.org/10.1038/s41598-025-29739-z"
 models_used: ["[[XGBoost]]", "[[BiLSTM]]", "[[LightGBM]]", "[[Ensemble_Stacking]]", "[[CNN]]", "[[TCN]]", "[[Transformer]]", "[[SARIMAX]]", "[[Prophet]]"]
 datasets_used: ["[[Caltech_ACN]]", "[[Synthetic_Cross_Site_EVCS_Dataset]]"]
-features_used: ["[[kWhDelivered]]", "[[Charging_Duration]]", "[[Arrival_Departure_Time]]", "[[Calendar_Features]]", "[[Lag_Features]]", "[[Rolling_Mean_Features]]", "[[Holiday_Flag]]"]
+features_used: ["[[kWhDelivered]]", "[[Charging_Duration]]", "[[Arrival_Departure_Time]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Lag_Features]]", "[[Rolling_Mean_Features]]", "[[Holiday_Indicator]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MSE]]", "[[RMSE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -68,9 +68,8 @@ tags: [paper, ev-load-forecasting, ml]
   author  = {Mansour, Hany S. E. and Mohamed, Amira S. and Abdel-Aziz, M.},
   journal = {Scientific Reports},
   volume  = {16},
-  number  = {1},
   pages   = {374},
-  year    = {2026},
+  year    = {2025},
   doi     = {10.1038/s41598-025-29739-z}
 }
 ```
@@ -79,5 +78,5 @@ tags: [paper, ev-load-forecasting, ml]
 - ACN-Data public EV charging dataset — https://ev.caltech.edu/dataset (ref. [27])
 - Chen & Guestrin, XGBoost: A Scalable Tree Boosting System, KDD 2016, doi:10.1145/2939672.2939785 (ref. [28])
 - Huang, Xu & Yu, Bidirectional LSTM-CRF Models for Sequence Tagging, arXiv:1508.01991 (ref. [29])
-- [[2021_VanKriekinge_Day_Ahead_EV_Demand]] — Van Kriekinge et al., day-ahead DNN EV charging demand (refs. [6], [19])
-- [[2019_Zhu_ApplSci_EV_Load_Forecasting]] — Zhu et al., deep learning EV station baselines (ref. [17])
+- [[2021_Day_Ahead_Forecast_of_Electric_Vehicle_Charging_Demand_with_Deep_Neural_Networks]] — Van Kriekinge et al., day-ahead DNN EV charging demand (refs. [6], [19])
+- [[2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches]] — Zhu et al., deep learning EV station baselines (ref. [17])

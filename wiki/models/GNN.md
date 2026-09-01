@@ -14,4 +14,4 @@ Graph Neural Network umbrella term; spatial-relational building block behind [[G
 
 ## Referenced in this knowledge base
 
-[[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]
+*(none recorded)*

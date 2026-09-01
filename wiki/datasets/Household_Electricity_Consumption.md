@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - household_electricity_consumption
-resolution:
-access: "varies (Low Carbon London / CBECS / HES lineages)"
-data_type: "Household-level smart-meter consumption panels"
-location: "varies (Low Carbon London / CBECS / HES lineages)"
 ---
 
 # Household Electricity Consumption

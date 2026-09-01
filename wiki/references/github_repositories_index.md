@@ -24,7 +24,7 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
 
 - **ACN-Data & ACN-Portal (Caltech EV Charging Infrastructure Simulator)**:
   `https://github.com/zach401/acnportal`
-  *Paper:* [[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+  *Paper:* [[2026_Chen_PC_M3_Mamba_EV_Clusters]]
 
 - **Hourly EV Charging Load Dataset**:
   `https://github.com/shivkumarjadon6/Hourly_EV`
@@ -143,8 +143,7 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
   *Paper:* [[2021_Lim_TFT_Temporal_Fusion_Transformers]]
 
 - **TiDE (Time-series Dense Encoder, official Google Research implementation)**:
-  `https://github.com/google-research/google-research/tree/master/tide
-  * TimesFM: https://github.com/google-research/timesfm — [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] (17M/70M/200M, decoder-only p=32/h=128, ~100B pts pretraining)`
+  `https://github.com/google-research/google-research/tree/master/tide`
   *Paper:* [[2024_Das_TiDE_Long_Term_Forecasting]]
 
 - **Neuralforecast / NHiTS (Nixtla unified forecasting library incl. NHiTS & N-BEATS-style models)**:
@@ -185,13 +184,13 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
 
 ### Energy & Weather Portals
 - **ENTSO-E Transparency Platform**: `https://transparency.entsoe.eu` — *Paper:* [[2022_Cao_Robust_Deep_Gaussian_Process_Load]]
-- **ElaadNL Data Platform**: `https://platform.elaad.nl` ; analyses: `https://platform.elaad.io/analyses/` — *Papers:* [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] ; [[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+- **ElaadNL Data Platform**: `https://platform.elaad.nl` ; analyses: `https://platform.elaad.io/analyses/` — *Papers:* [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] ; [[2026_Chen_PC_M3_Mamba_EV_Clusters]]
 - **ECMWF (weather)**: `https://www.ecmwf.int` — *Paper:* [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]
 - **Meteostat (historical weather)**: `https://meteostat.net` — *Paper:* [[2025_Zheng_Coherent_Hierarchical_EV_Load]]
 - **KNMI daily climate data**: `https://www.knmi.nl/nederland-nu/klimatologie/daggegevens` — *Paper:* [[2025_Matrone_QR_LSTM_Attention_EV_Load]]
 - **NREL SAM (System Advisor Model, weather/resource data)**: `https://sam.nrel.gov` — *Paper:* [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]]
 - **Open Power System Data (OPSD)**: `https://data.open-power-system-data.org` (REFIT & IDEAL DOIs in paper note) — *Paper:* [[2025_Meyer_Benchmark_Foundation_Models]]
-- **dsgrid-TEMPO (OpenEI submission)**: `https://data.openei.org/submissions/5958` — *Paper:* [[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+- **dsgrid-TEMPO (OpenEI submission)**: `https://data.openei.org/submissions/5958` — *Paper:* [[2026_Chen_PC_M3_Mamba_EV_Clusters]]
 
 ### EV Charging Open Data
 - **US NHTS 2009 (National Household Travel Survey)**: `http://nhts.ornl.gov` — *Paper:* [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]
@@ -202,7 +201,7 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
 - **UK National Travel Survey 2005**: `https://www.gov.uk/government/statistics/national-travel-survey-2005` — *Paper:* [[2021_Zhang_Probabilistic_Queuing_EV_Load]]
 - **ASU Campus Metabolism**: `https://cm.asu.edu` ; **Ausgrid Solar Home / Battery data**: `https://www.ausgrid.com.au` — *Paper:* [[2024_Zhong_V2G_SVE_Evaluation_Metric]]
 - **Pecan Street Dataport**: `https://www.pecanstreet.org/dataport/` — *Paper:* [[2024_Ke_Divide_Conquer_Transformer_EV]]
-- **Electric Nation (Open Net Zero)**: `https://opennetzero.org/dataset/electric-nation` ; **ACN-Data (Caltech)**: `https://ev.caltech.edu/dataset` — *Papers:* [[2024_Bampos_EV_Load_Forecasting_DAM]] ; [[2026_Tang_PC_M3_Mamba_EV_Clusters]]
+- **Electric Nation (Open Net Zero)**: `https://opennetzero.org/dataset/electric-nation` ; **ACN-Data (Caltech)**: `https://ev.caltech.edu/dataset` — *Papers:* [[2024_Bampos_EV_Load_Forecasting_DAM]] ; [[2026_Chen_PC_M3_Mamba_EV_Clusters]]
 
 ### Demographics & Other
 - **US Census Bureau Data**: `https://data.census.gov` ; **Google Project Sunroof**: `https://sunroof.withgoogle.com` — *Paper:* [[2024_Zhou_Conformal_Prediction_DER]]
@@ -226,20 +225,3 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
 - **ChargingEnergyHubs_MPC (Stochastic MPC of Charging Energy Hubs with Conformal Prediction)**:
   `https://github.com/diegofz/ChargingEnergyHubs_MPC`
   *Paper:* [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]
-
----
-
-## Repository collections in this vault
-- [[EV_Load_Forecasting_Repos]]
-- [[Probabilistic_Time_Series_Repos]]
-- [[Time_Series_Foundation_Models_Repos]]
-
-- **Toto 2.0 (Decoder-Only Patched Scaling TSFM — 5 sizes 4M-2.5B)**:
-  `https://www.github.com/DataDog/toto` — weights: `https://huggingface.co/collections/Datadog/toto-20` (Apache 2.0)
-  *Paper:* [[2026_Khwaja_Toto_2_Scaling_Era]]
-  *Library:* `dd_unit_scaling` (distributed u-µP, torch.compile/FSDP2 compatible) — first µP in time series.
-- **Chronos-2 (Universal TSFM — Amazon Science)**:
-  `https://github.com/amazon-science/chronos-forecasting`
-  *Paper:* [[2025_Ansari_Chronos_2_Univariate_to_Universal]]
-  *Highlights:* group attention (time+group, O(V)), 120M/28M, 21 quantiles, 2048->8192 ctx, multivariatizers synthetic, SOTA on 3 benchmarks (fev-bench/GIFT-Eval/Chronos Bench II).
-

@@ -1,30 +1,18 @@
 ---
 type: metric
-name: "Signal to Noise Ratio (SNR)"
-category: signal-quality-metric
-formula: "SNR_dB = 10 · log10(P_signal / P_noise)"
-unit: Decibels (dB)
-last_updated: 2026-08-26
+name: "Signal to Noise Ratio"
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - metric
   - signal_to_noise_ratio
-  - snr
 ---
 
 # Signal to Noise Ratio
 
-## Definition
+Signal to Noise Ratio — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-**SNR** compares the power of a meaningful signal to the power of background noise:
-
-$$\text{SNR}_{\text{dB}} = 10 \log_{10}\!\left(\frac{P_{\text{signal}}}{P_{\text{noise}}}\right) = 20 \log_{10}\!\left(\frac{A_{\text{signal}}}{A_{\text{noise}}}\right)$$
-
-where $P$ are mean square (power) values and $A$ amplitudes — the 10× form applies to power ratios, the 20× form to amplitude ratios. Higher is better. In optimization contexts ([[2014_Kingma_Adam_Stochastic_Optimization]]) it denotes the ratio of the gradient's mean to its standard deviation, i.e. $ \text{SNR} = \|\mathbb{E}[g]\| / \sqrt{\mathrm{Var}[g]} $, which Adam's update implicitly estimates.
-
-| Property | Description |
-|----------|-------------|
-| **Higher is better** | ✅ Yes |
-| **Unit** | dB for power ratios; dimensionless for the raw ratio |
+The metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked below report results using this metric.
 
 ## Referenced in this knowledge base
 

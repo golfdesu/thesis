@@ -2,14 +2,10 @@
 type: dataset
 name: "WMT 2014 EN DE"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - wmt_2014_en-de
-location:
-resolution: "sentence level"
-access: "open (statmt.org/wmt14)"
-data_type: "~4.5M sentence pairs English-German; standard MT benchmark (Vaswani et al. 2017)"
 ---
 
 # WMT 2014 EN DE

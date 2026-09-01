@@ -24,7 +24,4 @@ Mean of squared errors. Units are the square of the target's units; the square r
 Commonly reported for point forecasts of EV charging load; penalizes large errors more heavily than [[MAE]].
 
 ## References
-- Paper summaries are collected under `papers/`; the master bibliography is [[_all_references]].
-
-## Literature Usage
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Training loss (Eq. 5, MSE over output patches) and ETT reporting (Table 2/5).
+- See paper summaries in [[Papers & Literature]] tagged with MSE.

@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - historical_installation_events
-access:
-data_type: "Historical PV installation event logs used as covariates/exogenous drivers; provenance depends on citing paper"
-location: "varies"
-resolution: "event level"
 ---
 
 # Historical Installation Events

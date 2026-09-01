@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - nmmv_platform_data
-location:
-resolution: "session/event level"
-access: "operator/research"
-data_type: "Charging-platform operational data; see citing vault paper"
 ---
 
 # NMMV Platform Data

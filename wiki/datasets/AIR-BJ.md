@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - air-bj
-location:
-resolution: "hourly/station-level"
-access: "open (research release)"
-data_type: "Multi-station urban air-quality panel (PM2.5 etc.) used as irregular/imputation benchmark (CSDI lineage)"
 ---
 
 # AIR BJ

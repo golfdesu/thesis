@@ -7,7 +7,7 @@ journal_conference: "Philosophical Transactions of the Royal Society A, 371, 201
 doi_url: "https://doi.org/10.1098/rsta.2011.0550"
 models_used: ["[[Gaussian_Process]]", "[[Bayesian_Nonparametric_Regression]]", "[[Kalman_Filter]]", "[[Bayesian_Quadrature]]", "[[Markov_Chain_Monte_Carlo]]"]
 datasets_used: ["[[Bramblemet_Sensor_Network]]", "[[Nile_River_Water_Levels]]", "[[Dow_Jones_1972_1975]]", "[[HD_189733_Photometry]]"]
-features_used: ["[[Covariance_Function]]", "[[Squared_Exponential_Kernel]]", "[[Rational_Quadratic_Kernel]]", "[[Matern_Kernel]]", "[[Periodic_Kernel]]", "[[Changepoint_Kernel]]", "[[Mean_Function]]", "Hyperparameters"]
+features_used: ["[[Covariance_Function]]", "[[Squared_Exponential_Kernel]]", "[[Rational_Quadratic_Kernel]]", "[[Matern_Kernel]]", "[[Periodic_Kernel]]", "[[Changepoint_Kernel]]", "[[Mean_Function]]", "[[Hyperparameters]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[NRMSE]]", "[[Log_Marginal_Likelihood]]"]
 tags: [paper, ev-load-forecasting, ml]

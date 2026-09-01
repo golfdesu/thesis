@@ -2,14 +2,10 @@
 type: dataset
 name: "MuJoCo Ant"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - mujoco_ant
-location:
-resolution: "simulation steps"
-access: "open (MuJoCo gym env)"
-data_type: "Quadruped 'Ant' locomotion control task; few-shot RL benchmark in MAML/Reptile evaluations"
 ---
 
 # MuJoCo Ant

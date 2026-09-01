@@ -2,16 +2,10 @@
 type: dataset
 name: "M5 Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - m5_dataset
-location: "Walmart stores, USA (CA/TX/WI)"
-resolution: "daily item-store sales"
-access: "open (Kaggle M5 competition)"
-license: "Kaggle competition rules: non-commercial academic use only; redistribution outside Kaggle forbidden"
-commercial_use: prohibited
-data_type: "Hierarchical unit sales of 3,049 products across 10 stores, 2011-2016"
 ---
 
 # M5 Dataset

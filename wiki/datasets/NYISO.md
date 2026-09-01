@@ -12,8 +12,6 @@ tags:
   - power-systems
   - load-forecasting
   - open-data
-license: "NYISO public market data (open data per nyiso.com terms)"
-commercial_use: allowed
 ---
 
 # 📁 NYISO Load Data

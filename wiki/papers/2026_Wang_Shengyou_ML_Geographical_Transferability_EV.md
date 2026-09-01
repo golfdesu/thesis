@@ -7,7 +7,7 @@ journal_conference: "Journal of Energy Storage"
 doi_url: "https://doi.org/10.1016/j.est.2026.122141"
 models_used: ["[[SGD]]", "[[Random_Forest]]", "[[Lasso]]", "[[LSTM]]", "[[MLP]]", "[[GRU]]"]
 datasets_used: ["[[Perth_EV]]", "[[Dundee_EV]]", "[[Hong_Kong_EV_Charging_Dataset]]", "[[Palo_Alto_EV]]", "[[Boulder_Colorado]]"]
-features_used: ["[[Historical_Load]]", "[[Lag_Features]]", "[[EV_Charging_Demand]]"]
+features_used: ["[[Historical_Load]]", "[[Sliding_Window_Lags]]", "[[EV_Charging_Demand]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[MAPE]]"]
 tags: [paper, ev-load-forecasting, ml]

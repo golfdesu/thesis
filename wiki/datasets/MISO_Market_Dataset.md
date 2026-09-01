@@ -2,14 +2,10 @@
 type: dataset
 name: "MISO Market Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - miso_market_dataset
-location:
-resolution: "hourly"
-access: "open (misostore/misoenergy.org)"
-data_type: "Load and LMP panels"
 ---
 
 # MISO Market Dataset

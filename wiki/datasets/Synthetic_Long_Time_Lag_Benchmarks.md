@@ -2,14 +2,10 @@
 type: dataset
 name: "Synthetic Long Time Lag Benchmarks"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - synthetic_long_time_lag_benchmarks
-location:
-resolution: "regular grid"
-access: "synthetic"
-data_type: "Long time-lag signal-to-noise tasks probing long-memory sequence models"
 ---
 
 # Synthetic Long Time Lag Benchmarks

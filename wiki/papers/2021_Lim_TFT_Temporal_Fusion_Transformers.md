@@ -9,7 +9,7 @@ models_used: ["[[Temporal_Fusion_Transformer|Temporal Fusion Transformer]]", "[[
 datasets_used: ["[[Electricity_ECL|UCI Electricity Load Diagrams (ECL)]]", "[[Traffic|UCI PEM-SF Traffic]]", "[[Favorita_Retail|Favorita Grocery Sales]]", "[[Oxford_Man_Realized_Library|OMI Realized Volatility]]"]
 features_used: ["[[Static_Covariates]]", "[[Past_Observed_Inputs]]", "[[Known_Future_Inputs]]", "[[Calendar_Features]]", "[[Entity_Embeddings]]"]
 forecasting_horizon: "[[Multi_Horizon]]"
-metrics: ["[[Pinball_Loss]]"]
+metrics: ["[[Pinball_Loss]]", "[[Pinball_Loss]]", "[[Pinball_Loss|q-Risk]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

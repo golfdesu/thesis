@@ -5,7 +5,7 @@ authors: [Shibo Zhu, Xiaodan Shi, Huan Zhao, Yuntian Chen, Haoran Zhang, Xuan So
 year: 2025
 journal_conference: "Applied Energy"
 doi_url: "https://doi.org/10.1016/j.apenergy.2025.125419"
-models_used: ["[[PF-HoLo]]", "[[LSTM]]", "[[Encoder_Decoder]]", "[[FedAvg]]", "[[Federated_Mutual_Learning]]"]
+models_used: ["[[PF-HoLo]]", "[[LSTM]]", "[[Encoder_Decoder]]", "[[FedAvg]]", "[[FedAvg]]", "[[Federated_Mutual_Learning]]"]
 datasets_used: ["[[REFIT]]"]
 features_used: ["[[Appliance_Level_Load]]", "[[Historical_Load]]", "[[Last_Observed_Power_Anchor]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
@@ -85,7 +85,4 @@ tags: [paper, ev-load-forecasting, ml]
 - [[2017_Attention_Is_All_You_Need]] — encoder–decoder paradigm lineage ([43] Cho et al. RNN encoder–decoder)
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM backbone
 - [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]] — personalization context
-- Related vault papers: [[2023_Cheng_VMD_Prophet_LSTM]], [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2024_Ke_Divide_Conquer_Transformer_EV]] (smart-meter load settings)
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2025_Zhu_Personalized_Federated_Learning_refs]]
+- Related vault papers: [[2023_Cheng_VMD_Prophet_LSTM]] ([[2023_Cheng_VMD_Prophet_LSTM]]), [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2024_Ke_Divide_Conquer_Transformer_EV]] (smart-meter load settings)

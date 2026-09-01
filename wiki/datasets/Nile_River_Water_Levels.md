@@ -2,14 +2,10 @@
 type: dataset
 name: "Nile River Water Levels"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - nile_river_water_levels
-location:
-resolution: "annual"
-access: "open (classic textbook series)"
-data_type: "Annual Nile flow measurements 1871-1970; classical changepoint/time-series example"
 ---
 
 # Nile River Water Levels
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2013_Roberts_Gaussian_Processes_Time_Series]]
+[[2013_Roberts_Gaussian_Processes_Time_Series]], [[2013_Roberts_Gaussian_Processes_Time_Series]]

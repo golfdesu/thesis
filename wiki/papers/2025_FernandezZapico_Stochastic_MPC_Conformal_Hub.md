@@ -71,6 +71,3 @@ $$\widehat{\mathrm{PI}}_{\alpha}(x) \;=\; \hat{F}^{\,\phi}(x) \,\pm\, \mathrm{qu
 - Lago, Marcjasz, De Schutter & Weron (2021), day-ahead electricity price forecasting review, Applied Energy — feature/best-practice source for pel ([8]).
 - Yang, Xia & Mayer (2024), solar power curve tutorial review, Adv. Atmos. Sci. — PV feature engineering ([9]).
 - *Note:* [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]] is **not** cited by this paper (linked here only as vault context for conformal time-series lineage).
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub_refs]]

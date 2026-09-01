@@ -6,7 +6,7 @@ year: 2019
 journal_conference: "IJCAI 2019 (28th International Joint Conference on Artificial Intelligence), pp. 1907-1913"
 doi_url: "https://doi.org/10.48550/arXiv.1906.00121"
 models_used: ["[[Graph_WaveNet]]"]
-datasets_used: ["[[Traffic]]"]
+datasets_used: ["[[Traffic]]", "[[Traffic]]"]
 features_used: ["[[Traffic_Speed]]", "[[Sensor_Time_Series]]", "[[Adjacency_Matrix]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]", "[[MAPE]]"]
@@ -32,9 +32,9 @@ $$Z = \sum_{k=0}^{K} P_f^k X W_{k1} + P_b^k X W_{k2}$$
 *Self-adaptive adjacency matrix (Eq. 5)* — from learnable node embeddings $E_1, E_2 \in \mathbb{R}^{N\times c}$ (source/target node embeddings); ReLU eliminates weak connections, SoftMax normalizes so $\tilde{A}_{adp}$ acts as transition matrix of a hidden diffusion process:
 $$\tilde{A}_{adp} = \text{SoftMax}(\text{ReLU}(E_1 E_2^T))$$
 *Combined graph convolution (Eq. 6)* — predefined + hidden dependencies:
-$$Z = \sum_{k=0}^{K} P_f^k X W_{k1} + P_b^k X W_{k2} + \tilde{A}_{adp}^k X W_{k3}$$
+$$Z = \sum_{k=0}^{K} P_f^k X W_{k1} + P_b^k X W_{k2} + \tilde{A}_{apt}^k X W_{k3}$$
 *Adaptive-only mode when graph structure unavailable (Eq. 7)*:
-$$Z = \sum_{k=0}^{K} \tilde{A}_{adp}^k X W_k$$
+$$Z = \sum_{k=0}^{K} \tilde{A}_{apt}^k X W_k$$
 
 **Temporal convolution layer (TCN).**
 *Dilated causal convolution (Eq. 8)* — dilation factor $d$ controls skip distance; causal padding preserves temporal order; stacking layers with increasing dilation gives exponential receptive-field growth:

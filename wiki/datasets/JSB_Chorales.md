@@ -2,14 +2,10 @@
 type: dataset
 name: "JSB Chorales"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - jsb_chorales
-location:
-resolution: "piano-roll / note sequences"
-access: "open"
-data_type: "Johann Sebastian Bach chorale harmonisations; standard music-sequence modelling benchmark"
 ---
 
 # JSB Chorales

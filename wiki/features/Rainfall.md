@@ -6,9 +6,6 @@ status: needs-review
 tags:
   - feature
   - rainfall
-aliases:
-  - Daily_Rainfall
-  - Daily Rainfall
 ---
 
 # Rainfall
@@ -20,5 +17,3 @@ As an input feature it appears in the feature lists of forecasting papers collec
 ## Referenced in this knowledge base
 
 [[2024_Qu_Forwardformer_Day_Ahead_Load]]
-
-[[2021_VanKriekinge_Day_Ahead_EV_Demand]]

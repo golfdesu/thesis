@@ -2,14 +2,10 @@
 type: dataset
 name: "Ontario Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - ontario_grid
-location:
-resolution: "5-min / hourly"
-access: "open (ieso.ca)"
-data_type: "System demand and prices"
 ---
 
 # Ontario Grid

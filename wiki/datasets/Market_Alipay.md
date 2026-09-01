@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - market_alipay
-location:
-resolution: "daily"
-access: "research license"
-data_type: "Market transaction panel used in LTSF benchmark suites (SCINet-era)"
 ---
 
 # Market Alipay

@@ -2,14 +2,10 @@
 type: dataset
 name: "New York Grid"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - new_york_grid
-location:
-resolution: "5-min / hourly"
-access: "open (nyiso.com)"
-data_type: "Zonal LBMP prices and load"
 ---
 
 # New York Grid

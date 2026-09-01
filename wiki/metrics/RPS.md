@@ -14,4 +14,4 @@ Ranked Probability Score: quadratic measure of the distance between a full predi
 
 ## Referenced in this knowledge base
 
-[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]
+*(none recorded)*

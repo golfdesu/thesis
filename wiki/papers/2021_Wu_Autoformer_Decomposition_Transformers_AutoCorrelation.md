@@ -46,7 +46,7 @@ giving overall $O(L\log L)$ complexity in both memory and time (vs full attentio
 
 ## 📊 Dataset & Input Features
 Six real-world benchmarks (multivariate), chronological splits 6:2:2 for ETT and 7:1:2 for others:
-- **[[ETT]]** (Zhou et al., Informer): electricity transformer load + oil temperature, recorded every 15 minutes, July 2016–July 2018; four subsets [[ETT|ETTh1]], [[ETT|ETTh2]] (hourly) and [[ETT|ETTm1]], [[ETT|ETTm2]] (15-min).
+- **[[ETT]]** (Zhou et al., Informer): electricity transformer load + oil temperature, recorded every 15 minutes, July 2016–July 2018; four subsets [[ETT]], [[ETT]] (hourly), [[ETT]], [[ETT]] (15-min).
 - **[[Electricity_ECL]]**: hourly electricity consumption of 321 customers, 2012–2014 — https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014
 - **[[Exchange]]**: daily exchange rates of 8 countries, 1990–2016 (from LSTNet).
 - **[[Traffic]]**: hourly road occupancy rates, San Francisco Bay Area freeways (CalTrans sensors) — http://pems.dot.ca.gov

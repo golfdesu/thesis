@@ -104,7 +104,4 @@ MSE comparison across scenarios at 30%/50% penetration (Table IV; best in bold):
 - Data-modeling sources: Rostami et al. [22] and Qian et al. [23] (charging levels/start-time models); Li & Zhang [24] (log-normal daily mileage).
 - Tooling: Keras — https://keras.io
 - Related vault concepts: [[Q_Learning]], [[Ensemble_Stacking]], [[Short_Term_Forecasting]], [[MSE]]
-- Contrast with vault: forecast-driven control alternatives [[2026_Huang_Lyapunov_EV_Scheduling]]; probabilistic deep forecasters [[2021_Rasul_TimeGrad_Diffusion_Forecasting]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]].
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load_refs]]
+- Contrast with vault: forecast-driven control alternatives [[2021_Huang_Lyapunov_EV_Scheduling]]; probabilistic deep forecasters [[2021_Rasul_TimeGrad_Diffusion_Forecasting]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]].

@@ -7,7 +7,7 @@ journal_conference: "arXiv preprint arXiv:2512.17257 [cs.LG] (v2, 31 Mar 2026; d
 doi_url: "https://doi.org/10.48550/arXiv.2512.17257"
 models_used: ["[[ARIMA]]", "[[XGBoost]]", "[[GRU]]", "[[LSTM]]", "[[Transformer]]"]
 datasets_used: ["[[Palo_Alto_EV]]", "[[Boulder_Colorado]]", "[[Dundee_EV]]", "[[Perth_EV]]"]
-features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Station_ID_One_Hot]]", "[[Region_ID_One_Hot]]"]
+features_used: ["[[Historical_Load]]", "[[Calendar_Features]]", "[[Holiday_Indicator]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Calendar_Features]]", "[[Station_ID_One_Hot]]", "[[Region_ID_One_Hot]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[MAE]]", "[[RMSE]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -102,7 +102,7 @@ All values are MAE/RMSE in the normalized domain (Tables 2–4 of the paper). Ke
 
 ## 🔗 Key References & Citation Graph
 - Koohfar et al. (2023), Transformer-based EV charging demand on 5 years of Boulder data, Sustainability 15(3):2105 → vault: [[2023_Koohfar_Transformer_EV_Demand]].
-- Zhu et al. (2019), deep learning (LSTM/GRU/ANN) EV load comparison, Appl. Sci. 9(9):1723 → vault: [[2019_Zhu_EV_Load_Forecasting]] / [[2019_Zhu_ApplSci_EV_Load_Forecasting]].
+- Zhu et al. (2019), deep learning (LSTM/GRU/ANN) EV load comparison, Appl. Sci. 9(9):1723 → vault: [[2019_Zhu_EV_Load_Forecasting]] / [[2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches]].
 - Louie (2017), SARIMA aggregated station load, Electr. Power Compon. Syst. 45(14):1498–1511.
 - Lu et al. (2018), Random Forest EV charging load, Energies 11(11):3207.
 - Unterluggauer et al. (2021), multivariate multi-step LSTM, Finland, IET Electr. Syst. Transp. 11(4):405–419.

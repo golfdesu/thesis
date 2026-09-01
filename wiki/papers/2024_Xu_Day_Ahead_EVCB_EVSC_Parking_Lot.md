@@ -7,7 +7,7 @@ journal_conference: "Energy, vol. 309, 133090"
 doi_url: "https://doi.org/10.1016/j.energy.2024.133090"
 models_used: ["[[ADMM-NN]]", "[[KMeans_Clustering]]", "[[EVSFD]]", "[[Monte_Carlo_Sampling]]"]
 datasets_used: ["[[Suzhou_EVPL_Dataset]]", "[[PJM_Day_Ahead_Tariff]]", "[[NMMV_Platform_Data]]"]
-features_used: ["[[EV_Access_Time]]", "[[Access_Duration]]", "[[State_of_Charge]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Weather_Conditions]]", "[[Temperature]]", "[[Recent_Access_Pattern]]"]
+features_used: ["[[EV_Access_Time]]", "[[Access_Duration]]", "[[State_of_Charge]]", "[[State_of_Charge]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Weather_Conditions]]", "[[Temperature]]", "[[Recent_Access_Pattern]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
 metrics: ["Forecast Accuracy", "Charging Cost Reduction"]
 tags: [paper, ev-load-forecasting, ml]
@@ -105,6 +105,3 @@ $$SC_n=\{p^{sc}_{n,t},\ t\in[t^a_n,t^d_n)\}, \qquad EVSC=\left\{\sum_{n=1}^{N}p^
 - Mao et al., J. Mod. Power Syst. Clean Energy 2019 — big-data-based schedulable capacity forecasting [31]
 - Zhang, Chan et al., IEEE Trans. Cybernetics 2020 — deep-learning probabilistic EV charging load forecasting with queuing model [25] ([[2021_Zhang_Probabilistic_Queuing_EV_Load]])
 - Nespoli, Ogliari & Leva, IEEE Access 2023 — user-behavior-clustering EV charging forecast [22]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot_refs]]

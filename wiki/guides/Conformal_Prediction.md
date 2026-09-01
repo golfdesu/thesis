@@ -1,11 +1,10 @@
 ---
-type: guide
+type: 
 name: "Conformal Prediction"
 category: Stub (auto-generated)
 status: needs-review
 tags:
-  - guide
-  - conformal-prediction
+  - conformal_prediction
 ---
 
 ## Overview

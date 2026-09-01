@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - synthetic_vae_objective
-access:
-data_type: "Synthetic optimisation traces of VAE objectives; exact provenance depends on citing paper"
-location: "n/a (synthetic optimisation)"
-resolution: "iteration traces"
 ---
 
 # Synthetic VAE Objective

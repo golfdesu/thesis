@@ -7,7 +7,7 @@ journal_conference: "IEEE Transactions on Industry Applications"
 doi_url: "https://doi.org/10.1109/TIA.2026.3677828"
 models_used: ["[[CNN_LSTM_Attention]]", "[[CNN_LSTM_Transformer]]", "[[GRU]]", "[[RNN]]", "[[Transformer]]", "[[LSTM_Transformer]]", "[[SARIMA]]", "[[SVR]]", "[[Optuna_TPE]]"]
 datasets_used: ["[[Caltech_ACN]]", "[[Weather]]"]
-features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Features]]"]
+features_used: ["[[Historical_Load]]", "[[Temperature]]", "[[Humidity]]", "[[Calendar_Features]]", "[[Calendar_Features]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
 metrics: ["[[RMSE]]", "[[MAE]]", "[[R_squared]]"]
 tags: [paper, ev-load-forecasting, ml]
@@ -78,6 +78,3 @@ Search spaces: hidden size H∈[64,256], LSTM layers [1,3], dropout [0.1,0.5], l
 - [[Optuna_TPE]] TPE framework (Akiba et al., KDD 2019) [39] — https://optuna.org, https://github.com/optuna/optuna
 - Bayesian LSTM EV load forecasting (Zhou et al., Energies 2022) [16]; MetaProbformer probabilistic forecasting (Huang et al., IEEE T-ITS 2023) [18]; ConvLSTM/BiConvLSTM networks (Mohammad et al., IEEE Access 2023) [17]
 - [[Caltech_ACN]] (Lee, Li & Low, ACM e-Energy 2019) [52]; NREL SAM weather data [53] — https://sam.nrel.gov
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Romia_CNN_LSTM_Attention_Fast_Charging_refs]]

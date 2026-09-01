@@ -5,11 +5,11 @@ authors: [Shihan Huang, Yue Chen, Richard Chen, Adam Wierman]
 year: 2026
 journal_conference: "arXiv preprint arXiv:2604.16873 [math.OC]"
 doi_url: "https://arxiv.org/abs/2604.16873"
-models_used: ["[[Lyapunov_Optimization|Forecast-Enhanced Lyapunov Optimization]]", "[[MPC|RHC]]", "[[Queuing_Model]]", "[[Linear_Programming]]"]
+models_used: ["[[Lyapunov_Optimization|Forecast-Enhanced Lyapunov Optimization]]", "[[MPC|RHC]]", "[[Queuing_Model]]", "[[Linear_Programming]]", "[[MPC]] (benchmark)"]
 datasets_used: ["[[Shanghai_EV_Arrival_Data]]", "[[CAISO]]"]
 features_used: ["[[EV_Arrival_Rate]]", "[[Electricity_Tariff]]", "[[Arrival_Departure_Time]]", "[[EV_Charging_Demand]]", "[[Charging_Power]]"]
 forecasting_horizon: "[[Short_Term_Forecasting]]"
-metrics: ["[[Total_Cost]]", "[[Unit_Cost_USD_per_kWh]]", "[[Maximum_Charging_Delay]]", "[[Optimality_Gap]]", "[[Computation_Time]]"]
+metrics: ["[[Total_Cost]]", "[[Unit_Cost_USD_per_kWh]]", "[[Maximum_Charging_Delay]]", "[[Optimality_Gap]]", "[[Computational_Time]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 
@@ -109,6 +109,3 @@ Cost & delay comparison (Table II, 100 EVs, MPC at $w=12$):
 - Data sources: [[Shanghai_EV_Arrival_Data]] (Du et al. 2025), [[CAISO]] via Grid Status (https://www.gridstatus.io/).
 - Related vault concepts: [[MPC]], [[Queuing_Model]], [[Lyapunov_Optimization]], [[Short_Term_Forecasting]]
 - Contrast baselines: [[MPC]], greedy scheduling; related RL-based alternatives ([[Q_Learning]]) lack hard-constraint safety guarantees.
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2026_Huang_Lyapunov_EV_Scheduling_refs]]

@@ -81,6 +81,3 @@ $$\mathcal{L} = -\sum_i \sum_m \left(y_{i,m}\log(\hat{y}_{i,m}) + (1-y_{i,m})\lo
 - [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — inspiration for sub-sequence ("patch") partitioning ([25]).
 - [[1997_Hochreiter_Long_Short_Term_Memory]] — LSTM baseline ([32]).
 - Related vault concepts: [[NILM]], [[Smart_Meter_Load]], [[Pecan_Street]], [[DCT-EV]]
-
-## Extracted Reference Dump
-Full extracted bibliography for this paper: [[2024_Ke_Divide_Conquer_Transformer_EV_refs]]

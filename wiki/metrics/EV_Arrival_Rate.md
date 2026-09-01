@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]], [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]], [[2026_Huang_Lyapunov_EV_Scheduling]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]
+[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]], [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]], [[2021_Huang_Lyapunov_EV_Scheduling]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]

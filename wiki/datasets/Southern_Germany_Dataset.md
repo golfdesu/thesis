@@ -6,10 +6,6 @@ status: needs-review
 tags:
   - dataset
   - southern_germany_dataset
-location:
-resolution: "hourly"
-access: "open/research"
-data_type: "PV + load regional dataset used in German probabilistic forecasting studies"
 ---
 
 # Southern Germany Dataset
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Meyer_Benchmark_Foundation_Models]]
+[[2025_Meyer_Benchmark_Foundation_Models]], [[2025_Meyer_Benchmark_Foundation_Models]]

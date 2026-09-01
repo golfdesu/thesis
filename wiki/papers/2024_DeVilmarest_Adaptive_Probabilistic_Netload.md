@@ -9,7 +9,7 @@ models_used: ["[[GAM]]", "[[Kalman_Filter]]", "[[Quantile_Regression]]", "[[Onli
 datasets_used: ["[[GB_Regional_Netload]]", "[[US_City_Daily_Load_COVID]]"]
 features_used: ["[[Historical_Load]]", "[[Temperature_Forecast]]", "[[Solar_Radiation]]", "[[Wind_Speed]]", "[[Embedded_Generation_Capacity]]", "[[Calendar_Features]]", "[[Holiday_Flag]]", "[[Precipitation]]", "[[Humidity]]", "[[Time_of_Year]]"]
 forecasting_horizon: "[[Day_Ahead_Forecasting]]"
-metrics: ["[[RMSE]]", "[[MAE]]", "[[nRMSE]]", "[[nMAE]]", "[[RPS]]", "[[Pinball_Loss]]", "[[CRPS]]"]
+metrics: ["[[RMSE]]", "[[MAE]]", "[[nRMSE]]", "[[nMAE]]", "[[RPS]]", "[[RPS]]", "[[Pinball_Loss]]", "[[CRPS]]"]
 tags: [paper, ev-load-forecasting, ml]
 ---
 

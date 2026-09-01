@@ -2,14 +2,10 @@
 type: dataset
 name: "Taiwan Power System"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - taiwan_power_system
-location:
-resolution: "hourly / 10-min"
-access: "open (taipower.com.tw)"
-data_type: "System load, reserves, generation"
 ---
 
 # Taiwan Power System

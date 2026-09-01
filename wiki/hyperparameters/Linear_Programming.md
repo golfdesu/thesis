@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2026_Huang_Lyapunov_EV_Scheduling]]
+[[2021_Huang_Lyapunov_EV_Scheduling]]

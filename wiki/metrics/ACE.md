@@ -1,32 +1,18 @@
 ---
 type: metric
-name: "ACE (Average Coverage Error)"
-category: probabilistic-interval-metric
-formula: "ACE = PICP − PINC"
-unit: Percentage points (dimensionless)
-last_updated: 2026-08-26
+name: "ACE"
+category: Stub (auto-generated)
+status: needs-review
 tags:
   - metric
   - ace
-  - coverage
-  - probabilistic-forecast
 ---
 
-# ACE (Average Coverage Error)
+# ACE
 
-## Definition
+ACE — concept referenced in this research knowledge base. This stub was auto-generated during broken-link cleanup and needs expert review.
 
-**ACE** measures how far the empirical coverage of prediction intervals deviates from the nominal confidence level (PINC, Prediction Interval Nominal Coverage):
-
-$$\text{ACE} = \text{PICP} - \text{PINC}$$
-
-where [[PICP]] is the fraction of observations falling inside the forecast intervals and PINC is the target coverage (e.g. 90% for a 90% interval). It is often reported as |ACE|, where smaller is better and 0 indicates perfectly calibrated interval width.
-
-| Property | Description |
-|----------|-------------|
-| **Unit** | Percentage points |
-| **Lower \|ACE\| is better** | ✅ Yes (0 = calibrated) |
-| **Paired with** | [[PICP]], [[MPIW]], [[Winkler_Score]] — coverage must be judged together with sharpness |
+The metric definition, unit behaviour, and interpretation follow the same structure as other evaluation metrics in this knowledge base. The papers linked below report results using this metric.
 
 ## Referenced in this knowledge base
 

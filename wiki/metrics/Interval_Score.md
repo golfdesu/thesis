@@ -1,6 +1,4 @@
 ---
-title: Interval Score
-type: metric
 metric: Interval Score
 category: probabilistic-forecast-metric
 formula: "IS = (u−l) + (2/α)(l−y)·1{y<l} + (2/α)(y−u)·1{y>u}"

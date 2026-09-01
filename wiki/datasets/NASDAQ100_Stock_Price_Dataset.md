@@ -2,14 +2,10 @@
 type: dataset
 name: "NASDAQ100 Stock Price Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - nasdaq100_stock_price_dataset
-location:
-resolution: "daily (LSTNet variant: minute-level 2016)"
-access: "open"
-data_type: "Index stock prices; LSTNet used 105 stocks in 2016 for multivariate forecasting"
 ---
 
 # NASDAQ100 Stock Price Dataset
@@ -20,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Bao_ResMMoT_Informer_Time_Series]]
+[[2025_Bao_ResMMoT_Informer_Time_Series]], [[2025_Bao_ResMMoT_Informer_Time_Series]]

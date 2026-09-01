@@ -5,7 +5,7 @@ category: Stub (auto-generated)
 status: needs-review
 tags:
   - hyperparameter
-  - scenario-reduction
+  - scenario_reduction
 ---
 
 # Scenario Reduction

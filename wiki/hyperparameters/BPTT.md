@@ -1,5 +1,5 @@
 ---
-type: hyperparameter
+type: 
 name: "Backpropagation Through Time (BPTT)"
 category: Stub (auto-generated)
 status: needs-review

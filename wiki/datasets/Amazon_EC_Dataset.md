@@ -2,14 +2,10 @@
 type: dataset
 name: "Amazon EC Dataset"
 category: Stub (auto-generated)
-status: metadata-verified-2026-08
+status: needs-review
 tags:
   - dataset
   - amazon_ec_dataset
-location:
-resolution: "~5-min CPU utilization"
-access: "open (GluonTS 'ec2' research release)"
-data_type: "Cloud VM CPU-utilization panels used in probabilistic TS benchmarks (Salinas lineage)"
 ---
 
 # Amazon EC Dataset
