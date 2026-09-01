@@ -114,8 +114,8 @@ Key results:
 
 ## 🔗 Key References & Citation Graph
 - [[2017_Attention_Is_All_You_Need]] [7] — base Transformer architecture.
-- [[Beltagy2020_Longformer]] [26] — source of sliding-window/dilated/global attention patterns reused by MSFSA.
+- Beltagy2020_Longformer [26] — source of sliding-window/dilated/global attention patterns reused by MSFSA.
 - [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]] [27], [[FEDformer]] [28], [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] [29], [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] [37] — Transformer baselines compared experimentally.
-- [[Prophet]] [12] and [[Bahdanau2016_LSTMa_Attention]] [6] — classical/deep baselines.
+- [[Prophet]] [12] and Bahdanau2016_LSTMa_Attention [6] — classical/deep baselines.
 - [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] — related line of attention-based (Temporal Fusion Transformer) day-ahead EV/load forecasting with environmental covariates; complementary since Forwardformer is point-only whereas TFT work adds conformal uncertainty.
 - [[Day_Ahead_Forecasting]] — the target horizon; one inference produces the full next-day profile.

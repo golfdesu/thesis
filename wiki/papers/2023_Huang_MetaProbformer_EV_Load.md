@@ -88,6 +88,6 @@ Point forecasting (MAE/MSE/RMSE, mean ± std over 5 random seeds; Tables III–I
 - [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]]
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
 - [[1997_Hochreiter_Long_Short_Term_Memory]]
-- [[2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations]]
+- [[2020_Huang_Ensemble_EV_Load]]
 - [[2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations]]
 - [[2021_Rasul_TimeGrad_Diffusion_Forecasting]]

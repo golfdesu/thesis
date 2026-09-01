@@ -133,9 +133,9 @@ Key results:
 
 ## 🔗 Key References & Citation Graph
 - [[2021_Browell_Fasiolo_Regional_Netload]] [21] — base GB regional net-load model (GAM + QR + generalized Pareto tails) extended here to the adaptive setting and to 2021 data.
-- [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]] — same conformal/adaptive-calibration research line; the paper's quantile-recalibration approach parallels [[Zaffran2022_Adaptive_Conformal]] [20] (adaptive conformal inference for time series), which motivated using BOA to tune the quantile update online.
+- [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]] — same conformal/adaptive-calibration research line; the paper's quantile-recalibration approach parallels Zaffran2022_Adaptive_Conformal [20] (adaptive conformal inference for time series), which motivated using BOA to tune the quantile update online.
 - [[2025_Matrone_QR_LSTM_Attention_EV_Load]] — related use of quantile regression on residuals of a mean model for probabilistic load forecasting (here: linear QR on GAM/Kalman residuals; there: QR-LSTM for EV load).
 - [[2021_Obst_Vilmarest_Goude_Kalman_COVID_France]] [10] and [[2022_Vilmarest_Goude_State_Space_PostCOVID]] [11] — prior Kalman-filter adaptive point load forecasting that this work extends to probabilistic settings.
 - [[2021_Alvarez_APLF_Adaptive_Probabilistic_Load]] [12] — adaptive probabilistic benchmark (hidden Markov models, Gaussian predictive distributions; poor tail calibration here).
-- [[Gaillard2016_GEFCOM2014_Aggregation]] [13], [[Wintenberger2017_BOA]] [19], [[Berrisch_Ziel_CRPS_Learning]] [18] — expert aggregation lineage for online quantile forecasting.
+- Gaillard2016_GEFCOM2014_Aggregation [13], Wintenberger2017_BOA [19], Berrisch_Ziel_CRPS_Learning [18] — expert aggregation lineage for online quantile forecasting.
 - [[Day_Ahead_Forecasting]] — both applications forecast one day ahead (half-hourly GB net-load with 24 h update delay; daily US city load).

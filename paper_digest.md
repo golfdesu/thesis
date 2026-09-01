@@ -1,12 +1,12 @@
 # 📋 One-File Paper Digest — All Papers (for AI Gap Analysis)
 
-> **Purpose**: single-file, self-contained digest of ALL 131 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
+> **Purpose**: single-file, self-contained digest of ALL 124 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
 > **Entry format**: `### filename` → Title — venue, year → metadata line (Models / Horizon / Metrics / Data / Features) → **What they did** (objective & contribution) → **Method core** → **Key results** (numbers) → **Gaps/Limitations**.
 > **Ordering**: newest first. Wikilinks were flattened to plain text; equations omitted; full details/equations/BibTeX live in the linked per-paper note. GENERATED FILE — do not hand-edit; fix source notes and rerun `gen_paper_digest.py`.
 
 ## 🗂️ Corpus Snapshot
-- Total papers: **131**
-- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (26) · 2025 (23) · 2026 (19) · ???? (19)
+- Total papers: **124**
+- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (26) · 2025 (23) · 2026 (19) · ???? (12)
 - Most-cited model concepts: LSTM (46), Transformer (31), Informer (17), ARIMA (13), DeepAR (13), RNN (12), MLP (12), GRU (11), SVR (11), PatchTST (10), XGBoost (10), Mamba_SSM (9)
 
 ## 🔎 Quick-Scan Table
@@ -128,7 +128,6 @@
 | 2014_Adam_Adam_Stochastic_Optimization | ???? |  |  |  | 0 |
 | 2019_Electric_Vehicle_Charging_Load_Forecasting_A_Comparative_Study_of_Deep_Learning_Approaches | ???? |  |  |  | 0 |
 | 2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches | ???? |  |  |  | 0 |
-| 2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations | ???? |  |  |  | 0 |
 | 2021_Alvarez_APLF_Adaptive_Probabilistic_Load | ???? |  |  |  | 0 |
 | 2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations | ???? |  |  |  | 0 |
 | 2021_Browell_Fasiolo_Regional_Netload | ???? |  |  |  | 0 |
@@ -137,12 +136,6 @@
 | 2022_Vilmarest_Goude_State_Space_PostCOVID | ???? |  |  |  | 0 |
 | 2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach | ???? |  |  |  | 0 |
 | 2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction | ???? |  |  |  | 0 |
-| Bahdanau2016_LSTMa_Attention | ???? |  |  |  | 0 |
-| Beltagy2020_Longformer | ???? |  |  |  | 0 |
-| Berrisch_Ziel_CRPS_Learning | ???? |  |  |  | 0 |
-| Gaillard2016_GEFCOM2014_Aggregation | ???? |  |  |  | 0 |
-| Wintenberger2017_BOA | ???? |  |  |  | 0 |
-| Zaffran2022_Adaptive_Conformal | ???? |  |  |  | 0 |
 
 ---
 ## 📄 Entries
@@ -910,6 +903,12 @@ Liu et al. · ICML 2025 · 2025
 **Horizon**: Zero-shot / Continuous  
 **Metrics**: CRPS, MSE, MAE  
 **Data**: TimeBench
+
+- **What they did:**
+  - **Gap:** Existing time series foundation models either use parametric densities (which restrict expressiveness and limit capacity) or discrete tokenization (which suffers from quantization errors and requires large vocabularies). Current models lack native continuous-valued generative modeling for highly accurate and flexible probabilistic forecasting without specifying prior distributions. **Contribution:** …
+- **Method core:** Sundial adapts Transformers for native continuous-valued time series modeling using Flow Matching. Instead of predicting a specific parametric distribution or discretizing values, it learns the vector field of a continuous-time flow between a simple prior (standard Gaussian) and the true data distribution. The goal is to learn a time-dependent vector field $v_t(x)$ that …
+- **Key results:**
+  - **Superior Zero-Shot Performance**: Sundial (with parameters scaling from 18M to 1.7B) significantly outperformed existing point forecasters (TimesFM, Timer, Moirai) and probabilistic forecasters (Chronos) across multiple zero-shot benchmarks.
 - **Gaps/Limitations:**
   - The paper primarily focuses on univariate forecasting; explicit handling of multivariate dependencies (cross-variate correlations) could be a future extension.
   - While inference is fast due to the efficient solver, flow matching integration still requires multiple function evaluations (though kept small in practice), which could be further optimized.
@@ -3003,11 +3002,6 @@ Hochreiter et al. · Neural Computation, 9(8), 1735-1780 · 1997
 ????
 
 
-### 2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations
-**2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations**  
-????
-
-
 ### 2021_Alvarez_APLF_Adaptive_Probabilistic_Load
 **2021_Alvarez_APLF_Adaptive_Probabilistic_Load**  
 ????
@@ -3045,35 +3039,5 @@ Hochreiter et al. · Neural Computation, 9(8), 1735-1780 · 1997
 
 ### 2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction
 **2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction**  
-????
-
-
-### Bahdanau2016_LSTMa_Attention
-**Bahdanau2016_LSTMa_Attention**  
-????
-
-
-### Beltagy2020_Longformer
-**Beltagy2020_Longformer**  
-????
-
-
-### Berrisch_Ziel_CRPS_Learning
-**Berrisch_Ziel_CRPS_Learning**  
-????
-
-
-### Gaillard2016_GEFCOM2014_Aggregation
-**Gaillard2016_GEFCOM2014_Aggregation**  
-????
-
-
-### Wintenberger2017_BOA
-**Wintenberger2017_BOA**  
-????
-
-
-### Zaffran2022_Adaptive_Conformal
-**Zaffran2022_Adaptive_Conformal**  
 ????
 
