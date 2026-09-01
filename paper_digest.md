@@ -1,13 +1,13 @@
 # 📋 One-File Paper Digest — All Papers (for AI Gap Analysis)
 
-> **Purpose**: single-file, self-contained digest of ALL 121 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
+> **Purpose**: single-file, self-contained digest of ALL 130 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
 > **Entry format**: `### filename` → Title — venue, year → metadata line (Models / Horizon / Metrics / Data / Features) → **What they did** (objective & contribution) → **Method core** → **Key results** (numbers) → **Gaps/Limitations**.
 > **Ordering**: newest first. Wikilinks were flattened to plain text; equations omitted; full details/equations/BibTeX live in the linked per-paper note. GENERATED FILE — do not hand-edit; fix source notes and rerun `gen_paper_digest.py`.
 
 ## 🗂️ Corpus Snapshot
-- Total papers: **121**
-- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2016 (2) · 2017 (4) · 2018 (2) · 2019 (5) · 2020 (4) · 2021 (13) · 2022 (5) · 2023 (13) · 2024 (26) · 2025 (21) · 2026 (20)
-- Most-cited model concepts: LSTM (46), Transformer (30), Informer (17), DeepAR (13), ARIMA (12), MLP (12), GRU (11), RNN (11), SVR (11), PatchTST (10), XGBoost (10), CNN (9)
+- Total papers: **130**
+- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (26) · 2025 (22) · 2026 (19) · ???? (19)
+- Most-cited model concepts: LSTM (46), Transformer (30), Informer (17), ARIMA (13), DeepAR (13), RNN (12), MLP (12), GRU (11), SVR (11), PatchTST (10), XGBoost (10), Mamba_SSM (9)
 
 ## 🔎 Quick-Scan Table
 | Paper | Yr | Venue | Core Models | Horizon | Data (#) |
@@ -19,9 +19,8 @@
 | 2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide | 2026 | World Electric Vehicle Journal … | EVformer, Multi_Head_Attention … | Spatial_Temporal_Forec … | 1 |
 | 2026_Khwaja_Toto_2_Scaling_Era | 2026 | arXiv preprint arXiv:2605.20119v2 … | Toto, TimesFM … | Long_Term_Forecasting | 6 |
 | 2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting | 2026 | arXiv preprint arXiv:2512.17257 … | ARIMA, XGBoost … | Short_Term_Forecasting | 4 |
-| 2026_Lahoti_Mamba_3_Sequence_Modeling | 2026 | ICLR 2026; arXiv:2603.15569 (CMU / … | Mamba-3, Mamba_SSM … |  | 8 |
+| 2026_Lahoti_Mamba_3_Sequence_Modeling | 2026 | arXiv preprint (arXiv:2603.15569); … | Mamba-3, Mamba_SSM … |  | 8 |
 | 2026_Liu_MFT_Multi_Scale_Fusion_Transformer | 2026 | Scientific Reports (Nature … | MFT, Transformer … | Long_Term_Forecasting | 1 |
-| 2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load | 2026 | Scientific Reports 16(1):374 | XGBoost, BiLSTM … | Short_Term_Forecasting | 2 |
 | 2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load | 2026 | Computers and Electrical Engineering, … | Temporal_Fusion_Transformer, … | Short_Term_Forecasting | 2 |
 | 2026_Romia_CNN_LSTM_Attention_Fast_Charging | 2026 | IEEE Transactions on Industry … | CNN_LSTM_Attention, CNN_LSTM_Transformer … | Short_Term_Forecasting | 2 |
 | 2026_Singh_MetaLearning_Informer_Probabilistic_EV | 2026 | Applied Soft Computing | MAML-Informer, Informer … | Short_Term_Forecasting | 3 |
@@ -35,11 +34,11 @@
 | 2025_Alghamdi_REST_Network_Port_EV | 2025 | IEEE Access | RESTNet, ResNet … | Short_Term_Forecasting | 2 |
 | 2025_Ansari_Chronos_2_Univariate_to_Universal | 2025 | arXiv preprint arXiv:2510.15821v1 … | Chronos-2, Chronos … | Long_Term_Forecasting | 12 |
 | 2025_Bao_ResMMoT_Informer_Time_Series | 2025 | IEEE Transactions on Neural Networks … | ResMMoT_Informer, Sparse_Mixture_of_Experts … | Long_Term_Forecasting | 3 |
-| 2025_Fan_EV_STLLM_Spatio_Temporal_LLM | 2025 | Expert Systems with Applications, … | EV-STLLM, GPT-2 … | Short_Term_Forecasting | 2 |
+| 2025_Fan_EV_STLLM_Spatio_Temporal_LLM | 2025 | arXiv preprint (arXiv:2507.09527), … | EV-STLLM, GPT-2 … | Short_Term_Forecasting | 2 |
 | 2025_FernandezZapico_Stochastic_MPC_Conformal_Hub | 2025 | IEEE Conference on Decision and … | XGBoost (Scikit-learn … | day-ahead 24 h @ 15 … | 4 |
 | 2025_Han_Vertical_Federated_EGAT_LSTM | 2025 | Processes | V2AFedEGAT-LSTM, EGAT … | Short_Term_Forecasting | 3 |
 | 2025_Hussain_CAT_Former_Short_Term_EV | 2025 | Scientific Reports, Vol. 15, Article … | CAT-Former (Context-Aware Temporal … | 1-Hour Ahead and … | 2 |
-| 2025_Hussain_Hybrid_LSTM_Transformer_Demand | 2025 | Scientific Reports (Nature … | LSTM, Transformer … | Long_Term_Forecasting | 1 |
+| 2025_Hussain_Hybrid_LSTM_Transformer_Demand | 2025 | Scientific Reports (Nature … | LSTM, Transformer … | Long_Term_Forecasting | 3 |
 | 2025_Khan_Transformer_BiLSTM_Price_Forecasting | 2025 | IEEE Transactions on Industry … | Transformer_BiLSTM, Transformer … | Day_Ahead_Forecasting | 3 |
 | 2025_Li_DC_Charging_Profiles_TFT | 2025 | Nature Communications 16:10921 | Temporal_Fusion_Transformer, beta-VAE … | Short_Term_Forecasting | 2 |
 | 2025_Li_Multi_View_Graph_Intrusion_Detection_EV | 2025 | Applied Energy | MVGCRL, Mask_Attention_Graph_Transformer … | Spatial_Temporal_Forec … | 1 |
@@ -53,26 +52,27 @@
 | 2025_Zheng_Coherent_Hierarchical_EV_Load | 2025 | IEEE Transactions on Industry … | LSTM, PICNN … | Day_Ahead_Forecasting | 1 |
 | 2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations | 2025 | arXiv preprint (submitted to … | MIK-TST, MLP-Mixer … | Long_Term_Forecasting | 1 |
 | 2025_Zhu_Personalized_Federated_Learning | 2025 | Applied Energy | PF-HoLo, LSTM … | Short_Term_Forecasting | 1 |
-| 2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting | 2024 | arXiv preprint (arXiv:2403.09898v2, … | Mamba_SSM | Long_Term_Forecasting | 4 |
+| 2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load | 2025 | Scientific Reports 16:374 | XGBoost, BiLSTM … | Short_Term_Forecasting | 2 |
+| 2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting | 2024 | arXiv preprint (arXiv:2403.09898v2, … | 2024_Ahamed_TimeMachine_Mamba_Long_Term_Foreca … | Long_Term_Forecasting | 7 |
 | 2024_Ali_MQ_TCN_Transfer_Learning_EV | 2024 | arXiv preprint arXiv:2409.11862 (Sep … | MQ_TCN, TCN … | Day_Ahead_Forecasting | 2 |
 | 2024_Bampos_EV_Load_Forecasting_DAM | 2024 | Applied Energy 360 (2024) 122801 | XGBoost, MLP … | Day_Ahead_Forecasting | 4 |
 | 2024_Cao_Feature_Enhanced_Probabilistic_EV_Load | 2024 | Applied Energy 371 (2024) 123751 | FEDM, GRN … | Day_Ahead_Forecasting | 1 |
-| 2024_Das_TiDE_Long_Term_Forecasting | 2024 | arXiv:2304.08424v5 [stat.ML] (Google … | TiDE, DLinear … | Long_Term_Forecasting | 6 |
+| 2024_Das_TiDE_Long_Term_Forecasting | 2024 | arXiv:2304.08424v5 [stat.ML] (Google … | TiDE, DLinear … | Long_Term_Forecasting | 9 |
 | 2024_Das_TimesFM_Decoder_Only_Foundation_Model | 2024 | arXiv preprint arXiv:2310.10688v4 … | TimesFM, PatchTST … | Long_Term_Forecasting | 11 |
 | 2024_DeVilmarest_Adaptive_Probabilistic_Netload | 2024 | IEEE Transactions on Power Systems, … | GAM, Kalman_Filter … | Day_Ahead_Forecasting | 2 |
 | 2024_Feng_LSTM_Transformer_EV_Consumption | 2024 | SSRN Preprint 4747046 (not peer … | LSTM_Transformer, LSTM … | Short_Term_Forecasting | 1 |
-| 2024_He_Robust_MTS_Transitional_Shift | 2024 | arXiv preprint (IEEE journal … | JointPGM | Short_Term_Forecasting | 5 |
+| 2024_He_Robust_MTS_Transitional_Shift | 2024 | arXiv preprint (IEEE journal … | JointPGM | Short_Term_Forecasting | 6 |
 | 2024_Helmy_Autoformer_EV_Charging | 2024 | 2024 6th International Conference on … | Autoformer, LSTM | Long_Term_Forecasting | 1 |
 | 2024_Huo_Data_Driven_EVCS_Demand_Forecasting | 2024 | 2024 IEEE 7th International … | MLP, SVR … | Short_Term_Forecasting | 1 |
 | 2024_Ke_Divide_Conquer_Transformer_EV | 2024 | arXiv preprint (arXiv:2403.13246) | DCT-EV, Transformer … | Short_Term_Forecasting | 1 |
 | 2024_Li_DiffPLF_Conditional_Diffusion_EV | 2024 | 23rd Power Systems Computation … | DiffPLF, DDPM … | Day_Ahead_Forecasting | 2 |
 | 2024_Li_TOU_Price_Meteorology_EV_Charging_Load | 2024 | 2024 7th International Conference on … | CNN, GRU … | Short_Term_Forecasting | 1 |
-| 2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting | 2024 | arXiv preprint (arXiv:2404.15772v3, … | Bi-Mamba+, Mamba_SSM | Long_Term_Forecasting | 5 |
+| 2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting | 2024 | arXiv preprint (arXiv:2404.15772v3, … | Bi-Mamba+, Mamba_SSM | Long_Term_Forecasting | 8 |
 | 2024_Liu_KAN_Kolmogorov_Arnold_Networks | 2024 | arXiv:2404.19756 (accepted at ICLR … | KAN, MLP … | Short_Term_Forecasting | 5 |
-| 2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series | 2024 | ICLR 2024 (Spotlight) | iTransformer, Transformer … | Long_Term_Forecasting | 7 |
+| 2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series | 2024 | ICLR 2024 (Spotlight) | iTransformer, Transformer … | Long_Term_Forecasting | 8 |
 | 2024_Ma_LASSO_BPNN_Mid_Term_EV_Load | 2024 | 2024 IEEE 2nd International … | MLP, XGBoost … | Long_Term_Forecasting | 2 |
-| 2024_Menati_PowerMamba_Power_Systems_SSM | 2024 | IEEE Transactions on Power Systems … | PowerMamba, Mamba_SSM … | Short_Term_Forecasting … | 1 |
-| 2024_Qu_Forwardformer_Day_Ahead_Load | 2024 | IEEE Transactions on Power Systems, … | Transformer, Autoformer … | Day_Ahead_Forecasting | 5 |
+| 2024_Menati_PowerMamba_Power_Systems_SSM | 2024 | arXiv preprint (arXiv:2412.06112), v2 … | PowerMamba, Mamba_SSM … | Short_Term_Forecasting … | 1 |
+| 2024_Qu_Forwardformer_Day_Ahead_Load | 2024 | IEEE Transactions on Power Systems, … | 2024_Qu_Forwardformer_Day_Ahead_Load, … | Day_Ahead_Forecasting | 5 |
 | 2024_Qu_Physics_Informed_GAT_EV_Load | 2024 | IEEE Transactions on Intelligent … | PAG, PIML … | Short_Term_Forecasting | 1 |
 | 2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load | 2024 | IEEE Transactions on Smart Grid, Vol. … | STMGCN, TCN … | Short_Term_Forecasting | 1 |
 | 2024_Shi_Naihao_Prediction_Interval_EV_Loads | 2024 | 2024 56th North American Power … | Gaussian_Process_Regression, … | Short_Term_Forecasting | 2 |
@@ -82,27 +82,21 @@
 | 2023_Cao_Treatment_Effects_Continuous_Time_Hidden_Confounders | 2023 | arXiv preprint arXiv:2302.09446 … | LipSCDE, Neural_SDE … | Short_Term_Forecasting | 3 |
 | 2023_Challu_NHiTS_Neural_Hierarchical_Interpolation | 2023 | AAAI 2023 | NHiTS, NBEATS … | Long_Term_Forecasting | 6 |
 | 2023_Cheng_VMD_Prophet_LSTM | 2023 | Frontiers in Energy Research, Vol. … | VMD, Prophet … | Short_Term_Forecasting | 1 |
-| 2023_Huang_MetaProbformer_EV_Load | 2023 | IEEE Transactions on Intelligent … | MetaProbformer, Reptile … | Short_Term_Forecasting | 4 |
+| 2023_Huang_MetaProbformer_EV_Load | 2023 | IEEE Transactions on Intelligent … | MetaProbformer, MetaProbformer … | Short_Term_Forecasting | 4 |
 | 2023_Koohfar_Transformer_EV_Demand | 2023 | Sustainability 2023, 15(3), 2105 | Transformer, LSTM … | Long_Term_Forecasting | 2 |
-| 2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words | 2023 | ICLR 2023 | PatchTST, Transformer … | Long_Term_Forecasting | 5 |
+| 2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words | 2023 | ICLR 2023 | PatchTST, Transformer … | Long_Term_Forecasting | 8 |
 | 2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion | 2023 | ACM conference proceedings (© 2023 … | DiffSTG, UGnet | Spatial_Temporal_Forec … | 3 |
-| 2023_Wu_TimesNet_Temporal_2D_Variation_Modeling | 2023 | ICLR 2023 | TimesNet, Inception_2D_CNN … | Long_Term_Forecasting | 13 |
+| 2023_Wu_TimesNet_Temporal_2D_Variation_Modeling | 2023 | ICLR 2023 | TimesNet, TimesNet … | Long_Term_Forecasting | 16 |
 | 2023_Xiong_Combined_Deep_Learning_EV_Station_STLF | 2023 | 2023 2nd Asia Power and Electrical … | CNN_LSTM_Transformer_Combined_Model, CNN … | Short_Term_Forecasting | 1 |
-| 2023_Zeng_DLinear_Are_Transformers_Effective_LTSF | 2023 | AAAI 2023 | DLinear, NLinear … | Long_Term_Forecasting | 6 |
-| 2023_Zhang_Crossformer_Cross_Dimension_Dependency | 2023 | ICLR 2023 | Crossformer, DSW_Embedding … | Long_Term_Forecasting | 5 |
+| 2023_Zeng_DLinear_Are_Transformers_Effective_LTSF | 2023 | AAAI 2023 | DLinear, DLinear … | Long_Term_Forecasting | 9 |
+| 2023_Zhang_Crossformer_Cross_Dimension_Dependency | 2023 | ICLR 2023 | Crossformer, DSW_Embedding … | Long_Term_Forecasting | 6 |
 | 2023_Ziyabari_Multi_Branch_ResTrans_Solar | 2023 | IEEE Transactions on Industry … | Multi-Branch ResNet-Transformer (ResTrans), … | Spatial_Temporal_Forec … | 1 |
-| Berrisch_Ziel_CRPS_Learning | 2023 | arXiv preprint (Quantitative Finance … |  |  | 0 |
 | 2022_Cao_Robust_Deep_Gaussian_Process_Load | 2022 | IEEE Transactions on Industrial … | Deep_Gaussian_Process, Sparse_GP … | Day_Ahead_Forecasting | 3 |
 | 2022_Kim_RevIN_Reversible_Instance_Normalization | 2022 | ICLR 2022 | RevIN, Informer … | Long_Term_Forecasting | 5 |
-| 2022_Vilmarest_Goude_State_Space_PostCOVID | 2022 | IEEE Open Access Journal of Power and … |  |  | 0 |
-| 2022_Zhang_GCN_TRN_EV_Availability | 2022 | 2022 5th International Conference on … | GCN-TRN, Transformer … | Spatial_Temporal_Forec … | 1 |
-| Zaffran2022_Adaptive_Conformal | 2022 | ICML 2022; arXiv:2202.07282 |  |  | 0 |
-| 2021_Alvarez_APLF_Adaptive_Probabilistic_Load | 2021 | IEEE Transactions on Power Systems … |  |  | 0 |
-| 2021_Browell_Fasiolo_Regional_Netload | 2021 | IEEE Transactions on Smart Grid … |  |  | 0 |
+| 2022_Zhang_GCN_TRN_EV_Availability | 2022 | 2022 5th International Conference on … | GCN-TRN, GCN … | Spatial_Temporal_Forec … | 1 |
 | 2021_Buzna_Hierarchical_Probabilistic_EV_Load | 2021 | Applied Energy, 283, 116337 | GBRT, QRF … | Short_Term_Forecasting | 3 |
 | 2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load | 2021 | IEEE Transactions on Industrial … | Q-Learning (off-policy RL), ANN … | Short_Term_Forecasting | 1 |
 | 2021_Lim_TFT_Temporal_Fusion_Transformers | 2021 | International Journal of Forecasting, … | Temporal Fusion Transformer, Gated Residual … | Multi_Horizon | 4 |
-| 2021_Obst_Vilmarest_Goude_Kalman_COVID_France | 2021 | IEEE Transactions on Power Systems … |  |  | 0 |
 | 2021_Rasul_TimeGrad_Diffusion_Forecasting | 2021 | ICML 2021 (International Conference … | TimeGrad, Denoising Diffusion Probabilistic … | Short_Term_Forecasting | 6 |
 | 2021_Stankeviciute_Conformal_Time_Series_Forecasting | 2021 | NeurIPS 2021 (35th Conference on … | CF-RNN, Conformal_Prediction … | Short_Term_Forecasting | 4 |
 | 2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting | 2021 | NeurIPS 2021 (35th Conference on … | CSDI, Conditional Score-based Diffusion Model … | Short_Term_Forecasting | 7 |
@@ -112,27 +106,42 @@
 | 2021_Zhou_Informer_Beyond_Efficient_Transformer | 2021 | AAAI 2021 (Best Paper Award) | Informer, ProbSparse Self-Attention … | Long_Term_Forecasting | 3 |
 | 2020_Huang_Ensemble_EV_Load | 2020 | 2020 IEEE Electric Power and Energy … | Ensemble_Stacking, ANN … | Short_Term_Forecasting | 1 |
 | 2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting | 2020 | ICLR 2020 | NBEATS, NBEATS-G … | Long_Term_Forecasting | 5 |
-| 2020_Salinas_DeepAR_Probabilistic_Forecasting | 2020 | International Journal of Forecasting, … | DeepAR, LSTM | Short_Term_Forecasting | 4 |
-| Beltagy2020_Longformer | 2020 | arXiv preprint arXiv:2004.05150 |  |  | 0 |
+| 2020_Salinas_DeepAR_Probabilistic_Forecasting | 2020 | International Journal of Forecasting, … | DeepAR, LSTM | Short_Term_Forecasting | 5 |
 | 2019_Li_LogSparse_Enhancing_Locality_Transformer | 2019 | NeurIPS 2019 (33rd Conference on … | LogSparse_Transformer, … | Short_Term_Forecasting | 6 |
 | 2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets | 2019 | IEEE Transactions on Power Systems, … | Bidirectional LSTM (BLSTM), LSTM … | Day_Ahead_Forecasting | 2 |
-| 2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling | 2019 | IJCAI 2019 (28th International Joint … | Graph_WaveNet | Short_Term_Forecasting | 1 |
+| 2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling | 2019 | IJCAI 2019 (28th International Joint … | Graph_WaveNet | Short_Term_Forecasting | 2 |
 | 2019_Zhu_ApplSci_EV_Load_Forecasting | 2019 | Applied Sciences 2019, 9(9), 1723 … | ANN, RNN … | Short_Term_Forecasting | 1 |
-| 2019_Zhu_EV_Load_Forecasting | 2019 | Energies 2019, 12(14), 2692 (MDPI) | ANN, RNN … | Short_Term_Forecasting | 1 |
-| 2018_Bai_Empirical_TCN_Sequence_Modeling | 2018 | arXiv preprint arXiv:1803.01271 … | TCN, LSTM … | Short_Term_Forecasting | 9 |
-| 2018_Nichol_Reptile_First_Order_Meta_Learning | 2018 | arXiv preprint (OpenAI), … | Reptile, MAML … | Short_Term_Forecasting | 3 |
+| 2019_Zhu_EV_Load_Forecasting | 2019 | Energies 2019, 12(14), 2692 (MDPI) | ANN, RNN … | Short_Term_Forecasting | 2 |
+| 2018_Bai_Empirical_TCN_Sequence_Modeling | 2018 | arXiv preprint arXiv:1803.01271 … | TCN, LSTM … | Short_Term_Forecasting | 10 |
+| 2018_Nichol_Reptile_First_Order_Meta_Learning | 2018 | arXiv preprint (OpenAI), … | Reptile, MAML … | MAML | 3 |
 | 2017_Attention_Is_All_You_Need | 2017 | Advances in Neural Information … | Transformer, Multi_Head_Attention … | Short_Term_Forecasting | 4 |
 | 2017_Finn_MAML_Model_Agnostic_Meta_Learning | 2017 | Proceedings of the 34th International … | MAML, FOMAML … | Short_Term_Forecasting | 6 |
 | 2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load | 2017 | IEEE Transactions on Smart Grid, vol. … | QRA, Quantile_Regression … | Day_Ahead_Forecasting | 1 |
-| Wintenberger2017_BOA | 2017 | Machine Learning 106(1):119-141 |  |  | 0 |
-| Bahdanau2016_LSTMa_Attention | 2016 | ICLR 2015; arXiv:1409.0473 (cited as … |  |  | 0 |
-| Gaillard2016_GEFCOM2014_Aggregation | 2016 | International Journal of Forecasting … |  |  | 0 |
 | 2015_Raza_Review_AI_Load_Demand | 2015 | Renewable and Sustainable Energy … | ANN, MLP … | Short_Term_Forecasting | 8 |
-| 2014_Alizadeh_Scalable_Stochastic_EV_Demand | 2014 | IEEE Transactions on Smart Grid, … | Queuing_Model, Factor_Model … | Short_Term_Forecasting | 2 |
-| 2014_Kingma_Adam_Stochastic_Optimization | 2014 | ICLR 2015 (arXiv:1412.6980) | Adam, SGD … | Short_Term_Forecasting | 4 |
+| 2014_Alizadeh_Scalable_Stochastic_EV_Demand | 2014 | IEEE Transactions on Smart Grid, … | Queuing_Model, Queuing_Model … | Short_Term_Forecasting | 2 |
+| 2014_Kingma_Adam_Stochastic_Optimization | 2014 | ICLR 2015 (arXiv:1412.6980) | Adam, Adam … | Short_Term_Forecasting | 4 |
 | 2013_Roberts_Gaussian_Processes_Time_Series | 2013 | Philosophical Transactions of the … | Gaussian_Process, … | Short_Term_Forecasting | 4 |
 | 2001_Hippert_Neural_Networks_STLF_Review | 2001 | IEEE Transactions on Power Systems, … | MLP, ANN … | Day_Ahead_Forecasting | 4 |
 | 1997_Hochreiter_Long_Short_Term_Memory | 1997 | Neural Computation, 9(8), 1735-1780 | LSTM, RNN … | Long_Term_Forecasting | 5 |
+| 2014_Adam_A_Method_for_Stochastic_Optimization | ???? |  |  |  | 0 |
+| 2014_Adam_Adam_Stochastic_Optimization | ???? |  |  |  | 0 |
+| 2019_Electric_Vehicle_Charging_Load_Forecasting_A_Comparative_Study_of_Deep_Learning_Approaches | ???? |  |  |  | 0 |
+| 2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches | ???? |  |  |  | 0 |
+| 2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations | ???? |  |  |  | 0 |
+| 2021_Alvarez_APLF_Adaptive_Probabilistic_Load | ???? |  |  |  | 0 |
+| 2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations | ???? |  |  |  | 0 |
+| 2021_Browell_Fasiolo_Regional_Netload | ???? |  |  |  | 0 |
+| 2021_Day_Ahead_Forecast_of_Electric_Vehicle_Charging_Demand_with_Deep_Neural_Networks | ???? |  |  |  | 0 |
+| 2021_Obst_Vilmarest_Goude_Kalman_COVID_France | ???? |  |  |  | 0 |
+| 2022_Vilmarest_Goude_State_Space_PostCOVID | ???? |  |  |  | 0 |
+| 2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach | ???? |  |  |  | 0 |
+| 2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction | ???? |  |  |  | 0 |
+| Bahdanau2016_LSTMa_Attention | ???? |  |  |  | 0 |
+| Beltagy2020_Longformer | ???? |  |  |  | 0 |
+| Berrisch_Ziel_CRPS_Learning | ???? |  |  |  | 0 |
+| Gaillard2016_GEFCOM2014_Aggregation | ???? |  |  |  | 0 |
+| Wintenberger2017_BOA | ???? |  |  |  | 0 |
+| Zaffran2022_Adaptive_Conformal | ???? |  |  |  | 0 |
 
 ---
 ## 📄 Entries
@@ -164,11 +173,11 @@ Bouaachra et al. · arXiv preprint (arXiv:2604.19841) · 2026
 **When Mamba Meets KAN: A Hybrid Learning Network for Electric Vehicle Charging Demand Prediction**  
 Hao et al. · ICASSP 2026 (IEEE International Conference on Acoustics, Speech and Signal Processing), … · 2026
 <https://doi.org/10.1109/ICASSP55912.2026.11461366>
-**Models**: HyKANet, Mamba_SSM, KAN, PAG, FourierGNN, AST-GAT, DCRNN, STGCN  
+**Models**: HyKANet, Mamba_SSM, Mamba_SSM, KAN, PAG, FourierGNN, AST-GAT, DCRNN, STGCN  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: RMSE, MAE, MAPE, RAE  
 **Data**: Real_World_EV_DC_Charging  
-**Features**: Historical_Load, Weather, Calendar_Features, Electricity_Tariff, Adjacency_Matrix
+**Features**: Historical_Demand, Weather, Calendar_Features, Electricity_Tariff, Adjacency_Matrix
 
 - **What they did:**
   - EV charging demand forecasting must jointly capture (i) local + global spatial dependencies between stations, (ii) multi-scale temporal dynamics, and (iii) heterogeneous contextual signals (weather, calendar, pricing). Prior work either ignores spatial structure (LSTM with weather/calendar [4]), relies on static graphs (ASTGCN [6]), or underuses recent physics-informed graph learning and Transformer spatiotemporal …
@@ -210,9 +219,9 @@ Hong et al. · arXiv preprint (arXiv:2602.21415) · 2026
 **Forecast-Enhanced Lyapunov Optimization for Real-Time EV Charging Scheduling**  
 Huang et al. · arXiv preprint arXiv:2604.16873 [math.OC] · 2026
 <https://arxiv.org/abs/2604.16873>
-**Models**: Forecast-Enhanced Lyapunov Optimization, RHC, Queuing_Model, Linear_Programming  
+**Models**: Forecast-Enhanced Lyapunov Optimization, RHC, Queuing_Model, Linear_Programming, MPC (benchmark)  
 **Horizon**: Short_Term_Forecasting  
-**Metrics**: Total_Cost, Unit_Cost_USD_per_kWh, Maximum_Charging_Delay, Optimality_Gap, Computation_Time  
+**Metrics**: Total_Cost, Unit_Cost_USD_per_kWh, Maximum_Charging_Delay, Optimality_Gap, Computational_Time  
 **Data**: Shanghai_EV_Arrival_Data; CAISO  
 **Features**: EV_Arrival_Rate, Electricity_Tariff, Arrival_Departure_Time, EV_Charging_Demand, Charging_Power
 
@@ -241,7 +250,7 @@ Jia et al. · World Electric Vehicle Journal (MDPI), Vol. 17 · 2026
 **Horizon**: Spatial_Temporal_Forecasting  
 **Metrics**: RMSE, MAE, MAPE  
 **Data**: ST-EVCDP  
-**Features**: EV_Charging_Demand, Charging_Duration, Pile_Utilization_Rate, Pricing_Mechanism (fixed/dynamic), Regional_Functional_Type (residential/commercial/industrial), Charging_Pile_Density, Temperature, Time_of_Day, Spatio_Temporal_Embedding
+**Features**: Charging_Demand, Charging_Duration, Pile_Utilization_Rate, Pricing_Mechanism (fixed/dynamic), Regional_Functional_Type (residential/commercial/industrial), Charging_Pile_Density, Temperature, Time_of_Day, Spatio_Temporal_Embedding
 
 - **What they did:**
   - Citywide EV charging demand forecasting suffers from (i) quadratic self-attention cost in long-sequence temporal modeling, (ii) quadratic spatial attention cost w.r.t. number of stations $N$, and (iii) tightly coupled architectures lacking modular flexibility.
@@ -298,7 +307,7 @@ Kyriakopoulos et al. · arXiv preprint arXiv:2512.17257 [cs.LG] (v2, 31 Mar 2026
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, RMSE  
 **Data**: Palo_Alto_EV; Boulder_Colorado; Dundee_EV; Perth_EV  
-**Features**: Historical_Load, Calendar_Features, Holiday_Flag, Station_ID_One_Hot, Region_ID_One_Hot
+**Features**: Historical_Load, Calendar_Features, Holiday_Indicator, Calendar_Features, Calendar_Features, Calendar_Features, Station_ID_One_Hot, Region_ID_One_Hot
 
 - **What they did:**
   - A systematic, reproducible experimental benchmark — not a new model — comparing five forecasting families (**ARIMA**, **XGBoost**, **GRU**, **LSTM**, **Transformer**) for EV charging energy consumption (kWh) across:
@@ -319,9 +328,9 @@ Kyriakopoulos et al. · arXiv preprint arXiv:2512.17257 [cs.LG] (v2, 31 Mar 2026
 
 ### 2026_Lahoti_Mamba_3_Sequence_Modeling
 **Mamba-3: Improved Sequence Modeling using State Space Principles**  
-Lahoti et al. · ICLR 2026; arXiv:2603.15569 (CMU / Princeton / Together AI / Cartesia AI) · 2026
+Lahoti et al. · arXiv preprint (arXiv:2603.15569); CMU / Princeton / Together AI / Cartesia AI · 2026
 <https://arxiv.org/abs/2603.15569>
-**Models**: Mamba-3, Mamba_SSM, Gated_DeltaNet, Transformer, S4  
+**Models**: Mamba-3, Mamba_SSM, Mamba_SSM, Gated_DeltaNet, Transformer, S4  
 **Metrics**: Perplexity, Accuracy, Decode_Latency, Arithmetic_Intensity  
 **Data**: FineWeb-Edu; LAMBADA; HellaSwag; PIQA; ARC; WinoGrande; OpenBookQA; RULER_NIAH  
 **Features**: Text_Tokens
@@ -367,33 +376,6 @@ Liu et al. · Scientific Reports (Nature Portfolio), vol. 16, art. 8609 · 2026
   - Authors' future work: incorporate battery-related factors (charging/discharging influenced by battery characteristics) to further improve accuracy.
   - Baselines limited to classic RNN/Transformer family; no comparison against modern SSM/Mamba or specialized long-horizon forecasters.
 
-### 2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load
-**Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model**  
-Mansour et al. · Scientific Reports 16(1):374 · 2026
-<https://doi.org/10.1038/s41598-025-29739-z>
-**Models**: XGBoost, BiLSTM, LightGBM, Ensemble_Stacking, CNN, TCN, Transformer, SARIMAX, Prophet  
-**Horizon**: Short_Term_Forecasting  
-**Metrics**: MAE, MSE, RMSE, R_squared  
-**Data**: Caltech_ACN; Synthetic_Cross_Site_EVCS_Dataset  
-**Features**: kWhDelivered, Charging_Duration, Arrival_Departure_Time, Calendar_Features, Lag_Features, Rolling_Mean_Features, Holiday_Flag
-
-- **What they did:**
-  - Short-term, hourly, **station-level** EV charging load forecasting of session energy delivered (kWhDelivered) for energy management and grid stability.
-  - Contributions:
-  - **Hybrid 3**: a hybrid XGBoost–BiLSTM **stacking ensemble** with an XGBoost meta-learner that learns optimal nonlinear combinations of base-learner predictions.
-  - Comprehensive benchmarking against **24 baseline models** spanning statistical (Persistence, Seasonal Naïve, SARIMAX, Prophet), ML (XGBoost, LightGBM), DL (CNN, TCN, Transformer, BiLSTM), and ensemble families (boosting/bagging/stacking/weighted), plus two alternative hybrids (Hybrid 1 feature concatenation; Hybrid 2 sequential prediction fusion).
-  - Five-fold walk-forward validation, one-way ANOVA significance testing, component-wise ablation, and cross-site external validation on a synthetic ~1.96M-session dataset.
-- **Method core:** **Hybrid 3 pipeline**: (1) optimized XGBoost base regressor (Optuna-tuned n_estimators/max_depth/learning_rate) trained on scaled features; (2) BiLSTM with three bidirectional LSTM layers (128, 64, 64 units), L2 = 0.0001, dropout = 0.07, learning rate 0.0005 (AdamW), batch size 128, on 3D reshaped input; (3) their predictions stacked column-wise into meta-feature matrices; (4) …
-- **Key results:**
-  - **Cleaned data test set (Table 7)**: Hybrid 3 **MAE 2.6870 kWh / RMSE 3.9825 kWh / R² 0.6395** — 3.4% better than standalone BiLSTM (MAE 2.7816, R² 0.5950), ranked 4th overall. Best model: Boosting (XGBoost+BiLSTM+LightGBM) MAE 2.6432 / R² 0.6437; Weighted Blending/Sum (XGB+BiLSTM+LGBM) 2.6438 / R² 0.6445; LightGBM …
-  - **Original (outlier-retained) data (Table 8)**: Hybrid 3 led by test MAE **3.5431 kWh / RMSE 5.9546 / R² 0.5285**, showing robustness to noise; TCN unstable (train MAE 3246 kWh).
-  - **Walk-forward validation (5 folds)**: Hybrid 3 lowest mean **MAE 2.5351 kWh (SD 1.2885)** and highest mean **R² 0.6289**, but high variability (CV 0.5082); best fold MAE 1.27 kWh / R² 0.91. XGBoost (mean MAE 3.0963, CV 0.1080) and LightGBM (3.1581, CV 0.1226) more stable → preferable for real-time deployment.
-- **Gaps/Limitations:**
-  - Single real site (ACN-Caltech) training limits geographic/operational generalization — demonstrated by weak zero-shot cross-site transfer (R² ≈ 0.01); domain adaptation or retraining needed.
-  - Heavy reliance on accurate charging-duration data, which may be unavailable for long-horizon forecasts; temporal features are overshadowed, so time-of-use/grid-event-driven variation is poorly captured.
-  - High walk-forward CV (0.51) indicates sensitivity to temporal drift → periodic (e.g., monthly) retraining advised.
-  - Future work: incorporate weather/electricity prices/demand-response events; reinforcement-learning-based forecast-to-control; adaptive ensemble weighting; lightweight hybrids; enhanced SHAP/attention explainability.
-
 ### 2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load
 **Forecasting EV charging load with a temporal fusion transformer: A multi-horizon and interpretable approach with environmental features**  
 Dost et al. · Computers and Electrical Engineering, Vol. 135, Art. 111201 (Elsevier) · 2026
@@ -402,7 +384,7 @@ Dost et al. · Computers and Electrical Engineering, Vol. 135, Art. 111201 (Else
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: RMSE, MAE, MSE, MAPE, SMAPE, R_squared, Pinball_Loss, PICP, MPIW, NPIW  
 **Data**: Palo_Alto_EV; Weather  
-**Features**: Temperature, Precipitation, Solar_Radiation, Calendar_Features, Cyclical_Encodings, Historical_Load, Rolling_Energy_Aggregates, Session-Level_Statistics, Charging_Efficiency_Metrics, Charging_Fee_Statistics
+**Features**: Temperature, Precipitation, Solar_Radiation, Calendar_Features, Calendar_Features, Calendar_Features, Calendar_Features, Cyclical_Encodings, Historical_Load, Rolling_Energy_Aggregates, Session-Level_Statistics, Charging_Efficiency_Metrics, …
 
 - **What they did:**
   - Develop a unified, interpretable, probabilistic framework for EV charging load forecasting using the Temporal_Fusion_Transformer (TFT), providing **native multi-horizon** predictions at two timescales — **hourly (1–24 h ahead)** and **daily (1–7 days ahead)** — enriched with environmental covariates and calibrated by conformal prediction. Four identified research gaps motivate the work:
@@ -428,7 +410,7 @@ Romia et al. · IEEE Transactions on Industry Applications · 2026
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: RMSE, MAE, R_squared  
 **Data**: Caltech_ACN; Weather  
-**Features**: Historical_Load, Temperature, Humidity, Calendar_Features
+**Features**: Historical_Load, Temperature, Humidity, Calendar_Features, Calendar_Features
 
 - **What they did:**
   - DC fast-charging (DCFC) station loads are far more volatile than AC Level-2 loads; prior work targets single-step forecasts, coarse resolutions, aggregated regional loads, and ignores exogenous drivers (weather, day-type). Statistical models (SARIMA) miss nonlinearity; ML methods (SVR, LR, XGBoost/CatBoost) treat time steps independently; plain DL (LSTM, GRU, CNN) struggles with long-range dependencies at station …
@@ -450,7 +432,7 @@ Singh et al. · Applied Soft Computing · 2026
 <https://doi.org/10.1016/j.asoc.2026.115869>
 **Models**: MAML-Informer, Informer, MAML, Transformer, LSTM, SVR, Reptile, LSTM-Informer, LSTM_Transformer  
 **Horizon**: Short_Term_Forecasting  
-**Metrics**: RMSE, MAE, MSE, CRPS, PICP, MPIW, Pinball_Loss, Winkler_Score  
+**Metrics**: RMSE, MAE, MSE, CRPS, PICP, MPIW, Pinball_Loss, Winkler_Score, Pinball_Loss  
 **Data**: Caltech_ACN; Boulder_Colorado; Palo_Alto_EV  
 **Features**: Historical_Load, Weather_Features, Calendar_Features, Token_Embeddings, ProbSparse_Attention
 
@@ -476,7 +458,7 @@ Tang et al. · Electronics (MDPI), vol. 15, art. 2380 · 2026
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: RMSE, Hausdorff_Distance, Polytope_Feasibility, Inference_Latency  
 **Data**: Caltech_ACN; ACN-Sim; ElaadNL; NREL_dsgrid_TEMPO; NHTS_2009  
-**Features**: State_of_Charge, Charging_Power, Arrival_Departure_Time, Energy_Requirement, Battery_Capacity, Pilot_Signal
+**Features**: State_of_Charge, Charging_Power, Arrival_Departure_Time, Arrival_Departure_Time, Energy_Requirement, Battery_Capacity, Pilot_Signal
 
 - **What they did:**
   - Real-time EMS for large EV clusters needs both fast aggregate flexibility estimation and executable per-vehicle dispatch. Exact Minkowski-sum aggregation of per-vehicle feasibility polytopes scales super-polynomially in $N$; LP/MILP/MPC solve times explode online; learning-based aggregators treat constraints as soft penalties (3–15% session violations observed).
@@ -525,7 +507,7 @@ Wang et al. · Journal of Energy Storage · 2026
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, MAPE  
 **Data**: Perth_EV; Dundee_EV; Hong_Kong_EV_Charging_Dataset; Palo_Alto_EV; Boulder_Colorado  
-**Features**: Historical_Load, Lag_Features, EV_Charging_Demand
+**Features**: Historical_Load, Sliding_Window_Lags, EV_Charging_Demand
 
 - **What they did:**
   - **Objective:** Benchmark six popular ML methods (three traditional ML + three deep learning) for **station-level, 1-hour-ahead** EV_Charging_Demand prediction across **12 real-world cities** in China, the UK and the USA, and examine their **geographical transferability** (can a model trained on city A predict city B with little/no local data?).
@@ -569,11 +551,11 @@ Wang et al. · Pattern Recognition Letters, Vol. 206, pp. 8–14 (Elsevier) · 2
 **A similar day selection framework with heterogeneous feature integration for electric vehicle charging load forecasting**  
 Wang et al. · Applied Energy · 2026
 <https://doi.org/10.1016/j.apenergy.2026.127731>
-**Models**: XGBoost, NSGA-II, Random_Forest, SVR, LSTM, LightGBM, ShapeDTW, Multi_Dimensional_DTW  
+**Models**: XGBoost, NSGA-II, Random_Forest, SVR, LSTM, LightGBM, ShapeDTW, Multi_Dimensional_DTW, Adjacency_Matrix  
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: MAE, RMSE, Precision, Recall, F1_Score, AUC  
 **Data**: UrbanEV_Dataset  
-**Features**: Historical_Load, Temperature, Air_Pressure, Sea_Level_Pressure, Humidity, Rainfall_Intensity, Dew_Point, Calendar_Features, Holiday_Flag, POI_Functional_Entropy
+**Features**: Historical_Load, Temperature, Air_Pressure, Sea_Level_Pressure, Humidity, Rainfall_Intensity, Dew_Point, Calendar_Features, Holiday_Flag, Holiday_Flag, POI_Functional_Entropy
 
 - **What they did:**
   - Improve Day_Ahead_Forecasting EV charging load forecasting by optimizing the **training-data structure** rather than the forecaster itself: select a set of historical "similar days" whose load patterns match the target day, then feed them into standard forecasting models. Key contributions: 1. **Hybrid similarity engine** combining ShapeDTW (load curves), Multi_Dimensional_DTW (weather vectors), and MAD (contextual …
@@ -720,13 +702,13 @@ Bao et al. · IEEE Transactions on Neural Networks and Learning Systems, vol. 36
 
 ### 2025_Fan_EV_STLLM_Spatio_Temporal_LLM
 **EV-STLLM: Electric vehicle charging forecasting based on spatio-temporal large language models with multi-frequency and multi-scale information fusion**  
-Fan et al. · Expert Systems with Applications, vol. 313, art. 131620 (2026); preprint arXiv:2507.09527 · 2025
+Fan et al. · arXiv preprint (arXiv:2507.09527), preprint submitted to Elsevier · 2025
 <https://doi.org/10.48550/arXiv.2507.09527>
 **Models**: EV-STLLM, GPT-2, PFGA, QLoRA, VMD, ICEEMDAN, FIG, ReliefF, GCN, LSTM  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: RMSE, MAE, MAPE  
 **Data**: UrbanEV_Dataset; Shenzhen_ST_EVCDP  
-**Features**: Charging_Volume, Station_Occupancy, Holiday_Flag, Adjacency_Matrix, Spatio_Temporal_Frequency_Embeddings, Electricity_Tariff, Weather
+**Features**: Charging_Volume, Station_Occupancy, Holiday_Indicator, Adjacency_Matrix, Spatio_Temporal_Frequency_Embeddings, Electricity_Tariff, Weather
 
 - **What they did:**
   - Forecast EV **charging volume (kWh)** and **station occupancy rate (%)** across a spatial network of charging stations, capturing complex spatio-temporal dependencies and multi-frequency/multi-scale dynamics that small-parameter models cannot learn from large datasets.
@@ -794,7 +776,7 @@ Han et al. · Processes · 2025
 **Short term demand forecasting of electric vehicle charging stations using context aware temporal transformer model**  
 Hussain et al. · Scientific Reports, Vol. 15, Article 36652 · 2025
 <https://doi.org/10.1038/s41598-025-20557-x>
-**Models**: CAT-Former (Context-Aware Temporal Transformer), Transformer, Multi_Head_Attention, LSTM, BiLSTM, CNN_LSTM, Hybrid Transformer (LSTM Encoder-Decoder)  
+**Models**: CAT-Former (Context-Aware Temporal Transformer), Transformer, Multi_Head_Attention, LSTM, BiLSTM, CNN_LSTM, BiLSTM, Hybrid Transformer (LSTM Encoder-Decoder)  
 **Horizon**: 1-Hour Ahead and 1-Day Ahead  
 **Metrics**: MSE, MAE  
 **Data**: Boulder_Colorado; Weather  
@@ -824,7 +806,7 @@ Hussain et al. · Scientific Reports (Nature Portfolio), vol. 15, art. 36639 · 
 **Models**: LSTM, Transformer, Hybrid LSTM-Transformer  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MAE, MSE  
-**Data**: Caltech_ACN  
+**Data**: Caltech_ACN; Caltech_ACN; Caltech_ACN  
 **Features**: Historical_EV_Charging_Energy, Lookback_Window
 
 - **What they did:**
@@ -848,11 +830,11 @@ Hussain et al. · Scientific Reports (Nature Portfolio), vol. 15, art. 36639 · 
 **Enhanced Transformer-BiLSTM Deep Learning Framework for Day-Ahead Energy Price Forecasting**  
 Khan et al. · IEEE Transactions on Industry Applications, vol. 62, no. 2, pp. 1933-1947 (Mar/Apr 2026 … · 2025
 <https://doi.org/10.1109/TIA.2025.3599812>
-**Models**: Transformer_BiLSTM, Transformer, BiLSTM, XGBoost, GRU, CNN, CNN_LSTM, LSTM  
+**Models**: Transformer_BiLSTM, Transformer, BiLSTM, XGBoost, GRU, CNN, CNN_LSTM, BiLSTM, LSTM  
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: MAE, RMSE, MAPE, sMAPE, R_squared  
 **Data**: NYISO; PJM_Energy_Market_Dataset; MISO_Market_Dataset  
-**Features**: Historical_Zonal_Price, Lag_Features, Positional_Encoding
+**Features**: Historical_Zonal_Price, Sliding_Window_Lags, Positional_Encoding
 
 - **What they did:**
   - Hybrid deep learning framework for **day-ahead electricity price forecasting (DA EPF)** to support strategic bidding by market participants, generation companies, and network operators — relevant for EV aggregators in deregulated DA markets.
@@ -880,7 +862,7 @@ Li et al. · Nature Communications 16:10921 · 2025
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, Relative_Accuracy, Pinball_Loss, MSE  
 **Data**: NW_Europe_DCFC_Dataset; Weather  
-**Features**: Charging_Power, State_of_Charge, State_of_Charge, Temperature, Connector_Power_Rating, Connector_Type, Estimated_Battery_Capacity
+**Features**: Charging_Power, Battery_SOC, State_of_Charge, Temperature, Connector_Power_Rating, Connector_Type, Estimated_Battery_Capacity
 
 - **What they did:**
   - Predict real-world EV DCFC (direct current fast charging) power–SoC charging profiles and charging **durations** from as little as a **single data point**, updating predictions in real time (event-driven) as new SoC readings arrive.
@@ -1108,7 +1090,7 @@ Zheng et al. · IEEE Transactions on Industry Applications, vol. 61, no. 1, pp. 
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: MAE, RMSE, MASE, Pinball_Loss, Winkler_Score, Energy_Score  
 **Data**: Caltech_ACN  
-**Features**: EV_Charging_Demand, Temperature, Dew_Point, Precipitation, Calendar_Features, Holiday_Flag
+**Features**: EV_Charging_Demand, Temperature, Dew_Point, Precipitation, Calendar_Features, Holiday_Indicator, Calendar_Features
 
 - **What they did:**
   - **Problem**: EV charging station (EVCS) operators manage multiple geographically distributed stations hierarchically; probabilistic forecasting across stations must handle (1) strong stochasticity of user behavior without parametric distribution assumptions, (2) **quantile crossing** in classical quantile regression, and (3) **hierarchical incoherency** — individual station forecasts don't sum to the operator total.
@@ -1133,7 +1115,7 @@ Zhou et al. · arXiv preprint (submitted to Elsevier), arXiv:2505.06657 [eess.SY
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MAE, MSE  
 **Data**: Boulder_Colorado  
-**Features**: Historical_Load, Calendar_Features, Charging_Session_Logs
+**Features**: Historical_Load, Calendar_Features, Charging_Session_Logs, Calendar_Features
 
 - **What they did:**
   - Address EV charging station load forecasting when (a) long-sequence temporal dependencies (daily/weekly/seasonal cycles spanning hundreds–thousands of steps) must be captured, and (b) historical data are scarce because the station is newly constructed. Contributions: 1. **MIK hybrid architecture**: integrates an MLP-**Mi**xer module (multi-source feature fusion across temporal and channel dimensions), an …
@@ -1153,7 +1135,7 @@ Zhou et al. · arXiv preprint (submitted to Elsevier), arXiv:2505.06657 [eess.SY
 **Personalized federated learning for household electricity load prediction with imbalanced historical data**  
 Zhu et al. · Applied Energy · 2025
 <https://doi.org/10.1016/j.apenergy.2025.125419>
-**Models**: PF-HoLo, LSTM, Encoder_Decoder, FedAvg, Federated_Mutual_Learning  
+**Models**: PF-HoLo, LSTM, Encoder_Decoder, FedAvg, FedAvg, Federated_Mutual_Learning  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MSE, MAE, R_squared  
 **Data**: REFIT  
@@ -1173,14 +1155,41 @@ Zhu et al. · Applied Energy · 2025
   - Planned systematic comparison of household-level vs appliance-level prediction trade-offs.
   - Framework validated only on household loads (not EV charging stations), but the imbalanced non-IID personalization recipe transfers directly to heterogeneous-charger federated EV forecasting.
 
+### 2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load
+**Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model**  
+Mansour et al. · Scientific Reports 16:374 · 2025
+<https://doi.org/10.1038/s41598-025-29739-z>
+**Models**: XGBoost, BiLSTM, LightGBM, Ensemble_Stacking, CNN, TCN, Transformer, SARIMAX, Prophet  
+**Horizon**: Short_Term_Forecasting  
+**Metrics**: MAE, MSE, RMSE, R_squared  
+**Data**: Caltech_ACN; Synthetic_Cross_Site_EVCS_Dataset  
+**Features**: kWhDelivered, Charging_Duration, Arrival_Departure_Time, Calendar_Features, Calendar_Features, Lag_Features, Rolling_Mean_Features, Holiday_Indicator
+
+- **What they did:**
+  - Short-term, hourly, **station-level** EV charging load forecasting of session energy delivered (kWhDelivered) for energy management and grid stability.
+  - Contributions:
+  - **Hybrid 3**: a hybrid XGBoost–BiLSTM **stacking ensemble** with an XGBoost meta-learner that learns optimal nonlinear combinations of base-learner predictions.
+  - Comprehensive benchmarking against **24 baseline models** spanning statistical (Persistence, Seasonal Naïve, SARIMAX, Prophet), ML (XGBoost, LightGBM), DL (CNN, TCN, Transformer, BiLSTM), and ensemble families (boosting/bagging/stacking/weighted), plus two alternative hybrids (Hybrid 1 feature concatenation; Hybrid 2 sequential prediction fusion).
+  - Five-fold walk-forward validation, one-way ANOVA significance testing, component-wise ablation, and cross-site external validation on a synthetic ~1.96M-session dataset.
+- **Method core:** **Hybrid 3 pipeline**: (1) optimized XGBoost base regressor (Optuna-tuned n_estimators/max_depth/learning_rate) trained on scaled features; (2) BiLSTM with three bidirectional LSTM layers (128, 64, 64 units), L2 = 0.0001, dropout = 0.07, learning rate 0.0005 (AdamW), batch size 128, on 3D reshaped input; (3) their predictions stacked column-wise into meta-feature matrices; (4) …
+- **Key results:**
+  - **Cleaned data test set (Table 7)**: Hybrid 3 **MAE 2.6870 kWh / RMSE 3.9825 kWh / R² 0.6395** — 3.4% better than standalone BiLSTM (MAE 2.7816, R² 0.5950), ranked 4th overall. Best model: Boosting (XGBoost+BiLSTM+LightGBM) MAE 2.6432 / R² 0.6437; Weighted Blending/Sum (XGB+BiLSTM+LGBM) 2.6438 / R² 0.6445; LightGBM …
+  - **Original (outlier-retained) data (Table 8)**: Hybrid 3 led by test MAE **3.5431 kWh / RMSE 5.9546 / R² 0.5285**, showing robustness to noise; TCN unstable (train MAE 3246 kWh).
+  - **Walk-forward validation (5 folds)**: Hybrid 3 lowest mean **MAE 2.5351 kWh (SD 1.2885)** and highest mean **R² 0.6289**, but high variability (CV 0.5082); best fold MAE 1.27 kWh / R² 0.91. XGBoost (mean MAE 3.0963, CV 0.1080) and LightGBM (3.1581, CV 0.1226) more stable → preferable for real-time deployment.
+- **Gaps/Limitations:**
+  - Single real site (ACN-Caltech) training limits geographic/operational generalization — demonstrated by weak zero-shot cross-site transfer (R² ≈ 0.01); domain adaptation or retraining needed.
+  - Heavy reliance on accurate charging-duration data, which may be unavailable for long-horizon forecasts; temporal features are overshadowed, so time-of-use/grid-event-driven variation is poorly captured.
+  - High walk-forward CV (0.51) indicates sensitivity to temporal drift → periodic (e.g., monthly) retraining advised.
+  - Future work: incorporate weather/electricity prices/demand-response events; reinforcement-learning-based forecast-to-control; adaptive ensemble weighting; lightweight hybrids; enhanced SHAP/attention explainability.
+
 ### 2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting
 **TimeMachine: A Time Series is Worth 4 Mambas for Long-term Forecasting**  
 Ahamed et al. · arXiv preprint (arXiv:2403.09898v2, cs.LG, 22 Aug 2024), University of Kentucky · 2024
 <https://doi.org/10.48550/arXiv.2403.09898>
-**Models**: Mamba_SSM  
+**Models**: 2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting, Mamba_SSM  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE  
-**Data**: Weather_Dataset; Traffic; Electricity_ECL; ETT  
+**Data**: Weather_Dataset; Traffic; Electricity_ECL; ETT; ETT; ETT; ETT  
 **Features**: Historical_Load
 
 - **What they did:**
@@ -1285,7 +1294,7 @@ Das et al. · arXiv:2304.08424v5 [stat.ML] (Google Research / Google Cloud / UC 
 **Models**: TiDE, DLinear, PatchTST, NHiTS, DeepAR, S4, FEDformer, Autoformer, Informer, Pyraformer, LogTrans, LSTM  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE, WRMSSE  
-**Data**: Electricity_ECL; Traffic; Weather_Dataset; ETT; M5_Dataset; Synthetic LDS Dataset  
+**Data**: Electricity_ECL; Traffic; Weather_Dataset; ETT; ETT; ETT; ETT; M5_Dataset; Synthetic LDS Dataset  
 **Features**: Lookback_Window, Dynamic_Covariates, Static_Attributes, Time_Derived_Features
 
 - **What they did:**
@@ -1339,7 +1348,7 @@ Vilmarest et al. · IEEE Transactions on Power Systems, Vol. 39, No. 2, pp. 4154
 <https://doi.org/10.1109/TPWRS.2023.3310280>
 **Models**: GAM, Kalman_Filter, Quantile_Regression, Online_Gradient_Descent, Bernstein_Online_Aggregation  
 **Horizon**: Day_Ahead_Forecasting  
-**Metrics**: RMSE, MAE, nRMSE, nMAE, RPS, Pinball_Loss, CRPS  
+**Metrics**: RMSE, MAE, nRMSE, nMAE, RPS, RPS, Pinball_Loss, CRPS  
 **Data**: GB_Regional_Netload; US_City_Daily_Load_COVID  
 **Features**: Historical_Load, Temperature_Forecast, Solar_Radiation, Wind_Speed, Embedded_Generation_Capacity, Calendar_Features, Holiday_Flag, Precipitation, Humidity, Time_of_Year
 
@@ -1365,10 +1374,10 @@ Feng et al. · SSRN Preprint 4747046 (not peer reviewed) · 2024
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAPE, MAE, RMSE  
 **Data**: GBT_32960_Telemetry_Dataset  
-**Features**: State_of_Charge, Vehicle_Speed_Features, Acceleration_Ratios, Wind_Speed, Temperature, Visibility, Driver_Style, Driving_Condition_Clusters, Cruise_Time_Ratio
+**Features**: Battery_SOC, Vehicle_Speed_Features, Acceleration_Ratios, Wind_Speed, Temperature, Visibility, Driver_Style, Driving_Condition_Clusters, Cruise_Time_Ratio
 
 - **What they did:**
-  - Mitigate driver **range anxiety** via accurate real-time EV battery State_of_Charge / energy consumption prediction, integrating vehicle, environmental, **driver style**, and **driving condition** factors.
+  - Mitigate driver **range anxiety** via accurate real-time EV battery Battery_SOC / energy consumption prediction, integrating vehicle, environmental, **driver style**, and **driving condition** factors.
   - Contributions: 1. **LSTM_Transformer hybrid framework** — LSTM layer extracts short-term temporal dependencies; Transformer encoder layers capture long-range dependencies; linear output head. 2. Comprehensive energy-consumption factor framework (18 features) with special emphasis on individual driving styles and driving-condition recognition via KMeans_Clustering. 3. Novel **long-distance prediction strategy built …
 - **Method core:** Vehicle factors (**Eq. 1**): $V = (x_1, x_2, x_3 \cdots x_{15})$ — average speed, speed range/std-dev, mean squared speed, average acceleration, accumulated/segment mileage, acceleration/deceleration/constant-speed segment ratios, low-/medium-/high-speed ratios, accel-decel switching frequency, cruise time ratio. Environmental factors (**Eq. 2**): $T = (x_{16}, x_{17}, …
 - **Key results:**
@@ -1389,7 +1398,7 @@ He et al. · arXiv preprint (IEEE journal template, Journal of LaTeX Class Files
 **Models**: JointPGM  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, MSE  
-**Data**: Exchange; ETT; Electricity_ECL; Traffic; ILI  
+**Data**: Exchange; ETT; ETT; Electricity_ECL; Traffic; ILI  
 **Features**: Multivariate_Time_Series, Temporal_Order_Features
 
 - **What they did:**
@@ -1409,7 +1418,7 @@ He et al. · arXiv preprint (IEEE journal template, Journal of LaTeX Class Files
   - Slightly inferior MAE vs. MSE-only-trained baselines due to dual reconstruction+prediction MSE losses (bias of objective function).
   - Sensitive to trade-off parameter α (violent fluctuation when α < 0.6); requires tuning.
   - Multi-hop propagation suffers over-smoothing for larger depth K.
-  - Evaluated only on generic non-stationary benchmarks (Exchange, ETT, Electricity, METR-LA, ILI) — no direct evaluation on EV charging station load, though electricity consumption planning is listed among motivating applications.
+  - Evaluated only on generic non-stationary benchmarks (exchange, transformers, traffic, electricity, ILI) — no direct evaluation on EV charging station load, though electricity consumption planning is listed among motivating applications.
   - Research gap for thesis: probabilistic/fine-grained transitional-shift decomposition could be applied to non-stationary EV charging loads where intra-station dynamics and inter-station spatial correlation both shift.
 
 ### 2024_Helmy_Autoformer_EV_Charging
@@ -1420,7 +1429,7 @@ Helmy et al. · 2024 6th International Conference on Communications, Signal Proc
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: RMSE, MAE, MAPE  
 **Data**: Boulder_Colorado  
-**Features**: EV_Charging_Demand, Calendar_Features
+**Features**: Charging_Demand, Calendar_Features, Calendar_Features
 
 - **What they did:**
   - Open-source EV charging data is scarce/limited in volume and time span, degrading the reliability of statistical (ARIMA/SARIMA) and ML (XGBoost, RF, SVM) predictors; vanilla Transformer self-attention also struggles with complex temporal patterns and needs sparse point-wise attention for long sequences.
@@ -1544,7 +1553,7 @@ Liang et al. · arXiv preprint (arXiv:2404.15772v3, cs.LG, 27 Jun 2024); BUPT & 
 **Models**: Bi-Mamba+, Mamba_SSM  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE  
-**Data**: Weather_Dataset; Traffic; Electricity_ECL; Solar_Dataset; ETT  
+**Data**: Weather_Dataset; Traffic; Electricity_ECL; Solar_Dataset; ETT; ETT; ETT; ETT  
 **Features**: Historical_Load
 
 - **What they did:**
@@ -1592,7 +1601,7 @@ Liu et al. · ICLR 2024 (Spotlight) · 2024
 **Models**: iTransformer, Transformer, Informer, Reformer, Flowformer, FlashAttention, PatchTST, Crossformer, DLinear, TimesNet, TiDE, SCINet, FEDformer, Stationary_Transformer  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE, CKA_Similarity  
-**Data**: Electricity_ECL; ETT; Exchange; Traffic; Weather; Solar_Energy; Market_Alipay  
+**Data**: Electricity_ECL; ETT; Exchange; Traffic; Weather; Solar_Energy; Traffic; Market_Alipay  
 **Features**: Variate_Tokens, Series_Representations, Multivariate_Correlation_Map, Transformer, Feed_Forward_Temporal_MLP
 
 - **What they did:**
@@ -1639,9 +1648,9 @@ Ma et al. · 2024 IEEE 2nd International Conference on Control, Electronics and 
 
 ### 2024_Menati_PowerMamba_Power_Systems_SSM
 **PowerMamba: A Deep State Space Model and Comprehensive Benchmark for Time Series Prediction in Electric Power Systems**  
-Menati et al. · IEEE Transactions on Power Systems (2025), doi:10.1109/TPWRS.2025.3647539; preprint … · 2024
+Menati et al. · arXiv preprint (arXiv:2412.06112), v2 updated 20 Dec 2025 · 2024
 <https://arxiv.org/abs/2412.06112>
-**Models**: PowerMamba, Mamba_SSM, RevIN, iTransformer, PatchTST, DLinear, Autoformer, TimesNet  
+**Models**: PowerMamba, Mamba_SSM, RevIN, iTransformer, PatchTST, DLinear, Autoformer, TimesNet, 2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting  
 **Horizon**: Short_Term_Forecasting / Long_Term_Forecasting  
 **Metrics**: MSE, MAE  
 **Data**: ERCOT_GridSet  
@@ -1667,11 +1676,11 @@ Menati et al. · IEEE Transactions on Power Systems (2025), doi:10.1109/TPWRS.20
 **Forwardformer: Efficient Transformer With Multi-Scale Forward Self-Attention for Day-Ahead Load Forecasting**  
 Qu et al. · IEEE Transactions on Power Systems, Vol. 39, No. 1, pp. 1421-1433, January 2024 · 2024
 <https://doi.org/10.1109/TPWRS.2023.3266369>
-**Models**: Transformer, Autoformer, FEDformer, Informer, LogTrans, LSTMa, Prophet, SARIMA  
+**Models**: 2024_Qu_Forwardformer_Day_Ahead_Load, Transformer, Autoformer, FEDformer, Informer, LogTrans, LSTMa, Prophet, SARIMA  
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: MSE, MAE, Accuracy  
 **Data**: CEL_NW_China_Electric_Load; CEL_SE_China_Electric_Load; AEL_CNYS_America_Electric_Load; AEL_NNYS_America_Electric_Load; AEL_WNYS_America_Electric_Load  
-**Features**: Historical_Load, Calendar_Features, Holiday_Flag, Temperature, Humidity, Rainfall, Pressure
+**Features**: Historical_Load, Calendar_Features, Holiday_Flag, Temperature, Humidity, Rainfall, Pressure, Temperature
 
 - **What they did:**
   - Design a Transformer purpose-built for **day-ahead load forecasting (DALF)** that (i) removes sequential computation and captures long-term dependence between distant special days, and (ii) explicitly targets the under-served problem of forecasting **special days (weekends and holidays)**. Contributions: 1. A **correction structure based on an encoder-dual decoder** improving DALF accuracy. 2. **Multi-scale forward …
@@ -1771,7 +1780,7 @@ Xu et al. · Energy, vol. 309, 133090 · 2024
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: Forecast Accuracy, Charging Cost Reduction  
 **Data**: Suzhou_EVPL_Dataset; PJM_Day_Ahead_Tariff; NMMV_Platform_Data  
-**Features**: EV_Access_Time, Access_Duration, State_of_Charge, Calendar_Features, Holiday_Flag, Weather_Conditions, Temperature, Recent_Access_Pattern
+**Features**: EV_Access_Time, Access_Duration, State_of_Charge, State_of_Charge, Calendar_Features, Holiday_Flag, Weather_Conditions, Temperature, Recent_Access_Pattern
 
 - **What they did:**
   - Enables **Electric Vehicle Parking Lots (EVPLs)** to participate in day-ahead energy and ancillary services markets via V2G by forecasting **EV Charging Behavior (EVCB)** day-ahead and computing **EV Schedulable Capacity (EVSC)** from those forecasts.
@@ -1918,7 +1927,7 @@ Cheng et al. · Frontiers in Energy Research, Vol. 11, Article 1297849 · 2023
 **MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations**  
 Huang et al. · IEEE Transactions on Intelligent Transportation Systems, 24(10), 10445-10455 · 2023
 <https://doi.org/10.1109/TITS.2023.3276947>
-**Models**: MetaProbformer, Reptile, Informer, Transformer, LSTM, DeepAR, Prophet, ARIMA, FPSeq2Q  
+**Models**: MetaProbformer, MetaProbformer, Reptile, Informer, Transformer, LSTM, DeepAR, Prophet, ARIMA, FPSeq2Q  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, MSE, RMSE, CRPS, Normalized ρ-quantile loss Qρ  
 **Data**: D_Palo (City of Palo Alto EV charging usage); D_Boulder; D_NL; D_Perth (Perth & Kinross)  
@@ -1970,7 +1979,7 @@ Nie et al. · ICLR 2023 · 2023
 **Models**: PatchTST, Transformer, RevIN, Masked_Autoencoder  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE  
-**Data**: Weather; Traffic; Electricity_ECL; ILI; ETT  
+**Data**: Weather; Traffic; Electricity_ECL; ILI; ETT; ETT; ETT; ETT  
 **Features**: Multivariate_Time_Series, Patched_Embeddings, Channel_Independence, Positional_Encoding
 
 - **What they did:**
@@ -2011,10 +2020,10 @@ Wen et al. · ACM conference proceedings (© 2023 ACM); arXiv:2301.13629 (v4, Ma
 **TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis**  
 Wu et al. · ICLR 2023 · 2023
 <https://arxiv.org/abs/2210.02186>
-**Models**: TimesNet, Inception_2D_CNN, FFT_Periodicity_Detection  
+**Models**: TimesNet, TimesNet, Inception_2D_CNN, FFT_Periodicity_Detection  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE, SMAPE, MASE, OWA, F1_Score  
-**Data**: ETT; Electricity_ECL; Traffic; Weather; Exchange; ILI; M4; UEA_Archive; SMD; MSL; SMAP; SWaT; PSM  
+**Data**: ETT; ETT; ETT; ETT; Electricity_ECL; Traffic; Weather; Exchange; ILI; M4; UEA_Archive; SMD; MSL; SMAP; SWaT; PSM  
 **Features**: Multi_Periodicity, Intraperiod_Variation, Interperiod_Variation, Temporal_2D_Variations
 
 - **What they did:**
@@ -2064,10 +2073,10 @@ Xiong et al. · 2023 2nd Asia Power and Electrical Technology Conference (APET),
 **Are Transformers Effective for Time Series Forecasting?**  
 Zeng et al. · AAAI 2023 · 2023
 <https://arxiv.org/abs/2205.13504>
-**Models**: DLinear, NLinear, Informer, Autoformer, FEDformer, Pyraformer, LogTrans  
+**Models**: DLinear, DLinear, NLinear, Informer, Autoformer, FEDformer, Pyraformer, LogTrans  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE  
-**Data**: ETT; Traffic; Electricity_ECL; Exchange; Weather; ILI  
+**Data**: ETT; ETT; ETT; ETT; Traffic; Electricity_ECL; Exchange; Weather; ILI  
 **Features**: Trend_Seasonal_Decomposition, Moving_Average_Trend, Lookback_Window, Distribution_Shift_Normalization
 
 - **What they did:**
@@ -2092,7 +2101,7 @@ Zhang et al. · ICLR 2023 · 2023
 **Models**: Crossformer, DSW_Embedding, Two_Stage_Attention, Hierarchical_Encoder_Decoder, Router_Attention  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: MSE, MAE  
-**Data**: ETT; Weather; Electricity_ECL; ILI; Traffic  
+**Data**: ETT; ETT; Weather; Electricity_ECL; ILI; Traffic  
 **Features**: Multivariate_Time_Series, Cross_Time_Dependency, Cross_Dimension_Dependency, Segment_Embeddings, Multi_Scale_Representations
 
 - **What they did:**
@@ -2135,19 +2144,6 @@ Ziyabari et al. · IEEE Transactions on Industry Applications, 59(5), 5293-5303 
   - Fixed sliding window (24 steps, half-day); horizon sensitivity not systematically ablated.
   - Solar-specific benchmark — but architecture directly transferable to **spatio-temporal EV charging station load forecasting**, where neighboring stations exhibit similar correlated demand patterns.
   - Gap for thesis: combine multi-resolution spatial branches with probabilistic heads (cf. 2023_Huang_MetaProbformer_EV_Load) for charging networks.
-
-### Berrisch_Ziel_CRPS_Learning
-**CRPS Learning**  
-Berrisch et al. · arXiv preprint (Quantitative Finance lineage) · 2023
-<https://arxiv.org/abs/2302.03511>
-
-
-- **What they did:**
-  - Proposes **CRPS learning**: perform online gradient-descent-style learning directly in **CRPS (Continuous Ranked Probability Score) space**, building an adaptive **ensemble of distributional forecasts** (base learners' full predictive distributions) whose combination minimises CRPS rather than pinball losses per quantile.
-  - Motivation: existing distributional ensembles either aggregate quantiles separately or assume exchangeability; CRPS learning yields one coherent predictive distribution and provable/observed robustness on non-stationary series.
-- **Method core:** Base learners produce candidate predictive distributions; an online algorithm updates mixture weights by stochastic (mini-batch) gradient steps on the empirical CRPS risk, with expert-aggregation-style guarantees inherited from online learning under dynamic environments.
-- **Gaps/Limitations:**
-  - Requires differentiable CRPS approximation choices; base-learner quality still dominates. Connections to conformal and distribution-free calibration (cf. Conformal_Prediction, Zaffran2022_Adaptive_Conformal) remain open.
 
 ### 2022_Cao_Robust_Deep_Gaussian_Process_Load
 **Robust Deep Gaussian Process-Based Probabilistic Electrical Load Forecasting Against Anomalous Events**  
@@ -2199,28 +2195,15 @@ Kim et al. · ICLR 2022 · 2022
   - Evaluated mostly on generic benchmarks; no spatio-temporal modeling (each variable treated independently).
   - Gap for thesis: apply RevIN to EV charging load models (MetaProbformer, NHiTS) under distribution shift from new stations / anomalous events.
 
-### 2022_Vilmarest_Goude_State_Space_PostCOVID
-**State-Space Models for Online Post-COVID Electricity Load Forecasting Competition**  
-Vilmarest et al. · IEEE Open Access Journal of Power and Energy (doi:10.17023/yaz3-xp85); preprint … · 2022
-<https://arxiv.org/abs/2110.00334>
-
-
-- **What they did:**
-  - Presents the **winning strategy of the IEEE DataPort competition** "Day-Ahead Electricity Load Forecasting: Post-COVID Paradigm" — day-ahead forecasting of an undisclosed ~1.1 GW region whose consumption regime broke in March 2020.
-  - Core claim: **state-space adaptation gives the best of both worlds** — autoregressive models are inherently adaptive but miss exogenous structure, while ML models capture exogenous dependence but fail on non-stationary data; wrapping ML features in a state-space recursion fixes both failures at once.
-- **Method core:** Pipeline: (1) statistical correction of meteorological variables; (2) base forecasters — GAM, MLP, random forest, autoregressions; (3) **Kalman filter** on linearised learner outputs with break settings; (4) **VIKING** (Variational Bayesian Variance Tracking) to learn observation/state variances adaptively instead of hard-coding breaks; (5) **aggregation of experts** across …
-- **Gaps/Limitations:**
-  - Error propagation across the stacked adaptations (intraday correction → Kalman → VIKING → aggregation) lacks full interpretability; variance tracking assumes approximate Gaussianity. Code: gitlab.com/JosephdeVilmarest/state-space-post-covid-forecasting
-
 ### 2022_Zhang_GCN_TRN_EV_Availability
 **GCN-TRN: Efficient Transformer based Electric Vehicle Charging Demand Forecasting System**  
 Zhang et al. · 2022 5th International Conference on Computer Science and Software Engineering (CSSE … · 2022
 <https://doi.org/10.1145/3569966.3570101>
-**Models**: GCN-TRN, Transformer, GRU, GCN-GRU, SVR, HA  
+**Models**: GCN-TRN, GCN, Transformer, GRU, GCN-GRU, SVR, HA  
 **Horizon**: Spatial_Temporal_Forecasting  
-**Metrics**: Accuracy, RMSE, MAE, R² Score  
+**Metrics**: Accuracy, RMSE, MAE, R² Score, R_squared  
 **Data**: Dundee_EV  
-**Features**: Spatial Adjacency Matrix A_ij (true path distances), Availability p_n, Latitude/Longitude, 30-min Occupancy Slots
+**Features**: Spatial Adjacency Matrix A_ij (true path distances), Availability p_n, Station_Occupancy, Latitude/Longitude, 30-min Occupancy Slots
 
 - **What they did:**
   - **Core problem**: EV charging station (CS) availability forecasting must capture both **spatial relations** (correlations between neighboring stations via non-Euclidean road topology — ARIMA/SVR/KNN cannot mine spatio-temporal relations; CNN only handles Euclidean data) and **temporal dependence** (rush-hour-like charging periodicity). RNNs lose spatial info; GNNs can't process time series; Transformers aggregate …
@@ -2238,49 +2221,6 @@ Zhang et al. · 2022 5th International Conference on Computer Science and Softwa
   - Metrics reported as raw numbers without variance/confidence intervals; no probabilistic/uncertainty output.
   - Gap for thesis: motivates richer spatial-temporal architectures (GCN + Transformer) on larger multi-city datasets with weather/calendar covariates and longer horizons.
 
-### Zaffran2022_Adaptive_Conformal
-**Adaptive Conformal Predictions for Time Series**  
-Zaffran et al. · ICML 2022; arXiv:2202.07282 · 2022
-<https://arxiv.org/abs/2202.07282>
-
-
-- **What they did:**
-  - Brings **conformal prediction** to non-exchangeable time series: proposes **AgACI (Aggregated Adaptive Conformal Inference)**, combining multiple online conformal interval controllers (building on Gibbs & Candès' ACI) so the miscoverage rate tracks a target level automatically under distribution shift.
-  - Adds a practical contribution for realistic pipelines: an imputation-aware variant handling **missing values** in the target series without breaking validity.
-- **Method core:** Base point forecasters (e.g., sequential GAM/ML models) produce point predictions; ACI-style controllers adjust the interval radius online via feedback on recent coverage errors; AgACI runs several controllers with different learning rates and aggregates them with online expert aggregation (BOA-flavoured).
-- **Key results:**
-  - Experiments on French electricity demand (industrial-scale, incl. the COVID-19 disruption period) show AgACI maintains near-nominal coverage where static conformal intervals under-cover, while keeping intervals competitive in width; the missing-data variant remains valid on gappy real smart-meter streams.
-- **Gaps/Limitations:**
-  - Adaptation speed vs stability trade-off controlled by controller learning rates; conditional coverage (per-time-step guarantees) beyond marginal validity remains open — connects to CQR/conformalized quantile regression lines (cf. Conformal_Prediction).
-
-### 2021_Alvarez_APLF_Adaptive_Probabilistic_Load
-**Probabilistic Load Forecasting Based on Adaptive Online Learning**  
-Álvarez et al. · IEEE Transactions on Power Systems 36(4):3668-3680 · 2021
-<https://arxiv.org/abs/2011.14721>
-
-
-- **What they did:**
-  - Proposes **APLF (Adaptive Probabilistic Load Forecasting)**: probabilistic load forecasts based on **adaptive online learning of hidden Markov models (HMMs)**, explicitly designed for consumption patterns that change over time (renewables integration, EVs, microgrids).
-  - Key contributions: (1) recursive online updates of HMM parameters with theoretical guarantees; (2) sequential prediction rules producing full predictive distributions from the most recent parameters; (3) efficient implementation with memory complexity $O(CR^2)$, learning $O(LR^3)$, prediction $O(LR)$ — amenable to real-time deployment.
-- **Method core:** Load is modelled as an HMM whose emissions are Gaussian with parameters conditioned on a calendar-type covariate vector (time-of-day/season classes), so consumption-pattern drift is captured by evolving the hidden state posterior rather than retraining offline.
-- **Gaps/Limitations:**
-  - Gaussian emission assumption limits tail modelling; HMM state count and calendar typing are design choices requiring tuning. Guarantees are asymptotic/online-regret style rather than finite-distribution-free.
-
-### 2021_Browell_Fasiolo_Regional_Netload
-**Probabilistic Forecasting of Regional Net-Load With Conditional Extremes and Gridded NWP**  
-Browell et al. · IEEE Transactions on Smart Grid 12(6):5011-5019 · 2021
-<https://doi.org/10.1109/TSG.2021.3107159>
-
-
-- **What they did:**
-  - Produces **probabilistic forecasts of regional net-load** (transmission-level demand minus embedded wind/solar generation) with particular attention to the **tails** of predictive distributions, which drive risk decisions such as reserve procurement.
-  - Novel combination: best-in-class load forecasting methodology adapted to net-load, plus **conditional Generalised Pareto Distribution (cGPD)** tails whose scale parameter varies smoothly with covariates, plus features derived from **gridded NWP**.
-- **Method core:** Additive quantile regression framework (GAMLSS-style) for central quantiles; tails modelled by GPD with log-link scale conditioned on expected net-load, 100 m wind speed and surface solar irradiance; shape parameter held constant.
-- **Key results:**
-  - In a reserve-setting use case, cGPD reduces upward reserve volume by up to **24.6%** and downward reserve by up to **10.8%** at probability levels 0.01%-0.25%, while correctly identifying high-risk periods missed by static approaches.
-- **Gaps/Limitations:**
-  - Tail modelling needs sufficient extremes; shape-parameter constancy may fail under structural change. Reserve-simulation is GB-specific. Extension to joint/net-load-plus-generation distributions is open.
-
 ### 2021_Buzna_Hierarchical_Probabilistic_EV_Load
 **An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations**  
 Buzna et al. · Applied Energy, 283, 116337 · 2021
@@ -2289,7 +2229,7 @@ Buzna et al. · Applied Energy, 283, 116337 · 2021
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: Pinball_Loss, AACE  
 **Data**: ElaadNL; Weather; COROP_Regions  
-**Features**: Historical_Load, Weather_Forecast, Super_User_Features, Calendar_Features, PCA
+**Features**: Historical_Load, Weather_Forecast_Features, Super_User_Features, Calendar_Features, PCA, Historical_Load
 
 - **What they did:**
   - First application ever of a **hierarchical approach to probabilistic EV load forecasting (PEVLF)**: forecast EV energy consumption of a high-level geographic region by exploiting baseline probabilistic forecasts of its constituent low-level regions.
@@ -2339,7 +2279,7 @@ Lim et al. · International Journal of Forecasting, Vol. 37, No. 4, pp. 1374-138
 <https://doi.org/10.1016/j.ijforecast.2021.03.012>
 **Models**: Temporal Fusion Transformer, Gated Residual Network, Variable Selection Network, LSTM, Interpretable_Multi_Head_Attention, Quantile_Regression  
 **Horizon**: Multi_Horizon  
-**Metrics**: Pinball_Loss  
+**Metrics**: Pinball_Loss, Pinball_Loss, q-Risk  
 **Data**: UCI Electricity Load Diagrams (ECL); UCI PEM-SF Traffic; Favorita Grocery Sales; OMI Realized Volatility  
 **Features**: Static_Covariates, Past_Observed_Inputs, Known_Future_Inputs, Calendar_Features, Entity_Embeddings
 
@@ -2359,26 +2299,13 @@ Lim et al. · International Journal of Forecasting, Vol. 37, No. 4, pp. 1374-138
   - Quantiles fixed at {0.1, 0.5, 0.9}; no full predictive density or joint multivariate sampling across entities.
   - Gap for thesis: TFT's point/quantile forecasts are not calibrated probabilistically (vs conformal methods like 2021_Stankeviciute_Conformal_Time_Series_Forecasting) and its attention cost motivates efficient variants (2021_Zhou_Informer_Beyond_Efficient_Transformer) — both relevant to EV charging load forecasting where station-level static metadata and calendar features abound.
 
-### 2021_Obst_Vilmarest_Goude_Kalman_COVID_France
-**Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France**  
-Obst et al. · IEEE Transactions on Power Systems 36(6):5359-5370 · 2021
-<https://arxiv.org/abs/2101.05845>
-
-
-- **What they did:**
-  - Addresses the collapse of standard short-term load forecasting models during the **COVID-19 lockdown in France** (spring 2020), when consumption patterns shifted abruptly (~15% demand drop with strong regional heterogeneity).
-  - Compares and combines **adaptive methods**: exponential smoothing variants, Kalman-filter-based state-space adaptation of GAMs and machine-learning models, and online aggregation of experts — providing practical guidance for forecasting through regime change.
-- **Method core:** Baseline GAM with weather/calendar decomposition (the industrial EDF-style model) is linearised and embedded in a **linear-Gaussian state-space model**, so its coefficients are tracked over time by Kalman filtering with break/forget settings tuned to adapt faster than classical smoothing.
-- **Gaps/Limitations:**
-  - Break detection/adaptation speeds are hand-set; the approach reacts after a regime shift begins rather than anticipating it. Follow-up work (VIKING variance tracking; the post-COVID competition win) directly extends this paper — see 2022_Vilmarest_Goude_State_Space_PostCOVID.
-
 ### 2021_Rasul_TimeGrad_Diffusion_Forecasting
 **Autoregressive Denoising Diffusion Models for Multivariate Probabilistic Time Series Forecasting**  
 Rasul et al. · ICML 2021 (International Conference on Machine Learning), Zalando Research · 2021
 <https://arxiv.org/abs/2101.12072>
 **Models**: TimeGrad, Denoising Diffusion Probabilistic Model, 2-layer LSTM RNN, Conditional Dilated ConvNet (εθ), Score_Matching  
 **Horizon**: Short_Term_Forecasting  
-**Metrics**: CRPS  
+**Metrics**: CRPS, CRPS  
 **Data**: Exchange; Solar; Electricity (UCI Load Diagrams); PEM-SF Traffic; NYC_Taxi; Wikipedia_Pageviews  
 **Features**: Multivariate_Time_Series, Historical_Load, Calendar_Features, Lag_Features, Mean_Scaling
 
@@ -2403,11 +2330,11 @@ Rasul et al. · ICML 2021 (International Conference on Machine Learning), Zaland
 **Conformal Time-Series Forecasting**  
 Stankevičiūtė et al. · NeurIPS 2021 (35th Conference on Neural Information Processing Systems) · 2021
 <https://proceedings.neurips.cc/paper/2021/file/9232fe81225bcaef853ae32870a2b0fe-Paper.pdf>
-**Models**: CF-RNN, Conformal_Prediction, LSTM, BJ-RNN, MQ-RNN, DP-RNN, ICP  
+**Models**: CF-RNN, Conformal_Prediction, ICP, LSTM, BJ-RNN, MQ-RNN, DP-RNN  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: Joint_Coverage, MPIW  
 **Data**: MIMIC-III; UCI_EEG; COVID19_UK_Dataset; Synthetic_AR_Noise  
-**Features**: Conformal_Prediction, Multi_Horizon_Forecast, Direct_Forecasting_Strategy
+**Features**: Conformal_Prediction, Conformal_Prediction, Multi_Horizon_Forecast, Direct_Forecasting_Strategy
 
 - **What they did:**
   - **Core problem**: RNN-based multi-horizon forecasts issue point estimates only; existing uncertainty methods (Bayesian RNNs, quantile RNNs like MQ-RNN, ensembles/bootstrapping like BJ-RNN) require architecture changes, are hard to calibrate, scale poorly (BJ-RNN exact inference is $O(P^3)$ in parameters $P$), and lack finite-sample frequentist coverage guarantees.
@@ -2429,11 +2356,11 @@ Stankevičiūtė et al. · NeurIPS 2021 (35th Conference on Neural Information P
 **CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation**  
 Tashiro et al. · NeurIPS 2021 (35th Conference on Neural Information Processing Systems) · 2021
 <https://arxiv.org/abs/2107.03502>
-**Models**: CSDI, Conditional Score-based Diffusion Model, Transformer, TimeGrad  
+**Models**: CSDI, Conditional Score-based Diffusion Model, DDPM, DDPM, Transformer, TimeGrad  
 **Horizon**: Short_Term_Forecasting  
-**Metrics**: CRPS, MAE, RMSE, MSE, NLL  
+**Metrics**: CRPS, CRPS, MAE, RMSE, MSE, NLL  
 **Data**: PhysioNet_2012_Healthcare; Beijing_PM25_Air_Quality; Solar_Alabama; Electricity_ECL; Traffic; NYC_Taxi; Wiki_Pageviews  
-**Features**: Observation_Mask, Conditional_Mask, Timestamp, Temporal_Embedding, Feature_Embedding, Diffusion_Step_Embedding
+**Features**: Observation_Mask, Conditional_Mask, Timestamps, Temporal_Embedding, Feature_Embedding, Diffusion_Step_Embedding
 
 - **What they did:**
   - **Core problem**: Probabilistic imputation of missing values in multivariate time series. Prior score-based approaches (Song et al. SDE; repainting-style methods) *approximate* the conditional reverse process by noising the observations, which destroys useful information in $x^{co}_0$ and does not correspond to the exact conditional distribution. Autoregressive/RNN imputation methods (BRITS, GLIMA) struggle with …
@@ -2459,7 +2386,7 @@ Kriekinge et al. · World Electric Vehicle Journal, 12(4), 178 · 2021
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: RMSE, MAE, MSE  
 **Data**: Hospital_Semi_Public_Charging_Site_Dataset  
-**Features**: EV_Charging_Demand, Cyclical_Quarter_Hour_Features, Cyclical_Day_Number_Features, Holiday_Flag, Temperature, Rainfall
+**Features**: EV_Charging_Demand, EV_Charging_Demand, Cyclical_Quarter_Hour_Features, Cyclical_Day_Number_Features, Holiday_Flag, Holiday_Flag, Temperature, Daily_Rainfall
 
 - **What they did:**
   - Enhances a state-of-the-art deep neural network to forecast the **day-ahead aggregated EV charging demand** at **15-min resolution** (96 timesteps/day) for a **small, highly stochastic EV fleet** — a use case underrepresented in the literature (most work targets large fleets or super-short-term horizons).
@@ -2611,7 +2538,7 @@ Salinas et al. · International Journal of Forecasting, 36(3), 1181-1191 · 2020
 **Models**: DeepAR, LSTM  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: Pinball_Loss, ND, RMSE  
-**Data**: Parts_Dataset; Electricity_ECL; Traffic; Amazon_EC_Dataset  
+**Data**: Parts_Dataset; Electricity_ECL; Traffic; Amazon_EC_Dataset; Amazon_EC_Dataset  
 **Features**: Age_Feature, Calendar_Features, Item_Embedding, Scale_Factor
 
 - **What they did:**
@@ -2629,18 +2556,6 @@ Salinas et al. · International Journal of Forecasting, 36(3), 1181-1191 · 2020
   - Marginal independence across time steps in some settings; correlations only via sampled paths.
   - Hyper-parameter tuning could overfit the validation split; authors suggest non-overlapping time intervals for tuning.
   - Evaluation with missing prediction-range data requires adjusted metrics not comparable across studies (not addressed experimentally).
-
-### Beltagy2020_Longformer
-**Longformer: The Long-Document Transformer**  
-Beltagy et al. · arXiv preprint arXiv:2004.05150 · 2020
-<https://arxiv.org/abs/2004.05150>
-
-
-- **What they did:**
-  - Solves the quadratic cost of full self-attention for long documents by introducing **Longformer**: a Transformer whose attention is a mixture of **local sliding-window, dilated sliding-window, and small global attention** patterns, scaling linearly with sequence length up to **4,096 tokens** (vs 512 for BERT).
-- **Method core:** Sliding-window attention attends to $w$ neighbours per layer so information propagates across layers like a CNN stack; dilation widens receptive field without cost growth; a handful of task tokens (e.g., CLS, question tokens) receive **global** attention.
-- **Gaps/Limitations:**
-  - Attention-pattern choice is task-specific (which tokens get global attention requires design); kernel engineering burden; motivated later efficient-attention lines relevant to long-sequence time-series Transformers (cf. FlashAttention).
 
 ### 2019_Li_LogSparse_Enhancing_Locality_Transformer
 **Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting**  
@@ -2698,7 +2613,7 @@ Wu et al. · IJCAI 2019 (28th International Joint Conference on Artificial Intel
 **Models**: Graph_WaveNet  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, RMSE, MAPE  
-**Data**: Traffic  
+**Data**: Traffic; Traffic  
 **Features**: Traffic_Speed, Sensor_Time_Series, Adjacency_Matrix
 
 - **What they did:**
@@ -2744,8 +2659,8 @@ Zhu et al. · Energies 2019, 12(14), 2692 (MDPI) · 2019
 **Models**: ANN, RNN, LSTM, BiLSTM, GRU, SAEs  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, RMSE, R² Score  
-**Data**: Shenzhen_ST_EVCDP  
-**Features**: Historical_Load, Rainy/Dry_Season_Indicator, Holiday_Flag, Lookback_Window
+**Data**: Shenzhen_ST_EVCDP; Shenzhen_ST_EVCDP  
+**Features**: Historical_Load, Historical_Load, Rainy/Dry_Season_Indicator, Holiday_Flag, Lookback_Window
 
 - **What they did:**
   - First study to use **real-world super-short-term (minute-level) EV charging data** (rather than simulation) for multi-time-step extra-short-term PEV charging load forecasting.
@@ -2755,8 +2670,8 @@ Zhu et al. · Energies 2019, 12(14), 2692 (MDPI) · 2019
 - **Method core:** **Vanilla RNN** (Eqs. 1–3): hidden state recurrence and output mapping  S_t = \phi(U x_t + W S_{t-1} + b_1),\qquad o_t = \phi(V S_t + b_2),\qquad \hat{y}_t = \phi(o_t)  suffers from vanishing gradient with long sequences.
 - **Key results:**
   - Final training losses (epoch 30): LSTM 0.0068/0.0065/0.0064 for 1/5/15 steps; validation loss 0.0031/0.0043/0.0034 — minimum among all six models at every setting.
-  - **Efficiency**: BiLSTM needed **58 s/epoch** at 15 time steps vs. **8 s/epoch** for LSTM.
-  - Sequence insight: RMSE of RNN/GRU/BiLSTM/LSTM decreases going 1→5 steps (sequence models prefer longer inputs); only LSTM and BiLSTM keep improving 5→15 steps.
+  - **Efficiency**: Bi-LSTM needed **58 s/epoch** at 15 time steps vs. **8 s/epoch** for LSTM.
+  - Sequence insight: RMSE of RNN/GRU/Bi-LSTM/LSTM decreases going 1→5 steps (sequence models prefer longer inputs); only LSTM and Bi-LSTM keep improving 5→15 steps.
 - **Gaps/Limitations:**
   - MAPE unusable due to zero-load periods — motivates alternative relative-error metrics for sparse EV data.
   - Interpolation repair (Eq. 14) only effective for minor outliers; heavy sensor error requires more specific handling.
@@ -2771,8 +2686,8 @@ Bai et al. · arXiv preprint arXiv:1803.01271 (presented as a generic-architectu
 **Models**: TCN, LSTM, GRU, RNN, EURNN, TCN+Gating  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: Accuracy, MSE, NLL, Perplexity, bpc  
-**Data**: Adding_Problem; MNIST; Copy_Memory; JSB_Chorales; Nottingham; Penn_Treebank; Wikitext-103; LAMBADA; text8  
-**Features**: Raw_Sequence_Input, Dilation_Factor, Residual_Component, Weight_Normalization, Spatial_Dropout
+**Data**: Adding_Problem; MNIST; MNIST; Copy_Memory; JSB_Chorales; Nottingham; Penn_Treebank; Wikitext-103; LAMBADA; text8  
+**Features**: Raw_Sequence_Input, Dilation_Factor, Transformer, Weight_Normalization, Spatial_Dropout
 
 - **What they did:**
   - The most extensive systematic comparison of **generic convolutional vs. recurrent architectures** for sequence modeling, run on RNNs' "home turf": the standard stress tests and music/language benchmarks used to evaluate LSTM/GRU variants themselves.
@@ -2795,9 +2710,9 @@ Bai et al. · arXiv preprint arXiv:1803.01271 (presented as a generic-architectu
 Nichol et al. · arXiv preprint (OpenAI), arXiv:1803.02999 · 2018
 <https://arxiv.org/abs/1803.02999>
 **Models**: Reptile, MAML, FOMAML  
-**Horizon**: Short_Term_Forecasting  
+**Horizon**: MAML  
 **Metrics**: Accuracy  
-**Data**: Omniglot; MiniImageNet; Sinusoid_Regression  
+**Data**: Omniglot; MiniImageNet; Sine_Wave_Regression  
 **Features**: Task_Sampling, K-Shot_N-Way_Classification, Transductive_Batch_Normalization, Weight_Interpolation
 
 - **What they did:**
@@ -2819,7 +2734,7 @@ Nichol et al. · arXiv preprint (OpenAI), arXiv:1803.02999 · 2018
 **Attention Is All You Need**  
 Vaswani et al. · Advances in Neural Information Processing Systems 30 (NIPS 2017), Long Beach, CA · 2017
 <https://arxiv.org/abs/1706.03762>
-**Models**: Transformer, Multi_Head_Attention, ByteNet, ConvS2S  
+**Models**: Transformer, Multi_Head_Attention, Multi_Head_Attention, ByteNet, ConvS2S  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: BLEU, Perplexity, F1_Score  
 **Data**: WMT_2014_EN-DE; WMT_2014_EN-FR; WSJ_Penn_Treebank; BerkleyParser_Corpus  
@@ -2875,7 +2790,7 @@ Liu et al. · IEEE Transactions on Smart Grid, vol. 8, no. 2, pp. 730-737 · 201
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: Pinball_Loss, Winkler_Score, MAE  
 **Data**: GEFCom2014  
-**Features**: Sister_Point_Forecasts, Temperature, Calendar_Features
+**Features**: Sister_Point_Forecasts, Temperature, Calendar_Features, Calendar_Features, Calendar_Features, Temperature, Temperature
 
 - **What they did:**
   - First formal study of **forecast-combination-based probabilistic load forecasting**: applies **Quantile Regression Averaging (QRA)** — previously used only for electricity *price* forecasting and by a top GEFCom2014 price-track entry — to a set of **sister point forecasts** to produce prediction intervals (PIs).
@@ -2893,54 +2808,15 @@ Liu et al. · IEEE Transactions on Smart Grid, vol. 8, no. 2, pp. 730-737 · 201
   - Extensions proposed by authors: apply QRA to independent expert forecasts; generate sister forecasts from other techniques (ANN, SVM, fuzzy regression, holiday-effect models); extend beyond short-term to long-term point forecasts; optimize sister generation and (S,L) selection on **daily peak** errors instead of all-hours scores.
   - Future-work direction relevant to this vault: probabilistic forecasting of renewable generation and EV charging demand via QRA-style combination (cf. 2025_Matrone_QR_LSTM_Attention_EV_Load).
 
-### Wintenberger2017_BOA
-**Optimal learning with Bernstein Online Aggregation**  
-Wintenberger · Machine Learning 106(1):119-141 · 2017
-<https://doi.org/10.1007/s10994-016-5592-6>
-
-
-- **What they did:**
-  - Formalises **Bernstein Online Aggregation (BOA)**: exponentially weighted aggregation of experts whose weights depend on cumulative losses **and their variance**, yielding sharp second-order regret bounds of Bernstein type rather than the looser first-order/Hoeffding bounds of classical exponential-weights forecaster.
-- **Method core:** Given experts' sequential predictions, BOA mixes them with weights proportional to $\exp(-\eta \sum \ell + \nu \sum \ell^2)$-type quantities, adaptively balancing each expert's cumulative loss and its variability; works under exp-concave, convex, and bounded losses with appropriate learning-rate schedules.
-- **Gaps/Limitations:**
-  - Bound constants depend on loss curvature/exp-concavity assumptions; extension to fully adversarial heavy-tailed losses and to quantile-loss-specific variants (used in Gaillard2016_GEFCOM2014_Aggregation) required bespoke analysis.
-
-### Bahdanau2016_LSTMa_Attention
-**Neural Machine Translation by Jointly Learning to Align and Translate**  
-Bahdanau et al. · ICLR 2015; arXiv:1409.0473 (cited as 2016 in LSTNet references) · 2016
-<https://arxiv.org/abs/1409.0473>
-
-
-- **What they did:**
-  - Introduces the **additive attention mechanism** for sequence-to-sequence tasks: instead of compressing an entire source sequence into one fixed vector, the decoder learns to **softly attend** to all source hidden states, weighted per output step ("alignment").
-  - This removed the information bottleneck of encoder-decoder RNN translation and became the conceptual ancestor of the Transformer attention used throughout modern forecasting (see Multi_Head_Attention); the LogSparse_Transformer-era LSTMa variant applies this attention to recurrent forecasting backbones.
-- **Method core:** Encoder BiGRU produces annotations $h_j$; the decoder scores compatibility $e_{ij} = v_a^\top \tanh(W_a s_{i-1} + U_a h_j)$, normalises with softmax into weights $\alpha_{ij}$, and forms a context vector $c_i = \sum_j \alpha_{ij} h_j$ fed together with state and previous target to predict the next token.
-- **Gaps/Limitations:**
-  - Sequential decoding limits parallelism (later fixed by self-attention Transformers); additive scoring is slower than dot-product forms at scale.
-
-### Gaillard2016_GEFCOM2014_Aggregation
-**Additive Models and Robust Aggregation for GEFCom2014 Probabilistic Electric Load and Electricity Price Forecasting**  
-Gaillard et al. · International Journal of Forecasting 32(3):1038-1050 · 2016
-<https://doi.org/10.1016/j.ijforecast.2015.12.001>
-
-
-- **What they did:**
-  - Describes **team Tololo's methodology** for both probabilistic tracks (electric load and electricity price) of **GEFCom2014**: semi-parametric quantile GAMs combined with **robust online aggregation of experts**, forming the statistical backbone later reused across EDF forecasting systems.
-- **Method core:** **Load track**: two-step scheme — first simulate probabilistic temperature scenarios, then plug them into a **quantile generalized additive model (quantGAM)** with nonlinear weather/calendar effects to yield load quantiles.
-- **Key results:**
-  - Top-tier finishes in both GEFCom2014 tracks; the aggregation consistently improved upon any individual expert, demonstrating the practical value of sequential expert mixing under the pinball loss.
-- **Gaps/Limitations:**
-  - Expert-set design is manual; temperature-scenario simulation drives load-track uncertainty. Direct descendants: the `opera` R package (Wintenberger2017_BOA theory) and net-load aggregation work by the same group.
-
 ### 2015_Raza_Review_AI_Load_Demand
 **A review on artificial intelligence based load demand forecasting techniques for smart grid and buildings**  
 Raza et al. · Renewable and Sustainable Energy Reviews, vol. 50, pp. 1352-1372 · 2015
 <https://doi.org/10.1016/j.rser.2015.04.065>
-**Models**: ANN, MLP, Fuzzy_Logic, ANFIS, SVM, SVR, WNN, AIS, GA, PSO, ACO  
+**Models**: ANN, MLP, ANN, Fuzzy_Logic, ANFIS, SVM, SVR, WNN, AIS, GA, PSO, ACO  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAPE, RMSE, MAE, MSE  
 **Data**: ISO_New_England_Grid; California_Grid; New_York_Grid; Singapore_Grid; ELIA_Belgian_Grid; Ontario_Grid; Victoria_Australia_Grid; UK_National_Grid  
-**Features**: Historical_Load, Temperature, Dew_Point, Humidity, Calendar_Features, Holiday_Flag, Electricity_Tariff
+**Features**: Historical_Load, Temperature, Dew_Point, Temperature, Humidity, Calendar_Features, Calendar_Features, Holiday_Flag, Electricity_Tariff
 
 - **What they did:**
   - Comprehensive, systematic literature review of **AI-based short-term load forecasting (STLF)** techniques for smart grids and smart buildings (RSER 2015; ~1,760+ citations).
@@ -2962,11 +2838,11 @@ Raza et al. · Renewable and Sustainable Energy Reviews, vol. 50, pp. 1352-1372 
 **A Scalable Stochastic Model for the Electricity Demand of Electric and Plug-In Hybrid Vehicles**  
 Alizadeh et al. · IEEE Transactions on Smart Grid, 5(2), 848-860 · 2014
 <https://doi.org/10.1109/TSG.2013.2275988>
-**Models**: Queuing_Model, Factor_Model, ARIMA, Kalman_Filter, EM_Algorithm, Persistence_Model  
+**Models**: Queuing_Model, Queuing_Model, Factor_Model, ARIMA, Kalman_Filter, EM_Algorithm, ARIMA, Persistence_Model  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: MAE, Absolute_Error_kW, Kolmogorov_Smirnov_Test, Log_Likelihood  
 **Data**: UC_Davis_PH_EV_Center_Data; NHTS_2009  
-**Features**: EV_Arrival_Rate, Charging_Duration, Charging_Power, Laxity_Slack_Time, Daily_Mileage, Calendar_Features, Submetering_Triplets
+**Features**: EV_Arrival_Rate, Charging_Duration, Charging_Power, Laxity_Slack_Time, EV_Arrival_Rate, Daily_Mileage, Calendar_Features, Submetering_Triplets
 
 - **What they did:**
   - Proposes a **queueing-theoretic stochastic model** (M/G/∞ queueing model) for aggregate EV/PHEV charging demand that yields: (1) more accurate **short-term forecasts with uncertainty** when real-time sub-metering data is available; (2) a mathematical description of load **plus demand flexibility** at wholesale level, useful for Demand_Response and dynamic pricing design.
@@ -2990,11 +2866,11 @@ Alizadeh et al. · IEEE Transactions on Smart Grid, 5(2), 848-860 · 2014
 **Adam: A Method for Stochastic Optimization**  
 Kingma et al. · ICLR 2015 (arXiv:1412.6980) · 2014
 <https://arxiv.org/abs/1412.6980>
-**Models**: Adam, SGD, AdaGrad, RMSProp, SFO_Optimizer  
+**Models**: Adam, Adam, SGD, AdaGrad, RMSProp, Adam, SFO_Optimizer  
 **Horizon**: Short_Term_Forecasting  
 **Metrics**: NLL, Regret_Bound, Convergence_Iterations, Wall_Clock_Time  
 **Data**: MNIST; CIFAR-10; IMDB_Movie_Reviews; Synthetic_VAE_Objective  
-**Features**: Adam, Signal_to_Noise_Ratio, Dropout_Noise, Bag_of_Words_Features
+**Features**: Adam, Adam, Adam, Signal_to_Noise_Ratio, Dropout_Noise, Bag_of_Words_Features
 
 - **What they did:**
   - Introduces **Adam (Adaptive Moment Estimation)**, a first-order gradient-based stochastic optimization algorithm that computes **individual adaptive learning rates** from estimates of the first and second moments of the gradients.
@@ -3043,12 +2919,12 @@ Roberts et al. · Philosophical Transactions of the Royal Society A, 371, 201105
 ### 2001_Hippert_Neural_Networks_STLF_Review
 **Neural Networks for Short-Term Load Forecasting: A Review and Evaluation**  
 Hippert et al. · IEEE Transactions on Power Systems, 16(1), 44-55 · 2001
-<https://doi.org/10.1109/59.910780>
+<https://doi.org/10.1109/59.912452>
 **Models**: MLP, ANN, ARIMA, Linear_Regression, Kohonen_SOM, RNN, Fuzzy_Neural_Network, Projection_Pursuit_Regression, Adaline  
 **Horizon**: Day_Ahead_Forecasting  
 **Metrics**: MAPE, RMSE, MSPE, MAE, Standard_Deviation_Errors  
 **Data**: Utility_Load_Data_1990s; Taiwan_Power_System; Greek_Power_System; Autonomous_Island_System_Crete  
-**Features**: Historical_Load, Temperature, Humidity, Calendar_Features, Nonlinear_Temperature_Functions, Weather_Forecast
+**Features**: Historical_Load, Temperature, Humidity, Calendar_Features, Calendar_Features, Nonlinear_Temperature_Functions, Weather_Forecast
 
 - **What they did:**
   - Critical review of **40 papers (1991–1999, leading EE journals only)** applying ANNs to short-term load forecasting (Short_Term_Forecasting), written to explain researcher skepticism about NN forecasting claims.
@@ -3061,7 +2937,7 @@ Hippert et al. · IEEE Transactions on Power Systems, 16(1), 44-55 · 2001
   - Only 10 of the 40 papers ([14], [15], [53], [55], [56], [61], [63], [66], [68], [83]) compared against standard **linear regression/ARIMA** baselines; only [23] found linear models actually beat its NNs; almost none reported naïve-persistence baselines or in-sample fits (only [52], [61]).
   - **Error reporting critique**: nearly all papers reported only MAPE (~1–4% typical claims); few reported error SD ([2], [17], [55], [70], [86]), cumulative distributions, percentiles, max errors, histograms, correlograms, or portmanteau tests; authors argue squared-error measures (RMSE, MSPE) better reflect the …
 - **Gaps/Limitations:**
-  - No adequate ratio between #training points and #weights has been established ("how many parameters are too many" remains open).
+  - No adequate rate between #training points and #weights has been established ("how many parameters are too many" remains open).
   - Comparisons to other NNs/fuzzy engines deemed invalid baselines; ARMAX/regression fitting effort discouraged fair benchmarking — a persistent evaluation gap.
   - Treating a day as a 24-dim vector starves training sets; multi-model and iterative approaches underexplored; chaotic behavior of iterated MLP outputs noted ([19], [20]).
   - Weather-forecast uncertainty ignored in simulations (real deployment errors will be larger) — cf. [27], [75].
@@ -3071,11 +2947,11 @@ Hippert et al. · IEEE Transactions on Power Systems, 16(1), 44-55 · 2001
 **Long Short-Term Memory**  
 Hochreiter et al. · Neural Computation, 9(8), 1735-1780 · 1997
 <https://doi.org/10.1162/neco.1997.9.8.1735>
-**Models**: LSTM, RNN, BPTT, RTRL, Recurrent_Cascade_Correlation  
+**Models**: LSTM, RNN, BPTT, RTRL, RNN, Recurrent_Cascade_Correlation  
 **Horizon**: Long_Term_Forecasting  
 **Metrics**: Classification_Error, MSE, Absolute_Error  
 **Data**: Embedded_Reber_Grammar; Synthetic_Long_Time_Lag_Benchmarks; Adding_Problem; Multiplication_Problem; Temporal_Order_Problem  
-**Features**: LSTM
+**Features**: LSTM, LSTM, LSTM, LSTM, LSTM
 
 - **What they did:**
   - Introduces **Long Short-Term Memory (LSTM)**, a novel recurrent architecture + gradient-based learning algorithm that overcomes the **vanishing/exploding gradient** problem of BPTT and RTRL (error signals flowing backward in time blow up or vanish exponentially depending on weight magnitudes; Hochreiter 1991 analysis).
@@ -3093,3 +2969,98 @@ Hochreiter et al. · Neural Computation, 9(8), 1735-1780 · 1997
   - Gradient-based methods (incl. LSTM) cannot precisely count discrete time steps (99 vs. 100 steps); needs auxiliary counting mechanisms; simple decays/counting differences (3 vs. 11) are fine.
   - Experiments are purely artificial small-scale tasks; authors explicitly propose applying LSTM to **real-world data: time-series prediction, music composition, speech processing** — the gap later filled by load/EV-demand forecasting models.
   - No forget gate, peephole connections, or bidirectionality (added by later work).
+
+### 2014_Adam_A_Method_for_Stochastic_Optimization
+**2014_Adam_A_Method_for_Stochastic_Optimization**  
+????
+
+
+### 2014_Adam_Adam_Stochastic_Optimization
+**2014_Adam_Adam_Stochastic_Optimization**  
+????
+
+
+### 2019_Electric_Vehicle_Charging_Load_Forecasting_A_Comparative_Study_of_Deep_Learning_Approaches
+**2019_Electric_Vehicle_Charging_Load_Forecasting_A_Comparative_Study_of_Deep_Learning_Approaches**  
+????
+
+
+### 2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches
+**2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches**  
+????
+
+
+### 2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations
+**2020_Ensemble_Learning_for_Charging_Load_Forecasting_of_Electric_Vehicle_Charging_Stations**  
+????
+
+
+### 2021_Alvarez_APLF_Adaptive_Probabilistic_Load
+**2021_Alvarez_APLF_Adaptive_Probabilistic_Load**  
+????
+
+
+### 2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations
+**2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations**  
+????
+
+
+### 2021_Browell_Fasiolo_Regional_Netload
+**2021_Browell_Fasiolo_Regional_Netload**  
+????
+
+
+### 2021_Day_Ahead_Forecast_of_Electric_Vehicle_Charging_Demand_with_Deep_Neural_Networks
+**2021_Day_Ahead_Forecast_of_Electric_Vehicle_Charging_Demand_with_Deep_Neural_Networks**  
+????
+
+
+### 2021_Obst_Vilmarest_Goude_Kalman_COVID_France
+**2021_Obst_Vilmarest_Goude_Kalman_COVID_France**  
+????
+
+
+### 2022_Vilmarest_Goude_State_Space_PostCOVID
+**2022_Vilmarest_Goude_State_Space_PostCOVID**  
+????
+
+
+### 2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach
+**2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach**  
+????
+
+
+### 2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction
+**2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction**  
+????
+
+
+### Bahdanau2016_LSTMa_Attention
+**Bahdanau2016_LSTMa_Attention**  
+????
+
+
+### Beltagy2020_Longformer
+**Beltagy2020_Longformer**  
+????
+
+
+### Berrisch_Ziel_CRPS_Learning
+**Berrisch_Ziel_CRPS_Learning**  
+????
+
+
+### Gaillard2016_GEFCOM2014_Aggregation
+**Gaillard2016_GEFCOM2014_Aggregation**  
+????
+
+
+### Wintenberger2017_BOA
+**Wintenberger2017_BOA**  
+????
+
+
+### Zaffran2022_Adaptive_Conformal
+**Zaffran2022_Adaptive_Conformal**  
+????
+
