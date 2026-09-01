@@ -505,3 +505,8 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Updated raw_sources/paper_index.md (#83), index.md (121 papers / 111 PDFs, added paper line), thesis_references.bib (+1, now 111, ansari2025chronos2), dataset_extraction_report.md (appended 9 datasets/URLs, benchmarks + Table 6 + multivariatizers).
 - Regenerated paper_digest.md (121 papers, 388 KB, 2026-09-01) via python gen_paper_digest.py.
 - Duplicate check: no prior wiki/papers/*Chronos-2* or *2025_Ansari*; no raw_sources/*Chronos*; raw_sources/New/2510.15821v1.pdf content-uniq vs Chronos/Bolt/Chronos Benchmark II; 2510.15821v1 is the canonical Chronos-2 tech report.
+## [2026-09-01] ingest | 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models
+- Extracted text to scratch.
+- Created paper note.
+- Propagated to models, datasets, metrics.
+- Added TimeBench to dataset report.

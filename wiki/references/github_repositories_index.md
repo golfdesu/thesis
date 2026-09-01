@@ -225,3 +225,9 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
 - **ChargingEnergyHubs_MPC (Stochastic MPC of Charging Energy Hubs with Conformal Prediction)**:
   `https://github.com/diegofz/ChargingEnergyHubs_MPC`
   *Paper:* [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]]
+- **Chronos-2 (Universal TSFM — Amazon Science)**:
+  `https://github.com/amazon-science/chronos-forecasting`
+  *Paper:* [[2025_Ansari_Chronos_2_Univariate_to_Universal]]
+  *Highlights:* group attention (time+group, O(V)), 120M/28M, 21 quantiles, 2048->8192 ctx, multivariatizers synthetic, SOTA on 3 benchmarks (fev-bench/GIFT-Eval/Chronos Bench II).
+
+- https://github.com/thuml/Sundial

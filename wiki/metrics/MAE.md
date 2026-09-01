@@ -56,3 +56,5 @@ $$\text{MAE} = \frac{1}{N} \sum_{i=1}^N |\hat{y}_i - y_i|$$
 
 ## Literature Usage
 - [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Primary metric (Eq. 6): MAE = 1/H ||y - hat y||_1; scaled by naive baseline (GM) on Monash/Darts.
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

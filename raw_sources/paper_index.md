@@ -85,3 +85,5 @@
 81. [2024_Das_TimesFM_Decoder_Only_Foundation_Model](<2024_Das_TimesFM_Decoder_Only_Foundation_Model.pdf>)
 82. [2026_Khwaja_Toto_2_Scaling_Era](<2026_Khwaja_Toto_2_Scaling_Era.pdf>)
 83. [2025_Ansari_Chronos_2_Univariate_to_Universal](<2025_Ansari_Chronos_2_Univariate_to_Universal.pdf>)
+
+| 132 | [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] | [PDF](./2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.pdf) | 2502.00816v4 |

@@ -18,3 +18,5 @@ Within this knowledge base the model page collects its architectural family, typ
 
 [[2025_Meyer_Benchmark_Foundation_Models]], [[2025_Meyer_Benchmark_Foundation_Models]]
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **Sundial (Liu et al. ICML 2025)** univariate baseline beaten: fev-bench W 41.0/S 33.4 vs 90.7/47.3.
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

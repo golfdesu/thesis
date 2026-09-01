@@ -25,3 +25,5 @@ Commonly reported for point forecasts of EV charging load; penalizes large error
 
 ## References
 - See paper summaries in [[Papers & Literature]] tagged with MSE.
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

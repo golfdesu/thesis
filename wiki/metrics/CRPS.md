@@ -55,3 +55,5 @@ Lower is better; a perfect deterministic forecast gives CRPS = 0. For quantile-b
 - [[PICP]]
 - [[Winkler_Score]]
 - [[2026_Khwaja_Toto_2_Scaling_Era]] — Primary metric on BOOM/GIFT-Eval/TIME: Toto 2.5B CRPS 0.349 (BOOM), 0.476 (GIFT-Eval FM-only), 0.532 (TIME); CRPS ranks 3.88 (BOOM), 20.3 (GIFT), 3.43 (TIME); FnF ensemble 0.463. Quantile head (9 levels, pinball Eq.2-3) → CRPS via integration.
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

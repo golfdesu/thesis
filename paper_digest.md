@@ -1,13 +1,13 @@
 # 📋 One-File Paper Digest — All Papers (for AI Gap Analysis)
 
-> **Purpose**: single-file, self-contained digest of ALL 130 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
+> **Purpose**: single-file, self-contained digest of ALL 131 ingested papers (source: `wiki/papers/*.md`, generated 2026-09-01). Built so an AI agent can read ONE file and immediately know what every paper did — enabling research-gap identification without opening individual notes.
 > **Entry format**: `### filename` → Title — venue, year → metadata line (Models / Horizon / Metrics / Data / Features) → **What they did** (objective & contribution) → **Method core** → **Key results** (numbers) → **Gaps/Limitations**.
 > **Ordering**: newest first. Wikilinks were flattened to plain text; equations omitted; full details/equations/BibTeX live in the linked per-paper note. GENERATED FILE — do not hand-edit; fix source notes and rerun `gen_paper_digest.py`.
 
 ## 🗂️ Corpus Snapshot
-- Total papers: **130**
-- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (26) · 2025 (22) · 2026 (19) · ???? (19)
-- Most-cited model concepts: LSTM (46), Transformer (30), Informer (17), ARIMA (13), DeepAR (13), RNN (12), MLP (12), GRU (11), SVR (11), PatchTST (10), XGBoost (10), Mamba_SSM (9)
+- Total papers: **131**
+- By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (26) · 2025 (23) · 2026 (19) · ???? (19)
+- Most-cited model concepts: LSTM (46), Transformer (31), Informer (17), ARIMA (13), DeepAR (13), RNN (12), MLP (12), GRU (11), SVR (11), PatchTST (10), XGBoost (10), Mamba_SSM (9)
 
 ## 🔎 Quick-Scan Table
 | Paper | Yr | Venue | Core Models | Horizon | Data (#) |
@@ -42,6 +42,7 @@
 | 2025_Khan_Transformer_BiLSTM_Price_Forecasting | 2025 | IEEE Transactions on Industry … | Transformer_BiLSTM, Transformer … | Day_Ahead_Forecasting | 3 |
 | 2025_Li_DC_Charging_Profiles_TFT | 2025 | Nature Communications 16:10921 | Temporal_Fusion_Transformer, beta-VAE … | Short_Term_Forecasting | 2 |
 | 2025_Li_Multi_View_Graph_Intrusion_Detection_EV | 2025 | Applied Energy | MVGCRL, Mask_Attention_Graph_Transformer … | Spatial_Temporal_Forec … | 1 |
+| 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models | 2025 | ICML 2025 | Sundial, Transformer … | Zero-shot / Continuous | 1 |
 | 2025_Matrone_QR_LSTM_Attention_EV_Load | 2025 | ACM E-Energy '25: 16th ACM … | QR-LSTM-Attention, LSTM … | 24-Hour Day-Ahead … | 2 |
 | 2025_Meyer_Benchmark_Foundation_Models | 2025 | IEEE Access | Chronos, Chronos-Bolt … | Short_Term_Forecasting | 4 |
 | 2025_Tian_MSSTGAN_City_EV_Load | 2025 | IEEE Access, Vol. 13, pp. 29000-29017 | Multi-Scale Spatial-Temporal Graph Attention … | City-Level … | 4 |
@@ -900,6 +901,18 @@ Li et al. · Applied Energy · 2025
   - Future work: adaptive graph-augmentation methods tailored automatically to tasks; theoretical grounding of multi-view contrastive objectives.
   - Broader applications proposed: anomaly detection/demand-response support in integrated power-transportation networks, soft-open-point scheduling with energy storage.
   - Note for load-forecasting research: the multi-view graph construction + mask attention recipe is transferable to spatio-temporal EV charging demand graphs.
+
+### 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models
+**Sundial: A Family of Highly Capable Time Series Foundation Models**  
+Liu et al. · ICML 2025 · 2025
+<arXiv:2502.00816v4>
+**Models**: Sundial, Transformer, TimeFlow, TimesFM, Timer, Moirai, Chronos, LLMTime  
+**Horizon**: Zero-shot / Continuous  
+**Metrics**: CRPS, MSE, MAE  
+**Data**: TimeBench
+- **Gaps/Limitations:**
+  - The paper primarily focuses on univariate forecasting; explicit handling of multivariate dependencies (cross-variate correlations) could be a future extension.
+  - While inference is fast due to the efficient solver, flow matching integration still requires multiple function evaluations (though kept small in practice), which could be further optimized.
 
 ### 2025_Matrone_QR_LSTM_Attention_EV_Load
 **Probabilistic Forecast of EV Charging Demand using Quantile Regression and LSTM with Attention Mechanism**  

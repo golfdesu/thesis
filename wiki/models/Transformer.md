@@ -56,3 +56,5 @@ The Transformer architecture, introduced by Vaswani et al. (2017) in [[2017_Atte
 - [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Vanilla Transformer baseline on Monash (GM 0.9384) and ETT; TimesFM significantly outperforms (0.6846 / 0.36 avg MAE).
 - [[2026_Khwaja_Toto_2_Scaling_Era]] — Toto 2.0 is a decoder-only patched Transformer with alternating time/variate attention (Toto 1.0 backbone); CPM + quantile head + NorMuon + u-muP scaling recipe.
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **Transformer** heritage: Chronos-2 is encoder-only T5 (Raffel et al. 2020) with RoPE (Su et al. 2024); alternates time attention (temporal) and group attention (cross-series at same patch).
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

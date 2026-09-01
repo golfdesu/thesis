@@ -251,3 +251,5 @@ Welcome to your LLM-driven Research Wiki for **Machine Learning & Deep Learning 
 - [[2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] - Mansour et al. (2025): Electric vehicles charging stations load forecasting based on hybrid XGBoost-BiLSTM model (Nature Sci Rep).
 - [[2021_Huang_Lyapunov_EV_Scheduling]] - Huang et al. (2021): Forecast-Enhanced Lyapunov Optimization for real-time EV charging scheduling.
 - [[2026_Chen_PC_M3_Mamba_EV_Clusters]] - Chen et al. (2026): PC-M3 Physics-Constrained Mamba-3 MIMO aggregator for real-time energy management of 10,000+ EV clusters.
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] - *Sundial: A Family of Highly Capable Time Series Foundation Models*

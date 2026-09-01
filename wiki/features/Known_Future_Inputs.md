@@ -15,3 +15,6 @@ Time-varying inputs known in advance (calendar, planned events, weather forecast
 ## Referenced in this knowledge base
 
 *(none recorded)*
+
+## Literature Usage
+- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Known future inputs W = [w_{T+1},...,w_{T+H}] containing known covariate futures (or missing for targets/past-only); key to group-attention ICL, Table 2 specification.
