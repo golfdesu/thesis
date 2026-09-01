@@ -22,4 +22,4 @@ ResMMoT-Informer integrates a **Residual Multiscale TCN Sparse Mixture of Expert
   $$\mathcal{A}(Q, K, V) = \text{Softmax}\left(\frac{\bar{Q} K^T}{\sqrt{d}}\right) V$$
 
 ## Literature References
-- [[2025_Bao_ResMMoT_Informer_Time_Series]] - Proposed ResMMoT-Informer achieving 30-40% error reduction on volatile time series forecasting.
+- [[2025_ResMMoT_Informer_Time_Series]] - Proposed ResMMoT-Informer achieving 30-40% error reduction on volatile time series forecasting.

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_He_Robust_MTS_Transitional_Shift]]
+[[2024_Robust_MTS_Transitional_Shift]]

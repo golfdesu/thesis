@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2019_Zhu_EV_Load_Forecasting]], [[2019_Zhu_EV_Load_Forecasting]]
+[[2019_EV_Load_Forecasting]], [[2019_EV_Load_Forecasting]]

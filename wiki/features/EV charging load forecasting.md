@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_Wang_Xu_Similar_Day_Selection_EV_Load]]
+[[2026_Similar_Day_Selection_EV_Load]]

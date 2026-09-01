@@ -24,4 +24,4 @@ FEDM combines statistical Pearson correlation analysis ($r_{X,Y}$) for prior fea
   $$\text{GLU}_\omega(d_1) = \sigma\left(W_\omega^{(4)} d_1 + b_\omega^{(4)}\right) \odot \left(W_\omega^{(5)} d_1 + b_\omega^{(5)}\right)$$
 
 ## Literature References
-- [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] - Proposed FEDM achieving 99.22% Qualified Rate in 15-minute probabilistic EV load forecasting.
+- [[2024_Feature_Enhanced_Probabilistic_EV_Load]] - Proposed FEDM achieving 99.22% Qualified Rate in 15-minute probabilistic EV load forecasting.

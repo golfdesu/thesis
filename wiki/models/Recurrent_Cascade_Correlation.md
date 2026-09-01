@@ -17,4 +17,4 @@ Cascade-Correlation grows a network one hidden unit at a time: each new hidden u
 
 ## Referenced in this knowledge base
 
-[[1997_Hochreiter_Long_Short_Term_Memory]] — cited as a predecessor architecture in LSTM discussions.
+[[1997_Long_Short_Term_Memory]] — cited as a predecessor architecture in LSTM discussions.

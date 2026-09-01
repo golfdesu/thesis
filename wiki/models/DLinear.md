@@ -28,11 +28,15 @@ Properties: $O(1)$ maximum signal traversing path length, only ~2TL parameters, 
 - **Weaknesses**: limited capacity — cannot capture change points; no cross-variate modeling; authors position it as a baseline, not an end model.
 
 ## Literature Usage
-- [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — Original paper: Electricity T=96 MSE 0.140 vs FEDformer 0.193 / Informer 0.274; Exchange T=720 0.643 vs FEDformer 1.447; shuffling inputs hurts linear models (27–81%) but not Transformers → order preservation is the differentiator.
-- [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — The rebuttal PatchTST answers: patched CI Transformers beat DLinear on large datasets (Electricity T=96: 0.129 vs 0.140) and ILI.
-- [[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]] — TimesNet beats DLinear in forecasting (40 vs 14 first-place counts) while DLinear collapses on classification/imputation (67.5% accuracy) — fixed temporal parameters cannot learn hierarchical representations.
-- [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]] — Concurrent challenger: DLinear beats Crossformer on ETTm1 long horizons, ECL, Traffic (e.g., Traffic τ=24: 0.351 vs 0.491).
-- [[2024_Das_TiDE_Long_Term_Forecasting]] — Motivation for TiDE; a pure linear model is a guaranteed subclass via TiDE's global residual connection.
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Linear forecaster motivating the inversion reflection; iTransformer restores Transformer dominance over RLinear/DLinear-style baselines.
-- [[2001_Hippert_Neural_Networks_STLF_Review]] — Modern echo of the review's "benchmark simple linear models" message for load forecasting.
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Baseline in ETT finetuning Table 2 (avg 0.600 ETTh1); TimesFM(FT) 0.426 dominates; DLinear efficiency discussion context [ZCZX23].
+- [[2026_TiRex_2_Multivariate_Streaming_Forecasting]] — Evaluated as baseline comparison on fev-bench and GIFT-Eval where TiRex-2 achieves SOTA zero-shot accuracy in multivariate and covariate-aware settings.
+- [[2026_FlowState_Sampling_Rate_Equivariant_Forecasting]] — Compared as baseline on GIFT-Eval zero-shot benchmark where FlowState achieves state-of-the-art accuracy with significantly lower parameter counts.
+- [[2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning]] — Evaluated as baseline comparison in zero-shot time series benchmark (GiftEval-ZS and Chronos-ZS), where TiRex (35M) outperforms baseline models across short and long horizons.
+- [[2023_DLinear_Are_Transformers_Effective_LTSF]] — Original paper: Electricity T=96 MSE 0.140 vs FEDformer 0.193 / Informer 0.274; Exchange T=720 0.643 vs FEDformer 1.447; shuffling inputs hurts linear models (27–81%) but not Transformers → order preservation is the differentiator.
+- [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]] — The rebuttal PatchTST answers: patched CI Transformers beat DLinear on large datasets (Electricity T=96: 0.129 vs 0.140) and ILI.
+- [[2023_TimesNet_Temporal_2D_Variation_Modeling]] — TimesNet beats DLinear in forecasting (40 vs 14 first-place counts) while DLinear collapses on classification/imputation (67.5% accuracy) — fixed temporal parameters cannot learn hierarchical representations.
+- [[2023_Crossformer_Cross_Dimension_Dependency]] — Concurrent challenger: DLinear beats Crossformer on ETTm1 long horizons, ECL, Traffic (e.g., Traffic τ=24: 0.351 vs 0.491).
+- [[2024_TiDE_Long_Term_Forecasting]] — Motivation for TiDE; a pure linear model is a guaranteed subclass via TiDE's global residual connection.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Linear forecaster motivating the inversion reflection; iTransformer restores Transformer dominance over RLinear/DLinear-style baselines.
+- [[2001_Neural_Networks_STLF_Review]] — Modern echo of the review's "benchmark simple linear models" message for load forecasting.
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — Baseline in ETT finetuning Table 2 (avg 0.600 ETTh1); TimesFM(FT) 0.426 dominates; DLinear efficiency discussion context [ZCZX23].
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — **MOIRAI (Woo et al., ICML 2024)**: Masked Encoder-based Universal Time Series Forecasting Transformer (14M Small, 91M Base, 311M Large). Introduces multi-patch size input/output projections (8..128), Any-variate Attention with binary variate biases and RoPE, and 4-component mixture distribution (Student-t, log-normal, neg-binomial, low-var normal). Pre-trained on LOTSA (27.6B obs across 9 domains) with sequence packing.

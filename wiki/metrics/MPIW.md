@@ -30,8 +30,8 @@ $$\text{MPIW} = \frac{1}{N}\sum_{i=1}^{N}\left(u_i - l_i\right)$$
 
 | Paper | Result |
 |-------|--------|
-| 2026 — [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] | EnergyMamba MPIW 122.51 (Florida 1) vs best baseline ST-LLM 134.28; 107.83 (Florida 2); 201.87 (NYISO); 692.05 (CAISO) — sharper *and* ≥90% coverage via [[AS_CQR]]. |
-| Related interval-width metrics | [[2024_Zhou_Conformal_Prediction_DER]] (Interval_Size), [[2024_Ali_MQ_TCN_Transfer_Learning_EV]] ([[Winkler_Score]] reveals over-wide intervals despite 96.88% PICP). |
+| 2026 — [[2026_EnergyMamba_Graph_Mamba_ASCQR]] | EnergyMamba MPIW 122.51 (Florida 1) vs best baseline ST-LLM 134.28; 107.83 (Florida 2); 201.87 (NYISO); 692.05 (CAISO) — sharper *and* ≥90% coverage via [[AS_CQR]]. |
+| Related interval-width metrics | [[2024_Conformal_Prediction_DER]] (Interval_Size), [[2024_MQ_TCN_Transfer_Learning_EV]] ([[Winkler_Score]] reveals over-wide intervals despite 96.88% PICP). |
 
 ## Related Pages
 

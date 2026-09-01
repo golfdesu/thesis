@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Zhang_Probabilistic_Queuing_EV_Load]]
+[[2021_Probabilistic_Queuing_EV_Load]]

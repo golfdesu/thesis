@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]
+[[2024_Adaptive_Probabilistic_Netload]]

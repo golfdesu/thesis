@@ -36,7 +36,7 @@ Absorbs smooth trend and cleanly captures structural breaks (e.g., tariff introd
 - **Weaknesses**: session counts only (not kWh/power); Poisson likelihood strained by over-dispersion; RMSE near-parity with XGBoost (local spikes not captured); proposed extensions: Negative Binomial likelihood, hierarchical multi-scale reconciliation, two-stage XGBoost→INLA hybrid on residuals.
 
 ## 📚 Literature Usage
-- [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] — First LGM+INLA application to EV charging demand; ICAR–RW2 edges out SPDE–RW2 (DIC 136,563 vs 136,941) on the Glasgow [[ChargePlace_Scotland]] benchmark.
+- [[2026_INLA_Spatio_Temporal_EV_Demand]] — First LGM+INLA application to EV charging demand; ICAR–RW2 edges out SPDE–RW2 (DIC 136,563 vs 136,941) on the Glasgow [[ChargePlace_Scotland]] benchmark.
 
 ## Related Pages
 - [[ChargePlace_Scotland]]

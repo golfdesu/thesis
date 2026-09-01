@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]
+[[2023_Multi_Branch_ResTrans_Solar]]

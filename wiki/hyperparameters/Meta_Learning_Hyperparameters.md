@@ -21,7 +21,7 @@ Meta-learning ("learning to learn") optimizes initial model parameter initializa
 - **Stacked Meta-Learning**: Ensembles hierarchical base models and metalearners.
 
 ## Papers Utilizing Meta-Learning Hyperparameter Adaptation
-- [[2023_Huang_MetaProbformer_EV_Load]] - Combines Reptile meta-learning with Informer Transformer for few-shot probabilistic load forecasting at newly deployed charging stations.
-- [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] - Employs stacked meta-learning for fast parameter adaptation across short-term EV load series.
-- [[2017_Finn_MAML_Model_Agnostic_Meta_Learning]] - Foundational MAML meta-learning algorithm.
-- [[2018_Nichol_Reptile_First_Order_Meta_Learning]] - Foundational Reptile first-order meta-learning algorithm.
+- [[2023_MetaProbformer_EV_Load]] - Combines Reptile meta-learning with Informer Transformer for few-shot probabilistic load forecasting at newly deployed charging stations.
+- [[2026_Decomposition_Stacked_Meta_Learning_EV_Load]] - Employs stacked meta-learning for fast parameter adaptation across short-term EV load series.
+- [[2017_MAML_Model_Agnostic_Meta_Learning]] - Foundational MAML meta-learning algorithm.
+- [[2018_Reptile_First_Order_Meta_Learning]] - Foundational Reptile first-order meta-learning algorithm.

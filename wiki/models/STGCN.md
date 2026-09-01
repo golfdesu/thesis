@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]]
+[[2024_Attention_Spatiotemporal_MultiGraph_EV_Load]], [[2026_Mamba_KAN_HyKANet_EV]], [[2026_EVformer_Spatio_Temporal_Decoupled_Citywide]]

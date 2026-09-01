@@ -18,5 +18,5 @@ Bayesian Optimization constructs a probabilistic surrogate model (typically a Ga
 - **Continuous & Discrete Search**: Effective for continuous hyperparameters like learning rate, weight decay, and kernel bandwidths.
 
 ## Papers Utilizing Bayesian Optimization
-- [[2022_Cao_Robust_Deep_Gaussian_Process_Load]] - Variational hyperparameter inference for Deep Gaussian Processes.
-- [[2024_Ali_MQ_TCN_Transfer_Learning_EV]] - Optimized Multi-Quantile Temporal Convolutional Network (MQ-TCN) dilation factors and loss weights.
+- [[2022_Robust_Deep_Gaussian_Process_Load]] - Variational hyperparameter inference for Deep Gaussian Processes.
+- [[2024_MQ_TCN_Transfer_Learning_EV]] - Optimized Multi-Quantile Temporal Convolutional Network (MQ-TCN) dilation factors and loss weights.

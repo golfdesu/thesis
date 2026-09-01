@@ -23,7 +23,7 @@ Lyapunov Optimization uses virtual queues ($q(t), z(t)$) to convert time-average
 
 ## Application in EV Charging Systems
 - Converts short-term EV load forecasts into optimal real-time power dispatch commands.
-- Guarantees bounded charging delay $O(w)$ and achieves a cost gap within 1% of offline global optimal ([[2026_Huang_Lyapunov_EV_Scheduling]]).
+- Guarantees bounded charging delay $O(w)$ and achieves a cost gap within 1% of offline global optimal ([[2026_Lyapunov_EV_Scheduling]]).
 
 ## Literature References
-- [[2026_Huang_Lyapunov_EV_Scheduling]] - Forecast-Enhanced Lyapunov Optimization for real-time EV charging scheduling.
+- [[2026_Lyapunov_EV_Scheduling]] - Forecast-Enhanced Lyapunov Optimization for real-time EV charging scheduling.

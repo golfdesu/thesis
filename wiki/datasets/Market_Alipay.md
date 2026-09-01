@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]]
+[[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]]

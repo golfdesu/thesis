@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]]
+[[2025_MixerInformer_Transfer_Learning_New_EV_Stations]]

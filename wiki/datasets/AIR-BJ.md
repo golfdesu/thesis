@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion]]
+[[2023_DiffSTG_Probabilistic_ST_Graph_Diffusion]]

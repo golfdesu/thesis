@@ -16,4 +16,4 @@ Large-scale web-traffic series used for long-horizon forecasting: daily page vie
 - **Competition**: https://www.kaggle.com/c/web-traffic-time-series-forecasting
 
 ## Literature Usage
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — See Wikipedia_Pageviews: TimesFM pretraining used Wikimedia pageviews (5.6M hourly series, ~360B points total).
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — See Wikipedia_Pageviews: TimesFM pretraining used Wikimedia pageviews (5.6M hourly series, ~360B points total).

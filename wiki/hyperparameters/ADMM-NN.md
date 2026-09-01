@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]], [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]
+[[2024_Day_Ahead_EVCB_EVSC_Parking_Lot]], [[2024_Day_Ahead_EVCB_EVSC_Parking_Lot]]

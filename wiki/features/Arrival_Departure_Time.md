@@ -29,20 +29,20 @@ tags: [feature, behavioral, session, arrival, departure]
 
 | Paper | How Arrival/Departure Is Used |
 |-------|-------------------------------|
-| [[2021_VanKriekinge_Day_Ahead_EV_Demand]] | Sin/Cos cyclical encoding of arrival time; VIANN feature importance |
-| [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]] | Arrival rate $\lambda$ and service rate $\mu$ in $M/G/c$ fluid queues |
-| [[2021_Zhang_Probabilistic_Queuing_EV_Load]] | $M/M/C/K$ queuing model with driver refusal probability $\alpha_w$ |
-| [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]] | Arrival/departure window for schedulable capacity domain (EVSFD) |
-| [[2025_Li_DC_Charging_Profiles_TFT]] | TFT prediction of session duration as a direct output |
-| [[2024_Ke_Divide_Conquer_Transformer_EV]] | Predicts both EV charging event occurrence and session magnitude |
+| [[2021_Day_Ahead_EV_Demand]] | Sin/Cos cyclical encoding of arrival time; VIANN feature importance |
+| [[2014_Scalable_Stochastic_EV_Demand]] | Arrival rate $\lambda$ and service rate $\mu$ in $M/G/c$ fluid queues |
+| [[2021_Probabilistic_Queuing_EV_Load]] | $M/M/C/K$ queuing model with driver refusal probability $\alpha_w$ |
+| [[2024_Day_Ahead_EVCB_EVSC_Parking_Lot]] | Arrival/departure window for schedulable capacity domain (EVSFD) |
+| [[2025_DC_Charging_Profiles_TFT]] | TFT prediction of session duration as a direct output |
+| [[2024_Divide_Conquer_Transformer_EV]] | Predicts both EV charging event occurrence and session magnitude |
 
 ## Citing Literature
 
-- 2020 — [[2020_Huang_Ensemble_EV_Load]] : Transaction start time used as session-level feature for Boulder ensemble forecasting.
-- 2026 — [[2026_Huang_Lyapunov_EV_Scheduling]] : Parking time and required charging energy define delay-tolerant scheduling slack (Shanghai arrival data).
-- 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : Arrival/departure timestamps + charging duration log among top engineered features for stacking ensemble.
-- 2025 — [[2025_Yang_Stochastic_MPC_Microgrid_EV]] : Stochastic EV arrival/departure times sampled (Latin Hypercube) for scenario-based MPC microgrid dispatch.
-- 2026 — [[2026_Tang_PC_M3_Mamba_EV_Clusters]] : Per-EV arrival/departure times + SOC define flexibility clusters in PC-M3 fleet model.
+- 2020 — [[2020_Ensemble_EV_Load]] : Transaction start time used as session-level feature for Boulder ensemble forecasting.
+- 2026 — [[2026_Lyapunov_EV_Scheduling]] : Parking time and required charging energy define delay-tolerant scheduling slack (Shanghai arrival data).
+- 2025 — [[2026_Hybrid_XGBoost_BiLSTM_EV_Load]] : Arrival/departure timestamps + charging duration log among top engineered features for stacking ensemble.
+- 2025 — [[2025_Stochastic_MPC_Microgrid_EV]] : Stochastic EV arrival/departure times sampled (Latin Hypercube) for scenario-based MPC microgrid dispatch.
+- 2026 — [[2026_PC_M3_Mamba_EV_Clusters]] : Per-EV arrival/departure times + SOC define flexibility clusters in PC-M3 fleet model.
 
 ## Stochastic Modeling
 

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Zhu_Personalized_Federated_Learning]]
+[[2025_Personalized_Federated_Learning]]

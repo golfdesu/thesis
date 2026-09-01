@@ -30,6 +30,6 @@ $$E_{x^0_t,\epsilon,n}\left[\|\epsilon-\epsilon_\theta(\sqrt{\bar{\alpha}_n}x^0_
 - **Weaknesses**: inference latency — N=100 diffusion steps × S=100 trajectories per autoregressive timestep; RNN conditioning limits very long sequences; no spatial inductive bias between stations.
 
 ## Literature Usage
-- [[2021_Rasul_TimeGrad_Diffusion_Forecasting]] — Original paper: LSTM-conditioned DDPM head; new SOTA CRPSsum on five of six benchmarks (Electricity 0.0206, Traffic 0.044).
-- [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]] — Direct predecessor: CSDI's joint temporal diffusion beats TimeGrad on electricity forecasting CRPS-sum (0.017 vs 0.021) and traffic (0.020 vs 0.044).
-- [[2024_Li_DiffPLF_Conditional_Diffusion_EV]] — Contrast point for EV charging-load diffusion design: DiffPLF replaces concatenation-style conditioning with cross-attention conditioning.
+- [[2021_TimeGrad_Diffusion_Forecasting]] — Original paper: LSTM-conditioned DDPM head; new SOTA CRPSsum on five of six benchmarks (Electricity 0.0206, Traffic 0.044).
+- [[2021_CSDI_Conditional_Diffusion_Forecasting]] — Direct predecessor: CSDI's joint temporal diffusion beats TimeGrad on electricity forecasting CRPS-sum (0.017 vs 0.021) and traffic (0.020 vs 0.044).
+- [[2024_DiffPLF_Conditional_Diffusion_EV]] — Contrast point for EV charging-load diffusion design: DiffPLF replaces concatenation-style conditioning with cross-attention conditioning.

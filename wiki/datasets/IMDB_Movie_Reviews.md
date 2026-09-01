@@ -20,4 +20,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2014_Kingma_Adam_Stochastic_Optimization]], [[2014_Kingma_Adam_Stochastic_Optimization]]
+[[2014_Kingma_Adam_Optimization]], [[2014_Kingma_Adam_Optimization]]

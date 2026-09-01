@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]], [[2024_Li_DiffPLF_Conditional_Diffusion_EV]]
+[[2024_Adaptive_Probabilistic_Netload]], [[2024_DiffPLF_Conditional_Diffusion_EV]]

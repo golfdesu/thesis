@@ -22,4 +22,4 @@ CAT-Former fuses **Temporal Features** ($h, dw, dt, dm, sd$) with **Contextual F
   $$\text{Output}_t = \text{Linear}\left( \text{MultiHead}(Q, K, V) \right)$$
 
 ## Literature References
-- [[2025_Hussain_CAT_Former_Short_Term_EV]] - Proposed CAT-Former for 1-hour and 1-day short-term EV station demand forecasting.
+- [[2025_CAT_Former_Short_Term_EV]] - Proposed CAT-Former for 1-hour and 1-day short-term EV station demand forecasting.

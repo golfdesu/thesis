@@ -19,4 +19,4 @@ Metaheuristic optimization methods simulate biological or swarm behaviors (e.g.,
 - **Decomposition Coupling**: Often coupled with signal decomposition algorithms (e.g., ICEEMDAN, VMD) to optimize feature extraction parameters simultaneously with neural network weights.
 
 ## Papers Utilizing Metaheuristic Optimization
-- [[2025_Zheng_BWO_ICEEMDAN_iTransformer]] - Utilizes Beluga Whale Optimization (BWO) to joint-tune ICEEMDAN signal decomposition parameters and iTransformer architecture hyperparameters.
+- [[2025_BWO_ICEEMDAN_iTransformer]] - Utilizes Beluga Whale Optimization (BWO) to joint-tune ICEEMDAN signal decomposition parameters and iTransformer architecture hyperparameters.

@@ -13,4 +13,4 @@ Mixture-of-Experts TSFM (Shi et al. 2024) — previous SOTA point forecaster bea
 
 ## Literature Usage
 
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

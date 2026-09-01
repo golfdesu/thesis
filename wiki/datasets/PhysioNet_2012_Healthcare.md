@@ -20,4 +20,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]
+[[2021_CSDI_Conditional_Diffusion_Forecasting]]

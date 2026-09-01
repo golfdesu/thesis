@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Weqar_LTLM_LSTM_EV_Load]]
+[[2025_LTLM_LSTM_EV_Load]]

@@ -20,4 +20,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2022_Kim_RevIN_Reversible_Instance_Normalization]]
+[[2022_RevIN_Reversible_Instance_Normalization]]

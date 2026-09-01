@@ -30,4 +30,4 @@ Hourly aggregated real-world EV charging load from a **large residential area in
 - Strongest correlations: sunshine index −0.239, mean humidity +0.131.
 
 ## 📚 Used By
-- [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]] — Multi-scale Fusion Transformer (3M scale masks + FAM/MFM feature fusion) benchmark vs Transformer/BiLSTM/LSTM/GRU at 24–96 h horizons.
+- [[2026_MFT_Multi_Scale_Fusion_Transformer]] — Multi-scale Fusion Transformer (3M scale masks + FAM/MFM feature fusion) benchmark vs Transformer/BiLSTM/LSTM/GRU at 24–96 h horizons.

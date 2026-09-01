@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[Mamba_SSM]], [[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Hao_Mamba_KAN_HyKANet_EV]]
+[[Mamba_SSM]], [[2026_Mamba_KAN_HyKANet_EV]], [[2026_Mamba_KAN_HyKANet_EV]]

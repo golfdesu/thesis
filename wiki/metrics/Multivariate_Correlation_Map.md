@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]]
+[[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]]

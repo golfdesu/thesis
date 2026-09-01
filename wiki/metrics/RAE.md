@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2026_Hao_Mamba_KAN_HyKANet_EV]], [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]]
+[[2026_Mamba_KAN_HyKANet_EV]], [[2026_TriModal_Causal_EV_Demand]]

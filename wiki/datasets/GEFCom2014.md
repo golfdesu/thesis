@@ -22,4 +22,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]], [[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]], [[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]]
+[[2017_QRA_Sister_Forecasts_Probabilistic_Load]], [[2017_QRA_Sister_Forecasts_Probabilistic_Load]], [[2025_Meta_Learning_Physics_Informed_GACN_Power_System]]

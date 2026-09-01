@@ -25,8 +25,8 @@ PAG integrates **Physics-Informed Meta-Learning (PIML)** pre-training with a **G
   $$\mathbf{x}_i'' = \parallel_{m=1}^M \left[ (1-\beta)\mathbf{x}_i'^m + \beta \mathbf{x}_i'^{m-1} \right]$$
 
 ## Literature References
-- [[2024_Qu_Physics_Informed_GAT_EV_Load]] - Proposed PAG framework evaluated on 18,061 charging piles across 247 traffic zones in Shenzhen.
+- [[2024_Physics_Informed_GAT_EV_Load]] - Proposed PAG framework evaluated on 18,061 charging piles across 247 traffic zones in Shenzhen.
 
 ## 📚 Literature Usage
-- 2024 — [[2024_Qu_Physics_Informed_GAT_EV_Load]] : Proposed PAG; strongest baseline in later work — average RMSE 5.48 across 15–60 min horizons, MAPE 16.87 on Shenzhen charging demand.
-- 2026 — [[2026_Hao_Mamba_KAN_HyKANet_EV]] : PAG was the best baseline that HyKANet surpassed — avg RMSE cut from 5.48 to 4.67 (up to 14.8% improvement), MAE 3.33 → 2.49 (−12.2%), MAPE 16.87 → 15.33.
+- 2024 — [[2024_Physics_Informed_GAT_EV_Load]] : Proposed PAG; strongest baseline in later work — average RMSE 5.48 across 15–60 min horizons, MAPE 16.87 on Shenzhen charging demand.
+- 2026 — [[2026_Mamba_KAN_HyKANet_EV]] : PAG was the best baseline that HyKANet surpassed — avg RMSE cut from 5.48 to 4.67 (up to 14.8% improvement), MAE 3.33 → 2.49 (−12.2%), MAPE 16.87 → 15.33.

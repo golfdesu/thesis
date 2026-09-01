@@ -78,7 +78,7 @@ $$\text{lrate} = d_{model}^{-0.5} \cdot \min(step\_num^{-0.5},\ step\_num \cdot 
 ```
 
 ## 🔗 Key References & Citation Graph
-- Replaces recurrent sequence models built on [[1997_Hochreiter_Long_Short_Term_Memory]]
-- Optimizer used: [[2014_Kingma_Adam_Stochastic_Optimization]]
-- Convolutional alternative evaluated against: [[2018_Bai_Empirical_TCN_Sequence_Modeling]]
-- Direct EV/load-forecasting descendants in vault: [[2021_Zhou_Informer_Beyond_Efficient_Transformer]], [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]], [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]], [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]]
+- Replaces recurrent sequence models built on [[1997_Long_Short_Term_Memory]]
+- Optimizer used: [[2014_Kingma_Adam_Optimization]]
+- Convolutional alternative evaluated against: [[2018_Empirical_TCN_Sequence_Modeling]]
+- Direct EV/load-forecasting descendants in vault: [[2021_Informer_Beyond_Efficient_Transformer]], [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_TFT_Temporal_Fusion_Transformers]], [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2023_Crossformer_Cross_Dimension_Dependency]], [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]]

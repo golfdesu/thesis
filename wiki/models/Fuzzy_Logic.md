@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2015_Raza_Review_AI_Load_Demand]]
+[[2015_Review_AI_Load_Demand]]

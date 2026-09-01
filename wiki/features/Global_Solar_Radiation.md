@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Matrone_QR_LSTM_Attention_EV_Load]]
+[[2025_QR_LSTM_Attention_EV_Load]]

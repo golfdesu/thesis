@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Das_TiDE_Long_Term_Forecasting]]
+[[2024_TiDE_Long_Term_Forecasting]]

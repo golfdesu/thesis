@@ -12,4 +12,4 @@ See [[Electricity_ECL]] for dataset description and Literature Usage.
 
 ## Literature Usage
 
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib evaluation (ECL/Electricity, horizons 96/192/336/720) — see [[Electricity_ECL]].
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib evaluation (ECL/Electricity, horizons 96/192/336/720) — see [[Electricity_ECL]].

@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2023_Cao_Treatment_Effects_Continuous_Time_Hidden_Confounders]]
+[[2023_Treatment_Effects_Continuous_Time_Hidden_Confounders]]

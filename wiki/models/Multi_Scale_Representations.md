@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Zhang_Crossformer_Cross_Dimension_Dependency]]
+[[2023_Crossformer_Cross_Dimension_Dependency]]

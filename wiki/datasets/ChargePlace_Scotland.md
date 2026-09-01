@@ -43,7 +43,7 @@ Seven anomalous CPIDs excluded (62201–62203, 62266, 62261, 50433, 62123).
 > The paper's extracted text contains only hyperlink placeholders ("Git repository.", "Zenodo repository.") for code/data — no literal URLs appear anywhere. Portal: **chargeplace.org.uk**; exact Zenodo/GitHub mirror URLs must be recovered from the arXiv HTML/PDF source before citing them.
 
 ## 📚 Used By
-- [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] — Nationwide EDA + Central-Glasgow spatio-temporal case study ([[INLA_Latent_Gaussian_Model]], ICAR/SPDE + RW2); proposed as the modern Scottish open benchmark alongside sibling portals [[Dundee_EV]] and [[Perth_EV]].
+- [[2026_INLA_Spatio_Temporal_EV_Demand]] — Nationwide EDA + Central-Glasgow spatio-temporal case study ([[INLA_Latent_Gaussian_Model]], ICAR/SPDE + RW2); proposed as the modern Scottish open benchmark alongside sibling portals [[Dundee_EV]] and [[Perth_EV]].
 
 ## Related Pages
 - [[Dundee_EV]]

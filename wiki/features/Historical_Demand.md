@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_Hao_Mamba_KAN_HyKANet_EV]]
+[[2026_Mamba_KAN_HyKANet_EV]]

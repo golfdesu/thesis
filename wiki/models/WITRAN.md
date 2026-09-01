@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]
+[[2024_BiMamba_Bidirectional_Mamba_Forecasting]]

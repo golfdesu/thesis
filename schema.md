@@ -45,7 +45,7 @@ Thesis/
     └── references/                    # Citation data (_all_references.md, per-paper *_refs.md, github_repositories_index.md)
 ```
 
-**Naming convention** for paper notes: `YYYY_FirstAuthor_Keywords.md` using full words and underscores (e.g. `2019_Zhu_EV_Load_Forecasting.md`). Check existing names before introducing new concept names to avoid duplicates (e.g. do not create both `ACN_Data` and `Caltech_ACN`).
+**Naming convention** for paper notes: `YYYY_Keywords.md` using full words and underscores (e.g. `2019_Zhu_EV_Load_Forecasting.md`). Check existing names before introducing new concept names to avoid duplicates (e.g. do not create both `ACN_Data` and `Caltech_ACN`).
 
 ---
 
@@ -58,8 +58,14 @@ Follow `AGENTS.md` for the full ordered workflow (Step 0 pre-flight → Step 5 s
 - Reuse existing extractions (>1KB) instead of re-extracting.
 - Read EVERY page. Never summarize from the abstract alone.
 
-### Step 2: Create Paper Summary Note (`wiki/papers/YYYY_FirstAuthor_Keywords.md`)
-Use the following standardized frontmatter and template:
+### Step 2: Create Paper Summary Note (`wiki/papers/YYYY_Keywords.md`) — TEMPLATE IS LAW
+
+> **Model-agnostic enforcement (binding on every model — gemini, spark, opus, sonnet, local LLM):**
+> Copy-paste the template below **verbatim**. Never regenerate headings from memory. Required headings (exact strings, including emoji — any deviation fails ingest):
+> `# Summary: [Paper Title]` + `## 🎯 Main Objective & Contribution` + `## 🧠 Methodology & Model Architecture` + `## 📊 Dataset & Input Features` + `## 📈 Performance & Results` + `## 💡 Limitations & Identified Research Gaps` + `## 📚 BibTeX & Citation Reference` + `## 🔗 Key References & Citation Graph`
+> Bad: `## Contribution` / `## Method Core` / `## Key Results` — invented. Good: `## 🎯 Main Objective & Contribution` — exact copy. See `.agents/skills/ingest-paper/SKILL.md` Gates G1-G8 for hard fails.
+
+Use the following standardized frontmatter and template (copy-paste, do not paraphrase):
 
 ```markdown
 ---
@@ -88,7 +94,7 @@ tags:
 
 ## 🧠 Methodology & Model Architecture
 - **Model Type**: Detailed description of the model (e.g. CNN-LSTM with Attention mechanism).
-- **Key Equations**: Extract ALL key equations VERBATIM from the paper text and render in LaTeX ($$...$$ display math), naming each equation (e.g. "**Eq. 3 — Pinball Loss**: $$...$$"). Never paraphrase or invent equations.
+- **Key Equations (G3 — verbatim, hard fail if skipped)**: Extract ALL key equations **verbatim** from the FULL text (every page of \`scratch/txt/*.txt\`, not just abstract) and render as LaTeX display blocks \`$$... \\tag{N}$$\` with original symbols. Name each equation (e.g. "**Eq. 3 — Pinball Loss**: $$... \\tag{3}$$"). Never paraphrase, never invent. If a symbol is ambiguous in extraction, keep the PDF notation and add \`[as in PDF p.X]\` rather than renaming. Count \`$$\` blocks ≥ numbered equations in PDF. **MUST write the note file via Python raw string `r"""..."""` (or double every `\` to `\\`) — plain `"""` converts `\t \n \r \a \f \v \nu \theta \alpha \frac` into TAB/CR/BEL/FF/control chars and breaks every equation (root cause of 2024_Woo G3 fail: 49 control chars, `\tag`→`ag{`, `\theta`→`heta`). Verify: `grep -P "[\x00-\x08\x0B\x0C\x0E-\x1F]" wiki/papers/YYYY_*.md` must return 0 and `grep -c "\\\\tag"` must equal `grep -c "ag{"` (no stray `ag{` without `\`).**
 - **Loss Function**: Custom loss functions if any (e.g. Pinball loss for probabilistic forecasting).
 
 ## 📊 Dataset & Input Features
@@ -98,7 +104,7 @@ tags:
 
 ## 📈 Performance & Results
 - Key numerical results vs baselines with concrete numbers.
-- **NEVER invent values.** If a results table cannot be extracted from the PDF, write "not extractable" instead of guessing.
+- **NEVER invent values (G4 — hard fail).** Every metric must have a concrete value with table/figure citation (e.g. \`Table 1 p.5\`) or \`not extractable — see PDF p.X Table Y\` if unreadable. Never round silently, never truncate ablations/scaling results.
 
 ## 💡 Limitations & Identified Research Gaps
 - Critical limitations noted by authors or identified during review (e.g. ignores grid constraints, unscalable to large spatial networks, deterministic-only forecasts).
@@ -115,7 +121,7 @@ tags:
 ```
 
 ## 🔗 Key References & Citation Graph
-- Cited Foundation Papers in Vault: [[2017_Attention_Is_All_You_Need]], [[2021_Lim_TFT_Temporal_Fusion_Transformers]]
+- Cited Foundation Papers in Vault: [[2017_Attention_Is_All_You_Need]], [[2021_TFT_Temporal_Fusion_Transformers]] — wikilink `[[YYYY_Author_Keywords]]` **ONLY IF** the target `wiki/papers/YYYY_Author_*.md` (or `raw_sources/YYYY_*.pdf`) already exists; otherwise use plain text (`Author et al. Year (Title)`). Wrapping a non-ingested paper in `[[ ]]` creates a ghost stub and fails G6. When in doubt, use plain text. — wikilink \`[[YYYY_Author_Keywords]]\` **ONLY IF** the target \`wiki/papers/YYYY_Author_*.md\` (or \`raw_sources/YYYY_*.pdf\`) already exists; otherwise use plain text (\`Author et al. Year (Title)\`). Wrapping a non-ingested paper in \`[[ ]]\` creates a ghost stub and fails G6. When in doubt, use plain text.
 
 > [!IMPORTANT]
 > **Mandatory Dataset & Citation Rules for Every Ingestion**:
@@ -136,12 +142,26 @@ tags:
 ### Step 4: Update Index, Dataset Report, and Log
 * **`index.md`**: Add the new paper link under `## 📄 Paper Summaries`.
 * **`dataset_extraction_report.md`**: Append new dataset URLs/features to the master report.
-* **`log.md`**: Append an entry: `## [YYYY-MM-DD] ingest | YYYY_FirstAuthor_Keywords`.
+* **`log.md`**: Append an entry: `## [YYYY-MM-DD] ingest | YYYY_Keywords`.
 
 ### Step 5: Synthesis Refresh (batch ingestions or when requested)
 * Update `research_gaps.md`, `progress_summary_and_research_gaps.md`, `proposed_architectures.md`, and `transformer_research_ideas.md`: correct paper counts, gap mappings, and novelty claims to match the current corpus.
 
 ---
+
+## 3b. Model-Agnostic Quality Gates (G1-G8) — hard fails, any fail = ingest incomplete
+
+Before marking any ingest done, every gate in `.agents/skills/ingest-paper/SKILL.md` must pass. A weaker model that skips a gate is not faster — it is incorrect.
+| Gate | Checks |
+|------|--------|
+| G1 Headings verbatim | 6 headings exact copy-paste from template (including emoji) |
+| G2 Full-text read | Every page of `scratch/txt/*.txt` read, citations beyond abstract |
+| G3 Equations verbatim | ALL equations as `$$...\tag{}$$` with original symbols |
+| G4 Numbers not invented | Concrete values or `not extractable` with source |
+| G5 Frontmatter complete | 8 required keys + `tags`, concepts as `[[Wikilink]]` |
+| G6 No ghost stubs | No `[[YYYY_...]]` to non-existent `wiki/papers/*.md` |
+| G7 Propagation complete | Every frontmatter concept has a Literature Usage bullet |
+| G8 Catalogs + digest | `paper_index.md`/`index.md`/`thesis_references.bib`/`dataset_extraction_report.md` + `python gen_paper_digest.py` |
 
 ## 4. Query & Synthesis Rules
 

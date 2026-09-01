@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]]
+[[2026_TFT_Conformal_Environmental_EV_Load]]

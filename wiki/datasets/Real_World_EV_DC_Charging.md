@@ -30,5 +30,5 @@ A comprehensive dataset of 909,135 real-world EV DC fast charging sessions colle
 - Duration of fast charging sessions and disconnect timestamps.
 
 ## 📚 Used By
-- [[2025_Li_DC_Charging_Profiles_TFT]] — TFT + beta-VAE forecasting of DC charging power curves, duration, and relative accuracy.
-- [[2026_Hao_Mamba_KAN_HyKANet_EV]] — cited as a real-world EV charging benchmark for demand prediction (per aggregation pass).
+- [[2025_DC_Charging_Profiles_TFT]] — TFT + beta-VAE forecasting of DC charging power curves, duration, and relative accuracy.
+- [[2026_Mamba_KAN_HyKANet_EV]] — cited as a real-world EV charging benchmark for demand prediction (per aggregation pass).

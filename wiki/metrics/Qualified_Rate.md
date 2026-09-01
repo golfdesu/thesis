@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]]
+[[2024_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Feature_Enhanced_Probabilistic_EV_Load]]

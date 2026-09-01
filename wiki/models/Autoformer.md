@@ -30,13 +30,14 @@ $$\text{Auto-Correlation}(Q,K,V) = \sum_{i=1}^{k} \text{Roll}(V, \tau_i)\ \hat{R
 - **Weaknesses**: hyper-parameter $c$ trades performance vs efficiency; degrades on weak-periodicity data; high MAPE persists in sparse-feature EV settings.
 
 ## Literature Usage
-- [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]] — Original paper: progressive decomposition + FFT Auto-Correlation; 38% avg MSE reduction; input-96-predict-336 gains up to 74% (ETT) and 61% (Exchange).
-- [[2024_Helmy_Autoformer_EV_Charging]] — Applied to long-term EV charging-load forecasting on Boulder data (51 stations): RMSE ≈ 0.21 kWh/h flat across 30/60/90-day horizons vs LSTM degradation (90-day: 0.210 vs 0.540, ~60% lower RMSE/MAE).
-- [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]] — Autoformer baseline beaten by N-HiTS (ECL@96 MSE 0.147 vs 0.201) while being 45× faster (92.6 h vs 1.5 h training).
-- [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — Baseline; applying channel-independence improves Autoformer too, but not enough to beat PatchTST.
-- [[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]] — Auto-Correlation inspires TimesNet's amplitude-weighted aggregation; Autoformer-style decomposition does *not* help TimesNet since periodicity is already captured.
-- [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — Autoformer's moving-average decomposition scheme reused inside DLinear; timestamp embeddings matter most for Autoformer among Transformers.
-- [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]] — Baseline; Autoformer wins small ILI (decomposition priors help with limited data) but loses elsewhere.
-- [[2024_Das_TiDE_Long_Term_Forecasting]] — Benchmark protocol and baseline provider; sub-quadratic attention family far behind MLP encoders.
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Source of ECL/Traffic/Weather/Exchange benchmarks; component-adaptation baseline.
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Long-horizon baseline on ETT (avg MAE 0.53); TimesFM 0.36 significantly better.
+- [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]] — Original paper: progressive decomposition + FFT Auto-Correlation; 38% avg MSE reduction; input-96-predict-336 gains up to 74% (ETT) and 61% (Exchange).
+- [[2024_Autoformer_EV_Charging]] — Applied to long-term EV charging-load forecasting on Boulder data (51 stations): RMSE ≈ 0.21 kWh/h flat across 30/60/90-day horizons vs LSTM degradation (90-day: 0.210 vs 0.540, ~60% lower RMSE/MAE).
+- [[2023_NHiTS_Neural_Hierarchical_Interpolation]] — Autoformer baseline beaten by N-HiTS (ECL@96 MSE 0.147 vs 0.201) while being 45× faster (92.6 h vs 1.5 h training).
+- [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]] — Baseline; applying channel-independence improves Autoformer too, but not enough to beat PatchTST.
+- [[2023_TimesNet_Temporal_2D_Variation_Modeling]] — Auto-Correlation inspires TimesNet's amplitude-weighted aggregation; Autoformer-style decomposition does *not* help TimesNet since periodicity is already captured.
+- [[2023_DLinear_Are_Transformers_Effective_LTSF]] — Autoformer's moving-average decomposition scheme reused inside DLinear; timestamp embeddings matter most for Autoformer among Transformers.
+- [[2023_Crossformer_Cross_Dimension_Dependency]] — Baseline; Autoformer wins small ILI (decomposition priors help with limited data) but loses elsewhere.
+- [[2024_TiDE_Long_Term_Forecasting]] — Benchmark protocol and baseline provider; sub-quadratic attention family far behind MLP encoders.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Source of ECL/Traffic/Weather/Exchange benchmarks; component-adaptation baseline.
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — Long-horizon baseline on ETT (avg MAE 0.53); TimesFM 0.36 significantly better.
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — **MOIRAI (Woo et al., ICML 2024)**: Masked Encoder-based Universal Time Series Forecasting Transformer (14M Small, 91M Base, 311M Large). Introduces multi-patch size input/output projections (8..128), Any-variate Attention with binary variate biases and RoPE, and 4-component mixture distribution (Student-t, log-normal, neg-binomial, low-var normal). Pre-trained on LOTSA (27.6B obs across 9 domains) with sequence packing.

@@ -28,7 +28,7 @@ Coverage is approximate (not exact finite-sample) under β-mixing dependence; cr
 - **Weaknesses**: static quantile of past residuals fails under regime change — empirically: EV/PV coverage ≈0.90/0.91 at α=0.1 but **price coverage collapse to 0.60 (0.22 in Autumn)** under the 2021 gas-price shift ([[PICP]] evidence). Adaptive alternatives: [[AS_CQR]] / ACI-style online feedback.
 
 ## 📚 Literature Usage
-- [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] — CDC 2025 usage: EnbPI (MAPIE implementation) wraps Scikit-learn GradientBoostingRegressor ([[XGBoost]]-family gradient-boosted trees) forecasters for EV load / PV / price, producing the scenario tree (5th/mean/95th percentiles) consumed by stochastic MPC of a charging energy hub.
+- [[2025_Stochastic_MPC_Conformal_Hub]] — CDC 2025 usage: EnbPI (MAPIE implementation) wraps Scikit-learn GradientBoostingRegressor ([[XGBoost]]-family gradient-boosted trees) forecasters for EV load / PV / price, producing the scenario tree (5th/mean/95th percentiles) consumed by stochastic MPC of a charging energy hub.
 
 ## Related Pages
 - [[PICP]]

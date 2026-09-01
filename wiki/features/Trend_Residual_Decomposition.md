@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Bampos_EV_Load_Forecasting_DAM]]
+[[2024_EV_Load_Forecasting_DAM]]

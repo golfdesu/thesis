@@ -32,10 +32,10 @@ Lower is better. Misses are penalized in proportion to their distance beyond the
 
 | Paper | Result |
 |-------|--------|
-| 2017 — [[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]] | Largest QRA gains over the equal-weight benchmark occurred on the **90% Winkler score** (industrially critical high-percentile interval). |
-| 2024 — [[2024_Ali_MQ_TCN_Transfer_Learning_EV]] | MQ-TCN JPL WS 21.55, NREL 9.78; authors note high NREL WS despite 96.88% [[PICP]] → wide intervals (over-coverage without sharpness). |
-| 2024 — [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] | Winkler score part of the evaluation suite with AIW (average interval width) and Qualified/Accuracy Rate. |
-| 2025 — [[2025_Zheng_Coherent_Hierarchical_EV_Load]] | PICNN + DCL best on Winkler Score at nearly all stations in coherent hierarchical ACN evaluation. |
+| 2017 — [[2017_QRA_Sister_Forecasts_Probabilistic_Load]] | Largest QRA gains over the equal-weight benchmark occurred on the **90% Winkler score** (industrially critical high-percentile interval). |
+| 2024 — [[2024_MQ_TCN_Transfer_Learning_EV]] | MQ-TCN JPL WS 21.55, NREL 9.78; authors note high NREL WS despite 96.88% [[PICP]] → wide intervals (over-coverage without sharpness). |
+| 2024 — [[2024_Feature_Enhanced_Probabilistic_EV_Load]] | Winkler score part of the evaluation suite with AIW (average interval width) and Qualified/Accuracy Rate. |
+| 2025 — [[2025_Coherent_Hierarchical_EV_Load]] | PICNN + DCL best on Winkler Score at nearly all stations in coherent hierarchical ACN evaluation. |
 
 ## Related Pages
 

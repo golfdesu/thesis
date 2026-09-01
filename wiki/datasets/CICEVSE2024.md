@@ -18,4 +18,4 @@ Multi-dimensional cyber-security dataset for EV charging stations (Buedi et al.,
 - Reference: Buedi et al., *Enhancing EV charging station security using a multi-dimensional dataset: CICEVSE2024*, IFIP DBSec 2024, pp. 171–190.
 
 ## 📚 Used By
-- [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]] — MVGCRL multi-view graph contrastive learning; F1 97.20% (SL) / 97.11% (SSL) vs GNN and classical baselines.
+- [[2025_Multi_View_Graph_Intrusion_Detection_EV]] — MVGCRL multi-view graph contrastive learning; F1 97.20% (SL) / 97.11% (SSL) vs GNN and classical baselines.

@@ -22,4 +22,4 @@ QR-LSTM-Attention combines an **LSTM Encoder-Decoder** with an intermediate **At
   $$\text{CRPS}(\hat{F}, y) = \sum_{i=1}^N \left( \hat{F}(y_i) - \mathbb{I}_{\{y_i \ge y\}} \right)^2 \Delta y_i$$
 
 ## Literature References
-- [[2025_Matrone_QR_LSTM_Attention_EV_Load]] - Probabilistic forecasting of EV charging demand using QR-LSTM-Attention (ACM E-Energy 2025).
+- [[2025_QR_LSTM_Attention_EV_Load]] - Probabilistic forecasting of EV charging demand using QR-LSTM-Attention (ACM E-Energy 2025).

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Hussain_CAT_Former_Short_Term_EV]]
+[[2025_CAT_Former_Short_Term_EV]]

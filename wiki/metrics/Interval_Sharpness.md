@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[PICP]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]
+[[PICP]], [[2021_Probabilistic_Queuing_EV_Load]]

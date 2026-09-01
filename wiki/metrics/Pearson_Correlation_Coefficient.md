@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[Pearson_Correlation]], [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Zhong_V2G_SVE_Evaluation_Metric]]
+[[Pearson_Correlation]], [[2024_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_V2G_SVE_Evaluation_Metric]]

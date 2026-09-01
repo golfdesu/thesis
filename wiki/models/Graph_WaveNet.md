@@ -31,8 +31,8 @@ $$h = g(\Theta_1 \star X + b) \odot \sigma(\Theta_2 \star X + c)$$
 - **Weaknesses**: adaptive adjacency is static once trained (dynamic/time-varying dependencies left as future work); point forecasts only, no uncertainty quantification; receptive field must be engineered to equal input length.
 
 ## Literature Usage
-- [[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]] — Original paper: SOTA MAE/RMSE/MAPE on METR-LA (15-min 2.69/5.15/6.90%) and PEMS-BAY (1.30/2.74/2.73%), gains growing with horizon vs GGRU/DCRNN/STGCN.
-- [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] — STMGCN for Beijing fast-charging load inherits the WaveNet-style gated-TCN temporal block inside a multi-graph convolutional layer with spatiotemporal attention (MAE 53.287 kW / RMSE 78.831 kW); TCN-only ablation degrades to 61.145/90.681 kW.
-- [[2024_Qu_Physics_Informed_GAT_EV_Load]] — Cited as the spatial-temporal backbone lineage for EV-station GNN forecasters where dependency structure must be learned rather than given.
-- [[2025_Tian_MSSTGAN_City_EV_Load]] — MSSTGAN city-scale EV load generator belongs to the same adaptive-graph + gated-temporal design line for multi-station charging demand.
-- [[2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion]] — DiffSTG's UGnet denoiser embeds the same gated causal temporal convolution (cites Graph WaveNet as ref [44]) but swaps deterministic regression for masked DDPM sampling, making the WaveNet line probabilistic.
+- [[2019_Graph_WaveNet_Spatial_Temporal_Modeling]] — Original paper: SOTA MAE/RMSE/MAPE on METR-LA (15-min 2.69/5.15/6.90%) and PEMS-BAY (1.30/2.74/2.73%), gains growing with horizon vs GGRU/DCRNN/STGCN.
+- [[2024_Attention_Spatiotemporal_MultiGraph_EV_Load]] — STMGCN for Beijing fast-charging load inherits the WaveNet-style gated-TCN temporal block inside a multi-graph convolutional layer with spatiotemporal attention (MAE 53.287 kW / RMSE 78.831 kW); TCN-only ablation degrades to 61.145/90.681 kW.
+- [[2024_Physics_Informed_GAT_EV_Load]] — Cited as the spatial-temporal backbone lineage for EV-station GNN forecasters where dependency structure must be learned rather than given.
+- [[2025_MSSTGAN_City_EV_Load]] — MSSTGAN city-scale EV load generator belongs to the same adaptive-graph + gated-temporal design line for multi-station charging demand.
+- [[2023_DiffSTG_Probabilistic_ST_Graph_Diffusion]] — DiffSTG's UGnet denoiser embeds the same gated causal temporal convolution (cites Graph WaveNet as ref [44]) but swaps deterministic regression for masked DDPM sampling, making the WaveNet line probabilistic.

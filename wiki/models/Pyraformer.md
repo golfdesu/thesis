@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]]
+[[2023_DLinear_Are_Transformers_Effective_LTSF]]

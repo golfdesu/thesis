@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Zhou_Informer_Beyond_Efficient_Transformer]], [[2021_Zhou_Informer_Beyond_Efficient_Transformer]]
+[[2021_Informer_Beyond_Efficient_Transformer]], [[2021_Informer_Beyond_Efficient_Transformer]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_VanKriekinge_Day_Ahead_EV_Demand]], [[2021_VanKriekinge_Day_Ahead_EV_Demand]]
+[[2021_Day_Ahead_EV_Demand]], [[2021_Day_Ahead_EV_Demand]]

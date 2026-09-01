@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]]
+[[2024_TOU_Price_Meteorology_EV_Charging_Load]]

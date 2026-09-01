@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]], [[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]]
+[[2024_LASSO_BPNN_Mid_Term_EV_Load]], [[2024_LASSO_BPNN_Mid_Term_EV_Load]]

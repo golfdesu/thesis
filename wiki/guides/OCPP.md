@@ -16,4 +16,4 @@ This research note synthesizes concepts that span multiple papers in the knowled
 
 ## Referenced in this knowledge base
 
-[[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]
+[[2025_Multi_View_Graph_Intrusion_Detection_EV]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]
+[[2026_MFT_Multi_Scale_Fusion_Transformer]]

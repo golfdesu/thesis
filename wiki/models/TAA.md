@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Alghamdi_REST_Network_Port_EV]]
+[[2025_REST_Network_Port_EV]]

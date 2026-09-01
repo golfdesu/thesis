@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Li_DC_Charging_Profiles_TFT]]
+[[2025_DC_Charging_Profiles_TFT]]

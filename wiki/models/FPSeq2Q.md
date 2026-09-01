@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Huang_MetaProbformer_EV_Load]]
+[[2023_MetaProbformer_EV_Load]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Liu_KAN_Kolmogorov_Arnold_Networks]]
+[[2024_KAN_Kolmogorov_Arnold_Networks]]

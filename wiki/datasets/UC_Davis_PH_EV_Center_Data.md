@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]], [[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]
+[[2014_Scalable_Stochastic_EV_Demand]], [[2014_Scalable_Stochastic_EV_Demand]]

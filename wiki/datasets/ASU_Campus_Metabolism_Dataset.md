@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Zhong_V2G_SVE_Evaluation_Metric]], [[2024_Zhong_V2G_SVE_Evaluation_Metric]]
+[[2024_V2G_SVE_Evaluation_Metric]], [[2024_V2G_SVE_Evaluation_Metric]]

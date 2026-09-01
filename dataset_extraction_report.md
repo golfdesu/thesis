@@ -64,7 +64,7 @@
 
 ---
 
-### 4. 2014_Adam_A_Method_for_Stochastic_Optimization.pdf
+### 4. 2014_A_Method_for_Stochastic_Optimization.pdf
 
 - **Title**: A Scalable Stochastic Model for the Electricity Demand of Electric and Plug-In Hybrid Vehicles
 - **Identified Datasets**: National Household Travel Survey (NHTS) EV Travel Profiles
@@ -120,7 +120,7 @@
 
 ---
 
-### 7. 2017_Finn_MAML_Model_Agnostic_Meta_Learning.pdf
+### 7. 2017_MAML_Model_Agnostic_Meta_Learning.pdf
 
 - **Title**: Attention Is All You Need
 - **Identified Datasets**: WMT 2014 English-German, WMT 2014 English-French
@@ -138,7 +138,7 @@
 
 ---
 
-### 8. 2018_Nichol_Reptile_First_Order_Meta_Learning.pdf
+### 8. 2018_Reptile_First_Order_Meta_Learning.pdf
 
 - **Title**: On First-Order Meta-Learning Algorithms
 - **Identified Datasets**: Omniglot
@@ -156,7 +156,7 @@
 
 ---
 
-### 9. 2019_Electric_Vehicle_Charging_Load_Forecasting_A_Comparative_Study_of_Deep_Learning_Approaches.pdf
+### 9. 2019_EV_Charging_Load_Forecasting_Comparative_DL.pdf
 
 - **Title**: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting
 - **Identified Datasets**: Electricity_ECL
@@ -184,7 +184,7 @@
 
 ---
 
-### 10. 2019_Li_LogSparse_Enhancing_Locality_Transformer.pdf
+### 10. 2019_LogSparse_Enhancing_Locality_Transformer.pdf
 
 - **Title**: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting
 - **Identified Datasets**: Electricity_ECL
@@ -206,7 +206,7 @@
 
 ---
 
-### 11. 2019_Short_Term_Load_Forecasting_for_Electric_Vehicle_Charging_Stations_Based_on_Deep_Learning_Approaches.pdf
+### 11. 2019_STLF_EVCS_Deep_Learning.pdf
 
 - **Title**: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting
 - **Identified Datasets**: Electricity_ECL
@@ -280,7 +280,7 @@
 
 ---
 
-### 14. 2021_An_Ensemble_Methodology_for_Hierarchical_Probabilistic_EV_Load_Forecasting_at_Regular_Charging_Stations.pdf
+### 14. 2021_Ensemble_Hierarchical_Probabilistic_EV_Load.pdf
 
 - **Title**: An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations
 - **Identified Datasets**: ElaadNL Public EV Charging Network Dataset (Netherlands)
@@ -304,7 +304,7 @@
 
 ---
 
-### 15. 2021_Day_Ahead_Forecast_of_Electric_Vehicle_Charging_Demand_with_Deep_Neural_Networks.pdf
+### 15. 2021_Day_Ahead_Forecast_EV_Demand_DNN.pdf
 
 - **Title**: An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations
 - **Identified Datasets**: ElaadNL Public EV Charging Network Dataset (Netherlands)
@@ -370,7 +370,7 @@
 
 ---
 
-### 18. 2021_Lim_TFT_Temporal_Fusion_Transformers.pdf
+### 18. 2021_TFT_Temporal_Fusion_Transformers.pdf
 
 - **Title**: An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations
 - **Identified Datasets**: ElaadNL Public EV Charging Network Dataset (Netherlands)
@@ -418,7 +418,7 @@
 
 ---
 
-### 20. 2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation.pdf
+### 20. 2021_Autoformer_Decomposition_Transformers_AutoCorrelation.pdf
 
 - **Title**: An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations
 - **Identified Datasets**: ElaadNL Public EV Charging Network Dataset (Netherlands)
@@ -438,7 +438,7 @@
 
 ---
 
-### 21. 2021_Zhou_Informer_Beyond_Efficient_Transformer.pdf
+### 21. 2021_Informer_Beyond_Efficient_Transformer.pdf
 
 - **Title**: An ensemble methodology for hierarchical probabilistic electric vehicle load forecasting at regular charging stations
 - **Identified Datasets**: ElaadNL Public EV Charging Network Dataset (Netherlands)
@@ -484,7 +484,7 @@
 
 ---
 
-### 23. 2022_Kim_RevIN_Reversible_Instance_Normalization.pdf
+### 23. 2022_RevIN_Reversible_Instance_Normalization.pdf
 
 - **Title**: Robust Deep Gaussian Process-Based Probabilistic Electrical Load Forecasting Against Anomalous Events
 - **Identified Datasets**: Metropolitan Load Data (Boston, Seattle, Chicago, Philadelphia), Country-Level Load Data (Germany, France, Northern Italy), Google/Apple Mobility Index
@@ -580,7 +580,7 @@
 
 ---
 
-### 27. 2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words.pdf
+### 27. 2023_PatchTST_A_Time_Series_is_Worth_64_Words.pdf
 
 - **Title**: MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations
 - **Identified Datasets**: City of Palo Alto EV Dataset, Boulder Colorado EV Dataset, ElaadNL Public EV Dataset, Perth UK EV Dataset
@@ -602,7 +602,7 @@
 
 ---
 
-### 28. 2023_Prediction_of_Electric_Vehicles_Charging_Demand_A_Transformer_Based_Deep_Learning_Approach.pdf
+### 28. 2023_Prediction_EV_Charging_Demand_Transformer.pdf
 
 - **Title**: MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations
 - **Identified Datasets**: City of Palo Alto EV Dataset, Boulder Colorado EV Dataset, ElaadNL Public EV Dataset, Perth UK EV Dataset
@@ -628,7 +628,7 @@
 
 ---
 
-### 29. 2023_Wu_TimesNet_Temporal_2D_Variation_Modeling.pdf
+### 29. 2023_TimesNet_Temporal_2D_Variation_Modeling.pdf
 
 - **Title**: MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations
 - **Identified Datasets**: City of Palo Alto EV Dataset, Boulder Colorado EV Dataset, ElaadNL Public EV Dataset, Perth UK EV Dataset
@@ -652,7 +652,7 @@
 
 ---
 
-### 30. 2023_Zeng_DLinear_Are_Transformers_Effective_LTSF.pdf
+### 30. 2023_DLinear_Are_Transformers_Effective_LTSF.pdf
 
 - **Title**: MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations
 - **Identified Datasets**: City of Palo Alto EV Dataset, Boulder Colorado EV Dataset, ElaadNL Public EV Dataset, Perth UK EV Dataset
@@ -678,7 +678,7 @@
 
 ---
 
-### 31. 2023_Zhang_Crossformer_Cross_Dimension_Dependency.pdf
+### 31. 2023_Crossformer_Cross_Dimension_Dependency.pdf
 
 - **Title**: MetaProbformer for Charging Load Probabilistic Forecasting of Electric Vehicle Charging Stations
 - **Identified Datasets**: City of Palo Alto EV Dataset, Boulder Colorado EV Dataset, ElaadNL Public EV Dataset, Perth UK EV Dataset
@@ -714,7 +714,7 @@
 
 ---
 
-### 32. 2024_A_Physics_Informed_and_Attention_Based_Graph_Learning_Approach_for_Regional_Electric_Vehicle_Charging_Demand_Prediction.pdf
+### 32. 2024_Physics_Informed_Attention_Graph_Regional_EV_Demand.pdf
 
 - **Title**: Location based Probabilistic Load Forecasting of EV Charging Sites: Deep Transfer Learning with Multi-Quantile Temporal Convolutional Network
 - **Identified Datasets**: Caltech ACN (54 chargers), JPL Dataset (50 chargers), Office-1 Dataset (8 chargers), NREL Dataset (141 chargers, 59 months data)
@@ -928,7 +928,7 @@
 
 ---
 
-### 41. 2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series.pdf
+### 41. 2024_iTransformer_Inverted_Transformers_Effective_Time_Series.pdf
 
 - **Title**: Location based Probabilistic Load Forecasting of EV Charging Sites: Deep Transfer Learning with Multi-Quantile Temporal Convolutional Network
 - **Identified Datasets**: Caltech ACN (54 chargers), JPL Dataset (50 chargers), Office-1 Dataset (8 chargers), NREL Dataset (141 chargers, 59 months data)
@@ -1262,7 +1262,7 @@
 
 ---
 
-### 55. 2023_Cheng_VMD_Prophet_LSTM.pdf
+### 55. 2023_VMD_Prophet_LSTM.pdf
 
 - **Title**: REST Network: An Ensemble Deep Learning Approach for EV Charging Load Forecasting in Artificial Port Supply Chains
 - **Identified Datasets**: Dallas_Port_Logistics_Dataset
@@ -1656,28 +1656,28 @@
 
 ### An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling
 
-- **File**: `2018_Bai_Empirical_TCN_Sequence_Modeling.pdf`
+- **File**: `2018_Empirical_TCN_Sequence_Modeling.pdf`
 - **Datasets**: synthetic sequence, music and language tasks
 - **Paper**: [https://arxiv.org/abs/1803.01271](https://arxiv.org/abs/1803.01271)
 - **Code**: [https://github.com/locuslab/TCN](https://github.com/locuslab/TCN)
 
 ### N-BEATS: Neural Basis Expansion Analysis for Interpretable Time Series Forecasting
 
-- **File**: `2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting.pdf`
+- **File**: `2020_NBEATS_Interpretable_Time_Series_Forecasting.pdf`
 - **Datasets**: M3, M4 and Tourism
 - **Paper**: [https://arxiv.org/abs/1905.10437](https://arxiv.org/abs/1905.10437)
 - **Code**: [https://github.com/ElementAI/N-BEATS](https://github.com/ElementAI/N-BEATS)
 
 ### N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting
 
-- **File**: `2023_Challu_NHiTS_Neural_Hierarchical_Interpolation.pdf`
+- **File**: `2023_NHiTS_Neural_Hierarchical_Interpolation.pdf`
 - **Datasets**: M4, Tourism, Electricity, Traffic and Wikipedia
 - **Paper**: [https://arxiv.org/abs/2201.12886](https://arxiv.org/abs/2201.12886)
 - **Code**: [https://github.com/Nixtla/neuralforecast](https://github.com/Nixtla/neuralforecast)
 
 ### Long-term Forecasting with TiDE: Time-series Dense Encoder
 
-- **File**: `2024_Das_TiDE_Long_Term_Forecasting.pdf`
+- **File**: `2024_TiDE_Long_Term_Forecasting.pdf`
 - **Datasets**: ETT, Electricity, Traffic, Weather, ILI and Exchange
 - **Paper**: [https://arxiv.org/abs/2304.08424](https://arxiv.org/abs/2304.08424)
 - **Code**: [https://github.com/google-research/google-research/tree/master/tide](https://github.com/google-research/google-research/tree/master/tide)
@@ -1801,7 +1801,7 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
 | Fernandez-Zapico MPC hub (CDC 2025) | EV session source: Gholizadeh & Musilek, Data in Brief 2024 | see paper references |
 | Fernandez-Zapico MPC hub (CDC 2025) | NREL OpenEI PVDAQ farm solar array | https://openei.org/wiki/PVDAQ/Sites/Farm_Solar_Array |
 
-### 2024_Das_TimesFM_Decoder_Only_Foundation_Model.pdf
+### 2024_TimesFM_Decoder_Only_Foundation_Model.pdf
 
 - **Title**: A Decoder-Only Foundation Model for Time-Series Forecasting (TimesFM)
 - **Identified Datasets**: Google Trends (~22k queries, ~0.5B points), Wikipedia Pageviews (~360B points, 5.6M hourly series), Synthetic (3M series, 6.1B points), M4 (all granularities, ~99k series), Electricity/ECL (321 clients, 8.4M pts), Traffic (862 sensors 15.1M + LibCity 6,159 series 34.3M), Weather 10-min (42 vars, 2.2M), Favorita Sales (111k series, 139M), LibCity; Evaluation: Monash Archive (18 datasets), Darts (8 series), ETT (ETTh1/2 + ETTm1/2)
@@ -1818,7 +1818,7 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
   - Evaluation held-out: Monash 18 datasets (australian electricity demand, bitcoin, pedestrian counts, weather, nn5 daily/weekly, tourism yearly/quarterly/monthly, cif 2016, covid deaths, fred md, traffic hourly/weekly, saugeenday, us births, hospital, solar weekly), Darts 8 series, ETT 4 datasets x 2 horizons (96/192, last-window due to llmtime cost).
 
 ---
-### 2026_Khwaja_Toto_2_Scaling_Era.pdf — Toto 2.0: Time Series Forecasting Enters the Scaling Era
+### 2026_Toto_2_Scaling_Era.pdf — Toto 2.0: Time Series Forecasting Enters the Scaling Era
 
 **Datasets extracted:**
 - **BOOM** — Datadog observability benchmark (CPU/memory/latency/error rates; context 2048; CRPS rank/CRPS/MASE) — Cohen et al. 2025
@@ -1855,7 +1855,7 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
 **Tables imported to paper note:** Table 1 (capability matrix O(V) vs O(V²)), Table 2 (groupID/W masking for 3 task types), Table 3 (fev-bench SQL), Table 4 (GIFT-Eval WQL/MASE), Table 5 (Chronos Bench II), Fig.2 (pairwise CIs), Fig.3-5 (ICL gains), Fig.8 (ablations: 28M, synthetic-only, 8192 ctx).
 
 **Dataset pages updated/created:** [[fev-bench]], [[Chronos_Benchmark_II]], [[Chronos_Corpus]], [[GIFT-Eval]], [[GIFT_Eval_Pretrain]], [[Electricity_ECL]], [[M4]], [[Solar_Dataset]], [[Traffic]], [[Weather]], [[Wiki_Pageviews]], [[Buildings_900K]].
-### 71. 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.pdf
+### 71. 2025_Sundial_Highly_Capable_Time_Series_Foundation_Models.pdf
 
 - **Title**: Sundial: A Family of Highly Capable Time Series Foundation Models
 - **Identified Datasets**: TimeBench (1,032B points, 12 sources), GIFT-Eval (97 configs / 23 datasets), FEV (27 datasets), Chronos Corpus, Electricity (ECL), Traffic, Weather, ETTh1/ETTh2/ETTm1/ETTm2
@@ -1870,3 +1870,109 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
 - > FEV leaderboard (Ansari et al. 2024, AutoGluon) — 27 unseen short-term probabilistic datasets; metrics MASE/WQL with 20 samples. Sundial beats >70% of statistical+supervised models, 35x speedup over Chronos (patch-wise + multi-patch F=720, KV Cache).
 - > Synthetic: 0.05% KernelSynth diverse patterns. GIFT-Eval/TSLib/FEV evaluation is zero-shot; per-variable normalization, S3 univariate format (Timer), max context 2880.
 
+### 72. 2026_Moirai_2_When_Less_Is_More.pdf — Moirai 2.0 (Salesforce, 2026-02-04)
+
+**Identified Datasets**
+- [[GIFT-Eval]] — 97 task configs x 55 datasets (Econ/Fin, Energy, Healthcare, Nature, Sales, Transport, Web/CloudOps; yearly->secondly; horizons short/medium/long); evaluation benchmark for all 30 FMs (normalized MASE/CRPS geometric mean / seasonal-naive).
+- [[GIFT_Eval_Pretrain]] — Non-leaking pretrain subset of LOTSA; 3.25M series, 230B observations (per-variate count; 27B as multivariate in Woo et al. 2024) — foundation of new corpus.
+- [[GIFT_Eval_Pretrain]] TrainTest train split — 144K series — added to Moirai 2.0 pretrain.
+- [[Chronos_Corpus]]-derived Chronos-Mixup / TSMixup — 30M series, 63B obs (k~U{1,4}, l~U{128,4096}, K=4, convex mix; non-leaking Chronos subset; following Auer et al. 2025).
+- [[KernelSynth]] — 1M series, 1.02B obs (GP kernels: trend/local/seasonal, +/x; Ansari et al. 2024).
+- [[Salesforce_Internal_Telemetry]] — ~2.15M univariate daily series, ~1.48B obs from Jan 2024 (~1 year), filtered heavy-missing — proprietary CloudOps daily telemetry (not distributable).
+- **Total new corpus**: 36M series / ~295B observations (5 sources above).
+
+**Dataset & Code Links (Direct/Long URLs)**
+- Code: https://github.com/SalesforceAIResearch/uni2ts
+- Weights (Hugging Face): https://huggingface.co/Salesforce/moirai-2.0-R-small (also base 87.1M / large 305M)
+- GIFT-Eval replication code (all 30 leaderboard models): https://github.com/SalesforceAIResearch/gift-eval/tree/main/notebooks
+- Chronos corpus / KernelSynth: via Ansari et al. 2024 (see references [2] in refs dump)
+
+**Key Dataset Text Snippets / Context** (verbatim, with page refs as in PDF pp. 6-7, §4)
+> "Our pretraining corpus is constructed from five complementary sources: (1) the non-leaking GIFT-EVAL PRETRAIN dataset, (2) train split of GIFT-EVAL TRAINTEST dataset [1] (3) additional series generated via Chronos-Mixup, (4) KernelSynth data [2], and (5) anonymized internal Salesforce CloudOps telemetry data. In combination these five components add up to 36M time series, with ~295B observations" (p. 6 §4)
+> "The original Moirai model ... was trained using a non-leaking version of the pretraining corpus GIFT-EVAL PRETRAIN [1]. ... It has 3.25M time series with a total of 230B observations" (p. 6 §4, fn1: 27B vs 230B counting difference per-variate)
+> "We generate 30M time series that add up to 63B observations in total." (p. 6 Chronos-Mixup, K=4, Lmin=128, Lmax=4096)
+> "This set contains 1M time series, with 1.02B observation in total." (p. 6 KernelSynth)
+> "This dataset comprises approximately 2.15M univariate time series, totaling roughly 1.48B observations at a daily granularity. The data covers a period of approximately one year, starting from January 2024." (p. 6 Internal Salesforce data)
+
+**Accessibility**
+- Public: GIFT-Eval, GIFT-Eval Pretrain, Chronos-Mixup, KernelSynth (via respective releases)
+- Proprietary: Salesforce Internal Telemetry (2.15M/1.48B, not distributable)
+
+### 73. 2024_Unified_Training_Universal_Time_Series_Transformers.pdf — MOIRAI (Salesforce AI Research, ICML 2024)
+
+**Identified Datasets**
+- [[LOTSA]] (*Large-scale Open Time Series Archive*) — 27,646,462,733 (27.6B) observations (231B with target variates) across 105 constituent datasets in 9 domains in Apache Arrow format.
+- [[BuildingsBench]] (Energy, 15.7B obs) — Buildings900K, BDG-2 Panther/Fox/Rat/Bear, Low Carbon London, SMART, IDEAL, Sceaux, Borealis.
+- [[LargeST]] (Transport, 4.45B obs) — 42,333 California PeMS freeway sensors at 5-minute resolution.
+- [[LibCity]] (Transport, ~370M obs) — PEMS03/04/07/08/Bay, Seattle, SZ-Taxi, SHMetro, Q-Traffic.
+- [[ClimateLearn]] (Climate, 4.12B obs) — ERA5 reanalysis and CMIP6 climate model at 2.8125° resolution.
+- [[ProEnFo]] (Energy, ~1.8M obs) — GEF12/14/17, PDB, Spanish, BDG-2 Hog/Bull/Cockatoo, ELF with weather covariates.
+- [[SubseasonalClimateUSA]] (Climate, 23.8M obs) — Precipitation & temperature daily grid series across USA.
+- [[Monash_Archive]] (Multi-domain) — 30+ benchmark datasets for in-distribution pretraining and zero-shot evaluation.
+- Out-of-Distribution Benchmarks: [[Electricity_ECL]], [[Solar_Dataset]], [[Weather]], Walmart, Istanbul Traffic Index, Turkey Electricity Demand.
+
+**Dataset & Code Links (Direct/Long URLs)**
+- Official GitHub Repository: https://github.com/SalesforceAIResearch/uni2ts
+- Hugging Face Checkpoints: https://huggingface.co/Salesforce/moirai-1.0-R-small (also base 91M, large 311M)
+- BuildingsBench Benchmark: https://openreview.net/forum?id=c5rqd6PZn6
+- LargeST Benchmark: https://github.com/liuxu77/LargeST
+- Monash Time Series Archive: https://openreview.net/forum?id=wEc1mgAjU-
+- Istanbul Traffic Index: https://www.kaggle.com/datasets/leonardo00/istanbul-traffic-index
+- Turkey Electricity Demand: https://www.kaggle.com/datasets/dharanikra/electrical-power-demand-in-turkey
+- CDC Fluview Portal: https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html
+
+**Key Dataset Text Snippets / Context** (verbatim, with page refs as in PDF pp. 1, 5, 13)
+> "Trained on our newly introduced Large-scale Open Time Series Archive (LOTSA) featuring over 27B observations across nine domains, MOIRAI achieves competitive or superior performance as a zero-shot forecaster when compared to full-shot models." (p. 1)
+> "The resulting collection, LOTSA, spans nine domains, with a total of 27,646,462,733 observations... if we consider number of observations to include the number of variates, i.e. sum(Ti * dyi), LOTSA would have 231,082,956,489 (231B) total observations." (pp. 5, 13)
+
+**Accessibility**
+- Public / Open-Source: LOTSA constituent datasets, Apache Arrow pipeline, Uni2TS codebase, HF model checkpoints.
+
+### 74. 2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning.pdf
+- **Paper**: [[2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning]]
+- **Identified Datasets**:
+  - **Chronos Pretraining Corpus (30M series)**: Real-world time series from diverse domains augmented via TsMixup.
+  - **Synthetic Gaussian Process Corpus (15M series)**: KernelSynth GP synthetic series with continuous periodicity sampling.
+  - **GiftEval Pre-training Data (2.5M series)**: 2.5 million time series from Salesforce GiftEval pretraining corpus.
+  - **GiftEval Zero-Shot Benchmark (97 evaluation settings)**: Multi-domain benchmark covering energy, traffic, web, weather, economics.
+  - **Chronos Zero-Shot Benchmark (27 datasets)**: Standard 27-dataset evaluation benchmark from Ansari et al. (2024a).
+- **Dataset & Code Links (Direct/Long URLs)**:
+  - Official TiRex Code & Models: `https://github.com/NX-AI/tirex`
+  - Chronos Datasets (HuggingFace): `https://huggingface.co/datasets/autogluon/chronos_datasets`
+  - GiftEval Pre-training Data (HuggingFace): `https://huggingface.co/datasets/Salesforce/GiftEvalpre-train`
+- **Key Dataset Text Snippets / Context**:
+  > "We construct a diverse training corpus by combining real and synthetic time series to support robust generalization across heterogeneous forecasting tasks: (1) Chronos Training Data (30 million time series)... (2) Synthetic Gaussian Process Data (15 million time series)... (3) GiftEval Pre-training Data (≈2.5 million time series)." (p.18 §C.2)
+
+### 75. 2026_FlowState_Sampling_Rate_Equivariant_Forecasting.pdf
+- **Paper**: [[2026_FlowState_Sampling_Rate_Equivariant_Forecasting]]
+- **Identified Datasets**:
+  - **GIFT-Eval Benchmark Suite (97 evaluation settings)**: Energy, Traffic, Weather, Web Traffic, Economics.
+  - **Chronos Pretraining Corpus (30M series)**: Real-world time series from diverse domains.
+  - **KernelSynth GP Synthetic Data (15M series)**: Synthetic time series generated via GP kernels.
+- **Dataset & Code Links (Direct/Long URLs)**:
+  - Official HuggingFace Repository: `https://huggingface.co/ibm-research/flowstate`
+  - GIFT-Eval Leaderboard: `https://huggingface.co/spaces/Salesforce/GIFT-Eval`
+- **Key Dataset Text Snippets / Context**:
+  > "FlowState achieves state-of-the-art results on the widely used GIFT-Eval benchmark, while demonstrating superior adaptability to unseen sampling rates." (p.1 Abstract)
+
+### 76. 2026_TS_ICL_Time_Indexed_Foundation_Model.pdf
+- **Paper**: [[2026_TS_ICL_Time_Indexed_Foundation_Model]]
+- **Identified Datasets**:
+  - **Synthetic DAG Causal Pretraining Prior**: Random directed acyclic graphs generating non-linear multi-variable time series.
+  - **fm-impute-bench (132 univariate + 24 covariate tasks)**: Standardized zero-shot imputation benchmark across energy, climate, healthcare, traffic.
+  - **fev-bench (100 forecasting tasks)**: Standardized zero-shot forecasting benchmark with known covariates.
+- **Dataset & Code Links (Direct/Long URLs)**:
+  - Official TS-ICL Codebase: `https://github.com/EDF-Lab/ts-icl`
+- **Key Dataset Text Snippets / Context**:
+  > "TS-ICL formulates time series tasks as timestamp-aligned regression and naturally incorporates covariates by training on synthetic dependency structures generated from a novel causal data prior." (p.1 Abstract)
+
+### 77. 2026_TiRex_2_Multivariate_Streaming_Forecasting.pdf
+- **Paper**: [[2026_TiRex_2_Multivariate_Streaming_Forecasting]]
+- **Identified Datasets**:
+  - **Synthetic Multivariate Coupling Corpus**: On-the-fly multi-variable coupling pipeline (SCMs, functional coupling, linear mixing, cointegration) generated from 47.5M univariate time series.
+  - **fev-bench (100 tasks, 30 with known covariates)**: Benchmark for multivariate forecasting and exogenous dynamics.
+  - **GIFT-Eval Benchmark Suite (97 tasks)**: Foundation model evaluation suite.
+- **Dataset & Code Links (Direct/Long URLs)**:
+  - Official TiRex-2 Code & Weights: `https://github.com/NX-AI/tirex`
+- **Key Dataset Text Snippets / Context**:
+  > "To support scalable multivariate pretraining, we propose a synthetic coupling pipeline that composes diverse multivariate samples on the fly from large univariate corpora." (p.1 Abstract)

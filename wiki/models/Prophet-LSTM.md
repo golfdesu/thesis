@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Cheng_VMD_Prophet_LSTM]]
+[[2023_VMD_Prophet_LSTM]]

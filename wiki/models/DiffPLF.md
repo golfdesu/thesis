@@ -30,7 +30,7 @@ Denoising network: LSTM perturbation encoder + LSTM condition encoder + cross-at
 - **Weaknesses**: needs a separate fine-tuning stage for accuracy (end-to-end model left as future work); sensitive to diffusion steps T (worse at T=100/250/300); univariate/station-level scope.
 
 ## Literature Usage
-- [[2024_Li_DiffPLF_Conditional_Diffusion_EV]] — Original paper: conditional diffusion + cross-attention + QDM fine-tuning on Palo Alto charging data; ablations show covariates contribute ~10%, cross-attention beats latent addition fusion.
+- [[2024_DiffPLF_Conditional_Diffusion_EV]] — Original paper: conditional diffusion + cross-attention + QDM fine-tuning on Palo Alto charging data; ablations show covariates contribute ~10%, cross-attention beats latent addition fusion.
 
 ## Datasets Used
 - [[DiffPLF_Dataset]] — California city public EV charging station usage data (Kaggle), used for the benchmark experiments in this paper's setting.

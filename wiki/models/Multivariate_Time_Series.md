@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Rasul_TimeGrad_Diffusion_Forecasting]], [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]], [[2024_He_Robust_MTS_Transitional_Shift]]
+[[2021_TimeGrad_Diffusion_Forecasting]], [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2023_Crossformer_Cross_Dimension_Dependency]], [[2024_Robust_MTS_Transitional_Shift]]

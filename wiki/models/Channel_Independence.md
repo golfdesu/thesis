@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]]
+[[2023_PatchTST_A_Time_Series_is_Worth_64_Words]]

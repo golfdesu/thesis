@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]], [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]], [[2023_Cao_Treatment_Effects_Continuous_Time_Hidden_Confounders]]
+[[2021_Conformal_Time_Series_Forecasting]], [[2021_Conformal_Time_Series_Forecasting]], [[2023_Treatment_Effects_Continuous_Time_Hidden_Confounders]]

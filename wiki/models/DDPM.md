@@ -15,6 +15,6 @@ Generative model trained to reverse a gradual noising process; the foundation of
 Backbone of probabilistic forecasting models such as [[TimeGrad]], [[CSDI]], and [[DiffPLF]].
 
 ## Key References
-- [[2021_Rasul_TimeGrad_Diffusion_Forecasting]]
-- [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]
-- [[2024_Li_DiffPLF_Conditional_Diffusion_EV]]
+- [[2021_TimeGrad_Diffusion_Forecasting]]
+- [[2021_CSDI_Conditional_Diffusion_Forecasting]]
+- [[2024_DiffPLF_Conditional_Diffusion_EV]]

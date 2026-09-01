@@ -30,7 +30,7 @@ Lower is better. The width term dominates when the observation falls inside the 
 
 | Paper | Result |
 |-------|--------|
-| 2026 — [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] | Primary UQ metric for EnergyMamba/[[AS_CQR]]: IS 231.86 (Florida 1), 198.23 (Florida 2), 295.42 (NYISO), 1279.17 (CAISO) — ~6% better than the best baseline on average, with ≥90% coverage. |
+| 2026 — [[2026_EnergyMamba_Graph_Mamba_ASCQR]] | Primary UQ metric for EnergyMamba/[[AS_CQR]]: IS 231.86 (Florida 1), 198.23 (Florida 2), 295.42 (NYISO), 1279.17 (CAISO) — ~6% better than the best baseline on average, with ≥90% coverage. |
 
 ## Related Pages
 

@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2024_Liu_KAN_Kolmogorov_Arnold_Networks]]
+[[2024_KAN_Kolmogorov_Arnold_Networks]]

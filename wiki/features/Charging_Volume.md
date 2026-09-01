@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]]
+[[2025_EV_STLLM_Spatio_Temporal_LLM]]

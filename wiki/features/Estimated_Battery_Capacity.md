@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Li_DC_Charging_Profiles_TFT]]
+[[2025_DC_Charging_Profiles_TFT]]

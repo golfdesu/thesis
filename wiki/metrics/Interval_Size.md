@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2024_Zhou_Conformal_Prediction_DER]]
+[[2024_Conformal_Prediction_DER]]

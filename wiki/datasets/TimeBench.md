@@ -27,11 +27,11 @@ Trillion-scale pretraining corpus for Sundial (Liu et al. ICML 2025) — 1,032B 
 | ERA5 Quarterly | 4.5B | 0.44% |
 
 - **Code / Weights**: https://github.com/thuml/Sundial · https://huggingface.co/thuml/sundial-base-128m
-- **Paper**: [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
+- **Paper**: [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
 
 ## Literature Usage
 
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — Pretraining corpus for Sundial family (Small 32M / Base 128M / Large 444M); enables SOTA zero-shot on TSLib, GIFT-Eval, FEV.
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — Pretraining corpus for Sundial family (Small 32M / Base 128M / Large 444M); enables SOTA zero-shot on TSLib, GIFT-Eval, FEV.
 
 ## Related Pages
 

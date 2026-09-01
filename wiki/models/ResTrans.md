@@ -22,7 +22,7 @@ Multi-Branch ResTrans combines a **Multi-Branch Residual Network (ResNet)** for 
   $$\frac{\partial \mathcal{L}}{\partial Z_0} = \frac{\partial \mathcal{L}}{\partial Z_D} \left( 1 + \frac{\partial}{\partial Z_0} \sum G(Z_{i,j}, \Phi_{i,j}) \right)$$
 
 ## Application in Renewable & Power Load Forecasting
-- Simultaneously captures multi-resolution spatial correlations across geographically distributed generation/charging sites while processing long-sequence temporal signals in parallel ([[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]).
+- Simultaneously captures multi-resolution spatial correlations across geographically distributed generation/charging sites while processing long-sequence temporal signals in parallel ([[2023_Multi_Branch_ResTrans_Solar]]).
 
 ## Literature References
-- [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]] - Proposed Multi-Branch ResTrans achieving 97% R2 in spatio-temporal solar irradiance forecasting.
+- [[2023_Multi_Branch_ResTrans_Solar]] - Proposed Multi-Branch ResTrans achieving 97% R2 in spatio-temporal solar irradiance forecasting.

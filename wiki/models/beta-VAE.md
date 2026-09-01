@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Li_DC_Charging_Profiles_TFT]]
+[[2025_DC_Charging_Profiles_TFT]]

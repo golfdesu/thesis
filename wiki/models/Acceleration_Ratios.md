@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Feng_LSTM_Transformer_EV_Consumption]]
+[[2024_LSTM_Transformer_EV_Consumption]]

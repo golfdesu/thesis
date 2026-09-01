@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2023_Cheng_VMD_Prophet_LSTM]]
+[[2023_VMD_Prophet_LSTM]]

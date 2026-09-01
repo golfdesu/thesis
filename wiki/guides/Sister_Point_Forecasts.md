@@ -16,4 +16,4 @@ This research note synthesizes concepts that span multiple papers in the knowled
 
 ## Referenced in this knowledge base
 
-[[2017_Liu_QRA_Sister_Forecasts_Probabilistic_Load]]
+[[2017_QRA_Sister_Forecasts_Probabilistic_Load]]

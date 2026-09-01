@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]
+[[2026_Decomposition_Stacked_Meta_Learning_EV_Load]]

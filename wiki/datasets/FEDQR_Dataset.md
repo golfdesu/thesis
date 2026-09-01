@@ -27,4 +27,4 @@ Dataset introduced in Applied Energy (2024) for probabilistic EV charging demand
 - Calendar indicators and day-of-week feature encodings.
 
 ## 📚 Used By
-- [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] — FEDM/GLU-DeepTCN probabilistic forecasting with Pearson-prior feature enhancement (source paper for the dataset).
+- [[2024_Feature_Enhanced_Probabilistic_EV_Load]] — FEDM/GLU-DeepTCN probabilistic forecasting with Pearson-prior feature enhancement (source paper for the dataset).

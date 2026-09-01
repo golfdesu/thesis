@@ -16,4 +16,4 @@ This research note synthesizes concepts that span multiple papers in the knowled
 
 ## Referenced in this knowledge base
 
-[[2015_Raza_Review_AI_Load_Demand]]
+[[2015_Review_AI_Load_Demand]]

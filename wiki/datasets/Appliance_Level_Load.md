@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Zhu_Personalized_Federated_Learning]]
+[[2025_Personalized_Federated_Learning]]

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]]
+[[2025_Meta_Learning_Physics_Informed_GACN_Power_System]]

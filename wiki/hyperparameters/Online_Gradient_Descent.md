@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]
+[[2024_Adaptive_Probabilistic_Netload]]

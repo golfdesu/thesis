@@ -31,8 +31,8 @@ The calibrated interval multiplicatively rescales the raw quantile width $w_t=\h
 Static CQR is exactly what fails in Yu's ablation (w/o AS-CQR: MAE 36.57→44.12 *and* target coverage missed); AS-CQR restores coverage online but only via scalar feedback — window $m$ and step size $\gamma$ are fixed hyperparameters with no per-region/per-horizon adaptivity. This adaptive-calibration-under-shift problem is the thesis **Gap P-3** hook. Contrast [[PICNN]]: AS-CQR adds no convexity/monotonicity structure, so quantile crossing remains possible; and note EnbPI ([[EnbPI]]) shows the same static-calibration failure mode empirically on price series.
 
 ## 📚 Literature Usage
-- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] — Original paper: AS-CQR wraps GE-Mamba's three-head quantile output; ~6% Interval-Score gain and ≥90% coverage across [[Florida_CBG_Smart_Meter]]/[[NYISO]]/[[CAISO]].
-- Related vault anchors: [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]], [[2024_Zhou_Conformal_Prediction_DER]], [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] (static-wrapper failure motivating adaptivity).
+- [[2026_EnergyMamba_Graph_Mamba_ASCQR]] — Original paper: AS-CQR wraps GE-Mamba's three-head quantile output; ~6% Interval-Score gain and ≥90% coverage across [[Florida_CBG_Smart_Meter]]/[[NYISO]]/[[CAISO]].
+- Related vault anchors: [[2021_Conformal_Time_Series_Forecasting]], [[2024_Conformal_Prediction_DER]], [[2025_Stochastic_MPC_Conformal_Hub]] (static-wrapper failure motivating adaptivity).
 
 ## Related Pages
 - [[EnergyMamba]]

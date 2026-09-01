@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2023_Koohfar_Transformer_EV_Demand]]
+[[2023_Transformer_EV_Demand]]

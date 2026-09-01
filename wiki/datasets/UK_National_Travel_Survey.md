@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Zhang_Probabilistic_Queuing_EV_Load]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]
+[[2021_Probabilistic_Queuing_EV_Load]], [[2021_Probabilistic_Queuing_EV_Load]]

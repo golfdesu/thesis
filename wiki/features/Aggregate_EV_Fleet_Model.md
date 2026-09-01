@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Zhong_V2G_SVE_Evaluation_Metric]]
+[[2024_V2G_SVE_Evaluation_Metric]]

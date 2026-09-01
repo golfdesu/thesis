@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2013_Roberts_Gaussian_Processes_Time_Series]], [[2013_Roberts_Gaussian_Processes_Time_Series]]
+[[2013_Gaussian_Processes_Time_Series]], [[2013_Gaussian_Processes_Time_Series]]

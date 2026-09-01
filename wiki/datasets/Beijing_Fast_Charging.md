@@ -17,4 +17,4 @@ Real-world DC fast-charging load from **10 fast charging stations in Beijing, Ch
 - Not publicly available — no URL/DOI given in the paper (described only as "charging load dataset from Beijing, China", Section IV-A).
 
 ## 📚 Used By
-- [[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]] — STMGCN spatio-temporal multi-graph convolution forecasting (MAE 53.29 kW vs 10 baselines).
+- [[2024_Attention_Spatiotemporal_MultiGraph_EV_Load]] — STMGCN spatio-temporal multi-graph convolution forecasting (MAE 53.29 kW vs 10 baselines).

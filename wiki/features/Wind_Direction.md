@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]
+[[2023_Multi_Branch_ResTrans_Solar]]

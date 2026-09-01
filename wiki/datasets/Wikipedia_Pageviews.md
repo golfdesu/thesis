@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Rasul_TimeGrad_Diffusion_Forecasting]], [[2021_Rasul_TimeGrad_Diffusion_Forecasting]]
+[[2021_TimeGrad_Diffusion_Forecasting]], [[2021_TimeGrad_Diffusion_Forecasting]]

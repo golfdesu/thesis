@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]]
+[[2025_MixerInformer_Transfer_Learning_New_EV_Stations]]

@@ -24,5 +24,5 @@ Check which variant a paper means before comparing numbers.
 - **Reference**: [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data)
 
 ## Literature Usage
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Pretraining ingredient: hourly Traffic (862 sensors, 15.1M points) and 15-min LibCity traffic (6,159 series, 34.3M) — San Francisco Bay Area PeMS.
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Traffic-related datasets (Taxi 2428, LargeST 8196, Q-Traffic 45148) in Table 6 of Chronos-2 real-univariate mix.
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — Pretraining ingredient: hourly Traffic (862 sensors, 15.1M points) and 15-min LibCity traffic (6,159 series, 34.3M) — San Francisco Bay Area PeMS.
+- [[2025_Chronos_2_Univariate_to_Universal]] — Traffic-related datasets (Taxi 2428, LargeST 8196, Q-Traffic 45148) in Table 6 of Chronos-2 real-univariate mix.

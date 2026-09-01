@@ -31,7 +31,8 @@ Shared weights across the $k$ tensors keep model size invariant to $k$; Inceptio
 - **Weaknesses**: point forecasts only; sensitive to top-k frequency count in low-level tasks; no explicit cross-variate dependency mechanism.
 
 ## Literature Usage
-- [[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]] — Original paper: FFT periodicity → 2D variation modeling; beats DLinear/FEDformer/Informer across forecasting/imputation/classification/anomaly benchmarks.
-- [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — Follow-up showing linear models fail classification/imputation while TimesNet still beats them at forecasting.
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Benchmark protocol and baseline provider; iTransformer surpasses TimesNet on ECL/Traffic/Solar via variate-token attention.
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — TimesNet baseline referenced via ETT long-horizon comparisons (similar to FEDFormer/Autoformer group).
+- [[2023_TimesNet_Temporal_2D_Variation_Modeling]] — Original paper: FFT periodicity → 2D variation modeling; beats DLinear/FEDformer/Informer across forecasting/imputation/classification/anomaly benchmarks.
+- [[2023_DLinear_Are_Transformers_Effective_LTSF]] — Follow-up showing linear models fail classification/imputation while TimesNet still beats them at forecasting.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Benchmark protocol and baseline provider; iTransformer surpasses TimesNet on ECL/Traffic/Solar via variate-token attention.
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — TimesNet baseline referenced via ETT long-horizon comparisons (similar to FEDFormer/Autoformer group).
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — **MOIRAI (Woo et al., ICML 2024)**: Masked Encoder-based Universal Time Series Forecasting Transformer (14M Small, 91M Base, 311M Large). Introduces multi-patch size input/output projections (8..128), Any-variate Attention with binary variate biases and RoPE, and 4-component mixture distribution (Student-t, log-normal, neg-binomial, low-var normal). Pre-trained on LOTSA (27.6B obs across 9 domains) with sequence packing.

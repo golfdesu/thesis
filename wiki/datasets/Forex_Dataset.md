@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Bao_ResMMoT_Informer_Time_Series]]
+[[2025_ResMMoT_Informer_Time_Series]]

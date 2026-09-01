@@ -36,24 +36,24 @@ $$\text{SOC}(t+1) = \text{SOC}(t) + \frac{\eta_c \cdot P(t) \cdot \Delta t}{E_{\
 
 where $\eta_c$ is charging efficiency, $P(t)$ is charging power (kW), and $\Delta t$ is the time step.
 
-As used in [[2024_Feng_LSTM_Transformer_EV_Consumption]]:
+As used in [[2024_LSTM_Transformer_EV_Consumption]]:
 $$\text{SOC}_{t+1} = \text{SOC}_t + \frac{\int I \, dt}{C}$$
 
 ## Role in Key Papers
 
 | Paper | How SOC Is Used |
 |-------|----------------|
-| [[2024_Feng_LSTM_Transformer_EV_Consumption]] | LSTM-Transformer predicts real-time SOC trajectory; 3D K-Means driving clustering |
-| [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]] | Initial SOC and target SOC define the EV Scheduling Feasible Domain (EVSFD) |
-| [[2021_Zhang_Probabilistic_Queuing_EV_Load]] | SOC determines energy demand per session in queuing model |
-| [[2025_Yang_Stochastic_MPC_Microgrid_EV]] | SOC state variable in individual EV battery dynamics for MPC dispatch |
-| [[2024_Zhong_V2G_SVE_Evaluation_Metric]] | SOC bounds constrain V2G fleet dispatch feasibility |
+| [[2024_LSTM_Transformer_EV_Consumption]] | LSTM-Transformer predicts real-time SOC trajectory; 3D K-Means driving clustering |
+| [[2024_Day_Ahead_EVCB_EVSC_Parking_Lot]] | Initial SOC and target SOC define the EV Scheduling Feasible Domain (EVSFD) |
+| [[2021_Probabilistic_Queuing_EV_Load]] | SOC determines energy demand per session in queuing model |
+| [[2025_Stochastic_MPC_Microgrid_EV]] | SOC state variable in individual EV battery dynamics for MPC dispatch |
+| [[2024_V2G_SVE_Evaluation_Metric]] | SOC bounds constrain V2G fleet dispatch feasibility |
 
 ## Citing Literature
 
-- 2021 — [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] : SOC, battery capacity, depth-of-discharge and daily driven miles parameterize the RL charging model.
-- 2025 — [[2025_Li_DC_Charging_Profiles_TFT]] : Starting SOC is a key TFT input for DC fast-charging session profile prediction (NW Europe DCFC + ERA5 data).
-- 2026 — [[2026_Tang_PC_M3_Mamba_EV_Clusters]] : SOC at arrival/departure defines per-EV energy requirement and flexibility polytopes in PC-M3 fleet clustering.
+- 2021 — [[2021_RL_Q_Learning_EV_Load]] : SOC, battery capacity, depth-of-discharge and daily driven miles parameterize the RL charging model.
+- 2025 — [[2025_DC_Charging_Profiles_TFT]] : Starting SOC is a key TFT input for DC fast-charging session profile prediction (NW Europe DCFC + ERA5 data).
+- 2026 — [[2026_PC_M3_Mamba_EV_Clusters]] : SOC at arrival/departure defines per-EV energy requirement and flexibility polytopes in PC-M3 fleet clustering.
 
 ## Practical Challenges
 

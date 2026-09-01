@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Xiong_Combined_Deep_Learning_EV_Station_STLF]]
+[[2023_Combined_Deep_Learning_EV_Station_STLF]]

@@ -238,15 +238,15 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 
 ## [2026-08-07] ingest | 2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load
 - Ingested PDF paper: Decomposition and Stacked Meta-Learning for Short-Term Electric Vehicle Load Forecasting.
-- Added structured note `wiki/papers/2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load.md` and copied PDF to `raw_sources/2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load.pdf`.
+- Added structured note `wiki/papers/2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load.md` and copied PDF to `raw_sources/2026_Decomposition_Stacked_Meta_Learning_EV_Load.pdf`.
 
 ## [2026-08-07] ingest | 2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load
 - Ingested PDF paper: Load Forecasting of Electric Vehicle Charging Stations: Attention Based Spatiotemporal MultiGraph Convolutional Networks.
-- Added structured note `wiki/papers/2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load.md` and copied PDF to `raw_sources/2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load.pdf`.
+- Added structured note `wiki/papers/2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load.md` and copied PDF to `raw_sources/2024_Attention_Spatiotemporal_MultiGraph_EV_Load.pdf`.
 
 ## [2026-08-07] ingest | 2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System
 - Ingested PDF paper: Meta-Learning Enhanced Physics-Informed Graph Attention Convolutional Network for Distribution Power System State Estimation.
-- Added structured note `wiki/papers/2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System.md` and copied PDF to `raw_sources/2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System.pdf`.
+- Added structured note `wiki/papers/2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System.md` and copied PDF to `raw_sources/2025_Meta_Learning_Physics_Informed_GACN_Power_System.pdf`.
 
 
 ## [2026-08-07] ingest | 2025_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load
@@ -255,52 +255,52 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 
 ## [2026-08-09] ingest | 2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words
 - Ingested foundational paper: A Time Series is Worth 64 Words: Long-term Forecasting with Transformers.
-- Created `wiki/papers/2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words.md` and copied PDF to `raw_sources/2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words.pdf`.
+- Created `wiki/papers/2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words.md` and copied PDF to `raw_sources/2023_PatchTST_A_Time_Series_is_Worth_64_Words.pdf`.
 
 ## [2026-08-09] ingest | 2022_Kim_RevIN_Reversible_Instance_Normalization
 - Ingested foundational paper: Reversible Instance Normalization for Accurate Time-Series Forecasting against Distribution Shift.
-- Created `wiki/papers/2022_Kim_RevIN_Reversible_Instance_Normalization.md` and copied PDF to `raw_sources/2022_Kim_RevIN_Reversible_Instance_Normalization.pdf`.
+- Created `wiki/papers/2022_Kim_RevIN_Reversible_Instance_Normalization.md` and copied PDF to `raw_sources/2022_RevIN_Reversible_Instance_Normalization.pdf`.
 
 ## [2026-08-09] ingest | 2021_Lim_TFT_Temporal_Fusion_Transformers
 - Ingested foundational paper: Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting.
-- Created `wiki/papers/2021_Lim_TFT_Temporal_Fusion_Transformers.md` and copied PDF to `raw_sources/2021_Lim_TFT_Temporal_Fusion_Transformers.pdf`.
+- Created `wiki/papers/2021_Lim_TFT_Temporal_Fusion_Transformers.md` and copied PDF to `raw_sources/2021_TFT_Temporal_Fusion_Transformers.pdf`.
 
 ## [2026-08-09] ingest | 2023_Zhang_Crossformer_Cross_Dimension_Dependency
 - Ingested foundational paper: Crossformer: Transformer Utilizing Cross-Dimension Dependency for Multivariate Time Series Forecasting.
-- Created `wiki/papers/2023_Zhang_Crossformer_Cross_Dimension_Dependency.md` and copied PDF to `raw_sources/2023_Zhang_Crossformer_Cross_Dimension_Dependency.pdf`.
+- Created `wiki/papers/2023_Zhang_Crossformer_Cross_Dimension_Dependency.md` and copied PDF to `raw_sources/2023_Crossformer_Cross_Dimension_Dependency.pdf`.
 
 ## [2026-08-09] ingest | 2023_Zeng_DLinear_Are_Transformers_Effective_LTSF
 - Ingested foundational paper: Are Transformers Effective for Time Series Forecasting?.
-- Created `wiki/papers/2023_Zeng_DLinear_Are_Transformers_Effective_LTSF.md` and copied PDF to `raw_sources/2023_Zeng_DLinear_Are_Transformers_Effective_LTSF.pdf`.
+- Created `wiki/papers/2023_Zeng_DLinear_Are_Transformers_Effective_LTSF.md` and copied PDF to `raw_sources/2023_DLinear_Are_Transformers_Effective_LTSF.pdf`.
 
 ## [2026-08-09] ingest | 2023_Wu_TimesNet_Temporal_2D_Variation_Modeling
 - Ingested foundational paper: TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis.
-- Created `wiki/papers/2023_Wu_TimesNet_Temporal_2D_Variation_Modeling.md` and copied PDF to `raw_sources/2023_Wu_TimesNet_Temporal_2D_Variation_Modeling.pdf`.
+- Created `wiki/papers/2023_Wu_TimesNet_Temporal_2D_Variation_Modeling.md` and copied PDF to `raw_sources/2023_TimesNet_Temporal_2D_Variation_Modeling.pdf`.
 
 ## [2026-08-09] ingest | 2019_Li_LogSparse_Enhancing_Locality_Transformer
 - Ingested foundational paper: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting.
-- Created `wiki/papers/2019_Li_LogSparse_Enhancing_Locality_Transformer.md` and copied PDF to `raw_sources/2019_Li_LogSparse_Enhancing_Locality_Transformer.pdf`.
+- Created `wiki/papers/2019_Li_LogSparse_Enhancing_Locality_Transformer.md` and copied PDF to `raw_sources/2019_LogSparse_Enhancing_Locality_Transformer.pdf`.
 
 ## [2026-08-09] ingest | 2017_Finn_MAML_Model_Agnostic_Meta_Learning
 - Ingested foundational paper: Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks.
-- Created `wiki/papers/2017_Finn_MAML_Model_Agnostic_Meta_Learning.md` and copied PDF to `raw_sources/2017_Finn_MAML_Model_Agnostic_Meta_Learning.pdf`.
+- Created `wiki/papers/2017_Finn_MAML_Model_Agnostic_Meta_Learning.md` and copied PDF to `raw_sources/2017_MAML_Model_Agnostic_Meta_Learning.pdf`.
 
 ## [2026-08-09] ingest | 2018_Nichol_Reptile_First_Order_Meta_Learning
 - Ingested foundational paper: On First-Order Meta-Learning Algorithms.
-- Created `wiki/papers/2018_Nichol_Reptile_First_Order_Meta_Learning.md` and copied PDF to `raw_sources/2018_Nichol_Reptile_First_Order_Meta_Learning.pdf`.
+- Created `wiki/papers/2018_Nichol_Reptile_First_Order_Meta_Learning.md` and copied PDF to `raw_sources/2018_Reptile_First_Order_Meta_Learning.pdf`.
 
 
 ## [2026-08-09] ingest | 2021_Zhou_Informer_Beyond_Efficient_Transformer
 - Ingested core benchmark paper: Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting.
-- Created `wiki/papers/2021_Zhou_Informer_Beyond_Efficient_Transformer.md` and copied PDF to `raw_sources/2021_Zhou_Informer_Beyond_Efficient_Transformer.pdf`.
+- Created `wiki/papers/2021_Zhou_Informer_Beyond_Efficient_Transformer.md` and copied PDF to `raw_sources/2021_Informer_Beyond_Efficient_Transformer.pdf`.
 
 ## [2026-08-09] ingest | 2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation
 - Ingested core benchmark paper: Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting.
-- Created `wiki/papers/2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation.md` and copied PDF to `raw_sources/2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation.pdf`.
+- Created `wiki/papers/2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation.md` and copied PDF to `raw_sources/2021_Autoformer_Decomposition_Transformers_AutoCorrelation.pdf`.
 
 ## [2026-08-09] ingest | 2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series
 - Ingested core benchmark paper: iTransformer: Inverted Transformers Are Effective for Time Series Forecasting.
-- Created `wiki/papers/2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series.md` and copied PDF to `raw_sources/2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series.pdf`.
+- Created `wiki/papers/2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series.md` and copied PDF to `raw_sources/2024_iTransformer_Inverted_Transformers_Effective_Time_Series.pdf`.
 
 
 ## [2026-08-09] dataset-extraction | 70_Papers_Dataset_Mining
@@ -365,11 +365,11 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Corrected FL misattributions in research_gaps.md: mermaid nodes re-labeled to "VMD + Prophet-LSTM Hybrid (Cheng 2023)", Gap 11 FL bullet reframed as an open gap, Cheng removed from FL paper list in Gap 5.
 - Source PDF left untouched per raw_sources immutability rule.
 
-## [2026-08-23] maintenance | Renamed source PDF to 2023_Cheng_VMD_Prophet_LSTM.pdf
-- Renamed `raw_sources/2025_Federated_Learning_VMD_LSTM_Electric_Vehicle_Charging_Load_Prediction.pdf` ? `raw_sources/2023_Cheng_VMD_Prophet_LSTM.pdf` for consistency with the wiki note; updated stale filename references in extract.py, dataset_extraction_report.md, and scan_results.json.
+## [2026-08-23] maintenance | Renamed source PDF to 2023_VMD_Prophet_LSTM.pdf
+- Renamed `raw_sources/2025_Federated_Learning_VMD_LSTM_Electric_Vehicle_Charging_Load_Prediction.pdf` ? `raw_sources/2023_VMD_Prophet_LSTM.pdf` for consistency with the wiki note; updated stale filename references in extract.py, dataset_extraction_report.md, and scan_results.json.
 
-## [2026-08-23] maintenance | Renamed source PDF to 2023_Cheng_VMD_Prophet_LSTM.pdf
-- Renamed raw_sources/2025_Federated_Learning_VMD_LSTM_Electric_Vehicle_Charging_Load_Prediction.pdf to raw_sources/2023_Cheng_VMD_Prophet_LSTM.pdf for consistency with the wiki note.
+## [2026-08-23] maintenance | Renamed source PDF to 2023_VMD_Prophet_LSTM.pdf
+- Renamed raw_sources/2025_Federated_Learning_VMD_LSTM_Electric_Vehicle_Charging_Load_Prediction.pdf to raw_sources/2023_VMD_Prophet_LSTM.pdf for consistency with the wiki note.
 - Updated stale filename references in extract.py, dataset_extraction_report.md, and scan_results.json.
 
 ## [2026-08-23] synthesis | Concept-Page Propagation & Synthesis Refresh (Re-Ingestion Pass 2)
@@ -477,25 +477,25 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - **Status:** All agent skills operational and compliant with the schema instructions.
 
 ## [2026-09-01] ingest | 2024_Das_TimesFM_Decoder_Only_Foundation_Model
-- Source: raw_sources/New/2310.10688v4.pdf (arXiv:2310.10688v4, Das et al., Google, April 2024) -> copied to raw_sources/2024_Das_TimesFM_Decoder_Only_Foundation_Model.pdf and scratch/txt/2310.10688v4.txt (+ canonical txt).
+- Source: raw_sources/New/2310.10688v4.pdf (arXiv:2310.10688v4, Das et al., Google, April 2024) -> copied to raw_sources/2024_TimesFM_Decoder_Only_Foundation_Model.pdf and scratch/txt/2310.10688v4.txt (+ canonical txt).
 - Created wiki/papers/2024_Das_TimesFM_Decoder_Only_Foundation_Model.md (full schema: 8 equations Eq.1-8, Table 1 corpus, Table 2/3/4/5 results, A.1 limitations, BibTeX, citation graph).
-- Created wiki/references/2024_Das_TimesFM_Decoder_Only_Foundation_Model_refs.md (44 refs).
+- Created wiki/references/2024_TimesFM_Decoder_Only_Foundation_Model_refs.md (44 refs).
 - Propagated: wiki/models/TimesFM.md (rewritten from stub, Overview + Literature Usage + Related Models), LLMTime.md (new), PatchTST/NBEATS/DeepAR/Transformer/Informer/Autoformer/FEDFormer/TimesNet/DLinear/ARIMA/ETS/CatBoost/TiDE + stubs WaveNet/TBATS/Theta/TimeGPT-1; wiki/metrics/msMAPE.md (new) + MAE/MSE/MAPE; wiki/features/Historical_Load.md; wiki/horizons/Long_Term/Short_Term/Day_Ahead; wiki/datasets/Google_Trends (new), Monash_Archive (new), Darts (new), LibCity (new) + Electricity_ECL/Wikipedia_Pageviews/ETC updates; wiki/github/Time_Series_Foundation_Models_Repos.md + github_repositories_index.md (TimesFM repo entry).
 - Updated raw_sources/paper_index.md (#81), index.md (119 papers / 109 PDFs, added paper line), thesis_references.bib (+1, now 109), dataset_extraction_report.md (appended TimesFM breakdown).
 - Regenerated paper_digest.md (119 papers, 369 KB, 2026-09-01).
 - Duplicate check: no prior PDF with same name; content-uniq vs 2024_Das_TiDE (different paper, same first author) and vs Meyer benchmark (only referencing TimesFM).
 ## [2026-09-01] ingest | 2026_Khwaja_Toto_2_Scaling_Era
-- Source: raw_sources/New/2605.20119v2.pdf (arXiv:2605.20119v2, Khwaja et al., Datadog AI Research + CMU, June 2026) -> copied to raw_sources/2026_Khwaja_Toto_2_Scaling_Era.pdf and scratch/txt/2605.20119v2.txt (+ canonical 2026_Khwaja_Toto_2_Scaling_Era.txt; 68705 chars, 19 pages, fitz extraction).
+- Source: raw_sources/New/2605.20119v2.pdf (arXiv:2605.20119v2, Khwaja et al., Datadog AI Research + CMU, June 2026) -> copied to raw_sources/2026_Toto_2_Scaling_Era.pdf and scratch/txt/2605.20119v2.txt (+ canonical 2026_Khwaja_Toto_2_Scaling_Era.txt; 68705 chars, 19 pages, fitz extraction).
 - Created wiki/papers/2026_Khwaja_Toto_2_Scaling_Era.md (full schema: 8 equations Eq.1-8 (CPM Eq.1, pinball Eq.2, quantile head Eq.3, pinball gradient Eq.4, NorMuon Eq.5, arcsinh scaler Eq.6, u-muP Eq.7, OWA Eq.8), Tables 1/Figs 5-10 results, BibTeX, citation graph).
-- Created wiki/references/2026_Khwaja_Toto_2_Scaling_Era_refs.md (62 refs) and wiki/models/Toto.md (full: overview + CPM/quantile/NorMuon/u-muP + Literature Usage + Related Models).
+- Created wiki/references/2026_Toto_2_Scaling_Era_refs.md (62 refs) and wiki/models/Toto.md (full: overview + CPM/quantile/NorMuon/u-muP + Literature Usage + Related Models).
 - Propagated: wiki/models/Toto.md (new) + PatchTST/Transformer/Moirai/Chronos/Chronos-Bolt/Sundial/Time-MoE/TimesFM/TimesFM_2.0 (updated) + FlowState/Xihe/Timer/TiRex/Granite/TTM/xLSTM/Muon/NorMuon/Migas/Reverso (new stubs); wiki/datasets/BOOM (new), GIFT-Eval (new), TIME_Benchmark (new), Datadog_Observability (new), TempoPFN_Synthetic (new), GIFT_Eval_Pretrain (new); wiki/metrics/CRPS/MASE/Pinball_Loss/OWA (updated); wiki/features/Historical_Load.md (updated); wiki/horizons/Long_Term/Short_Term/Day_Ahead (updated); wiki/hyperparameters/Optuna_TPE (updated) + u-muP/Unit_Scaling/WSD_Schedule (new); wiki/github/Time_Series_Foundation_Models_Repos.md + github_repositories_index.md (Toto 2.0 + dd_unit_scaling entries).
 - Updated raw_sources/paper_index.md (#82), index.md (120 papers / 110 PDFs, added paper line), thesis_references.bib (+1, now 110), dataset_extraction_report.md (appended 5 datasets + 6 URLs).
 - Regenerated paper_digest.md (120 papers, 374 KB, 2026-09-01).
 - Duplicate check: no prior wiki/papers/*Toto* or wiki/models/*Toto*; 2604.19841v1 duplicate of existing 2026_Bouaachra_INLA skipped; content-uniq vs TimesFM and other TSFMs in corpus.
 ## [2026-09-01] ingest | 2025_Ansari_Chronos_2_Univariate_to_Universal
-- Source: raw_sources/New/2510.15821v1.pdf (arXiv:2510.15821v1, Ansari et al., Amazon Web Services, Oct 2025, 31 pages) -> copied to raw_sources/2025_Ansari_Chronos_2_Univariate_to_Universal.pdf and scratch/txt/2510.15821v1.txt (+ canonical 2025_Ansari_Chronos_2_Univariate_to_Universal.txt; 115264 chars, fitz extraction).
+- Source: raw_sources/New/2510.15821v1.pdf (arXiv:2510.15821v1, Ansari et al., Amazon Web Services, Oct 2025, 31 pages) -> copied to raw_sources/2025_Chronos_2_Univariate_to_Universal.pdf and scratch/txt/2510.15821v1.txt (+ canonical 2025_Ansari_Chronos_2_Univariate_to_Universal.txt; 115264 chars, fitz extraction).
 - Created wiki/papers/2025_Ansari_Chronos_2_Univariate_to_Universal.md (full schema: 5 equations Eq.1-5 (robust sinh-asinh scaling Eq.1-2, patch embedding Eq.3, quantile regression Eq.4, denormalization Eq.5), Tables 1-6/Figs 1-8 results, BibTeX, citation graph).
-- Created wiki/references/2025_Ansari_Chronos_2_Univariate_to_Universal_refs.md (~70 refs dump, pp.15-19).
+- Created wiki/references/2025_Chronos_2_Univariate_to_Universal_refs.md (~70 refs dump, pp.15-19).
 - Created wiki/models/Chronos-2.md (new, universal group-attention overview); updated wiki/models/Chronos.md, Chronos-Bolt.md, TimesFM.md, TiRex.md, Toto.md, COSMIC (new), Moirai.md, Sundial.md, TabPFN-TS (new), AutoARIMA/ETS/Theta (new), PatchTST/TFT/DeepAR/N-BEATS/Transformer/Covariates.
 - Created wiki/datasets/fev-bench.md (100 tasks), Chronos_Benchmark_II.md (27 tasks), Chronos_Corpus.md; updated GIFT-Eval.md, GIFT_Eval_Pretrain.md, Electricity_ECL.md, M4.md, Solar_Dataset.md, Traffic.md, Weather.md, Wiki_Pageviews.md, Buildings_900K.md (new).
 - Created wiki/metrics/SQL.md, WQL.md, Win_Rate.md, Skill_Score.md; updated CRPS.md, MASE.md, Pinball_Loss.md.
@@ -509,8 +509,100 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Duplicate check: (a) raw_sources/*Sundial* — no prior canonical with same arXiv 2502.00816; (b) wiki/papers/2025_Liu_Sundial* — existing note found (gemini-generated, headings non-compliant) — rewrote in place to schema template; (c) content uniqueness — title/DOI/arXiv unique vs vault, confirmed new family (not TimesFM/Timer/Chronos duplicate).
 - Extracted text: reused scratch/txt/2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.txt (2003 lines, 81KB, fitz) — canonical txt copy already in place.
 - Rewrote wiki/papers/2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.md to schema.md template: frontmatter (type: paper, 14 models_used, 11 datasets_used, 5 metrics), 9 verbatim equations Eq 1-9 (CFM/OT flow-matching, patch embedding, RoPE attention, TimeFlow Loss Eq 6-8, inference push-forward Eq 9), TimeBench 1,032B table (12 sources, ERA5 Daily 406B dominant), TSLib/GIFT-Eval/FEV performance tables vs Time-MoE/Timer-XL/Chronos/N-BEATS/PatchTST, limitations (univariate S3, high-frequency gap, naive sampling, EV domain gap), BibTeX and citation graph (ONLY already-ingested [[...]]).
-- Refs dump: created wiki/references/2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models_refs.md (verbatim References pp.13-19).
+- Refs dump: created wiki/references/2025_Sundial_Highly_Capable_Time_Series_Foundation_Models_refs.md (verbatim References pp.13-19).
 - Propagated: wiki/models/Sundial.md (new full page), Timer.md, Time-MoE.md, Moirai.md, Chronos.md, TimeFlow.md, Transformer.md, PatchTST.md, N-BEATS.md, DeepAR.md, TiDE.md, Timer-XL.md (new alias -> Timer); wiki/datasets/TimeBench.md (new full page), ETT.md, ETTh1/ETTh2/ETTm1/ETTm2/ECL aliases, Electricity_ECL.md, Traffic.md, Weather.md, GIFT-Eval.md, Chronos_Corpus.md; wiki/metrics/MSE.md, MAE.md, MASE.md, CRPS.md, WQL.md; wiki/horizons/Long_Term_Forecasting.md; wiki/features/Historical_Load.md; wiki/github/Time_Series_Foundation_Models_Repos.md (#22 Sundial, https://github.com/thuml/Sundial + HF weights) and wiki/references/github_repositories_index.md (formatted Sundial entry, Chronos dash fix).
 - Catalogs: raw_sources/paper_index.md (#84, 2502.00816v4), raw_sources/2025_Liu_Sundial*.pdf already canonical, thesis_references.bib (liu2025sundial already present), dataset_extraction_report.md (appended as section 71: 8 datasets + TimeBench/GIFT-Eval/FEV/ETT suite).
 - Regenerated paper_digest.md (124 papers, 374 KB, 2026-09-01) via python gen_paper_digest.py.
 - Ghost-stub guard: AGENTS.md Step 2 already says wikilink ONLY IF already ingested; no new ghost stubs created (Timer-XL/ETT variants added as explicit alias stubs).
+
+## [2026-09-01] ingest | 2026_Liu_Moirai_2_When_Less_Is_More (Moirai 2.0) — SKILL.state test 1 file
+
+**Prototype**: SKILL.state (2608.26263v2) — P=SKILL.md+schema.md (immutable), Σt structured state, Ot=PDF/TXT/note, ΔΣ JSON patches, reasoning discarded after validation; 16 pages via pymupdf, txt 55.7KB/1149 lines cached to scratch/txt both names.
+- Duplicate check 3 places (mandatory): (a) raw_sources basename/arXiv 2511.11698 -> pass (112 canonical), (b) wiki/papers stem -> pass (124 notes), (c) content title/DOI -> pass; candidate selected from 7 in raw_sources/New/ (2505 TiRex, 2508 FlowState, 2511 Moirai 2.0 chosen, 2604 Bouaachra SKIP duplicate already as 2026_Bouaachra_INLA..., 2606 TS-ICL, 2607 TiRex-2, woo24a Unified Training). 2604 correctly skipped via (a)+(b) hit.
+- Extracted: raw_sources/New/2511.11698v3.pdf (2.04MB) --copy--> raw_sources/2026_Moirai_2_When_Less_Is_More.pdf (immutable, utf-8); scratch/txt both names.
+- Paper note: wiki/papers/2026_Liu_Moirai_2_When_Less_Is_More.md — schema TEMPLATE IS LAW (7 headings verified grep ^##), Eq.1-3 verbatim LaTeX \$\$..\\tag{}\$\$ with original symbols, datasets table 5 sources 36M/295B, Performance Tables 1-2/Fig2-5 with real numbers (MASE 0.728/CRPS 0.516 Table1, MASE 0.946->0.728 ablations), no invented values, BibTeX full, citation graph ONLY IF ingested (6 vault links verified, 2 external plain text), ghost guard fixed (He2016/Hochreiter).
+- Refs dump: wiki/references/2026_Moirai_2_When_Less_Is_More_refs.md (12.9KB, pp refs verbatim).
+- Propagation G7 (alias-aware, append-only): wiki/models/{Moirai,Transformer,Chronos,Chronos-2,Chronos-Bolt,TimesFM,Toto,TiRex,FlowState,Sundial,TabPFN-TS,PatchTST,TTM} + created Moirai_MoE.md, Lag-Llama.md; wiki/datasets/{GIFT-Eval,GIFT_Eval_Pretrain,Chronos_Corpus} updated + created KernelSynth.md, Salesforce_Internal_Telemetry.md; wiki/features Historical_Load; wiki/metrics {MASE,CRPS,WQL}; wiki/horizons Long_Term_Forecasting; wiki/github Time_Series_Foundation_Models_Repos.md + github_repositories_index.md.
+- Catalogs G8: raw_sources/paper_index.md 84->85, index.md 124->125 papers / 71->72 sections (both header locations), thesis_references.bib +liu2026moirai2, dataset_extraction_report.md 71->72 sections (datasets+URLs+snippets, append-only), paper_digest.md regenerated via python gen_paper_digest.py (125 papers, 379KB, Moirai 2.0 present), state store scratch/ingest_state/2026_Liu_Moirai_2_When_Less_Is_More.json (schema validated, Σ=done, G1-G8 all true).
+- SKILL.state audit: P size O(1) per step (SKILL.md+schema.md+2-3 recent notes), Σt ~ state JSON (not full history), Ot per step bounded; batch of 7 would be O(T) patches vs O(T²) full-history. Provenance preserved via history[] in JSON + this log entry (hybrid: execution discards reasoning, persistence keeps ΔΣ).
+- Staging: raw_sources/New/2511.11698v3.pdf retained until Definition of Done fully verified (next: audit_corrected + verify_final + digest grep); canonical copy is source of truth per AGENTS.md. Encoding utf-8 via Python only; raw_sources/ immutable.
+
+## [2026-09-01] ingest | 2024_Woo_Unified_Training_Universal_Time_Series_Transformers (MOIRAI 1.0)
+- **Pre-flight & Duplicate Check**: Checked 3 places (raw_sources, wiki/papers, bib/content) — confirmed 0 duplicate hits; copied staging PDF `raw_sources/New/woo24a.pdf` to canonical `raw_sources/2024_Unified_Training_Universal_Time_Series_Transformers.pdf`.
+- **Text Extraction**: Extracted full 25 pages via pymupdf to `scratch/txt/woo24a.txt` and canonical `scratch/txt/2024_Woo_Unified_Training_Universal_Time_Series_Transformers.txt`.
+- **Paper Note & Equations**: Created `wiki/papers/2024_Woo_Unified_Training_Universal_Time_Series_Transformers.md` following `schema.md` template verbatim (G1-G8 passed); extracted Eq. 1 (Pre-training objective), Eq. 2 (Any-variate Attention energy with binary bias & RoPE), Eq. 3 (Attention softmax), Eq. 4 (Mixture distribution), and Appendix B.1-B.4 (Student-t, Log-Normal, Negative Binomial, Low-Variance Normal distributions) and Appendix C.1 (CRPS/MSIS formulations).
+- **Concept Propagation**: Updated `wiki/models/` (Moirai, Transformer, PatchTST, TimesFM, TiDE, TFT, DeepAR, DLinear, FEDformer, Autoformer, Informer, TimesNet, iTransformer, Lag-Llama), created `wiki/datasets/LOTSA.md`, `BuildingsBench.md`, `LargeST.md`, `ProEnFo.md`, `ClimateLearn.md`, `SubseasonalClimateUSA.md`, `KDD_Cup_2022.md`, updated existing datasets (`Electricity_ECL`, `Solar_Dataset`, `Weather`, `M4`, `LibCity`, `Monash_Archive`), updated features (`Historical_Load`, created `Dynamic_Covariates`, `Variate_Identifier`), updated metrics (`CRPS`, `MAE`, `MSE`, `WQL`, created `MSIS.md`), updated horizons (`Short_Term_Forecasting`, `Long_Term_Forecasting`), and added MOIRAI 1.0 to `wiki/github/Time_Series_Foundation_Models_Repos.md` and `wiki/references/github_repositories_index.md`.
+- **Catalogs & Digest**: Added entry #86 to `raw_sources/paper_index.md`, added paper link and incremented counters to 126 papers / 73 sections in `index.md`, appended `@inproceedings{woo2024unified}` to `thesis_references.bib`, added section 73 to `dataset_extraction_report.md`, and regenerated `paper_digest.md` (126 papers, 383 KB).
+- **Staging Cleanup**: Verified all 8 Definition of Done items; removed staging file `raw_sources/New/woo24a.pdf`.
+
+## [2026-09-01] ingest | 2025_Auer_TiRex_Zero_Shot_Forecasting_In_Context_Learning
+- **Pre-flight & Duplicate Check**: Passed 3-place duplicate checks (a) raw_sources/New/2505.23719v2.pdf -> raw_sources/2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning.pdf canonical copy; (b) no matching note in wiki/papers/; (c) verified NeurIPS 2025 arXiv:2505.23719v2 full text uniqueness.
+- **Full Text Extraction**: Extracted 45 pages (140,134 chars, 9,360 lines) to `scratch/txt/2025_Auer_TiRex_Zero_Shot_Forecasting_In_Context_Learning.txt` and `scratch/txt/2505.23719v2.txt` via PyMuPDF.
+- **Paper Note Creation**: Created `wiki/papers/2025_Auer_TiRex_Zero_Shot_Forecasting_In_Context_Learning.md` strictly following `schema.md` template with raw string `r"""` (0 control chars, 10 verbatim LaTeX equations with `\tag{1}`..`\tag{10}`, 0 ghost links).
+- **Concept Propagation**:
+  - Models (13): [[TiRex]], [[xLSTM]], [[LSTM]], [[Chronos]], [[Chronos-Bolt]], [[TimesFM]], [[Moirai]], [[PatchTST]], [[TFT]], [[DLinear]], [[DeepAR]], [[TabPFN-TS]], [[TTM]]
+  - Datasets (8): [[GIFT-Eval]], [[GIFT_Eval_Pretrain]], [[Chronos_Corpus]], [[KernelSynth]], [[Electricity_ECL]], [[Solar_Dataset]], [[Weather]], [[M4]], [[ETT]]
+  - Features (3): [[Historical_Load]], [[Patched_Embeddings]], [[Dynamic_Covariates]]
+  - Horizons (2): [[Short_Term_Forecasting]], [[Long_Term_Forecasting]]
+  - Metrics (3): [[CRPS]], [[MASE]], [[WQL]]
+  - GitHub: Added `https://github.com/NX-AI/tirex` to `wiki/github/Time_Series_Foundation_Models_Repos.md` and `wiki/references/github_repositories_index.md`.
+- **Catalogs Updated**: `raw_sources/paper_index.md` (#87), `index.md` (127 papers), `thesis_references.bib` (added `@inproceedings{auer2025tirex}`), `dataset_extraction_report.md` (#74).
+- **Staging Cleanup**: Deleted staging file `raw_sources/New/2505.23719v2.pdf`.
+
+## [2026-09-01] ingest | 2026_Graf_FlowState_Sampling_Rate_Equivariant_Forecasting
+- **Pre-flight & Duplicate Check**: Passed 3-place duplicate checks (a) raw_sources/New/2508.05287v3.pdf -> raw_sources/2026_FlowState_Sampling_Rate_Equivariant_Forecasting.pdf canonical copy; (b) no matching note in wiki/papers/; (c) verified ICML 2026 arXiv:2508.05287v3 full text uniqueness.
+- **Full Text Extraction**: Extracted 26 pages (84,104 chars) to `scratch/txt/2026_Graf_FlowState_Sampling_Rate_Equivariant_Forecasting.txt` and `scratch/txt/2508.05287v3.txt` via PyMuPDF.
+- **Paper Note Creation**: Created `wiki/papers/2026_Graf_FlowState_Sampling_Rate_Equivariant_Forecasting.md` strictly following `schema.md` template with raw string `r"""` (0 control chars, 9 verbatim LaTeX equations with `\tag{1}`..`\tag{9}`, 0 ghost links).
+- **Concept Propagation**:
+  - Models (12): [[FlowState]], [[Mamba_SSM]], [[S5]], [[HiPPO]], [[TimesFM]], [[Chronos]], [[Chronos-Bolt]], [[Moirai]], [[TiRex]], [[TTM]], [[PatchTST]], [[DLinear]]
+  - Datasets (7): [[GIFT-Eval]], [[Chronos_Corpus]], [[KernelSynth]], [[Electricity_ECL]], [[Solar_Dataset]], [[Weather]], [[ETT]]
+  - Features (4): [[Historical_Load]], [[Continuous_Time_Basis]], [[Legendre_Polynomials]], [[Dynamic_Covariates]]
+  - Horizons (3): [[Short_Term_Forecasting]], [[Long_Term_Forecasting]], [[Continuous_Horizon]]
+  - Metrics (3): [[MASE]], [[CRPS]], [[WQL]]
+  - GitHub: Added `https://huggingface.co/ibm-research/flowstate` to `wiki/github/Time_Series_Foundation_Models_Repos.md` and `wiki/references/github_repositories_index.md`.
+- **Catalogs Updated**: `raw_sources/paper_index.md` (#88), `index.md` (128 papers), `thesis_references.bib` (added `@inproceedings{graf2026flowstate}`), `dataset_extraction_report.md` (#75).
+- **Staging Cleanup**: Deleted staging file `raw_sources/New/2508.05287v3.pdf`.
+
+## [2026-09-01] ingest | 2026_LeNaour_TS_ICL_Time_Indexed_Foundation_Model
+- **Pre-flight & Duplicate Check**: Passed 3-place duplicate checks (a) raw_sources/New/2606.05878v2.pdf -> raw_sources/2026_TS_ICL_Time_Indexed_Foundation_Model.pdf canonical copy; (b) no matching note in wiki/papers/; (c) verified arXiv:2606.05878v2 uniqueness.
+- **Full Text Extraction**: Extracted 50 pages (137,014 chars) to `scratch/txt/2026_LeNaour_TS_ICL_Time_Indexed_Foundation_Model.txt` and `scratch/txt/2606.05878v2.txt` via PyMuPDF.
+- **Paper Note Creation**: Created `wiki/papers/2026_LeNaour_TS_ICL_Time_Indexed_Foundation_Model.md` strictly following `schema.md` template with raw string `r"""` (0 control chars, 8 verbatim LaTeX equations with `\tag{1}`..`\tag{8}`, 0 ghost links).
+- **Concept Propagation**:
+  - Models (8): [[TS-ICL]], [[Chronos-2]], [[TimesFM]], [[TiRex]], [[TabPFN-TS]], [[Transformer]], [[SAITS]], [[BRITS]]
+  - Datasets (6): [[fm-impute-bench]], [[fev-bench]], [[Electricity_ECL]], [[Solar_Dataset]], [[Weather]], [[ETT]]
+  - Features (5): [[Historical_Load]], [[Continuous_Time_Basis]], [[Dynamic_Covariates]], [[Time_Encoding]], [[Missing_Value_Mask]]
+  - Horizons (3): [[Short_Term_Forecasting]], [[Long_Term_Forecasting]], [[Continuous_Horizon]]
+  - Metrics (4): [[CRPS]], [[MAE]], [[MSE]], [[MASE]]
+  - GitHub: Added `https://github.com/EDF-Lab/ts-icl` to `wiki/github/Time_Series_Foundation_Models_Repos.md` and `wiki/references/github_repositories_index.md`.
+- **Catalogs Updated**: `raw_sources/paper_index.md` (#89), `index.md` (129 papers), `thesis_references.bib` (added `@article{lenaour2026tsicl}`), `dataset_extraction_report.md` (#76).
+- **Staging Cleanup**: Deleted staging file `raw_sources/New/2606.05878v2.pdf`.
+
+## [2026-09-01] ingest | 2026_Podest_TiRex_2_Multivariate_Streaming_Forecasting
+- **Pre-flight & Duplicate Check**: Passed 3-place duplicate checks (a) raw_sources/New/2607.01204v1.pdf -> raw_sources/2026_TiRex_2_Multivariate_Streaming_Forecasting.pdf canonical copy; (b) no matching note in wiki/papers/; (c) verified arXiv:2607.01204v1 uniqueness.
+- **Full Text Extraction**: Extracted 31 pages (96,167 chars) to `scratch/txt/2026_Podest_TiRex_2_Multivariate_Streaming_Forecasting.txt` and `scratch/txt/2607.01204v1.txt` via PyMuPDF.
+- **Paper Note Creation**: Created `wiki/papers/2026_Podest_TiRex_2_Multivariate_Streaming_Forecasting.md` strictly following `schema.md` template with raw string `r"""` (0 control chars, 7 verbatim LaTeX equations with `\tag{1}`..`\tag{7}`, 0 ghost links).
+- **Concept Propagation**:
+  - Models (10): [[TiRex-2]], [[TiRex]], [[xLSTM]], [[Chronos-2]], [[TimesFM]], [[Moirai]], [[FlowState]], [[TabPFN-TS]], [[PatchTST]], [[DLinear]]
+  - Datasets (8): [[GIFT-Eval]], [[fev-bench]], [[Chronos_Corpus]], [[KernelSynth]], [[Electricity_ECL]], [[Solar_Dataset]], [[Weather]], [[ETT]]
+  - Features (5): [[Historical_Load]], [[Dynamic_Covariates]], [[Future_Known_Covariates]], [[Patched_Embeddings]], [[Asymmetric_Variate_Attention]]
+  - Horizons (3): [[Short_Term_Forecasting]], [[Long_Term_Forecasting]], [[Streaming_Forecasting]]
+  - Metrics (3): [[CRPS]], [[MASE]], [[WQL]]
+  - GitHub: Added `https://github.com/NX-AI/tirex` to `wiki/github/Time_Series_Foundation_Models_Repos.md` and `wiki/references/github_repositories_index.md`.
+- **Catalogs Updated**: `raw_sources/paper_index.md` (#90), `index.md` (130 papers), `thesis_references.bib` (added `@article{podest2026tirex2}`), `dataset_extraction_report.md` (#77).
+- **Staging Cleanup**: Deleted staging file `raw_sources/New/2607.01204v1.pdf`.
+
+## [2026-09-01] migration | Vault-Wide Rename to YYYY_Keywords Standard
+- **Scope**: Migrated all 130 paper notes from `YYYY_FirstAuthor_Keywords.md` to canonical `YYYY_Keywords.md` format.
+- **Collision Verification**: 0 collisions across all 130 papers, verified via `scratch/rename_mapping.json`.
+- **File Renames**:
+  - `wiki/papers/`: 129 paper notes renamed.
+  - `wiki/references/`: 68 citation reference files renamed to `YYYY_Keywords_refs.md`.
+  - `raw_sources/`: 68 canonical PDFs renamed to `YYYY_Keywords.pdf`.
+  - `scratch/txt/`: 68 text extraction caches renamed to `YYYY_Keywords.txt`.
+- **Global Link Propagation**: Updated 1,084 markdown files across `wiki/models/`, `wiki/datasets/`, `wiki/features/`, `wiki/horizons/`, `wiki/metrics/`, `wiki/hyperparameters/`, `wiki/github/`, and synthesis files with 5,534 link replacements.
+- **Catalogs & Standards Updated**:
+  - `schema.md`, `AGENTS.md`, and `.agents/skills/ingest-paper/SKILL.md` updated to standardize on `YYYY_Keywords.md`.
+  - `raw_sources/paper_index.md`, `index.md`, and `dataset_extraction_report.md` updated.
+- **Digest & Integrity**: Regenerated `paper_digest.md` (130 papers, 391 KB). Integrity audit passed 100% with 0 leftover old wikilinks.
+
+- **Post-Migration Audit**: Resolved all 20 historical ghost links (e.g., misformatted `[[_refs]]` strings and invalid cross-references) to reach **0 Ghost Links** across all 130 papers (G6 Compliance 100%).

@@ -22,4 +22,4 @@ EV Scheduling Feasible Domain (EVSFD) defines the multi-dimensional feasible sta
   $$p_{n,t}^{sc} = [p_{n,t} - p_n^{\min}, p_n^{\max} - p_{n,t}]$$
 
 ## Literature References
-- [[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]] - Derived EVSFD for EV parking lots participating in day-ahead energy markets.
+- [[2024_Day_Ahead_EVCB_EVSC_Parking_Lot]] - Derived EVSFD for EV parking lots participating in day-ahead energy markets.

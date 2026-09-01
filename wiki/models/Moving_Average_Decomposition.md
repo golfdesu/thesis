@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]]
+[[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]]

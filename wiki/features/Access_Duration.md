@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Xu_Day_Ahead_EVCB_EVSC_Parking_Lot]]
+[[2024_Day_Ahead_EVCB_EVSC_Parking_Lot]]

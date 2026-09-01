@@ -25,7 +25,7 @@ The New York Independent System Operator publishes zonal SCADA load data (11 loa
 - Zone-level aggregation aligns with transmission-level forecasting studies.
 
 ## 📚 Used By
-- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] — Year-2024 zonal load, 11 nodes/zones, hourly, MWh; one of four EnergyMamba benchmark datasets (graph built from zone centroid distances).
+- [[2026_EnergyMamba_Graph_Mamba_ASCQR]] — Year-2024 zonal load, 11 nodes/zones, hourly, MWh; one of four EnergyMamba benchmark datasets (graph built from zone centroid distances).
 
 ## Related Pages
 - [[EIA-930]]

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Shi_Naihao_Prediction_Interval_EV_Loads]]
+[[2024_Prediction_Interval_EV_Loads]]

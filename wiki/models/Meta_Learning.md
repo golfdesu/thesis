@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Ali_MQ_TCN_Transfer_Learning_EV]], [[2024_Ali_MQ_TCN_Transfer_Learning_EV]]
+[[2024_MQ_TCN_Transfer_Learning_EV]], [[2024_MQ_TCN_Transfer_Learning_EV]]

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_VanKriekinge_Day_Ahead_EV_Demand]]
+[[2021_Day_Ahead_EV_Demand]]

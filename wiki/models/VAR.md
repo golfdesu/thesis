@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Qu_Physics_Informed_GAT_EV_Load]], [[2024_Zhou_Conformal_Prediction_DER]]
+[[2024_Physics_Informed_GAT_EV_Load]], [[2024_Conformal_Prediction_DER]]

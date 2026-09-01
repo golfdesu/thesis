@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]], [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]]
+[[2023_NHiTS_Neural_Hierarchical_Interpolation]], [[2023_NHiTS_Neural_Hierarchical_Interpolation]]

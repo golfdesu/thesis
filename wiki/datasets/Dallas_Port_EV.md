@@ -18,4 +18,4 @@ EV intelligent port-logistics charging dataset for Dallas, Texas: **65,736 hourl
 - **Kaggle DOI**: https://doi.org/10.34740/KAGGLE/DSV/9490653
 
 ## 📚 Used By
-- [[2025_Alghamdi_REST_Network_Port_EV]] — RESTNet ensemble (ResNet+SENet+Transformer) with PSS balancing and DSRS feature selection; MAPE 6.5%, RMSE 9.8 kW.
+- [[2025_REST_Network_Port_EV]] — RESTNet ensemble (ResNet+SENet+Transformer) with PSS balancing and DSRS feature selection; MAPE 6.5%, RMSE 9.8 kW.

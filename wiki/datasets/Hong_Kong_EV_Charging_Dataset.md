@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]], [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]]
+[[2026_ML_Geographical_Transferability_EV]], [[2026_ML_Geographical_Transferability_EV]]

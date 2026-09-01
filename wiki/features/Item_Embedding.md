@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
+[[2020_DeepAR_Probabilistic_Forecasting]]

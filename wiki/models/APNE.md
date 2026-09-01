@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Meyer_Benchmark_Foundation_Models]], [[2025_Meyer_Benchmark_Foundation_Models]]
+[[2025_Benchmark_Foundation_Models]], [[2025_Benchmark_Foundation_Models]]

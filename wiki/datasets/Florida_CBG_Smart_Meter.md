@@ -26,7 +26,7 @@ Missing readings (~0.3%) imputed by linear interpolation; IQR-based outlier scre
 > The raw data is utility-partner data under an NDA — no public portal exists. Access requires agreement with the provider.
 
 ## 📚 Used By
-- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] — Primary benchmark for GE-Mamba/[[AS_CQR]] (Florida 1 MAE 36.57 / IS 231.86 vs best baseline ST-LLM 38.49 / 246.66); graph adjacency from CBG centroid distances.
+- [[2026_EnergyMamba_Graph_Mamba_ASCQR]] — Primary benchmark for GE-Mamba/[[AS_CQR]] (Florida 1 MAE 36.57 / IS 231.86 vs best baseline ST-LLM 38.49 / 246.66); graph adjacency from CBG centroid distances.
 
 ## Related Pages
 - [[NYISO]]

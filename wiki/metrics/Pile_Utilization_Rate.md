@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]]
+[[2026_EVformer_Spatio_Temporal_Decoupled_Citywide]]

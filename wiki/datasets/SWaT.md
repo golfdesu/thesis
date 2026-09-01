@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]]
+[[2023_TimesNet_Temporal_2D_Variation_Modeling]]

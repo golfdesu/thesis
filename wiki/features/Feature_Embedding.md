@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]
+[[2021_CSDI_Conditional_Diffusion_Forecasting]]

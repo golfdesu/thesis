@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2001_Hippert_Neural_Networks_STLF_Review]]
+[[2001_Neural_Networks_STLF_Review]]

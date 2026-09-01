@@ -64,8 +64,8 @@ The **Pecan Street Dataport** is a large-scale residential energy dataset from *
 
 | Paper | How Used |
 |-------|----------|
-| [[2024_Ke_Divide_Conquer_Transformer_EV]] | Smart-meter EV charging event prediction minutes ahead (DCT-EV) |
-| [[2024_Bampos_EV_Load_Forecasting_DAM]] | Included in multi-dataset DAM benchmark evaluation |
+| [[2024_Divide_Conquer_Transformer_EV]] | Smart-meter EV charging event prediction minutes ahead (DCT-EV) |
+| [[2024_EV_Load_Forecasting_DAM]] | Included in multi-dataset DAM benchmark evaluation |
 
 ## Related Pages
 

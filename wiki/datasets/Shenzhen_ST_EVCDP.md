@@ -18,9 +18,9 @@ City-scale public EV charging demand dataset from the ST-EVCDP release (Intellig
 - **GitHub (code + data)**: https://github.com/IntelligentSystemsLab/ST-EVCDP
 
 ## 📚 Used By
-- [[2024_Qu_Physics_Informed_GAT_EV_Load]] — Physics-informed attention graph (PAG) regional demand prediction with price-elasticity priors.
-- [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]] — Listed as Shenzhen EV charging data source for spatio-temporal LLM forecasting.
-- 2026 — [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] : EVformer spatio-temporal decoupled Transformer on the 247-zone graph (7:1:2 split, T=12 @ 5-min input, τ=3/6/9-step horizons); best MAE/RMSE/MAPE at all horizons vs 13 baselines.
+- [[2024_Physics_Informed_GAT_EV_Load]] — Physics-informed attention graph (PAG) regional demand prediction with price-elasticity priors.
+- [[2025_EV_STLLM_Spatio_Temporal_LLM]] — Listed as Shenzhen EV charging data source for spatio-temporal LLM forecasting.
+- 2026 — [[2026_EVformer_Spatio_Temporal_Decoupled_Citywide]] : EVformer spatio-temporal decoupled Transformer on the 247-zone graph (7:1:2 split, T=12 @ 5-min input, τ=3/6/9-step horizons); best MAE/RMSE/MAPE at all horizons vs 13 baselines.
 
 > [!note] TriCast provenance
-> [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] (TriCast) evaluates on what is effectively this same Shenzhen release (247 zones / 1006 edges / 19 Jun–18 Jul 2022 / 18k+ piles) but catalogs it under [[UrbanEV_Dataset]]; see that page for its entry.
+> [[2026_TriModal_Causal_EV_Demand]] (TriCast) evaluates on what is effectively this same Shenzhen release (247 zones / 1006 edges / 19 Jun–18 Jul 2022 / 18k+ piles) but catalogs it under [[UrbanEV_Dataset]]; see that page for its entry.

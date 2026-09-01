@@ -19,6 +19,14 @@ Note: distinct from the older 14-feature Jena Climate Keras variant.
 - **Reference**: [https://github.com/zhouhaoyi/ETDataset](https://github.com/zhouhaoyi/ETDataset)
 
 ## Literature Usage
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib Weather zero-shot; Sundial-S 0.233/0.271 competitive (Timer-XL 0.256/0.294).
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Pretraining ingredient: 10-min Weather (42 variates, 2.2M points) from Informer benchmark [ZZP+21].
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Weatherbench 225280 series etc. (Table 6) in Chronos-2 real-univariate mix.
+- [[2026_TiRex_2_Multivariate_Streaming_Forecasting]] — Evaluated on multivariate zero-shot forecasting benchmark with past and future covariates.
+- [[2026_TS_ICL_Time_Indexed_Foundation_Model]] — Evaluated on zero-shot forecasting and imputation benchmarks.
+- [[2026_FlowState_Sampling_Rate_Equivariant_Forecasting]] — Evaluated on zero-shot multi-frequency benchmarks within GIFT-Eval test suite.
+- [[2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning]] — Evaluated under zero-shot forecasting setting within GiftEval / Chronos-ZS benchmarks.
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib Weather zero-shot; Sundial-S 0.233/0.271 competitive (Timer-XL 0.256/0.294).
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — Pretraining ingredient: 10-min Weather (42 variates, 2.2M points) from Informer benchmark [ZZP+21].
+- [[2025_Chronos_2_Univariate_to_Universal]] — Weatherbench 225280 series etc. (Table 6) in Chronos-2 real-univariate mix.
+
+## Used-by
+
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — Pre-training archive / evaluation benchmark for MOIRAI 1.0 (Woo et al., ICML 2024). Part of the 27.6B observation LOTSA archive spanning 9 domains; evaluated on Monash, LSF, and out-of-distribution rolling CRPS/MSIS.

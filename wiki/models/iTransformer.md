@@ -31,9 +31,10 @@ Inversion consistently improves Transformer variants: −38.9% avg MSE on vanill
 - **Weaknesses**: $O(N^2)$ in number of variates for high-dimensional datasets; degrades into a stackable linear forecaster in univariate scenarios; point forecasts only (no uncertainty).
 
 ## Literature Usage
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Original paper: variate-token inversion; beats PatchTST/TimesNet/DLinear on most benchmarks; ablation shows attention-on-variate + FFN-on-temporal is optimal.
-- [[2025_Zheng_BWO_ICEEMDAN_iTransformer]] — EV/power load application: BWO–ICEEMDAN–iTransformer pipeline forecasts IMF subsequences + exogenous factors; R² 0.9873 / MAE 48.0 vs plain iTransformer R² 0.9577 / MAE 83.3 (+3.09% improvement).
-- [[2025_Bao_ResMMoT_Informer_Time_Series]] — iTransformer baseline on NASDAQ100 beaten by ResMMoT-Informer; less stable under noise/volatility.
-- [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]] — Related cross-feature dependency modeling line for EV charging-station security.
-- [[2025_Meyer_Benchmark_Foundation_Models]] — Trained-from-scratch baseline for household STLF; outperformed by zero-shot foundation models on several datasets (MAE_h 0.588–0.648).
-- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] — Degenerate load-only (near-identity with a single variate; 1/30 MAPE wins, 6.14% avg) yet the **largest weather gain** of all architectures: −1.62 pp avg ΔMAPE, ~3× more efficient than PatchTST at converting covariate tokens into accuracy; parameter-controlled tiers prove the gap is architectural.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Original paper: variate-token inversion; beats PatchTST/TimesNet/DLinear on most benchmarks; ablation shows attention-on-variate + FFN-on-temporal is optimal.
+- [[2025_BWO_ICEEMDAN_iTransformer]] — EV/power load application: BWO–ICEEMDAN–iTransformer pipeline forecasts IMF subsequences + exogenous factors; R² 0.9873 / MAE 48.0 vs plain iTransformer R² 0.9577 / MAE 83.3 (+3.09% improvement).
+- [[2025_ResMMoT_Informer_Time_Series]] — iTransformer baseline on NASDAQ100 beaten by ResMMoT-Informer; less stable under noise/volatility.
+- [[2025_Multi_View_Graph_Intrusion_Detection_EV]] — Related cross-feature dependency modeling line for EV charging-station security.
+- [[2025_Benchmark_Foundation_Models]] — Trained-from-scratch baseline for household STLF; outperformed by zero-shot foundation models on several datasets (MAE_h 0.588–0.648).
+- 2026 — [[2026_SSM_Transformer_LSTM_Grid_Benchmark]] — Degenerate load-only (near-identity with a single variate; 1/30 MAPE wins, 6.14% avg) yet the **largest weather gain** of all architectures: −1.62 pp avg ΔMAPE, ~3× more efficient than PatchTST at converting covariate tokens into accuracy; parameter-controlled tiers prove the gap is architectural.
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — **MOIRAI (Woo et al., ICML 2024)**: Masked Encoder-based Universal Time Series Forecasting Transformer (14M Small, 91M Base, 311M Large). Introduces multi-patch size input/output projections (8..128), Any-variate Attention with binary variate biases and RoPE, and 4-component mixture distribution (Student-t, log-normal, neg-binomial, low-var normal). Pre-trained on LOTSA (27.6B obs across 9 domains) with sequence packing.

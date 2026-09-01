@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]]
+[[2024_LASSO_BPNN_Mid_Term_EV_Load]]

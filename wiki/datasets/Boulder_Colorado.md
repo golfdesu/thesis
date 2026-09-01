@@ -58,19 +58,19 @@ A public EV charging session dataset from **City of Boulder, Colorado** open dat
 
 | Paper | How Used |
 |-------|----------|
-| [[2020_Huang_Ensemble_EV_Load]] | Ensemble learning benchmark; 20,562 transactions 2018–2020 aggregated hourly |
-| [[2023_Huang_MetaProbformer_EV_Load]] | One of four meta-learning benchmark stations (with Palo Alto, ElaadNL, Perth) |
-| [[2023_Koohfar_Transformer_EV_Demand]] | Transformer-based demand prediction with NOAA weather covariates |
-| [[2024_Bampos_EV_Load_Forecasting_DAM]] | 36-hour rolling DAM benchmark across 4 public datasets |
-| [[2024_Helmy_Autoformer_EV_Charging]] | Autoformer-based charging-load forecasting on the direct open-data export |
-| [[2025_Tian_MSSTGAN_City_EV_Load]] | MSSTGAN city-scale spatio-temporal benchmark (Boulder/Palo Alto/Dundee/Perth) |
-| [[2025_Hussain_CAT_Former_Short_Term_EV]] | CAT-Former short-term forecasting with Boulder weather covariates |
-| [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] | MAML-Informer benchmark (29,396 points): best RMSE50 0.202, CRPS 1.001, MPIW 0.1485 |
-| [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]] | Boulder one of 12 cities in the ML/DL transferability benchmark (19 stations, 5.5 events/day/station) |
-| [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] | USDT probabilistic forecasting on 31 months / 22,632 hourly points |
-| [[2023_Xiong_Combined_Deep_Learning_EV_Station_STLF]] | CNN-LSTM-Transformer STLF on the BOULDER/BASELINE ST1 station (2020, 15-min resolution); RMSE 0.300 / MAE 0.120 |
-| [[2025_Zhou_MixerInformer_Transfer_Learning_New_EV_Stations]] | MIK-TST two-stage transfer learning: stations 0–20 as source domain, stations 21–25 as data-scarce targets; MAE 0.4450 (−4% vs PatchTST) |
-| [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] | One of four cities in the ML benchmark (27 stations, 24,081 sessions, Jan 2018–Mar 2021); Transformer best short-term and long-term, LSTM best city mid-term |
+| [[2020_Ensemble_EV_Load]] | Ensemble learning benchmark; 20,562 transactions 2018–2020 aggregated hourly |
+| [[2023_MetaProbformer_EV_Load]] | One of four meta-learning benchmark stations (with Palo Alto, ElaadNL, Perth) |
+| [[2023_Transformer_EV_Demand]] | Transformer-based demand prediction with NOAA weather covariates |
+| [[2024_EV_Load_Forecasting_DAM]] | 36-hour rolling DAM benchmark across 4 public datasets |
+| [[2024_Autoformer_EV_Charging]] | Autoformer-based charging-load forecasting on the direct open-data export |
+| [[2025_MSSTGAN_City_EV_Load]] | MSSTGAN city-scale spatio-temporal benchmark (Boulder/Palo Alto/Dundee/Perth) |
+| [[2025_CAT_Former_Short_Term_EV]] | CAT-Former short-term forecasting with Boulder weather covariates |
+| [[2026_MetaLearning_Informer_Probabilistic_EV]] | MAML-Informer benchmark (29,396 points): best RMSE50 0.202, CRPS 1.001, MPIW 0.1485 |
+| [[2026_ML_Geographical_Transferability_EV]] | Boulder one of 12 cities in the ML/DL transferability benchmark (19 stations, 5.5 events/day/station) |
+| [[2026_DualDirection_Transformer_EV_Charging]] | USDT probabilistic forecasting on 31 months / 22,632 hourly points |
+| [[2023_Combined_Deep_Learning_EV_Station_STLF]] | CNN-LSTM-Transformer STLF on the BOULDER/BASELINE ST1 station (2020, 15-min resolution); RMSE 0.300 / MAE 0.120 |
+| [[2025_MixerInformer_Transfer_Learning_New_EV_Stations]] | MIK-TST two-stage transfer learning: stations 0–20 as source domain, stations 21–25 as data-scarce targets; MAE 0.4450 (−4% vs PatchTST) |
+| [[2026_ML_Comparison_EV_Charging_Forecasting]] | One of four cities in the ML benchmark (27 stations, 24,081 sessions, Jan 2018–Mar 2021); Transformer best short-term and long-term, LSTM best city mid-term |
 
 ## Related Pages
 

@@ -16,6 +16,6 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Huang_Lyapunov_EV_Scheduling]], [[2021_VanKriekinge_Day_Ahead_EV_Demand]], [[2021_VanKriekinge_Day_Ahead_EV_Demand]], [[2024_Bampos_EV_Load_Forecasting_DAM]], [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Li_DiffPLF_Conditional_Diffusion_EV]], [[2024_Qu_Physics_Informed_GAT_EV_Load]], [[2025_Tian_MSSTGAN_City_EV_Load]]
+[[2021_Huang_Lyapunov_EV_Scheduling]], [[2021_Day_Ahead_EV_Demand]], [[2021_Day_Ahead_EV_Demand]], [[2024_EV_Load_Forecasting_DAM]], [[2024_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_DiffPLF_Conditional_Diffusion_EV]], [[2024_Physics_Informed_GAT_EV_Load]], [[2025_MSSTGAN_City_EV_Load]]
 
 *(+5 more)*

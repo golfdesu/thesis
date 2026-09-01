@@ -16,4 +16,7 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]]
+[[2024_BiMamba_Bidirectional_Mamba_Forecasting]]
+
+## 📚 Literature Usage
+- [[2026_FlowState_Sampling_Rate_Equivariant_Forecasting]] — Compared as baseline on GIFT-Eval zero-shot benchmark where FlowState achieves state-of-the-art accuracy with significantly lower parameter counts.

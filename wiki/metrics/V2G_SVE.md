@@ -24,4 +24,4 @@ Where:
 - **Weights EV Density**: Assigns higher importance to forecast errors occurring during hours with dense EV connection profiles.
 
 ## Literature References
-- [[2024_Zhong_V2G_SVE_Evaluation_Metric]] - Proposed V2G-SVE metric published in IEEE Transactions on Smart Grid.
+- [[2024_V2G_SVE_Evaluation_Metric]] - Proposed V2G-SVE metric published in IEEE Transactions on Smart Grid.

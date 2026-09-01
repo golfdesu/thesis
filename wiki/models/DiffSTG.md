@@ -29,7 +29,7 @@ $$p_\theta(\boldsymbol{x}_{0:N}^p|\boldsymbol{x}_h,G)=p(\boldsymbol{x}_N^p)\prod
 - **Weaknesses**: still trails SOTA *deterministic* STGNNs (PEMS08: GMSDR MAE 16.01 vs DiffSTG 17.68) since the variational objective yields an inaccurate posterior with insufficient samples; vanilla GCN only in UGnet; multi-step sampling remains at inference; more parameters than TimeGrad/CSDI.
 
 ## Literature Usage
-- [[2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion]] — Original paper: AIR-BJ/AIR-GZ/PEMS08 CRPS −5.6%/−4.3%/−14.3% vs most competitive baseline; ablations confirm GNN, TCN, and Unet components all essential.
-- [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]] — CSDI's masked conditional-training scheme is DiffSTG's direct ancestor; DiffSTG adds spatial conditioning + non-autoregressive generation (CSDI beaten on all three datasets).
-- [[2024_Li_DiffPLF_Conditional_Diffusion_EV]] — DiffPLF extends the same conditional-diffusion line specifically to EV charging load via cross-attention conditioning; DiffSTG complements it with the graph/spatial dimension absent in DiffPLF's station-level scope.
-- [[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]] — UGnet inherits Graph WaveNet's gated dilated causal TCN as its temporal layer (cited as ref [44]), grafting the deterministic WaveNet backbone into a diffusion denoiser.
+- [[2023_DiffSTG_Probabilistic_ST_Graph_Diffusion]] — Original paper: AIR-BJ/AIR-GZ/PEMS08 CRPS −5.6%/−4.3%/−14.3% vs most competitive baseline; ablations confirm GNN, TCN, and Unet components all essential.
+- [[2021_CSDI_Conditional_Diffusion_Forecasting]] — CSDI's masked conditional-training scheme is DiffSTG's direct ancestor; DiffSTG adds spatial conditioning + non-autoregressive generation (CSDI beaten on all three datasets).
+- [[2024_DiffPLF_Conditional_Diffusion_EV]] — DiffPLF extends the same conditional-diffusion line specifically to EV charging load via cross-attention conditioning; DiffSTG complements it with the graph/spatial dimension absent in DiffPLF's station-level scope.
+- [[2019_Graph_WaveNet_Spatial_Temporal_Modeling]] — UGnet inherits Graph WaveNet's gated dilated causal TCN as its temporal layer (cited as ref [44]), grafting the deterministic WaveNet backbone into a diffusion denoiser.

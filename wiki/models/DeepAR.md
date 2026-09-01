@@ -31,19 +31,21 @@ Special treatment of **power-law scale heterogeneity**: item-dependent rescaling
 - **Weaknesses**: teacher-forcing exposure bias; heuristic scale factor; autoregressive decoding slow for long horizons; degrades on long-dependency synthetic tasks beyond ~96 steps.
 
 ## Literature Usage
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — Compared as supervised/point-forecasting baseline in GIFT-Eval (e.g., PatchTST MASE 0.762, N-BEATS 21.38 rank).
-- [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — Original paper: global autoregressive LSTM + flexible likelihoods; electricity ND 0.07 vs MatFact 0.16; count-data relative risk 0.77–0.94 vs ISSM/ETS baselines.
-- [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] — DeepAR as probabilistic baseline beaten by LogSparse Transformer (e.g., traffic-c 7d R0.5 0.179 vs 0.139); scale handling adopted.
-- [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — DeepAR baseline on ELECTRICITY/TRAFFIC/M4-Hourly (ND 0.07/0.17/0.09) beaten by covariate-free N-BEATS.
-- [[2021_Lim_TFT_Temporal_Fusion_Transformers]] — Key benchmark: TFT cuts P50 loss 36% on Electricity, 69% on Traffic, 62% on Retail vs DeepAR.
-- [[2021_Rasul_TimeGrad_Diffusion_Forecasting]] — DeepAR's mean-scaling trick and lag-feature pipeline inherited by TimeGrad; GP-copula/Vec-LSTM baselines from the same lineage.
-- [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]] — Univariate baseline on ETT/Exchange benchmarks.
-- [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] — Univariate baseline; DeepAR better only on ECL short horizons (≤336); Informer beats it by 49–65% MSE at longer horizons.
-- [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]] — Probabilistic baseline (ETTm2@720 MSE 0.332 vs N-HiTS 0.157).
-- [[2023_Huang_MetaProbformer_EV_Load]] — Probabilistic baseline for EV charging-load forecasting beaten by MetaProbformer on RMSE/Q50/Q90/CRPS.
-- [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] — Benchmark for low-data probabilistic EV demand (FEDM qualified rate 99.22% vs DeepTCN-family comparisons).
-- [[2024_Das_TiDE_Long_Term_Forecasting]] — M5 comparison baseline (WRMSSE 0.789 ≈20% worse than TiDE with covariates).
-- [[2025_Zheng_Coherent_Hierarchical_EV_Load]] — Hierarchical reconciliation benchmark: total MAE 2.15 (PICNN) vs DeepAR 9.67 on coherent EV load forecasting.
-- 2026 — [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] — DeepAR weakest baseline in USDT study (EVnetNL RMSE 29.675 / MAE 25.822; Perth RMSE 24.170), far behind even vanilla Transformer and Informer.
-- [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Supervised baseline on Monash; TimesFM beats DeepAR (0.6846 vs 0.8104 GM).
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **PatchTST / TFT / DeepAR / N-BEATS** cited as global deep-learning predecessors; patching heritage (Nie et al. 2023) underpins Chronos-2 patching+embedding Eq.3 with REG token and time-index/mask meta features.
+- [[2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning]] — Evaluated as baseline comparison in zero-shot time series benchmark (GiftEval-ZS and Chronos-ZS), where TiRex (35M) outperforms baseline models across short and long horizons.
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — Compared as supervised/point-forecasting baseline in GIFT-Eval (e.g., PatchTST MASE 0.762, N-BEATS 21.38 rank).
+- [[2020_DeepAR_Probabilistic_Forecasting]] — Original paper: global autoregressive LSTM + flexible likelihoods; electricity ND 0.07 vs MatFact 0.16; count-data relative risk 0.77–0.94 vs ISSM/ETS baselines.
+- [[2019_LogSparse_Enhancing_Locality_Transformer]] — DeepAR as probabilistic baseline beaten by LogSparse Transformer (e.g., traffic-c 7d R0.5 0.179 vs 0.139); scale handling adopted.
+- [[2020_NBEATS_Interpretable_Time_Series_Forecasting]] — DeepAR baseline on ELECTRICITY/TRAFFIC/M4-Hourly (ND 0.07/0.17/0.09) beaten by covariate-free N-BEATS.
+- [[2021_TFT_Temporal_Fusion_Transformers]] — Key benchmark: TFT cuts P50 loss 36% on Electricity, 69% on Traffic, 62% on Retail vs DeepAR.
+- [[2021_TimeGrad_Diffusion_Forecasting]] — DeepAR's mean-scaling trick and lag-feature pipeline inherited by TimeGrad; GP-copula/Vec-LSTM baselines from the same lineage.
+- [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]] — Univariate baseline on ETT/Exchange benchmarks.
+- [[2021_Informer_Beyond_Efficient_Transformer]] — Univariate baseline; DeepAR better only on ECL short horizons (≤336); Informer beats it by 49–65% MSE at longer horizons.
+- [[2023_NHiTS_Neural_Hierarchical_Interpolation]] — Probabilistic baseline (ETTm2@720 MSE 0.332 vs N-HiTS 0.157).
+- [[2023_MetaProbformer_EV_Load]] — Probabilistic baseline for EV charging-load forecasting beaten by MetaProbformer on RMSE/Q50/Q90/CRPS.
+- [[2024_Feature_Enhanced_Probabilistic_EV_Load]] — Benchmark for low-data probabilistic EV demand (FEDM qualified rate 99.22% vs DeepTCN-family comparisons).
+- [[2024_TiDE_Long_Term_Forecasting]] — M5 comparison baseline (WRMSSE 0.789 ≈20% worse than TiDE with covariates).
+- [[2025_Coherent_Hierarchical_EV_Load]] — Hierarchical reconciliation benchmark: total MAE 2.15 (PICNN) vs DeepAR 9.67 on coherent EV load forecasting.
+- 2026 — [[2026_DualDirection_Transformer_EV_Charging]] — DeepAR weakest baseline in USDT study (EVnetNL RMSE 29.675 / MAE 25.822; Perth RMSE 24.170), far behind even vanilla Transformer and Informer.
+- [[2024_TimesFM_Decoder_Only_Foundation_Model]] — Supervised baseline on Monash; TimesFM beats DeepAR (0.6846 vs 0.8104 GM).
+- [[2025_Chronos_2_Univariate_to_Universal]] — **PatchTST / TFT / DeepAR / N-BEATS** cited as global deep-learning predecessors; patching heritage (Nie et al. 2023) underpins Chronos-2 patching+embedding Eq.3 with REG token and time-index/mask meta features.
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — **MOIRAI (Woo et al., ICML 2024)**: Masked Encoder-based Universal Time Series Forecasting Transformer (14M Small, 91M Base, 311M Large). Introduces multi-patch size input/output projections (8..128), Any-variate Attention with binary variate biases and RoPE, and 4-component mixture distribution (Student-t, log-normal, neg-binomial, low-var normal). Pre-trained on LOTSA (27.6B obs across 9 domains) with sequence packing.

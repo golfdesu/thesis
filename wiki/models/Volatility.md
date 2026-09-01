@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Lim_TFT_Temporal_Fusion_Transformers]]
+[[2021_TFT_Temporal_Fusion_Transformers]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]]
+[[2026_TriModal_Causal_EV_Demand]]

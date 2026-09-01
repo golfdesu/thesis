@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]]
+[[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]]

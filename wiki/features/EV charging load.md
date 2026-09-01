@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2023_Cheng_VMD_Prophet_LSTM]]
+[[2023_VMD_Prophet_LSTM]]

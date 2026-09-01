@@ -24,8 +24,8 @@ tags:
 - **Weaknesses**: value over deterministic control is small (~0.9–1%) when point forecasts are already good; independence between variables ignores Pev×Ppv×pel correlation; equal scenario probabilities rather than learned; simulation only.
 
 ## 📚 Literature Usage
-- [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] — Conformal-prediction scenarios feeding SOCP-based stochastic/recourse MPC of an EV+PV+BESS hub over 280 evaluation days.
-- Related microgrid-EV line: [[2025_Yang_Stochastic_MPC_Microgrid_EV]]; aggregator flexibility variant: [[MS_MPC]].
+- [[2025_Stochastic_MPC_Conformal_Hub]] — Conformal-prediction scenarios feeding SOCP-based stochastic/recourse MPC of an EV+PV+BESS hub over 280 evaluation days.
+- Related microgrid-EV line: [[2025_Stochastic_MPC_Microgrid_EV]]; aggregator flexibility variant: [[MS_MPC]].
 
 ## Related Pages
 - [[EnbPI]]

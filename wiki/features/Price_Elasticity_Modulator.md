@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]]
+[[2026_TriModal_Causal_EV_Demand]]

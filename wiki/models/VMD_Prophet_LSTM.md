@@ -32,6 +32,6 @@ Reported average absolute-error reductions: **7.57% vs ARIMA**, **8.73% vs LSTM*
 - **Weaknesses**: fixed zero-crossing threshold heuristic; empirical k-selection; single-station case study; point forecast only — motivates quantile/distributional and federated extensions.
 
 ## Literature Usage
-- [[2023_Cheng_VMD_Prophet_LSTM]] — Original paper: MAE 109.22 kW / R² 0.8411 vs ARIMA 118.16, LSTM 119.67, Prophet 202.32 on Fujian station data.
-- [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]] — Related VMD(+ICEEMDAN) multi-frequency decomposition preprocessing line for spatio-temporal LLM-based EV charging-volume forecasting.
-- [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] — Related decomposition-first hybrid lineage for EV load forecasting benchmarking.
+- [[2023_VMD_Prophet_LSTM]] — Original paper: MAE 109.22 kW / R² 0.8411 vs ARIMA 118.16, LSTM 119.67, Prophet 202.32 on Fujian station data.
+- [[2025_EV_STLLM_Spatio_Temporal_LLM]] — Related VMD(+ICEEMDAN) multi-frequency decomposition preprocessing line for spatio-temporal LLM-based EV charging-volume forecasting.
+- [[2026_Decomposition_Stacked_Meta_Learning_EV_Load]] — Related decomposition-first hybrid lineage for EV load forecasting benchmarking.

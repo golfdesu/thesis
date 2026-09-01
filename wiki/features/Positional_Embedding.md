@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2019_Li_LogSparse_Enhancing_Locality_Transformer]]
+[[2019_LogSparse_Enhancing_Locality_Transformer]]

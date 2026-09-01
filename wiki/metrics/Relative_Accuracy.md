@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2025_Li_DC_Charging_Profiles_TFT]]
+[[2025_DC_Charging_Profiles_TFT]]

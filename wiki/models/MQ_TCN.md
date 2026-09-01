@@ -22,4 +22,4 @@ MQ-TCN combines dilated causal convolutions from **Temporal Convolutional Networ
   $$L_{\text{PB}}(q, y, \hat{y}^q) = \begin{cases} q(y - \hat{y}^q) & \hat{y}^q \le y \\ (1-q)(\hat{y}^q - y) & \hat{y}^q > y \end{cases}$$
 
 ## Literature References
-- [[2024_Ali_MQ_TCN_Transfer_Learning_EV]] - Proposed MQ-TCN with inductive transfer learning for data-scarce EV charging sites.
+- [[2024_MQ_TCN_Transfer_Learning_EV]] - Proposed MQ-TCN with inductive transfer learning for data-scarce EV charging sites.

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]]
+[[2024_Attention_Spatiotemporal_MultiGraph_EV_Load]]

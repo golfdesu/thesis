@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Tian_MSSTGAN_City_EV_Load]]
+[[2025_MSSTGAN_City_EV_Load]]

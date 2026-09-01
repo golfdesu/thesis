@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Yang_Stochastic_MPC_Microgrid_EV]]
+[[2025_Stochastic_MPC_Microgrid_EV]]

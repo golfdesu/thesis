@@ -23,4 +23,4 @@ MSSTGAN combines **Pyramid Split Attention (PSA)** for multi-scale temporal reso
   $$H^{(l)} = z \odot H_S^{(l)} + (1-z) \odot H_T^{(l)}, \quad z = \text{Sigmoid}(H_S^{(l)} W_{z,1} + H_T^{(l)} W_{z,2} + b_z)$$
 
 ## Literature References
-- [[2025_Tian_MSSTGAN_City_EV_Load]] - Proposed MSSTGAN for city-level EV charging station network load forecasting.
+- [[2025_MSSTGAN_City_EV_Load]] - Proposed MSSTGAN for city-level EV charging station network load forecasting.

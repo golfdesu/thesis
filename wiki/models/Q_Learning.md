@@ -22,7 +22,7 @@ Q-Learning is a model-free, off-policy Reinforcement Learning algorithm that lea
 
 ## Application in EV Charging Load Forecasting
 - Serves as a dynamic meta-selector that switches hourly between candidate predictions (e.g. ANN vs RNN) based on real-time forecasting error.
-- Reduced MSE by over 35% in smart charging scenarios with volatile load profiles ([[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]).
+- Reduced MSE by over 35% in smart charging scenarios with volatile load profiles ([[2021_RL_Q_Learning_EV_Load]]).
 
 ## Literature References
-- [[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]] - Applied Q-learning for ensemble selection in uncoordinated, coordinated, and smart EV charging.
+- [[2021_RL_Q_Learning_EV_Load]] - Applied Q-learning for ensemble selection in uncoordinated, coordinated, and smart EV charging.

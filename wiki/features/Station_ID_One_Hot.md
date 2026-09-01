@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]]
+[[2026_ML_Comparison_EV_Charging_Forecasting]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Khan_Transformer_BiLSTM_Price_Forecasting]]
+[[2025_Transformer_BiLSTM_Price_Forecasting]]

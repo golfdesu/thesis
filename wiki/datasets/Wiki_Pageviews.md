@@ -16,5 +16,5 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]], [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]]
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Wiki pageviews 100k series (Table 6) in Chronos-2 real-univariate mix.
+[[2021_CSDI_Conditional_Diffusion_Forecasting]], [[2021_CSDI_Conditional_Diffusion_Forecasting]]
+- [[2025_Chronos_2_Univariate_to_Universal]] — Wiki pageviews 100k series (Table 6) in Chronos-2 real-univariate mix.

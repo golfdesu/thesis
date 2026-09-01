@@ -51,10 +51,10 @@ The **UrbanEV dataset** is a large-scale open benchmark for urban EV charging de
 
 ## 📚 Used By
 
-- [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] — TriCast tri-modal forecasting, 5-min resolution, 60/20/20 chronological split. Note: uses the earlier [[Shenzhen_ST_EVCDP]] release (247 zones / 1006 edges, 19 Jun – 18 Jul 2022), not the six-month UrbanEV corpus.
-- [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]] — Hourly day-ahead similar-day selection across zones with ShapeDTW/Multi-DTW similarity and NSGA-II weights.
-- [[2025_Fan_EV_STLLM_Spatio_Temporal_LLM]] — Spatio-temporal LLM benchmark on Shenzhen charging volumes.
-- [[2025_Tian_MSSTGAN_City_EV_Load]] — Citywide EV charging demand GAN baseline context (UrbanEV benchmark lineage).
+- [[2026_TriModal_Causal_EV_Demand]] — TriCast tri-modal forecasting, 5-min resolution, 60/20/20 chronological split. Note: uses the earlier [[Shenzhen_ST_EVCDP]] release (247 zones / 1006 edges, 19 Jun – 18 Jul 2022), not the six-month UrbanEV corpus.
+- [[2026_Similar_Day_Selection_EV_Load]] — Hourly day-ahead similar-day selection across zones with ShapeDTW/Multi-DTW similarity and NSGA-II weights.
+- [[2025_EV_STLLM_Spatio_Temporal_LLM]] — Spatio-temporal LLM benchmark on Shenzhen charging volumes.
+- [[2025_MSSTGAN_City_EV_Load]] — Citywide EV charging demand GAN baseline context (UrbanEV benchmark lineage).
 
 ## Related Pages
 

@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_VanKriekinge_Day_Ahead_EV_Demand]], [[2021_VanKriekinge_Day_Ahead_EV_Demand]]
+[[2021_Day_Ahead_EV_Demand]], [[2021_Day_Ahead_EV_Demand]]

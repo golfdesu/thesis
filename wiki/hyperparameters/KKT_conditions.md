@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2024_Zhong_V2G_SVE_Evaluation_Metric]]
+[[2024_V2G_SVE_Evaluation_Metric]]

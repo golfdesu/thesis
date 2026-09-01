@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion]]
+[[2023_DiffSTG_Probabilistic_ST_Graph_Diffusion]]

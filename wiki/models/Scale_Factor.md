@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
+[[2020_DeepAR_Probabilistic_Forecasting]]

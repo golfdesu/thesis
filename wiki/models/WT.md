@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Wu_Meta_Learning_Physics_Informed_GACN_Power_System]]
+[[2025_Meta_Learning_Physics_Informed_GACN_Power_System]]

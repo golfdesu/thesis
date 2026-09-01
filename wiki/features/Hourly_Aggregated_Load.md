@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2020_Huang_Ensemble_EV_Load]]
+[[2020_Ensemble_EV_Load]]

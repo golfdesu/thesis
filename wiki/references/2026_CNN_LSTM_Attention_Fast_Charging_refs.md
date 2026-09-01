@@ -1,0 +1,59 @@
+# References — [[2026_CNN_LSTM_Attention_Fast_Charging]]
+
+> **53 references** extracted from this paper.
+
+---
+
+1. A. Romia and Q. Huang, “A hybrid CNN-LSTM-Attention deep learning model for forecasting time-series electric vehicles fast charging loads at public stations,” in 2024 IEEE Industry Applications Society Annual Meeting (IAS), 2024, pp. 1–7.
+2. U. S. S. Varshini, R. P. Sree, M. Perumal, M. Srinivas, and R. Subra- manyam, “Msmvan: Multi step multi variate deep attention network for renewable energy forecast,” IEEE Transactions on Industry Applications, 2023.
+3. Y. Zhang, X. Ge, M. Li, N. Li, F. Wang, L. Wang, and Q. Sun, “Demand response potential day-ahead forecasting approach based on lssa-bpnn considering the electricity-carbon coupling incentive effects,” IEEE Transactions on Industry Applications, 2024.
+4. M. V. Selvi and S. Mishra, “Investigation of performance of electric load power forecasting in multiple time horizons with new architecture realized in multivariate linear regression and feed-forward neural net- work techniques,” IEEE Transactions on Industry Applications, vol. 56, no. 5, pp. 5603–5612, 2020.
+5. A. Stratman, T. Hong, M. Yi, and D. Zhao, “Net load forecasting with disaggregated behind-the-meter pv generation,” IEEE Transactions on Industry Applications, vol. 59, no. 5, pp. 5341–5351, 2023.
+6. Z. Zhang, P. Zhao, P. Wang, and W.-J. Lee, “Transfer learning featured short-term combining forecasting model for residential loads with small sample sets,” IEEE Transactions on Industry Applications, vol. 58, no. 4, pp. 4279–4288, 2022.
+7. K. Akshay, G. H. Grace, K. Gunasekaran, and R. Samikannu, “Power consumption prediction for electric vehicle charging stations and fore- casting income,” Scientific Reports, vol. 14, no. 1, p. 6497, 2024.
+8. Q. Sun, J. Liu, X. Rong, M. Zhang, X. Song, Z. Bie, and Z. Ni, “Charging load forecasting of electric vehicle charging station based on support vector regression,” in 2016 IEEE PES Asia-Pacific Power and Energy Engineering Conference (APPEEC). IEEE, 2016, pp. 1777– 1781.
+9. A. Sreekumar and R. Lekshmi, “Electric vehicle charging station de- mand prediction model deploying data slotting,” Results in Engineering, vol. 24, p. 103095, 2024.
+10. J. Zhu, Z. Yang, Y. Guo, J. Zhang, and H. Yang, “Short-term load forecasting for electric vehicle charging stations based on deep learning approaches,” Applied sciences, vol. 9, no. 9, p. 1723, 2019.
+11. X. Huang, D. Wu, and B. Boulet, “Ensemble learning for charging load forecasting of electric vehicle charging stations,” in 2020 IEEE Electric Power and Energy Conference (EPEC). IEEE, 2020, pp. 1–5.
+12. J. Ran, Y. Gong, Y. Hu, and J. Cai, “Ev load forecasting using a refined cnn-lstm-am,” Electric Power Systems Research, vol. 238, p. 111091, 2025.
+13. F. B. H¨uttel, I. Peled, F. Rodrigues, and F. C. Pereira, “Deep spatio- temporal forecasting of electrical vehicle charging demand,” arXiv preprint arXiv:2106.10940, 2021. This article has been accepted for publication in IEEE Transactions on Industry Applications. This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/TIA.2026.3677828 © 2026 IEEE. All rights reserved, including rights for text and data mining and training of artificial intelligence and similar technologies. Personal use is permitted, but republication/redistribution requires IEEE permission. See https://www.ieee.org/publications/rights/index.html for more information. Authorized licensed use limited to: Chiang Mai University provided by UniNet. Downloaded on July 21,2026 at 06:51:26 UTC from IEEE Xplore. Restrictions apply.
+14. M. Rashid, T. Elfouly, and N. Chen, “A comprehensive survey of electric vehicle charging demand forecasting techniques,” IEEE Open Journal of Vehicular Technology, 2024.
+15. S. Sanami, H. Mosalli, Y. Yang, H.-G. Yeh, and A. G. Aghdam, “De- mand forecasting for electric vehicle charging stations using multivariate time-series analysis,” arXiv preprint arXiv:2502.16365, 2025.
+16. D. Zhou, Z. Guo, Y. Xie, Y. Hu, D. Jiang, Y. Feng, and D. Liu, “Using bayesian deep learning for electric vehicle charging station load forecasting,” Energies, vol. 15, no. 17, p. 6195, 2022.
+17. F. Mohammad, D.-K. Kang, M. A. Ahmed, and Y.-C. Kim, “Energy demand load forecasting for electric vehicle charging stations network based on convlstm and biconvlstm architectures,” IEEE Access, 2023.
+18. X. Huang, D. Wu, and B. Boulet, “Metaprobformer for charging load probabilistic forecasting of electric vehicle charging stations,” IEEE Transactions on Intelligent Transportation Systems, vol. 24, no. 10, pp. 10 445–10 455, 2023.
+19. X. Zhang, K. W. Chan, H. Li, H. Wang, J. Qiu, and G. Wang, “Deep- learning-based probabilistic forecasting of electric vehicle charging load with a novel queuing model,” IEEE transactions on cybernetics, vol. 51, no. 6, pp. 3157–3170, 2020.
+20. M. Chang, S. Bae, G. Cha, and J. Yoo, “Aggregated electric vehicle fast-charging power demand analysis and forecast based on lstm neural network,” Sustainability, vol. 13, no. 24, p. 13783, 2021.
+21. Z. Ye, R. Wei, and N. Yu, “Short-term forecasting for utilization rates of electric vehicle charging stations,” in 2021 IEEE International Smart Cities Conference (ISC2), 2021, pp. 1–7.
+22. J. Brownlee, Deep learning for time series forecasting: predict the future with MLPs, CNNs and LSTMs in Python. Machine Learning Mastery, 2018.
+23. F. Chollet, Deep learning with Python. Simon and Schuster, 2021.
+24. R. L. Galvez, A. A. Bandala, E. P. Dadios, R. R. P. Vicerra, and J. M. Z. Maningo, “Object detection using convolutional neural networks,” in TENCON 2018-2018 IEEE Region 10 Conference. IEEE, 2018, pp. 2023–2027.
+25. J. Zhang, Y. Zheng, and D. Qi, “Deep spatio-temporal residual networks for citywide crowd flows prediction,” in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 31, no. 1. AAAI, 2017.
+26. A. Borovykh, S. Bohte, and C. W. Oosterlee, “Conditional time se- ries forecasting with convolutional neural networks,” arXiv preprint arXiv:1703.04691, 2017.
+27. C. Pavlatos, E. Makris, G. Fotis, V. Vita, and V. Mladenov, “Enhancing electrical load prediction using a bidirectional lstm neural network,” Electronics, vol. 12, no. 22, p. 4652, 2023.
+28. I. Sutskever, O. Vinyals, and Q. V. Le, “Sequence to sequence learning with neural networks,” Advances in neural information processing systems, vol. 27, 2014.
+29. C.-L. Hung, “Deep learning in biomedical informatics,” in Intelligent Nanotechnology. Elsevier, 2023, pp. 307–329.
+30. S. Ookura and H. Mori, “An efficient method for wind power generation forecasting by lstm in consideration of overfitting prevention,” IFAC- PapersOnLine, vol. 53, no. 2, pp. 12 169–12 174, 2020.
+31. S. Hochreiter and J. Schmidhuber, “Long short-term memory,” Neural computation, vol. 9, no. 8, pp. 1735–1780, 1997.
+32. A. Vaswani, “Attention is all you need,” Advances in Neural Information Processing Systems, 2017.
+33. S.-Y. Shih, F.-K. Sun, and H.-y. Lee, “Temporal pattern attention for multivariate time series forecasting,” Machine Learning, vol. 108, pp. 1421–1441, 2019.
+34. Y. Dong, L. Xiao, J. Wang, and J. Wang, “A time series attention mechanism based model for tourism demand forecasting,” Information Sciences, vol. 628, pp. 269–290, 2023.
+35. Y. Hao and H. Cao, “A new attention mechanism to classify multivariate time series,” in Proceedings of the Twenty-Ninth International Joint Conference on Artificial Intelligence, 2020.
+36. U. Kamath, K. Graham, and W. Emara, Transformers for machine learning: a deep dive. Chapman and Hall/CRC, 2022.
+37. Optuna, “Optuna documentation,” 2023, accessed: 2024-12-29. [Online]. Available: https://optuna.org
+38. O. Contributors, “Optuna github repository,” 2024, accessed: 2024-12- 29. [Online]. Available: https://github.com/optuna/optuna
+39. T. Akiba, S. Sano, T. Yanase, T. Ohta, and M. Koyama, “Optuna: A next- generation hyperparameter optimization framework,” in Proceedings of the 25th ACM SIGKDD international conference on knowledge discovery & data mining, 2019, pp. 2623–2631.
+40. J. Bergstra, R. Bardenet, Y. Bengio, and B. K´egl, “Algorithms for hyper- parameter optimization,” Advances in neural information processing systems, vol. 24, 2011.
+41. L. Li, K. Jamieson, A. Rostamizadeh, E. Gonina, J. Ben-Tzur, M. Hardt, B. Recht, and A. Talwalkar, “A system for massively parallel hyperpa- rameter tuning,” Proceedings of Machine Learning and Systems, vol. 2, pp. 230–246, 2020.
+42. G. Lai, W.-C. Chang, Y. Yang, and H. Liu, “Modeling long- and short- term temporal patterns with deep neural networks,” in Proceedings of the 41st International ACM SIGIR Conference on Research and Development in Information Retrieval. ACM, 2018, pp. 95–104.
+43. D. L. Marino, K. Amarasinghe, and M. Manic, “Building energy load forecasting using deep neural networks,” in 2016 IEEE 42nd Annual Conference of the Industrial Electronics Society (IECON). IEEE, 2016, pp. 7046–7051.
+44. K. Greff, R. K. Srivastava, J. Koutn´ık, B. R. Steunebrink, and J. Schmid- huber, “Lstm: A search space odyssey,” IEEE Transactions on Neural Networks and Learning Systems, vol. 28, no. 10, pp. 2222–2232, 2017.
+45. H. Shi, M. Xu, and R. Li, “Deep learning for household load fore- casting—a novel pooling deep rnn,” IEEE Transactions on Smart Grid, vol. 9, no. 5, pp. 5271–5280, 2018.
+46. Y. Gal and Z. Ghahramani, “Dropout as a bayesian approximation: Representing model uncertainty in deep learning,” in Proceedings of the 33rd International Conference on Machine Learning (ICML). PMLR, 2016, pp. 1050–1059.
+47. D. P. Kingma and J. Ba, “Adam: A method for stochastic optimization,” International Conference on Learning Representations (ICLR), 2015, arXiv preprint arXiv:1412.6980.
+48. H. Wu, J. Xu, J. Wang, and M. Long, “Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting,” in Advances in Neural Information Processing Systems (NeurIPS), 2021.
+49. H. Zhou, S. Zhang, J. Peng, S. Li, J. Xiong, W. Zhang, and J. Zhang, “Informer: Beyond efficient transformer for long sequence time-series forecasting,” in Proceedings of the AAAI Conference on Artificial Intelligence, vol. 35, no. 12, 2021, pp. 11 106–11 115.
+50. B. Lim, S. ¨O. Arik, N. Loeff, and T. Pfister, “Temporal fusion trans- formers for interpretable multi-horizon time series forecasting,” in Pro- ceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2021.
+51. Y. Wu, B. Green, X. Ben, and S. O'Banion, “Deep transformer mod- els for time series forecasting: The influenza prevalence case,” arXiv preprint arXiv:2001.08317, 2020.
+52. Z. J. Lee, T. Li, and S. H. Low, “ACN-Data: Analysis and Applications of an Open EV Charging Dataset,” in Proceedings of the Tenth Inter- national Conference on Future Energy Systems, ser. e-Energy '19, June 2019.
+53. System Advisor Model Version 2022.11.29 (SAM 2022.11.21).National Renewable Energy Laboratory. Golden, CO. Accessed July 26, 2023. [Online]. Available: https://https://sam.nrel.gov This article has been accepted for publication in IEEE Transactions on Industry Applications. This is the author's version which has not been fully edited and content may change prior to final publication. Citation information: DOI 10.1109/TIA.2026.3677828 © 2026 IEEE. All rights reserved, including rights for text and data mining and training of artificial intelligence and similar technologies. Personal use is permitted, but republication/redistribution requires IEEE permission. See https://www.ieee.org/publications/rights/index.html for more information. Authorized licensed use limited to: Chiang Mai University provided by UniNet. Downloaded on July 21,2026 at 06:51:26 UTC from IEEE Xplore. Restrictions apply.

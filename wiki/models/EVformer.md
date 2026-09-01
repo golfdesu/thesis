@@ -13,7 +13,7 @@ tags:
 # ⚡ EVformer
 
 ## Overview
-EVformer (Jia & Yang, *World Electric Vehicle Journal* 2026, [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]]) is a **modular encoder–decoder Transformer that explicitly decouples temporal sequence modeling from spatial dependency learning** for citywide EV charging load forecasting. It targets three bottlenecks of coupled spatio-temporal Transformers: quadratic $O(T^2 C)$ time–time self-attention, quadratic $O(N^2)$ spatial attention over stations, and rigid monolithic architectures. Its distinctive components are:
+EVformer (Jia & Yang, *World Electric Vehicle Journal* 2026, [[2026_EVformer_Spatio_Temporal_Decoupled_Citywide]]) is a **modular encoder–decoder Transformer that explicitly decouples temporal sequence modeling from spatial dependency learning** for citywide EV charging load forecasting. It targets three bottlenecks of coupled spatio-temporal Transformers: quadratic $O(T^2 C)$ time–time self-attention, quadratic $O(N^2)$ spatial attention over stations, and rigid monolithic architectures. Its distinctive components are:
 
 - **Spatio-Temporal Embedding (STE)**: sinusoidal + learnable temporal embedding $TE_t = [\sin(\omega t), \cos(\omega t)] + e_t$ and per-node spatial embedding $SE$, fused as $H_t = \text{MLP}([X_t; TE_t; SE])$.
 - **Two-stage channel-first temporal attention**: a global aggregation $\text{Pool}$ compresses each node's multi-channel sequence into a shared latent query ($o^{(i)}_t = \text{Pool}(S_i[t,:])$), so attention is computed against global queries with causal masking — avoiding pairwise time–time coupling entirely.
@@ -32,4 +32,4 @@ $$H^{(l)} = z \odot H^{(l)}_{spat} + (1-z) \odot H^{(l)}_{temp}, \qquad z = \sig
 - **Weaknesses**: evaluated only on ≤45-min horizons with ~30 days of single-season data (no weather/traffic exogenous features); region-level (247 zones), not individual stations; no probabilistic output.
 
 ## Literature Usage
-- [[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]] — Original paper: channel-first global-aggregation temporal attention + semantic Top-K spatial attention + BTB/MHD/gated fusion; ablation shows w/o Spatial (static GCN substitute) costs +7.2% RMSE / +13.9% MAPE, w/o BTB +3.9%, w/o Gating +2.6%; optimal config Top-K=20, depth N=3.
+- [[2026_EVformer_Spatio_Temporal_Decoupled_Citywide]] — Original paper: channel-first global-aggregation temporal attention + semantic Top-K spatial attention + BTB/MHD/gated fusion; ablation shows w/o Spatial (static GCN substitute) costs +7.2% RMSE / +13.9% MAPE, w/o BTB +3.9%, w/o Gating +2.6%; optimal config Top-K=20, depth N=3.

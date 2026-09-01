@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2014_Kingma_Adam_Stochastic_Optimization]], [[2014_Kingma_Adam_Stochastic_Optimization]], [[2014_Kingma_Adam_Stochastic_Optimization]]
+[[2014_Kingma_Adam_Optimization]], [[2014_Kingma_Adam_Optimization]], [[2014_Kingma_Adam_Optimization]]

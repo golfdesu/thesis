@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2014_Kingma_Adam_Stochastic_Optimization]], [[2014_Kingma_Adam_Stochastic_Optimization]], [[2018_Bai_Empirical_TCN_Sequence_Modeling]], [[2018_Bai_Empirical_TCN_Sequence_Modeling]]
+[[2014_Kingma_Adam_Optimization]], [[2014_Kingma_Adam_Optimization]], [[2018_Empirical_TCN_Sequence_Modeling]], [[2018_Empirical_TCN_Sequence_Modeling]]

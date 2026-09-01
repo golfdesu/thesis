@@ -37,14 +37,14 @@ The **Palo Alto EV Dataset** is a widely used benchmark dataset provided by the 
 - `Port Type` & `Plugin Category`: Level 2 / DC Fast Charger types.
 
 ## Literature References (Papers in Vault Using Palo Alto Dataset)
-- `[[2023_Huang_MetaProbformer_EV_Load]]` - Huang et al. (2023): Used Palo Alto dataset for few-shot meta-learning (Reptile + Informer).
-- `[[2024_Li_DiffPLF_Conditional_Diffusion_EV]]` - Li et al. (2024): Used Palo Alto dataset with Meteostat weather data for conditional diffusion probabilistic forecasting (DiffPLF).
-- `[[2024_Bampos_EV_Load_Forecasting_DAM]]` - Bampos et al. (2024): Benchmark on Palo Alto EV dataset for Day-Ahead Market (DAM) participation.
-- `[[2025_Tian_MSSTGAN_City_EV_Load]]` - Tian et al. (2025): Multi-Scale Spatial-Temporal Graph Attention Network benchmarked on Palo Alto, Boulder, Dundee, and Perth.
-- `[[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]` - Ullah et al. (2026): Benchmark on ACN, Palo Alto, Perth, and Paris (Belib) datasets.
-- `[[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]]` - Moghadam Dost et al. (2026): TFT + CQR conformal calibration with Open-Meteo environmental covariates on 2018–2022 hourly data (RMSE 1.2687 kWh, PICP 96.2%).
-- `[[2026_Singh_MetaLearning_Informer_Probabilistic_EV]]` - Singh et al. (2026): MAML-Informer point + probabilistic benchmark (39,915 records; best RMSE50 0.168, CRPS 1.012).
-- `[[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]]` - Wang et al. (2026): Palo Alto one of 12 cities in the six-model ML/DL transferability benchmark (7 stations, 17.9 events/day/station).
-- `[[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]]` - Zhang et al. (2026): USDT probabilistic dual-direction transformer on ~5 months / 3114 hourly points (PALO).
-- `[[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]]` - Kyriakopoulos & Theodoridis (2026): Palo Alto one of four cities (47 stations, 259,415 sessions, Jul 2011–Dec 2020); Transformer best at region/city short- and mid-term (city MAE 12.84→12.77), XGBoost best at station level.
-- `[[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]]` - Bouaachra et al. (2026): names Palo Alto a **stale legacy benchmark** (2020-era) that fails to reflect the scale and behavioral diversity of modern charging networks; proposes [[ChargePlace_Scotland]] (Oct 2022–Apr 2025) as the modern open replacement.
+- `[[2023_MetaProbformer_EV_Load]]` - Huang et al. (2023): Used Palo Alto dataset for few-shot meta-learning (Reptile + Informer).
+- `[[2024_DiffPLF_Conditional_Diffusion_EV]]` - Li et al. (2024): Used Palo Alto dataset with Meteostat weather data for conditional diffusion probabilistic forecasting (DiffPLF).
+- `[[2024_EV_Load_Forecasting_DAM]]` - Bampos et al. (2024): Benchmark on Palo Alto EV dataset for Day-Ahead Market (DAM) participation.
+- `[[2025_MSSTGAN_City_EV_Load]]` - Tian et al. (2025): Multi-Scale Spatial-Temporal Graph Attention Network benchmarked on Palo Alto, Boulder, Dundee, and Perth.
+- `[[2026_Decomposition_Stacked_Meta_Learning_EV_Load]]` - Ullah et al. (2026): Benchmark on ACN, Palo Alto, Perth, and Paris (Belib) datasets.
+- `[[2026_TFT_Conformal_Environmental_EV_Load]]` - Moghadam Dost et al. (2026): TFT + CQR conformal calibration with Open-Meteo environmental covariates on 2018–2022 hourly data (RMSE 1.2687 kWh, PICP 96.2%).
+- `[[2026_MetaLearning_Informer_Probabilistic_EV]]` - Singh et al. (2026): MAML-Informer point + probabilistic benchmark (39,915 records; best RMSE50 0.168, CRPS 1.012).
+- `[[2026_ML_Geographical_Transferability_EV]]` - Wang et al. (2026): Palo Alto one of 12 cities in the six-model ML/DL transferability benchmark (7 stations, 17.9 events/day/station).
+- `[[2026_DualDirection_Transformer_EV_Charging]]` - Zhang et al. (2026): USDT probabilistic dual-direction transformer on ~5 months / 3114 hourly points (PALO).
+- `[[2026_ML_Comparison_EV_Charging_Forecasting]]` - Kyriakopoulos & Theodoridis (2026): Palo Alto one of four cities (47 stations, 259,415 sessions, Jul 2011–Dec 2020); Transformer best at region/city short- and mid-term (city MAE 12.84→12.77), XGBoost best at station level.
+- `[[2026_INLA_Spatio_Temporal_EV_Demand]]` - Bouaachra et al. (2026): names Palo Alto a **stale legacy benchmark** (2020-era) that fails to reflect the scale and behavioral diversity of modern charging networks; proposes [[ChargePlace_Scotland]] (Oct 2022–Apr 2025) as the modern open replacement.

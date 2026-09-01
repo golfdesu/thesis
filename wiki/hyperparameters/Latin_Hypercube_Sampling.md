@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2025_Yang_Stochastic_MPC_Microgrid_EV]], [[2025_Yang_Stochastic_MPC_Microgrid_EV]]
+[[2025_Stochastic_MPC_Microgrid_EV]], [[2025_Stochastic_MPC_Microgrid_EV]]

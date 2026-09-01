@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]
+[[2021_Hierarchical_Probabilistic_EV_Load]]

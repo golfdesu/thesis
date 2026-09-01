@@ -67,17 +67,17 @@ The **ElaadNL dataset** is a large-scale public EV charging dataset from the **N
 
 | Paper | How Used |
 |-------|----------|
-| [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]] | Hierarchical probabilistic forecasting across the ElaadNL network (EVnetNL open data) |
-| [[2023_Huang_MetaProbformer_EV_Load]] | One of four meta-learning benchmark stations (with Palo Alto, Boulder, Perth) |
-| [[2026_Tang_PC_M3_Mamba_EV_Clusters]] | Charging-behavior priors for physics-constrained Mamba cluster EM |
-| [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] | EVnetNL open data as primary USDT benchmark (12 months, 8760 hourly points): RMSE 8.781 vs Informer 9.866; zero-shot transfer source |
+| [[2021_Hierarchical_Probabilistic_EV_Load]] | Hierarchical probabilistic forecasting across the ElaadNL network (EVnetNL open data) |
+| [[2023_MetaProbformer_EV_Load]] | One of four meta-learning benchmark stations (with Palo Alto, Boulder, Perth) |
+| [[2026_PC_M3_Mamba_EV_Clusters]] | Charging-behavior priors for physics-constrained Mamba cluster EM |
+| [[2026_DualDirection_Transformer_EV_Charging]] | EVnetNL open data as primary USDT benchmark (12 months, 8760 hourly points): RMSE 8.781 vs Informer 9.866; zero-shot transfer source |
 
-> [!WARNING] Corrected 2026-08-23: [[2025_Matrone_QR_LSTM_Attention_EV_Load]] was previously listed here in error — it uses the [[Utrecht_SmoothEMS]] office parking-lot data, not ElaadNL.
+> [!WARNING] Corrected 2026-08-23: [[2025_QR_LSTM_Attention_EV_Load]] was previously listed here in error — it uses the [[Utrecht_SmoothEMS]] office parking-lot data, not ElaadNL.
 
 ## Relevance to Hierarchical Forecasting
 
 > [!TIP]
-> ElaadNL is the primary benchmark for **hierarchical probabilistic EV load forecasting** research. The natural city→district→station hierarchy makes it ideal for testing coherent reconciliation methods like PICNN ([[2025_Zheng_Coherent_Hierarchical_EV_Load]]) and conformal prediction ([[2024_Zhou_Conformal_Prediction_DER]]).
+> ElaadNL is the primary benchmark for **hierarchical probabilistic EV load forecasting** research. The natural city→district→station hierarchy makes it ideal for testing coherent reconciliation methods like PICNN ([[2025_Coherent_Hierarchical_EV_Load]]) and conformal prediction ([[2024_Conformal_Prediction_DER]]).
 
 ## Related Pages
 
@@ -85,4 +85,4 @@ The **ElaadNL dataset** is a large-scale public EV charging dataset from the **N
 - [[Boulder_Colorado]]
 - [[Pecan_Street]]
 - [[Spatial_Temporal_Forecasting]]
-- [[2021_Buzna_Hierarchical_Probabilistic_EV_Load]]
+- [[2021_Hierarchical_Probabilistic_EV_Load]]

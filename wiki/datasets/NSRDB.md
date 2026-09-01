@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]], [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]]
+[[2023_Multi_Branch_ResTrans_Solar]], [[2023_Multi_Branch_ResTrans_Solar]]

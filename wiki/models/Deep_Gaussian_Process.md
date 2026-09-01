@@ -22,8 +22,8 @@ Deep Gaussian Process (DGP) is a multi-layer hierarchical generalization of Gaus
   $$\hat{f}_i^l = m_{\mu^l, Z^{l-1}}(\hat{f}_i^{l-1}) + \xi_i^l \odot \sqrt{S_{\Sigma^l, Z^{l-1}}(\hat{f}_i^{l-1}, \hat{f}_i^{l-1})}$$
 
 ## Application in EV / Power Systems Load Forecasting
-- Performs exceptionally well under **limited training data** and **anomalous events** (e.g. lockdowns, new charging stations) where deep neural networks overfit ([[2022_Cao_Robust_Deep_Gaussian_Process_Load]]).
+- Performs exceptionally well under **limited training data** and **anomalous events** (e.g. lockdowns, new charging stations) where deep neural networks overfit ([[2022_Robust_Deep_Gaussian_Process_Load]]).
 - Quantifies epistemic and aleatoric uncertainties via closed-form Prediction Intervals (PIs).
 
 ## Literature References
-- [[2022_Cao_Robust_Deep_Gaussian_Process_Load]] - Doubly stochastic variational inference DGP for load forecasting under data scarcity.
+- [[2022_Robust_Deep_Gaussian_Process_Load]] - Doubly stochastic variational inference DGP for load forecasting under data scarcity.

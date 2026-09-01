@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2021_Zhang_Probabilistic_Queuing_EV_Load]], [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]]
+[[2021_Probabilistic_Queuing_EV_Load]], [[2026_DualDirection_Transformer_EV_Charging]]

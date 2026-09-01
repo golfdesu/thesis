@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2019_Li_LogSparse_Enhancing_Locality_Transformer]], [[2019_Li_LogSparse_Enhancing_Locality_Transformer]]
+[[2019_LogSparse_Enhancing_Locality_Transformer]], [[2019_LogSparse_Enhancing_Locality_Transformer]]

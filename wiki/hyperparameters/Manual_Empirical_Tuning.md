@@ -20,7 +20,7 @@ Manual and empirical hyperparameter tuning relies on domain expertise, published
 
 ## Papers Utilizing Manual & Empirical Tuning
 - [[2017_Attention_Is_All_You_Need]] - Empirical selection of Transformer base/large configurations.
-- [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] - Empirical selection of ProbSparse self-attention sampling factor $c=5$.
-- [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]] - Auto-Correlation factor $k=6$ and series decomposition moving average kernel size $=25$.
-- [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] - Patch length $P=16$ and stride $S=8$.
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] - Inverted dimension tokenization empirical defaults.
+- [[2021_Informer_Beyond_Efficient_Transformer]] - Empirical selection of ProbSparse self-attention sampling factor $c=5$.
+- [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]] - Auto-Correlation factor $k=6$ and series decomposition moving average kernel size $=25$.
+- [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]] - Patch length $P=16$ and stride $S=8$.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] - Inverted dimension tokenization empirical defaults.

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Zhu_Personalized_Federated_Learning]], [[2025_Zhu_Personalized_Federated_Learning]]
+[[2025_Personalized_Federated_Learning]], [[2025_Personalized_Federated_Learning]]

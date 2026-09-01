@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2018_Nichol_Reptile_First_Order_Meta_Learning]]
+[[2018_Reptile_First_Order_Meta_Learning]]

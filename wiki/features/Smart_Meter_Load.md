@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Ke_Divide_Conquer_Transformer_EV]], [[2024_Ke_Divide_Conquer_Transformer_EV]], [[2024_Ke_Divide_Conquer_Transformer_EV]]
+[[2024_Divide_Conquer_Transformer_EV]], [[2024_Divide_Conquer_Transformer_EV]], [[2024_Divide_Conquer_Transformer_EV]]

@@ -30,8 +30,8 @@ Decoder-only autoregressive mode with Gaussian likelihood head + softplus positi
 - **Weaknesses**: with identical input lengths full attention still mostly wins (except strong-long-dependency traffic-f); training unstable with vanilla Adam on 15-min data (BERTAdam workaround).
 
 ## Literature Usage
-- [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] — Original paper: convolutional self-attention + log-sparse sparsity $O(L(\log L)^2)$; synthetic tests show LSTM/DeepAR degrade beyond ~96-step dependencies while Transformer holds accuracy.
-- [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] — Direct precursor benchmarked as LogTrans: test complexity still $O(L^2)$, OOMs at encoder input 1440 where Informer succeeds.
-- [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]] — Attention ablation baseline: Auto-Correlation beats LogSparse attention at all input/prediction lengths.
-- [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — LogTrans among the efficient Transformers beaten by one-layer linear models on all nine benchmarks.
-- [[2023_Huang_MetaProbformer_EV_Load]] — Cited within the EV meta-learning forecaster lineage of locality-aware attention for charging-load sequences.
+- [[2019_LogSparse_Enhancing_Locality_Transformer]] — Original paper: convolutional self-attention + log-sparse sparsity $O(L(\log L)^2)$; synthetic tests show LSTM/DeepAR degrade beyond ~96-step dependencies while Transformer holds accuracy.
+- [[2021_Informer_Beyond_Efficient_Transformer]] — Direct precursor benchmarked as LogTrans: test complexity still $O(L^2)$, OOMs at encoder input 1440 where Informer succeeds.
+- [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]] — Attention ablation baseline: Auto-Correlation beats LogSparse attention at all input/prediction lengths.
+- [[2023_DLinear_Are_Transformers_Effective_LTSF]] — LogTrans among the efficient Transformers beaten by one-layer linear models on all nine benchmarks.
+- [[2023_MetaProbformer_EV_Load]] — Cited within the EV meta-learning forecaster lineage of locality-aware attention for charging-load sequences.

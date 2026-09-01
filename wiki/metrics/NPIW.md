@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]]
+[[2026_TFT_Conformal_Environmental_EV_Load]]

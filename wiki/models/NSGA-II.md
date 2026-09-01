@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Wang_Xu_Similar_Day_Selection_EV_Load]], [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]], [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]]
+[[2026_Similar_Day_Selection_EV_Load]], [[2026_Similar_Day_Selection_EV_Load]], [[2026_Similar_Day_Selection_EV_Load]]

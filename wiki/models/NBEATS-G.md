@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]]
+[[2020_NBEATS_Interpretable_Time_Series_Forecasting]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Ke_Divide_Conquer_Transformer_EV]], [[2024_Ke_Divide_Conquer_Transformer_EV]], [[2024_Ke_Divide_Conquer_Transformer_EV]], [[2024_Ke_Divide_Conquer_Transformer_EV]]
+[[2024_Divide_Conquer_Transformer_EV]], [[2024_Divide_Conquer_Transformer_EV]], [[2024_Divide_Conquer_Transformer_EV]], [[2024_Divide_Conquer_Transformer_EV]]

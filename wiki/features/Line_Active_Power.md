@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Han_Vertical_Federated_EGAT_LSTM]]
+[[2025_Vertical_Federated_EGAT_LSTM]]

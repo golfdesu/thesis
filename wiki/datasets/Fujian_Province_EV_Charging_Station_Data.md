@@ -17,4 +17,4 @@ EV charging data from **one charging station in Fujian Province, China**, coveri
 - Not publicly available — no public URL or DOI given in the paper.
 
 ## 📚 Used By
-- [[2023_Cheng_VMD_Prophet_LSTM]] — VMD-Prophet-LSTM hybrid short-term charging-load forecasting.
+- [[2023_VMD_Prophet_LSTM]] — VMD-Prophet-LSTM hybrid short-term charging-load forecasting.

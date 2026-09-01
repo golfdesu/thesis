@@ -24,7 +24,7 @@ The California Independent System Operator publishes real-time and historical sy
 - Distinct duck-curve net-load signature (solar-driven) — high renewable-shaping of demand.
 
 ## 📚 Used By
-- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] — Year-2024 TAC-area load, 9 regions/zones, hourly, MWh; graph nodes from region centroids (EnergyMamba benchmark, hardest scale: MAE 199.18).
+- [[2026_EnergyMamba_Graph_Mamba_ASCQR]] — Year-2024 TAC-area load, 9 regions/zones, hourly, MWh; graph nodes from region centroids (EnergyMamba benchmark, hardest scale: MAE 199.18).
 
 ## Related Pages
 - [[EIA-930]]

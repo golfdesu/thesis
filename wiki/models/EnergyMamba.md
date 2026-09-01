@@ -30,7 +30,7 @@ Trained end-to-end with pinball loss at $\tau\in\{\alpha/2, 0.5, 1-\alpha/2\}$; 
 - **Weaknesses**: regional/building-aggregate granularity (CBGs/zones), not station-level EV loads; geographic-proxy graphs (no true topology); marginal long-run coverage guarantee only, not per-step conditional coverage; no monotonicity structure à la [[PICNN]].
 
 ## 📚 Literature Usage
-- [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] — Original KDD '26 paper: GCN-conditioned bidirectional selective SSM in U-Net + [[AS_CQR]]; evaluated on [[Florida_CBG_Smart_Meter]], [[NYISO]], [[CAISO]] ([[MAE]]/[[RMSE]]/[[MPIW]]/[[Interval_Score]]/[[PICP]]).
+- [[2026_EnergyMamba_Graph_Mamba_ASCQR]] — Original KDD '26 paper: GCN-conditioned bidirectional selective SSM in U-Net + [[AS_CQR]]; evaluated on [[Florida_CBG_Smart_Meter]], [[NYISO]], [[CAISO]] ([[MAE]]/[[RMSE]]/[[MPIW]]/[[Interval_Score]]/[[PICP]]).
 
 ## Related Pages
 - [[Mamba_SSM]]

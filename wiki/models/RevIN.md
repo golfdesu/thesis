@@ -32,12 +32,12 @@ Theory: after normalization all instances share $\mathbb{E}=\beta,\ \text{Var}=\
 - **Weaknesses**: assumes future-window statistics ≈ input-window statistics plus small offset — may fail under abrupt regime changes longer than the input window; point forecasts only.
 
 ## Literature Usage
-- [[2022_Kim_RevIN_Reversible_Instance_Normalization]] — Original paper: SOTA on seven large-scale datasets by adding RevIN to Informer/N-BEATS/SCINet; symmetric KL analysis quantifies reduced train/test feature divergence.
-- [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — PatchTST's instance-normalization component (RevIN-style); helps notably on ILI (T=24 MSE 1.522 vs 3.489 without).
-- [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]] — Flagged combination: N-HiTS backbone + RevIN for non-stationary EV charging demand as future work.
-- [[2023_Ziyabari_Multi_Branch_ResTrans_Solar]] — Related normalization usage in multi-branch residual Transformer solar forecasting.
-- [[2024_Das_TiDE_Long_Term_Forecasting]] — Optional reversible instance normalization component in TiDE training.
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — iTransformer's per-variate-token LayerNorm is related to RevIN/stationarization for inconsistent measurements.
-- [[2025_Li_DC_Charging_Profiles_TFT]] — β-VAE anomaly-detection stage of the DC fast-charging workflow uses RevIN layers to handle distributional shift/scale invariance across sessions.
-- 2024 — [[2024_He_Robust_MTS_Transitional_Shift]] — JointPGM explicitly critiques RevIN for assuming a **time-invariant transition** between input and output windows and ignoring inter-series dynamics; in Table III (L/H=96/96) JointPGM beats RevIN-augmented backbones in ~92% of comparisons on Exchange/ILI non-stationary benchmarks, positioning PGM-based transitional-shift modeling as the successor to instance normalization.
-- 2024 — [[2024_Menati_PowerMamba_Power_Systems_SSM]] — Adopted over Z-score normalization for non-stationary grid series (zonal loads/prices/renewables) as the first stage of PowerMamba's pipeline, ahead of trend–seasonal decomposition and dual-path Mamba blocks.
+- [[2022_RevIN_Reversible_Instance_Normalization]] — Original paper: SOTA on seven large-scale datasets by adding RevIN to Informer/N-BEATS/SCINet; symmetric KL analysis quantifies reduced train/test feature divergence.
+- [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]] — PatchTST's instance-normalization component (RevIN-style); helps notably on ILI (T=24 MSE 1.522 vs 3.489 without).
+- [[2023_NHiTS_Neural_Hierarchical_Interpolation]] — Flagged combination: N-HiTS backbone + RevIN for non-stationary EV charging demand as future work.
+- [[2023_Multi_Branch_ResTrans_Solar]] — Related normalization usage in multi-branch residual Transformer solar forecasting.
+- [[2024_TiDE_Long_Term_Forecasting]] — Optional reversible instance normalization component in TiDE training.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] — iTransformer's per-variate-token LayerNorm is related to RevIN/stationarization for inconsistent measurements.
+- [[2025_DC_Charging_Profiles_TFT]] — β-VAE anomaly-detection stage of the DC fast-charging workflow uses RevIN layers to handle distributional shift/scale invariance across sessions.
+- 2024 — [[2024_Robust_MTS_Transitional_Shift]] — JointPGM explicitly critiques RevIN for assuming a **time-invariant transition** between input and output windows and ignoring inter-series dynamics; in Table III (L/H=96/96) JointPGM beats RevIN-augmented backbones in ~92% of comparisons on Exchange/ILI non-stationary benchmarks, positioning PGM-based transitional-shift modeling as the successor to instance normalization.
+- 2024 — [[2024_PowerMamba_Power_Systems_SSM]] — Adopted over Z-score normalization for non-stationary grid series (zonal loads/prices/renewables) as the first stage of PowerMamba's pipeline, ahead of trend–seasonal decomposition and dual-path Mamba blocks.

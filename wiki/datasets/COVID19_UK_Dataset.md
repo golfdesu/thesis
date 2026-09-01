@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Stankeviciute_Conformal_Time_Series_Forecasting]], [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]
+[[2021_Conformal_Time_Series_Forecasting]], [[2021_Conformal_Time_Series_Forecasting]]

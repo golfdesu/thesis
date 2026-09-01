@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Liu_KAN_Kolmogorov_Arnold_Networks]]
+[[2024_KAN_Kolmogorov_Arnold_Networks]]

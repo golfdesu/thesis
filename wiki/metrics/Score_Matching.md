@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2021_Rasul_TimeGrad_Diffusion_Forecasting]]
+[[2021_TimeGrad_Diffusion_Forecasting]]

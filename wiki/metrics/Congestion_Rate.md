@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2025_Han_Vertical_Federated_EGAT_LSTM]]
+[[2025_Vertical_Federated_EGAT_LSTM]]

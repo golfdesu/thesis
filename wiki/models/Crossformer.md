@@ -27,6 +27,6 @@ $$B_{i,:} = \text{MSA}^{dim}_1(R_{i,:}, Z^{time}_{i,:}, Z^{time}_{i,:}), \qquad 
 - **Weaknesses**: all-to-all routing introduces noise on high-dimensional data; outperformed by [[DLinear]] on several datasets (ETTm1 long horizons, ECL, Traffic) — order-preservation flagged as future work; straightforward covariate embedding does not help.
 
 ## Literature Usage
-- [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]] — Original paper: DSW + TSA + HED; ETTh1 τ=168 MSE 0.410 vs FEDformer 0.412 / Autoformer 0.493; ECL τ=48 0.156 vs FEDformer 0.229.
-- [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Cross-dimension alternative that underperforms iTransformer (Traffic efficiency: 9.74 GB/702 ms vs iTransformer's variate-token attention).
-- [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]] — Related cross-feature dependency modeling line for EV charging-station security.
+- [[2023_Crossformer_Cross_Dimension_Dependency]] — Original paper: DSW + TSA + HED; ETTh1 τ=168 MSE 0.410 vs FEDformer 0.412 / Autoformer 0.493; ECL τ=48 0.156 vs FEDformer 0.229.
+- [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] — Cross-dimension alternative that underperforms iTransformer (Traffic efficiency: 9.74 GB/702 ms vs iTransformer's variate-token attention).
+- [[2025_Multi_View_Graph_Intrusion_Detection_EV]] — Related cross-feature dependency modeling line for EV charging-station security.

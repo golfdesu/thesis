@@ -22,4 +22,4 @@ MS-MPC handles uncertainties in renewable generation and EV arrival/departure by
   $$\min \left| \sum_{i=1}^{n_{\text{EVs}}} p_{\text{EV}}^i(t) - p_{\text{agg,upper}}^{*}(t) \right|$$
 
 ## Literature References
-- [[2025_Yang_Stochastic_MPC_Microgrid_EV]] - Proposed two-layer MS-MPC for V2G microgrid energy management.
+- [[2025_Stochastic_MPC_Microgrid_EV]] - Proposed two-layer MS-MPC for V2G microgrid energy management.

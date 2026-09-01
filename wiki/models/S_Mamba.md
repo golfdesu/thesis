@@ -28,8 +28,8 @@ No series decomposition (contrast [[PowerMamba]]), no patching (contrast [[Patch
 - **Weaknesses**: point forecasts only; channel-independent embedding gives limited cross-variate interaction compared with inverted attention.
 
 ## 📚 Literature Usage
-- [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] — Benchmark role: second-best load-only (avg 5.80% MAPE, 7/30 wins) but best-with-weather on 3/7 grids (SWPP 3.11%, ERCOT 1.96%, NYISO 3.11% MAPE at W=24); strongest on wind and price tasks.
-- [[2024_Menati_PowerMamba_Power_Systems_SSM]] — Cited as the Mamba-for-TSF evidence base [33] motivating PowerMamba's design.
+- [[2026_SSM_Transformer_LSTM_Grid_Benchmark]] — Benchmark role: second-best load-only (avg 5.80% MAPE, 7/30 wins) but best-with-weather on 3/7 grids (SWPP 3.11%, ERCOT 1.96%, NYISO 3.11% MAPE at W=24); strongest on wind and price tasks.
+- [[2024_PowerMamba_Power_Systems_SSM]] — Cited as the Mamba-for-TSF evidence base [33] motivating PowerMamba's design.
 
 ## Related Pages
 - [[Mamba_SSM]]

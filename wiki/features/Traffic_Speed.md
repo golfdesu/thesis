@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]]
+[[2019_Graph_WaveNet_Spatial_Temporal_Modeling]]

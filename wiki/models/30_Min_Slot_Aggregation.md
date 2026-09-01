@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2022_Zhang_GCN_TRN_EV_Availability]]
+[[2022_GCN_TRN_EV_Availability]]

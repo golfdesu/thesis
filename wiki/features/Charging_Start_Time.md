@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]
+[[2021_RL_Q_Learning_EV_Load]]

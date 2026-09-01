@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]], [[2025_Zheng_BWO_ICEEMDAN_iTransformer]]
+[[2019_Deep_Probabilistic_Scheduling_Power_Markets]], [[2025_BWO_ICEEMDAN_iTransformer]]

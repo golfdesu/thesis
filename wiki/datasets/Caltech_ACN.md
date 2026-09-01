@@ -35,17 +35,17 @@ ACN-Data is a public open-source dataset of EV charging sessions collected from 
 
 | Paper | How Used |
 |-------|----------|
-| [[2024_Ali_MQ_TCN_Transfer_Learning_EV]] | Source-domain quantile TCN transfer learning with NREL workplace data |
-| [[2024_Huo_Data_Driven_EVCS_Demand_Forecasting]] | Jan 2019–Mar 2020 sessions at JPL + Caltech converted to hourly average power for Rao-1-tuned ANN/SVR/BRT comparison (ANN best: JPL RMSE 6.93 kW) |
-| [[2024_Bampos_EV_Load_Forecasting_DAM]] | Day-ahead-market load-curve forecasting benchmark |
-| [[2024_Qu_Physics_Informed_GAT_EV_Load]] | Caltech (54), JPL (50) & Office-1 (8) sites for transferable PAG demand prediction |
-| [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] | Caltech + JPL hybrid LSTM-Transformer day-ahead benchmark |
-| [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] | XGBoost-BiLSTM stacking ensemble evaluation |
-| [[2025_Zheng_Coherent_Hierarchical_EV_Load]] | Coherent hierarchical probabilistic forecasting with Meteostat weather |
-| [[2026_Tang_PC_M3_Mamba_EV_Clusters]] | ACN-Data sessions + ACN-Sim for physics-constrained Mamba cluster EM |
-| [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] | Attention-enhanced CNN-LSTM fast-charging load forecast |
-| [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] | STL decomposition + stacked meta-learning 4-dataset benchmark |
-| [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]] | MAML-Informer per-station meta-learning: best RMSE/MAE/CRPS/PICP of all baselines |
+| [[2024_MQ_TCN_Transfer_Learning_EV]] | Source-domain quantile TCN transfer learning with NREL workplace data |
+| [[2024_Data_Driven_EVCS_Demand_Forecasting]] | Jan 2019–Mar 2020 sessions at JPL + Caltech converted to hourly average power for Rao-1-tuned ANN/SVR/BRT comparison (ANN best: JPL RMSE 6.93 kW) |
+| [[2024_EV_Load_Forecasting_DAM]] | Day-ahead-market load-curve forecasting benchmark |
+| [[2024_Physics_Informed_GAT_EV_Load]] | Caltech (54), JPL (50) & Office-1 (8) sites for transferable PAG demand prediction |
+| [[2025_Hybrid_LSTM_Transformer_Demand]] | Caltech + JPL hybrid LSTM-Transformer day-ahead benchmark |
+| [[2026_Hybrid_XGBoost_BiLSTM_EV_Load]] | XGBoost-BiLSTM stacking ensemble evaluation |
+| [[2025_Coherent_Hierarchical_EV_Load]] | Coherent hierarchical probabilistic forecasting with Meteostat weather |
+| [[2026_PC_M3_Mamba_EV_Clusters]] | ACN-Data sessions + ACN-Sim for physics-constrained Mamba cluster EM |
+| [[2026_CNN_LSTM_Attention_Fast_Charging]] | Attention-enhanced CNN-LSTM fast-charging load forecast |
+| [[2026_Decomposition_Stacked_Meta_Learning_EV_Load]] | STL decomposition + stacked meta-learning 4-dataset benchmark |
+| [[2026_MetaLearning_Informer_Probabilistic_EV]] | MAML-Informer per-station meta-learning: best RMSE/MAE/CRPS/PICP of all baselines |
 
 ## Related Pages
 - [[Palo_Alto_EV]]

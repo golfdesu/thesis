@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Feng_LSTM_Transformer_EV_Consumption]]
+[[2024_LSTM_Transformer_EV_Consumption]]

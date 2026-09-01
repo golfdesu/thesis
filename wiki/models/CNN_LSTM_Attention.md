@@ -19,4 +19,4 @@ CNN-LSTM-Attention combines 1D Convolutional layers for spatial/local feature ex
   $$\text{score}(Q, K) = Q^T K, \quad \alpha_m = \frac{\exp(e_m)}{\sum_{k=1}^n \exp(e_k)}, \quad \text{Attention}(Q, K, V) = \sum_{m=1}^n \alpha_m h_m$$
 
 ## Literature References
-- [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] - Proposed CNN-LSTM-Attention for 1-hour fast-charging load forecasting (MAE=2.98 kW, latency=0.742ms).
+- [[2026_CNN_LSTM_Attention_Fast_Charging]] - Proposed CNN-LSTM-Attention for 1-hour fast-charging load forecasting (MAE=2.98 kW, latency=0.742ms).

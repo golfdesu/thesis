@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]]
+[[2026_DualDirection_Transformer_EV_Charging]]

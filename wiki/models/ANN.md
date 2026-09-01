@@ -12,4 +12,4 @@ tags:
 Generic term for feed-forward multilayer perceptron-style neural networks.
 
 ## Role in EV / Load Forecasting
-Early baseline for station-level load forecasting, reviewed in [[2015_Raza_Review_AI_Load_Demand]]; superseded by deep sequence models.
+Early baseline for station-level load forecasting, reviewed in [[2015_Review_AI_Load_Demand]]; superseded by deep sequence models.

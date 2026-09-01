@@ -33,9 +33,9 @@ Interpretability use cases demonstrated: global variable importance, persistent 
 - **Weaknesses**: single attention layer, quadratic cost limits long look-backs; quantiles not calibrated probabilistically; fixed quantile set {0.1,0.5,0.9}; no joint multivariate sampling.
 
 ## Literature Usage
-- [[2021_Lim_TFT_Temporal_Fusion_Transformers]] — Original paper: GRN/VSN/static encoders/interpretable attention; Electricity P50/P90 0.055/0.027 vs DeepAR 0.075/0.040 (+36%/+48%); all ablations confirm each component contributes.
-- [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]] — FEDM borrows TFT's GRN/GLU building blocks for probabilistic EV demand; TFT benchmark qualified rate 94.79% (summer) vs FEDM 99.22%.
-- [[2025_Li_DC_Charging_Profiles_TFT]] — TFT-style architecture (VSNs + GRNs + LSTM encoder-decoder + multi-head attention, ~9.8M params) predicts real-world DC fast-charging profiles/durations; beats RNN/GRU/LSTM/vanilla Transformer baselines.
-- [[2025_Meyer_Benchmark_Foundation_Models]] — Trained-from-scratch baseline for household STLF (MAE_h 0.577–0.635), outperformed on several datasets by zero-shot foundation models.
-- [[2026_Romia_CNN_LSTM_Attention_Fast_Charging]] — TFT cited as hyperparameter-range justification for fast-charging forecasting architectures.
-- 2026 — [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] : End-to-end TFT + quantile head + CQR conformal calibration with environmental covariates on Palo Alto hourly data — RMSE 1.2687 kWh (1–24 h) and post-conformal PICP 96.2% at 80% nominal; VSN attention reveals monthly billing cycles.
+- [[2021_TFT_Temporal_Fusion_Transformers]] — Original paper: GRN/VSN/static encoders/interpretable attention; Electricity P50/P90 0.055/0.027 vs DeepAR 0.075/0.040 (+36%/+48%); all ablations confirm each component contributes.
+- [[2024_Feature_Enhanced_Probabilistic_EV_Load]] — FEDM borrows TFT's GRN/GLU building blocks for probabilistic EV demand; TFT benchmark qualified rate 94.79% (summer) vs FEDM 99.22%.
+- [[2025_DC_Charging_Profiles_TFT]] — TFT-style architecture (VSNs + GRNs + LSTM encoder-decoder + multi-head attention, ~9.8M params) predicts real-world DC fast-charging profiles/durations; beats RNN/GRU/LSTM/vanilla Transformer baselines.
+- [[2025_Benchmark_Foundation_Models]] — Trained-from-scratch baseline for household STLF (MAE_h 0.577–0.635), outperformed on several datasets by zero-shot foundation models.
+- [[2026_CNN_LSTM_Attention_Fast_Charging]] — TFT cited as hyperparameter-range justification for fast-charging forecasting architectures.
+- 2026 — [[2026_TFT_Conformal_Environmental_EV_Load]] : End-to-end TFT + quantile head + CQR conformal calibration with environmental covariates on Palo Alto hourly data — RMSE 1.2687 kWh (1–24 h) and post-conformal PICP 96.2% at 80% nominal; VSN attention reveals monthly billing cycles.

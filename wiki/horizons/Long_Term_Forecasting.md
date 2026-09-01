@@ -25,43 +25,43 @@ Long-term load forecasting covers prediction horizons from **several days to mon
 
 - **Non-stationarity**: Annual EV adoption growth creates a persistent upward trend that must be decomposed or normalized.
 - **Weak short-lag autocorrelation**: Value shifts from recent lags to seasonal/aggregated patterns.
-- **Distribution shift**: Input-window statistics drift over months — motivates instance normalization ([[2022_Kim_RevIN_Reversible_Instance_Normalization]]).
+- **Distribution shift**: Input-window statistics drift over months — motivates instance normalization ([[2022_RevIN_Reversible_Instance_Normalization]]).
 - **Error accumulation**: Direct multi-step strategies generally outperform recursive rollout at these horizons.
 
 ## Common Model Approaches
 
 | Model | Papers |
 |-------|--------|
-| LSTM foundations | [[1997_Hochreiter_Long_Short_Term_Memory]] |
-| N-BEATS (basis expansion) | [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] |
-| Decomposition Transformers (Autoformer / Informer) | [[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] |
-| Linear LTSF baselines (DLinear) | [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] |
-| Patch/channel-independent Transformers | [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2024_Liu_iTransformer_Inverted_Transformers_Effective_Time_Series]] |
-| Multi-layer perceptrons (TiDE) & NHiTS | [[2024_Das_TiDE_Long_Term_Forecasting]], [[2023_Challu_NHiTS_Neural_Hierarchical_Interpolation]] |
-| Selective SSM / Mamba (TimeMachine, Bi-Mamba+) | [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]] |
-| KAN decoder (learnable spline edges) | [[2024_Liu_KAN_Kolmogorov_Arnold_Networks]] |
+| LSTM foundations | [[1997_Long_Short_Term_Memory]] |
+| N-BEATS (basis expansion) | [[2020_NBEATS_Interpretable_Time_Series_Forecasting]] |
+| Decomposition Transformers (Autoformer / Informer) | [[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2021_Informer_Beyond_Efficient_Transformer]] |
+| Linear LTSF baselines (DLinear) | [[2023_DLinear_Are_Transformers_Effective_LTSF]] |
+| Patch/channel-independent Transformers | [[2023_PatchTST_A_Time_Series_is_Worth_64_Words]], [[2024_iTransformer_Inverted_Transformers_Effective_Time_Series]] |
+| Multi-layer perceptrons (TiDE) & NHiTS | [[2024_TiDE_Long_Term_Forecasting]], [[2023_NHiTS_Neural_Hierarchical_Interpolation]] |
+| Selective SSM / Mamba (TimeMachine, Bi-Mamba+) | [[2024_TimeMachine_Mamba_Long_Term_Forecasting]], [[2024_BiMamba_Bidirectional_Mamba_Forecasting]] |
+| KAN decoder (learnable spline edges) | [[2024_KAN_Kolmogorov_Arnold_Networks]] |
 
 ## Citing Literature
 
-- 2021 — [[2021_Zhou_Informer_Beyond_Efficient_Transformer]] : ProbSparse attention + distilling enable long-sequence forecasting beyond O(L²).
-- 2022 — [[2022_Kim_RevIN_Reversible_Instance_Normalization]] : Reversible instance normalization mitigates distribution shift in long-horizon forecasting.
-- 2023 — [[2023_Koohfar_Transformer_EV_Demand]] : Transformer EV demand benchmarked on extended multi-step horizons vs SARIMA.
-- 2023 — [[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]] : 2D variation modeling captures intra-period and inter-period structure for LTSF.
-- 2023 — [[2023_Zhang_Crossformer_Cross_Dimension_Dependency]] : Cross-dimension attention exploits multivariate dependencies at long horizons.
-- 2024 — [[2024_Helmy_Autoformer_EV_Charging]] : EV charging demand at **30/60/90-day horizons** — Autoformer RMSE ≈ 0.21 kWh/h flat vs LSTM degrading ~60% by day 90.
-- 2024 — [[2024_Zhou_Conformal_Prediction_DER]] : Long-range DER adoption forecasting with hierarchical conformal coverage guarantees.
-- 2025 — [[2025_Bao_ResMMoT_Informer_Time_Series]] : Residual multi-scale Mixture-of-Experts Informer for extended multi-step horizons.
-- 2025 — [[2025_Hussain_Hybrid_LSTM_Transformer_Demand]] : Hybrid LSTM-Transformer evaluated across extended prediction lengths on ACN/JPL data.
-- 2025 — [[2025_Weqar_LTLM_LSTM_EV_Load]] : LTLM uses ~200-day historical load windows at daily resolution for long-term station forecasting.
-- 2025 — [[2025_Meyer_Benchmark_Foundation_Models]] : Zero-shot foundation models (Chronos-Bolt, TimesFM 2.0, Moirai) benchmarked on long-horizon energy tasks.
-- 2026 — [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]] : MFT fuses multi-scale temporal features for up to 96-hour-ahead EV charging forecasting.
-- 2024 — [[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]] : Quadruple-Mamba LTSF with linear scalability — Electricity T=720 MSE 0.207 vs iTransformer 0.225; benefits monotonically from look-back up to L=720 (Electricity T=96: 0.142→0.133).
-- 2024 — [[2024_Liang_BiMamba_Bidirectional_Mamba_Forecasting]] : Bidirectional forget-gated Mamba+ encoder + Spearman-based channel-strategy decider; −4.72% avg MSE vs iTransformer across T ∈ {96,192,336,720}, linear memory on Traffic where attention grows quadratically.
-- 2024 — [[2024_Liu_KAN_Kolmogorov_Arnold_Networks]] : KANs offer dimension-independent approximation scaling ($G^{-k-1}$) and grid extension for capacity growth — motivates KOLMOGOROV-ARNOLD decoders in long-horizon EV forecasters ([[2026_Hao_Mamba_KAN_HyKANet_EV]]), though 10× slower training than MLPs favors hybrid rather than pure-KAN stacks.
-- 2024 — [[2024_He_Robust_MTS_Transitional_Shift]] : JointPGM probabilistic graphical model targets the LTSF setting (H ∈ {96,192,336,720}) under intra-/inter-series transitional shift — avg −15.3% MAE / −37.9% MSE vs nine baselines (Exchange H=96 MSE 0.076 vs iTransformer 0.086) and −9.3% MSE vs Koopa, with 77.6% training-time reduction; directly addresses the distribution-shift challenge that plagues multi-month EV horizons.
-- 2024 — [[2024_Li_TOU_Price_Meteorology_EV_Charging_Load]] : CNN-GRU multi-horizon forecasting out to **168 h** — lowest MAE/RMSE at all of 4/24/72/168 h with small degradation (RMSE 46.42→71.50), showing stable long-window accuracy on TOU/weather-conditioned mall-station load.
-- 2024 — [[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]] : Monthly mid-term LASSO-BPNN across four Qingpu (Shanghai) station types from only ~13 monthly points — best test MAPE 8.64% (Residential) vs LASSO-SVR/XGBoost/RF, with tree baselines overfitting.
-- 2026 — [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] : 24–168 h architecture benchmark across six US ISOs (L=240 h, identical protocols): PatchTST best load-only (5.59% MAPE), SSMs second and weather-favored, LSTM last; signed-error tails widen monotonically with horizon (CAISO W=168: −22.4/+51.2 pp).
+- 2021 — [[2021_Informer_Beyond_Efficient_Transformer]] : ProbSparse attention + distilling enable long-sequence forecasting beyond O(L²).
+- 2022 — [[2022_RevIN_Reversible_Instance_Normalization]] : Reversible instance normalization mitigates distribution shift in long-horizon forecasting.
+- 2023 — [[2023_Transformer_EV_Demand]] : Transformer EV demand benchmarked on extended multi-step horizons vs SARIMA.
+- 2023 — [[2023_TimesNet_Temporal_2D_Variation_Modeling]] : 2D variation modeling captures intra-period and inter-period structure for LTSF.
+- 2023 — [[2023_Crossformer_Cross_Dimension_Dependency]] : Cross-dimension attention exploits multivariate dependencies at long horizons.
+- 2024 — [[2024_Autoformer_EV_Charging]] : EV charging demand at **30/60/90-day horizons** — Autoformer RMSE ≈ 0.21 kWh/h flat vs LSTM degrading ~60% by day 90.
+- 2024 — [[2024_Conformal_Prediction_DER]] : Long-range DER adoption forecasting with hierarchical conformal coverage guarantees.
+- 2025 — [[2025_ResMMoT_Informer_Time_Series]] : Residual multi-scale Mixture-of-Experts Informer for extended multi-step horizons.
+- 2025 — [[2025_Hybrid_LSTM_Transformer_Demand]] : Hybrid LSTM-Transformer evaluated across extended prediction lengths on ACN/JPL data.
+- 2025 — [[2025_LTLM_LSTM_EV_Load]] : LTLM uses ~200-day historical load windows at daily resolution for long-term station forecasting.
+- 2025 — [[2025_Benchmark_Foundation_Models]] : Zero-shot foundation models (Chronos-Bolt, TimesFM 2.0, Moirai) benchmarked on long-horizon energy tasks.
+- 2026 — [[2026_MFT_Multi_Scale_Fusion_Transformer]] : MFT fuses multi-scale temporal features for up to 96-hour-ahead EV charging forecasting.
+- 2024 — [[2024_TimeMachine_Mamba_Long_Term_Forecasting]] : Quadruple-Mamba LTSF with linear scalability — Electricity T=720 MSE 0.207 vs iTransformer 0.225; benefits monotonically from look-back up to L=720 (Electricity T=96: 0.142→0.133).
+- 2024 — [[2024_BiMamba_Bidirectional_Mamba_Forecasting]] : Bidirectional forget-gated Mamba+ encoder + Spearman-based channel-strategy decider; −4.72% avg MSE vs iTransformer across T ∈ {96,192,336,720}, linear memory on Traffic where attention grows quadratically.
+- 2024 — [[2024_KAN_Kolmogorov_Arnold_Networks]] : KANs offer dimension-independent approximation scaling ($G^{-k-1}$) and grid extension for capacity growth — motivates KOLMOGOROV-ARNOLD decoders in long-horizon EV forecasters ([[2026_Mamba_KAN_HyKANet_EV]]), though 10× slower training than MLPs favors hybrid rather than pure-KAN stacks.
+- 2024 — [[2024_Robust_MTS_Transitional_Shift]] : JointPGM probabilistic graphical model targets the LTSF setting (H ∈ {96,192,336,720}) under intra-/inter-series transitional shift — avg −15.3% MAE / −37.9% MSE vs nine baselines (Exchange H=96 MSE 0.076 vs iTransformer 0.086) and −9.3% MSE vs Koopa, with 77.6% training-time reduction; directly addresses the distribution-shift challenge that plagues multi-month EV horizons.
+- 2024 — [[2024_TOU_Price_Meteorology_EV_Charging_Load]] : CNN-GRU multi-horizon forecasting out to **168 h** — lowest MAE/RMSE at all of 4/24/72/168 h with small degradation (RMSE 46.42→71.50), showing stable long-window accuracy on TOU/weather-conditioned mall-station load.
+- 2024 — [[2024_LASSO_BPNN_Mid_Term_EV_Load]] : Monthly mid-term LASSO-BPNN across four Qingpu (Shanghai) station types from only ~13 monthly points — best test MAPE 8.64% (Residential) vs LASSO-SVR/XGBoost/RF, with tree baselines overfitting.
+- 2026 — [[2026_SSM_Transformer_LSTM_Grid_Benchmark]] : 24–168 h architecture benchmark across six US ISOs (L=240 h, identical protocols): PatchTST best load-only (5.59% MAPE), SSMs second and weather-favored, LSTM last; signed-error tails widen monotonically with horizon (CAISO W=168: −22.4/+51.2 pp).
 
 ## Key Input Features
 
@@ -81,7 +81,13 @@ Long-term load forecasting covers prediction horizons from **several days to mon
 - [[Short_Term_Forecasting]]
 
 ## Literature Usage
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib long-term (96/192/336/720) and GIFT-Eval (6-900) zero-shot; Sundial-L -7.57% MSE vs Time-MoE.
-- 2024 — [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] : Decoder-only TimesFM zero-shot across Monash/Darts/ETT horizons 32-512 (variable context/horizon/granularity).
-- [[2026_Khwaja_Toto_2_Scaling_Era]] — Toto 2.0 zero-shot across BOOM (2048 ctx) / GIFT-Eval (4096 ctx) / TIME (per-task ctx); single-pass stable to ~768 steps, block decoding beyond; 2k-8k stability study (r=0.99 at 2k, 0.818 at 8k for 2.5B).
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Evaluated on mixed horizons via fev-bench/GIFT-Eval/Chronos Bench II (H dictated by benchmark tasks); 2-stage training extends max output patches and context 2048->8192 to support long-horizon and high-frequency seasonalities without heuristics; energy case hourly day-ahead (EPF-DE) and retail weekly quarter (Rossmann) illustrate short vs longer horizons.
+- [[2026_TiRex_2_Multivariate_Streaming_Forecasting]] — Evaluated on extended horizons up to context lengths >100k steps in streaming mode.
+- [[2026_TS_ICL_Time_Indexed_Foundation_Model]] — Evaluated across extended forecast horizons on fev-bench.
+- [[2026_FlowState_Sampling_Rate_Equivariant_Forecasting]] — Evaluated across extended forecast windows in GIFT-Eval benchmark.
+- [[2025_TiRex_Zero_Shot_Forecasting_In_Context_Learning]] — Demonstrates superior long-term forecasting accuracy (Gift-ZS Long CRPS 0.325) enabled by sLSTM recurrent state-tracking and Contiguous Patch Masking (CPM).
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib long-term (96/192/336/720) and GIFT-Eval (6-900) zero-shot; Sundial-L -7.57% MSE vs Time-MoE.
+- 2024 — [[2024_TimesFM_Decoder_Only_Foundation_Model]] : Decoder-only TimesFM zero-shot across Monash/Darts/ETT horizons 32-512 (variable context/horizon/granularity).
+- [[2026_Toto_2_Scaling_Era]] — Toto 2.0 zero-shot across BOOM (2048 ctx) / GIFT-Eval (4096 ctx) / TIME (per-task ctx); single-pass stable to ~768 steps, block decoding beyond; 2k-8k stability study (r=0.99 at 2k, 0.818 at 8k for 2.5B).
+- [[2025_Chronos_2_Univariate_to_Universal]] — Evaluated on mixed horizons via fev-bench/GIFT-Eval/Chronos Bench II (H dictated by benchmark tasks); 2-stage training extends max output patches and context 2048->8192 to support long-horizon and high-frequency seasonalities without heuristics; energy case hourly day-ahead (EPF-DE) and retail weekly quarter (Rossmann) illustrate short vs longer horizons.
+- [[2026_Moirai_2_When_Less_Is_More]] — Long-horizon degradation: MASE rank 4th short / 6th medium / 8th long (Fig. 4); multi-token prediction + recursive multi-quantile decoding mitigate but gap remains.
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — Zero-shot probabilistic and point forecasting across short rolling horizons (24..144) and long sequence benchmarks (96..720 steps).

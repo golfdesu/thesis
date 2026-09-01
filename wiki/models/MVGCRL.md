@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]], [[2025_Li_Multi_View_Graph_Intrusion_Detection_EV]]
+[[2025_Multi_View_Graph_Intrusion_Detection_EV]], [[2025_Multi_View_Graph_Intrusion_Detection_EV]]

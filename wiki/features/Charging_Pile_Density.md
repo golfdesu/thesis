@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2026_Jia_EVformer_Spatio_Temporal_Decoupled_Citywide]]
+[[2026_EVformer_Spatio_Temporal_Decoupled_Citywide]]

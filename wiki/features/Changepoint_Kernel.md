@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2013_Roberts_Gaussian_Processes_Time_Series]]
+[[2013_Gaussian_Processes_Time_Series]]

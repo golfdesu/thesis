@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[1997_Hochreiter_Long_Short_Term_Memory]], [[1997_Hochreiter_Long_Short_Term_Memory]]
+[[1997_Long_Short_Term_Memory]], [[1997_Long_Short_Term_Memory]]

@@ -30,4 +30,4 @@ Encoder: embeddings → SMAN → DDI → MHPSA → SAD → MHPSA; decoder adds M
 - **Weaknesses**: modest short-horizon gains over strong baselines; +213% iteration latency from multi-scale/dual-direction pathways; degrades under pronounced domain shift.
 
 ## Literature Usage
-- 2026 — [[2026_Zhang_Jinlai_DualDirection_Transformer_EV_Charging]] : Original paper — USDT on [[ElaadNL|EVnetNL]], [[Perth_EV|Perth]], [[Boulder_Colorado|Boulder]] and [[Palo_Alto_EV|Palo Alto]] data; ablation isolates SMAN (+SWAN) and DDI contributions on the Informer baseline (9.866 → 8.781 RMSE).
+- 2026 — [[2026_DualDirection_Transformer_EV_Charging]] : Original paper — USDT on [[ElaadNL|EVnetNL]], [[Perth_EV|Perth]], [[Boulder_Colorado|Boulder]] and [[Palo_Alto_EV|Palo Alto]] data; ablation isolates SMAN (+SWAN) and DDI contributions on the Informer baseline (9.866 → 8.781 RMSE).

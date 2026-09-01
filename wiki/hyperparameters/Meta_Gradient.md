@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2017_Finn_MAML_Model_Agnostic_Meta_Learning]]
+[[2017_MAML_Model_Agnostic_Meta_Learning]]

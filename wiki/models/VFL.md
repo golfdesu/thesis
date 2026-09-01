@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Han_Vertical_Federated_EGAT_LSTM]]
+[[2025_Vertical_Federated_EGAT_LSTM]]

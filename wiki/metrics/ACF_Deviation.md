@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]]
+[[2019_Deep_Probabilistic_Scheduling_Power_Markets]]

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Ali_MQ_TCN_Transfer_Learning_EV]]
+[[2024_MQ_TCN_Transfer_Learning_EV]]

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2022_Cao_Robust_Deep_Gaussian_Process_Load]]
+[[2022_Robust_Deep_Gaussian_Process_Load]]

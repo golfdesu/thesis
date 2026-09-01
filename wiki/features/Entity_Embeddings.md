@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Lim_TFT_Temporal_Fusion_Transformers]]
+[[2021_TFT_Temporal_Fusion_Transformers]]

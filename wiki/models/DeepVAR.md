@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Zheng_Coherent_Hierarchical_EV_Load]]
+[[2025_Coherent_Hierarchical_EV_Load]]

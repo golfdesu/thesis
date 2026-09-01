@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2017_Finn_MAML_Model_Agnostic_Meta_Learning]]
+[[2017_MAML_Model_Agnostic_Meta_Learning]]

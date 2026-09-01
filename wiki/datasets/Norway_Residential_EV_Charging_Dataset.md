@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]]
+[[2026_MFT_Multi_Scale_Fusion_Transformer]]

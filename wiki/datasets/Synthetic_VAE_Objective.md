@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2014_Kingma_Adam_Stochastic_Optimization]]
+[[2014_Kingma_Adam_Optimization]]

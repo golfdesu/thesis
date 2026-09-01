@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2017_Attention_Is_All_You_Need]], [[2018_Bai_Empirical_TCN_Sequence_Modeling]], [[2026_Lahoti_Mamba_3_Sequence_Modeling]]
+[[2017_Attention_Is_All_You_Need]], [[2018_Empirical_TCN_Sequence_Modeling]], [[2026_Mamba_3_Sequence_Modeling]]

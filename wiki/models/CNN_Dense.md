@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Bampos_EV_Load_Forecasting_DAM]]
+[[2024_EV_Load_Forecasting_DAM]]

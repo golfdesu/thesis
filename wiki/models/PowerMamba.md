@@ -28,8 +28,8 @@ $$x_m = \text{Mamba}(\text{DO}_1(x_e)), \qquad x_{im} = \text{iMamba}(\text{DO}_
 - **Weaknesses**: point forecasts only (L2 loss); zonal granularity, not station/nodal or EV-station level.
 
 ## 📚 Literature Usage
-- [[2024_Menati_PowerMamba_Power_Systems_SSM]] — Original paper + open benchmarking toolbox and [[ERCOT_GridSet]] dataset release.
-- [[2026_Hong_SSM_Transformer_LSTM_Grid_Benchmark]] — Benchmarked as a core SSM representative on EIA-930: 5.72% avg MAPE load-only; best-with-weather on ISO-NE/MISO after pre-decomposition weather fusion.
+- [[2024_PowerMamba_Power_Systems_SSM]] — Original paper + open benchmarking toolbox and [[ERCOT_GridSet]] dataset release.
+- [[2026_SSM_Transformer_LSTM_Grid_Benchmark]] — Benchmarked as a core SSM representative on EIA-930: 5.72% avg MAPE load-only; best-with-weather on ISO-NE/MISO after pre-decomposition weather fusion.
 - [[2026_Chen_PC_M3_Mamba_EV_Clusters]] — Used as flexibility-envelope baseline (Hausdorff error 9.7 vs PC-M3's 3.4).
 
 ## Related Pages

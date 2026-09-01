@@ -15,4 +15,4 @@ A neural network architecture that processes sequences step by step while mainta
 Baseline sequence model; largely superseded by [[LSTM]], GRU, and Transformer families.
 
 ## Key References
-- [[1997_Hochreiter_Long_Short_Term_Memory]]
+- [[1997_Long_Short_Term_Memory]]

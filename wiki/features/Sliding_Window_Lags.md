@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Khan_Transformer_BiLSTM_Price_Forecasting]], [[2026_Wang_Shengyou_ML_Geographical_Transferability_EV]]
+[[2025_Transformer_BiLSTM_Price_Forecasting]], [[2026_ML_Geographical_Transferability_EV]]

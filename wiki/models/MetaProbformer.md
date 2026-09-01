@@ -22,4 +22,4 @@ MetaProbformer combines an Informer-adapted probabilistic model (**Probformer**)
   $$\bar{S}(q_l, K) = \max_m \left\{ \frac{q_l k_m^T}{\sqrt{d}} \right\} - \frac{1}{d_k} \sum_{m=1}^{d_k} \frac{q_l k_m^T}{\sqrt{d}}$$
 
 ## Literature References
-- [[2023_Huang_MetaProbformer_EV_Load]] - Proposed MetaProbformer for probabilistic EV load forecasting across multiple datasets.
+- [[2023_MetaProbformer_EV_Load]] - Proposed MetaProbformer for probabilistic EV load forecasting across multiple datasets.

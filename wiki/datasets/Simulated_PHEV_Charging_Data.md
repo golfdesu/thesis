@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2021_Dabbaghjamanesh_RL_Q_Learning_EV_Load]]
+[[2021_RL_Q_Learning_EV_Load]]

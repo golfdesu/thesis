@@ -12,7 +12,7 @@ tags:
 Classical linear statistical time-series model combining autoregression, differencing (integration), and moving-average terms.
 
 ## Role in EV / Load Forecasting
-Traditional baseline for load forecasting; reviewed in [[2001_Hippert_Neural_Networks_STLF_Review]]. Seasonal variants include SARIMA.
+Traditional baseline for load forecasting; reviewed in [[2001_Neural_Networks_STLF_Review]]. Seasonal variants include SARIMA.
 
 ## Key References
-- [[2001_Hippert_Neural_Networks_STLF_Review]]
+- [[2001_Neural_Networks_STLF_Review]]

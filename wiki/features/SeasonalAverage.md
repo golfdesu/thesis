@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Meyer_Benchmark_Foundation_Models]], [[2025_Meyer_Benchmark_Foundation_Models]]
+[[2025_Benchmark_Foundation_Models]], [[2025_Benchmark_Foundation_Models]]

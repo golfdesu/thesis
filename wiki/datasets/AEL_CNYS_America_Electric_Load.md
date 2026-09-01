@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Qu_Forwardformer_Day_Ahead_Load]]
+[[2024_Forwardformer_Day_Ahead_Load]]

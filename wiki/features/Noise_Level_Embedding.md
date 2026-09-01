@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2023_Wen_DiffSTG_Probabilistic_ST_Graph_Diffusion]]
+[[2023_DiffSTG_Probabilistic_ST_Graph_Diffusion]]

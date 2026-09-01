@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2025_Zheng_Coherent_Hierarchical_EV_Load]], [[2025_Zheng_Coherent_Hierarchical_EV_Load]]
+[[2025_Coherent_Hierarchical_EV_Load]], [[2025_Coherent_Hierarchical_EV_Load]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]]
+[[2026_ML_Comparison_EV_Charging_Forecasting]]

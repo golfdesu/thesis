@@ -20,12 +20,12 @@
 ## Staging Inbox & Canonical Storage
 
 - **Inbox**: `raw_sources/New/` — drop newly downloaded PDFs here (keeps `raw_sources/` clean and makes duplicate checks explicit).
-- **Canonical**: `raw_sources/YYYY_FirstAuthor_Keywords.pdf` — after passing duplicate checks, **copy** (not move) the PDF from `New/` to `raw_sources/` under its canonical name (`YYYY` = publication year, verified against PDF text). This is the immutable record.
+- **Canonical**: `raw_sources/YYYY_Keywords.pdf` — after passing duplicate checks, **copy** (not move) the PDF from `New/` to `raw_sources/` under its canonical name (`YYYY` = publication year, verified against PDF text). This is the immutable record.
 - **Cleanup**: After `wiki/papers/*.md` + `scratch/txt/*.txt` + catalogs are verified, delete the original in `raw_sources/New/` (the canonical copy is now the source of truth).
 
 ```
-raw_sources/New/2310.10688v4.pdf  --copy+rename-->  raw_sources/2024_Das_TimesFM_Decoder_Only_Foundation_Model.pdf
-raw_sources/New/2605.20119v2.pdf  --copy+rename-->  raw_sources/2026_Khwaja_Toto_2_Scaling_Era.pdf
+raw_sources/New/2310.10688v4.pdf  --copy+rename-->  raw_sources/2024_TimesFM_Decoder_Only_Foundation_Model.pdf
+raw_sources/New/2605.20119v2.pdf  --copy+rename-->  raw_sources/2026_Toto_2_Scaling_Era.pdf
 ```
 
 ---
@@ -64,32 +64,34 @@ Follow this order for every ingestion. Do not skip steps.
 1. Read `schema.md` and 2–3 recent notes in `wiki/papers/` to lock the format.
 2. **Duplicate check — 3 places (mandatory, before any extraction)**:
    - **(a) `raw_sources/*.pdf` — basename / arXiv ID**: Does a canonical PDF with the same arXiv ID or normalized basename already exist? (`ls raw_sources/*<keyword>*`, compare `arXiv:YYMM.NNNNN`).
-   - **(b) `wiki/papers/*.md` — paper note**: Does `wiki/papers/YYYY_FirstAuthor_*.md` for this paper already exist (even under a different PDF filename)?
+   - **(b) `wiki/papers/*.md` — paper note**: Does `wiki/papers/YYYY_*.md` for this paper already exist (even under a different PDF filename)?
    - **(c) Content uniqueness — PDF text**: Do title / DOI / arXiv ID inside the PDF match a paper already ingested under a different filename? (Open the PDF or check `scratch/txt/*.txt`; use title/DOI hash if needed.)
    - If **any** of (a)(b)(c) hits → **skip ingestion**, record `duplicate — already ingested as [[Existing_Paper]]` in `log.md`, and delete the staging file in `raw_sources/New/` if it is an exact duplicate.
    - *Example: `2604.19841v1.pdf` had no basename hit in (a) but matched `2026_Bouaachra_INLA...` in (c) → skipped.*
 3. Verify the PDF filename matches the actual content (year + key concept/author). If the name is wrong, flag or fix it **before** creating the note (e.g., the Cheng VMD-Prophet-LSTM case: filename said "Federated" but the content is not federated learning). For staging files, this determines the canonical name in `raw_sources/`.
-4. Copy the staging PDF from `raw_sources/New/` to `raw_sources/YYYY_FirstAuthor_Keywords.pdf` under its canonical name (year verified against PDF text). Keep the staging original until the full ingestion is verified.
+4. Copy the staging PDF from `raw_sources/New/` to `raw_sources/YYYY_Keywords.pdf` under its canonical name (year verified against PDF text). Keep the staging original until the full ingestion is verified.
 
 ### Step 1 — Extract full text
 
 5. Extract full PDF text with pymupdf (`fitz`) → save to `scratch/txt/<filename>.txt`. Read every page; never summarize from the abstract alone.
-6. **Reuse & canonical copy**: If `scratch/txt/<pdf_basename>.txt` already exists at **>1KB**, skip extraction and reuse it. After extraction (or reuse), **copy** the txt to its canonical name as well so both names resolve: `scratch/txt/<staging_basename>.txt` ↔ `scratch/txt/YYYY_FirstAuthor_Keywords.txt` (same content, two filenames). This prevents re-extraction when the PDF was renamed.
+6. **Reuse & canonical copy**: If `scratch/txt/<pdf_basename>.txt` already exists at **>1KB**, skip extraction and reuse it. After extraction (or reuse), **copy** the txt to its canonical name as well so both names resolve: `scratch/txt/<staging_basename>.txt` ↔ `scratch/txt/YYYY_Keywords.txt` (same content, two filenames). This prevents re-extraction when the PDF was renamed.
 
-### Step 2 — Write the paper note
+### Step 2 — Write the paper note — TEMPLATE IS LAW
 
-7. Create/rewrite `wiki/papers/YYYY_FirstAuthor_Keywords.md` using the template in `schema.md`:
-   - Complete YAML frontmatter: title, authors, year, journal_conference, doi_url, models_used, datasets_used, features_used, forecasting_horizon, metrics, tags
-   - Extract ALL key equations verbatim from the text → LaTeX ($$...$$), naming each equation.
-   - Datasets: name, location, size (#sessions/#stations), resolution, **every URL/DOI/GitHub link found**.
-   - Performance: real numbers vs baselines — **never invent values**; if a table is unreadable, state "not extractable".
-   - Complete BibTeX + citation-graph wikilinks to foundation papers **ONLY IF** they are already ingested in the vault. Do not wrap external references in `[[ ]]` (e.g., `[[Bahdanau2016]]`) if the PDF is not in our `raw_sources/`, as it creates ghost stub files. Use plain text for external refs.
-8. Verify metadata (year, DOI, author names) against the PDF text itself — past notes have had wrong years/DOIs.
+> **Model-agnostic enforcement (binding on every model — gemini, spark, opus, sonnet, local LLM):** Copy-paste the 6 headings from `schema.md` **verbatim** (including emoji). Never regenerate from memory. Any paraphrase (`## Contribution` vs `## 🎯 Main Objective & Contribution`) fails **G1**. See `.agents/skills/ingest-paper/SKILL.md` Gates **G1-G8** — every gate must pass; a weaker model that skips a gate is incorrect, not faster.
+
+7. Create/rewrite `wiki/papers/YYYY_Keywords.md` using the template in `schema.md` (copy-paste, do not paraphrase):
+   - Complete YAML frontmatter: title, authors, year, journal_conference, doi_url, models_used, datasets_used, features_used, forecasting_horizon, metrics, tags — every concept with a `wiki/*/*.md` page MUST be a `[[Wikilink]]` (G5)
+   - Extract ALL key equations **verbatim** from the FULL text (every page of `scratch/txt/*.txt`) → LaTeX display `$$... \tag{N}$$` with original symbols, naming each equation (G3) — never paraphrase, never invent; if ambiguous keep PDF notation + `[as in PDF p.X]` — **MUST write via Python raw string `r"""` (or double every `\` to `\\`); plain `"""` corrupts `\t \n \r \a \nu \theta \alpha \frac` into control chars (`\tag`→`ag{`, 49 control chars in 2024_Woo fail)**
+   - Datasets: name, location, size (#sessions/#stations), resolution, **every URL/DOI/GitHub/Zenodo/Kaggle link found** — include composition tables for large corpora (e.g., TimeBench 1,032B)
+   - Performance: real numbers vs baselines with table/figure citations (`Table 1 p.5`) — **never invent values** (G4); if a table is unreadable, state `not extractable — see PDF p.X Table Y` and keep the structure; include ablations/scaling when present
+   - Complete BibTeX + citation-graph wikilinks to foundation papers **ONLY IF** they are already ingested in the vault (`wiki/papers/YYYY_*.md` or `raw_sources/YYYY_*.pdf` exists). Do not wrap external references in `[[ ]]` (e.g., `[[Bahdanau2016]]`) if the PDF is not in our `raw_sources/`, as it creates ghost stub files (G6). When in doubt, use plain text. After writing, self-verify: `grep "^## " wiki/papers/YYYY_*.md` must match the 6 schema strings exactly; `grep -o "\[\[20[0-9][0-9]_[^]]*\]\]"` must have no ghost targets.
+8. Verify metadata (year, DOI, author names) against the PDF text itself — past notes have had wrong years/DOIs. Verify frontmatter parses as YAML and `models_used/datasets_used/metrics` contain `[[` (G5).
 
 ### Step 3 — Propagate to concept pages (mandatory!)
 
 9. `wiki/models/` — update "Literature Usage" of every model used by the paper (+ create a new page if it is a major architecture with no page yet).
-10. `wiki/datasets/` — create the dataset page if missing / update Used-by list + URLs. **Alias lookup first** — check the canonical map below before creating a new file (to avoid `ACN_Data` vs `Caltech_ACN` or `Electricity` vs `Electricity_ECL` duplicates).
+10. `wiki/datasets/` — create the dataset page if missing / update Used-by list + URLs. **Alias lookup first (mandatory, G7)** — check the canonical map below before creating a new file (to avoid `ACN_Data` vs `Caltech_ACN` or `Electricity` vs `Electricity_ECL` duplicates). Reuse canonical file; if a genuinely new alias is encountered, add it to the map and create a redirect stub.
 11. `wiki/features/`, `wiki/metrics/`, `wiki/horizons/`, `wiki/hyperparameters/` — add citing bullets referencing this paper. **Hyperparameters are optional** — if the paper has no explicit HPO (e.g., no Optuna/GridSearch/TPE, only a training schedule like `2048→8192` ctx), skip this folder rather than forcing an entry.
 12. `wiki/github/` + `wiki/references/github_repositories_index.md` — add newly discovered official repos (check for duplicates first).
 
@@ -116,9 +118,9 @@ Follow this order for every ingestion. Do not skip steps.
 
 ---
 
-# Definition of Done — Ingest Checklist
+# Definition of Done — Ingest Checklist (G1-G8 hard fails — any fail = ingest incomplete)
 
-Before marking an ingest complete (and before deleting `raw_sources/New/<original>.pdf`), verify **all 8**:
+Before marking an ingest complete (and before deleting `raw_sources/New/<original>.pdf`), verify **all 8** (maps to Gates G1-G8 in `.agents/skills/ingest-paper/SKILL.md` + `schema.md` §3b):
 
 | # | Artifact | Check |
 |---|----------|-------|
@@ -131,7 +133,7 @@ Before marking an ingest complete (and before deleting `raw_sources/New/<origina
 | 7 | `paper_digest.md` | Regenerated via `python gen_paper_digest.py` and contains the new paper |
 | 8 | `log.md` | Entry `## [YYYY-MM-DD] ingest | <paper>` appended |
 
-Quick verify: `py -3 scratch/audit_corrected.py && py -3 scratch/verify_final.py` (or the `vault-audit` skill when available).
+Quick verify: `py -3 scratch/audit_corrected.py && py -3 scratch/verify_final.py` (or the `vault-audit` skill when available). All Gates **G1-G8** must pass — see `.agents/skills/ingest-paper/SKILL.md` for verification commands per gate.
 
 ---
 

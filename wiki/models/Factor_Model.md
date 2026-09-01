@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]
+[[2014_Scalable_Stochastic_EV_Demand]]

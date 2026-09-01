@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]], [[2020_Salinas_DeepAR_Probabilistic_Forecasting]], [[2024_Ali_MQ_TCN_Transfer_Learning_EV]]
+[[2020_NBEATS_Interpretable_Time_Series_Forecasting]], [[2020_DeepAR_Probabilistic_Forecasting]], [[2024_MQ_TCN_Transfer_Learning_EV]]

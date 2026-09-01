@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Huo_Data_Driven_EVCS_Demand_Forecasting]]
+[[2024_Data_Driven_EVCS_Demand_Forecasting]]

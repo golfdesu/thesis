@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Wu_TimesNet_Temporal_2D_Variation_Modeling]]
+[[2023_TimesNet_Temporal_2D_Variation_Modeling]]

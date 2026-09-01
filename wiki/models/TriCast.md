@@ -31,4 +31,4 @@ Prediction head: MLP over temporally pooled features, trained with MSE loss $\ma
 - **Weaknesses**: deterministic point forecasts only (no probabilistic output); single-city/30-day validation; elasticity learning constrained by sparse dynamic-price coverage (57/247 zones); occupancy used as demand proxy.
 
 ## Literature Usage
-- 2026 — [[2026_Wang_Xiaoping_TriModal_Causal_EV_Demand]] : Original paper — SAGE + TACT + PEM tri-modal framework on [[UrbanEV_Dataset]] (Shenzhen, 5-min resolution); beats VAR/Lasso/KNN/LSTM/GCN/GAT/DCRNN/AST-GAT/FourierGNN/PAG/CityEVCP/PIAST etc., paired t-test p < .01.
+- 2026 — [[2026_TriModal_Causal_EV_Demand]] : Original paper — SAGE + TACT + PEM tri-modal framework on [[UrbanEV_Dataset]] (Shenzhen, 5-min resolution); beats VAR/Lasso/KNN/LSTM/GCN/GAT/DCRNN/AST-GAT/FourierGNN/PAG/CityEVCP/PIAST etc., paired t-test p < .01.

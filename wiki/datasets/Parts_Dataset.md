@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2020_Salinas_DeepAR_Probabilistic_Forecasting]]
+[[2020_DeepAR_Probabilistic_Forecasting]]

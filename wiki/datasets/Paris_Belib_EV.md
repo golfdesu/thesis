@@ -27,4 +27,4 @@ Open Data Paris public dataset containing transaction and status records of Pari
 - Charging session durations and occupancy status over time.
 
 ## 📚 Used By
-- [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] — STL decomposition + stacked meta-learning benchmark on Belib alongside ACN, Palo Alto, and Perth.
+- [[2026_Decomposition_Stacked_Meta_Learning_EV_Load]] — STL decomposition + stacked meta-learning benchmark on Belib alongside ACN, Palo Alto, and Perth.

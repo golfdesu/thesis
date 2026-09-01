@@ -22,4 +22,4 @@ MFT combines a **Multi-scale Modeling Mechanism (3M)** (using scale masks $m_n^{
   $$\tilde{w}_i = w_i + \text{softmax}(l_Q x_{ki}^T), \quad E = \text{LeakyReLU}\left(\sum \tilde{w}_i x_{vi}\right)$$
 
 ## Literature References
-- [[2026_Liu_MFT_Multi_Scale_Fusion_Transformer]] - Proposed MFT achieving up to 25.59% performance boost over standard Transformers on 96-hour prediction tasks.
+- [[2026_MFT_Multi_Scale_Fusion_Transformer]] - Proposed MFT achieving up to 25.59% performance boost over standard Transformers on 96-hour prediction tasks.

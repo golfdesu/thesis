@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Zhou_Conformal_Prediction_DER]]
+[[2024_Conformal_Prediction_DER]]

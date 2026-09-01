@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2022_Cao_Robust_Deep_Gaussian_Process_Load]]
+[[2022_Robust_Deep_Gaussian_Process_Load]]

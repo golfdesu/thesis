@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2018_Nichol_Reptile_First_Order_Meta_Learning]]
+[[2018_Reptile_First_Order_Meta_Learning]]

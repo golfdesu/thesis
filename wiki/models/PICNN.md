@@ -22,5 +22,5 @@ PICNN is a neural network architecture designed to learn functions that are stri
   $$(q_{Z,t}(\alpha_1) - q_{Z,t}(\alpha_2))(\alpha_1 - \alpha_2) \ge 0, \quad \forall \alpha_{1,2} \in (0, 1)$$
 
 ## Literature References
-- [[2025_Zheng_Coherent_Hierarchical_EV_Load]] - Applied PICNN to prevent quantile crossing in multi-horizon EV charging demand probabilistic forecasting.
-- Contrast — 2026 — [[2026_Yu_EnergyMamba_Graph_Mamba_ASCQR]] : AS-CQR ([[AS_CQR]]) adds online interval adaptivity (width-normalized nonconformity scores + ACI-style feedback) *without* any convexity/monotonicity guarantee — quantile crossing remains structurally possible where PICNN eliminates it by construction.
+- [[2025_Coherent_Hierarchical_EV_Load]] - Applied PICNN to prevent quantile crossing in multi-horizon EV charging demand probabilistic forecasting.
+- Contrast — 2026 — [[2026_EnergyMamba_Graph_Mamba_ASCQR]] : AS-CQR ([[AS_CQR]]) adds online interval adaptivity (width-normalized nonconformity scores + ACI-style feedback) *without* any convexity/monotonicity guarantee — quantile crossing remains structurally possible where PICNN eliminates it by construction.

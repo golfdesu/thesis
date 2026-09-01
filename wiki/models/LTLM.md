@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Weqar_LTLM_LSTM_EV_Load]], [[2025_Weqar_LTLM_LSTM_EV_Load]]
+[[2025_LTLM_LSTM_EV_Load]], [[2025_LTLM_LSTM_EV_Load]]

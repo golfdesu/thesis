@@ -10,4 +10,4 @@ tags: [feature]
 Categorical features requiring encoding for forecasting models.
 
 ## Literature Usage
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Categorical covariates handled via target/ordinal encoding (Section 3.1) — see Categorical_Covariates.
+- [[2025_Chronos_2_Univariate_to_Universal]] — Categorical covariates handled via target/ordinal encoding (Section 3.1) — see Categorical_Covariates.

@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Yang_Stochastic_MPC_Microgrid_EV]]
+[[2025_Stochastic_MPC_Microgrid_EV]]

@@ -16,4 +16,4 @@ This optimization-related concept appears in training setups across the knowledg
 
 ## Referenced in this knowledge base
 
-[[2015_Raza_Review_AI_Load_Demand]]
+[[2015_Review_AI_Load_Demand]]

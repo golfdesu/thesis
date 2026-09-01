@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Khan_Transformer_BiLSTM_Price_Forecasting]]
+[[2025_Transformer_BiLSTM_Price_Forecasting]]

@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2025_Yang_Stochastic_MPC_Microgrid_EV]]
+[[2025_Stochastic_MPC_Microgrid_EV]]

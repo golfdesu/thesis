@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Zheng_BWO_ICEEMDAN_iTransformer]], [[2025_Zheng_BWO_ICEEMDAN_iTransformer]]
+[[2025_BWO_ICEEMDAN_iTransformer]], [[2025_BWO_ICEEMDAN_iTransformer]]

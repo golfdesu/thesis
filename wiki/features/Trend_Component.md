@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2021_Wu_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]]
+[[2021_Autoformer_Decomposition_Transformers_AutoCorrelation]], [[2026_Decomposition_Stacked_Meta_Learning_EV_Load]]

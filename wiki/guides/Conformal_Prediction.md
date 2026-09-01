@@ -12,5 +12,5 @@ Distribution-free framework producing prediction sets/intervals with finite-samp
 
 ## Role in EV / Load Forecasting
 Foundation of conformalized quantile regression approaches for probabilistic EV demand intervals:
-- [[2021_Stankeviciute_Conformal_Time_Series_Forecasting]]
-- [[2024_Zhou_Conformal_Prediction_DER]]
+- [[2021_Conformal_Time_Series_Forecasting]]
+- [[2024_Conformal_Prediction_DER]]

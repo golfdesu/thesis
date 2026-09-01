@@ -32,5 +32,5 @@ Target choice strategies: Random / Historical / Mix (+ test-pattern mask for for
 - **Weaknesses**: iterative reverse diffusion (50 steps) slow for real-time EV deployment (ODE/DDIM acceleration suggested); forecasting advantage smaller than imputation advantage; historical strategy sensitive to train/test pattern mismatch.
 
 ## Literature Usage
-- [[2021_Tashiro_CSDI_Conditional_Diffusion_Forecasting]] — Original paper: healthcare CRPS 0.238 vs GP-VAE 0.574 at 10% missing; best CRPS-sum on electricity (0.017) and traffic (0.020) forecasting.
-- [[2024_Li_DiffPLF_Conditional_Diffusion_EV]] — DiffPLF adopts CSDI's variance scheduling scheme and extends conditional diffusion to EV charging-load forecasting with cross-attention conditioning.
+- [[2021_CSDI_Conditional_Diffusion_Forecasting]] — Original paper: healthcare CRPS 0.238 vs GP-VAE 0.574 at 10% missing; best CRPS-sum on electricity (0.017) and traffic (0.020) forecasting.
+- [[2024_DiffPLF_Conditional_Diffusion_EV]] — DiffPLF adopts CSDI's variance scheduling scheme and extends conditional diffusion to EV charging-load forecasting with cross-attention conditioning.

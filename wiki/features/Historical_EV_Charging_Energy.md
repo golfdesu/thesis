@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2025_Hussain_Hybrid_LSTM_Transformer_Demand]]
+[[2025_Hybrid_LSTM_Transformer_Demand]]

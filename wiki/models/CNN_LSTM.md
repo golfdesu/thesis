@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2023_Ziyabari_Multi_Branch_ResTrans_Solar]], [[2024_Bampos_EV_Load_Forecasting_DAM]], [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]]
+[[2023_Multi_Branch_ResTrans_Solar]], [[2024_EV_Load_Forecasting_DAM]], [[2025_Transformer_BiLSTM_Price_Forecasting]]

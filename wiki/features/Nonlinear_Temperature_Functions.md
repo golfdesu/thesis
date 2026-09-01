@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2001_Hippert_Neural_Networks_STLF_Review]]
+[[2001_Neural_Networks_STLF_Review]]

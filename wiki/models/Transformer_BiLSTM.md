@@ -22,7 +22,7 @@ Transformer-BiLSTM combines a **Transformer Encoder** (using multi-head self-att
   $$\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, \dots, \text{head}_N) W^O$$
 
 ## Application in EV Systems
-- Outperformed standalone Transformer, BiLSTM, and XGBoost models in Day-Ahead Electricity Price Forecasting (DA EPF) for V2G market bidding ([[2025_Khan_Transformer_BiLSTM_Price_Forecasting]]).
+- Outperformed standalone Transformer, BiLSTM, and XGBoost models in Day-Ahead Electricity Price Forecasting (DA EPF) for V2G market bidding ([[2025_Transformer_BiLSTM_Price_Forecasting]]).
 
 ## Literature References
-- [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]] - Day-ahead electricity market price forecasting using Transformer-BiLSTM.
+- [[2025_Transformer_BiLSTM_Price_Forecasting]] - Day-ahead electricity market price forecasting using Transformer-BiLSTM.

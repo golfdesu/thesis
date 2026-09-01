@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Singh_MetaLearning_Informer_Probabilistic_EV]]
+[[2026_MetaLearning_Informer_Probabilistic_EV]]

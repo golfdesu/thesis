@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Li_DiffPLF_Conditional_Diffusion_EV]]
+[[2024_DiffPLF_Conditional_Diffusion_EV]]

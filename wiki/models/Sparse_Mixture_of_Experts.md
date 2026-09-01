@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2025_Bao_ResMMoT_Informer_Time_Series]]
+[[2025_ResMMoT_Informer_Time_Series]]

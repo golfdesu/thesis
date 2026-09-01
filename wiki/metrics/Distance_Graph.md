@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2024_Shi_Attention_Spatiotemporal_MultiGraph_EV_Load]]
+[[2024_Attention_Spatiotemporal_MultiGraph_EV_Load]]

@@ -1,0 +1,44 @@
+# References — [[2026_PC_M3_Mamba_EV_Clusters]]
+
+> **38 references** extracted from this paper.
+
+---
+
+1. 1. Yip, A.; Hoehne, C.; Jadun, P.; Ledna, C.; Hale, E.; Muratori, M. Highly Resolved Projections of Passenger Electric Vehicle Charging Loads for the Contiguous United States; Technical Report NREL/TP-5400-83916; National Renewable Energy Laboratory: Golden, CO, USA, 2023. [CrossRef]
+2. 2. Lee, Z.J.; Li, T.; Low, S.H. ACN-Data: Analysis and applications of an open EV charging dataset. In Proceedings of the Tenth ACM International Conference on Future Energy Systems, Phoenix, AZ, USA, 25–28 June 2019; pp. 139–149.
+3. 3. Müller, F.L.; Szabo, J.; Sundström, O.; Lygeros, J. Aggregation and disaggregation of energetic flexibility from distributed energy resources. IEEE Trans. Smart Grid 2019, 10, 1205–1214. [CrossRef]
+4. 4. Barot, S.; Taylor, J.A. A concise, approximate representation of a collection of loads described by polytopes. Int. J. Electr. Power Energy Syst. 2017, 84, 55–63. [CrossRef]
+5. 5. Nazir, M.S.; Hiskens, I.A.; Bernstein, A.; Dall'Anese, E. Inner approximation of Minkowski sums: A union-based approach and applications to aggregated energy resources. In IEEE Conference on Decision and Control (CDC); IEEE: New York, NY, USA, 2018; pp. 5708–5715.
+6. 6. Zhao, L.; Zhang, W.; Hao, H.; Kalsi, K. A geometric approach to aggregate flexibility modeling of thermostatically controlled loads. IEEE Trans. Power Syst. 2017, 32, 4721–4731. [CrossRef]
+7. 7. Zhu, J.; Yang, Z.; Mourshed, M.; Guo, Y.; Zhou, Y.; Chang, Y.; Wei, Y.; Feng, S. Electric vehicle charging load forecasting: A comparative study of deep learning approaches. Energies 2019, 12, 2692. [CrossRef]
+8. 8. Zhou, H.; Zhang, S.; Peng, J.; Zhang, S.; Li, J.; Xiong, H.; Zhang, W. Informer: Beyond efficient Transformer for long sequence time- series forecasting. In Proceedings of the AAAI Conference on Artificial Intelligence, Virtual, 2–9 February 2021; pp. 11106–11115.
+9. 9. Lahoti, A.; Li, K.Y.; Chen, B.; Wang, C.; Bick, A.; Kolter, J.Z.; Dao, T.; Gu, A. Mamba-3: Improved sequence modeling using state space principles. In Proceedings of the International Conference on Learning Representations (ICLR), Rio de Janeiro, Brazil, 23–27 April 2026.
+10. 10. Zhan, Z.; Ren, L.; Wang, S.; Liu, L.; Liu, Y.; Gong, Y.; Wang, Y.; Shen, Y. Routing Mamba: Scaling state space models with mixture-of-experts projection. arXiv 2025, arXiv:2506.18145.
+11. 11. Menati, A.; Doudi, F.; Kalathil, D.; Xie, L. PowerMamba: A deep state space model and comprehensive benchmark for time series prediction in electric power systems. arXiv 2024, arXiv:2412.06112. [CrossRef]
+12. 12. Lee, Z.J.; Sharma, S.; Johansson, D.; Low, S.H. ACN-Sim: An open-source simulator for data-driven electric vehicle charging research. IEEE Trans. Smart Grid 2021, 12, 5113–5123. [CrossRef]
+13. 13. ElaadNL. Open Datasets for Electric Mobility Research (2020 Release). Available online: https://platform.elaad.io/analyses/ (accessed on 15 April 2024).
+14. 14. National Renewable Energy Laboratory. Demand-Side Grid (Dsgrid) TEMPO Light-Duty Vehicle Charging Profiles v2022. Open Energy Data Initiative. 2022. Available online: https://data.openei.org/submissions/5958 (accessed on 18 June 2024).
+15. 15. Hao, H.; Middelkoop, T.; Barooah, P.; Meyn, S. How demand response from commercial buildings will provide the regulation needs of the grid. In Proceedings of the Allerton Conference on Communication, Control, and Computing, Monticello, IL, USA, 1–5 October 2012; pp. 1908–1913.
+16. 16. Franco, J.F.; Rider, M.J.; Romero, R. A mixed-integer linear programming model for the electric vehicle charging coordination problem in unbalanced electrical distribution systems. IEEE Trans. Smart Grid 2015, 6, 2200–2210. [CrossRef] 17. Çiçek, A.; Erdinç, O. Risk-averse optimal bidding strategy for a wind energy portfolio manager including EV parking lots for imbalance mitigation. Turk. J. Electr. Eng. Comput. Sci. 2021, 29, 481–498. [CrossRef]
+17. 18. Hemmati, H.R.; Farzin, H.; Monadi, M. An iterative MILP-based model for optimal V2G scheduling considering battery degradation and thermal dynamics. J. Energy Storage 2026, 157, 121551. [CrossRef]
+18. 19. López, K.L.; Gagné, C.; Gardner, M.A. Demand-side management using deep learning for smart charging of electric vehicles. IEEE Trans. Smart Grid 2019, 10, 2683–2691. [CrossRef]
+19. 20. Wu, H.; Xu, J.; Wang, J.; Long, M. Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting. In Proceedings of the Advances in Neural Information Processing Systems, Online, 6–14 December 2021. https://doi.org/10.3390/electronics15112380 Electronics 2026, 15, 2380 30 of 30
+20. 21. Gu, A.; Goel, K.; Ré, C. Efficiently modeling long sequences with structured state spaces. In Proceedings of the International Conference on Learning Representations (ICLR), Virtual, 25 April 2022.
+21. 22. Gu, A.; Dao, T. Mamba: Linear-time sequence modeling with selective state spaces. arXiv 2023, arXiv:2312.00752.
+22. 23. Dao, T.; Gu, A. Transformers are SSMs: Generalized models and efficient algorithms through structured state space duality. In Proceedings of the International Conference on Machine Learning, Vienna, Austria, 21–27 July 2024.
+23. 24. Amos, B.; Kolter, J.Z. OptNet: Differentiable optimization as a layer in neural networks. In Proceedings of the 34th International Conference on Machine Learning, Sydney, Australia, 6–11 August 2017; PMLR: New York, NY, USA, 2017; Volume 70, pp. 136–145.
+24. 25. Dalal, G.; Dvijotham, K.; Vecerik, M.; Hester, T.; Paduraru, C.; Tassa, Y. Safe exploration in continuous action spaces. arXiv 2018, arXiv:1801.08757. [CrossRef]
+25. 26. Parisio, A.; Rikos, E.; Glielmo, L. A model predictive control approach to microgrid operation optimization. IEEE Trans. Control Syst. Technol. 2014, 22, 1813–1827. [CrossRef]
+26. 27. Kardakos, E.G.; Simoglou, C.K.; Bakirtzis, A.G. Optimal offering strategy of a virtual power plant: A stochastic bi-level approach. IEEE Trans. Smart Grid 2016, 7, 794–806. [CrossRef]
+27. 28. Fujimoto, S.; Hoof, H.; Meger, D. Addressing function approximation error in actor–critic methods. In Proceedings of the International Conference on Machine Learning, Stockholm, Sweden, 10–15 July 2018; pp. 1587–1596.
+28. 29. Haarnoja, T.; Zhou, A.; Abbeel, P.; Levine, S. Soft actor–critic: Off-policy maximum entropy deep reinforcement learning with a stochastic actor. In Proceedings of the International Conference on Machine Learning, Stockholm, Sweden, 10–15 July 2018; pp. 1861–1870.
+29. 30. Wan, Z.; Li, H.; He, H.; Prokhorov, D. Model-free real-time EV charging scheduling based on deep reinforcement learning. IEEE Trans. Smart Grid 2019, 10, 5246–5257. [CrossRef]
+30. 31. Tuchnitz, F.; Ebell, N.; Schlund, J.; Pruckner, M. Development and evaluation of a smart charging strategy for an electric vehicle fleet based on reinforcement learning. Appl. Energy 2021, 285, 116382. [CrossRef]
+31. 32. Vandael, S.; Claessens, B.; Ernst, D.; Holvoet, T.; Deconinck, G. Reinforcement learning of heuristic EV fleet charging in a day-ahead electricity market. IEEE Trans. Smart Grid 2015, 6, 1795–1805. [CrossRef]
+32. 33. Pudjianto, D.; Ramsay, C.; Strbac, G. Virtual power plant and system integration of distributed energy resources. IET Renew. Power Gener. 2007, 1, 10–16. [CrossRef]
+33. 34. Vagropoulos, S.I.; Bakirtzis, A.G. Optimal bidding strategy for electric vehicle aggregators in electricity markets. IEEE Trans. Power Syst. 2013, 28, 4031–4041. [CrossRef]
+34. 35. Fedus, W.; Zoph, B.; Shazeer, N. Switch transformer: Scaling to trillion parameter models with simple and efficient sparsity. J. Mach. Learn. Res. 2022, 23, 1–39.
+35. 36. Federal Highway Administration. 2022 National Household Travel Survey: User Guide and Codebook; U.S. Department of Transporta- tion: Washington, DC, USA, 2023.
+36. 37. Raissi, M.; Perdikaris, P.; Karniadakis, G.E. Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. J. Comput. Phys. 2019, 378, 686–707. [CrossRef]
+37. 38. Cuomo, S.; Di Cola, V.S.; Giampaolo, F.; Rozza, G.; Raissi, M.; Piccialli, F. Scientific machine learning through physics-informed neural networks: Where we are and what's next. J. Sci. Comput. 2022, 92, 88. [CrossRef]
+38. 39. Beck, A.; Teboulle, M. A fast iterative shrinkage-thresholding algorithm for linear inverse problems. SIAM J. Imaging Sci. 2009, 2, 183–202. [CrossRef] Disclaimer/Publisher's Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content. https://doi.org/10.3390/electronics15112380

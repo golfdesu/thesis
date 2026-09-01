@@ -16,4 +16,4 @@ This research note synthesizes concepts that span multiple papers in the knowled
 
 ## Referenced in this knowledge base
 
-[[2023_Koohfar_Transformer_EV_Demand]]
+[[2023_Transformer_EV_Demand]]

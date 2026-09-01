@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2017_Attention_Is_All_You_Need]], [[2026_Singh_MetaLearning_Informer_Probabilistic_EV]]
+[[2017_Attention_Is_All_You_Need]], [[2026_MetaLearning_Informer_Probabilistic_EV]]

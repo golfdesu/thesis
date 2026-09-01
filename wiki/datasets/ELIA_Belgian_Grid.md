@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2015_Raza_Review_AI_Load_Demand]], [[2019_Toubeau_Deep_Probabilistic_Scheduling_Power_Markets]], [[2025_Yang_Stochastic_MPC_Microgrid_EV]]
+[[2015_Review_AI_Load_Demand]], [[2019_Deep_Probabilistic_Scheduling_Power_Markets]], [[2025_Stochastic_MPC_Microgrid_EV]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Ahamed_TimeMachine_Mamba_Long_Term_Forecasting]]
+[[2024_TimeMachine_Mamba_Long_Term_Forecasting]]

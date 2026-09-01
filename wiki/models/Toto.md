@@ -37,11 +37,12 @@ Pretraining mix (proxy optimum): **42.5% Datadog observability** (10s:20%, 60s:7
 - **Weaknesses**: covariate-free; single-pass coherence limit ~768 steps (needs block decoding beyond); even 2.5B degrades at 8k vs classical seasonal model; public-data mix for FT is empirically found, not principled; width scaling validated but depth/data scaling not isolated.
 
 ## Literature Usage
-- [[2026_Khwaja_Toto_2_Scaling_Era]] — Origin paper. BOOM CRPS ranks **3.88/3.96/4.26/5.53/7.17** (2.5B/1B/313M/22M/4M) vs Toto 1.0 6.94, Chronos-2 7.39; GIFT-Eval (FM-only) CRPS ranks **20.3/21.1/21.4** vs PatchTST-FM r1 23.1, Chronos-2 23.5; TIME CRPS ranks **3.43/3.51/3.86** sweep top-3; FnF ensemble #1 and 2.5B-FT #2 on full GIFT-Eval leaderboard; latency and 2k–8k stability studies included.
+- [[2026_Toto_2_Scaling_Era]] — Origin paper. BOOM CRPS ranks **3.88/3.96/4.26/5.53/7.17** (2.5B/1B/313M/22M/4M) vs Toto 1.0 6.94, Chronos-2 7.39; GIFT-Eval (FM-only) CRPS ranks **20.3/21.1/21.4** vs PatchTST-FM r1 23.1, Chronos-2 23.5; TIME CRPS ranks **3.43/3.51/3.86** sweep top-3; FnF ensemble #1 and 2.5B-FT #2 on full GIFT-Eval leaderboard; latency and 2k–8k stability studies included.
 
 ## Related Models
 - Patched predecessor: [[PatchTST]] (encoder-decoder patching); compared directly in ablations.
 - Direct competitors beaten: [[TimesFM]] / [[TimesFM_2.0]], [[Chronos]] / [[Chronos-Bolt]], [[Moirai]], [[TiRex]], [[FlowState]], [[Timer]], [[Time-MoE]], [[Sundial]], [[Granite]], [[TTM]].
 - Optimizer family: [[Adam]] / [[Muon]] → [[NorMuon]] (row-normalized Muon + per-neuron $\beta_2$).
 - Backbone predecessor: Toto 1.0 (Cohen et al. 2024); xLSTM [Beck et al. 2024] as CPM origin architecture.
-- [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **Toto-1.0 (Cohen et al. 2025)** beaten on all 3 benchmarks: fev-bench W 66.6/S 40.7 vs 90.7/47.3; GIFT-Eval WQL 67.4/48.6 vs 81.9/51.4; univariate Chronos-2 already beats multivariate Toto on 26-task multivariate subset.
+- [[2025_Chronos_2_Univariate_to_Universal]] — **Toto-1.0 (Cohen et al. 2025)** beaten on all 3 benchmarks: fev-bench W 66.6/S 40.7 vs 90.7/47.3; GIFT-Eval WQL 67.4/48.6 vs 81.9/51.4; univariate Chronos-2 already beats multivariate Toto on 26-task multivariate subset.
+- [[2026_Moirai_2_When_Less_Is_More]] — **Moirai 2.0 (Liu et al., Salesforce 2026)**: Decoder-only quantile TSFM (11.4M small / 87.1M / 305M) with multi-token prediction + recursive multi-quantile decoding. GIFT-Eval 97 tasks: 5th MASE / 6th CRPS among 37 FMs; 30x smaller & 2x faster than Moirai-Large; ablations: quantile loss gives largest gain (v1->v2 MASE 0.85->0.744), Table 2. Negative scaling on same corpus (base/large underperform small), long-horizon rank degrades 4th->8th.

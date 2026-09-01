@@ -33,7 +33,7 @@ tags:
 Companion: six-year PJM ISO dataset (2019–2024) in the paper appendix confirms cross-ISO generalization.
 
 ## 📚 Used By
-- [[2024_Menati_PowerMamba_Power_Systems_SSM]] — Native benchmark (GridSet W=24 MSE 0.129/MAE 0.166; external-forecast module cuts MSE to 0.074); toolbox + data at https://github.com/alimenati/PowerMamba .
+- [[2024_PowerMamba_Power_Systems_SSM]] — Native benchmark (GridSet W=24 MSE 0.129/MAE 0.166; external-forecast module cuts MSE to 0.074); toolbox + data at https://github.com/alimenati/PowerMamba .
 
 ## Related Pages
 - [[PowerMamba]]

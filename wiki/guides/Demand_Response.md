@@ -16,4 +16,4 @@ This research note synthesizes concepts that span multiple papers in the knowled
 
 ## Referenced in this knowledge base
 
-[[2014_Alizadeh_Scalable_Stochastic_EV_Demand]]
+[[2014_Scalable_Stochastic_EV_Demand]]

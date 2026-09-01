@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Shi_Naihao_Prediction_Interval_EV_Loads]]
+[[2024_Prediction_Interval_EV_Loads]]

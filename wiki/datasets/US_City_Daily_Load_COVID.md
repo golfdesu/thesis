@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_DeVilmarest_Adaptive_Probabilistic_Netload]]
+[[2024_Adaptive_Probabilistic_Netload]]

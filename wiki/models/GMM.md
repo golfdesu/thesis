@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2021_Zhang_Probabilistic_Queuing_EV_Load]], [[2021_Zhang_Probabilistic_Queuing_EV_Load]]
+[[2021_Probabilistic_Queuing_EV_Load]], [[2021_Probabilistic_Queuing_EV_Load]]

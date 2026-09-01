@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Cao_Feature_Enhanced_Probabilistic_EV_Load]]
+[[2024_Feature_Enhanced_Probabilistic_EV_Load]], [[2024_Feature_Enhanced_Probabilistic_EV_Load]]

@@ -20,4 +20,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2026_Lahoti_Mamba_3_Sequence_Modeling]]
+[[2026_Mamba_3_Sequence_Modeling]]

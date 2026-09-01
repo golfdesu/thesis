@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2025_Weqar_LTLM_LSTM_EV_Load]], [[2025_Weqar_LTLM_LSTM_EV_Load]]
+[[2025_LTLM_LSTM_EV_Load]], [[2025_LTLM_LSTM_EV_Load]]

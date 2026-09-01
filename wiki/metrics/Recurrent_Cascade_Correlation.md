@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[1997_Hochreiter_Long_Short_Term_Memory]]
+[[1997_Long_Short_Term_Memory]]

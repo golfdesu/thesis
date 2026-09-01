@@ -22,21 +22,21 @@ XGBoost is an optimized gradient boosting decision tree framework. It builds an 
   Where $g_i = \partial_{\hat{y}^{(t-1)}} l(y_i, \hat{y}^{(t-1)})$ and $h_i = \partial^2_{\hat{y}^{(t-1)}} l(y_i, \hat{y}^{(t-1)})$.
 
 ## Application in EV Charging Load Forecasting
-- Outperformed complex deep learning architectures (CNN-LSTM, TCN) across year-long rolling Day-Ahead Market (DAM) forecasts on the Palo Alto EV dataset ([[2024_Bampos_EV_Load_Forecasting_DAM]]).
+- Outperformed complex deep learning architectures (CNN-LSTM, TCN) across year-long rolling Day-Ahead Market (DAM) forecasts on the Palo Alto EV dataset ([[2024_EV_Load_Forecasting_DAM]]).
 - Excellent generalization on tabular feature sets without suffering from deep learning overfitting.
 
 ## Literature References
-- [[2024_Bampos_EV_Load_Forecasting_DAM]] - Comprehensive 1-year benchmark showing XGBoost achieved top nMAE (5.387%) for day-ahead market bidding.
+- [[2024_EV_Load_Forecasting_DAM]] - Comprehensive 1-year benchmark showing XGBoost achieved top nMAE (5.387%) for day-ahead market bidding.
 
 ## 📚 Literature Usage
-- 2024 — [[2024_Ali_MQ_TCN_Transfer_Learning_EV]] : XGBoost quantile baseline maxes at 80.21% PICP on target domains vs MQ-TCN's transfer-learned 96.88% (NREL, 2 weeks of data).
-- 2024 — [[2024_Ke_Divide_Conquer_Transformer_EV]] : XGBoost F1@.5 = 83.43% for 1–10 min-ahead EV charging-event detection vs DCT-EV 87.35% and Random Forest 22.14%.
-- 2025 — [[2025_Khan_Transformer_BiLSTM_Price_Forecasting]] : XGBoost NYISO day-ahead MAE $3.1634/RMSE $7.7484 — beaten by Transformer-BiLSTM at $2.7818/$6.4937 (−12.0% MAE).
-- 2025 — [[2026_Mansour_Hybrid_XGBoost_BiLSTM_EV_Load]] : standalone XGBoost test MAE 2.6697 kWh (R² 0.6463), most stable model in walk-forward CV (0.1080); core member of the winning boosting ensemble (MAE 2.6432).
-- 2026 — [[2026_Ullah_Decomposition_Stacked_Meta_Learning_EV_Load]] : STL decomposition + stacked meta-learning outperforms the gradient-boosting family — ACN MAE 0.614/MAPE 12.71%, trained in 0.108 s.
-- 2026 — [[2026_MoghadamDost_TFT_Conformal_Environmental_EV_Load]] : XGBoost badly behind TFT on Palo Alto daily-scale load (RMSE 2.748 vs 0.71; weather-integrated normalized MSE 0.02484 vs 0.001764).
-- 2026 — [[2026_Wang_Xu_Similar_Day_Selection_EV_Load]] : XGBoost as leakage-free surrogate mapping context/weather day-pair similarity to pattern-match labels (AUC >0.93), beating KNN and LightGBM matchers.
-- 2026 — [[2026_Kyriakopoulos_ML_Comparison_EV_Charging_Forecasting]] : XGBoost competitive only at station-level granularity (best Palo Alto short-term station MAE ≈ 0.87, lowest RMSE there and mid-term) but loses consistently to Transformer/GRU/LSTM at region and city aggregation scales.
-- 2024 — [[2024_Ma_LASSO_BPNN_Mid_Term_EV_Load]] : LASSO-XGBoost overfits tiny monthly Qingpu data (13 points) — strong training-set fit but poor test accuracy vs LASSO-BPNN, attributed to tree-model complexity vs small sample size.
-- 2026 — [[2026_Bouaachra_INLA_Spatio_Temporal_EV_Demand]] : Per-station no-pooling XGBoost baseline beaten on MAE at ~73–77% of Glasgow stations by pooled Bayesian LGM-INLA ([[INLA_Latent_Gaussian_Model]]) — structured spatial pooling beats independent trees (RMSE near-parity though).
-- 2025 — [[2025_FernandezZapico_Stochastic_MPC_Conformal_Hub]] : Scikit-learn gradient-boosted trees (GBT regressor, MAE loss, early stopping) as the point forecaster wrapped by EnbPI conformal intervals, feeding scenario-based stochastic MPC of a charging energy hub.
+- 2024 — [[2024_MQ_TCN_Transfer_Learning_EV]] : XGBoost quantile baseline maxes at 80.21% PICP on target domains vs MQ-TCN's transfer-learned 96.88% (NREL, 2 weeks of data).
+- 2024 — [[2024_Divide_Conquer_Transformer_EV]] : XGBoost F1@.5 = 83.43% for 1–10 min-ahead EV charging-event detection vs DCT-EV 87.35% and Random Forest 22.14%.
+- 2025 — [[2025_Transformer_BiLSTM_Price_Forecasting]] : XGBoost NYISO day-ahead MAE $3.1634/RMSE $7.7484 — beaten by Transformer-BiLSTM at $2.7818/$6.4937 (−12.0% MAE).
+- 2025 — [[2026_Hybrid_XGBoost_BiLSTM_EV_Load]] : standalone XGBoost test MAE 2.6697 kWh (R² 0.6463), most stable model in walk-forward CV (0.1080); core member of the winning boosting ensemble (MAE 2.6432).
+- 2026 — [[2026_Decomposition_Stacked_Meta_Learning_EV_Load]] : STL decomposition + stacked meta-learning outperforms the gradient-boosting family — ACN MAE 0.614/MAPE 12.71%, trained in 0.108 s.
+- 2026 — [[2026_TFT_Conformal_Environmental_EV_Load]] : XGBoost badly behind TFT on Palo Alto daily-scale load (RMSE 2.748 vs 0.71; weather-integrated normalized MSE 0.02484 vs 0.001764).
+- 2026 — [[2026_Similar_Day_Selection_EV_Load]] : XGBoost as leakage-free surrogate mapping context/weather day-pair similarity to pattern-match labels (AUC >0.93), beating KNN and LightGBM matchers.
+- 2026 — [[2026_ML_Comparison_EV_Charging_Forecasting]] : XGBoost competitive only at station-level granularity (best Palo Alto short-term station MAE ≈ 0.87, lowest RMSE there and mid-term) but loses consistently to Transformer/GRU/LSTM at region and city aggregation scales.
+- 2024 — [[2024_LASSO_BPNN_Mid_Term_EV_Load]] : LASSO-XGBoost overfits tiny monthly Qingpu data (13 points) — strong training-set fit but poor test accuracy vs LASSO-BPNN, attributed to tree-model complexity vs small sample size.
+- 2026 — [[2026_INLA_Spatio_Temporal_EV_Demand]] : Per-station no-pooling XGBoost baseline beaten on MAE at ~73–77% of Glasgow stations by pooled Bayesian LGM-INLA ([[INLA_Latent_Gaussian_Model]]) — structured spatial pooling beats independent trees (RMSE near-parity though).
+- 2025 — [[2025_Stochastic_MPC_Conformal_Hub]] : Scikit-learn gradient-boosted trees (GBT regressor, MAE loss, early stopping) as the point forecaster wrapped by EnbPI conformal intervals, feeding scenario-based stochastic MPC of a charging energy hub.

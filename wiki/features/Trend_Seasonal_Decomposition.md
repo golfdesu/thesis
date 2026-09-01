@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]]
+[[2023_DLinear_Are_Transformers_Effective_LTSF]]

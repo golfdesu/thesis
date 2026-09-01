@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[PICP]], [[2024_Shi_Naihao_Prediction_Interval_EV_Loads]]
+[[PICP]], [[2024_Prediction_Interval_EV_Loads]]

@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2019_Wu_Graph_WaveNet_Spatial_Temporal_Modeling]]
+[[2019_Graph_WaveNet_Spatial_Temporal_Modeling]]

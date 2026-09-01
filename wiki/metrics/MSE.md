@@ -26,4 +26,8 @@ Commonly reported for point forecasts of EV charging load; penalizes large error
 ## References
 - See paper summaries in [[Papers & Literature]] tagged with MSE.
 
-- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
+- [[2025_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
+
+## Literature Usage
+- [[2026_TS_ICL_Time_Indexed_Foundation_Model]] — Mean squared error evaluation metric.
+- [[2024_Unified_Training_Universal_Time_Series_Transformers]] — Evaluated zero-shot out-of-distribution across 6 datasets (Electricity, Solar, Walmart, Weather, Istanbul Traffic, Turkey Power) and 9 Monash benchmarks using continuous/discrete quantile approximations.

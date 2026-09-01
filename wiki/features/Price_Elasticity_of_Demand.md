@@ -16,4 +16,4 @@ As an input feature it appears in the feature lists of forecasting papers collec
 
 ## Referenced in this knowledge base
 
-[[2024_Qu_Physics_Informed_GAT_EV_Load]]
+[[2024_Physics_Informed_GAT_EV_Load]]

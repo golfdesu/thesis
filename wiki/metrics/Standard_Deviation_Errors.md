@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2001_Hippert_Neural_Networks_STLF_Review]]
+[[2001_Neural_Networks_STLF_Review]]

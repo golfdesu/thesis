@@ -16,4 +16,4 @@ The dataset entry records access conditions, temporal resolution, geographic cov
 
 ## Referenced in this knowledge base
 
-[[2024_Das_TiDE_Long_Term_Forecasting]]
+[[2024_TiDE_Long_Term_Forecasting]]

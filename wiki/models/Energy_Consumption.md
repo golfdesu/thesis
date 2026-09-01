@@ -16,4 +16,4 @@ Within this knowledge base the model page collects its architectural family, typ
 
 ## Referenced in this knowledge base
 
-[[2020_Huang_Ensemble_EV_Load]]
+[[2020_Ensemble_EV_Load]]

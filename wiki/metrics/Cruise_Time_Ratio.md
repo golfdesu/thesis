@@ -16,4 +16,4 @@ The metric definition, unit behaviour, and interpretation follow the same struct
 
 ## Referenced in this knowledge base
 
-[[2024_Feng_LSTM_Transformer_EV_Consumption]]
+[[2024_LSTM_Transformer_EV_Consumption]]
