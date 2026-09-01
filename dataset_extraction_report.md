@@ -1855,4 +1855,18 @@ New dataset page created: `wiki/datasets/UrbanEV_Dataset.md`. DOIs: 10.1016/j.co
 **Tables imported to paper note:** Table 1 (capability matrix O(V) vs O(V²)), Table 2 (groupID/W masking for 3 task types), Table 3 (fev-bench SQL), Table 4 (GIFT-Eval WQL/MASE), Table 5 (Chronos Bench II), Fig.2 (pairwise CIs), Fig.3-5 (ICL gains), Fig.8 (ablations: 28M, synthetic-only, 8192 ctx).
 
 **Dataset pages updated/created:** [[fev-bench]], [[Chronos_Benchmark_II]], [[Chronos_Corpus]], [[GIFT-Eval]], [[GIFT_Eval_Pretrain]], [[Electricity_ECL]], [[M4]], [[Solar_Dataset]], [[Traffic]], [[Weather]], [[Wiki_Pageviews]], [[Buildings_900K]].
-- **TimeBench** - https://huggingface.co/thuml/sundial-base-128m
+### 71. 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.pdf
+
+- **Title**: Sundial: A Family of Highly Capable Time Series Foundation Models
+- **Identified Datasets**: TimeBench (1,032B points, 12 sources), GIFT-Eval (97 configs / 23 datasets), FEV (27 datasets), Chronos Corpus, Electricity (ECL), Traffic, Weather, ETTh1/ETTh2/ETTm1/ETTm2
+- **Dataset & Code Links (Direct/Long URLs)**:
+- [`[https://github.com/thuml/Sundial`](https://github.com/thuml/Sundial)](https://github.com/thuml/Sundial)
+- [`[https://huggingface.co/thuml/sundial-base-128m`](https://huggingface.co/thuml/sundial-base-128m)](https://huggingface.co/thuml/sundial-base-128m)
+
+- **Key Dataset Text Snippets / Context**:
+- > TimeBench: curated trillion-scale pretraining corpus — 1,032B time points (381 GB) from 12 sources: Chronos 94B (9.11%), ECG 48B (4.65%), Finance 10.5B (1.02%), IoT 5.8B (0.56%), LOTSA 230B (22.29%), Synthetic KernelSynth 0.5B (0.05%), ERA5 3h 129B (12.50%), 12h 32B (3.10%), Daily 406B (39.35%), Weekly 58B (5.62%), Monthly 13.5B (1.31%), Quarterly 4.5B (0.44%). All evaluation datasets excluded from pretraining to ensure zero-shot.
+- > TSLib long-term benchmark (ETTm1/ETTm2/ETTh1/ETTh2/ECL/Weather, horizons 96/192/336/720, context 2880, metrics MSE/MAE) — Traffic excluded because it appears in pretraining. Table 4.
+- > GIFT-Eval (Aksu et al. 2024) — 97 configs from 23 datasets (energy/retail/weather/finance), horizons 6-900; metrics MASE/CRPS/Rank with 100 samples. Sundial #1 MASE 0.673 / #2 CRPS 0.472.
+- > FEV leaderboard (Ansari et al. 2024, AutoGluon) — 27 unseen short-term probabilistic datasets; metrics MASE/WQL with 20 samples. Sundial beats >70% of statistical+supervised models, 35x speedup over Chronos (patch-wise + multi-patch F=720, KV Cache).
+- > Synthetic: 0.05% KernelSynth diverse patterns. GIFT-Eval/TSLib/FEV evaluation is zero-shot; per-variable normalization, S3 univariate format (Timer), max context 2880.
+

@@ -90,6 +90,7 @@ EV charging load exhibits:
 - [[Weather_Traffic]]
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
 - [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Pure univariate input only; no covariates during pretraining (Eq. 1); date-feature extension Eq. 8 discussed as future work.
 - [[2026_Khwaja_Toto_2_Scaling_Era]] — Pure univariate input y_{1:L} + missingness mask b_{1:N}; 32 variates/sample in training; no exogenous covariates (weather/tariff/SoC all future work).
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Past target values Y_{1:T} as core input (V, U) together with optional covariates; univariate mode ignores covariates and still beats Toto-1.0 on multivariate subset.

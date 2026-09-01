@@ -152,3 +152,13 @@ This note indexes foundational open-source repositories for time-series Transfor
 - **What you can reuse**:
   - *Code*: architecture-matched implementations of S-Mamba/[[PowerMamba]]/PatchTST/iTransformer/LSTM with shared preprocessing, weather-fusion layers, and capacity-controlled tiers; checkpoints included.
   - *Data*: EIA-930 hourly demand pipelines for six/seven US ISOs plus Open-Meteo weather-covariate alignment.
+
+### 22. Sundial (Highly Capable Time Series Foundation Models — TimeFlow + Decoder-Only Patched Transformer)
+- **Repository URL**: `https://github.com/thuml/Sundial`
+- **Weights (Hugging Face, 3 sizes)**: `https://huggingface.co/thuml/sundial-base-128m` (also Small 32M / Large 444M)
+- **Cited Paper**: [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
+- **What you can reuse**:
+  - *Code*: decoder-only patched Transformer (6/12/24 layers, RoPE, Pre-LN, FlashAttention, KV Cache) + FM-Net flow-matching head (Eq. 6-8); training/inference scripts with S3 univariate format and multi-patch prediction (F > P).
+  - *Data*: **[[TimeBench]]** curation scripts (1,032B points, 12 sources, ERA5 406B dominant) and GIFT-Eval/FEV zero-shot evaluation pipelines.
+  - *Pretrained*: 3 checkpoints (Small 32M / Base 128M / Large 444M) — zero-shot SOTA on TSLib long-term, GIFT-Eval (MASE 0.673 #1) and FEV (35x speedup over Chronos).
+

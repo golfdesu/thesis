@@ -19,5 +19,6 @@ Note: distinct from the older 14-feature Jena Climate Keras variant.
 - **Reference**: [https://github.com/zhouhaoyi/ETDataset](https://github.com/zhouhaoyi/ETDataset)
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib Weather zero-shot; Sundial-S 0.233/0.271 competitive (Timer-XL 0.256/0.294).
 - [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] — Pretraining ingredient: 10-min Weather (42 variates, 2.2M points) from Informer benchmark [ZZP+21].
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Weatherbench 225280 series etc. (Table 6) in Chronos-2 real-univariate mix.

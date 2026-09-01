@@ -230,4 +230,7 @@ This document indexes all official **GitHub Repositories, Code Bases, and Open-S
   *Paper:* [[2025_Ansari_Chronos_2_Univariate_to_Universal]]
   *Highlights:* group attention (time+group, O(V)), 120M/28M, 21 quantiles, 2048->8192 ctx, multivariatizers synthetic, SOTA on 3 benchmarks (fev-bench/GIFT-Eval/Chronos Bench II).
 
-- https://github.com/thuml/Sundial
+- **Sundial (Highly Capable Time Series Foundation Models — TimeFlow + Decoder-Only Patched Transformer)**:
+  `https://github.com/thuml/Sundial` (weights: `https://huggingface.co/thuml/sundial-base-128m` Small 32M / Base 128M / Large 444M)
+  *Paper:* [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
+  *Highlights:* TimeFlow Loss (flow-matching, Eq. 6-8), patch embedding P=16 / F=720, Pre-LN+RoPE+FlashAttention+KV Cache, TimeBench 1,032B points, SOTA zero-shot TSLib/GIFT-Eval/FEV (35× speedup over Chronos).

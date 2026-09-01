@@ -81,6 +81,7 @@ Long-term load forecasting covers prediction horizons from **several days to mon
 - [[Short_Term_Forecasting]]
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib long-term (96/192/336/720) and GIFT-Eval (6-900) zero-shot; Sundial-L -7.57% MSE vs Time-MoE.
 - 2024 — [[2024_Das_TimesFM_Decoder_Only_Foundation_Model]] : Decoder-only TimesFM zero-shot across Monash/Darts/ETT horizons 32-512 (variable context/horizon/granularity).
 - [[2026_Khwaja_Toto_2_Scaling_Era]] — Toto 2.0 zero-shot across BOOM (2048 ctx) / GIFT-Eval (4096 ctx) / TIME (per-task ctx); single-pass stable to ~768 steps, block decoding beyond; 2k-8k stability study (r=0.99 at 2k, 0.818 at 8k for 2.5B).
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — Evaluated on mixed horizons via fev-bench/GIFT-Eval/Chronos Bench II (H dictated by benchmark tasks); 2-stage training extends max output patches and context 2048->8192 to support long-horizon and high-frequency seasonalities without heuristics; energy case hourly day-ahead (EPF-DE) and retail weekly quarter (Rossmann) illustrate short vs longer horizons.

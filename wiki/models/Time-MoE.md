@@ -1,17 +1,16 @@
 ---
 type: model
-name: "Time MoE"
-category: Stub (auto-generated)
-status: needs-review
-tags:
-  - model
-  - time-moe
+name: "Time-MoE"
+category: model
+tags: [model, time-moe]
 ---
 
-# Time MoE
+# Time-MoE
 
-Billion-scale mixture-of-experts time-series foundation model.
+## Overview
 
-## Referenced in this knowledge base
+Mixture-of-Experts TSFM (Shi et al. 2024) — previous SOTA point forecaster beaten by Sundial (-7.57% MSE).
 
-*(none recorded)*
+## Literature Usage
+
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]

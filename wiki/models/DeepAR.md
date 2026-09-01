@@ -31,6 +31,7 @@ Special treatment of **power-law scale heterogeneity**: item-dependent rescaling
 - **Weaknesses**: teacher-forcing exposure bias; heuristic scale factor; autoregressive decoding slow for long horizons; degrades on long-dependency synthetic tasks beyond ~96 steps.
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — Compared as supervised/point-forecasting baseline in GIFT-Eval (e.g., PatchTST MASE 0.762, N-BEATS 21.38 rank).
 - [[2020_Salinas_DeepAR_Probabilistic_Forecasting]] — Original paper: global autoregressive LSTM + flexible likelihoods; electricity ND 0.07 vs MatFact 0.16; count-data relative risk 0.77–0.94 vs ISSM/ETS baselines.
 - [[2019_Li_LogSparse_Enhancing_Locality_Transformer]] — DeepAR as probabilistic baseline beaten by LogSparse Transformer (e.g., traffic-c 7d R0.5 0.179 vs 0.139); scale handling adopted.
 - [[2020_Oreshkin_NBEATS_Interpretable_Time_Series_Forecasting]] — DeepAR baseline on ELECTRICITY/TRAFFIC/M4-Hourly (ND 0.07/0.17/0.09) beaten by covariate-free N-BEATS.

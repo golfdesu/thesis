@@ -30,6 +30,7 @@ MSE loss: $\mathcal{L} = \mathbb{E}_x \frac{1}{M}\sum_{i=1}^{M} \left\| \hat{x}_
 - **Weaknesses**: channel-independence ignores explicit cross-channel correlations (GNN extension suggested); point forecasts only (no uncertainty); memory-heavy for very long inputs (OOMs ≥ L=1440).
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — Compared as supervised/point-forecasting baseline in GIFT-Eval (e.g., PatchTST MASE 0.762, N-BEATS 21.38 rank).
 - [[2023_Nie_PatchTST_A_Time_Series_is_Worth_64_Words]] — Original paper: patching + CI + RevIN-style normalization; Electricity T=96 MSE 0.129 vs DLinear 0.140; self-supervised fine-tuning further improves to 0.126.
 - [[2023_Zeng_DLinear_Are_Transformers_Effective_LTSF]] — The linear-model critique PatchTST directly answers and whose numbers it supplies/beats.
 - [[2024_Das_TiDE_Long_Term_Forecasting]] — Strongest baseline: TiDE is >10× faster in training / 5× faster inference; PatchTST OOMs at L≥1440; PatchTST still wins Weather 96–336 and M5-without-covariates comparisons differ.

@@ -18,4 +18,5 @@ resolution: hourly
 Standard benchmark in LTSF papers ([[Informer]], [[Autoformer]], [[PatchTST]], [[DLinear]], [[TimesNet]]) alongside [[ETT]] and [[Weather]].
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]] — TSLib ECL (hourly, 321 clients) zero-shot; Sundial-L 0.166/0.262 vs Timer-XL 0.174/0.278, Chronos-L 0.204/0.273.
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — 370 series (Table 6) in Chronos-2 real-univariate pretraining mix (Electricity).

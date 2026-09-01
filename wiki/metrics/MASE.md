@@ -17,4 +17,5 @@ $$\mathrm{MASE} = \frac{\mathrm{MAE}}{\mathrm{MAE}_{\text{naive}}}$$
 Used in benchmark studies (N-BEATS lineage, TimesNet) for scale-comparable comparison.
 
 ## Literature Usage
+- [[2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models]]
 - [[2025_Ansari_Chronos_2_Univariate_to_Universal]] — **MASE** point metric on GIFT-Eval W 83.8 S 30.2 and Chronos Bench II W 81.5 S 26.5 for Chronos-2 (Tables 4b/5b); fev-bench MASE gains in Appendix Fig.9-11.

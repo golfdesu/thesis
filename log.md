@@ -505,8 +505,12 @@ Append-only log recording all ingestion, synthesis, and maintenance operations.
 - Updated raw_sources/paper_index.md (#83), index.md (121 papers / 111 PDFs, added paper line), thesis_references.bib (+1, now 111, ansari2025chronos2), dataset_extraction_report.md (appended 9 datasets/URLs, benchmarks + Table 6 + multivariatizers).
 - Regenerated paper_digest.md (121 papers, 388 KB, 2026-09-01) via python gen_paper_digest.py.
 - Duplicate check: no prior wiki/papers/*Chronos-2* or *2025_Ansari*; no raw_sources/*Chronos*; raw_sources/New/2510.15821v1.pdf content-uniq vs Chronos/Bolt/Chronos Benchmark II; 2510.15821v1 is the canonical Chronos-2 tech report.
-## [2026-09-01] ingest | 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models
-- Extracted text to scratch.
-- Created paper note.
-- Propagated to models, datasets, metrics.
-- Added TimeBench to dataset report.
+## [2026-09-01] ingest | 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models (re-ingest to schema.md standard)
+- Duplicate check: (a) raw_sources/*Sundial* — no prior canonical with same arXiv 2502.00816; (b) wiki/papers/2025_Liu_Sundial* — existing note found (gemini-generated, headings non-compliant) — rewrote in place to schema template; (c) content uniqueness — title/DOI/arXiv unique vs vault, confirmed new family (not TimesFM/Timer/Chronos duplicate).
+- Extracted text: reused scratch/txt/2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.txt (2003 lines, 81KB, fitz) — canonical txt copy already in place.
+- Rewrote wiki/papers/2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models.md to schema.md template: frontmatter (type: paper, 14 models_used, 11 datasets_used, 5 metrics), 9 verbatim equations Eq 1-9 (CFM/OT flow-matching, patch embedding, RoPE attention, TimeFlow Loss Eq 6-8, inference push-forward Eq 9), TimeBench 1,032B table (12 sources, ERA5 Daily 406B dominant), TSLib/GIFT-Eval/FEV performance tables vs Time-MoE/Timer-XL/Chronos/N-BEATS/PatchTST, limitations (univariate S3, high-frequency gap, naive sampling, EV domain gap), BibTeX and citation graph (ONLY already-ingested [[...]]).
+- Refs dump: created wiki/references/2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models_refs.md (verbatim References pp.13-19).
+- Propagated: wiki/models/Sundial.md (new full page), Timer.md, Time-MoE.md, Moirai.md, Chronos.md, TimeFlow.md, Transformer.md, PatchTST.md, N-BEATS.md, DeepAR.md, TiDE.md, Timer-XL.md (new alias -> Timer); wiki/datasets/TimeBench.md (new full page), ETT.md, ETTh1/ETTh2/ETTm1/ETTm2/ECL aliases, Electricity_ECL.md, Traffic.md, Weather.md, GIFT-Eval.md, Chronos_Corpus.md; wiki/metrics/MSE.md, MAE.md, MASE.md, CRPS.md, WQL.md; wiki/horizons/Long_Term_Forecasting.md; wiki/features/Historical_Load.md; wiki/github/Time_Series_Foundation_Models_Repos.md (#22 Sundial, https://github.com/thuml/Sundial + HF weights) and wiki/references/github_repositories_index.md (formatted Sundial entry, Chronos dash fix).
+- Catalogs: raw_sources/paper_index.md (#84, 2502.00816v4), raw_sources/2025_Liu_Sundial*.pdf already canonical, thesis_references.bib (liu2025sundial already present), dataset_extraction_report.md (appended as section 71: 8 datasets + TimeBench/GIFT-Eval/FEV/ETT suite).
+- Regenerated paper_digest.md (124 papers, 374 KB, 2026-09-01) via python gen_paper_digest.py.
+- Ghost-stub guard: AGENTS.md Step 2 already says wikilink ONLY IF already ingested; no new ghost stubs created (Timer-XL/ETT variants added as explicit alias stubs).

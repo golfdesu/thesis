@@ -7,7 +7,7 @@
 ## 🗂️ Corpus Snapshot
 - Total papers: **124**
 - By year: 1997 (1) · 2001 (1) · 2013 (1) · 2014 (2) · 2015 (1) · 2017 (3) · 2018 (2) · 2019 (5) · 2020 (3) · 2021 (10) · 2022 (3) · 2023 (12) · 2024 (26) · 2025 (23) · 2026 (19) · ???? (12)
-- Most-cited model concepts: LSTM (46), Transformer (31), Informer (17), ARIMA (13), DeepAR (13), RNN (12), MLP (12), GRU (11), SVR (11), PatchTST (10), XGBoost (10), Mamba_SSM (9)
+- Most-cited model concepts: LSTM (46), Transformer (31), Informer (17), DeepAR (14), ARIMA (13), RNN (12), MLP (12), PatchTST (11), GRU (11), SVR (11), XGBoost (10), Mamba_SSM (9)
 
 ## 🔎 Quick-Scan Table
 | Paper | Yr | Venue | Core Models | Horizon | Data (#) |
@@ -42,7 +42,7 @@
 | 2025_Khan_Transformer_BiLSTM_Price_Forecasting | 2025 | IEEE Transactions on Industry … | Transformer_BiLSTM, Transformer … | Day_Ahead_Forecasting | 3 |
 | 2025_Li_DC_Charging_Profiles_TFT | 2025 | Nature Communications 16:10921 | Temporal_Fusion_Transformer, beta-VAE … | Short_Term_Forecasting | 2 |
 | 2025_Li_Multi_View_Graph_Intrusion_Detection_EV | 2025 | Applied Energy | MVGCRL, Mask_Attention_Graph_Transformer … | Spatial_Temporal_Forec … | 1 |
-| 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models | 2025 | ICML 2025 | Sundial, Transformer … | Zero-shot / Continuous | 1 |
+| 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models | 2025 | Proceedings of the 42nd International … | Sundial, Transformer … | Long_Term_Forecasting | 11 |
 | 2025_Matrone_QR_LSTM_Attention_EV_Load | 2025 | ACM E-Energy '25: 16th ACM … | QR-LSTM-Attention, LSTM … | 24-Hour Day-Ahead … | 2 |
 | 2025_Meyer_Benchmark_Foundation_Models | 2025 | IEEE Access | Chronos, Chronos-Bolt … | Short_Term_Forecasting | 4 |
 | 2025_Tian_MSSTGAN_City_EV_Load | 2025 | IEEE Access, Vol. 13, pp. 29000-29017 | Multi-Scale Spatial-Temporal Graph Attention … | City-Level … | 4 |
@@ -897,21 +897,32 @@ Li et al. · Applied Energy · 2025
 
 ### 2025_Liu_Sundial_Highly_Capable_Time_Series_Foundation_Models
 **Sundial: A Family of Highly Capable Time Series Foundation Models**  
-Liu et al. · ICML 2025 · 2025
-<arXiv:2502.00816v4>
-**Models**: Sundial, Transformer, TimeFlow, TimesFM, Timer, Moirai, Chronos, LLMTime  
-**Horizon**: Zero-shot / Continuous  
-**Metrics**: CRPS, MSE, MAE  
-**Data**: TimeBench
+Liu et al. · Proceedings of the 42nd International Conference on Machine Learning (ICML 2025), PMLR 267 · 2025
+<https://arxiv.org/abs/2502.00816>
+**Models**: Sundial, Transformer, TimeFlow, TimesFM, Timer, Timer-XL, Time-MoE, Moirai, Chronos, LLMTime, PatchTST, N-BEATS, DeepAR, TiDE  
+**Horizon**: Long_Term_Forecasting  
+**Metrics**: MSE, MAE, MASE, CRPS, WQL  
+**Data**: TimeBench; GIFT-Eval; Chronos_Corpus; Electricity; Traffic; Weather; ETTh1; ETTh2; ETTm1; ETTm2; ECL  
+**Features**: Historical_Load
 
 - **What they did:**
-  - **Gap:** Existing time series foundation models either use parametric densities (which restrict expressiveness and limit capacity) or discrete tokenization (which suffers from quantization errors and requires large vocabularies). Current models lack native continuous-valued generative modeling for highly accurate and flexible probabilistic forecasting without specifying prior distributions. **Contribution:** …
-- **Method core:** Sundial adapts Transformers for native continuous-valued time series modeling using Flow Matching. Instead of predicting a specific parametric distribution or discretizing values, it learns the vector field of a continuous-time flow between a simple prior (standard Gaussian) and the true data distribution. The goal is to learn a time-dependent vector field $v_t(x)$ that …
+  - **Research gap**: Existing time series foundation models (TSFMs) fall into two limited regimes: (1) continuous-token models fitting unimodal parametric densities via MSE/quantile loss (TimesFM, Timer, Time-MoE) which risk mode collapse on heterogeneous data and cannot convey confidence, or (2) discrete-token language-modeling models with cross-entropy (Chronos, LLMTime) which suffer quantization error, large …
+  - **Core contribution — Sundial family**: First family of **native, flexible, scalable generative** TSFMs built on minimal-but-crucial Transformer adaptations and a new **TimeFlow Loss** (flow-matching) that trains autoregressively on continuous patches and samples multiple plausible futures via an ODE push-forward.
+  - **Three pillars**: 1. **TimeFlow Loss**: Parameterized flow-matching objective conditioned on per-patch Transformer representations; mitigates mode collapse, enables patch-level generation and fast inference with shared lookback representation. 2. **Enhanced decoder-only Transformer**: Re-normalization (stationarization), patch embedding with binary padding mask, Pre-LN, causal self-attention with RoPE, …
+  - **Empirical claim**: Sundial (Small 32M / Base 128M / Large 444M) achieves **SOTA zero-shot** on both point (TSLib long-term) and probabilistic (GIFT-Eval, FEV) benchmarks, scales monotonically with size/data, and infers in **milliseconds** with ~35× speedup over Chronos on FEV while matching N-BEATS latency. Validates that generative modeling unlocks capacity (15.38% training-loss reduction Large vs Small).
+- **Method core:** **Model Type**: Decoder-only patched Transformer + conditional flow-matching head (FM-Net). Pipeline: Re-Normalization → Patch Embedding (shared MLP on concat of patch + mask) → N-layer Transformer decoder (causal, Pre-LN, RoPE) → per-token condition $h_i$ → small MLP **FM-Net** that predicts the velocity field for flow-matching and generates future patch via K-step ODE …
 - **Key results:**
-  - **Superior Zero-Shot Performance**: Sundial (with parameters scaling from 18M to 1.7B) significantly outperformed existing point forecasters (TimesFM, Timer, Moirai) and probabilistic forecasters (Chronos) across multiple zero-shot benchmarks.
+  - **TSLib zero-shot long-term (Table 1/9, avg over 4 horizons; lower is better, context 2880, patch 16)** — Sundial consistently #1 vs 12 TSFMs: Sundial-L achieves **-7.57% MSE / -4.71% MAE** vs previous SOTA Time-MoE with fewer parameters; continuous patch tokenization avoids the long contexts and horizon sensitivity …
+  - **GIFT-Eval probabilistic zero-shot (Table 2, 97 configs, 100 samples, lower better)** — Sundial **#1 MASE / #2 CRPS** among all: Sundial calculates median/quantiles from samples **without** quantile-loss pretraining.
+  - **FEV leaderboard (Fig. 4–5, 27 datasets, 20 samples, AutoGluon)** — Sundial zero-shot beats >70% of statistical + supervised deep models trained in-distribution; ranks **2nd among zero-shot FMs** after Chronos but with **35× inference speedup** (Fig. 5, log-scale): Sundial ~ near N-BEATS latency via patch-wise + …
 - **Gaps/Limitations:**
-  - The paper primarily focuses on univariate forecasting; explicit handling of multivariate dependencies (cross-variate correlations) could be a future extension.
-  - While inference is fast due to the efficient solver, flow matching integration still requires multiple function evaluations (though kept small in practice), which could be further optimized.
+  - **Univariate-only pre-training** (S3 format, per-variable normalization): No explicit cross-variate / covariate modeling; multivariate dependencies and exogenous covariates (arrival/departure, SoC, tariff, weather) left as future multivariate pretraining (increasingly studied for domain-specific TSFMs).
+  - **Very high-frequency data not guaranteed**: TimeBench dominated by middle/low frequencies (ERA5 daily etc.); performance on tick/10s-level series untested — multi-scale generalization needs work (§E).
+  - **Naïve sampling**: Starts from $\mathcal{N}(0,I)$ with uniform $K=50$ Euler steps; frequency normalization / advanced samplers and post-processing unexplored.
+  - **Long-context high-frequency gap**: Max context 2880 patches but still may need stronger long-context capability for high-frequency series (Fig. 10: optimum lookback depends on task periodicity/horizon).
+  - **Potential hallucinations** despite mode-collapse mitigation; autoregressive rolling for horizons > $F$ may yield over-smooth/unreliable tails.
+  - **Probabilistic calibration limited to sample statistics**: Direct quantile optimization not used; future work could co-train TimeFlow with quantile objectives.
+  - **Domain gap for EV load**: All benchmarks generic (energy/weather/synthetic), no EV charging datasets (ACN, ElaadNL, Boulder) evaluated — transfer to sparse, spiky EV loads unproven; covariate-free design is an open gap for thesis.
 
 ### 2025_Matrone_QR_LSTM_Attention_EV_Load
 **Probabilistic Forecast of EV Charging Demand using Quantile Regression and LSTM with Attention Mechanism**  
