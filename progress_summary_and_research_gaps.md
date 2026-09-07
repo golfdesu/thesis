@@ -147,3 +147,26 @@ Based on literature review across all **103 EV load forecasting papers** now ing
 ### Corpus Coverage Update (2026-08-23 refresh, 103 papers)
 - **Gap 6 (computational limits):** The post-Transformer line is now ingested: Mamba-3 ([[2026_Mamba_3_Sequence_Modeling]]), HyKANet ([[2026_Mamba_KAN_HyKANet_EV]]), PC-M3 ([[2026_Chen_PC_M3_Mamba_EV_Clusters]]), plus foundational Mamba papers (TimeMachine [[2024_TimeMachine_Mamba_Long_Term_Forecasting]], Bi-Mamba+ [[2024_BiMamba_Bidirectional_Mamba_Forecasting]]) and the foundation-model benchmark ([[2025_Benchmark_Foundation_Models]]) / EV-STLLM ([[2025_EV_STLLM_Spatio_Temporal_LLM]]). No EV paper combines these backbones with probabilistic heads — see Gap T-7 in [[research_gaps]]. *Caveat updated below.*
    - **Flagship novelty direction (re-verified 2026-08-23 against [[research_gaps]] Gaps 6, T-4, T-7 and P-1..P-5, all 103 papers):** a **Mamba backbone** ($O(N)$ selective SSM) + **cross-attention exogenous fusion** + **conformalized PICNN quantile head** — no paper in the 103-paper corpus combines these three components. Nearest neighbors (USDT, MoghadamDost TFT+CQR, MAML-Informer) each lack at least two of the three. Details in [[proposed_architectures]].
+
+---
+
+## 4. 🔬 32-Model Benchmark Synthesis: Incompatible Architectures on EV Charging Load
+
+The comprehensive 32-model 10-seed production benchmark on Caltech ACN load ($L=96, H=48$, 28 features) revealed critical architectural mismatches that invalidate several dominant time-series forecasting paradigms on EV load:
+
+### 1. The Channel Independence (CI) Breakdown
+- **Canonical Model:** `06_tfm_ptst` (PatchTST, Nie et al., ICLR 2023).
+- **Finding:** While CI dominates benchmark datasets like Traffic and Weather by preventing cross-channel spurious correlation, it severely fails on EV load ($R^2 = 0.5531$, Peak MAE $= 18.7351 \text{ kW}$).
+- **Reason:** EV charging demand is strongly driven by human behavioral context (calendar: `Hour_sin/cos`, `DayOfWeek`, `weekend`) and weather (`temp`, `rhum`). Channel independence isolates the load sequence into an unconditioned univariate process, blinding the model to charging session drivers.
+
+### 2. The Reversible Instance Normalization (RevIN) & Last-Value Normalization Trap
+- **Canonical Models:** `06_tfm_ptst` (PatchTST), `12_nlinear` (NLinear), `11_dlinear` (DLinear).
+- **Finding:** RevIN and NLinear assume local stationarity or distribution shift. In intermittent zero-inflated EV load (21.8% zero values), lookback mean differs from future mean by up to $22.58 \text{ kW}$ ($5.13 \text{ kW}$ average). Normalizing by zero-dominated lookback traps denormalized daytime forecasts near zero, causing massive peak underestimation (NLinear Peak MAE $= 21.3976 \text{ kW}$, worst in benchmark).
+
+### 3. Frequency-Domain & Phase Correlation Failures
+- **Canonical Models:** `05_tfm_afm` (Autoformer), `08_tfm_timesnet` (TimesNet), `26_nbeats` (N-BEATS).
+- **Finding:** Autoformer's Auto-Correlation (Wiener-Khinchin FFT) and N-BEATS Fourier basis assume periodic repetitive waveforms. EV charging sessions are stochastic pulses. Phase alignment smears sharp pulse peaks into fuzzy sinusoidal waves, triggering Gibbs phenomenon and yielding $>22\%$ negative predictions.
+
+### 4. Direct Support for Model 00 (Proposed Custom Transformer)
+- Model 00 combines **Full Cross-Variate Multi-Head Attention** with **Attention Orthogonal Regularization ($\lambda_{\text{ortho}}$)**.
+- It outperforms Vanilla Encoder (01: 5.6313 -> 00: 5.5811 kW), Vanilla Decoder (02: 5.5937 kW), and all mismatched baselines (PatchTST 5.7672, NLinear 6.2466, DLinear 6.9656, TiDE 6.9962, SARIMA 10.1119 kW) while maintaining low Peak MAE ($12.5785 \text{ kW}$) and zero horizon explosion.
